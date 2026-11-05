@@ -31,11 +31,9 @@ let matchedQueryIds = new Set()
 // Input & gesture tracking
 let isCtrlPressed = false
 let isPanning = false
-let isWheeling = false
-let wheelTimer = null
+let didPan = false
+let suppressClickUntil = 0
 let panStart = { x: 0, y: 0 }
-let dragDistance = 0
-let mouseDownPos = { x: 0, y: 0 }
 
 onMounted(async () => {
   if (typeof window === 'undefined') return
@@ -114,22 +112,27 @@ function initPrecomputedGraph() {
     .backgroundColor('#090c10')
     .d3AlphaDecay(1)
     .d3VelocityDecay(1)
-    .cooldownTicks(0) // Zero CPU cost on load
-    .enableNodeDrag(true) // User can freely reposition nodes manually if desired
+    .cooldownTicks(0)
+    .enableNodeDrag(false) // Fix node positions, zero drag hijacking
+    .enablePanInteraction(false) // Disable left-click canvas pan!
+    .enableZoomInteraction(true) // Keep mouse wheel zoom
     .linkWidth(l => highlightLinks.has(l) ? 2.5 : 1)
     .linkColor(l => highlightLinks.has(l) ? 'rgba(255, 255, 255, 0.9)' : 'rgba(120, 130, 160, 0.18)')
     .linkDirectionalParticles(l => highlightLinks.has(l) ? 3 : 0)
     .linkDirectionalParticleSpeed(0.007)
     .onNodeHover(node => {
       hoveredNode = node
-      if (!selectedNode.value) {
+      if (!selectedNode.value && !isPanning && !isCtrlPressed) {
         updateHighlights(node)
       }
     })
-    .onNodeClick(node => {
-      // Strict click filter: ignore when zooming or panning
-      if (isWheeling || isPanning || isCtrlPressed || dragDistance > 5) return
+    .onNodeClick((node, event) => {
+      if (Date.now() < suppressClickUntil || isPanning || isCtrlPressed) return
       setSelectedNode(node)
+    })
+    .onBackgroundClick(() => {
+      if (Date.now() < suppressClickUntil || isPanning || isCtrlPressed) return
+      clearSelection()
     })
     .nodeCanvasObject((node, ctx, globalScale) => {
       if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) return
@@ -222,42 +225,50 @@ function updateHighlights(targetNode) {
 }
 
 function setSelectedNode(node) {
+  if (selectedNode.value && selectedNode.value.id === node.id) {
+    clearSelection()
+    return
+  }
   selectedNode.value = node
   updateHighlights(node)
 }
 
 function clearSelection() {
   selectedNode.value = null
-  updateHighlights(hoveredNode)
+  highlightNodes.clear()
+  highlightLinks.clear()
 }
 
 function setupNavigationControls(elem) {
-  // Prevent wheel scroll from triggering clicks
-  elem.addEventListener('wheel', () => {
-    isWheeling = true
-    clearTimeout(wheelTimer)
-    wheelTimer = setTimeout(() => { isWheeling = false }, 300)
-  }, { passive: true })
+  // Prevent browser autoscroll when middle-clicking
+  elem.addEventListener('auxclick', e => {
+    if (e.button === 1) e.preventDefault()
+  })
 
   elem.addEventListener('mousedown', e => {
-    dragDistance = 0
-    mouseDownPos = { x: e.clientX, y: e.clientY }
-
-    // Middle Click or Ctrl + Left Click
-    if (e.button === 1 || (e.button === 0 && e.ctrlKey)) {
+    // Middle Click (button 1) OR Ctrl + Left Click (button 0 + ctrlKey / isCtrlPressed)
+    if (e.button === 1 || (e.button === 0 && (e.ctrlKey || isCtrlPressed))) {
       isPanning = true
+      didPan = false
       panStart = { x: e.clientX, y: e.clientY }
       elem.classList.add('canvas-panning')
+      elem.classList.add('is-dragging')
       e.preventDefault()
+      e.stopPropagation()
     }
   })
 
   window.addEventListener('mousemove', e => {
-    dragDistance = Math.hypot(e.clientX - mouseDownPos.x, e.clientY - mouseDownPos.y)
-
     if (!isPanning || !graphInstance) return
+
     const dx = e.clientX - panStart.x
     const dy = e.clientY - panStart.y
+
+    if (Math.hypot(dx, dy) > 2) {
+      didPan = true
+      suppressClickUntil = Date.now() + 250
+    }
+
     panStart = { x: e.clientX, y: e.clientY }
 
     const currentPos = graphInstance.centerAt()
@@ -268,7 +279,11 @@ function setupNavigationControls(elem) {
   window.addEventListener('mouseup', () => {
     if (isPanning) {
       isPanning = false
+      elem.classList.remove('is-dragging')
       if (!isCtrlPressed) elem.classList.remove('canvas-panning')
+      if (didPan) {
+        suppressClickUntil = Date.now() + 250
+      }
     }
   })
 
@@ -278,10 +293,13 @@ function setupNavigationControls(elem) {
       elem.classList.add('canvas-panning')
     }
     if (e.key === 'Escape') {
-      searchQuery.value = ''
-      matchedQueryIds.clear()
-      searchMatchCount.value = 0
       clearSelection()
+      if (searchQuery.value) {
+        searchQuery.value = ''
+        matchedQueryIds.clear()
+        searchMatchCount.value = 0
+      }
+      document.getElementById('graph-quick-search')?.blur()
       return
     }
 
@@ -295,7 +313,10 @@ function setupNavigationControls(elem) {
   window.addEventListener('keyup', e => {
     if (e.key === 'Control') {
       isCtrlPressed = false
-      if (!isPanning) elem.classList.remove('canvas-panning')
+      if (!isPanning) {
+        elem.classList.remove('canvas-panning')
+        elem.classList.remove('is-dragging')
+      }
     }
   })
 }
@@ -627,11 +648,15 @@ function recenterCamera() {
   font-weight: 500;
 }
 
-:deep(.canvas-panning) {
+:deep(.canvas-panning),
+:deep(.canvas-panning canvas) {
   cursor: grab !important;
 }
 
-:deep(.canvas-panning:active) {
+:deep(.canvas-panning.is-dragging),
+:deep(.canvas-panning.is-dragging canvas),
+:deep(.canvas-panning:active),
+:deep(.canvas-panning canvas:active) {
   cursor: grabbing !important;
 }
 </style>
