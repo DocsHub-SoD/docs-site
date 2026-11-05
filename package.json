@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Comprehensive Community Documentation & API Reference for Shape of Dreams Modding",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "build:graph": "python scripts/build_graph.py",
+    "docs:dev": "npm run build:graph && vitepress dev docs",
+    "docs:build": "npm run build:graph && vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {

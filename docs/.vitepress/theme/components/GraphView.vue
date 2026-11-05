@@ -5,7 +5,9 @@ const container = ref(null)
 const loading = ref(true)
 const selectedNode = ref(null)
 const activeCategory = ref('All')
+const hideOrphans = ref(false)
 const searchQuery = ref('')
+const searchMatchCount = ref(0)
 
 const CATEGORY_COLORS = {
   'Combat & Abilities': '#ef4444',
@@ -19,24 +21,21 @@ const CATEGORY_COLORS = {
   'Miscellaneous & Utility': '#64748b'
 }
 
-// Angular positions for domain star layout (radians)
-const CATEGORY_ANGLES = {
-  'Combat & Abilities': 0,                     // East (0 deg)
-  'Actors & Entities': Math.PI * 0.25,        // SE (45 deg)
-  'Managers & Systems': Math.PI * 0.5,        // South (90 deg)
-  'Buffs & Statuses': Math.PI * 0.75,         // SW (135 deg)
-  'Items & Economy': Math.PI,                 // West (180 deg)
-  'User Interface': Math.PI * 1.25,           // NW (225 deg)
-  'Networking': Math.PI * 1.5,                // North (270 deg)
-  'Data & Core Math': Math.PI * 1.75,         // NE (315 deg)
-  'Miscellaneous & Utility': null             // Center
-}
-
 let graphInstance = null
-let fullNodes = []
-let fullLinks = []
-let isDragging = false
-let downPos = { x: 0, y: 0 }
+let rawData = null
+let hoveredNode = null
+let highlightNodes = new Set()
+let highlightLinks = new Set()
+let matchedQueryIds = new Set()
+
+// Input & gesture tracking
+let isCtrlPressed = false
+let isPanning = false
+let isWheeling = false
+let wheelTimer = null
+let panStart = { x: 0, y: 0 }
+let dragDistance = 0
+let mouseDownPos = { x: 0, y: 0 }
 
 onMounted(async () => {
   if (typeof window === 'undefined') return
@@ -52,18 +51,10 @@ onMounted(async () => {
   }
 
   const res = await fetch('/graph-data.json')
-  const json = await res.json()
-
-  // Save clean clones
-  fullNodes = json.nodes.map(n => ({ ...n }))
-  fullLinks = json.links.map(l => ({
-    source: typeof l.source === 'object' ? l.source.id : l.source,
-    target: typeof l.target === 'object' ? l.target.id : l.target,
-    type: l.type
-  }))
-
+  rawData = await res.json()
   loading.value = false
-  initRadialGraph()
+
+  initPrecomputedGraph()
 })
 
 onBeforeUnmount(() => {
@@ -71,219 +62,349 @@ onBeforeUnmount(() => {
 })
 
 function getFilteredData() {
-  let nodes = fullNodes.map(n => ({ ...n }))
+  if (!rawData) return { nodes: [], links: [] }
 
-  if (activeCategory.value !== 'All') {
-    nodes = nodes.filter(n => n.category === activeCategory.value)
-  }
+  let nodes = rawData.nodes
+    .filter(n => (!hideOrphans.value || !n.isOrphan))
+    .filter(n => (activeCategory.value === 'All' || n.category === activeCategory.value))
+    .map(n => ({
+      ...n,
+      // Fully precomputed frozen positions: ZERO physics compute on client!
+      fx: n.x,
+      fy: n.y
+    }))
 
-  if (searchQuery.value.trim()) {
-    const q = searchQuery.value.toLowerCase().trim()
-    nodes = nodes.filter(n => n.name.toLowerCase().includes(q))
-  }
-
-  const validIds = new Set(nodes.map(n => n.id))
-  const links = fullLinks
-    .filter(l => validIds.has(l.source) && validIds.has(l.target))
-    .map(l => ({ ...l }))
+  const nodeMap = new Set(nodes.map(n => n.id))
+  const links = rawData.links
+    .filter(l => {
+      const s = typeof l.source === 'object' ? l.source.id : l.source
+      const t = typeof l.target === 'object' ? l.target.id : l.target
+      return nodeMap.has(s) && nodeMap.has(t)
+    })
+    .map(l => ({
+      source: typeof l.source === 'object' ? l.source.id : l.source,
+      target: typeof l.target === 'object' ? l.target.id : l.target,
+      type: l.type
+    }))
 
   return { nodes, links }
 }
 
-function initRadialGraph() {
+function initPrecomputedGraph() {
   if (!container.value) return
 
   const elem = container.value
   elem.innerHTML = ''
 
-  const initialData = getFilteredData()
-  const CLUSTER_RADIUS = 280
+  window.addEventListener('resize', () => {
+    if (graphInstance) {
+      graphInstance.width(elem.clientWidth)
+      graphInstance.height(elem.clientHeight)
+    }
+  })
 
+  // 100% Deterministic Render: physics simulation is turned off completely!
   graphInstance = ForceGraph()(elem)
-    .graphData(initialData)
+    .width(elem.clientWidth)
+    .height(elem.clientHeight)
     .nodeId('id')
-    .nodeLabel(node => `${node.name}\n[${node.category}]`)
-    .nodeColor(node => node.color)
-    .nodeVal(node => Math.max(node.val, 3))
-    .linkColor(() => 'rgba(120, 130, 160, 0.25)')
-    .linkWidth(1.2)
+    .nodeLabel(n => `${n.name}\n[${n.category}]`)
+    .nodeColor(n => n.color)
+    .nodeVal(n => Math.max(n.val || 2.5, 2.5))
     .backgroundColor('#090c10')
-    .d3AlphaDecay(0.02)
-    .d3VelocityDecay(0.28)
-    .enableNodeDrag(true)
+    .cooldownTicks(0) // Zero CPU cost on load
+    .enableNodeDrag(true) // User can freely reposition nodes manually if desired
+    .linkWidth(l => highlightLinks.has(l) ? 2.5 : 1)
+    .linkColor(l => highlightLinks.has(l) ? 'rgba(255, 255, 255, 0.9)' : 'rgba(120, 130, 160, 0.18)')
+    .linkDirectionalParticles(l => highlightLinks.has(l) ? 3 : 0)
+    .linkDirectionalParticleSpeed(0.007)
+    .onNodeHover(node => {
+      hoveredNode = node
+      if (!selectedNode.value) {
+        updateHighlights(node)
+      }
+    })
+    .onNodeClick(node => {
+      // Strict click filter: ignore when zooming or panning
+      if (isWheeling || isPanning || isCtrlPressed || dragDistance > 5) return
+      setSelectedNode(node)
+    })
+    .nodeCanvasObject((node, ctx, globalScale) => {
+      if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) return
 
-  // Configure Radial Star Physics with D3 forces
-  if (window.d3) {
-    const d3 = window.d3
+      const isSearched = matchedQueryIds.size > 0
+      const isMatch = matchedQueryIds.has(node.id)
+      const isSelected = selectedNode.value === node
+      const isHighlighted = highlightNodes.has(node)
+      const isDimmed = (highlightNodes.size > 0 && !isHighlighted) || (isSearched && !isMatch)
 
-    // 1. Force Collide: Hard repulsion preventing nodes from overlapping
-    graphInstance.d3Force('collide', d3.forceCollide().radius(node => {
-      const r = Math.max(Math.sqrt(node.val || 3) * 2.2, 4)
-      return r + 5 // 5px padding between nodes
-    }))
+      const r = Math.max(Math.sqrt(node.val || 2.5) * 2.2, 3.5)
 
-    // 2. Link Force: Spring tension
-    graphInstance.d3Force('link', d3.forceLink().id(d => d.id).distance(35).strength(0.3))
+      ctx.beginPath()
+      ctx.arc(node.x, node.y, r, 0, 2 * Math.PI, false)
+      ctx.fillStyle = isDimmed ? 'rgba(45, 50, 60, 0.18)' : node.color
+      ctx.fill()
 
-    // 3. ManyBody: Moderate charge so clusters don't blow up
-    graphInstance.d3Force('charge', d3.forceManyBody().strength(-35))
+      // Wildcard Search Match: Neon Beacon
+      if (isMatch) {
+        ctx.lineWidth = 2.5
+        ctx.strokeStyle = '#38bdf8'
+        ctx.stroke()
 
-    // 4. Radial Star Attraction (X and Y sectoral anchors)
-    graphInstance.d3Force('radialX', d3.forceX(node => {
-      const angle = CATEGORY_ANGLES[node.category]
-      if (angle === null || angle === undefined) return 0
-      return Math.cos(angle) * CLUSTER_RADIUS
-    }).strength(0.25))
+        ctx.beginPath()
+        ctx.arc(node.x, node.y, r + 4, 0, 2 * Math.PI, false)
+        ctx.strokeStyle = 'rgba(56, 189, 248, 0.6)'
+        ctx.lineWidth = 1.2
+        ctx.stroke()
+      }
 
-    graphInstance.d3Force('radialY', d3.forceY(node => {
-      const angle = CATEGORY_ANGLES[node.category]
-      if (angle === null || angle === undefined) return 0
-      return Math.sin(angle) * CLUSTER_RADIUS
-    }).strength(0.25))
+      // Active Selection: Gold Halo
+      if (isSelected) {
+        ctx.lineWidth = 2.8
+        ctx.strokeStyle = '#fbbf24'
+        ctx.stroke()
+
+        ctx.beginPath()
+        ctx.arc(node.x, node.y, r + 5, 0, 2 * Math.PI, false)
+        ctx.strokeStyle = 'rgba(251, 191, 36, 0.7)'
+        ctx.lineWidth = 1.5
+        ctx.stroke()
+      } else if (isHighlighted) {
+        ctx.lineWidth = 1.8
+        ctx.strokeStyle = '#fff'
+        ctx.stroke()
+      }
+
+      // Type Label
+      if ((globalScale > 1.2 || node.val > 7 || isMatch || isSelected) && !isDimmed) {
+        const fontSize = Math.max(9 / globalScale, 3.8)
+        ctx.font = `${isMatch || isSelected ? 'bold ' : ''}${fontSize}px sans-serif`
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'top'
+        ctx.fillStyle = isSelected ? '#fbbf24' : (isMatch ? '#38bdf8' : 'rgba(240, 240, 250, 0.9)')
+        ctx.fillText(node.name, node.x, node.y + r + 2.5)
+      }
+    })
+
+  setupNavigationControls(elem)
+  applyDataToGraph()
+}
+
+function applyDataToGraph() {
+  if (!graphInstance) return
+  const data = getFilteredData()
+  graphInstance.graphData(data)
+  setTimeout(() => {
+    graphInstance?.zoomToFit(500, 40)
+  }, 100)
+}
+
+function updateHighlights(targetNode) {
+  highlightNodes.clear()
+  highlightLinks.clear()
+
+  if (targetNode) {
+    highlightNodes.add(targetNode)
+    const data = graphInstance.graphData()
+    data.links.forEach(l => {
+      const s = typeof l.source === 'object' ? l.source.id : l.source
+      const t = typeof l.target === 'object' ? l.target.id : l.target
+      if (s === targetNode.id || t === targetNode.id) {
+        highlightLinks.add(l)
+        highlightNodes.add(typeof l.source === 'object' ? l.source : data.nodes.find(n => n.id === s))
+        highlightNodes.add(typeof l.target === 'object' ? l.target : data.nodes.find(n => n.id === t))
+      }
+    })
   }
-
-  // Canvas drawing
-  graphInstance.nodeCanvasObject((node, ctx, globalScale) => {
-    if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) return
-
-    const r = Math.max(Math.sqrt(node.val || 3) * 2.2, 3.5)
-    ctx.beginPath()
-    ctx.arc(node.x, node.y, r, 0, 2 * Math.PI, false)
-    ctx.fillStyle = node.color
-    ctx.fill()
-
-    // Outer ring for major hubs
-    if (node.val > 8) {
-      ctx.lineWidth = 1.2
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)'
-      ctx.stroke()
-    }
-
-    // Zoomed-in label
-    if (globalScale > 1.2 || node.val > 7) {
-      const fontSize = Math.max(9 / globalScale, 3.8)
-      ctx.font = `${fontSize}px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
-      ctx.textAlign = 'center'
-      ctx.textBaseline = 'top'
-      ctx.fillStyle = 'rgba(245, 245, 250, 0.9)'
-      ctx.fillText(node.name, node.x, node.y + r + 2.5)
-    }
-  })
-
-  // Safe Drag vs Click Detection
-  elem.addEventListener('pointerdown', e => {
-    isDragging = false
-    downPos = { x: e.clientX, y: e.clientY }
-  })
-
-  elem.addEventListener('pointermove', e => {
-    if (Math.hypot(e.clientX - downPos.x, e.clientY - downPos.y) > 4) {
-      isDragging = true
-    }
-  })
-
-  graphInstance.onNodeClick(node => {
-    if (isDragging) return
-    selectedNode.value = node
-  })
-
-  // Fit camera after initial layout
-  setTimeout(() => {
-    graphInstance?.zoomToFit(500, 30)
-  }, 1000)
 }
 
-function applyFilter(cat) {
+function setSelectedNode(node) {
+  selectedNode.value = node
+  updateHighlights(node)
+}
+
+function clearSelection() {
+  selectedNode.value = null
+  updateHighlights(hoveredNode)
+}
+
+function setupNavigationControls(elem) {
+  // Prevent wheel scroll from triggering clicks
+  elem.addEventListener('wheel', () => {
+    isWheeling = true
+    clearTimeout(wheelTimer)
+    wheelTimer = setTimeout(() => { isWheeling = false }, 300)
+  }, { passive: true })
+
+  elem.addEventListener('mousedown', e => {
+    dragDistance = 0
+    mouseDownPos = { x: e.clientX, y: e.clientY }
+
+    // Middle Click or Ctrl + Left Click
+    if (e.button === 1 || (e.button === 0 && e.ctrlKey)) {
+      isPanning = true
+      panStart = { x: e.clientX, y: e.clientY }
+      elem.classList.add('canvas-panning')
+      e.preventDefault()
+    }
+  })
+
+  window.addEventListener('mousemove', e => {
+    dragDistance = Math.hypot(e.clientX - mouseDownPos.x, e.clientY - mouseDownPos.y)
+
+    if (!isPanning || !graphInstance) return
+    const dx = e.clientX - panStart.x
+    const dy = e.clientY - panStart.y
+    panStart = { x: e.clientX, y: e.clientY }
+
+    const currentPos = graphInstance.centerAt()
+    const zoom = graphInstance.zoom()
+    graphInstance.centerAt(currentPos.x - dx / zoom, currentPos.y - dy / zoom)
+  })
+
+  window.addEventListener('mouseup', () => {
+    if (isPanning) {
+      isPanning = false
+      if (!isCtrlPressed) elem.classList.remove('canvas-panning')
+    }
+  })
+
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Control') {
+      isCtrlPressed = true
+      elem.classList.add('canvas-panning')
+    }
+    if (e.key === 'Escape') {
+      searchQuery.value = ''
+      matchedQueryIds.clear()
+      searchMatchCount.value = 0
+      clearSelection()
+      return
+    }
+
+    // Direct search typing on keyboard without clicking input
+    const searchEl = document.getElementById('graph-quick-search')
+    if (document.activeElement !== searchEl && e.key.length === 1 && !e.ctrlKey && !e.altKey && !e.metaKey) {
+      searchEl?.focus()
+    }
+  })
+
+  window.addEventListener('keyup', e => {
+    if (e.key === 'Control') {
+      isCtrlPressed = false
+      if (!isPanning) elem.classList.remove('canvas-panning')
+    }
+  })
+}
+
+function onSearchInput() {
+  const q = searchQuery.value.toLowerCase().trim()
+  matchedQueryIds.clear()
+
+  if (!q) {
+    searchMatchCount.value = 0
+  } else {
+    rawData.nodes.forEach(n => {
+      if (n.name.toLowerCase().includes(q)) {
+        matchedQueryIds.add(n.id)
+      }
+    })
+    searchMatchCount.value = matchedQueryIds.size
+  }
+}
+
+function selectCategory(cat) {
   activeCategory.value = cat
-  if (!graphInstance) return
-
-  const data = getFilteredData()
-  graphInstance.graphData(data)
-  setTimeout(() => {
-    graphInstance?.zoomToFit(400, 30)
-  }, 250)
+  applyDataToGraph()
 }
 
-function handleSearch() {
-  if (!graphInstance) return
-  const data = getFilteredData()
-  graphInstance.graphData(data)
-  setTimeout(() => {
-    graphInstance?.zoomToFit(400, 30)
-  }, 250)
+function toggleOrphans() {
+  hideOrphans.value = !hideOrphans.value
+  applyDataToGraph()
 }
 
-function resetView() {
-  activeCategory.value = 'All'
-  searchQuery.value = ''
-  applyFilter('All')
+function recenterCamera() {
+  graphInstance?.zoomToFit(500, 40)
 }
 </script>
 
 <template>
-  <div class="graph-layout">
-    <!-- Header -->
-    <div class="header-box">
-      <div class="header-top">
-        <div>
-          <h1 class="header-title">Radial Domain Dependency Graph</h1>
-          <p class="header-subtitle">
-            Visualizing 897 classes clustered radially by domain. Drag nodes, scroll to zoom, click to inspect.
-          </p>
-        </div>
-
-        <div class="action-tools">
-          <input 
-            v-model="searchQuery" 
-            type="text" 
-            placeholder="Search class..." 
-            class="search-input"
-            @input="handleSearch"
-          />
-          <button class="reset-btn" @click="resetView">Reset View</button>
-        </div>
+  <div class="graph-page-wrapper">
+    <!-- Top Bar -->
+    <div class="graph-top-row">
+      <div class="title-meta">
+        <h1 class="graph-heading">Interactive Topology Map</h1>
+        <p class="graph-subheading">
+          Hierarchical Constrained Radial Domain Layout (HCRDL). Precomputed coordinates, zero physics lag.
+        </p>
       </div>
 
-      <!-- Domain Sector Pills -->
-      <div class="domain-pills">
+      <!-- Quick Search & Actions -->
+      <div class="tools-bar">
+        <div class="search-box-wrap">
+          <input 
+            id="graph-quick-search"
+            v-model="searchQuery" 
+            type="text" 
+            placeholder="Type anywhere to search..." 
+            class="search-bar"
+            @input="onSearchInput"
+          />
+          <span class="esc-tag">Esc</span>
+        </div>
+
         <button 
-          :class="['domain-pill', { active: activeCategory === 'All' }]" 
-          @click="applyFilter('All')"
+          :class="['orphan-toggle', { active: hideOrphans }]" 
+          @click="toggleOrphans"
         >
-          All Domains (897)
+          {{ hideOrphans ? 'Show All (incl. Orphans)' : 'Hide Outer Orphans' }}
         </button>
-        <button 
-          v-for="(color, cat) in CATEGORY_COLORS" 
-          :key="cat"
-          :class="['domain-pill', { active: activeCategory === cat }]"
-          :style="{ '--c': color }"
-          @click="applyFilter(cat)"
-        >
-          <span class="pill-dot" :style="{ background: color }"></span>
-          {{ cat }}
-        </button>
+
+        <button class="reset-camera-btn" @click="recenterCamera">Recenter</button>
       </div>
     </div>
 
-    <!-- Canvas Frame -->
-    <div class="viewport-box">
-      <div v-if="loading" class="loading-state">
-        Compiling Radial Star Layout...
-      </div>
-      <div ref="container" class="mount-target"></div>
+    <!-- Category Pills -->
+    <div class="domain-pills-bar">
+      <button 
+        :class="['domain-pill', { active: activeCategory === 'All' }]" 
+        @click="selectCategory('All')"
+      >
+        All Domains (897)
+      </button>
+      <button 
+        v-for="(color, cat) in CATEGORY_COLORS" 
+        :key="cat"
+        :class="['domain-pill', { active: activeCategory === cat }]"
+        @click="selectCategory(cat)"
+      >
+        <span class="color-badge" :style="{ background: color }"></span>
+        {{ cat }}
+      </button>
+      <span v-if="searchMatchCount > 0" class="search-match-badge">
+        Matches: {{ searchMatchCount }}
+      </span>
+    </div>
 
-      <!-- Selected Node Popover -->
-      <div v-if="selectedNode" class="node-popover">
-        <div class="popover-top">
-          <span class="domain-badge" :style="{ background: selectedNode.color }">
+    <!-- Canvas Frame -->
+    <div class="canvas-viewport">
+      <div v-if="loading" class="preloader">
+        Rendering Precomputed Map...
+      </div>
+      <div ref="container" class="canvas-mount" tabindex="0"></div>
+
+      <!-- Selected Node Card -->
+      <div v-if="selectedNode" class="node-flyout-card">
+        <div class="flyout-header">
+          <span class="flyout-badge" :style="{ background: selectedNode.color }">
             {{ selectedNode.category }}
           </span>
-          <button class="close-popover" @click="selectedNode = null">✕</button>
+          <button class="flyout-close" @click="clearSelection">✕</button>
         </div>
-        <h3 class="popover-name">{{ selectedNode.name }}</h3>
-        <p class="popover-info">Documented members: <strong>{{ selectedNode.methods }}</strong></p>
-        <a :href="`/api/${selectedNode.id}`" class="popover-btn">
-          View Class API →
+        <h3 class="flyout-title">{{ selectedNode.name }}</h3>
+        <p class="flyout-detail">Documented members: <strong>{{ selectedNode.val || 'N/A' }}</strong></p>
+        <a :href="`/api/${selectedNode.id}`" class="flyout-link">
+          Open Documentation Page →
         </a>
       </div>
     </div>
@@ -291,7 +412,7 @@ function resetView() {
 </template>
 
 <style scoped>
-.graph-layout {
+.graph-page-wrapper {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 90px);
@@ -299,11 +420,7 @@ function resetView() {
   box-sizing: border-box;
 }
 
-.header-box {
-  margin-bottom: 0.75rem;
-}
-
-.header-top {
+.graph-top-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -312,41 +429,59 @@ function resetView() {
   flex-wrap: wrap;
 }
 
-.header-title {
+.graph-heading {
   margin: 0;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.header-subtitle {
+.graph-subheading {
   margin: 0.2rem 0 0;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--vp-c-text-2);
 }
 
-.action-tools {
+.tools-bar {
   display: flex;
   gap: 0.4rem;
+  align-items: center;
 }
 
-.search-input {
-  padding: 0.35rem 0.7rem;
+.search-box-wrap {
+  position: relative;
+}
+
+.search-bar {
+  padding: 0.35rem 1.8rem 0.35rem 0.75rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
   background: var(--vp-c-bg-soft);
   color: var(--vp-c-text-1);
   font-size: 0.8rem;
-  width: 170px;
+  width: 190px;
 }
 
-.search-input:focus {
+.search-bar:focus {
   outline: none;
   border-color: var(--vp-c-brand-1);
 }
 
-.reset-btn {
-  padding: 0.35rem 0.7rem;
+.esc-tag {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.62rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  background: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-2);
+  pointer-events: none;
+}
+
+.orphan-toggle, .reset-camera-btn {
+  padding: 0.35rem 0.75rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
   background: var(--vp-c-bg-soft);
@@ -356,15 +491,17 @@ function resetView() {
   transition: all 0.15s ease;
 }
 
-.reset-btn:hover {
-  background: var(--vp-c-bg-mute);
+.orphan-toggle.active {
   border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
 }
 
-.domain-pills {
+.domain-pills-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  align-items: center;
 }
 
 .domain-pill {
@@ -372,7 +509,7 @@ function resetView() {
   align-items: center;
   gap: 0.35rem;
   padding: 0.2rem 0.55rem;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   border-radius: 9999px;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
@@ -386,13 +523,20 @@ function resetView() {
   background: var(--vp-c-bg-mute);
 }
 
-.pill-dot {
+.color-badge {
   width: 7px;
   height: 7px;
   border-radius: 50%;
 }
 
-.viewport-box {
+.search-match-badge {
+  font-size: 0.75rem;
+  color: #38bdf8;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.canvas-viewport {
   position: relative;
   flex: 1;
   min-height: 520px;
@@ -402,12 +546,13 @@ function resetView() {
   overflow: hidden;
 }
 
-.mount-target {
+.canvas-mount {
   width: 100%;
   height: 100%;
+  outline: none;
 }
 
-.loading-state {
+.preloader {
   position: absolute;
   inset: 0;
   display: flex;
@@ -417,28 +562,28 @@ function resetView() {
   font-size: 0.9rem;
 }
 
-.node-popover {
+.node-flyout-card {
   position: absolute;
   bottom: 1.25rem;
   right: 1.25rem;
   width: 270px;
   padding: 1.15rem;
   border-radius: 8px;
-  background: rgba(18, 22, 30, 0.94);
+  background: rgba(18, 22, 30, 0.95);
   border: 1px solid var(--vp-c-divider);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
-.popover-top {
+.flyout-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.4rem;
 }
 
-.domain-badge {
+.flyout-badge {
   font-size: 0.68rem;
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
@@ -446,7 +591,7 @@ function resetView() {
   font-weight: 600;
 }
 
-.close-popover {
+.flyout-close {
   background: none;
   border: none;
   color: var(--vp-c-text-2);
@@ -454,20 +599,20 @@ function resetView() {
   font-size: 0.85rem;
 }
 
-.popover-name {
+.flyout-title {
   margin: 0.2rem 0;
   font-size: 1.05rem;
   font-weight: 600;
   color: #fff;
 }
 
-.popover-info {
+.flyout-detail {
   margin: 0.2rem 0 0.8rem;
   font-size: 0.8rem;
   color: var(--vp-c-text-2);
 }
 
-.popover-btn {
+.flyout-link {
   display: block;
   text-align: center;
   padding: 0.45rem 0.75rem;
@@ -477,5 +622,13 @@ function resetView() {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+:deep(.canvas-panning) {
+  cursor: grab !important;
+}
+
+:deep(.canvas-panning:active) {
+  cursor: grabbing !important;
 }
 </style>
