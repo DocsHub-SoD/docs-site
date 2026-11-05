@@ -108,10 +108,12 @@ function initPrecomputedGraph() {
     .width(elem.clientWidth)
     .height(elem.clientHeight)
     .nodeId('id')
-    .nodeLabel(n => `${n.name}\n[${n.category}]`)
+    .nodeLabel(n => `${n.name}\n[${n.category}] (${n.isOrphan ? 'Orphan' : 'Connected'})`)
     .nodeColor(n => n.color)
     .nodeVal(n => Math.max(n.val || 2.5, 2.5))
     .backgroundColor('#090c10')
+    .d3AlphaDecay(1)
+    .d3VelocityDecay(1)
     .cooldownTicks(0) // Zero CPU cost on load
     .enableNodeDrag(true) // User can freely reposition nodes manually if desired
     .linkWidth(l => highlightLinks.has(l) ? 2.5 : 1)
@@ -134,8 +136,8 @@ function initPrecomputedGraph() {
 
       const isSearched = matchedQueryIds.size > 0
       const isMatch = matchedQueryIds.has(node.id)
-      const isSelected = selectedNode.value === node
-      const isHighlighted = highlightNodes.has(node)
+      const isSelected = selectedNode.value && selectedNode.value.id === node.id
+      const isHighlighted = highlightNodes.has(node.id)
       const isDimmed = (highlightNodes.size > 0 && !isHighlighted) || (isSearched && !isMatch)
 
       const r = Math.max(Math.sqrt(node.val || 2.5) * 2.2, 3.5)
@@ -175,13 +177,14 @@ function initPrecomputedGraph() {
         ctx.stroke()
       }
 
-      // Type Label
-      if ((globalScale > 1.2 || node.val > 7 || isMatch || isSelected) && !isDimmed) {
-        const fontSize = Math.max(9 / globalScale, 3.8)
-        ctx.font = `${isMatch || isSelected ? 'bold ' : ''}${fontSize}px sans-serif`
+      // Type Label: only on hover, selection, search match, or deep zoom
+      const shouldShowLabel = isHighlighted || isSelected || isMatch || globalScale > 2.8
+      if (shouldShowLabel && !isDimmed) {
+        const fontSize = Math.max(10 / globalScale, 4.5)
+        ctx.font = `${isMatch || isSelected ? '600 ' : ''}${fontSize}px -apple-system, sans-serif`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'top'
-        ctx.fillStyle = isSelected ? '#fbbf24' : (isMatch ? '#38bdf8' : 'rgba(240, 240, 250, 0.9)')
+        ctx.fillStyle = isSelected ? '#fbbf24' : (isMatch ? '#38bdf8' : (isHighlighted ? '#ffffff' : 'rgba(240, 240, 250, 0.9)'))
         ctx.fillText(node.name, node.x, node.y + r + 2.5)
       }
     })
@@ -204,15 +207,15 @@ function updateHighlights(targetNode) {
   highlightLinks.clear()
 
   if (targetNode) {
-    highlightNodes.add(targetNode)
+    highlightNodes.add(targetNode.id)
     const data = graphInstance.graphData()
     data.links.forEach(l => {
       const s = typeof l.source === 'object' ? l.source.id : l.source
       const t = typeof l.target === 'object' ? l.target.id : l.target
       if (s === targetNode.id || t === targetNode.id) {
         highlightLinks.add(l)
-        highlightNodes.add(typeof l.source === 'object' ? l.source : data.nodes.find(n => n.id === s))
-        highlightNodes.add(typeof l.target === 'object' ? l.target : data.nodes.find(n => n.id === t))
+        highlightNodes.add(s)
+        highlightNodes.add(t)
       }
     })
   }

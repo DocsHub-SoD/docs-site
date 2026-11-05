@@ -18,6 +18,7 @@ DATA_REPO_DIR = REPO_ROOT.parent / "docs-data"
 
 TAXONOMY_PATH = DATA_REPO_DIR / "api-taxonomy.json"
 GRAPH_INPUT_PATH = DATA_REPO_DIR / "api-graph.json"
+TEMPLATE_PATH = REPO_ROOT / "scripts" / "template.json"
 
 
 def compute_inputs_hash():
@@ -54,8 +55,17 @@ def run():
     sys.path.append(str(Path(__file__).resolve().parent))
     try:
         import compiler
+        snap_all = None
+        if TEMPLATE_PATH.exists():
+            snap_all = json.loads(TEMPLATE_PATH.read_text(encoding="utf-8"))
+
         raw_graph = json.loads(GRAPH_DATA_PATH.read_text(encoding="utf-8"))
-        compiled = compiler.compile_graph_topology(raw_graph, designated_hub="Miscellaneous & Utility")
+        compiled = compiler.compile_graph_topology(
+            raw_graph,
+            snap_all=snap_all,
+            designated_hub="Miscellaneous & Utility",
+            air_gap_r=340.0
+        )
         compiled["legend"] = raw_graph.get("legend", {})
 
         GRAPH_DATA_PATH.write_text(json.dumps(compiled, separators=(',', ':'), ensure_ascii=False), encoding="utf-8")
