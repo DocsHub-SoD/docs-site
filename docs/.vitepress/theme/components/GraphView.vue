@@ -8,6 +8,7 @@ const activeCategory = ref('All')
 const hideOrphans = ref(false)
 const searchQuery = ref('')
 const searchMatchCount = ref(0)
+const currentZoom = ref(1.0)
 
 const CATEGORY_COLORS = {
   'Combat & Abilities': '#ef4444',
@@ -125,6 +126,9 @@ function initPrecomputedGraph() {
     .enableNodeDrag(true) // User can reposition nodes if desired
     .enablePanInteraction(false) // Disable left-click canvas pan
     .enableZoomInteraction(true) // Keep mouse wheel zoom
+    .onZoom(({ k }) => {
+      currentZoom.value = Math.max(0.3, Math.min(4.5, Math.round(k * 100) / 100))
+    })
     .onNodeDrag(node => {
       isNodeDragging = true
       suppressClickUntil = Date.now() + 400
@@ -137,19 +141,20 @@ function initPrecomputedGraph() {
     })
     .linkWidth(l => {
       if (highlightLinks.has(l)) return 2.5
-      if (selectedNode.value) return 0.5
+      if (selectedNode.value || hoveredNode) return 0.5
       return 0.85
     })
     .linkColor(l => {
       if (highlightLinks.has(l)) return 'rgba(255, 255, 255, 0.95)'
-      if (selectedNode.value) return 'rgba(100, 115, 140, 0.025)' // Super subtle when a node is selected
+      if (selectedNode.value || (hoveredNode && !isPanning)) return 'rgba(70, 80, 100, 0.025)' // Super subtle when a node is selected or hovered
       return 'rgba(120, 130, 160, 0.15)'
     })
     .linkDirectionalParticles(l => highlightLinks.has(l) ? 3 : 0)
     .linkDirectionalParticleSpeed(0.007)
     .onNodeHover(node => {
+      if (isPanning || isNodeDragging) return
       hoveredNode = node
-      if (!selectedNode.value && !isPanning && !isCtrlPressed && !isNodeDragging) {
+      if (!selectedNode.value) {
         updateHighlights(node)
         triggerRedraw()
       }
@@ -173,6 +178,18 @@ function initPrecomputedGraph() {
     })
     .nodeCanvasObject((node, ctx, globalScale) => {
       if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) return
+
+      // Viewport Frustum Culling: skip drawing off-screen nodes for 60fps performance
+      const center = graphInstance?.centerAt?.()
+      const w = container.value ? container.value.clientWidth : 1000
+      const h = container.value ? container.value.clientHeight : 700
+      const halfW = w / (2 * globalScale) + 60
+      const halfH = h / (2 * globalScale) + 60
+      if (center) {
+        if (Math.abs(node.x - center.x) > halfW || Math.abs(node.y - center.y) > halfH) {
+          return
+        }
+      }
 
       const isSearched = matchedQueryIds.size > 0
       const isMatch = matchedQueryIds.has(node.id)
@@ -217,14 +234,21 @@ function initPrecomputedGraph() {
         ctx.stroke()
       }
 
-      // Type Label: only on hover, selection, search match, or deep zoom
-      const shouldShowLabel = isHighlighted || isSelected || isMatch || globalScale > 2.8
+      // Hierarchical LOD Labeling:
+      // High-importance nodes (val=16) appear earlier (zoom >= 1.0)
+      // Lower-importance nodes gradually appear as user zooms in closer
+      // Deep zoom (>= 3.2x) shows all nodes without overlap
+      // Hover, selection, or search matches ALWAYS show label
+      const minScaleRequired = Math.max(1.0, 3.8 - (node.val || 2.5) * 0.18)
+      const isLodVisible = globalScale >= minScaleRequired
+      const shouldShowLabel = isHighlighted || isSelected || isMatch || isLodVisible
+
       if (shouldShowLabel && !isDimmed) {
         const fontSize = Math.max(10 / globalScale, 4.5)
         ctx.font = `${isMatch || isSelected ? '600 ' : ''}${fontSize}px -apple-system, sans-serif`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'top'
-        ctx.fillStyle = isSelected ? '#fbbf24' : (isMatch ? '#38bdf8' : (isHighlighted ? '#ffffff' : 'rgba(240, 240, 250, 0.9)'))
+        ctx.fillStyle = isSelected ? '#fbbf24' : (isMatch ? '#38bdf8' : (isHighlighted ? '#ffffff' : 'rgba(235, 240, 255, 0.9)'))
         ctx.fillText(node.name, node.x, node.y + r + 2.5)
       }
     })
@@ -247,6 +271,8 @@ function applyDataToGraph(shouldRecenter = false) {
 function triggerRedraw() {
   if (graphInstance) {
     graphInstance.nodeColor(graphInstance.nodeColor())
+    graphInstance.linkColor(graphInstance.linkColor())
+    graphInstance.linkWidth(graphInstance.linkWidth())
   }
 }
 
@@ -301,6 +327,12 @@ function setupNavigationControls(elem) {
       suppressClickUntil = Date.now() + 600
       panStart = { x: e.clientX, y: e.clientY }
       elem.classList.add('canvas-panning', 'is-dragging')
+      if (!selectedNode.value) {
+        hoveredNode = null
+        highlightNodes.clear()
+        highlightLinks.clear()
+        triggerRedraw()
+      }
       e.preventDefault()
     }
   }
@@ -333,6 +365,12 @@ function setupNavigationControls(elem) {
       suppressClickUntil = Date.now() + 400
       elem.classList.remove('is-dragging')
       if (!isCtrlPressed) elem.classList.remove('canvas-panning')
+      if (!selectedNode.value) {
+        hoveredNode = null
+        highlightNodes.clear()
+        highlightLinks.clear()
+        triggerRedraw()
+      }
       if (e.button === 1) {
         e.preventDefault()
       }
@@ -406,6 +444,33 @@ function toggleOrphans() {
 function recenterCamera() {
   graphInstance?.zoomToFit(500, 40)
 }
+
+function zoomIn() {
+  if (!graphInstance) return
+  const next = Math.min(4.5, currentZoom.value * 1.3)
+  graphInstance.zoom(next, 250)
+  currentZoom.value = Math.round(next * 100) / 100
+}
+
+function zoomOut() {
+  if (!graphInstance) return
+  const next = Math.max(0.3, currentZoom.value / 1.3)
+  graphInstance.zoom(next, 250)
+  currentZoom.value = Math.round(next * 100) / 100
+}
+
+function zoomReset() {
+  if (!graphInstance) return
+  graphInstance.zoom(1.0, 300)
+  currentZoom.value = 1.0
+}
+
+function onZoomSlider(e) {
+  if (!graphInstance) return
+  const val = parseFloat(e.target.value)
+  currentZoom.value = val
+  graphInstance.zoom(val)
+}
 </script>
 
 <template>
@@ -472,6 +537,111 @@ function recenterCamera() {
         Rendering Precomputed Map...
       </div>
       <div ref="container" class="canvas-mount" tabindex="0"></div>
+
+      <!-- Help / Controls Info Button (Top-Right) -->
+      <div class="canvas-info-control">
+        <button class="info-btn" title="Navigation Controls" @click.prevent.stop>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </button>
+        <div class="info-tooltip-card">
+          <div class="info-header">Controls & Navigation</div>
+          
+          <div class="control-row">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 32" width="16" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="28" rx="10"></rect>
+                <path d="M12 2 L12 13"></path>
+                <path d="M2 13 L22 13"></path>
+                <path d="M2 12 Q2 2 12 2 L12 13 L2 13 Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="control-desc">
+              <span class="control-key">LMB</span>
+              <span class="control-text">Select node & view details</span>
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 32" width="16" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="28" rx="10"></rect>
+                <path d="M12 2 L12 6"></path>
+                <path d="M12 14 L12 13"></path>
+                <rect x="10" y="6" width="4" height="8" rx="2" fill="currentColor"></rect>
+              </svg>
+            </div>
+            <div class="control-desc">
+              <div>
+                <span class="control-key">MMB</span>
+                <span class="control-sep">or</span>
+                <kbd class="kbd-badge">Ctrl</kbd> + <span class="control-key">LMB</span>
+              </div>
+              <div class="control-sub">Pan canvas</div>
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 32" width="16" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="28" rx="10"></rect>
+                <rect x="10" y="6" width="4" height="8" rx="2" stroke="currentColor"></rect>
+                <path d="M12 8 L12 12" stroke-width="2"></path>
+              </svg>
+            </div>
+            <div class="control-desc">
+              <span class="control-key">Wheel</span>
+              <span class="control-text">Zoom in / out</span>
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3"></path>
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v7"></path>
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                <path d="M6 14v-1.5a1.5 1.5 0 0 0-3 0V17a7 7 0 0 0 7 7h3a7 7 0 0 0 7-7v-6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v1"></path>
+              </svg>
+            </div>
+            <div class="control-desc">
+              <span class="control-key">Drag Node</span>
+              <span class="control-text">Reposition node</span>
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="icon-wrap">
+              <kbd class="kbd-badge">Esc</kbd>
+            </div>
+            <div class="control-desc">
+              <span class="control-text">Deselect / Clear search</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical Zoom Control (Bottom-Right) -->
+      <div class="canvas-zoom-control">
+        <button class="zoom-btn" title="Zoom In" @click="zoomIn">+</button>
+        <div class="zoom-slider-wrap">
+          <input 
+            type="range" 
+            orient="vertical" 
+            class="zoom-slider" 
+            min="0.3" 
+            max="4.5" 
+            step="0.05" 
+            :value="currentZoom" 
+            @input="onZoomSlider" 
+          />
+        </div>
+        <button class="zoom-btn" title="Zoom Out" @click="zoomOut">−</button>
+        <button class="zoom-reset-btn" title="Reset Zoom (1:1)" @click="zoomReset">1:1</button>
+      </div>
 
       <!-- Selected Node Card -->
       <div v-if="selectedNode" class="node-flyout-card">
@@ -645,7 +815,7 @@ function recenterCamera() {
 .node-flyout-card {
   position: absolute;
   bottom: 1.25rem;
-  right: 1.25rem;
+  left: 1.25rem;
   width: 270px;
   padding: 1.15rem;
   border-radius: 8px;
@@ -653,7 +823,7 @@ function recenterCamera() {
   border: 1px solid var(--vp-c-divider);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  z-index: 10;
+  z-index: 15;
 }
 
 .flyout-header {
@@ -702,6 +872,210 @@ function recenterCamera() {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+/* --- Controls Help Tooltip (Top Right) --- */
+.canvas-info-control {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 25;
+}
+
+.info-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: rgba(22, 27, 34, 0.85);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  backdrop-filter: blur(8px);
+  transition: all 0.15s ease;
+}
+
+.canvas-info-control:hover .info-btn {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  background: rgba(30, 38, 50, 0.95);
+}
+
+.info-tooltip-card {
+  position: absolute;
+  top: 0;
+  right: 42px;
+  width: 250px;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  background: rgba(18, 22, 30, 0.96);
+  border: 1px solid var(--vp-c-divider);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(6px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.canvas-info-control:hover .info-tooltip-card {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.info-header {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--vp-c-text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon-wrap {
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c9d1d9;
+}
+
+.control-desc {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-1);
+  line-height: 1.35;
+}
+
+.control-key {
+  font-weight: 600;
+  color: #fff;
+}
+
+.control-sep {
+  color: var(--vp-c-text-2);
+  font-size: 0.72rem;
+  margin: 0 0.25rem;
+}
+
+.control-sub {
+  font-size: 0.7rem;
+  color: var(--vp-c-text-2);
+}
+
+.control-text {
+  color: var(--vp-c-text-2);
+}
+
+.kbd-badge {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.68rem;
+  font-family: var(--vp-font-family-mono, monospace);
+  font-weight: 600;
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #e6edf3;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* --- Vertical Zoom Dragbar (Bottom Right) --- */
+.canvas-zoom-control {
+  position: absolute;
+  bottom: 16px;
+  right: 14px;
+  z-index: 20;
+  width: 32px;
+  padding: 4px 0;
+  border-radius: 8px;
+  background: rgba(22, 27, 34, 0.85);
+  border: 1px solid var(--vp-c-divider);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.zoom-btn {
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  color: var(--vp-c-text-1);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s ease;
+}
+
+.zoom-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--vp-c-brand-1);
+}
+
+.zoom-slider-wrap {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 0;
+}
+
+.zoom-slider {
+  writing-mode: vertical-lr;
+  direction: rtl;
+  -webkit-appearance: slider-vertical;
+  appearance: slider-vertical;
+  width: 8px;
+  height: 76px;
+  accent-color: var(--vp-c-brand-1);
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.zoom-slider:hover {
+  opacity: 1;
+}
+
+.zoom-reset-btn {
+  width: 26px;
+  height: 18px;
+  border: none;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  font-size: 0.62rem;
+  font-family: monospace;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s ease;
+}
+
+.zoom-reset-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--vp-c-brand-1);
 }
 
 :deep(.canvas-panning),
