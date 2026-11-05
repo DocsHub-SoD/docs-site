@@ -1,10 +1,12 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref } from 'vue'
 
 const container = ref(null)
 const loading = ref(true)
 const selectedNode = ref(null)
 const filterCategory = ref('All')
+const hideIsolated = ref(true)
+const searchQuery = ref('')
 
 const CATEGORY_COLORS = {
   'Combat & Abilities': '#ef4444',
@@ -19,7 +21,9 @@ const CATEGORY_COLORS = {
 }
 
 let graphInstance = null
-let fullData = null
+let rawData = null
+let isDraggingCanvas = false
+let pointerDownPos = { x: 0, y: 0 }
 
 onMounted(async () => {
   if (typeof window === 'undefined') return
@@ -35,154 +39,314 @@ onMounted(async () => {
   }
 
   const res = await fetch('/graph-data.json')
-  fullData = await res.json()
+  rawData = await res.json()
   loading.value = false
 
-  renderGraph(fullData)
+  initGraph()
 })
 
-function renderGraph(data) {
+onBeforeUnmount(() => {
+  if (graphInstance) {
+    graphInstance._destructor?.()
+  }
+})
+
+function getFilteredData() {
+  if (!rawData) return { nodes: [], links: [] }
+
+  // Set of IDs that have at least one link
+  const connectedIds = new Set()
+  rawData.links.forEach(l => {
+    connectedIds.add(typeof l.source === 'object' ? l.source.id : l.source)
+    connectedIds.add(typeof l.target === 'object' ? l.target.id : l.target)
+  })
+
+  let filteredNodes = rawData.nodes.filter(n => {
+    if (hideIsolated.value && !connectedIds.has(n.id)) return false
+    if (filterCategory.value !== 'All' && n.category !== filterCategory.value) return false
+    if (searchQuery.value && !n.name.toLowerCase().includes(searchQuery.value.toLowerCase())) return false
+    return true
+  })
+
+  const visibleNodeIds = new Set(filteredNodes.map(n => n.id))
+  let filteredLinks = rawData.links.filter(l => {
+    const s = typeof l.source === 'object' ? l.source.id : l.source
+    const t = typeof l.target === 'object' ? l.target.id : l.target
+    return visibleNodeIds.has(s) && visibleNodeIds.has(t)
+  })
+
+  return { nodes: filteredNodes, links: filteredLinks }
+}
+
+function initGraph() {
   if (!container.value) return
 
   const elem = container.value
   elem.innerHTML = ''
 
+  const currentData = getFilteredData()
+
   graphInstance = ForceGraph()(elem)
-    .graphData(data)
+    .graphData(currentData)
     .nodeId('id')
-    .nodeLabel(node => `${node.name} (${node.category})`)
+    .nodeLabel(node => `${node.name}\n[${node.category}]`)
     .nodeColor(node => node.color)
-    .nodeVal(node => node.val)
-    .linkColor(() => 'rgba(150, 150, 150, 0.25)')
-    .linkWidth(1)
+    .nodeVal(node => Math.max(node.val, 2))
+    .linkColor(() => 'rgba(140, 140, 160, 0.22)')
+    .linkWidth(1.2)
     .linkDirectionalParticles(1)
-    .linkDirectionalParticleSpeed(0.005)
+    .linkDirectionalParticleSpeed(0.004)
     .linkDirectionalParticleWidth(2)
-    .backgroundColor('transparent')
-    .onNodeClick(node => {
-      selectedNode.value = node
-    })
+    .backgroundColor('#0a0d13')
+    .d3AlphaDecay(0.02)
+    .d3VelocityDecay(0.3)
+    // Obsidian-like physics: strong repulsion, longer springs
+    .d3Force('charge', window.d3?.forceManyBody().strength(-140))
+    .d3Force('link', window.d3?.forceLink().distance(40).strength(0.4))
+    .enableNodeDrag(true)
     .onNodeHover(node => {
       elem.style.cursor = node ? 'pointer' : 'default'
     })
+    .onNodeClick((node, event) => {
+      // Ignore click if user was actually dragging canvas
+      if (isDraggingCanvas) return
+      selectedNode.value = node
+    })
     .nodeCanvasObject((node, ctx, globalScale) => {
-      const r = Math.sqrt(node.val) * 2
+      if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) return
+
+      const r = Math.max(Math.sqrt(node.val || 2) * 2, 2.5)
       ctx.beginPath()
       ctx.arc(node.x, node.y, r, 0, 2 * Math.PI, false)
       ctx.fillStyle = node.color
       ctx.fill()
 
-      if (globalScale > 1.2 || node.val > 8) {
+      // High zoom label display
+      if (globalScale > 1.3 || (node.val && node.val > 7)) {
         const label = node.name
-        const fontSize = Math.max(10 / globalScale, 4)
-        ctx.font = `${fontSize}px Sans-Serif`
+        const fontSize = Math.max(9 / globalScale, 3.5)
+        ctx.font = `${fontSize}px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'top'
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.85)'
+        ctx.fillStyle = 'rgba(240, 240, 250, 0.85)'
         ctx.fillText(label, node.x, node.y + r + 2)
       }
     })
+
+  // Prevent false-clicks during canvas drag
+  elem.addEventListener('pointerdown', (e) => {
+    isDraggingCanvas = false
+    pointerDownPos = { x: e.clientX, y: e.clientY }
+  })
+
+  elem.addEventListener('pointermove', (e) => {
+    const dist = Math.hypot(e.clientX - pointerDownPos.x, e.clientY - pointerDownPos.y)
+    if (dist > 5) {
+      isDraggingCanvas = true
+    }
+  })
+
+  // Auto zoom-to-fit once simulation settles
+  setTimeout(() => {
+    graphInstance?.zoomToFit(400, 40)
+  }, 1200)
+}
+
+function updateGraph() {
+  if (!graphInstance) return
+  graphInstance.graphData(getFilteredData())
+  setTimeout(() => {
+    graphInstance?.zoomToFit(400, 30)
+  }, 300)
+}
+
+function toggleIsolated() {
+  hideIsolated.value = !hideIsolated.value
+  updateGraph()
 }
 
 function setFilter(cat) {
   filterCategory.value = cat
-  if (!fullData || !graphInstance) return
+  updateGraph()
+}
 
-  if (cat === 'All') {
-    graphInstance.graphData(fullData)
-  } else {
-    const filteredNodes = fullData.nodes.filter(n => n.category === cat)
-    const nodeIds = new Set(filteredNodes.map(n => n.id))
-    const filteredLinks = fullData.links.filter(l => nodeIds.has(l.source.id || l.source) && nodeIds.has(l.target.id || l.target))
-    graphInstance.graphData({ nodes: filteredNodes, links: filteredLinks })
-  }
+function onSearchInput() {
+  updateGraph()
 }
 </script>
 
 <template>
-  <div class="graph-page">
-    <div class="graph-header">
-      <div>
-        <h1 class="title">Interactive Dependency Graph</h1>
-        <p class="subtitle">Explore 897 classes and 1,354 inheritance links. Drag to pan, scroll to zoom, click any node to inspect.</p>
+  <div class="graph-viewport">
+    <div class="graph-top-bar">
+      <div class="title-row">
+        <div>
+          <h1 class="main-title">Interactive Dependency Graph</h1>
+          <p class="desc">
+            Visualizing class inheritance and interface implementations.
+            <span v-if="hideIsolated" class="stat-badge">Showing 350 connected nodes</span>
+            <span v-else class="stat-badge">Showing all 897 types</span>
+          </p>
+        </div>
+
+        <div class="controls-row">
+          <input 
+            v-model="searchQuery" 
+            type="text" 
+            placeholder="Search class in graph..." 
+            class="graph-search"
+            @input="onSearchInput"
+          />
+
+          <button 
+            :class="['toggle-btn', { active: hideIsolated }]" 
+            @click="toggleIsolated"
+          >
+            {{ hideIsolated ? '✓ Only Connected Nodes' : 'Show All (incl. Isolated)' }}
+          </button>
+        </div>
       </div>
 
-      <div class="filters">
+      <!-- Categories Filter -->
+      <div class="category-filters">
         <button 
-          :class="['pill', { active: filterCategory === 'All' }]" 
+          :class="['cat-pill', { active: filterCategory === 'All' }]" 
           @click="setFilter('All')"
         >
-          All (897)
+          All Domains
         </button>
         <button 
           v-for="(color, cat) in CATEGORY_COLORS" 
           :key="cat"
-          :class="['pill', { active: filterCategory === cat }]"
-          :style="{ '--cat-color': color }"
+          :class="['cat-pill', { active: filterCategory === cat }]"
           @click="setFilter(cat)"
         >
-          <span class="dot" :style="{ background: color }"></span>
+          <span class="color-dot" :style="{ background: color }"></span>
           {{ cat }}
         </button>
       </div>
     </div>
 
-    <div class="canvas-wrapper">
-      <div v-if="loading" class="loading-overlay">
-        <p>Loading Graph Universe (897 nodes)...</p>
+    <!-- Main Canvas Box -->
+    <div class="canvas-container">
+      <div v-if="loading" class="spinner">
+        Loading Graph Universe...
       </div>
-      <div ref="container" class="graph-canvas"></div>
+      <div ref="container" class="canvas-mount"></div>
 
-      <div v-if="selectedNode" class="node-card">
-        <div class="card-header">
-          <span class="badge" :style="{ background: selectedNode.color }">{{ selectedNode.category }}</span>
-          <button class="close-btn" @click="selectedNode = null">✕</button>
+      <!-- Detail Card on Node Click -->
+      <div v-if="selectedNode" class="node-inspector">
+        <div class="inspector-header">
+          <span class="category-tag" :style="{ background: selectedNode.color }">
+            {{ selectedNode.category }}
+          </span>
+          <button class="close-card" @click="selectedNode = null">✕</button>
         </div>
-        <h3 class="node-title">{{ selectedNode.name }}</h3>
-        <p class="node-meta">Methods documented: <strong>{{ selectedNode.methods }}</strong></p>
-        <a :href="`/api/${selectedNode.id}`" class="view-btn">Open Documentation Page →</a>
+        <h3 class="inspector-name">{{ selectedNode.name }}</h3>
+        <p class="inspector-methods">Methods / Members: <strong>{{ selectedNode.methods }}</strong></p>
+        <a :href="`/api/${selectedNode.id}`" class="jump-link">
+          Open Documentation Page →
+        </a>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.graph-page {
+.graph-viewport {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
-  padding: 1rem 0;
+  height: calc(100vh - 90px);
+  padding: 1rem 1.5rem;
   box-sizing: border-box;
 }
 
-.graph-header {
-  margin-bottom: 0.75rem;
+.graph-top-bar {
+  margin-bottom: 0.85rem;
 }
 
-.title {
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.main-title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.subtitle {
-  margin: 0.25rem 0 0.5rem;
+.desc {
+  margin: 0.2rem 0 0;
   font-size: 0.85rem;
   color: var(--vp-c-text-2);
 }
 
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.5rem;
+.stat-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-divider);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--vp-c-brand-1);
 }
 
-.pill {
+.controls-row {
   display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.graph-search {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 0.8rem;
+  width: 180px;
+}
+
+.graph-search:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-1);
+}
+
+.toggle-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.toggle-btn.active {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-mute);
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cat-pill {
+  display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.25rem 0.6rem;
+  padding: 0.2rem 0.55rem;
   font-size: 0.75rem;
   border-radius: 9999px;
   background: var(--vp-c-bg-soft);
@@ -192,33 +356,33 @@ function setFilter(cat) {
   transition: all 0.15s ease;
 }
 
-.pill:hover, .pill.active {
+.cat-pill:hover, .cat-pill.active {
   border-color: var(--vp-c-brand-1);
   background: var(--vp-c-bg-mute);
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
+.color-dot {
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
 }
 
-.canvas-wrapper {
+.canvas-container {
   position: relative;
   flex: 1;
-  border-radius: 12px;
+  min-height: 500px;
+  border-radius: 10px;
   border: 1px solid var(--vp-c-divider);
-  background: #0d1117;
+  background: #0a0d13;
   overflow: hidden;
-  min-height: 550px;
 }
 
-.graph-canvas {
+.canvas-mount {
   width: 100%;
   height: 100%;
 }
 
-.loading-overlay {
+.spinner {
   position: absolute;
   inset: 0;
   display: flex;
@@ -228,57 +392,57 @@ function setFilter(cat) {
   font-size: 0.9rem;
 }
 
-.node-card {
+.node-inspector {
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  width: 280px;
-  padding: 1.25rem;
-  border-radius: 10px;
-  background: rgba(22, 27, 34, 0.95);
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 270px;
+  padding: 1.15rem;
+  border-radius: 8px;
+  background: rgba(18, 22, 30, 0.94);
   border: 1px solid var(--vp-c-divider);
   backdrop-filter: blur(8px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
-.card-header {
+.inspector-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
-.badge {
-  font-size: 0.7rem;
+.category-tag {
+  font-size: 0.68rem;
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
   color: #fff;
   font-weight: 600;
 }
 
-.close-btn {
+.close-card {
   background: none;
   border: none;
   color: var(--vp-c-text-2);
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-.node-title {
-  margin: 0.25rem 0;
-  font-size: 1.1rem;
+.inspector-name {
+  margin: 0.2rem 0;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #fff;
 }
 
-.node-meta {
-  margin: 0.25rem 0 0.85rem;
+.inspector-methods {
+  margin: 0.2rem 0 0.8rem;
   font-size: 0.8rem;
   color: var(--vp-c-text-2);
 }
 
-.view-btn {
+.jump-link {
   display: block;
   text-align: center;
   padding: 0.45rem 0.75rem;
