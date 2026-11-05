@@ -1,11 +1,12 @@
 """
 Orchestrates graph data compilation for docs-site.
-Checks SHA256 of taxonomy & API data; only runs compiler.py if structure changed.
+In CI/Cloudflare environments, graph-data.json is already compiled and tracked in git.
+Compiler is only run locally if explicit or if numpy is installed.
 """
 
 import hashlib
 import json
-import subprocess
+import os
 import sys
 from pathlib import Path
 
@@ -28,35 +29,41 @@ def compute_inputs_hash():
 
 
 def run():
-    current_hash = compute_inputs_hash()
-    
-    # Check if rebuild is necessary
-    if CACHE_HASH_PATH.exists() and GRAPH_DATA_PATH.exists():
-        cached_hash = CACHE_HASH_PATH.read_text(encoding="utf-8").strip()
-        if cached_hash == current_hash and "--force" not in sys.argv:
-            print("[build-graph] Graph taxonomy & dependencies unchanged. Using cached graph-data.json.")
+    # If graph-data.json exists (already compiled and tracked in git):
+    if GRAPH_DATA_PATH.exists() and GRAPH_DATA_PATH.stat().st_size > 1000:
+        # Check if we are in CI / Cloudflare Pages or if numpy is missing
+        is_ci = os.environ.get("CF_PAGES") == "1" or os.environ.get("CI") == "true"
+        try:
+            import numpy
+            has_numpy = True
+        except ImportError:
+            has_numpy = False
+
+        if is_ci or not has_numpy:
+            print("[build-graph] CI environment or standalone runtime detected. Using precomputed graph-data.json.")
             return
 
-    print("[build-graph] Changes detected or first run. Compiling HCRDL topology...")
-    
-    # Import compiler module
+        current_hash = compute_inputs_hash()
+        if CACHE_HASH_PATH.exists():
+            cached_hash = CACHE_HASH_PATH.read_text(encoding="utf-8").strip()
+            if cached_hash == current_hash and "--force" not in sys.argv:
+                print("[build-graph] Graph taxonomy & dependencies unchanged. Using cached graph-data.json.")
+                return
+
+    print("[build-graph] Compiling HCRDL topology...")
     sys.path.append(str(Path(__file__).resolve().parent))
-    import compiler
+    try:
+        import compiler
+        raw_graph = json.loads(GRAPH_DATA_PATH.read_text(encoding="utf-8"))
+        compiled = compiler.compile_graph_topology(raw_graph, designated_hub="Miscellaneous & Utility")
+        compiled["legend"] = raw_graph.get("legend", {})
 
-    # Ensure source data is fresh
-    if not GRAPH_DATA_PATH.exists():
-        print(f"[build-graph] Error: Source {GRAPH_DATA_PATH} not found.")
-        return
-
-    raw_graph = json.loads(GRAPH_DATA_PATH.read_text(encoding="utf-8"))
-    compiled = compiler.compile_graph_topology(raw_graph, designated_hub="Miscellaneous & Utility")
-    
-    # Add legend back
-    compiled["legend"] = raw_graph.get("legend", {})
-
-    GRAPH_DATA_PATH.write_text(json.dumps(compiled, separators=(',', ':'), ensure_ascii=False), encoding="utf-8")
-    CACHE_HASH_PATH.write_text(current_hash, encoding="utf-8")
-    print(f"[build-graph] Successfully compiled and frozen {len(compiled['nodes'])} node positions into {GRAPH_DATA_PATH}")
+        GRAPH_DATA_PATH.write_text(json.dumps(compiled, separators=(',', ':'), ensure_ascii=False), encoding="utf-8")
+        current_hash = compute_inputs_hash()
+        CACHE_HASH_PATH.write_text(current_hash, encoding="utf-8")
+        print(f"[build-graph] Compiled and frozen {len(compiled['nodes'])} nodes into {GRAPH_DATA_PATH}")
+    except Exception as e:
+        print(f"[build-graph] Warning: Could not run compiler ({e}). Falling back to existing graph-data.json.")
 
 
 if __name__ == "__main__":
