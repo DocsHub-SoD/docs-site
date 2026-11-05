@@ -1,0 +1,50 @@
+# Interface: IGamepadFocusable
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+
+```csharp
+public interface IGamepadFocusable : IGamepadFocusListener
+```
+
+## Methods
+
+### `CanBeFocused()`
+
+```csharp
+bool CanBeFocused()
+```
+
+**Returns:** `bool`
+
+### `CanHoldConfirmToRepeat()`
+
+```csharp
+bool CanHoldConfirmToRepeat()
+```
+
+**Returns:** `bool`
+
+### `GetBehavior()`
+
+```csharp
+FocusableBehavior GetBehavior()
+```
+
+**Returns:** `FocusableBehavior`
+
+### `GetSelectionDisplayType()`
+
+```csharp
+SelectionDisplayType GetSelectionDisplayType()
+```
+
+**Returns:** `SelectionDisplayType`
+
+### `GetTransform()`
+
+```csharp
+RectTransform GetTransform()
+```
+
+**Returns:** `UnityEngine.RectTransform`

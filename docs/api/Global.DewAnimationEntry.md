@@ -1,0 +1,29 @@
+# Class: DewAnimationEntry
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+
+```csharp
+[Serializable]
+public class DewAnimationEntry
+```
+
+## Fields
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`duration`** | `[MinValue(1.401298464324817E-45)]
+public float duration` |  |
+| **`rawClip`** | `public AnimationClip rawClip` |  |
+| **`timeCurve`** | `[LabelText("Ease")]
+public DewEase timeCurve` |  |
+| **`trimRange`** | `[MinMaxSlider(0, "_rawClipLength", false)]
+public Vector2 trimRange` |  |
+
+## Methods
+
+### `Validate()`
+
+```csharp
+public void Validate()
+```

@@ -1,0 +1,13 @@
+{
+  "name": "shape-of-dreams-docs",
+  "version": "1.0.0",
+  "description": "Comprehensive Community Documentation & API Reference for Shape of Dreams Modding",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

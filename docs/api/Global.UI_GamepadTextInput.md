@@ -1,0 +1,145 @@
+# Class: UI_GamepadTextInput
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+- **Inheritance / Derived:** `SingletonBehaviour` → [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput)
+
+```csharp
+public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>
+```
+
+## Fields
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`azertyLayout`** | `[Multiline]
+public string azertyLayout` |  |
+| **`azertyShiftAlpha`** | `public string azertyShiftAlpha` |  |
+| **`backspacePrefab`** | `public UI_GamepadTextInput_Key backspacePrefab` |  |
+| **`cancelButton`** | `public Button cancelButton` |  |
+| **`clearButton`** | `public Button clearButton` |  |
+| **`confirmButton`** | `public Button confirmButton` |  |
+| **`inputField`** | `public TMP_InputField inputField` |  |
+| **`leftShiftPrefab`** | `public UI_GamepadTextInput_Key leftShiftPrefab` |  |
+| **`onIsShiftPressedChanged`** | `public Action onIsShiftPressedChanged` |  |
+| **`qwertyLayout`** | `[Multiline]
+public string qwertyLayout` |  |
+| **`qwertyShiftAlpha`** | `public string qwertyShiftAlpha` |  |
+| **`regularKeyPrefab`** | `public UI_GamepadTextInput_Key regularKeyPrefab` |  |
+| **`rightShiftPrefab`** | `public UI_GamepadTextInput_Key rightShiftPrefab` |  |
+| **`rowTransforms`** | `public Transform[] rowTransforms` |  |
+
+## Properties
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`isAzerty`** | `public bool isAzerty { get; }` |  |
+| **`isShiftPressed`** | `public bool isShiftPressed { get; }` |  |
+
+## Methods
+
+### `Cancel()`
+
+```csharp
+public void Cancel()
+```
+
+### `Clear()`
+
+```csharp
+public void Clear()
+```
+
+### `Confirm()`
+
+```csharp
+public void Confirm()
+```
+
+### `EraseOne()`
+
+```csharp
+public void EraseOne()
+```
+
+### `GetShiftSubstitute(string)`
+
+```csharp
+public string GetShiftSubstitute(string key)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `key` | `string` |  |
+
+**Returns:** `string`
+
+### `PressCharacter(string)`
+
+```csharp
+public void PressCharacter(string key)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `key` | `string` |  |
+
+### `SetAzertyMode(bool)`
+
+```csharp
+public void SetAzertyMode(bool value)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `value` | `bool` |  |
+
+### `SetShift(bool)`
+
+```csharp
+public void SetShift(bool value)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `value` | `bool` |  |
+
+### `StartInput(string, string, bool, bool, int, Action&lt;string&gt;, Action)`
+
+```csharp
+public void StartInput(string previousText, string placeholderText, bool isMultiline, bool isPassword, int maxCharacters, Action<string> onConfirm, Action onCancel)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `previousText` | `string` |  |
+| `placeholderText` | `string` |  |
+| `isMultiline` | `bool` |  |
+| `isPassword` | `bool` |  |
+| `maxCharacters` | `int` |  |
+| `onConfirm` | `System.Action&lt;T&gt;&lt;string&gt;` |  |
+| `onCancel` | `System.Action` |  |
+
+### `StartInput(TMP_InputField, Action&lt;string&gt;, Action)`
+
+```csharp
+public void StartInput(TMP_InputField target, Action<string> onConfirm = null, Action onCancel = null)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `target` | `TMPro.TMP_InputField` |  |
+| `onConfirm` | `System.Action&lt;T&gt;&lt;string&gt;` |  |
+| `onCancel` | `System.Action` |  |
+
+### `ToggleShift()`
+
+```csharp
+public void ToggleShift()
+```

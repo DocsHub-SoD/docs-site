@@ -1,0 +1,23 @@
+# Class: AttachToFace
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+
+```csharp
+[ExecuteAlways]
+public class AttachToFace : MonoBehaviour
+```
+
+## Fields
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`globalCache`** | `public static Dictionary&lt;Renderer, AttachToFace.CacheItem&gt; globalCache` |  |
+| **`lastSetupPosition`** | `public Vector3 lastSetupPosition` |  |
+| **`lastSetupRotation`** | `public Quaternion lastSetupRotation` |  |
+| **`relPosition`** | `public Vector3 relPosition` |  |
+| **`relRotation`** | `public Quaternion relRotation` |  |
+| **`targetRenderer`** | `public SkinnedMeshRenderer targetRenderer` |  |
+| **`vertexIndex0`** | `public int vertexIndex0` |  |
+| **`vertexIndex1`** | `public int vertexIndex1` |  |
+| **`vertexIndex2`** | `public int vertexIndex2` |  |

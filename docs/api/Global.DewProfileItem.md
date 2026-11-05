@@ -1,0 +1,17 @@
+# Class: DewProfileItem
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+
+```csharp
+public class DewProfileItem
+```
+
+## Fields
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`path`** | `public string path` |  |
+| **`peek`** | `public DewProfile peek` |  |
+| **`peekStats`** | `public DewProfileStats peekStats` |  |
+| **`state`** | `public DewProfileState state` |  |

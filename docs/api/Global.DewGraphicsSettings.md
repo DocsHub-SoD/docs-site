@@ -1,0 +1,50 @@
+# Class: DewGraphicsSettings
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+
+```csharp
+public class DewGraphicsSettings : IInitializableSettings, IValidatableSettings
+```
+
+## Fields
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`displayIndex`** | `public int displayIndex` |  |
+| **`fogQuality`** | `public QualityOff3Levels fogQuality` |  |
+| **`fullScreenMode`** | `public FullScreenMode fullScreenMode` |  |
+| **`gameFrameLimit`** | `public int gameFrameLimit` |  |
+| **`menuFrameLimit`** | `public int menuFrameLimit` |  |
+| **`particleEffectQuality`** | `public Quality3Levels particleEffectQuality` |  |
+| **`playerAbilityCount`** | `public Quality4Levels playerAbilityCount` |  |
+| **`resolutionHeight`** | `public int resolutionHeight` |  |
+| **`resolutionWidth`** | `public int resolutionWidth` |  |
+| **`shaderQuality`** | `public Quality3Levels shaderQuality` |  |
+| **`shadowQuality`** | `public QualityOff4Levels shadowQuality` |  |
+| **`terrainQuality`** | `public Quality3Levels terrainQuality` |  |
+| **`textureQuality`** | `public Quality3Levels textureQuality` |  |
+| **`vegetationQuality`** | `public Quality3Levels vegetationQuality` |  |
+| **`vSync`** | `public bool vSync` |  |
+
+## Methods
+
+### `Clone()`
+
+```csharp
+public object Clone()
+```
+
+**Returns:** `object`
+
+### `Initialize()`
+
+```csharp
+public void Initialize()
+```
+
+### `Validate()`
+
+```csharp
+public void Validate()
+```

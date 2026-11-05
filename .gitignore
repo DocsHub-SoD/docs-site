@@ -1,0 +1,40 @@
+# ==========================================
+# Shape of Dreams ModDocs - .gitignore
+# Публикуется ТОЛЬКО конечный продукт документации
+# ==========================================
+
+# 1. Локальные служебные скрипты скрейпинга и генерации
+scraper.py
+parser.py
+generator.py
+compile_db.py
+
+# 2. Сырые кэшированные данные и артефакты DocFX
+cache/
+*.html
+*.yml
+
+# 3. Внутренние служебные заметки разработки
+RESEARCH_AND_PLAN.md
+SUMMARY.md
+
+# 4. Зависимости Node.js
+node_modules/
+.pnpm-store/
+
+# 5. Артефакты сборки VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# 6. Временные файлы ОС, редакторов и Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+.env*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

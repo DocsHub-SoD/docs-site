@@ -1,0 +1,8 @@
+# Enum: FxCastTelegraph.RotationType
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+
+```csharp
+public enum FxCastTelegraph.RotationType
+```

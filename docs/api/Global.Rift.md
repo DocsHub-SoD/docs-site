@@ -1,0 +1,110 @@
+# Class: Rift
+
+- **Namespace:** `Global`
+- **Assembly:** `Dew.Core.dll`
+- **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Rift_RoomExit](/api/Global.Rift_RoomExit) → [Rift_Sidetrack](/api/Global.Rift_Sidetrack)
+
+```csharp
+[DewResourceLink(ResourceLinkBy.None)]
+public class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby
+```
+
+## Fields
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`afterOpenInteractableDelay`** | `public float afterOpenInteractableDelay` |  |
+| **`chargeDuration`** | `public float chargeDuration` |  |
+| **`fxActivate`** | `public GameObject fxActivate` |  |
+| **`fxCharge`** | `public GameObject fxCharge` |  |
+| **`fxLocked`** | `public GameObject fxLocked` |  |
+| **`fxLoop`** | `public GameObject fxLoop` |  |
+| **`fxOpen`** | `public GameObject fxOpen` |  |
+| **`fxUnlocked`** | `public GameObject fxUnlocked` |  |
+| **`softInstance`** | `public static Rift softInstance` |  |
+
+## Properties
+
+| Name | Declaration | Description |
+| :--- | :--- | :--- |
+| **`canInteractWithMouse`** | `public bool canInteractWithMouse { get; }` |  |
+| **`focusDistance`** | `public float focusDistance { get; }` |  |
+| **`instance`** | `public static Rift instance { get; }` |  |
+| **`interactPivot`** | `public Transform interactPivot { get; }` |  |
+| **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
+| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)]
+public bool isLocked { get; set; }` |  |
+| **`isOpen`** | `[SaveVar(SaveVarFlags.Default)]
+public bool isOpen { get; set; }` |  |
+
+## Methods
+
+### `Awake()`
+
+```csharp
+protected override void Awake()
+```
+
+### `CanInteract(Entity)`
+
+```csharp
+public virtual bool CanInteract(Entity entity)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `entity` | [Entity](/api/Global.Entity) |  |
+
+**Returns:** `bool`
+
+### `Close()`
+
+```csharp
+[Button]
+public void Close()
+```
+
+### `OnCreate()`
+
+```csharp
+protected override void OnCreate()
+```
+
+### `OnDestroyActor()`
+
+```csharp
+protected override void OnDestroyActor()
+```
+
+### `OnInteractRift(Hero)`
+
+Called on server when a hero interacts with this rift.Return true to indicate success of interaction. (Will play activate effect)
+
+```csharp
+protected virtual bool OnInteractRift(Hero hero)
+```
+
+**Parameters:**
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `hero` | [Hero](/api/Global.Hero) |  |
+
+**Returns:** `bool`
+
+### `Open()`
+
+Open the rift with charging animation. If you wish to skip the animation, set the isOpen property directly.
+
+```csharp
+[Button]
+public void Open()
+```
+
+### `ShouldBeSavedWithRoom()`
+
+```csharp
+public override bool ShouldBeSavedWithRoom()
+```
+
+**Returns:** `bool`
