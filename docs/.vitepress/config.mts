@@ -7,7 +7,7 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     nav: [
-      { text: "Home", link: "/" },
+      { text: "Getting Started", link: "/getting-started" },
       { text: "API Catalog", link: "/catalog" },
       { text: "Core Classes", link: "/api/Global.AbilityInstance" },
       {
@@ -24,10 +24,16 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: 'Navigation',
+        text: 'Modding Guides',
+        items: [
+          { text: 'Getting Started', link: '/getting-started' }
+        ]
+      },
+      {
+        text: 'API Reference',
         items: [
           { text: 'Overview', link: '/' },
-          { text: 'Full API Catalog (897)', link: '/catalog' }
+          { text: 'Full Type Catalog (897)', link: '/catalog' }
         ]
       },
       {
