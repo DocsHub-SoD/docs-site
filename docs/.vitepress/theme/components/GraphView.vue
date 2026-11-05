@@ -113,6 +113,7 @@ function initPrecomputedGraph() {
     .d3AlphaDecay(1)
     .d3VelocityDecay(1)
     .cooldownTicks(0)
+    .autoPauseRedraw(false) // Continuous rendering loop: instant reactivity on click/esc without canvas move!
     .enableNodeDrag(false) // Fix node positions, zero drag hijacking
     .enablePanInteraction(false) // Disable left-click canvas pan!
     .enableZoomInteraction(true) // Keep mouse wheel zoom
@@ -124,13 +125,23 @@ function initPrecomputedGraph() {
       hoveredNode = node
       if (!selectedNode.value && !isPanning && !isCtrlPressed) {
         updateHighlights(node)
+        triggerRedraw()
       }
     })
     .onNodeClick((node, event) => {
+      // ONLY Left Mouse Button (button 0) without modifier keys
+      if (event) {
+        if (event.button !== 0) return
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
+      }
       if (Date.now() < suppressClickUntil || isPanning || isCtrlPressed) return
       setSelectedNode(node)
     })
-    .onBackgroundClick(() => {
+    .onBackgroundClick(event => {
+      if (event) {
+        if (event.button !== 0) return
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
+      }
       if (Date.now() < suppressClickUntil || isPanning || isCtrlPressed) return
       clearSelection()
     })
@@ -205,6 +216,12 @@ function applyDataToGraph() {
   }, 100)
 }
 
+function triggerRedraw() {
+  if (graphInstance) {
+    graphInstance.nodeColor(graphInstance.nodeColor())
+  }
+}
+
 function updateHighlights(targetNode) {
   highlightNodes.clear()
   highlightLinks.clear()
@@ -231,32 +248,40 @@ function setSelectedNode(node) {
   }
   selectedNode.value = node
   updateHighlights(node)
+  triggerRedraw()
 }
 
 function clearSelection() {
   selectedNode.value = null
   highlightNodes.clear()
   highlightLinks.clear()
+  triggerRedraw()
 }
 
 function setupNavigationControls(elem) {
   // Prevent browser autoscroll when middle-clicking
   elem.addEventListener('auxclick', e => {
-    if (e.button === 1) e.preventDefault()
-  })
+    if (e.button === 1) {
+      e.preventDefault()
+      e.stopPropagation()
+    }
+  }, { capture: true })
 
-  elem.addEventListener('mousedown', e => {
-    // Middle Click (button 1) OR Ctrl + Left Click (button 0 + ctrlKey / isCtrlPressed)
+  const startPan = e => {
+    // Middle click (button 1) OR Ctrl + Left click (button 0 + ctrlKey / isCtrlPressed)
     if (e.button === 1 || (e.button === 0 && (e.ctrlKey || isCtrlPressed))) {
       isPanning = true
-      didPan = false
+      suppressClickUntil = Date.now() + 600
       panStart = { x: e.clientX, y: e.clientY }
       elem.classList.add('canvas-panning')
       elem.classList.add('is-dragging')
       e.preventDefault()
       e.stopPropagation()
     }
-  })
+  }
+
+  elem.addEventListener('pointerdown', startPan, { capture: true })
+  elem.addEventListener('mousedown', startPan, { capture: true })
 
   window.addEventListener('mousemove', e => {
     if (!isPanning || !graphInstance) return
@@ -264,11 +289,7 @@ function setupNavigationControls(elem) {
     const dx = e.clientX - panStart.x
     const dy = e.clientY - panStart.y
 
-    if (Math.hypot(dx, dy) > 2) {
-      didPan = true
-      suppressClickUntil = Date.now() + 250
-    }
-
+    suppressClickUntil = Date.now() + 600
     panStart = { x: e.clientX, y: e.clientY }
 
     const currentPos = graphInstance.centerAt()
@@ -276,16 +297,21 @@ function setupNavigationControls(elem) {
     graphInstance.centerAt(currentPos.x - dx / zoom, currentPos.y - dy / zoom)
   })
 
-  window.addEventListener('mouseup', () => {
+  const endPan = e => {
     if (isPanning) {
       isPanning = false
+      suppressClickUntil = Date.now() + 400
       elem.classList.remove('is-dragging')
       if (!isCtrlPressed) elem.classList.remove('canvas-panning')
-      if (didPan) {
-        suppressClickUntil = Date.now() + 250
+      if (e.button === 1) {
+        e.preventDefault()
+        e.stopPropagation()
       }
     }
-  })
+  }
+
+  window.addEventListener('pointerup', endPan, { capture: true })
+  window.addEventListener('mouseup', endPan, { capture: true })
 
   window.addEventListener('keydown', e => {
     if (e.key === 'Control') {
@@ -300,6 +326,7 @@ function setupNavigationControls(elem) {
         searchMatchCount.value = 0
       }
       document.getElementById('graph-quick-search')?.blur()
+      triggerRedraw()
       return
     }
 
@@ -335,6 +362,7 @@ function onSearchInput() {
     })
     searchMatchCount.value = matchedQueryIds.size
   }
+  triggerRedraw()
 }
 
 function selectCategory(cat) {
