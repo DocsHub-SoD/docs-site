@@ -8,16 +8,16 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Getting Started", link: "/getting-started" },
+      { text: "Graph View", link: "/graph" },
       { text: "API Catalog", link: "/catalog" },
-      { text: "Core Classes", link: "/api/Global.AbilityInstance" },
+      { text: "AI Workflows", link: "/ai-workflows" },
       {
         text: "v1.0 (Latest)",
         items: [
           { text: "v1.0 (Current)", link: "/" },
           { text: "Version History", link: "/catalog" }
         ]
-      },
-      { text: "GitHub", link: "https://github.com/DocsHub-SoD" }
+      }
     ],
     search: {
       provider: 'local'
@@ -26,28 +26,39 @@ export default defineConfig({
       {
         text: 'Modding Guides',
         items: [
-          { text: 'Getting Started', link: '/getting-started' }
+          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Using Docs with AI', link: '/ai-workflows' }
         ]
       },
       {
-        text: 'API Reference',
+        text: 'Visual Exploration',
         items: [
-          { text: 'Overview', link: '/' },
+          { text: 'Interactive Graph View', link: '/graph' },
           { text: 'Full Type Catalog (897)', link: '/catalog' }
         ]
       },
       {
-        text: 'Key Gameplay Classes',
+        text: 'Core Gameplay Systems',
         collapsed: false,
         items: [
-          { text: 'AbilityInstance (Spells & Skills)', link: '/api/Global.AbilityInstance' },
-          { text: 'AbilityTrigger (Ability Triggers)', link: '/api/Global.AbilityTrigger' },
-          { text: 'Actor (Entities, Players, Enemies)', link: '/api/Global.Actor' },
-          { text: 'ActorManager (Actor Management)', link: '/api/Global.ActorManager' },
-          { text: 'StatusEffect (Statuses & Buffs)', link: '/api/Global.StatusEffect' },
-          { text: 'DamageData (Damage Calculation)', link: '/api/Global.DamageData' },
-          { text: 'ConsoleManager (In-Game Console)', link: '/api/Global.ConsoleManager' },
-          { text: 'AudioManager (Audio System)', link: '/api/Global.AudioManager' }
+          { text: 'Abilities & Spells', link: '/api/Global.AbilityInstance' },
+          { text: 'Actors & Entities', link: '/api/Global.Actor' },
+          { text: 'Effects & Buffs', link: '/api/Global.StatusEffect' }
+        ]
+      },
+      {
+        text: 'Architecture & Engine',
+        collapsed: true,
+        items: [
+          { text: 'Managers & Services', link: '/api/Global.ActorManager' },
+          { text: 'Console & Audio', link: '/api/Global.ConsoleManager' }
+        ]
+      },
+      {
+        text: 'Data & Calculations',
+        collapsed: true,
+        items: [
+          { text: 'Damage Calculations', link: '/api/Global.DamageData' }
         ]
       }
     ],
