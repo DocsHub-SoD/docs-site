@@ -31,9 +31,17 @@ let matchedQueryIds = new Set()
 // Input & gesture tracking
 let isCtrlPressed = false
 let isPanning = false
-let didPan = false
+let isNodeDragging = false
 let suppressClickUntil = 0
 let panStart = { x: 0, y: 0 }
+
+function hexToRgba(hex, alpha) {
+  if (!hex || hex[0] !== '#') return `rgba(140, 150, 170, ${alpha})`
+  const r = parseInt(hex.slice(1, 3), 16)
+  const g = parseInt(hex.slice(3, 5), 16)
+  const b = parseInt(hex.slice(5, 7), 16)
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`
+}
 
 onMounted(async () => {
   if (typeof window === 'undefined') return
@@ -114,16 +122,34 @@ function initPrecomputedGraph() {
     .d3VelocityDecay(1)
     .cooldownTicks(0)
     .autoPauseRedraw(false) // Continuous rendering loop: instant reactivity on click/esc without canvas move!
-    .enableNodeDrag(false) // Fix node positions, zero drag hijacking
-    .enablePanInteraction(false) // Disable left-click canvas pan!
+    .enableNodeDrag(true) // User can reposition nodes if desired
+    .enablePanInteraction(false) // Disable left-click canvas pan
     .enableZoomInteraction(true) // Keep mouse wheel zoom
-    .linkWidth(l => highlightLinks.has(l) ? 2.5 : 1)
-    .linkColor(l => highlightLinks.has(l) ? 'rgba(255, 255, 255, 0.9)' : 'rgba(120, 130, 160, 0.18)')
+    .onNodeDrag(node => {
+      isNodeDragging = true
+      suppressClickUntil = Date.now() + 400
+    })
+    .onNodeDragEnd(node => {
+      node.fx = node.x
+      node.fy = node.y
+      setTimeout(() => { isNodeDragging = false }, 150)
+      triggerRedraw()
+    })
+    .linkWidth(l => {
+      if (highlightLinks.has(l)) return 2.5
+      if (selectedNode.value) return 0.5
+      return 0.85
+    })
+    .linkColor(l => {
+      if (highlightLinks.has(l)) return 'rgba(255, 255, 255, 0.95)'
+      if (selectedNode.value) return 'rgba(100, 115, 140, 0.025)' // Super subtle when a node is selected
+      return 'rgba(120, 130, 160, 0.15)'
+    })
     .linkDirectionalParticles(l => highlightLinks.has(l) ? 3 : 0)
     .linkDirectionalParticleSpeed(0.007)
     .onNodeHover(node => {
       hoveredNode = node
-      if (!selectedNode.value && !isPanning && !isCtrlPressed) {
+      if (!selectedNode.value && !isPanning && !isCtrlPressed && !isNodeDragging) {
         updateHighlights(node)
         triggerRedraw()
       }
@@ -134,7 +160,7 @@ function initPrecomputedGraph() {
         if (event.button !== 0) return
         if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
       }
-      if (Date.now() < suppressClickUntil || isPanning || isCtrlPressed) return
+      if (isNodeDragging || isPanning || isCtrlPressed || Date.now() < suppressClickUntil) return
       setSelectedNode(node)
     })
     .onBackgroundClick(event => {
@@ -142,7 +168,7 @@ function initPrecomputedGraph() {
         if (event.button !== 0) return
         if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
       }
-      if (Date.now() < suppressClickUntil || isPanning || isCtrlPressed) return
+      if (isNodeDragging || isPanning || isCtrlPressed || Date.now() < suppressClickUntil) return
       clearSelection()
     })
     .nodeCanvasObject((node, ctx, globalScale) => {
@@ -158,7 +184,7 @@ function initPrecomputedGraph() {
 
       ctx.beginPath()
       ctx.arc(node.x, node.y, r, 0, 2 * Math.PI, false)
-      ctx.fillStyle = isDimmed ? 'rgba(45, 50, 60, 0.18)' : node.color
+      ctx.fillStyle = isDimmed ? hexToRgba(node.color, 0.25) : node.color
       ctx.fill()
 
       // Wildcard Search Match: Neon Beacon
@@ -204,16 +230,18 @@ function initPrecomputedGraph() {
     })
 
   setupNavigationControls(elem)
-  applyDataToGraph()
+  applyDataToGraph(true)
 }
 
-function applyDataToGraph() {
+function applyDataToGraph(shouldRecenter = false) {
   if (!graphInstance) return
   const data = getFilteredData()
   graphInstance.graphData(data)
-  setTimeout(() => {
-    graphInstance?.zoomToFit(500, 40)
-  }, 100)
+  if (shouldRecenter) {
+    setTimeout(() => {
+      graphInstance?.zoomToFit(500, 40)
+    }, 100)
+  }
 }
 
 function triggerRedraw() {
@@ -263,9 +291,8 @@ function setupNavigationControls(elem) {
   elem.addEventListener('auxclick', e => {
     if (e.button === 1) {
       e.preventDefault()
-      e.stopPropagation()
     }
-  }, { capture: true })
+  })
 
   const startPan = e => {
     // Middle click (button 1) OR Ctrl + Left click (button 0 + ctrlKey / isCtrlPressed)
@@ -273,29 +300,32 @@ function setupNavigationControls(elem) {
       isPanning = true
       suppressClickUntil = Date.now() + 600
       panStart = { x: e.clientX, y: e.clientY }
-      elem.classList.add('canvas-panning')
-      elem.classList.add('is-dragging')
+      elem.classList.add('canvas-panning', 'is-dragging')
       e.preventDefault()
-      e.stopPropagation()
     }
   }
 
-  elem.addEventListener('pointerdown', startPan, { capture: true })
-  elem.addEventListener('mousedown', startPan, { capture: true })
+  elem.addEventListener('pointerdown', startPan)
+  elem.addEventListener('mousedown', startPan)
 
-  window.addEventListener('mousemove', e => {
+  const onPanMove = e => {
     if (!isPanning || !graphInstance) return
 
     const dx = e.clientX - panStart.x
     const dy = e.clientY - panStart.y
 
-    suppressClickUntil = Date.now() + 600
     panStart = { x: e.clientX, y: e.clientY }
+    suppressClickUntil = Date.now() + 600
 
     const currentPos = graphInstance.centerAt()
     const zoom = graphInstance.zoom()
-    graphInstance.centerAt(currentPos.x - dx / zoom, currentPos.y - dy / zoom)
-  })
+    if (currentPos && Number.isFinite(zoom) && zoom > 0) {
+      graphInstance.centerAt(currentPos.x - dx / zoom, currentPos.y - dy / zoom)
+    }
+  }
+
+  window.addEventListener('pointermove', onPanMove, { passive: true })
+  window.addEventListener('mousemove', onPanMove, { passive: true })
 
   const endPan = e => {
     if (isPanning) {
@@ -305,13 +335,12 @@ function setupNavigationControls(elem) {
       if (!isCtrlPressed) elem.classList.remove('canvas-panning')
       if (e.button === 1) {
         e.preventDefault()
-        e.stopPropagation()
       }
     }
   }
 
-  window.addEventListener('pointerup', endPan, { capture: true })
-  window.addEventListener('mouseup', endPan, { capture: true })
+  window.addEventListener('pointerup', endPan)
+  window.addEventListener('mouseup', endPan)
 
   window.addEventListener('keydown', e => {
     if (e.key === 'Control') {
@@ -341,8 +370,7 @@ function setupNavigationControls(elem) {
     if (e.key === 'Control') {
       isCtrlPressed = false
       if (!isPanning) {
-        elem.classList.remove('canvas-panning')
-        elem.classList.remove('is-dragging')
+        elem.classList.remove('canvas-panning', 'is-dragging')
       }
     }
   })
@@ -367,12 +395,12 @@ function onSearchInput() {
 
 function selectCategory(cat) {
   activeCategory.value = cat
-  applyDataToGraph()
+  applyDataToGraph(false)
 }
 
 function toggleOrphans() {
   hideOrphans.value = !hideOrphans.value
-  applyDataToGraph()
+  applyDataToGraph(false)
 }
 
 function recenterCamera() {
