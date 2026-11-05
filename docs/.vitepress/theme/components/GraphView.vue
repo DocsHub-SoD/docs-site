@@ -1,25 +1,36 @@
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
 
 const container = ref(null)
 const loading = ref(true)
 const selectedNode = ref(null)
-const activeCategory = ref('All')
 const hideOrphans = ref(false)
 const searchQuery = ref('')
 const searchMatchCount = ref(0)
 const currentZoom = ref(1.0)
 
-const CATEGORY_COLORS = {
-  'Combat & Abilities': '#ef4444',
-  'Actors & Entities': '#22c55e',
-  'Managers & Systems': '#3b82f6',
-  'Buffs & Statuses': '#a855f7',
-  'Items & Economy': '#eab308',
-  'User Interface': '#ec4899',
-  'Networking': '#06b6d4',
-  'Data & Core Math': '#f97316',
-  'Miscellaneous & Utility': '#64748b'
+const CATEGORIES = [
+  { id: 'Combat & Abilities', label: 'Combat & Abilities', color: '#ef4444' },
+  { id: 'Actors & Entities', label: 'Actors & Entities', color: '#22c55e' },
+  { id: 'Managers & Systems', label: 'Managers & Systems', color: '#3b82f6' },
+  { id: 'Buffs & Statuses', label: 'Buffs & Statuses', color: '#a855f7' },
+  { id: 'Items & Economy', label: 'Items & Economy', color: '#eab308' },
+  { id: 'User Interface', label: 'User Interface', color: '#ec4899' },
+  { id: 'Networking', label: 'Networking', color: '#06b6d4' },
+  { id: 'Data & Core Math', label: 'Data & Core Math', color: '#f97316' },
+  { id: 'Miscellaneous & Utility', label: 'Misc & Utility', color: '#64748b' }
+]
+
+const CATEGORY_COLORS = Object.fromEntries(CATEGORIES.map(c => [c.id, c.color]))
+const selectedCategories = ref(new Set(CATEGORIES.map(c => c.id)))
+
+const isFilterModified = computed(() => {
+  return selectedCategories.value.size < CATEGORIES.length
+})
+
+function formatCategory(cat) {
+  if (cat === 'Miscellaneous & Utility') return 'Misc & Utility'
+  return cat || 'Unknown'
 }
 
 let graphInstance = null
@@ -73,7 +84,7 @@ function getFilteredData() {
 
   let nodes = rawData.nodes
     .filter(n => (!hideOrphans.value || !n.isOrphan))
-    .filter(n => (activeCategory.value === 'All' || n.category === activeCategory.value))
+    .filter(n => selectedCategories.value.has(n.category))
     .map(n => ({
       ...n,
       // Fully precomputed frozen positions: ZERO physics compute on client!
@@ -115,7 +126,7 @@ function initPrecomputedGraph() {
     .width(elem.clientWidth)
     .height(elem.clientHeight)
     .nodeId('id')
-    .nodeLabel(n => `${n.name}\n[${n.category}]`)
+    .nodeLabel(n => `${n.name}\n[${formatCategory(n.category)}]`)
     .nodeColor(n => n.color)
     .nodeVal(n => Math.max(n.val || 2.5, 2.5))
     .backgroundColor('#090c10')
@@ -433,8 +444,19 @@ function onSearchInput() {
   triggerRedraw()
 }
 
-function selectCategory(cat) {
-  activeCategory.value = cat
+function toggleCategory(catId) {
+  const next = new Set(selectedCategories.value)
+  if (next.has(catId)) {
+    next.delete(catId)
+  } else {
+    next.add(catId)
+  }
+  selectedCategories.value = next
+  applyDataToGraph(false)
+}
+
+function resetFilters() {
+  selectedCategories.value = new Set(CATEGORIES.map(c => c.id))
   applyDataToGraph(false)
 }
 
@@ -482,7 +504,7 @@ function onZoomSlider(e) {
       <div class="title-meta">
         <h1 class="graph-heading">Interactive Topology Map</h1>
         <p class="graph-subheading">
-          Hierarchical Constrained Radial Domain Layout (HCRDL). Precomputed coordinates, zero physics lag.
+          Visual map of game systems, cross-class dependencies, and modding architecture (HCRDL topology).
         </p>
       </div>
 
@@ -497,14 +519,13 @@ function onZoomSlider(e) {
             class="search-bar"
             @input="onSearchInput"
           />
-          <span class="esc-tag">Esc</span>
         </div>
 
         <button 
           :class="['orphan-toggle', { active: hideOrphans }]" 
           @click="toggleOrphans"
         >
-          {{ hideOrphans ? 'Show All (incl. Orphans)' : 'Hide Outer Orphans' }}
+          {{ hideOrphans ? 'Show Orphans' : 'Hide Orphans' }}
         </button>
 
         <button class="reset-camera-btn" @click="recenterCamera">Recenter</button>
@@ -514,19 +535,21 @@ function onZoomSlider(e) {
     <!-- Category Pills -->
     <div class="domain-pills-bar">
       <button 
-        :class="['domain-pill', { active: activeCategory === 'All' }]" 
-        @click="selectCategory('All')"
+        :class="['domain-pill', 'reset-pill', { modified: isFilterModified }]" 
+        title="Reset all category filters"
+        @click="resetFilters"
       >
-        All Domains (897)
+        Reset Filters
       </button>
       <button 
-        v-for="(color, cat) in CATEGORY_COLORS" 
-        :key="cat"
-        :class="['domain-pill', { active: activeCategory === cat }]"
-        @click="selectCategory(cat)"
+        v-for="cat in CATEGORIES" 
+        :key="cat.id"
+        :class="['domain-pill', selectedCategories.has(cat.id) ? 'active' : 'inactive']"
+        :title="selectedCategories.has(cat.id) ? `Click to hide ${cat.label}` : `Click to show ${cat.label}`"
+        @click="toggleCategory(cat.id)"
       >
-        <span class="color-badge" :style="{ background: color }"></span>
-        {{ cat }}
+        <span class="color-badge" :style="{ background: cat.color }"></span>
+        {{ cat.label }}
       </button>
       <span v-if="searchMatchCount > 0" class="search-match-badge">
         Matches: {{ searchMatchCount }}
@@ -627,7 +650,7 @@ function onZoomSlider(e) {
       <div v-if="selectedNode" class="node-flyout-card">
         <div class="flyout-header">
           <span class="flyout-badge" :style="{ background: selectedNode.color }">
-            {{ selectedNode.category }}
+            {{ formatCategory(selectedNode.category) }}
           </span>
           <button class="flyout-close" @click="clearSelection">✕</button>
         </div>
@@ -683,7 +706,7 @@ function onZoomSlider(e) {
 }
 
 .search-bar {
-  padding: 0.35rem 1.8rem 0.35rem 0.75rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
   background: var(--vp-c-bg-soft);
@@ -695,19 +718,6 @@ function onZoomSlider(e) {
 .search-bar:focus {
   outline: none;
   border-color: var(--vp-c-brand-1);
-}
-
-.esc-tag {
-  position: absolute;
-  right: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.62rem;
-  padding: 0.1rem 0.3rem;
-  border-radius: 3px;
-  background: var(--vp-c-bg-mute);
-  color: var(--vp-c-text-2);
-  pointer-events: none;
 }
 
 .orphan-toggle, .reset-camera-btn {
@@ -738,19 +748,62 @@ function onZoomSlider(e) {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.2rem 0.55rem;
+  padding: 0.2rem 0.6rem;
   font-size: 0.72rem;
+  font-weight: 500;
   border-radius: 9999px;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
   color: var(--vp-c-text-1);
   cursor: pointer;
+  user-select: none;
   transition: all 0.15s ease;
 }
 
-.domain-pill:hover, .domain-pill.active {
+.domain-pill.active {
+  border-color: rgba(56, 189, 248, 0.4);
+  background: rgba(56, 189, 248, 0.08);
+  color: #fff;
+}
+
+.domain-pill.active:hover {
   border-color: var(--vp-c-brand-1);
-  background: var(--vp-c-bg-mute);
+  background: rgba(56, 189, 248, 0.16);
+}
+
+.domain-pill.inactive {
+  opacity: 0.4;
+  border-color: rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: var(--vp-c-text-3);
+}
+
+.domain-pill.inactive:hover {
+  opacity: 0.75;
+  border-color: var(--vp-c-divider);
+}
+
+.domain-pill.inactive .color-badge {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+
+.domain-pill.reset-pill {
+  font-weight: 600;
+  border-style: dashed;
+  color: var(--vp-c-text-2);
+}
+
+.domain-pill.reset-pill.modified {
+  border-style: solid;
+  border-color: #f59e0b;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.domain-pill.reset-pill:hover {
+  color: #fff;
+  border-color: var(--vp-c-brand-1);
 }
 
 .color-badge {
