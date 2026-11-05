@@ -115,7 +115,7 @@ function initPrecomputedGraph() {
     .width(elem.clientWidth)
     .height(elem.clientHeight)
     .nodeId('id')
-    .nodeLabel(n => `${n.name}\n[${n.category}] (${n.isOrphan ? 'Orphan' : 'Connected'})`)
+    .nodeLabel(n => `${n.name}\n[${n.category}]`)
     .nodeColor(n => n.color)
     .nodeVal(n => Math.max(n.val || 2.5, 2.5))
     .backgroundColor('#090c10')
@@ -126,8 +126,10 @@ function initPrecomputedGraph() {
     .enableNodeDrag(true) // User can reposition nodes if desired
     .enablePanInteraction(false) // Disable left-click canvas pan
     .enableZoomInteraction(true) // Keep mouse wheel zoom
+    .minZoom(0.3)
+    .maxZoom(3.0)
     .onZoom(({ k }) => {
-      currentZoom.value = Math.max(0.3, Math.min(4.5, Math.round(k * 100) / 100))
+      currentZoom.value = Math.max(0.3, Math.min(3.0, Math.round(k * 100) / 100))
     })
     .onNodeDrag(node => {
       isNodeDragging = true
@@ -235,11 +237,11 @@ function initPrecomputedGraph() {
       }
 
       // Hierarchical LOD Labeling:
-      // High-importance nodes (val=16) appear earlier (zoom >= 1.0)
-      // Lower-importance nodes gradually appear as user zooms in closer
-      // Deep zoom (>= 3.2x) shows all nodes without overlap
+      // High-importance nodes (val=16) appear earlier (zoom >= 0.75)
+      // Lower-importance nodes gradually appear as user zooms in
+      // All nodes visible once zoom reaches ~2.0x
       // Hover, selection, or search matches ALWAYS show label
-      const minScaleRequired = Math.max(1.0, 3.8 - (node.val || 2.5) * 0.18)
+      const minScaleRequired = Math.max(0.75, 2.35 - (node.val || 2.5) * 0.11)
       const isLodVisible = globalScale >= minScaleRequired
       const shouldShowLabel = isHighlighted || isSelected || isMatch || isLodVisible
 
@@ -447,14 +449,14 @@ function recenterCamera() {
 
 function zoomIn() {
   if (!graphInstance) return
-  const next = Math.min(4.5, currentZoom.value * 1.3)
+  const next = Math.min(3.0, currentZoom.value * 1.25)
   graphInstance.zoom(next, 250)
   currentZoom.value = Math.round(next * 100) / 100
 }
 
 function zoomOut() {
   if (!graphInstance) return
-  const next = Math.max(0.3, currentZoom.value / 1.3)
+  const next = Math.max(0.3, currentZoom.value / 1.25)
   graphInstance.zoom(next, 250)
   currentZoom.value = Math.round(next * 100) / 100
 }
@@ -560,8 +562,7 @@ function onZoomSlider(e) {
               </svg>
             </div>
             <div class="control-desc">
-              <span class="control-key">LMB</span>
-              <span class="control-text">Select node & view details</span>
+              Select node <span class="control-sub">(drag to move)</span>
             </div>
           </div>
 
@@ -575,12 +576,7 @@ function onZoomSlider(e) {
               </svg>
             </div>
             <div class="control-desc">
-              <div>
-                <span class="control-key">MMB</span>
-                <span class="control-sep">or</span>
-                <kbd class="kbd-badge">Ctrl</kbd> + <span class="control-key">LMB</span>
-              </div>
-              <div class="control-sub">Pan canvas</div>
+              Pan canvas <span class="control-sub">(or <kbd class="kbd-badge">Ctrl</kbd> + LMB)</span>
             </div>
           </div>
 
@@ -593,23 +589,7 @@ function onZoomSlider(e) {
               </svg>
             </div>
             <div class="control-desc">
-              <span class="control-key">Wheel</span>
-              <span class="control-text">Zoom in / out</span>
-            </div>
-          </div>
-
-          <div class="control-row">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3"></path>
-                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v7"></path>
-                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
-                <path d="M6 14v-1.5a1.5 1.5 0 0 0-3 0V17a7 7 0 0 0 7 7h3a7 7 0 0 0 7-7v-6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v1"></path>
-              </svg>
-            </div>
-            <div class="control-desc">
-              <span class="control-key">Drag Node</span>
-              <span class="control-text">Reposition node</span>
+              Zoom in / out
             </div>
           </div>
 
@@ -618,7 +598,7 @@ function onZoomSlider(e) {
               <kbd class="kbd-badge">Esc</kbd>
             </div>
             <div class="control-desc">
-              <span class="control-text">Deselect / Clear search</span>
+              Deselect / Clear search
             </div>
           </div>
         </div>
@@ -633,7 +613,7 @@ function onZoomSlider(e) {
             orient="vertical" 
             class="zoom-slider" 
             min="0.3" 
-            max="4.5" 
+            max="3.0" 
             step="0.05" 
             :value="currentZoom" 
             @input="onZoomSlider" 
