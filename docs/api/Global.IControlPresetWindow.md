@@ -40,3 +40,20 @@ void Show(bool showCancel)
 | `showCancel` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `IControlPresetWindow`:*
+
+[Dew](/api/Global.Dew) · `PlayTutorial_Tutorial_Intro` · `UI_SelectControlPresetWindow`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

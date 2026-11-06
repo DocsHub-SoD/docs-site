@@ -384,3 +384,28 @@ public static void SyncAchievements()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (40)
+
+*Classes and systems that invoke, reference, or depend on `DewSave`:*
+
+[AchievementManager](/api/Global.AchievementManager) · [CollectablesManager](/api/Global.CollectablesManager) · [Dew](/api/Global.Dew) · `DewCloudSave` · `DewConsoleCommands` · [DewPlatformSettings](/api/Global.DewPlatformSettings) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewReverie](/api/Global.DewReverie) · [DewReverieItem](/api/Global.DewReverieItem) · [GameManager](/api/Global.GameManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [GameResultManager](/api/Global.GameResultManager) · [InGameReverieManager](/api/Global.InGameReverieManager) · [LobbyServiceSteam](/api/Global.LobbyServiceSteam) · [QuestManager](/api/Global.QuestManager) · [TitleManager](/api/Global.TitleManager) · `TravelerStoryPresenter` · `UI_Constellations` · `UI_DiscordBanner` · `UI_Guide_View` · `UI_InGame_FloatingWindow_Shop` · `UI_Lobby_Constellations` · `UI_Lobby_Constellations_StarList` · `UI_ModManager` · `UI_PlayRewardAnnouncer` · `UI_SelectControlPresetWindow` · `UI_Settings_View` · `UI_Title_EULAView` · `UI_Title_LanguageSelectionView` · `UI_Title_PrivateDemoNotice` · `UI_Title_ProfileSelection` · `UI_Title_ProfileSelection_DeleteProfileWindow` · `UI_Title_ProfileSelection_ListWindow` · `UI_Title_ProfileSelection_ListWindow_Item` · `UI_Title_ProfileSelection_NewProfileWindow` · `UI_Title_ProfileSelection_RenameProfileWindow` · `UI_Title_SwitchLobbyServer` · `UI_TravelerStory_Details_Story` · `UI_TravelerStory_StoryViewer`
+
+### Dependencies (31)
+
+*Types and components that `DewSave` references or depends upon:*
+
+[AudioManager](/api/Global.AudioManager) · [CursorManager](/api/Global.CursorManager) · `DateTimeExtensions` · `DecryptedItemData` · [Dew](/api/Global.Dew) · [DewAchievementItem](/api/Global.DewAchievementItem) · [DewBuildProfile](/api/Global.DewBuildProfile) · `DewCloudSave` · [DewGameResult](/api/Global.DewGameResult) · [DewInput](/api/Global.DewInput) · `DewItem` · `DewItemsData` · [DewPlatformSettings](/api/Global.DewPlatformSettings) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewProfileContinue](/api/Global.DewProfileContinue) · [DewProfileStats](/api/Global.DewProfileStats) · [DewResources](/api/Global.DewResources) · [DewSteam](/api/Global.DewSteam) · [GlobalLogicPackage](/api/Global.GlobalLogicPackage) · [GlobalUIManager](/api/Global.GlobalUIManager) · [ILangaugeChangedCallback](/api/Global.ILangaugeChangedCallback) · [ISettingsChangedCallback](/api/Global.ISettingsChangedCallback) · [InGameTutorialManager](/api/Global.InGameTutorialManager) · [InputManager](/api/Global.InputManager) · [LobbyManager](/api/Global.LobbyManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · `ResultTypeExtensions` · [SafeAction](/api/Global.SafeAction) · [StarEffect](/api/Global.StarEffect) · [VariantDef](/api/Global.VariantDef)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewProfileState`](/enums#dewprofilestate) · [`DewSubProfileState`](/enums#dewsubprofilestate) · [`QualityOff4Levels`](/enums#qualityoff4levels)
+
+:::

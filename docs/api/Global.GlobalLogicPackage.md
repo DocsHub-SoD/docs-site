@@ -43,3 +43,22 @@ public static void CallOnReady(Action callback)
 | `callback` | `System.Action` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `GlobalLogicPackage`:*
+
+[Dew](/api/Global.Dew) · [DewProfile](/api/Global.DewProfile) · [DewSave](/api/Global.DewSave) · [DewSessionError](/api/Global.DewSessionError)
+
+### Dependencies (2)
+
+*Types and components that `GlobalLogicPackage` references or depends upon:*
+
+[EntityVisual](/api/Global.EntityVisual) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

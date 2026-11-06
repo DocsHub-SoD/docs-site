@@ -30,3 +30,28 @@ public class AttackEmpowerEffect : BasicEffect
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `AttackEmpowerEffect`:*
+
+[StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (1)
+
+*Types and components that `AttackEmpowerEffect` references or depends upon:*
+
+[BasicEffect](/api/Global.BasicEffect)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

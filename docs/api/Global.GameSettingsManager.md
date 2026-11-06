@@ -15,10 +15,10 @@ public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, IL
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activeLucidDreams`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> activeLucidDreams` |  |
-| **`addedGameMods`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> addedGameMods` | This should not be changed after starting the server. |
-| **`availableLucidDreams`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> availableLucidDreams` |  |
-| **`bannedGameItems`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> bannedGameItems` |  |
+| **`activeLucidDreams`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> activeLucidDreams` |  |
+| **`addedGameMods`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> addedGameMods` | This should not be changed after starting the server. |
+| **`availableLucidDreams`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> availableLucidDreams` |  |
+| **`bannedGameItems`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> bannedGameItems` |  |
 | **`ClientEvent_OnActiveLucidDreamsChanged`** | `public SafeAction ClientEvent_OnActiveLucidDreamsChanged` |  |
 | **`ClientEvent_OnAvailableLucidDreamsChanged`** | `public SafeAction ClientEvent_OnAvailableLucidDreamsChanged` |  |
 | **`ClientEvent_OnBannedItemsChanged`** | `public SafeAction ClientEvent_OnBannedItemsChanged` |  |
@@ -27,10 +27,10 @@ public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, IL
 | **`ClientEvent_OnLobbyTagsChanged`** | `public SafeAction ClientEvent_OnLobbyTagsChanged` |  |
 | **`ClientEvent_OnStateChanged`** | `public SafeAction ClientEvent_OnStateChanged` |  |
 | **`ClientEvent_OnUnlockedGameItemsChanged`** | `public SafeAction ClientEvent_OnUnlockedGameItemsChanged` |  |
-| **`customData`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, string> customData` |  |
-| **`lobbyTags`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> lobbyTags` |  |
+| **`customData`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, string> customData` |  |
+| **`lobbyTags`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> lobbyTags` |  |
 | **`localPlayerDejavuCost`** | `public int localPlayerDejavuCost` |  |
-| **`unlockedGameItems`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> unlockedGameItems` |  |
+| **`unlockedGameItems`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> unlockedGameItems` |  |
 
 :::
 
@@ -40,15 +40,15 @@ public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, IL
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`allowDejavu`** | `[SaveVar(SaveVarFlags.Default)] public bool allowDejavu { get; set; }` |  |
-| **`allowMidJoins`** | `[SaveVar(SaveVarFlags.Default)] public AllowMidJoinType allowMidJoins { get; set; }` |  |
-| **`difficulty`** | `[SaveVar(SaveVarFlags.Default)] public string difficulty { get; set; }` |  |
-| **`enableVotes`** | `[SaveVar(SaveVarFlags.Default)] public bool enableVotes { get; set; }` |  |
-| **`gameSettingsSaveKey`** | `[SaveVar(SaveVarFlags.Default)] public string gameSettingsSaveKey { get; set; }` |  |
-| **`lobbyDescription`** | `[SaveVar(SaveVarFlags.Default)] public string lobbyDescription { get; set; }` |  |
-| **`lobbyName`** | `[SaveVar(SaveVarFlags.Default)] public string lobbyName { get; set; }` |  |
-| **`maxPlayers`** | `[SaveVar(SaveVarFlags.Default)] public int maxPlayers { get; set; }` |  |
-| **`midJoinBanType`** | `[SaveVar(SaveVarFlags.Default)] public MidJoinBanType midJoinBanType { get; set; }` | This is irreversible by design. |
+| **`allowDejavu`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public bool allowDejavu { get; set; }` |  |
+| **`allowMidJoins`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public AllowMidJoinType allowMidJoins { get; set; }` |  |
+| **`difficulty`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public string difficulty { get; set; }` |  |
+| **`enableVotes`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public bool enableVotes { get; set; }` |  |
+| **`gameSettingsSaveKey`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public string gameSettingsSaveKey { get; set; }` |  |
+| **`lobbyDescription`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public string lobbyDescription { get; set; }` |  |
+| **`lobbyName`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public string lobbyName { get; set; }` |  |
+| **`maxPlayers`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public int maxPlayers { get; set; }` |  |
+| **`midJoinBanType`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public MidJoinBanType midJoinBanType { get; set; }` | This is irreversible by design. |
 | **`midJoinWaitType`** | `public MidJoinWaitType midJoinWaitType { get; set; }` | This should be set and unset accordingly mid-run. |
 | **`state`** | `public GameState state { get; set; }` |  |
 
@@ -242,5 +242,30 @@ public void ValidateBannedItems(bool printMessage)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `printMessage` | `bool` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (30)
+
+*Classes and systems that invoke, reference, or depend on `GameSettingsManager`:*
+
+[BossMonster](/api/Global.BossMonster) · [DewEffect](/api/Global.DewEffect) · [DewMod](/api/Global.DewMod) · [DewNetworkAuthenticator](/api/Global.DewNetworkAuthenticator) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [GameManager](/api/Global.GameManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [InGameUIManager](/api/Global.InGameUIManager) · `LobbyServiceEOS` · [PlayGameManager](/api/Global.PlayGameManager) · [PlayLobbyManager](/api/Global.PlayLobbyManager) · [PreferredGameSettings](/api/Global.PreferredGameSettings) · `StarlessPath_BossPolarisManager` · `UI_Lobby_AllowDejavu` · `UI_Lobby_AllowMidJoins` · `UI_Lobby_Constellations` · `UI_Lobby_Constellations_QuickLoadoutSwitch` · `UI_Lobby_DejavuButton_ActivationManager` · `UI_Lobby_DifficultyItem` · `UI_Lobby_EnableVotes` · `UI_Lobby_Loadout_AvailableSkills` · `UI_Lobby_LobbyNameGroup` · `UI_Lobby_LucidDreamsWindow_Item` · `UI_Lobby_LucidDreams_Item` · `UI_Lobby_MidJoinWaitObject` · `UI_Lobby_ReadyStatusText` · `UI_Lobby_StartButtonController` · `UI_Lobby_WaitingForContinueMidJoin_Loading` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (20)
+
+*Types and components that `GameSettingsManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewNetworkStartSettings](/api/Global.DewNetworkStartSettings) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewResources](/api/Global.DewResources) · [DewSessionError](/api/Global.DewSessionError) · [GameModifierBase](/api/Global.GameModifierBase) · [LobbyManager](/api/Global.LobbyManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PreferredGameSettings](/api/Global.PreferredGameSettings) · [ResourceLoadSettings](/api/Global.ResourceLoadSettings) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (5)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AllowMidJoinType`](/enums#allowmidjointype) · [`GameState`](/enums#gamestate) · [`MidJoinBanType`](/enums#midjoinbantype) · [`MidJoinWaitType`](/enums#midjoinwaittype) · [`SaveVarFlags`](/enums#savevarflags)
 
 :::

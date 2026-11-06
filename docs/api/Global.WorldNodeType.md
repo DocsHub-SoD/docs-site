@@ -7,3 +7,20 @@
 ```csharp
 public enum WorldNodeType
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `WorldNodeType`:*
+
+[WorldNodeData](/api/Global.WorldNodeData) · `WorldNodeTypeExtensions` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

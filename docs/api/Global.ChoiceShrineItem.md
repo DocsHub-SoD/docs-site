@@ -18,3 +18,20 @@ public struct ChoiceShrineItem
 | **`typeName`** | `public string typeName` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ChoiceShrineItem`:*
+
+`UI_InGame_FloatingWindow_ChoiceShrine_Item` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

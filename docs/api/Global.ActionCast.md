@@ -65,3 +65,20 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (18)
+
+*Types and components that `ActionCast` references or depends upon:*
+
+[AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [AbilityTrigger](/api/Global.AbilityTrigger) · [ActionBase](/api/Global.ActionBase) · [Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [CastInfo](/api/Global.CastInfo) · [CastMethodData](/api/Global.CastMethodData) · [Dew](/api/Global.Dew) · [Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [EntityAbility](/api/Global.EntityAbility) · [EntityCheck](/api/Global.EntityCheck) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [ICastMethodDataPoint](/api/Global.ICastMethodDataPoint) · [TriggerConfig](/api/Global.TriggerConfig) · `Vector3FlattenExtension` · `VectorPlaneTransformExtension`
+
+:::

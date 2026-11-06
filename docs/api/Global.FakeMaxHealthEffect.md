@@ -18,3 +18,28 @@ public class FakeMaxHealthEffect : BasicEffectWithStrength
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `FakeMaxHealthEffect`:*
+
+`Gem_L_Supersymmetry` · `Se_FishScales` · [StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (1)
+
+*Types and components that `FakeMaxHealthEffect` references or depends upon:*
+
+[BasicEffectWithStrength](/api/Global.BasicEffectWithStrength)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

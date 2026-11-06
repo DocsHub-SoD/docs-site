@@ -69,3 +69,22 @@ public SafeAction<T1, T2, T3> Remove(Action<T1, T2, T3> handler)
 **Returns:** `SafeAction<T1, T2, T3>`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `SafeAction<T1, T2, T3>`:*
+
+[ClientEventManager](/api/Global.ClientEventManager) · [DewPlayer](/api/Global.DewPlayer) · [Gem](/api/Global.Gem) · [HeroSkill](/api/Global.HeroSkill) · [QuestManager](/api/Global.QuestManager) · [SkillTrigger](/api/Global.SkillTrigger) · `UI_InGame_CurrentArtifact`
+
+### Dependencies (3)
+
+*Types and components that `SafeAction<T1, T2, T3>` references or depends upon:*
+
+[DewPool](/api/Global.DewPool) · `IPoolClearable` · [ListReturnHandle`1](/api/Global.ListReturnHandle`1)
+
+:::

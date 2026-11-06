@@ -49,3 +49,22 @@ public void Validate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DewPlatformSettings`:*
+
+[DewSave](/api/Global.DewSave)
+
+### Dependencies (6)
+
+*Types and components that `DewPlatformSettings` references or depends upon:*
+
+[DewAudioSettings_Platform](/api/Global.DewAudioSettings_Platform) · [DewControlSettings_Platform](/api/Global.DewControlSettings_Platform) · [DewGameplaySettings_Platform](/api/Global.DewGameplaySettings_Platform) · [DewGraphicsSettings](/api/Global.DewGraphicsSettings) · [DewSave](/api/Global.DewSave) · [IInitializableSettings](/api/Global.IInitializableSettings)
+
+:::

@@ -60,3 +60,26 @@ public override int GetHashCode()
 **Returns:** `int`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `GemLocation`:*
+
+[AnalyticsEquipmentData](/api/Global.AnalyticsEquipmentData) · [EditSkillManager](/api/Global.EditSkillManager) · [EditSkillShrine](/api/Global.EditSkillShrine) · [Gem](/api/Global.Gem) · [HeroSkill](/api/Global.HeroSkill) · [IEditSkillDropTargetGemSlot](/api/Global.IEditSkillDropTargetGemSlot) · `Shrine_AltarOfCleansing` · `Shrine_Ascension` · `Shrine_BossSoul` · `Shrine_Chaos` · `Shrine_Destiny` · `Shrine_Entanglement` · `Shrine_MawOfDoom` · `Shrine_ScaredMaw` · `Shrine_UpgradeWell` · `UI_InGame_GemSlot` · `UI_InGame_GemSlot_EditSkill` · `UI_TooltipManager` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

@@ -18,3 +18,20 @@ public struct EventInfoStartMove
 | **`entity`** | `public Entity entity` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `EventInfoStartMove` references or depends upon:*
+
+[Entity](/api/Global.Entity)
+
+:::

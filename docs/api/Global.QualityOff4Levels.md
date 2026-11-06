@@ -7,3 +7,20 @@
 ```csharp
 public enum QualityOff4Levels
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `QualityOff4Levels`:*
+
+[DewGraphicsSettings](/api/Global.DewGraphicsSettings) · [DewSave](/api/Global.DewSave)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

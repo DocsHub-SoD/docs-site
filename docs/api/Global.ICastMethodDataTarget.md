@@ -18,3 +18,20 @@ public interface ICastMethodDataTarget
 | **`range`** | `float range { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `ICastMethodDataTarget`:*
+
+[CastIndicatorManager](/api/Global.CastIndicatorManager) · [CastMethodData](/api/Global.CastMethodData) · [TriggerConfig](/api/Global.TriggerConfig)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

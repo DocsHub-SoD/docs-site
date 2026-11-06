@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RequireComponent]`
 
 ```csharp
 [RequireComponent(typeof(CanvasGroup))]
@@ -58,5 +59,22 @@ protected virtual void OnShow()
 ```csharp
 public void Show()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `UI_ShowAndHideObject`:*
+
+`PlayTutorial_Tutorial` · `PlayTutorial_Tutorial_Intro` · `PlayTutorial_Tutorial_SkillsAndEssences`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
 
 :::

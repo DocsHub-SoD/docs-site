@@ -66,3 +66,22 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ArcTelegraphController`:*
+
+`Ai_Mon_Despair_BossAzurak_StompGlobal` · `Ai_Mon_Special_BossObliviax_ChargeSequence_Spawner`
+
+### Dependencies (3)
+
+*Types and components that `ArcTelegraphController` references or depends upon:*
+
+[EasingFunction](/api/Global.EasingFunction) · [IEffectComponent](/api/Global.IEffectComponent) · [IEffectWithSpeed](/api/Global.IEffectWithSpeed)
+
+:::

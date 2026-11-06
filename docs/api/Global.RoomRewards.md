@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RoomComponentStartDependency] [RoomComponentStartDependency]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
 
 ```csharp
@@ -73,5 +74,30 @@ public override void OnRoomStartServer()
 ```csharp
 public void SpawnCombatCoreShrines()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (9)
+
+*Classes and systems that invoke, reference, or depend on `RoomRewards`:*
+
+[Room](/api/Global.Room) · `RoomMod_Ambush` · `RoomMod_DistantMemories` · `RoomMod_GoldEverywhere` · `RoomMod_PureDream` · `RoomMod_SpawnHatred` · `RoomMod_SpawnMawOfDoom` · `RoomMod_SpawnParadox` · [RoomProps](/api/Global.RoomProps)
+
+### Dependencies (17)
+
+*Types and components that `RoomRewards` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewPlayer](/api/Global.DewPlayer) · [DewRandom](/api/Global.DewRandom) · [EntityCheck](/api/Global.EntityCheck) · [Formula](/api/Global.Formula) · `GetStableHashCodeExtensions` · [IProp](/api/Global.IProp) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [RoomComponent](/api/Global.RoomComponent) · [RoomSection](/api/Global.RoomSection) · [Shrine](/api/Global.Shrine) · `ShuffleListExtension` · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Rarity`](/enums#rarity)
 
 :::

@@ -53,3 +53,20 @@ public override void SetHostVisibility(NetworkIdentity identity, bool visible)
 | `visible` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (4)
+
+*Types and components that `DewInterestManagement` references or depends upon:*
+
+[DewPlayer](/api/Global.DewPlayer) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

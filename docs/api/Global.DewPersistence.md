@@ -241,3 +241,28 @@ public static string ToJson(object obj, JsonSerializerSettings settings = null)
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `DewPersistence`:*
+
+[AchievementManager](/api/Global.AchievementManager) · [Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [DewProfileContinue](/api/Global.DewProfileContinue) · `DewProfileMerge` · [GameManager](/api/Global.GameManager) · `Gem_L_ChaosApple` · [InGameUIManager](/api/Global.InGameUIManager) · [LobbyServiceSteam](/api/Global.LobbyServiceSteam) · [ModBehaviour](/api/Global.ModBehaviour) · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomModifiers](/api/Global.RoomModifiers) · `Se_Curse_LossOfIdentity` · `Se_D_IceColdPresence` · `Shrine_MarshOfDestiny_SeedOfTorment` · `St_D_ParryMaster` · [TitleManager](/api/Global.TitleManager) · `UI_Title_ContinueDreaming` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (16)
+
+*Types and components that `DewPersistence` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorManager](/api/Global.ActorManager) · [Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [GameManager](/api/Global.GameManager) · `GetComponentsNonAllocExtension` · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [LoadNodeSettings](/api/Global.LoadNodeSettings) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `TransformGetScenePathExtension`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
+
+:::

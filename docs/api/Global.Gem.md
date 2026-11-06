@@ -68,7 +68,7 @@ public class Gem : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IIntera
 | **`maxSellGold`** | `public int maxSellGold { get; set; }` |  |
 | **`numberDisplay`** | `public int? numberDisplay { get; set; }` |  |
 | **`owner`** | `public Hero owner { get; set; }` |  |
-| **`quality`** | `[SaveVar(SaveVarFlags.Default)] public int quality { get; set; }` |  |
+| **`quality`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public int quality { get; set; }` |  |
 | **`qualityType`** | `public Gem.QualityType qualityType { get; }` |  |
 | **`sellGoldOverride`** | `public int? sellGoldOverride { get; set; }` |  |
 | **`skill`** | `public SkillTrigger skill { get; set; }` |  |
@@ -566,5 +566,30 @@ public override bool ShouldBeSavedWithRoom()
 ```csharp
 public void StartCooldown()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (164)
+
+*Classes and systems that invoke, reference, or depend on `Gem`:*
+
+`ACH_THE_EIGHTH_TROPHY` · [AbilityInstance](/api/Global.AbilityInstance) · [AchievementManager](/api/Global.AchievementManager) · `Ai_FirstBonusQualityUpgrader` · `Ai_Gem_U_GuidingCompass_PowerGainProjectile` · `Ai_Gem_U_LastStarlight` · `Ai_RandomGemUpgrade` · `Ai_Shrine_MawOfDoom_DestroyTarget` · [AnalyticsEquipmentData](/api/Global.AnalyticsEquipmentData) · [ChatManager](/api/Global.ChatManager) · [ClientEventManager](/api/Global.ClientEventManager) · [Dew](/api/Global.Dew) · [DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillManager](/api/Global.EditSkillManager) · [EditSkillShrine](/api/Global.EditSkillShrine) · [GameManager](/api/Global.GameManager) · `GemWorldModel` · `Gem_C_CamillasGiftRuined` · `Gem_C_Charcoal` · `Gem_C_Confidence` · `Gem_C_Efficiency` · `Gem_C_Guidance` · `Gem_C_Lethality` · `Gem_C_Love` · `Gem_C_Nap` · `Gem_C_Quicksilver` · `Gem_C_Regeneration` · `Gem_C_Responsibility` · `Gem_C_Sharp` · `Gem_C_Shatter` · `Gem_C_Sulfur` · `Gem_C_Talc` · `Gem_C_Vengeance` · `Gem_C_Void` · `Gem_C_Wind` · `Gem_E_Aftershock` · `Gem_E_Apathy` · `Gem_E_Blossom` · `Gem_E_Clemency` · `Gem_E_Crimson` · `Gem_E_Direness` · `Gem_E_Domination` · `Gem_E_Fangs` · `Gem_E_Fever` · `Gem_E_Flexibility` · `Gem_E_Insensitivity` · `Gem_E_Insight` · `Gem_E_Inversion` · `Gem_E_Metal` · `Gem_E_Might` · `Gem_E_Obsidian` · `Gem_E_Omega` · `Gem_E_Opportunity` · `Gem_E_OurStory_Completed` · `Gem_E_OurStory_Unfinished` · `Gem_E_Overload` · `Gem_E_Pain` · `Gem_E_Predation` · `Gem_E_Protection` · `Gem_E_Reflex` · `Gem_E_Thunder` · `Gem_E_Twilight` · `Gem_E_Umbra` · `Gem_E_Virtuousness` · `Gem_L_CamillasGift` · `Gem_L_ChaosApple` · `Gem_L_Culinary` · `Gem_L_DivineFaith` · `Gem_L_Embertail` · `Gem_L_HeartOfGold` · `Gem_L_Infinity` · `Gem_L_Liberty` · `Gem_L_MetalCrystal` · `Gem_L_Paranoia` · `Gem_L_Perfect` · `Gem_L_PureWhite` · `Gem_L_SolarEye` · `Gem_L_Supersymmetry` · `Gem_L_SuppressedArcanum` · `Gem_R_Abyss` · `Gem_R_Accuracy` · `Gem_R_Adventure` · `Gem_R_Blade` · `Gem_R_Bleak` · `Gem_R_Blood` · `Gem_R_Celestial` · `Gem_R_Composure` · `Gem_R_Contempt` · `Gem_R_Control` · `Gem_R_Crucible` · `Gem_R_Dusk` · `Gem_R_Epiphany` · `Gem_R_Flow` · `Gem_R_Frost` · `Gem_R_Glaciate` · `Gem_R_Glass` · `Gem_R_Hedgehog` · `Gem_R_Insatiable` · `Gem_R_Lava` · `Gem_R_Lightweight` · `Gem_R_Momentum` · `Gem_R_Mortality` · `Gem_R_NightSky` · `Gem_R_Panic` · `Gem_R_Purity` · `Gem_R_Rejuvenation` · `Gem_R_Ricochet` · `Gem_R_Rigidity` · `Gem_R_Scorched` · `Gem_R_Shock` · `Gem_R_Slippery` · `Gem_R_Snow` · `Gem_R_Spiral` · `Gem_R_Stillness` · `Gem_R_Wealth` · `Gem_R_Wound` · `Gem_U_EternalFlame` · `Gem_U_GlacialCore` · `Gem_U_GuidingCompass_Charged` · `Gem_U_GuidingCompass_NotCharged` · `Gem_U_LastStarlight` · `Gem_U_SoulPrison` · [HeroSkill](/api/Global.HeroSkill) · `InGameAnalyticsManager` · [InGameUIManager](/api/Global.InGameUIManager) · [PingManager](/api/Global.PingManager) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · [PropEnt_Merchant_Jonas](/api/Global.PropEnt_Merchant_Jonas) · `Se_E_Aftershock_Armor` · `Se_Gem_E_Fever_LivingBomb` · `Se_Gem_L_Liberty_Buff` · `Se_Gem_R_Insatiable` · `Se_R_Tranquility` · `Se_Star_Cetus_I_FirstColdGemQualityBoost` · `Se_Star_I_DismantleReroll` · `Se_Star_I_FirstGemUpgrade` · `Shrine_AltarOfCleansing` · `Shrine_Ascension` · `Shrine_BossSoul` · `Shrine_Chaos` · `Shrine_Concept` · `Shrine_Destiny` · `Shrine_Entanglement` · `Shrine_Guidance` · `Shrine_Luck` · `Shrine_MawOfDoom` · `Shrine_ScaredMaw` · `Shrine_UpgradeWell` · `Star_Global_FirstGemUpgrade` · [Summon](/api/Global.Summon) · `Treasure_SuspiciousHat` · `UI_InGame_GemSlot` · `UI_InGame_GemSlot_EditSkill` · `UI_InGame_Interact_Gem` · `UI_InGame_PartyDisplay_Item` · `UI_InGame_SkillButton_EditSkill` · `UI_InGame_SkillNotifications` · `UI_TooltipManager` · `UI_Tooltip_EquippedGemDescriber_Item` · `UI_Tooltip_GemQuality` · `UI_Tooltip_GemTitle` · `UI_Tooltip_ObjLevel` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (40)
+
+*Types and components that `Gem` references or depends upon:*
+
+[AbilityTargetValidatorWrapper](/api/Global.AbilityTargetValidatorWrapper) · [Actor](/api/Global.Actor) · [BasicEffect](/api/Global.BasicEffect) · [CastInfo](/api/Global.CastInfo) · [ClientEventManager](/api/Global.ClientEventManager) · [DataProcessorGroup`3](/api/Global.DataProcessorGroup`3) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoCast](/api/Global.EventInfoCast) · [EventInfoDamage](/api/Global.EventInfoDamage) · [EventInfoHeal](/api/Global.EventInfoHeal) · [Formula](/api/Global.Formula) · [GameManager](/api/Global.GameManager) · [GemLocation](/api/Global.GemLocation) · `GemWorldModel` · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · [IExcludeFromPool](/api/Global.IExcludeFromPool) · [IInteractable](/api/Global.IInteractable) · [IItem](/api/Global.IItem) · [InGameUIManager](/api/Global.InGameUIManager) · `ItemWorldModel` · [LootManager](/api/Global.LootManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PerRarityData`1](/api/Global.PerRarityData`1) · [PickupManager](/api/Global.PickupManager) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SafeAction`3](/api/Global.SafeAction`3) · [ScalingValue](/api/Global.ScalingValue) · `Se_GenericEffectContainer` · [SkillTrigger](/api/Global.SkillTrigger) · [StatBonus](/api/Global.StatBonus) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (4)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DescriptionTags`](/enums#descriptiontags) · [`DuplicateEffectBehavior`](/enums#duplicateeffectbehavior) · [`Rarity`](/enums#rarity) · [`SaveVarFlags`](/enums#savevarflags)
 
 :::

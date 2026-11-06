@@ -10,6 +10,7 @@ export default defineConfig({
       { text: "Getting Started", link: "/getting-started" },
       { text: "Graph View", link: "/graph" },
       { text: "API Catalog", link: "/catalog" },
+      { text: "Enums (118)", link: "/enums" },
       { text: "AI Workflows", link: "/ai-workflows" },
       {
         text: "v1.0 (Latest)",
@@ -31,10 +32,11 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Visual Exploration',
+        text: 'Visual Exploration & Reference',
         items: [
           { text: 'Interactive Graph View', link: '/graph' },
-          { text: 'Full Type Catalog (897)', link: '/catalog' }
+          { text: 'Full Type Catalog (897)', link: '/catalog' },
+          { text: 'Enums & Constants (118)', link: '/enums' }
         ]
       },
       {

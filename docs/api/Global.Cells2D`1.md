@@ -148,3 +148,20 @@ public void Set((int, int) indices, T value)
 | `value` | `T` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (10)
+
+*Classes and systems that invoke, reference, or depend on `Cells2D<T>`:*
+
+[MapData](/api/Global.MapData) · [RoomMap](/api/Global.RoomMap) · `RoomMod_ArcticTerritory` · `RoomMod_GoldEverywhere` · `RoomMod_PureDream` · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomMonsters](/api/Global.RoomMonsters) · `Sky_WhiteVeil` · `UI_InGame_Map` · `UI_InGame_Map_Item`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

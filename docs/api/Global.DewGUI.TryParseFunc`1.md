@@ -7,3 +7,18 @@
 ```csharp
 public delegate bool DewGUI.TryParseFunc<T>(string str, out T result)
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

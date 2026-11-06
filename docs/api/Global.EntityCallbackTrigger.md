@@ -18,3 +18,22 @@ public class EntityCallbackTrigger : MonoBehaviour
 | **`onEntityExit`** | `public Action<Entity> onEntityExit` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `EntityCallbackTrigger`:*
+
+[DewCollider](/api/Global.DewCollider)
+
+### Dependencies (2)
+
+*Types and components that `EntityCallbackTrigger` references or depends upon:*
+
+[DewCollider](/api/Global.DewCollider) · [DewPhysics](/api/Global.DewPhysics)
+
+:::

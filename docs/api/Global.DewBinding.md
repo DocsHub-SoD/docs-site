@@ -18,12 +18,12 @@ public class DewBinding
 | **`canAssignGamepad`** | `public bool canAssignGamepad` |  |
 | **`canAssignKeyboard`** | `public bool canAssignKeyboard` |  |
 | **`canAssignMouse`** | `public bool canAssignMouse` |  |
-| **`gamepad`** | `[Obsolete] public GamepadButtonEx? gamepad` |  |
+| **`gamepad`** | `[Obsolete] [Obsolete] public GamepadButtonEx? gamepad` |  |
 | **`gamepadBinds`** | `public List<GamepadButtonEx> gamepadBinds` |  |
-| **`keyboard`** | `[Obsolete] public Key keyboard` |  |
-| **`keyModifiers`** | `[Obsolete] public List<Key> keyModifiers` |  |
+| **`keyboard`** | `[Obsolete] [Obsolete] public Key keyboard` |  |
+| **`keyModifiers`** | `[Obsolete] [Obsolete] public List<Key> keyModifiers` |  |
 | **`MockBinding`** | `public static readonly DewBinding MockBinding` |  |
-| **`mouse`** | `[Obsolete] public MouseButton mouse` |  |
+| **`mouse`** | `[Obsolete] [Obsolete] public MouseButton mouse` |  |
 | **`pcBinds`** | `public List<PCBind> pcBinds` |  |
 
 :::
@@ -182,5 +182,30 @@ public static DewBinding PCAndGamepad(params object[] keys)
 | `keys` | `object[]` |  |
 
 **Returns:** `DewBinding`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (9)
+
+*Classes and systems that invoke, reference, or depend on `DewBinding`:*
+
+`ButtonDisplay` · [ControlManager](/api/Global.ControlManager) · [DewControlSettings_User](/api/Global.DewControlSettings_User) · [DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [UI_BindItem](/api/Global.UI_BindItem) · [UI_BindingWindow](/api/Global.UI_BindingWindow) · `UI_InGame_Conversations_Instance` · `UI_Settings_Item_DewBinding`
+
+### Dependencies (2)
+
+*Types and components that `DewBinding` references or depends upon:*
+
+[DewInput](/api/Global.DewInput) · [PCBind](/api/Global.PCBind)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BindingType`](/enums#bindingtype) · [`GamepadButtonEx`](/enums#gamepadbuttonex) · [`MouseButton`](/enums#mousebutton)
 
 :::

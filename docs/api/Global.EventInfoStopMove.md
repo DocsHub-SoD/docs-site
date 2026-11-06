@@ -17,3 +17,20 @@ public struct EventInfoStopMove
 | **`entity`** | `public Entity entity` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `EventInfoStopMove` references or depends upon:*
+
+[Entity](/api/Global.Entity)
+
+:::

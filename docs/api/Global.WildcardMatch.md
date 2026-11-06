@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[Extension]`
 
 ```csharp
 public static class WildcardMatch
@@ -45,5 +46,22 @@ public static bool EqualsWildcard(this string text, string wildcardString)
 | `wildcardString` | `string` | The wildcard pattern to match against. |
 
 **Returns:** `bool: True if the string matches the pattern, otherwise false.`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `WildcardMatch`:*
+
+[ConversationManager](/api/Global.ConversationManager) · `DewConsoleCommands` · [Rift_Sidetrack](/api/Global.Rift_Sidetrack)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
 
 :::

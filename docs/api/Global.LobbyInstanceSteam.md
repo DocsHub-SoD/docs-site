@@ -33,3 +33,22 @@ public void SetCSteamId(CSteamID lobbyId)
 | `lobbyId` | `Steamworks.CSteamID` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `LobbyInstanceSteam`:*
+
+[LobbyServiceSteam](/api/Global.LobbyServiceSteam)
+
+### Dependencies (1)
+
+*Types and components that `LobbyInstanceSteam` references or depends upon:*
+
+[LobbyInstance](/api/Global.LobbyInstance)
+
+:::

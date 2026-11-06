@@ -86,3 +86,22 @@ public static List<T> GetList<T>(out ListReturnHandle<T> handle)
 **Returns:** `System.Collections.Generic.List<T>`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (44)
+
+*Classes and systems that invoke, reference, or depend on `DewPool`:*
+
+`ACH_M_M_M_MONSTER_KILL` · [Actor](/api/Global.Actor) · `Ai_Mon_Ink_BossWhiteNight_Cataclysm_SafeZone` · `Ai_Mon_Sky_BigBaam_BeamAtk` · `Ai_Mon_Special_BossPolaris_Holy_Purgatory_Spawner` · `Ai_R_Inspire_Roar` · [AttachToFace](/api/Global.AttachToFace) · [CameraManager](/api/Global.CameraManager) · [Dew](/api/Global.Dew) · [DewCollider](/api/Global.DewCollider) · [DewEffect](/api/Global.DewEffect) · [DewPhysics](/api/Global.DewPhysics) · [DewProfileStats](/api/Global.DewProfileStats) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityComponent](/api/Global.EntityComponent) · [EntityModel](/api/Global.EntityModel) · [EntityStatus](/api/Global.EntityStatus) · [EntityVisual](/api/Global.EntityVisual) · [FxSelectiveQuality](/api/Global.FxSelectiveQuality) · `Gem_R_Ricochet` · `GetComponentsNonAllocExtension` · [GlobalUIManager](/api/Global.GlobalUIManager) · `Hero_Bismuth` · `Hero_Yubar_ScrollTexture` · `Ink_ScrollingInkAnimation` · `Mon_Special_BossMaw` · [Projectile](/api/Global.Projectile) · [Room](/api/Global.Room) · [RoomModifierBase](/api/Global.RoomModifierBase) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SafeAction`3](/api/Global.SafeAction`3) · [SafeAction`4](/api/Global.SafeAction`4) · `Se_Mon_DarkCave_BossSeeker_Blink` · `Se_R_BaptismOfSun_Buff` · `Se_RoomMod_UnstableVeilOfTime_ModifyCooldowns` · `Shrine_FallenStar` · [StatusEffect](/api/Global.StatusEffect) · `ToListNonAllocExtensions` · `UI_InGame_TimerDisplay_Item` · `UI_TravelerStory_HeroConstellation` · `UI_World_FollowAndFaceCamera`
+
+### Dependencies (4)
+
+*Types and components that `DewPool` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [EntityComponent](/api/Global.EntityComponent) · `IPoolClearable` · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

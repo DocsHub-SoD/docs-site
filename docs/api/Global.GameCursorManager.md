@@ -20,3 +20,20 @@ public class GameCursorManager : ManagerBase<GameCursorManager>, ILogicUpdate
 | **`downCursors`** | `public GameCursorManager.CursorData[] downCursors` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `GameCursorManager` references or depends upon:*
+
+[ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

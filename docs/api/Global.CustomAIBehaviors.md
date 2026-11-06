@@ -38,3 +38,22 @@ public void Remove(CustomAIUpdate onUpdate)
 | `onUpdate` | [`CustomAIUpdate`](/api/Global.CustomAIUpdate) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `CustomAIBehaviors`:*
+
+[Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [Summon](/api/Global.Summon)
+
+### Dependencies (1)
+
+*Types and components that `CustomAIBehaviors` references or depends upon:*
+
+[CustomAIUpdate](/api/Global.CustomAIUpdate)
+
+:::

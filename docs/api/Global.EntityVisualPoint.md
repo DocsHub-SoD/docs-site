@@ -17,3 +17,24 @@ public class EntityVisualPoint : MonoBehaviour
 | **`type`** | `public EntityVisualPointType type` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`EntityVisualPointType`](/enums#entityvisualpointtype)
+
+:::

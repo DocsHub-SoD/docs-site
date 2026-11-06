@@ -20,12 +20,12 @@ public class LootManager : NetworkedManagerBase<LootManager>, ILogicUpdate
 | **`gemQualityRandomCurve`** | `public AnimationCurve gemQualityRandomCurve` |  |
 | **`gemRarityChance`** | `[Title("Gem", null, TitleAlignments.Left, true, true)] public PerRarityData<float> gemRarityChance` |  |
 | **`gemRarityChanceHigh`** | `public PerRarityData<float> gemRarityChanceHigh` |  |
-| **`poolGems`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> poolGems` | Available on server. |
-| **`poolGemsByRarity`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<Rarity, List<string>> poolGemsByRarity` | Available on server. |
-| **`poolGemsByTag`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<DescriptionTags, List<string>> poolGemsByTag` | Available on server. |
-| **`poolSkills`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> poolSkills` | Available on server. |
-| **`poolSkillsByRarity`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<Rarity, List<string>> poolSkillsByRarity` | Available on server. |
-| **`poolSkillsByTag`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<DescriptionTags, List<string>> poolSkillsByTag` | Available on server. |
+| **`poolGems`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> poolGems` | Available on server. |
+| **`poolGemsByRarity`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<Rarity, List<string>> poolGemsByRarity` | Available on server. |
+| **`poolGemsByTag`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<DescriptionTags, List<string>> poolGemsByTag` | Available on server. |
+| **`poolSkills`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> poolSkills` | Available on server. |
+| **`poolSkillsByRarity`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<Rarity, List<string>> poolSkillsByRarity` | Available on server. |
+| **`poolSkillsByTag`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<DescriptionTags, List<string>> poolSkillsByTag` | Available on server. |
 | **`skillLevelMaxByZoneIndex`** | `public PerRarityData<Formula> skillLevelMaxByZoneIndex` |  |
 | **`skillLevelMinByZoneIndex`** | `public PerRarityData<Formula> skillLevelMinByZoneIndex` |  |
 | **`skillLevelRandomCurve`** | `public AnimationCurve skillLevelRandomCurve` |  |
@@ -146,5 +146,30 @@ public Rarity SelectSkillRarity(bool isHigh = false)
 | `isHigh` | `bool` |  |
 
 **Returns:** `Rarity`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `LootManager`:*
+
+`Ai_RandomGemUpgrade` · [Gem](/api/Global.Gem) · [PropEnt_Merchant_Jonas](/api/Global.PropEnt_Merchant_Jonas) · `Se_Star_I_FirstBossGemDrop` · `Se_Star_I_GemOnMiniBossKill` · `Shrine_CallOfTheRavenous` · `Shrine_Destiny` · `Shrine_Enlightenment` · `Shrine_FallenStar` · `Shrine_Luck` · `Shrine_MarshOfDestiny_SeedOfTorment` · `Shrine_Paradox` · `Shrine_Retrospection` · `SpawnGemStarProp` · `Treasure_SuspiciousHat`
+
+### Dependencies (11)
+
+*Types and components that `LootManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Formula](/api/Global.Formula) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PerRarityData`1](/api/Global.PerRarityData`1) · [SkillTrigger](/api/Global.SkillTrigger) · [TransitionManager](/api/Global.TransitionManager) · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DescriptionTags`](/enums#descriptiontags) · [`Rarity`](/enums#rarity) · [`SaveVarFlags`](/enums#savevarflags)
 
 :::

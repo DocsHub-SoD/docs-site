@@ -17,3 +17,20 @@ public class LookAtCamera : MonoBehaviour
 | **`useFacingInsteadOfBillboard`** | `[ToggleLeft] public bool useFacingInsteadOfBillboard` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `LookAtCamera` references or depends upon:*
+
+[Dew](/api/Global.Dew)
+
+:::

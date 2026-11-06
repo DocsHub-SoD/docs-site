@@ -61,3 +61,20 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `SyncedNetworkBehaviour`:*
+
+[EntityAbility](/api/Global.EntityAbility) · [HeroSkill](/api/Global.HeroSkill) · `NetworkBehaviourDictionaryWrapper`2` · `NetworkBehaviourListWrapper`1` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

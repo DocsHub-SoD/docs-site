@@ -68,7 +68,7 @@ def run():
         )
         compiled["legend"] = raw_graph.get("legend", {})
 
-        GRAPH_DATA_PATH.write_text(json.dumps(compiled, separators=(',', ':'), ensure_ascii=False), encoding="utf-8")
+        GRAPH_DATA_PATH.write_text(json.dumps(compiled, indent=2, ensure_ascii=False), encoding="utf-8")
         current_hash = compute_inputs_hash()
         CACHE_HASH_PATH.write_text(current_hash, encoding="utf-8")
         print(f"[build-graph] Compiled and frozen {len(compiled['nodes'])} nodes into {GRAPH_DATA_PATH}")

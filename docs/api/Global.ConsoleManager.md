@@ -148,3 +148,22 @@ public bool ShouldSkipAutoExec()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `ConsoleManager`:*
+
+[CameraManager](/api/Global.CameraManager) · [DevGameManager](/api/Global.DevGameManager) · [DewNetworkManager](/api/Global.DewNetworkManager) · `UI_Dev_ConsoleSelectedEntityInfo` · `UI_InGame_MouseInputReceiver`
+
+### Dependencies (12)
+
+*Types and components that `ConsoleManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ControlManager](/api/Global.ControlManager) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · `InGameAnalyticsManager` · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · `Mirror.GeneratedNetworkCode`
+
+:::

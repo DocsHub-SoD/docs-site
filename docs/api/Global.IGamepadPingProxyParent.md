@@ -17,3 +17,20 @@ public interface IGamepadPingProxyParent
 | **`pingableTarget`** | `MonoBehaviour pingableTarget { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `IGamepadPingProxyParent`:*
+
+[ControlManager](/api/Global.ControlManager) · `UI_InGame_SkillButtons` · `UI_InGame_WorldMap`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

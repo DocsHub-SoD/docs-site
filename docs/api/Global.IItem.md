@@ -40,3 +40,28 @@ bool IsLockedFor(DewPlayer player)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `IItem`:*
+
+[EditSkillManager](/api/Global.EditSkillManager) · [Gem](/api/Global.Gem) · [HeroSkill](/api/Global.HeroSkill) · `IHoldableInHandExtension` · [InGameUIManager](/api/Global.InGameUIManager) · `ItemWorldModel` · `NetworkReaderWriterExtensions` · [SkillTrigger](/api/Global.SkillTrigger)
+
+### Dependencies (4)
+
+*Types and components that `IItem` references or depends upon:*
+
+[DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [Hero](/api/Global.Hero) · `ItemWorldModel`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Rarity`](/enums#rarity)
+
+:::

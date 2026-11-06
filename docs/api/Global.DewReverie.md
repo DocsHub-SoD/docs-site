@@ -118,3 +118,22 @@ public static void StartNextSpecialReverieOrClear()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `DewReverie`:*
+
+`UI_Reveries` · `UI_Reveries_DailySlot` · `UI_Reveries_SpecialSlot`
+
+### Dependencies (5)
+
+*Types and components that `DewReverie` references or depends upon:*
+
+`DateTimeExtensions` · [Dew](/api/Global.Dew) · [DewReverieItem](/api/Global.DewReverieItem) · [DewSave](/api/Global.DewSave) · [DewSpecialReverieItem](/api/Global.DewSpecialReverieItem)
+
+:::

@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[Extension]`
 
 ```csharp
 public static class DewGUI
@@ -440,5 +441,24 @@ public static T SetWidth<T>(this T c, float width) where T : Component
 | `` | `T` |  |
 
 **Returns:** `T`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `DewGUI`:*
+
+[DewMod](/api/Global.DewMod) · [ModConfig](/api/Global.ModConfig)
+
+### Dependencies (11)
+
+*Types and components that `DewGUI` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewLocalization](/api/Global.DewLocalization) · [FieldBuildResult](/api/Global.FieldBuildResult) · `GetAttributeExtensions` · [ManagerBase`1](/api/Global.ManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [UI_BindItem](/api/Global.UI_BindItem) · [UI_Toggle](/api/Global.UI_Toggle) · [UI_Window](/api/Global.UI_Window) · `Vector3FlattenExtension`
 
 :::

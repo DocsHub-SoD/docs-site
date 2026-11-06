@@ -16,7 +16,7 @@ public class FxGibs : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpe
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`angularSpeed`** | `public float angularSpeed` |  |
-| **`info`** | `[HideInInspector] public GibInfo? info` |  |
+| **`info`** | `[HideInInspector] [HideInInspector] public GibInfo? info` |  |
 | **`maxImpulse`** | `public float maxImpulse` |  |
 | **`minImpulse`** | `public float minImpulse` |  |
 | **`randomImpulse`** | `public float randomImpulse` |  |
@@ -59,5 +59,22 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `FxGibs` references or depends upon:*
+
+[FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase) · `PhysX3DSimulationDriver`
 
 :::

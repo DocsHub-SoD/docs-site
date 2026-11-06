@@ -18,3 +18,28 @@ public class HasteEffect : BasicEffectWithStrength
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `HasteEffect`:*
+
+`Se_D_BeautifulThreat` · `Se_D_MercyOfEl` · `Se_R_NightSky_AtkSpd` · [StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (1)
+
+*Types and components that `HasteEffect` references or depends upon:*
+
+[BasicEffectWithStrength](/api/Global.BasicEffectWithStrength)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

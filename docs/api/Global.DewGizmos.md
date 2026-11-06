@@ -71,3 +71,20 @@ public static void DrawText(string text, Vector3 pos, Color color, int fontSize)
 | `fontSize` | `int` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `DewGizmos`:*
+
+[Room_Barrier](/api/Global.Room_Barrier) · [Room_Shortcut](/api/Global.Room_Shortcut) · [Section_Monsters](/api/Global.Section_Monsters)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

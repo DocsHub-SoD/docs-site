@@ -7,3 +7,20 @@
 ```csharp
 public enum AffordType
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `AffordType`:*
+
+[Cost](/api/Global.Cost) · `CostExtensions` · [Shrine](/api/Global.Shrine) · `UI_InGame_Interact_Shrine`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

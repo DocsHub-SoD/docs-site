@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RequireComponent]`
 - **Inheritance / Derived:** [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase)
 
 ```csharp
@@ -79,5 +80,30 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FxVolume`:*
+
+`Se_MirageSkin_Delusion_Delusional`
+
+### Dependencies (2)
+
+*Types and components that `FxVolume` references or depends upon:*
+
+[FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase) · [IEffectWithOwnerContext](/api/Global.IEffectWithOwnerContext)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`EffectOwnerContext`](/enums#effectownercontext)
 
 :::

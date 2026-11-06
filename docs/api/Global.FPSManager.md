@@ -52,3 +52,22 @@ public void UpdateFPSLimit()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FPSManager`:*
+
+[InGameUIManager](/api/Global.InGameUIManager)
+
+### Dependencies (4)
+
+*Types and components that `FPSManager` references or depends upon:*
+
+[ISettingsChangedCallback](/api/Global.ISettingsChangedCallback) · [InGameUIManager](/api/Global.InGameUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [UIManager](/api/Global.UIManager)
+
+:::

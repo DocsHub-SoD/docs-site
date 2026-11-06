@@ -79,3 +79,20 @@ protected override void OnRefresh(DewPlayer player)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (16)
+
+*Types and components that `PropEnt_Merchant_Smoothie` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [AssetRef`1](/api/Global.AssetRef`1) · [Cost](/api/Global.Cost) · [Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [IEnableWandering](/api/Global.IEnableWandering) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · [ResourceLoadSettings](/api/Global.ResourceLoadSettings) · [Treasure](/api/Global.Treasure) · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+:::

@@ -246,3 +246,28 @@ public static UniTask<SubmitItemUpdateResult_t> UpdateItem(PublishedFileId_t id,
 **Returns:** `Cysharp.Threading.Tasks.UniTask<T><SubmitItemUpdateResult_t>`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `DewMod`:*
+
+`LobbyServiceEOS` · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · `UI_ModManager` · `UI_Settings_ModsSection`
+
+### Dependencies (22)
+
+*Types and components that `DewMod` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewGUI](/api/Global.DewGUI) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewResources](/api/Global.DewResources) · [DewSteam](/api/Global.DewSteam) · [GameSettingsManager](/api/Global.GameSettingsManager) · [GlobalUIManager](/api/Global.GlobalUIManager) · [JsonOverrideItem](/api/Global.JsonOverrideItem) · [LoadedModInstance](/api/Global.LoadedModInstance) · [LobbyManager](/api/Global.LobbyManager) · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · [ModBehaviour](/api/Global.ModBehaviour) · [ModConfig](/api/Global.ModConfig) · [ModItem](/api/Global.ModItem) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [TransitionManager](/api/Global.TransitionManager) · [UI_Window](/api/Global.UI_Window)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ModSourceType`](/enums#modsourcetype)
+
+:::

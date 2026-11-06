@@ -41,3 +41,20 @@ public void SelectFlexibleStars(bool isSelected)
 | `isSelected` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `PlayLobby_Tutorial` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile)
+
+:::

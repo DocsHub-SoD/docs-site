@@ -17,3 +17,20 @@ public struct CounterBool
 | **`count`** | `public int count { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `CounterBool`:*
+
+[EntityAnimation](/api/Global.EntityAnimation) · [EntityStatus](/api/Global.EntityStatus) · `NetworkReaderWriterExtensions` · [RoomSection](/api/Global.RoomSection)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

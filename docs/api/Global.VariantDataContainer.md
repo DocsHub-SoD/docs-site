@@ -69,3 +69,18 @@ public bool TryGet<T>(out T data)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

@@ -20,3 +20,20 @@ public struct EventInfoLoadZone
 | **`to`** | `public string to` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (22)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoLoadZone`:*
+
+`ACH_MASTER_OF_EVASION` · [CurseStatusEffect](/api/Global.CurseStatusEffect) · `EveryZoneStarEffect` · [GameMod_MirageSkin](/api/Global.GameMod_MirageSkin) · `GameMod_MorasDomain` · `Ge_Shrine_Anitya` · `Ge_TheConsortOfNight` · `Gem_L_CamillasGift` · [InGameCrashReportManager](/api/Global.InGameCrashReportManager) · `LucidDream_MarshOfDestiny` · `LucidDream_WILD` · `Se_FishScales` · `Se_Shrine_SmallSoul` · `Se_Star_D_TempAbilityPower` · `Se_Star_D_TempAttackDamage` · `Se_Star_L_PeriodicScalingArmor` · `Se_Star_L_TempArmor` · `Se_Star_Nachia_I_ForestKillDreamDust` · `Se_Star_Nachia_I_ForestShopDiscount` · `St_Q_DeathMark` · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

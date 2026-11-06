@@ -225,3 +225,22 @@ public AbilityLockHandle UnlockMovementSkillCast()
 **Returns:** `AbilityLockHandle`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (20)
+
+*Classes and systems that invoke, reference, or depend on `AbilityLockHandle`:*
+
+`Ai_C_Whirlwind` · [EntityAbility](/api/Global.EntityAbility) · `Gem_L_ChaosApple` · `Primus_Ending` · `Se_Curse_DreamAfflictionParalytic` · `Se_Curse_FaintMemory` · `Se_Curse_SilentNight_Locked` · `Se_D_PrismaticEyes` · `Se_FallenStar_WaveringIdentity` · `Se_Gem_L_Infinity` · `Se_GravityTraining` · `Se_HeroBleedingOut` · `Se_L_PyranasFireball` · `Se_MirageSkin_Oblivion_Silenced` · `Se_Mon_Special_BossPolaris_Monster_Scream_SkillLocked` · `Se_R_FrozenFists` · `Se_U_Burrow` · `Se_U_HerWorld_Blackhole` · `Se_U_Hysteria` · `St_L_HerosReturn`
+
+### Dependencies (1)
+
+*Types and components that `AbilityLockHandle` references or depends upon:*
+
+[EntityAbility](/api/Global.EntityAbility)
+
+:::

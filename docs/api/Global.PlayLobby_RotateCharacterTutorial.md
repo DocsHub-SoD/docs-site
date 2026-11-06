@@ -17,3 +17,20 @@ public class PlayLobby_RotateCharacterTutorial : MonoBehaviour
 | **`lobbyCharacters`** | `public PlayLobby_Character[] lobbyCharacters` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `PlayLobby_RotateCharacterTutorial` references or depends upon:*
+
+`ArrayGetOrDefaultExtensions` · [CharacterModelDisplay](/api/Global.CharacterModelDisplay) · [DewPlayer](/api/Global.DewPlayer) · [LobbyUIManager](/api/Global.LobbyUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [SafeAction`2](/api/Global.SafeAction`2)
+
+:::

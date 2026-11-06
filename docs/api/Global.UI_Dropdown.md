@@ -65,3 +65,22 @@ public void SetValueWithoutNotify(object val)
 | `val` | `object` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `UI_Dropdown`:*
+
+`UI_Lobby_AllowMidJoins` · `UI_Title_CreateLobbyView`
+
+### Dependencies (2)
+
+*Types and components that `UI_Dropdown` references or depends upon:*
+
+`ArrayGetOrDefaultExtensions` · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

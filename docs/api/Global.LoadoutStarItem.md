@@ -19,3 +19,20 @@ public struct LoadoutStarItem
 | **`name`** | `public string name` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `LoadoutStarItem`:*
+
+`Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

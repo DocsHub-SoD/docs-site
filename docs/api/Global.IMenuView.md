@@ -45,3 +45,20 @@ void ShowMenu()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `IMenuView`:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager) · [InGameUIManager](/api/Global.InGameUIManager) · `UI_Common_MenuView` · `UI_ControllerDisconnectedIndicator`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

@@ -14,11 +14,11 @@ public class UI_GamepadNavigationHint : MonoBehaviour, IGamepadNavigationHint
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`down`** | `[Header("Down")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings down` |  |
-| **`left`** | `[Header("Left")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings left` |  |
+| **`down`** | `[Header] [Header("Down")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings down` |  |
+| **`left`** | `[Header] [Header("Left")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings left` |  |
 | **`navigation`** | `[HideIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings navigation` |  |
-| **`right`** | `[Header("Right")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings right` |  |
-| **`up`** | `[Header("Up")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings up` |  |
+| **`right`** | `[Header] [Header("Right")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings right` |  |
+| **`up`** | `[Header] [Header("Up")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings up` |  |
 | **`useDifferentNavigationsPerDirection`** | `[ToggleLeft] public bool useDifferentNavigationsPerDirection` |  |
 
 :::
@@ -82,5 +82,28 @@ public bool TryGetUp(out IGamepadFocusable next)
 | `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `UI_GamepadNavigationHint` references or depends upon:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager) · [IGamepadFocusable](/api/Global.IGamepadFocusable) · [IGamepadNavigationHint](/api/Global.IGamepadNavigationHint) · [ManagerBase`1](/api/Global.ManagerBase`1) · [UI_GamepadFocusableGroup](/api/Global.UI_GamepadFocusableGroup)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`GamepadNavigation`](/enums#gamepadnavigation)
 
 :::

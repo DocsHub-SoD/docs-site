@@ -90,3 +90,28 @@ public void UpdateValueDontNotify(DewBinding newReference)
 | `newReference` | [`DewBinding`](/api/Global.DewBinding) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `UI_BindItem`:*
+
+[DewGUI](/api/Global.DewGUI) · `UI_Settings_Item_DewBinding`
+
+### Dependencies (6)
+
+*Types and components that `UI_BindItem` references or depends upon:*
+
+[DewBinding](/api/Global.DewBinding) · [DewInput](/api/Global.DewInput) · [ILangaugeChangedCallback](/api/Global.ILangaugeChangedCallback) · [LogicBehaviour](/api/Global.LogicBehaviour) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1) · [UI_BindingWindow](/api/Global.UI_BindingWindow)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BindingType`](/enums#bindingtype)
+
+:::

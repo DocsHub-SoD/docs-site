@@ -18,3 +18,20 @@ public class AchUnlockOnComplete : Attribute
 | **`targetType`** | `public Type targetType { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `AchUnlockOnComplete`:*
+
+[Dew](/api/Global.Dew)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

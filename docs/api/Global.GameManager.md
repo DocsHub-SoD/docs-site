@@ -19,12 +19,12 @@ public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 | **`ClientEvent_OnDifficultyChanged`** | `public SafeAction<DewDifficultySettings, DewDifficultySettings> ClientEvent_OnDifficultyChanged` | Called everywhere when threat level changes |
 | **`ClientEvent_OnGameConcluded`** | `public SafeAction ClientEvent_OnGameConcluded` | Called everywhere when game is concluded |
 | **`disableStuckCheck`** | `public bool disableStuckCheck` |  |
-| **`gainedExpMultiplier`** | `[NonSerialized] public float gainedExpMultiplier` |  |
+| **`gainedExpMultiplier`** | `[SyncVar] [NonSerialized] public float gainedExpMultiplier` |  |
 | **`ges`** | `public DewGameplayExperienceSettings ges` |  |
-| **`gesTemplate`** | `[FormerlySerializedAs("gss")] public DewGameplayExperienceSettings gesTemplate` |  |
-| **`goldCostMultiplier`** | `[NonSerialized] public float goldCostMultiplier` |  |
-| **`goldIncomeMultiplier`** | `[NonSerialized] public float goldIncomeMultiplier` |  |
-| **`playerRejoinData`** | `[SaveVar(SaveVarFlags.Default)] public Dictionary<string, DewPersistence.PlayerData> playerRejoinData` |  |
+| **`gesTemplate`** | `[FormerlySerializedAs] [FormerlySerializedAs("gss")] public DewGameplayExperienceSettings gesTemplate` |  |
+| **`goldCostMultiplier`** | `[SyncVar] [NonSerialized] public float goldCostMultiplier` |  |
+| **`goldIncomeMultiplier`** | `[SyncVar] [NonSerialized] public float goldIncomeMultiplier` |  |
+| **`playerRejoinData`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public Dictionary<string, DewPersistence.PlayerData> playerRejoinData` |  |
 | **`predictionStrengthOverride`** | `public Func<float> predictionStrengthOverride` |  |
 
 :::
@@ -35,9 +35,9 @@ public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ambientLevel`** | `[SaveVar(SaveVarFlags.Default)] public int ambientLevel { get; set; }` |  |
-| **`difficulty`** | `[SaveVar(SaveVarFlags.Default)] public DewDifficultySettings difficulty { get; set; }` |  |
-| **`elapsedGameTime`** | `[SaveVar(SaveVarFlags.Default)] public float elapsedGameTime { get; set; }` | Elapsed game time in seconds. |
+| **`ambientLevel`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public int ambientLevel { get; set; }` |  |
+| **`difficulty`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public DewDifficultySettings difficulty { get; set; }` |  |
+| **`elapsedGameTime`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public float elapsedGameTime { get; set; }` | Elapsed game time in seconds. |
 | **`isGameConcluded`** | `public bool isGameConcluded { get; }` |  |
 | **`isGameOverEnabled`** | `public bool isGameOverEnabled { get; set; }` |  |
 | **`isGameTimePaused`** | `public bool isGameTimePaused { get; }` |  |
@@ -47,7 +47,7 @@ public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 | **`isSpawnOverPopulation`** | `public bool isSpawnOverPopulation { get; }` |  |
 | **`maxAndSpawnedPopulationMultiplier`** | `public float maxAndSpawnedPopulationMultiplier { get; set; }` |  |
 | **`maxSpawnedPopulation`** | `public float maxSpawnedPopulation { get; }` |  |
-| **`runId`** | `[SaveVar(SaveVarFlags.Default)] public string runId { get; set; }` | Globally unique identifier of this run. This is consistent across all clients. |
+| **`runId`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public string runId { get; set; }` | Globally unique identifier of this run. This is consistent across all clients. |
 | **`spawnedPopulation`** | `public float spawnedPopulation { get; }` | Total population excluding env spawns. =&gt; Spawns from combat areas. |
 
 :::
@@ -873,5 +873,30 @@ public void WrapUpAndShowResult(DewGameResult.ResultType type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | [`DewGameResult.ResultType`](/api/Global.DewGameResult) |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (121)
+
+*Classes and systems that invoke, reference, or depend on `GameManager`:*
+
+`ACH_GOD_PROTECTS_ME` · `ACH_HOME_SWEET_HOME` · `ACH_RAGE_WITHOUT_BOUNDS` · [AbilityTrigger](/api/Global.AbilityTrigger) · [AchievementManager](/api/Global.AchievementManager) · [ActorManager](/api/Global.ActorManager) · `Ai_MiniBoss_BloodThorn_MainThorn` · `Ai_Mon_Despair_BossAzurak_Roll` · `Ai_Mon_Ink_BossDarkMoon_Blade` · `Ai_Mon_Ink_BossWhiteNight_AltAtk_Ready` · `Ai_Mon_Ink_BossWhiteNight_Cataclysm` · `Ai_Mon_Ink_BossWhiteNight_Oppression` · `Ai_Mon_LavaLand_BossInfernus_PowerBomb` · `Ai_Mon_LavaLand_BossInfernus_WallStunKnockback` · `Ai_Mon_Sky_BossNyx_Atk` · `Ai_Mon_SnowMountain_BossSkoll_Atk` · `Ai_Mon_Special_AmbushSpawner_Projectile` · `Ai_Mon_Special_BossErebos_SpawnTormentor_Attacker` · `Ai_Mon_Special_BossMaw_SliceThroat` · `Ai_Mon_Special_BossMaw_SliceThroat_Atk` · `Ai_Mon_Special_BossObliviax_Atk` · `Ai_Mon_Special_BossPolaris_Holy_Purgatory_Spawner` · `Ai_Mon_Special_BossPolaris_Monster_Atk_Spawner` · `Ai_UnstableRatSwarm_Projectile` · `At_Mon_Special_BossLightElemental_Summon` · [BossMonster](/api/Global.BossMonster) · [CameraManager](/api/Global.CameraManager) · [DevGameManager](/api/Global.DevGameManager) · `DewConsoleCommands` · [DewDifficultySettings](/api/Global.DewDifficultySettings) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPersistence](/api/Global.DewPersistence) · [DewPlayer](/api/Global.DewPlayer) · [FlavourManager](/api/Global.FlavourManager) · `Forest_FogAlphaControl` · `Forest_FogVoid` · [GameMod_Limbo](/api/Global.GameMod_Limbo) · `GameMod_Obliviax` · [GameResultManager](/api/Global.GameResultManager) · `Ge_CallOfTheRavenous` · [Gem](/api/Global.Gem) · `InGameAnalyticsManager` · [InGameCrashReportManager](/api/Global.InGameCrashReportManager) · [InGameReverieManager](/api/Global.InGameReverieManager) · [InGameTutorialManager](/api/Global.InGameTutorialManager) · [InGameUIManager](/api/Global.InGameUIManager) · `Ink_BossSelector` · `LobbyServiceEOS` · `LucidDream_Overpopulation` · `Mon_Despair_BossAzurak` · `Mon_Despair_DreadBug` · `Mon_Forest_BossDemon` · `Mon_GoldenLizard_ElusiveLizard` · `Mon_Ink_BossDarkMoon` · `Mon_Primus_BossPrimusAeron` · `Mon_Sky_BossNyx` · `Mon_Special_AmbushSpawner` · `Mon_Special_BossLightElemental` · `Mon_Special_BossObliviax` · `Mon_Special_BossPolaris` · [Monster](/api/Global.Monster) · [PickupManager](/api/Global.PickupManager) · [PlayGameManager](/api/Global.PlayGameManager) · `PlayTutorialManager` · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `PropEnt_Stone_PitchBlackOre` · [Rift_RoomExit](/api/Global.Rift_RoomExit) · `RoomMod_Ambush` · `RoomMod_Anitya` · `RoomMod_ArcticTerritory` · `RoomMod_DistantMemories` · `RoomMod_Hunted` · `RoomMod_InkStrikeWarning` · `RoomMod_PureDream` · `RoomMod_StarCookie` · `RoomMod_UnstableRatSwarm` · `RoomMod_VeilOfDark` · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomProps](/api/Global.RoomProps) · [RoomSection](/api/Global.RoomSection) · `Se_Curse_DreamAfflictionInductive` · `Se_Elm_Fire` · `Se_HarmlessWhispers` · `Se_HeroKnockedOut` · `Se_MiniBoss_IceAura` · `Se_MirageSkin_Pulverization` · `Se_Mon_LavaLand_BossInfernus_InvulShield` · `Se_Star_I_StartSkill` · `Se_Star_Mist_I_CamillasGift` · [Section_Monsters](/api/Global.Section_Monsters) · [Shrine](/api/Global.Shrine) · `Shrine_AltarOfCleansing` · `Shrine_Ascension` · `Shrine_Disintegration` · `Shrine_DreamdustBox` · `Shrine_GoldBox` · `Shrine_MarshOfDestiny_SeedOfTorment` · `Shrine_MawOfDoom` · `Shrine_Polaris_Teleporter` · `Shrine_TheConsortOfNight_Rift` · `Shrine_UpgradeWell` · [SkillTrigger](/api/Global.SkillTrigger) · `SnowMountain_RotateFogVolume` · `StarlessPath_BossPolarisManager` · [Summon](/api/Global.Summon) · `TestMapGameManager` · [Treasure](/api/Global.Treasure) · `UI_EntityProvider_LocalHero` · `UI_InGame_AmbientLevel` · `UI_InGame_Difficulty` · `UI_InGame_GameTimer` · `UI_InGame_KnockedOutIndicator` · `UI_InGame_Location` · `UI_InGame_Map` · `UI_InGame_PickupNumbers` · `UI_InGame_QuestDisplay_Item` · `UI_InGame_ResultView` · `UI_InGame_StardustGroup` · `UI_InGame_VoteDisplay` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (41)
+
+*Types and components that `GameManager` references or depends upon:*
+
+[ActorManager](/api/Global.ActorManager) · `DateTimeExtensions` · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewDifficultySettings](/api/Global.DewDifficultySettings) · [DewGameplayExperienceSettings](/api/Global.DewGameplayExperienceSettings) · [DewMath](/api/Global.DewMath) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPersistence](/api/Global.DewPersistence) · [DewPlayer](/api/Global.DewPlayer) · [DewRandom](/api/Global.DewRandom) · [DewResources](/api/Global.DewResources) · [DewSave](/api/Global.DewSave) · [DewSessionError](/api/Global.DewSessionError) · [EffectAutoDestroy](/api/Global.EffectAutoDestroy) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [Formula](/api/Global.Formula) · [GameSettingsManager](/api/Global.GameSettingsManager) · [Gem](/api/Global.Gem) · [Hero](/api/Global.Hero) · [LoadNodeSettings](/api/Global.LoadNodeSettings) · [LobbyManager](/api/Global.LobbyManager) · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · [Monster](/api/Global.Monster) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PerMonsterTypeData`1](/api/Global.PerMonsterTypeData`1) · [PerRarityData`1](/api/Global.PerRarityData`1) · [Room](/api/Global.Room) · [RoomMonsters](/api/Global.RoomMonsters) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [SkillTrigger](/api/Global.SkillTrigger) · [SyncableAssetRef](/api/Global.SyncableAssetRef) · [TransitionManager](/api/Global.TransitionManager) · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

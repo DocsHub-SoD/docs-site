@@ -17,3 +17,20 @@ public class Room_SurfaceOverride : MonoBehaviour
 | **`data`** | `public DewSurfaceData data` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `Room_SurfaceOverride` references or depends upon:*
+
+[DewSurfaceData](/api/Global.DewSurfaceData)
+
+:::

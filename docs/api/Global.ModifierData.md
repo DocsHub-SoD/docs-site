@@ -21,3 +21,20 @@ public struct ModifierData
 | **`type`** | `public string type` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `ModifierData`:*
+
+[RoomModifierBase](/api/Global.RoomModifierBase) · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

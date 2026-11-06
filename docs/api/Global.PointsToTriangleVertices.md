@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DefaultMember]`
 
 ```csharp
 public class PointsToTriangleVertices
@@ -28,5 +29,22 @@ public IEnumerator<Vector2> GetEnumerator()
 ```
 
 **Returns:** `System.Collections.Generic.IEnumerator<T><UnityEngine.Vector2>`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `PointsToTriangleVertices`:*
+
+[RoomSection](/api/Global.RoomSection)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
 
 :::

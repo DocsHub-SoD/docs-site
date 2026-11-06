@@ -28,7 +28,7 @@ public class GameMod_Limbo : GameModifierBase, ILogicUpdate, ICleanup, ICustomDe
 | **`d4MirageSkinChance`** | `public float d4MirageSkinChance` |  |
 | **`d5BossAtkSpd`** | `public float d5BossAtkSpd` |  |
 | **`d5BossMovSpd`** | `public float d5BossMovSpd` |  |
-| **`depth`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public int depth` |  |
+| **`depth`** | `[SyncVar] [SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public int depth` |  |
 
 :::
 
@@ -217,5 +217,30 @@ public override void OnStartClientLobby()
 ```csharp
 public override void OnStartServerLobby()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (12)
+
+*Classes and systems that invoke, reference, or depend on `GameMod_Limbo`:*
+
+`InGameAnalyticsManager` · [TitleManager](/api/Global.TitleManager) · `UI_InGame_AchievementNotifications` · `UI_LimboDepthIcon` · `UI_Lobby_Limbo_DepthSelect` · `UI_Lobby_Limbo_DepthSelect_Item` · `UI_Lobby_PlayerNametag` · `UI_Lobby_SelectedHeroInfo_LimboProgress` · `UI_Title_CreateLobbyView` · `UI_Title_FindLobbyView` · `UI_Title_FindLobby_LobbyItem` · `UI_Title_TitleView`
+
+### Dependencies (40)
+
+*Types and components that `GameMod_Limbo` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [ChatManager](/api/Global.ChatManager) · [DataProcessorGroup`3](/api/Global.DataProcessorGroup`3) · [Dew](/api/Global.Dew) · [DewGameResult](/api/Global.DewGameResult) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [DewProfileStats](/api/Global.DewProfileStats) · [DewResources](/api/Global.DewResources) · [DewSave](/api/Global.DewSave) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoLoadRoom](/api/Global.EventInfoLoadRoom) · [GameEffect](/api/Global.GameEffect) · [GameManager](/api/Global.GameManager) · [GameModifierBase](/api/Global.GameModifierBase) · [GameSettingsManager](/api/Global.GameSettingsManager) · [ILimboNotifyReceiver](/api/Global.ILimboNotifyReceiver) · [LobbyInstance](/api/Global.LobbyInstance) · [LobbyManager](/api/Global.LobbyManager) · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [Monster](/api/Global.Monster) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PlayLobbyManager](/api/Global.PlayLobbyManager) · [QuestManager](/api/Global.QuestManager) · [ResourceLoadSettings](/api/Global.ResourceLoadSettings) · `ResultTypeExtensions` · [Room](/api/Global.Room) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [StatBonus](/api/Global.StatBonus) · [WorldNodeData](/api/Global.WorldNodeData) · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`LimboDepthState`](/enums#limbodepthstate) · [`SaveVarFlags`](/enums#savevarflags)
 
 :::

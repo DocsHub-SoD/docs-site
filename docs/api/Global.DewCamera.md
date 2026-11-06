@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[ExecuteAlways]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [DewCamera](/api/Global.DewCamera)
 
 ```csharp
@@ -38,5 +39,22 @@ public class DewCamera : ManagerBase<DewCamera>, ILogicUpdate
 ```csharp
 protected override void Awake()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `DewCamera` references or depends upon:*
+
+[ISettingsChangedCallback](/api/Global.ISettingsChangedCallback) · [ManagerBase`1](/api/Global.ManagerBase`1)
 
 :::

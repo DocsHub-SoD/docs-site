@@ -15,8 +15,8 @@ public class Rift_RoomExit : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`forceTravelToNextZone`** | `public bool forceTravelToNextZone` |  |
-| **`nextNodeIndex`** | `public int nextNodeIndex` |  |
+| **`forceTravelToNextZone`** | `[SyncVar] public bool forceTravelToNextZone` |  |
+| **`nextNodeIndex`** | `[SyncVar] public int nextNodeIndex` |  |
 | **`softInstance`** | `public static Rift_RoomExit softInstance` |  |
 
 :::
@@ -97,5 +97,24 @@ public void TpcInteract(NetworkConnectionToClient target)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `target` | `Mirror.NetworkConnectionToClient` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (13)
+
+*Classes and systems that invoke, reference, or depend on `Rift_RoomExit`:*
+
+[ControlManager](/api/Global.ControlManager) · `Forest_LoopCat_Spawner` · [Rift_MockExit](/api/Global.Rift_MockExit) · [Room](/api/Global.Room) · `RoomMod_Ambush` · `RoomMod_ChallengingFight` · `RoomMod_CorruptedChaos_AuraOfPain` · `RoomMod_DistantMemories` · `RoomMod_SpawnMiniBoss` · [RoomRifts](/api/Global.RoomRifts) · `Shrine_MarshOfDestiny_SeedOfTorment` · `UI_InGame_WorldMap` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (17)
+
+*Types and components that `Rift_RoomExit` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [GameManager](/api/Global.GameManager) · [Hero](/api/Global.Hero) · [IBanRoomNodesNearbyMultiple](/api/Global.IBanRoomNodesNearbyMultiple) · [InGameUIManager](/api/Global.InGameUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Rift](/api/Global.Rift) · [Room](/api/Global.Room) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [ZoneManager](/api/Global.ZoneManager)
 
 :::

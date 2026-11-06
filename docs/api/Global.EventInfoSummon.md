@@ -18,3 +18,22 @@ public struct EventInfoSummon
 | **`summon`** | `public Summon summon` | Summoned entity. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoSummon`:*
+
+[Actor](/api/Global.Actor) · `Se_Star_Nachia_D_SummonAtkSpd` · `Se_Star_Nachia_F_MP_StrongerFenrirNoCast` · `Se_Star_Nachia_F_SC_AtkSpd` · `Se_Star_Nachia_F_SC_MoreSummons`
+
+### Dependencies (2)
+
+*Types and components that `EventInfoSummon` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Summon](/api/Global.Summon)
+
+:::

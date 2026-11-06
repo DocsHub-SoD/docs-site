@@ -7,3 +7,20 @@
 ```csharp
 public enum DamageNumberVisibility
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DamageNumberVisibility`:*
+
+[DewGameplaySettings_User](/api/Global.DewGameplaySettings_User)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

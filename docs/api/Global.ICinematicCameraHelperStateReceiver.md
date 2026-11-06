@@ -22,3 +22,20 @@ void OnCinematicCameraHelperChanged(bool on)
 | `on` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `ICinematicCameraHelperStateReceiver`:*
+
+`DewConsoleCommands` · [ObjectHighlightManager](/api/Global.ObjectHighlightManager) · `UI_ApplicationVersion` · `UI_NetworkStatus`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

@@ -54,3 +54,18 @@ public static void SetPropertyOrFieldValue(object target, string name, string va
 | `value` | `string` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

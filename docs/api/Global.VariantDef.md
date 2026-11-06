@@ -104,3 +104,20 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `VariantDef`:*
+
+[DewResources](/api/Global.DewResources) · [DewSave](/api/Global.DewSave) · [ResourceLoadSettings](/api/Global.ResourceLoadSettings) · [RoomMonsters](/api/Global.RoomMonsters) · [TriggerConfig](/api/Global.TriggerConfig)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

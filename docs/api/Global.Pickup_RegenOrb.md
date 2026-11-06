@@ -48,3 +48,20 @@ protected override void OnPickup(Hero hero)
 | `hero` | [`Hero`](/api/Global.Hero) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `Pickup_RegenOrb` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [DewCollider](/api/Global.DewCollider) · [Hero](/api/Global.Hero) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [PickupInstance](/api/Global.PickupInstance)
+
+:::

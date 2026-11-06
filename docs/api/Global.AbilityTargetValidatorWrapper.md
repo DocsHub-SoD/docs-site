@@ -34,3 +34,28 @@ public bool Evaluate(Entity entity)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `AbilityTargetValidatorWrapper`:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [AbilityTrigger](/api/Global.AbilityTrigger) · [Gem](/api/Global.Gem) · [Summon](/api/Global.Summon)
+
+### Dependencies (3)
+
+*Types and components that `AbilityTargetValidatorWrapper` references or depends upon:*
+
+[AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [Entity](/api/Global.Entity) · [IEntityValidator](/api/Global.IEntityValidator)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`EntityRelation`](/enums#entityrelation)
+
+:::

@@ -47,3 +47,20 @@ protected override void OnCursorStatusUpdated()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `MaterialHighlightProvider` references or depends upon:*
+
+[HighlightProvider](/api/Global.HighlightProvider) · [LogicBehaviour](/api/Global.LogicBehaviour)
+
+:::

@@ -39,3 +39,20 @@ public void TransitionToScene(string sceneName)
 | `sceneName` | `string` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `CollectablesManager` references or depends upon:*
+
+[DewInput](/api/Global.DewInput) · [DewLocalization](/api/Global.DewLocalization) · [DewSave](/api/Global.DewSave) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [TransitionManager](/api/Global.TransitionManager)
+
+:::

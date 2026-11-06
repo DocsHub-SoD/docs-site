@@ -18,3 +18,22 @@ public class RandomPickupInstance : PickupInstance, ILogicUpdate, ICleanup, ICus
 | **`dropChance`** | `public float dropChance` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `RandomPickupInstance`:*
+
+`StatusEffectRandomPickupInstance`
+
+### Dependencies (1)
+
+*Types and components that `RandomPickupInstance` references or depends upon:*
+
+[PickupInstance](/api/Global.PickupInstance)
+
+:::

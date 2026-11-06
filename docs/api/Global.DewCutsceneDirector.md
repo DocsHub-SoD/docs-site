@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[ExecuteAlways] [RequireComponent]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour)
 
 ```csharp
@@ -89,5 +90,24 @@ public void Play()
 ```csharp
 public void PlayNetworked()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `DewCutsceneDirector`:*
+
+[CameraManager](/api/Global.CameraManager) · [DewBossRoomEntry](/api/Global.DewBossRoomEntry) · `DewConsoleCommands` · `Ink_SecondCutscenePlay` · `Primus_Ending` · `Shrine_PrimusDoor` · `Sky_BossIntruder` · `StarlessPath_BossPolarisManager`
+
+### Dependencies (8)
+
+*Types and components that `DewCutsceneDirector` references or depends upon:*
+
+[CameraManager](/api/Global.CameraManager) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [EntityVisual](/api/Global.EntityVisual) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1)
 
 :::

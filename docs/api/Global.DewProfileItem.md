@@ -20,3 +20,28 @@ public class DewProfileItem
 | **`state`** | `public DewProfileState state` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `DewProfileItem`:*
+
+`UI_Title_ProfileSelection_DeleteProfileWindow` · `UI_Title_ProfileSelection_ListWindow` · `UI_Title_ProfileSelection_ListWindow_Item`
+
+### Dependencies (2)
+
+*Types and components that `DewProfileItem` references or depends upon:*
+
+[DewProfile](/api/Global.DewProfile) · [DewProfileStats](/api/Global.DewProfileStats)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewProfileState`](/enums#dewprofilestate)
+
+:::

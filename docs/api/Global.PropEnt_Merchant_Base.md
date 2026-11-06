@@ -23,7 +23,7 @@ public abstract class PropEnt_Merchant_Base : PropEntity, ILogicUpdate, ICleanup
 | **`fxPurchaseTreasure`** | `public GameObject fxPurchaseTreasure` |  |
 | **`fxSell`** | `public GameObject fxSell` |  |
 | **`isSellEnabled`** | `public bool isSellEnabled` |  |
-| **`merchandises`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, MerchandiseData[]> merchandises` |  |
+| **`merchandises`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, MerchandiseData[]> merchandises` |  |
 | **`onMerchandisePopulated`** | `public SafeAction<DewPlayer> onMerchandisePopulated` | Called on server after merchandise has been populated for certain player. |
 | **`props`** | `public GameObject[] props` |  |
 
@@ -249,5 +249,30 @@ protected void SpawnMerchandise(MerchandiseData data, DewPlayer player, Cost fin
 | `data` | [`MerchandiseData`](/api/Global.MerchandiseData) |  |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `finalPrice` | [`Cost`](/api/Global.Cost) |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `PropEnt_Merchant_Base`:*
+
+[EditSkillManager](/api/Global.EditSkillManager) · [PropEnt_Merchant_Jonas](/api/Global.PropEnt_Merchant_Jonas) · [PropEnt_Merchant_Smoothie](/api/Global.PropEnt_Merchant_Smoothie) · [Treasure](/api/Global.Treasure) · `UI_InGame_FloatingWindow_Shop`
+
+### Dependencies (29)
+
+*Types and components that `PropEnt_Merchant_Base` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ClientEventManager](/api/Global.ClientEventManager) · [Cost](/api/Global.Cost) · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [EditSkillManager](/api/Global.EditSkillManager) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoLoadRoom](/api/Global.EventInfoLoadRoom) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [GameManager](/api/Global.GameManager) · [Gem](/api/Global.Gem) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · [IInteractable](/api/Global.IInteractable) · [IProp](/api/Global.IProp) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MerchandiseData](/api/Global.MerchandiseData) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PropEntity](/api/Global.PropEntity) · [SafeAction`1](/api/Global.SafeAction`1) · `SetLayerRecursiveExtensions` · [SkillTrigger](/api/Global.SkillTrigger) · [Treasure](/api/Global.Treasure) · `Vector3FlattenExtension`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

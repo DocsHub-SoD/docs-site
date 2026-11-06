@@ -22,3 +22,22 @@ public struct FloatCost
 | **`stardust`** | `public float stardust` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `FloatCost`:*
+
+[Cost](/api/Global.Cost) · `Se_Star_Cetus_I_ColdDiscountFireSurcharge` · `Se_Star_Husk_I_ShopIntimidation` · `Shrine_Guidance`
+
+### Dependencies (1)
+
+*Types and components that `FloatCost` references or depends upon:*
+
+[Cost](/api/Global.Cost)
+
+:::

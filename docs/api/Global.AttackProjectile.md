@@ -51,3 +51,22 @@ protected override void OnPrepare()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (13)
+
+*Classes and systems that invoke, reference, or depend on `AttackProjectile`:*
+
+`Ai_Atk_AurenaFeather` · `Ai_Atk_AurenaFeather_Crit` · `Ai_Atk_BismuthRock` · `Ai_Atk_BismuthRock_Crit` · `Ai_Atk_CetusStaff` · `Ai_Atk_CetusStaff_Crit` · `Ai_Atk_LacertaRifle` · `Ai_Atk_LacertaRifle_Crit` · `Ai_Atk_NachiaStaff` · `Ai_Atk_NachiaStaff_Crit` · `Ai_Atk_YubarStardust` · `Ai_D_PrismaticEyes_Attack` · `Ai_Mon_Despair_ParalyticFly_Atk`
+
+### Dependencies (6)
+
+*Types and components that `AttackProjectile` references or depends upon:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [AbilityTrigger](/api/Global.AbilityTrigger) · [Actor](/api/Global.Actor) · [Projectile](/api/Global.Projectile) · [StandardProjectile](/api/Global.StandardProjectile) · [TriggerConfig](/api/Global.TriggerConfig)
+
+:::

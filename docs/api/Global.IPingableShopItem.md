@@ -18,3 +18,20 @@ public interface IPingableShopItem
 | **`shop`** | `Object shop { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `IPingableShopItem`:*
+
+[ControlManager](/api/Global.ControlManager) · `UI_InGame_FloatingWindow_Shop_Item`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

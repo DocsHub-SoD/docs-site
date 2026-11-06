@@ -69,3 +69,28 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `BoxTelegraphController`:*
+
+`Ai_Mon_Special_BossObliviax_ChargeSequence_Spawner` · `Ai_Mon_Special_BossObliviax_DashAtk_ExtraAtk`
+
+### Dependencies (4)
+
+*Types and components that `BoxTelegraphController` references or depends upon:*
+
+[EaseFunction](/api/Global.EaseFunction) · [EasingFunction](/api/Global.EasingFunction) · [IEffectComponent](/api/Global.IEffectComponent) · [IEffectWithSpeed](/api/Global.IEffectWithSpeed)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BoxTelegraphAnimType`](/enums#boxtelegraphanimtype) · [`DewEase`](/enums#dewease)
+
+:::

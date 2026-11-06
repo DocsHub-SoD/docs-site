@@ -85,3 +85,24 @@ public bool TryGetSkillData(HeroSkillLocation type, out DewGameResult.SkillData 
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

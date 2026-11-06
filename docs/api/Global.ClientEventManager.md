@@ -240,3 +240,28 @@ public virtual void RemoveEvents(Actor actor)
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (16)
+
+*Classes and systems that invoke, reference, or depend on `ClientEventManager`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · `Ai_RandomGemUpgrade` · [Dew](/api/Global.Dew) · [Gem](/api/Global.Gem) · [HeroSkill](/api/Global.HeroSkill) · [Knockback](/api/Global.Knockback) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `Shrine_AltarOfCleansing` · `Shrine_Chaos` · `Shrine_CorruptedChaos` · `Shrine_Entanglement` · `Shrine_MawOfDoom` · `Shrine_ScaredMaw` · `Shrine_UpgradeWell` · [SkillTrigger](/api/Global.SkillTrigger) · [StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (23)
+
+*Types and components that `ClientEventManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EventInfoApplyElemental](/api/Global.EventInfoApplyElemental) · [EventInfoAttackHit](/api/Global.EventInfoAttackHit) · [EventInfoAttackMissed](/api/Global.EventInfoAttackMissed) · [EventInfoCast](/api/Global.EventInfoCast) · [EventInfoDamage](/api/Global.EventInfoDamage) · [EventInfoDamageNegatedByImmunity](/api/Global.EventInfoDamageNegatedByImmunity) · [EventInfoDamageNegatedByShield](/api/Global.EventInfoDamageNegatedByShield) · [EventInfoHeal](/api/Global.EventInfoHeal) · [EventInfoKill](/api/Global.EventInfoKill) · [EventInfoShield](/api/Global.EventInfoShield) · [EventInfoSpentMana](/api/Global.EventInfoSpentMana) · [Gem](/api/Global.Gem) · [Hero](/api/Global.Hero) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SafeAction`3](/api/Global.SafeAction`3) · [SafeAction`4](/api/Global.SafeAction`4) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

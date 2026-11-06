@@ -53,3 +53,22 @@ public void OpenRifts()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `RoomRifts`:*
+
+[Room](/api/Global.Room)
+
+### Dependencies (13)
+
+*Types and components that `RoomRifts` references or depends upon:*
+
+[ActorCheck](/api/Global.ActorCheck) · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewRandom](/api/Global.DewRandom) · [DewResources](/api/Global.DewResources) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Rift](/api/Global.Rift) · [Rift_RoomExit](/api/Global.Rift_RoomExit) · [Rift_Sidetrack](/api/Global.Rift_Sidetrack) · [Room](/api/Global.Room) · [RoomComponent](/api/Global.RoomComponent) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

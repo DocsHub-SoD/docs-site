@@ -15,7 +15,7 @@ public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`azertyLayout`** | `[Multiline] public string azertyLayout` |  |
+| **`azertyLayout`** | `[Multiline] [Multiline] public string azertyLayout` |  |
 | **`azertyShiftAlpha`** | `public string azertyShiftAlpha` |  |
 | **`backspacePrefab`** | `public UI_GamepadTextInput_Key backspacePrefab` |  |
 | **`cancelButton`** | `public Button cancelButton` |  |
@@ -24,7 +24,7 @@ public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>
 | **`inputField`** | `public TMP_InputField inputField` |  |
 | **`leftShiftPrefab`** | `public UI_GamepadTextInput_Key leftShiftPrefab` |  |
 | **`onIsShiftPressedChanged`** | `public Action onIsShiftPressedChanged` |  |
-| **`qwertyLayout`** | `[Multiline] public string qwertyLayout` |  |
+| **`qwertyLayout`** | `[Multiline] [Multiline] public string qwertyLayout` |  |
 | **`qwertyShiftAlpha`** | `public string qwertyShiftAlpha` |  |
 | **`regularKeyPrefab`** | `public UI_GamepadTextInput_Key regularKeyPrefab` |  |
 | **`rightShiftPrefab`** | `public UI_GamepadTextInput_Key rightShiftPrefab` |  |
@@ -170,5 +170,30 @@ public void StartInput(TMP_InputField target, Action<string> onConfirm = null, A
 ```csharp
 public void ToggleShift()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `UI_GamepadTextInput`:*
+
+`UI_Common_MenuView` · [UI_GamepadInputField](/api/Global.UI_GamepadInputField) · [UI_GamepadTextInput_Key](/api/Global.UI_GamepadTextInput_Key) · `UI_Lobby_SendChatMessage` · `UI_Title_ProfileSelection_LinkEnterCodeWindow`
+
+### Dependencies (10)
+
+*Types and components that `UI_GamepadTextInput` references or depends upon:*
+
+[DewInputTrigger](/api/Global.DewInputTrigger) · [DewLocalization](/api/Global.DewLocalization) · [DewSteam](/api/Global.DewSteam) · [GlobalUIManager](/api/Global.GlobalUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [SafeAction`2](/api/Global.SafeAction`2) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1) · [TransitionManager](/api/Global.TransitionManager) · [UI_GamepadTextInput_Key](/api/Global.UI_GamepadTextInput_Key)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`InputMode`](/enums#inputmode)
 
 :::

@@ -15,7 +15,7 @@ public class MockEntity : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`conversationNameUIKey`** | `public string conversationNameUIKey` |  |
+| **`conversationNameUIKey`** | `[SyncVar] public string conversationNameUIKey` |  |
 
 :::
 
@@ -26,5 +26,24 @@ public class MockEntity : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```csharp
 protected override void OnCreate()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `MockEntity`:*
+
+`ConversationShrineBase` · `Shrine_ArtifactGiver`
+
+### Dependencies (3)
+
+*Types and components that `MockEntity` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [InvisibleEffect](/api/Global.InvisibleEffect)
 
 :::

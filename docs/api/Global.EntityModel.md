@@ -120,3 +120,22 @@ public bool TryGetCustomMapping<T>(string key, out T target) where T : class
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (23)
+
+*Classes and systems that invoke, reference, or depend on `EntityModel`:*
+
+`Accessory_AttachPoint` · `Ai_Mon_Special_BossMaw_AnnihilationStance` · `Ai_Mon_Special_BossMaw_Cataclysm_Spawner` · `Ai_Mon_Special_BossMaw_ChainReaction` · `Ai_Mon_Special_BossMaw_MoonlightPact` · `Ai_Mon_Special_BossMaw_PrecisionShot` · [CharacterModelDisplay](/api/Global.CharacterModelDisplay) · [EntityAnimation](/api/Global.EntityAnimation) · [EntityVisual](/api/Global.EntityVisual) · `Hero_Aurena` · `Hero_Bismuth_BookController` · `Hero_Husk` · `Hero_Lacerta` · `Mon_DarkCave_CaveSpider` · `Mon_Despair_BossAzurak` · `Mon_Despair_WretchedArtillery` · `Mon_Ink_Archer` · `Mon_Ink_BossDarkMoon` · `Mon_Ink_BossDarkMoonHallucination` · `Mon_Ink_BossWhiteNight` · `Mon_Ink_EgoSword` · `Mon_Primus_BossPrimusAeron` · `Mon_Special_BossPolaris`
+
+### Dependencies (3)
+
+*Types and components that `EntityModel` references or depends upon:*
+
+[AnimationClipWithSpeed](/api/Global.AnimationClipWithSpeed) · [DewPool](/api/Global.DewPool) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1)
+
+:::

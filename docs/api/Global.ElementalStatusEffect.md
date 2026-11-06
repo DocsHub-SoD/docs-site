@@ -15,7 +15,7 @@ public class ElementalStatusEffect : StackedStatusEffect, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ampAmount`** | `[NonSerialized] public float ampAmount` |  |
+| **`ampAmount`** | `[SyncVar] [NonSerialized] public float ampAmount` |  |
 | **`stackScaledEmissions`** | `public ParticleSystem[] stackScaledEmissions` |  |
 
 :::
@@ -49,5 +49,24 @@ protected override void OnStackChange(int oldStack, int newStack)
 ```csharp
 public override void OnStartClient()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `ElementalStatusEffect`:*
+
+[Actor](/api/Global.Actor) · `Se_Elm_Cold` · `Se_Elm_Dark` · `Se_Elm_Fire` · `Se_Elm_Light`
+
+### Dependencies (3)
+
+*Types and components that `ElementalStatusEffect` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [IOtherPlayersTonedDownDisable](/api/Global.IOtherPlayersTonedDownDisable) · [StackedStatusEffect](/api/Global.StackedStatusEffect)
 
 :::

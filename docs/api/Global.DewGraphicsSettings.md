@@ -59,3 +59,28 @@ public void Validate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `DewGraphicsSettings`:*
+
+[DewPlatformSettings](/api/Global.DewPlatformSettings) · `UI_Settings_View`
+
+### Dependencies (2)
+
+*Types and components that `DewGraphicsSettings` references or depends upon:*
+
+[IInitializableSettings](/api/Global.IInitializableSettings) · [IValidatableSettings](/api/Global.IValidatableSettings)
+
+### Related Enums (4)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Quality3Levels`](/enums#quality3levels) · [`Quality4Levels`](/enums#quality4levels) · [`QualityOff3Levels`](/enums#qualityoff3levels) · [`QualityOff4Levels`](/enums#qualityoff4levels)
+
+:::

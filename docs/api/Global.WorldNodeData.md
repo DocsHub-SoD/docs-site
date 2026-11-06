@@ -137,3 +137,28 @@ public bool IsSidetrackNode()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (13)
+
+*Classes and systems that invoke, reference, or depend on `WorldNodeData`:*
+
+[DewQuest](/api/Global.DewQuest) · `GameMod_CorruptedChaos` · [GameMod_Limbo](/api/Global.GameMod_Limbo) · `Ge_CallOfTheRavenous` · `Ge_Shrine_PotOfGreed` · `Quest_TheConsortOfNight` · [RoomMonsters](/api/Global.RoomMonsters) · `Se_StarlessPath_PowerOfGuidance` · `UI_InGame_WorldMap` · `UI_InGame_World_NodeItem` · `UI_Tooltip_WorldNode_Modifiers` · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (1)
+
+*Types and components that `WorldNodeData` references or depends upon:*
+
+[DewResources](/api/Global.DewResources)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`WorldNodeStatus`](/enums#worldnodestatus) · [`WorldNodeType`](/enums#worldnodetype)
+
+:::

@@ -20,3 +20,22 @@ public struct EventInfoDamageNegatedByImmunity
 | **`victim`** | `public Entity victim` | Victim of the negated damage. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoDamageNegatedByImmunity`:*
+
+[ClientEventManager](/api/Global.ClientEventManager) · `UI_DamageNumberGroup` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (4)
+
+*Types and components that `EventInfoDamageNegatedByImmunity` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [BasicEffect](/api/Global.BasicEffect) · [Entity](/api/Global.Entity) · [FinalDamageData](/api/Global.FinalDamageData)
+
+:::

@@ -38,3 +38,22 @@ public void Setup(Artifact a)
 | `a` | [`Artifact`](/api/Global.Artifact) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ArtifactWorldModel`:*
+
+[Artifact](/api/Global.Artifact)
+
+### Dependencies (2)
+
+*Types and components that `ArtifactWorldModel` references or depends upon:*
+
+[Artifact](/api/Global.Artifact) · [DewEffect](/api/Global.DewEffect)
+
+:::

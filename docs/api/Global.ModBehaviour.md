@@ -227,3 +227,22 @@ protected static bool TryGetConsoleSelectedEntity(out Entity ent)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ModBehaviour`:*
+
+[DewMod](/api/Global.DewMod)
+
+### Dependencies (6)
+
+*Types and components that `ModBehaviour` references or depends upon:*
+
+[DewPersistence](/api/Global.DewPersistence) · [Entity](/api/Global.Entity) · [LoadedModInstance](/api/Global.LoadedModInstance) · [ManagerBase`1](/api/Global.ManagerBase`1) · [ModItem](/api/Global.ModItem) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
+
+:::

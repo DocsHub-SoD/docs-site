@@ -86,3 +86,28 @@ public Vector3 GetSpawnPositionInSection(float minDist, float maxDist, DewRandom
 **Returns:** `UnityEngine.Vector3`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `Section_Monsters`:*
+
+[Hero](/api/Global.Hero) · [Room](/api/Global.Room) · `RoomMod_FragmentOfRadiance_StartProp` · [RoomMonsters](/api/Global.RoomMonsters) · [RoomSection](/api/Global.RoomSection) · `Shrine_TheConsortOfNight`
+
+### Dependencies (14)
+
+*Types and components that `Section_Monsters` references or depends upon:*
+
+[DewGizmos](/api/Global.DewGizmos) · [DewRandom](/api/Global.DewRandom) · [Formula](/api/Global.Formula) · [GameManager](/api/Global.GameManager) · `GetStableHashCodeExtensions` · [MonsterSpawnRule](/api/Global.MonsterSpawnRule) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomSection](/api/Global.RoomSection) · [RoomSectionComponent](/api/Global.RoomSectionComponent) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `TransformGetScenePathExtension` · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CombatAreaActivateCondition`](/enums#combatareaactivatecondition) · [`SectionCombatAreaType`](/enums#sectioncombatareatype)
+
+:::

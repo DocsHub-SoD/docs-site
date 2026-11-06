@@ -106,3 +106,22 @@ public override void OnStartServer()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `ActorManager`:*
+
+[Actor](/api/Global.Actor) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPersistence](/api/Global.DewPersistence) · [DewPlayer](/api/Global.DewPlayer) · [GameManager](/api/Global.GameManager) · [PickupManager](/api/Global.PickupManager) · [RoomMonsters](/api/Global.RoomMonsters)
+
+### Dependencies (20)
+
+*Types and components that `ActorManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [DamageData](/api/Global.DamageData) · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityControl](/api/Global.EntityControl) · [EntityVisual](/api/Global.EntityVisual) · [GameManager](/api/Global.GameManager) · [Hero](/api/Global.Hero) · `ListExtensions` · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `VectorPlaneTransformExtension` · [ZoneManager](/api/Global.ZoneManager)
+
+:::

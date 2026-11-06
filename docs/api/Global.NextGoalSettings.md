@@ -26,3 +26,28 @@ public class NextGoalSettings
 | **`roomOverride`** | `public string roomOverride` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `NextGoalSettings`:*
+
+[DewQuest](/api/Global.DewQuest)
+
+### Dependencies (1)
+
+*Types and components that `NextGoalSettings` references or depends upon:*
+
+[GetNodeIndexSettings](/api/Global.GetNodeIndexSettings)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`FailReason`](/enums#failreason)
+
+:::

@@ -43,8 +43,8 @@ public class TriggerConfig
 | **`selfValidator`** | `[HideLabel] [BoxGroup("A", false, false, 0)] [ShowIf("isActive", true)] public AbilitySelfValidator selfValidator` |  |
 | **`setFillAmount`** | `[ShowIf("IsStatusEffectNonTargeted", true)] public bool setFillAmount` |  |
 | **`spawnedInstanceRef`** | `[InfoBox("StatusEffect will be applied to the caster.", "IsStatusEffectNonTargeted")] [ShowIf("isActive", true)] public AssetRef<AbilityInstance> spawnedInstanceRef` |  |
-| **`startAnim`** | `[FormerlySerializedAs("animation")] [ShowIf("isActive", true)] public DewAnimationClip startAnim` |  |
-| **`startCharges`** | `[HorizontalGroup("HorizontalB", 0, 0, 0, 0)] [LabelText("Start")] [LabelWidth(55)] [SerializeField] [JsonProperty] public int startCharges` |  |
+| **`startAnim`** | `[FormerlySerializedAs] [FormerlySerializedAs("animation")] [ShowIf("isActive", true)] public DewAnimationClip startAnim` |  |
+| **`startCharges`** | `[SerializeField] [JsonProperty] [HorizontalGroup("HorizontalB", 0, 0, 0, 0)] [LabelText("Start")] [LabelWidth(55)] [SerializeField] [JsonProperty] public int startCharges` |  |
 | **`targetValidator`** | `[ShowIf("isActive", true)] [HideLabel] public AbilityTargetValidator targetValidator` |  |
 | **`triggerIcon`** | `[PreviewField(ObjectFieldAlignment.Left, Height = 40)] [HideLabel] [HorizontalGroup("HorizontalC", 40, 0, 0, 0)] public Sprite triggerIcon` |  |
 | **`unstoppableWhileCasting`** | `[BoxGroup("A", false, false, 0)] [ToggleLeft] [HideIf("@!isActive", true)] public bool unstoppableWhileCasting` |  |
@@ -145,5 +145,30 @@ public bool IsStatusEffectNonTargeted()
 ```
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (55)
+
+*Classes and systems that invoke, reference, or depend on `TriggerConfig`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [ActionAttackMove](/api/Global.ActionAttackMove) · [ActionCast](/api/Global.ActionCast) · `Ai_Mon_SnowMountain_VikingWarrior_Atk` · `At_Mon_Special_BossErebos_Ripple` · [AttackProjectile](/api/Global.AttackProjectile) · [AttackTrigger](/api/Global.AttackTrigger) · [ControlManager](/api/Global.ControlManager) · [EntityAI](/api/Global.EntityAI) · [EntityControl](/api/Global.EntityControl) · [GameResultManager](/api/Global.GameResultManager) · `Gem_E_Flexibility` · `Gem_E_Opportunity` · `Gem_L_ChaosApple` · `Gem_L_Paranoia` · [MeleeAttackInstance](/api/Global.MeleeAttackInstance) · `Mon_Despair_Displacer` · `Mon_Despair_ParalyticFly` · `Mon_Forest_Hound` · `Mon_Forest_SpiderSpitter` · `Mon_Ink_BossDarkMoon` · `Mon_Ink_BossWhiteNight` · `Mon_Ink_DivineAnimal` · `Mon_LavaLand_FireElemental` · `Mon_Sky_Baam` · `Mon_Sky_BigBaam_Rooter` · `Mon_Sky_BossNyx` · `Mon_SnowMountain_Scavenger` · `Mon_SnowMountain_SnowWolf` · `Mon_Special_BossErebos` · `Mon_Special_BossObliviax` · `Mon_Special_BossPolaris` · [PingManager](/api/Global.PingManager) · `Se_D_IceColdPresence` · `Se_HunterBuff` · `Se_R_UnbreakableDetermination` · `Se_RoomMod_UnstableVeilOfTime_ModifyCooldowns` · `Se_Star_Bismuth_F_IN_MoreProjByAtkSpd` · `Se_Star_Bismuth_F_VH_FullCharge` · `Se_Star_Lacerta_F_QT_AddedCharges` · [SkillTrigger](/api/Global.SkillTrigger) · `St_Q_Laceration` · `Star_Global_DodgeAbilityCooldown` · `Star_Lacerta_QuickTrigger` · `Star_Mist_AddDodgeCharge` · `Sum_R_SummonLittleBaam_Baam` · `UI_Dev_ConsoleSelectedEntityInfo` · `UI_InGame_HeroDetailWindow` · `UI_InGame_HeroDetailWindow_StatItem` · `UI_InGame_MovementSkillIndicator` · `UI_InGame_Scoreboard_PlayerItem_Skill` · `UI_InGame_SkillButton` · `UI_Lobby_SelectedHeroInfo_HeroStat` · `UI_Tooltip_SkillCooldown` · `UI_Tooltip_SkillMaxCharges`
+
+### Dependencies (19)
+
+*Types and components that `TriggerConfig` references or depends upon:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [AbilitySelfValidator](/api/Global.AbilitySelfValidator) · [AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [AbilityTrigger](/api/Global.AbilityTrigger) · [Actor](/api/Global.Actor) · [AssetRef`1](/api/Global.AssetRef`1) · [CastInfo](/api/Global.CastInfo) · [CastMethodData](/api/Global.CastMethodData) · [DewAnimationClip](/api/Global.DewAnimationClip) · [DewAudioClip](/api/Global.DewAudioClip) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [ICastMethodDataPoint](/api/Global.ICastMethodDataPoint) · [ICastMethodDataTarget](/api/Global.ICastMethodDataTarget) · [StatusEffect](/api/Global.StatusEffect) · [TriggerChannelData](/api/Global.TriggerChannelData) · [VariantDef](/api/Global.VariantDef) · `VectorPlaneTransformExtension`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CastMethodType`](/enums#castmethodtype)
 
 :::

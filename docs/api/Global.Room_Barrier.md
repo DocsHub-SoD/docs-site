@@ -97,3 +97,22 @@ public void Toggle()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `Room_Barrier`:*
+
+`DarkCave_RandomOpenBarrier` · `PlayTutorial_Tutorial_Intro` · `PlayTutorial_Tutorial_SkillsAndEssences` · `SnowMountain_OpenSecretPlace` · `SpawnGemStarProp`
+
+### Dependencies (12)
+
+*Types and components that `Room_Barrier` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [DewCollider](/api/Global.DewCollider) · [DewGizmos](/api/Global.DewGizmos) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [SafeAction](/api/Global.SafeAction) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

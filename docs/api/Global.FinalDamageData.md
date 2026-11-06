@@ -55,3 +55,28 @@ public bool HasAttr(DamageAttribute attr)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (21)
+
+*Classes and systems that invoke, reference, or depend on `FinalDamageData`:*
+
+[Actor](/api/Global.Actor) · `Ai_D_SharedPain_Instance` · `Ai_Gem_L_PureWhite_Projectile` · `Ai_Gem_R_Accuracy_Projectile` · `Ai_Gem_R_Ricochet` · `Ai_Star_Mist_F_LG_ChainAttack_Phantom` · [CameraManager](/api/Global.CameraManager) · [DamageData](/api/Global.DamageData) · `DewDamageNumberRenderer` · [EventInfoDamage](/api/Global.EventInfoDamage) · [EventInfoDamageNegatedByImmunity](/api/Global.EventInfoDamageNegatedByImmunity) · [EventInfoDamageNegatedByShield](/api/Global.EventInfoDamageNegatedByShield) · [HealData](/api/Global.HealData) · `Se_HeroOneShotProtection` · `Se_MirageSkin_Sanctification_Protected` · `Se_Star_Husk_D_DamageOverTimeCritWithPenalty_DoT` · `Se_Star_Mist_F_LG_ChainAttack` · `UI_DamageNumberGroup` · `UI_DamageNumberText` · `UI_EntityFollow` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (5)
+
+*Types and components that `FinalDamageData` references or depends upon:*
+
+[Actor](/api/Global.Actor) · `ActorFlags` · [DamageData](/api/Global.DamageData) · [Entity](/api/Global.Entity) · [EntityStatus](/api/Global.EntityStatus)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AttackEffectType`](/enums#attackeffecttype) · [`DamageAttribute`](/enums#damageattribute) · [`ElementalType`](/enums#elementaltype)
+
+:::

@@ -129,3 +129,28 @@ public bool Validate_Imp(string heroType, bool isRepair, bool checkStarLevels, D
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `HeroLoadoutData`:*
+
+[DevGameManager](/api/Global.DevGameManager) · [Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [Hero](/api/Global.Hero) · [PlayGameManager](/api/Global.PlayGameManager) · [StarEffect](/api/Global.StarEffect) · `UI_Lobby_Constellations` · `UI_Lobby_Constellations_HeroConstellation_StarSlot` · `UI_Lobby_Constellations_QuickLoadoutSwitch` · `UI_Lobby_Constellations_Skills_ContextMenu` · `UI_Lobby_Constellations_Skills_Slot` · `UI_Lobby_Constellations_StarCount` · `UI_Lobby_Constellations_StarItem` · `UI_Lobby_Loadout` · `UI_Lobby_Loadout_AvailableSkills` · `UI_Lobby_Loadout_ComponentBase` · `UI_Lobby_Loadout_SkillSlot` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `HeroLoadoutData` references or depends upon:*
+
+`AssetRefExtensions` · [DewResources](/api/Global.DewResources)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation) · [`StarType`](/enums#startype)
+
+:::

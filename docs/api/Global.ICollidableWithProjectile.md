@@ -22,3 +22,22 @@ void OnProjectileCollision(CollidableHit hit)
 | `hit` | [`CollidableHit`](/api/Global.CollidableHit) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `ICollidableWithProjectile`:*
+
+[DewPhysics](/api/Global.DewPhysics) · [Projectile](/api/Global.Projectile) · [ProxyCollider](/api/Global.ProxyCollider)
+
+### Dependencies (1)
+
+*Types and components that `ICollidableWithProjectile` references or depends upon:*
+
+[CollidableHit](/api/Global.CollidableHit)
+
+:::

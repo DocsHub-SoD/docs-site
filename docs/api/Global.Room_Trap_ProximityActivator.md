@@ -44,3 +44,20 @@ public override void LogicUpdate(float dt)
 | `dt` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `Room_Trap_ProximityActivator` references or depends upon:*
+
+[DewCollider](/api/Global.DewCollider) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [Room_Trap_ActivatorBase](/api/Global.Room_Trap_ActivatorBase)
+
+:::

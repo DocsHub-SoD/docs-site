@@ -24,3 +24,20 @@ public class PingUIInstance : MonoBehaviour
 | **`useAlwaysOnTopUIParent`** | `public bool useAlwaysOnTopUIParent` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (4)
+
+*Types and components that `PingUIInstance` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [InGameUIManager](/api/Global.InGameUIManager) · `Vector3QuantitizeExtension`
+
+:::

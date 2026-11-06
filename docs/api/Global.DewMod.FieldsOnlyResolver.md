@@ -25,3 +25,18 @@ protected override JsonProperty CreateProperty(MemberInfo member, MemberSerializ
 **Returns:** `Newtonsoft.Json.Serialization.JsonProperty`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

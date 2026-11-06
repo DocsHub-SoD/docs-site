@@ -30,3 +30,22 @@ public static UniTask AgreeEula()
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DewEula`:*
+
+`UI_Title_EULAView`
+
+### Dependencies (1)
+
+*Types and components that `DewEula` references or depends upon:*
+
+`SteamTicketForWebApi`
+
+:::

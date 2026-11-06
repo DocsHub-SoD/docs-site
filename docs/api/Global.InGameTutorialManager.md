@@ -105,3 +105,28 @@ public void StopTutorials()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `InGameTutorialManager`:*
+
+`DewConsoleCommands` · [DewInGameTutorialItem](/api/Global.DewInGameTutorialItem) · [DewSave](/api/Global.DewSave) · `PlayTutorial_Tutorial` · `UI_Settings_View`
+
+### Dependencies (10)
+
+*Types and components that `InGameTutorialManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewInGameTutorialItem](/api/Global.DewInGameTutorialItem) · [DewPlayer](/api/Global.DewPlayer) · [GameManager](/api/Global.GameManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · `TutorialArrow`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

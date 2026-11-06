@@ -64,3 +64,22 @@ public void Unlock()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `Room_Waypoint`:*
+
+[Hero](/api/Global.Hero) · [Room](/api/Global.Room)
+
+### Dependencies (6)
+
+*Types and components that `Room_Waypoint` references or depends upon:*
+
+[DewCollider](/api/Global.DewCollider) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [IPlayerPathablePoint](/api/Global.IPlayerPathablePoint) · [Room](/api/Global.Room) · [RoomSection](/api/Global.RoomSection) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1)
+
+:::

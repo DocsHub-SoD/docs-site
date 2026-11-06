@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[LogicUpdatePriority]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [ControlManager](/api/Global.ControlManager)
 
 ```csharp
@@ -657,5 +658,30 @@ public bool ShouldProcessPingInput()
 ```
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (35)
+
+*Classes and systems that invoke, reference, or depend on `ControlManager`:*
+
+[CameraManager](/api/Global.CameraManager) · [CastIndicatorManager](/api/Global.CastIndicatorManager) · [CinematicCameraHelper](/api/Global.CinematicCameraHelper) · [ConsoleManager](/api/Global.ConsoleManager) · [ConversationManager](/api/Global.ConversationManager) · `DewConsoleCommands` · [DewInput](/api/Global.DewInput) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillManager](/api/Global.EditSkillManager) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [InGameUIManager](/api/Global.InGameUIManager) · [Mon_DreamTeller](/api/Global.Mon_DreamTeller) · [ObjectHighlightManager](/api/Global.ObjectHighlightManager) · `PlayTutorial_Tutorial_Hunt` · `PlayTutorial_Tutorial_Intro` · `PlayTutorial_Tutorial_SkillsAndEssences` · `Se_ObliviaxKidnap` · `StarlessPath_BossPolarisManager` · `UI_Common_ChatBox` · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · `UI_EntityHealthBar` · `UI_EntityHealthBarMain` · `UI_EntityTalk` · `UI_InGame_CooldownTimeNotification` · `UI_InGame_InteractGroup` · `UI_InGame_InvertedControlsCursor` · `UI_InGame_MouseInputReceiver` · `UI_InGame_Result_HeroSkillItem` · `UI_InGame_Scoreboard_PlayerItem_Skill` · `UI_InGame_SkillButton` · `UI_InGame_SkillButton_EditSkill` · `UI_InGame_SkillButtons` · `UI_InGame_WorldMap`
+
+### Dependencies (64)
+
+*Types and components that `ControlManager` references or depends upon:*
+
+[AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [AbilityTrigger](/api/Global.AbilityTrigger) · [ActionAttackMove](/api/Global.ActionAttackMove) · [Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [CameraManager](/api/Global.CameraManager) · [CastIndicatorManager](/api/Global.CastIndicatorManager) · [CastInfo](/api/Global.CastInfo) · [CastMethodData](/api/Global.CastMethodData) · [CommandMarker](/api/Global.CommandMarker) · [ComponentCache`2](/api/Global.ComponentCache`2) · [ConversationManager](/api/Global.ConversationManager) · [Dew](/api/Global.Dew) · [DewBinding](/api/Global.DewBinding) · [DewControlSettings_User](/api/Global.DewControlSettings_User) · [DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [DewPhysics](/api/Global.DewPhysics) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillManager](/api/Global.EditSkillManager) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [EntityCheck](/api/Global.EntityCheck) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [EntityVisual](/api/Global.EntityVisual) · [FeedbackManager](/api/Global.FeedbackManager) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [GlobalUIManager](/api/Global.GlobalUIManager) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · `HeroSkillTypeExtensions` · [HighlightProvider](/api/Global.HighlightProvider) · [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) · [ICastMethodDataPoint](/api/Global.ICastMethodDataPoint) · [IEntityValidator](/api/Global.IEntityValidator) · [IGamepadPingProxyParent](/api/Global.IGamepadPingProxyParent) · [IInteractable](/api/Global.IInteractable) · `IInteractableUnityNullCheckExtension` · [IPingableChoiceItem](/api/Global.IPingableChoiceItem) · [IPingableCustom](/api/Global.IPingableCustom) · [IPingableShopItem](/api/Global.IPingableShopItem) · [IPingableUIElement](/api/Global.IPingableUIElement) · [IPingableWorldNode](/api/Global.IPingableWorldNode) · [IWorldPositionReceiver](/api/Global.IWorldPositionReceiver) · [InGameUIManager](/api/Global.InGameUIManager) · [InputManager](/api/Global.InputManager) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PingManager](/api/Global.PingManager) · [Rift](/api/Global.Rift) · [Rift_RoomExit](/api/Global.Rift_RoomExit) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1) · [SkillTrigger](/api/Global.SkillTrigger) · [SpawnManager](/api/Global.SpawnManager) · [TriggerConfig](/api/Global.TriggerConfig) · [UIManager](/api/Global.UIManager) · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · `Vector3FlattenExtension` · `VectorPlaneTransformExtension` · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CastConfirmType`](/enums#castconfirmtype) · [`HeroSkillLocation`](/enums#heroskilllocation) · [`SkillType`](/enums#skilltype)
 
 :::

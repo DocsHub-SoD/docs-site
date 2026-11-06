@@ -382,3 +382,22 @@ public void UnmutePlayer(DewPlayer player)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (32)
+
+*Classes and systems that invoke, reference, or depend on `ChatManager`:*
+
+[AchievementManager](/api/Global.AchievementManager) · [CurseStatusEffect](/api/Global.CurseStatusEffect) · [DewAdvText](/api/Global.DewAdvText) · [DewNetworkManager](/api/Global.DewNetworkManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · `Ge_Obliviax_InterruptTravelAndKidnap` · `Ge_Shrine_PotOfGreed` · `NextZoneOverrideTreasure` · [PingManager](/api/Global.PingManager) · `Quest_LostSoul` · `Quest_TheConsortOfNight` · `Shrine_Anitya` · `Shrine_Ascension` · `Shrine_Entanglement` · `Shrine_Guidance` · `Shrine_HeroSoul` · `Shrine_MarshOfDestiny_SeedOfTorment` · `Shrine_TheConsortOfNight` · `Treasure_Clairvoyance` · `Treasure_CloakOfGuidance` · `UI_Common_ChatBox` · `UI_Common_ChatBox_Item` · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · `UI_InGame_Conversations_Instance` · `UI_InGame_FloatingWindow_SeedOfTorment_Item` · `UI_InGame_GiveCurrencyView` · `UI_InGame_Scoreboard_PlayerItem` · `UI_InGame_SkillNotifications` · `UI_InGame_VoteDisplay` · `UI_InGame_VoteDisplay_PlayerItem` · `UI_Lobby_PlayerListItem` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (13)
+
+*Types and components that `ChatManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewAdvText](/api/Global.DewAdvText) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [DewSafety](/api/Global.DewSafety) · [Gem](/api/Global.Gem) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · `Mirror.GeneratedNetworkCode`
+
+:::

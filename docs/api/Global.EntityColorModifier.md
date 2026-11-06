@@ -33,3 +33,22 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `EntityColorModifier`:*
+
+[EntityVisual](/api/Global.EntityVisual) · [FxEntityColor](/api/Global.FxEntityColor) · `Mon_DarkCave_NightOlm` · `Se_DarkCondensationZone`
+
+### Dependencies (2)
+
+*Types and components that `EntityColorModifier` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual)
+
+:::

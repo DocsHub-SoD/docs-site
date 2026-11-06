@@ -87,3 +87,22 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ActionAttackMove`:*
+
+[ControlManager](/api/Global.ControlManager)
+
+### Dependencies (10)
+
+*Types and components that `ActionAttackMove` references or depends upon:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [ActionBase](/api/Global.ActionBase) · [DewPhysics](/api/Global.DewPhysics) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [TriggerConfig](/api/Global.TriggerConfig) · `VectorPlaneTransformExtension`
+
+:::

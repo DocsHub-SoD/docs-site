@@ -70,3 +70,22 @@ public SafeAction<T1, T2, T3, T4> Remove(Action<T1, T2, T3, T4> handler)
 **Returns:** `SafeAction<T1, T2, T3, T4>`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `SafeAction<T1, T2, T3, T4>`:*
+
+[ClientEventManager](/api/Global.ClientEventManager)
+
+### Dependencies (3)
+
+*Types and components that `SafeAction<T1, T2, T3, T4>` references or depends upon:*
+
+[DewPool](/api/Global.DewPool) · `IPoolClearable` · [ListReturnHandle`1](/api/Global.ListReturnHandle`1)
+
+:::

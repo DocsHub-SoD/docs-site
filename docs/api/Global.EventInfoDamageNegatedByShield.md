@@ -21,3 +21,22 @@ public struct EventInfoDamageNegatedByShield
 | **`victim`** | `public Entity victim` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoDamageNegatedByShield`:*
+
+`ACH_SHIELD_BATTERY` · `Ai_Mon_Special_BossObliviax_ChargeSequence_Ready` · [ClientEventManager](/api/Global.ClientEventManager) · `Gem_L_Supersymmetry` · `Se_GenericShield_OneShot` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (4)
+
+*Types and components that `EventInfoDamageNegatedByShield` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [FinalDamageData](/api/Global.FinalDamageData) · [ShieldEffect](/api/Global.ShieldEffect)
+
+:::

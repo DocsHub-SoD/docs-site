@@ -7,3 +7,20 @@
 ```csharp
 public enum EnterGroupBehavior
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `EnterGroupBehavior`:*
+
+[UI_GamepadFocusableGroup](/api/Global.UI_GamepadFocusableGroup)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

@@ -32,3 +32,20 @@ public class DewSurfaceData : MonoBehaviour
 | **`defaultSurface`** | `public static DewSurfaceData defaultSurface { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `DewSurfaceData`:*
+
+[EntitySound](/api/Global.EntitySound) · [Room](/api/Global.Room) · [Room_SurfaceOverride](/api/Global.Room_SurfaceOverride)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

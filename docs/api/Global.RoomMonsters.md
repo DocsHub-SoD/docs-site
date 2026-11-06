@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RoomComponentStartDependency]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
 
 ```csharp
@@ -24,8 +25,8 @@ public class RoomMonsters : RoomComponent, ILogicUpdate
 | **`clearRoomOnClearAllCombatAreas`** | `[ToggleLeft] public bool clearRoomOnClearAllCombatAreas` |  |
 | **`CombatAreaScoreRandomness`** | `public const float CombatAreaScoreRandomness = 0.3` |  |
 | **`defaultRule`** | `public MonsterSpawnRule defaultRule` |  |
-| **`destroyedSceneIds`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<ulong> destroyedSceneIds` | Available on server. Ids of objects that were in the room but has been destroyed. |
-| **`disableEnvSpawn`** | `[Space(16)] public bool disableEnvSpawn` |  |
+| **`destroyedSceneIds`** | `[SaveVar] [NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<ulong> destroyedSceneIds` | Available on server. Ids of objects that were in the room but has been destroyed. |
+| **`disableEnvSpawn`** | `[Space] [Space(16)] public bool disableEnvSpawn` |  |
 | **`disableMiniBossRewards`** | `[NonSerialized] public bool disableMiniBossRewards` |  |
 | **`envSpawnPoolOverride`** | `[HideIf("disableEnvSpawn", true)] public MonsterPool envSpawnPoolOverride` |  |
 | **`insertedCombatAreas`** | `public int insertedCombatAreas` |  |
@@ -189,5 +190,30 @@ public UniTask SpawnMonstersAsync(SpawnMonsterSettings settings)
 | `settings` | [`SpawnMonsterSettings`](/api/Global.SpawnMonsterSettings) |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `RoomMonsters`:*
+
+`DewConsoleCommands` · [GameManager](/api/Global.GameManager) · [Room](/api/Global.Room) · `RoomMod_Ambush` · `RoomMod_LeafPuppies` · `RoomMod_MeteoricLife` · [Section_Monsters](/api/Global.Section_Monsters) · `Shrine_TheConsortOfNight`
+
+### Dependencies (51)
+
+*Types and components that `RoomMonsters` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorManager](/api/Global.ActorManager) · `AdaptiveAbilityBaseline` · [AssetRef`1](/api/Global.AssetRef`1) · [CameraManager](/api/Global.CameraManager) · [Cells2D`1](/api/Global.Cells2D`1) · [Dew](/api/Global.Dew) · [DewEffect](/api/Global.DewEffect) · [DewPlayer](/api/Global.DewPlayer) · [DewRandom](/api/Global.DewRandom) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityControl](/api/Global.EntityControl) · [GameManager](/api/Global.GameManager) · [GameMod_MirageSkin](/api/Global.GameMod_MirageSkin) · [Hero](/api/Global.Hero) · `IPreemptiveMiniBossSection` · `IPrewarmMiniBossContributor` · `IPrewarmMonsterContributor` · `IPrewarmPopulationMultiplier` · `IPrewarmRoomContributor` · [ISpawnableAsMiniBoss](/api/Global.ISpawnableAsMiniBoss) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MapData](/api/Global.MapData) · [Monster](/api/Global.Monster) · `MonsterAbilityPrewarmConfig` · [MonsterPool](/api/Global.MonsterPool) · [MonsterSpawnRule](/api/Global.MonsterSpawnRule) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · `QuaternionFlattenExtension` · [RefValue`1](/api/Global.RefValue`1) · [Room](/api/Global.Room) · [RoomComponent](/api/Global.RoomComponent) · [RoomSection](/api/Global.RoomSection) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [Section_Monsters](/api/Global.Section_Monsters) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [SpawnManager](/api/Global.SpawnManager) · [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) · [StatusEffect](/api/Global.StatusEffect) · [TransitionManager](/api/Global.TransitionManager) · [VariantDef](/api/Global.VariantDef) · `Vector3FlattenExtension` · `VectorPlaneTransformExtension` · [WorldNodeData](/api/Global.WorldNodeData) · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

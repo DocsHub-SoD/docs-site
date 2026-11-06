@@ -68,3 +68,22 @@ protected virtual void Start()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `MeshHighlightProvider`:*
+
+[EntityHighlightProvider](/api/Global.EntityHighlightProvider) · [EntityVisual](/api/Global.EntityVisual) · [InteractableMeshHighlightProvider](/api/Global.InteractableMeshHighlightProvider) · `UI_EntityHealthBar` · `UI_EntityHealthBarMain`
+
+### Dependencies (3)
+
+*Types and components that `MeshHighlightProvider` references or depends upon:*
+
+[HighlightProvider](/api/Global.HighlightProvider) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ObjectHighlightManager](/api/Global.ObjectHighlightManager)
+
+:::

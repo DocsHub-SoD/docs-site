@@ -19,3 +19,22 @@ public struct EventInfoTravelToNodeInterrupt
 | **`to`** | `public int to` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoTravelToNodeInterrupt`:*
+
+`Ge_Obliviax_InterruptTravelAndKidnap` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (1)
+
+*Types and components that `EventInfoTravelToNodeInterrupt` references or depends upon:*
+
+[Zone](/api/Global.Zone)
+
+:::

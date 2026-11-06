@@ -7,3 +7,20 @@
 ```csharp
 public enum MidJoinBanType
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `MidJoinBanType`:*
+
+[GameSettingsManager](/api/Global.GameSettingsManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

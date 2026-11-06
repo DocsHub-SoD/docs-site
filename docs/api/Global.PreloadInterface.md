@@ -71,3 +71,22 @@ public void KeepEverything()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `PreloadInterface`:*
+
+[DewResources](/api/Global.DewResources)
+
+### Dependencies (4)
+
+*Types and components that `PreloadInterface` references or depends upon:*
+
+[AssetRef`1](/api/Global.AssetRef`1) · [DewResources](/api/Global.DewResources) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [MonsterPool](/api/Global.MonsterPool)
+
+:::

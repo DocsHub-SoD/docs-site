@@ -18,3 +18,28 @@ public class SpeedEffect : BasicEffectWithStrength
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `SpeedEffect`:*
+
+`Se_Nor_WindowToTheSoul_SpiritualDominance` · `Se_Star_Bismuth_L_ContinuousSpeed` · [StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (1)
+
+*Types and components that `SpeedEffect` references or depends upon:*
+
+[BasicEffectWithStrength](/api/Global.BasicEffectWithStrength)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

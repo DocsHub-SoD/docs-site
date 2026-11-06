@@ -45,3 +45,22 @@ public void CompleteReverie(DewReverieItem item)
 | `item` | [`DewReverieItem`](/api/Global.DewReverieItem) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `InGameReverieManager`:*
+
+[DewReverieItem](/api/Global.DewReverieItem)
+
+### Dependencies (12)
+
+*Types and components that `InGameReverieManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewGameObserverWithProgress](/api/Global.DewGameObserverWithProgress) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPersistentGameObserver](/api/Global.DewPersistentGameObserver) · [DewPlayer](/api/Global.DewPlayer) · [DewReverieItem](/api/Global.DewReverieItem) · [DewSave](/api/Global.DewSave) · [GameManager](/api/Global.GameManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

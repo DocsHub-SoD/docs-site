@@ -39,3 +39,20 @@ public static string FilterProfanityIfEnabled(string text)
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `DewSafety`:*
+
+[ChatManager](/api/Global.ChatManager) · [DewAdvText](/api/Global.DewAdvText) · [DewPlayer](/api/Global.DewPlayer) · `UI_Title_FindLobby_LobbyItem`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

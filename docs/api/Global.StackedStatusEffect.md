@@ -129,3 +129,22 @@ public void SetStack(int stack)
 | `stack` | `int` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (35)
+
+*Classes and systems that invoke, reference, or depend on `StackedStatusEffect`:*
+
+[Actor](/api/Global.Actor) · `Ai_Culinary_Pickup` · `Ai_L_MentalCorruption_Projectile` · `Ai_Q_GoldenBurst` · [ElementalStatusEffect](/api/Global.ElementalStatusEffect) · `Se_Curse_EternalLoop` · `Se_D_BeautifulThreat` · `Se_D_ChargedAnguillian` · `Se_D_DoubleTap` · `Se_D_ExoticMatter` · `Se_D_IcyVeins` · `Se_D_MercyOfEl` · `Se_Elm_Cold` · `Se_Elm_Dark` · `Se_Elm_Fire` · `Se_Elm_Light` · `Se_FatalHitProtection_Interrupt` · `Se_Gem_L_Culinary_Stack` · `Se_L_MentalCorruption` · `Se_MirageSkin_Delusion` · `Se_MirageSkin_Delusion_Delusional` · `Se_Nor_MyOwnLittleNebula` · `Se_Q_Fleche` · `Se_Q_GoldenBurst_Wither` · `Se_Shrine_SmallSoul` · `Se_Star_Bismuth_D_Conquerer_Stacks` · `Se_StarlessPath_PowerOfGuidance` · `Shrine_BrokenWoodenDoll` · `Shrine_CookingPot` · `Shrine_Guidance` · `Shrine_SmallSoul` · `St_D_IcyVeins` · `St_Q_GoldenBurst` · `TempEffect` · `UI_InGame_StatusEffectIcons_Item`
+
+### Dependencies (2)
+
+*Types and components that `StackedStatusEffect` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [StatusEffect](/api/Global.StatusEffect)
+
+:::

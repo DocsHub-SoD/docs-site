@@ -7,3 +7,20 @@
 ```csharp
 public enum ModSourceType
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ModSourceType`:*
+
+[DewMod](/api/Global.DewMod) · [ModItem](/api/Global.ModItem)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

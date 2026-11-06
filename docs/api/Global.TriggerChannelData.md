@@ -61,3 +61,22 @@ public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidato
 **Returns:** `Channel`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `TriggerChannelData`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [AttackTrigger](/api/Global.AttackTrigger) · `Se_R_UnbreakableDetermination` · [TriggerConfig](/api/Global.TriggerConfig)
+
+### Dependencies (4)
+
+*Types and components that `TriggerChannelData` references or depends upon:*
+
+[Channel](/api/Global.Channel) · [Entity](/api/Global.Entity) · [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) · [IEntityValidator](/api/Global.IEntityValidator)
+
+:::

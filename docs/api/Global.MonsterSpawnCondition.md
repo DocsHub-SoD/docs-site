@@ -43,3 +43,26 @@ public bool EvaluateCondition()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `MonsterSpawnCondition` references or depends upon:*
+
+[NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`MonsterSpawnConditionType`](/enums#monsterspawnconditiontype)
+
+:::

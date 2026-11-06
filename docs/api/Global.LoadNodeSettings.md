@@ -40,3 +40,22 @@ public LoadNodeSettings Clone()
 **Returns:** `LoadNodeSettings`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `LoadNodeSettings`:*
+
+[DewPersistence](/api/Global.DewPersistence) · [GameManager](/api/Global.GameManager) · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (1)
+
+*Types and components that `LoadNodeSettings` references or depends upon:*
+
+[Zone](/api/Global.Zone)
+
+:::

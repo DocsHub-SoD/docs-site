@@ -28,3 +28,20 @@ public void OnEffectSetup()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `FxFindEntity` references or depends upon:*
+
+[Actor](/api/Global.Actor) · `GetComponentsNonAllocExtension` · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [IEffectSetupComponent](/api/Global.IEffectSetupComponent) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
+
+:::

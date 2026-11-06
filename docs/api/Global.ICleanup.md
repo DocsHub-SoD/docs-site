@@ -29,3 +29,20 @@ void OnCleanup()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `ICleanup`:*
+
+[Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [EntityAbility](/api/Global.EntityAbility) · [EntityControl](/api/Global.EntityControl) · [EntitySound](/api/Global.EntitySound) · [EntityStatus](/api/Global.EntityStatus) · [EntityVisual](/api/Global.EntityVisual) · [HeroSkill](/api/Global.HeroSkill)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

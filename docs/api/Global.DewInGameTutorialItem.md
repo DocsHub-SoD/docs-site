@@ -117,3 +117,22 @@ protected void TutOnOutOfCombat(Action func)
 | `func` | `System.Action` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `DewInGameTutorialItem`:*
+
+[InGameTutorialManager](/api/Global.InGameTutorialManager) · `Tut_Cleanse` · `Tut_ShopSell` · `Tut_World` · `Tut_WorldHunt`
+
+### Dependencies (3)
+
+*Types and components that `DewInGameTutorialItem` references or depends upon:*
+
+[Coroutiner](/api/Global.Coroutiner) · [InGameTutorialManager](/api/Global.InGameTutorialManager) · `TutorialArrow`
+
+:::

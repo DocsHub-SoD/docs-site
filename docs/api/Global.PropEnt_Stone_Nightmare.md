@@ -18,3 +18,22 @@ public class PropEnt_Stone_Nightmare : PropEntity, ILogicUpdate, ICleanup, ICust
 | **`isRegularReward`** | `public override bool isRegularReward { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `PropEnt_Stone_Nightmare`:*
+
+`RoomMod_DistantMemories`
+
+### Dependencies (1)
+
+*Types and components that `PropEnt_Stone_Nightmare` references or depends upon:*
+
+[PropEntity](/api/Global.PropEntity)
+
+:::

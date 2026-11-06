@@ -36,3 +36,20 @@ public override void LogicUpdate(float dt)
 | `dt` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `Room_Trap_CyclicActivator` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room_Trap_ActivatorBase](/api/Global.Room_Trap_ActivatorBase) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

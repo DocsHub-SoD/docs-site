@@ -22,3 +22,20 @@ void SetWorldPosition(Vector3 worldPos)
 | `worldPos` | `UnityEngine.Vector3` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `IWorldPositionReceiver`:*
+
+[ControlManager](/api/Global.ControlManager) · `UI_InGame_QuickText`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

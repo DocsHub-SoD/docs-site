@@ -69,3 +69,22 @@ protected override void Start()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `EntityHighlightProvider`:*
+
+[EntityVisual](/api/Global.EntityVisual)
+
+### Dependencies (6)
+
+*Types and components that `EntityHighlightProvider` references or depends upon:*
+
+[DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [HighlightProvider](/api/Global.HighlightProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MeshHighlightProvider](/api/Global.MeshHighlightProvider) · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

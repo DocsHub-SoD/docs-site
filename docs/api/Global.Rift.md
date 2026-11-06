@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Rift_RoomExit](/api/Global.Rift_RoomExit) → [Rift_Sidetrack](/api/Global.Rift_Sidetrack)
 
 ```csharp
@@ -39,8 +40,8 @@ public class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInter
 | **`instance`** | `public static Rift instance { get; }` |  |
 | **`interactPivot`** | `public Transform interactPivot { get; }` |  |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
-| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
-| **`isOpen`** | `[SaveVar(SaveVarFlags.Default)] public bool isOpen { get; set; }` |  |
+| **`isLocked`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
+| **`isOpen`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public bool isOpen { get; set; }` |  |
 
 :::
 
@@ -129,5 +130,30 @@ public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (18)
+
+*Classes and systems that invoke, reference, or depend on `Rift`:*
+
+[ControlManager](/api/Global.ControlManager) · `GameMod_GoldenLizard` · [PingManager](/api/Global.PingManager) · `PlayTutorial_NextTutorialRift` · `PlayTutorial_StartGameRift` · `PlayTutorial_Tutorial_Hunt` · `PlayTutorial_Tutorial_Intro` · [Rift_RoomExit](/api/Global.Rift_RoomExit) · [Rift_Sidetrack](/api/Global.Rift_Sidetrack) · [Room](/api/Global.Room) · `RoomMod_Ambush` · [RoomRifts](/api/Global.RoomRifts) · `Se_Gem_L_Culinary_Stack` · `Shrine_MarshOfDestiny_SeedOfTorment` · `StarlessPath_BossPolarisManager` · `UI_InGame_Interact_Rift` · `UI_InGame_WorldMap` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (10)
+
+*Types and components that `Rift` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [Entity](/api/Global.Entity) · [Hero](/api/Global.Hero) · [IBanRoomNodesNearby](/api/Global.IBanRoomNodesNearby) · [IInteractable](/api/Global.IInteractable) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

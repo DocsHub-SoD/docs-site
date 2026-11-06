@@ -62,3 +62,20 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (10)
+
+*Types and components that `ActionInteract` references or depends upon:*
+
+[ActionBase](/api/Global.ActionBase) · [Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · `GetComponentsNonAllocExtension` · [IInteractable](/api/Global.IInteractable) · `IInteractableUnityNullCheckExtension` · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · `VectorPlaneTransformExtension`
+
+:::

@@ -68,3 +68,20 @@ public override void OnStartServer()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (9)
+
+*Types and components that `Mon_RedGiant` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [EntityAIContext](/api/Global.EntityAIContext) · [EntityControl](/api/Global.EntityControl) · [EntityVisual](/api/Global.EntityVisual) · [EventInfoKill](/api/Global.EventInfoKill) · [Monster](/api/Global.Monster) · `QuaternionFlattenExtension` · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

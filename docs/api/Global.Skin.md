@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink]`
 
 ```csharp
 [DewResourceLink(ResourceLinkBy.Name)]
@@ -65,5 +66,30 @@ public bool IsValidFor(string heroType)
 | `heroType` | `string` |  |
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `Skin`:*
+
+[DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [Hero](/api/Global.Hero) · [PlayLobby_Character](/api/Global.PlayLobby_Character) · [TitleManager](/api/Global.TitleManager) · [Title_LastGameCharacters](/api/Global.Title_LastGameCharacters) · `UI_Lobby_SkinList_Item`
+
+### Dependencies (1)
+
+*Types and components that `Skin` references or depends upon:*
+
+`ICosmetic`
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Rarity`](/enums#rarity) · [`SkinRarity`](/enums#skinrarity)
 
 :::

@@ -61,3 +61,20 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `FxEntityModelTransform` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [IEffectComponent](/api/Global.IEffectComponent)
+
+:::

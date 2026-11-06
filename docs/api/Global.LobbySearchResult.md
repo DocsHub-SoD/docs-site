@@ -18,3 +18,20 @@ public class LobbySearchResult
 | **`lobbies`** | `public List<LobbyInstance> lobbies` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `LobbySearchResult`:*
+
+`LobbyServiceEOS` · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · `UI_Title_FindLobbyView`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

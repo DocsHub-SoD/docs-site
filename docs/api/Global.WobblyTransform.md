@@ -22,3 +22,20 @@ public class WobblyTransform : MonoBehaviour
 | **`rotationTargetMagnitude`** | `public Vector3 rotationTargetMagnitude` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `WobblyTransform` references or depends upon:*
+
+[QuaternionUtil](/api/Global.QuaternionUtil)
+
+:::

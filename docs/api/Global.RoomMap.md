@@ -16,7 +16,7 @@ public class RoomMap : RoomComponent, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`density`** | `public float density` |  |
-| **`mapData`** | `[HideInInspector] public MapData mapData` |  |
+| **`mapData`** | `[HideInInspector] [HideInInspector] public MapData mapData` |  |
 | **`mapTexture`** | `public Texture2D mapTexture` |  |
 
 :::
@@ -89,5 +89,24 @@ protected override void OnDestroy()
 ```csharp
 public override void OnRoomStart()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `RoomMap`:*
+
+`MorasDomain_TombstoneSpawner` · [Room](/api/Global.Room) · `UI_InGame_Map` · `UI_InGame_Map_Item`
+
+### Dependencies (7)
+
+*Types and components that `RoomMap` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Cells2D`1](/api/Global.Cells2D`1) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [MapData](/api/Global.MapData) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [RoomComponent](/api/Global.RoomComponent) · `VectorPlaneTransformExtension`
 
 :::

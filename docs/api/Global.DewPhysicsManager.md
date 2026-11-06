@@ -8,3 +8,20 @@
 ```csharp
 public class DewPhysicsManager : ManagerBase<DewPhysicsManager>, ILogicUpdate
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `DewPhysicsManager` references or depends upon:*
+
+[ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

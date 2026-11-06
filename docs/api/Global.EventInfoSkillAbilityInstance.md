@@ -19,3 +19,28 @@ public struct EventInfoSkillAbilityInstance
 | **`type`** | `public HeroSkillLocation type` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoSkillAbilityInstance`:*
+
+`Se_E_Rewind` · `Se_Star_Aurena_F_GB_NoSacrificeAfterDodge`
+
+### Dependencies (2)
+
+*Types and components that `EventInfoSkillAbilityInstance` references or depends upon:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [SkillTrigger](/api/Global.SkillTrigger)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

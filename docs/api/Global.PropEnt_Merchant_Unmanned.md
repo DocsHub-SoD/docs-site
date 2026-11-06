@@ -18,3 +18,20 @@ protected override void OnCreate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `PropEnt_Merchant_Unmanned` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [InvisibleEffect](/api/Global.InvisibleEffect) · [PropEnt_Merchant_Jonas](/api/Global.PropEnt_Merchant_Jonas)
+
+:::

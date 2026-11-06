@@ -17,3 +17,26 @@ public class DewException : Exception
 | **`type`** | `public DewExceptionType type { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DewException`:*
+
+[DewSessionError](/api/Global.DewSessionError)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewExceptionType`](/enums#dewexceptiontype)
+
+:::

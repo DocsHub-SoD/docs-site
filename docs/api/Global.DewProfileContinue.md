@@ -28,3 +28,22 @@ public void Validate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `DewProfileContinue`:*
+
+`DewCloudSave` · `DewProfileMerge` · [DewSave](/api/Global.DewSave)
+
+### Dependencies (2)
+
+*Types and components that `DewProfileContinue` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile) · [DewPersistence](/api/Global.DewPersistence)
+
+:::

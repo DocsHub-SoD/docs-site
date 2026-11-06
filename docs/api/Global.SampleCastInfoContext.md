@@ -28,3 +28,22 @@ public struct SampleCastInfoContext
 | **`updateCallback`** | `[NonSerialized] public Action<CastInfo> updateCallback` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `SampleCastInfoContext`:*
+
+[DewPlayer](/api/Global.DewPlayer) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (5)
+
+*Types and components that `SampleCastInfoContext` references or depends upon:*
+
+[AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [AbilityTrigger](/api/Global.AbilityTrigger) · [CastInfo](/api/Global.CastInfo) · [CastMethodData](/api/Global.CastMethodData) · [DewInputTrigger](/api/Global.DewInputTrigger)
+
+:::

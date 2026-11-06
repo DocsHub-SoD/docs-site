@@ -137,3 +137,22 @@ public void ToggleReady()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `PlayLobbyManager`:*
+
+[GameMod_Limbo](/api/Global.GameMod_Limbo) · `UI_Lobby_ReadyStatusText` · `UI_Lobby_StartButtonController`
+
+### Dependencies (14)
+
+*Types and components that `PlayLobbyManager` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile) · [DewEffect](/api/Global.DewEffect) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [GameSettingsManager](/api/Global.GameSettingsManager) · [LobbyUIManager](/api/Global.LobbyUIManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [UIManager](/api/Global.UIManager)
+
+:::

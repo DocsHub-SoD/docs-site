@@ -21,7 +21,7 @@ public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRout
 | **`interactableDelay`** | `[BoxGroup("Shrine Settings", true, false, 0)] public float interactableDelay` |  |
 | **`lockedEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject lockedEffect` |  |
 | **`mapVisibility`** | `[BoxGroup("Shrine Settings", true, false, 0)] public MapItemVisibility mapVisibility` |  |
-| **`maxTotalUseCount`** | `[SaveVar(SaveVarFlags.Default)] [FormerlySerializedAs("maxUseCount")] [BoxGroup("Shrine Settings", true, false, 0)] public int maxTotalUseCount` |  |
+| **`maxTotalUseCount`** | `[SyncVar] [SaveVar] [FormerlySerializedAs] [SaveVar(SaveVarFlags.Default)] [FormerlySerializedAs("maxUseCount")] [BoxGroup("Shrine Settings", true, false, 0)] public int maxTotalUseCount` |  |
 | **`maxUseCountPerPlayer`** | `[BoxGroup("Shrine Settings", true, false, 0)] public int maxUseCountPerPlayer` |  |
 | **`model`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject model` |  |
 | **`unavailableByDefault`** | `[ToggleLeft] [BoxGroup("Shrine Settings", true, false, 0)] public bool unavailableByDefault` |  |
@@ -43,12 +43,12 @@ public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRout
 | **`canInteractWithMouse`** | `public virtual bool canInteractWithMouse { get; }` |  |
 | **`focusDistance`** | `public float focusDistance { get; }` |  |
 | **`interactPivot`** | `public virtual Transform interactPivot { get; }` |  |
-| **`isAvailable`** | `[SaveVar(SaveVarFlags.Default)] public bool isAvailable { get; set; }` |  |
-| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
+| **`isAvailable`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public bool isAvailable { get; set; }` |  |
+| **`isLocked`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
 | **`isOnCooldown`** | `public bool isOnCooldown { get; }` |  |
 | **`isRegularReward`** | `public virtual bool isRegularReward { get; }` |  |
 | **`scaleSpawnRateWithPlayers`** | `public bool scaleSpawnRateWithPlayers { get; }` |  |
-| **`totalUseCount`** | `[SaveVar(SaveVarFlags.Default)] public int totalUseCount { get; set; }` |  |
+| **`totalUseCount`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public int totalUseCount { get; set; }` |  |
 
 :::
 
@@ -247,5 +247,30 @@ public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (67)
+
+*Classes and systems that invoke, reference, or depend on `Shrine`:*
+
+[ChoiceShrine](/api/Global.ChoiceShrine) · `ConversationShrineBase` · [EditSkillShrine](/api/Global.EditSkillShrine) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [PingManager](/api/Global.PingManager) · `PlayTutorial_Tutorial_Hunt` · `PlayTutorial_Tutorial_SkillsAndEssences` · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomRewards](/api/Global.RoomRewards) · `Shrine_AncientRemnants` · `Shrine_Anitya` · `Shrine_ArtifactGiver` · `Shrine_Ascension` · `Shrine_BossSoul` · `Shrine_BrokenWoodenDoll` · `Shrine_CallOfTheRavenous` · `Shrine_Chaos` · `Shrine_Concept` · `Shrine_CookingPot` · `Shrine_CorruptedChaos` · `Shrine_DebugTeleport` · `Shrine_Despair` · `Shrine_Despair_Vestige` · `Shrine_Destiny` · `Shrine_Disintegration` · `Shrine_DreamdustBit` · `Shrine_DreamdustBox` · `Shrine_Entanglement` · `Shrine_FallenStar` · `Shrine_FragmentOfRadiance` · `Shrine_GoldBit` · `Shrine_GoldBox` · `Shrine_Guidance` · `Shrine_Hatred` · `Shrine_Hatred_Old` · `Shrine_Hatred_Reward` · `Shrine_HeroSoul` · `Shrine_HiddenStash` · `Shrine_InvitationOfJonasMeeting` · `Shrine_LoopCat` · `Shrine_Luck` · `Shrine_MarshOfDestiny_SeedOfTorment` · `Shrine_MawOfDoom` · `Shrine_Memory` · `Shrine_Merchant_Backpack` · `Shrine_MirrorOfRemorse` · `Shrine_MorasDomain_HerPresence` · `Shrine_PileOfSnow` · `Shrine_Polaris_Teleporter` · `Shrine_PotOfGreed` · `Shrine_PrimusDoor` · `Shrine_PrimusEndingLightPillar` · `Shrine_PyranasLove` · `Shrine_Se_Star_Bismuth_I_KnowledgeBook_Book` · `Shrine_SmallSoul` · `Shrine_StarCookie` · `Shrine_Stardust` · `Shrine_StarlessPath_EndingRift` · `Shrine_StrayMemory_StartProp` · `Shrine_TheConsortOfNight` · `Shrine_TheConsortOfNight_Rift` · `Shrine_WagesOfResolve` · `UI_InGame_FloatingWindow_ChoiceShrine` · `UI_InGame_Interact_Custom` · `UI_InGame_Interact_Shrine` · `UI_InGame_Map_Item_Shrine` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (18)
+
+*Types and components that `Shrine` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Cost](/api/Global.Cost) · `CostExtensions` · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [GameManager](/api/Global.GameManager) · `GetComponentsNonAllocExtension` · [Hero](/api/Global.Hero) · [IBanRoomNodesNearby](/api/Global.IBanRoomNodesNearby) · [IInteractable](/api/Global.IInteractable) · [IProp](/api/Global.IProp) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · `Vector3FlattenExtension`
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AffordType`](/enums#affordtype) · [`MapItemVisibility`](/enums#mapitemvisibility) · [`SaveVarFlags`](/enums#savevarflags)
 
 :::

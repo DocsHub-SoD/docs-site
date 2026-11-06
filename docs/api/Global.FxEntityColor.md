@@ -15,15 +15,15 @@ public class FxEntityColor : FxInterpolatedEffectBase, IEffectComponent, IEffect
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`baseColor`** | `[ColorUsage(false, false)] [ShowIf("doBaseColor", true)] public Color baseColor` |  |
+| **`baseColor`** | `[ColorUsage] [ColorUsage(false, false)] [ShowIf("doBaseColor", true)] public Color baseColor` |  |
 | **`dissolveAmount`** | `[ShowIf("doDissolve", true)] public float dissolveAmount` |  |
-| **`dissolveColor`** | `[ColorUsage(false, true)] [ShowIf("doDissolveColor", true)] public Color dissolveColor` |  |
+| **`dissolveColor`** | `[ColorUsage] [ColorUsage(false, true)] [ShowIf("doDissolveColor", true)] public Color dissolveColor` |  |
 | **`doBaseColor`** | `public bool doBaseColor` |  |
 | **`doDissolve`** | `public bool doDissolve` |  |
 | **`doDissolveColor`** | `public bool doDissolveColor` |  |
 | **`doEmission`** | `public bool doEmission` |  |
 | **`doOpacity`** | `public bool doOpacity` |  |
-| **`emission`** | `[ColorUsage(false, true)] [ShowIf("doEmission", true)] public Color emission` |  |
+| **`emission`** | `[ColorUsage] [ColorUsage(false, true)] [ShowIf("doEmission", true)] public Color emission` |  |
 | **`opacity`** | `[ShowIf("doOpacity", true)] public float opacity` |  |
 
 :::
@@ -53,5 +53,22 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `FxEntityColor` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [EntityColorModifier](/api/Global.EntityColorModifier) · [EntityVisual](/api/Global.EntityVisual) · [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase) · [IAttachableToEntity](/api/Global.IAttachableToEntity)
 
 :::

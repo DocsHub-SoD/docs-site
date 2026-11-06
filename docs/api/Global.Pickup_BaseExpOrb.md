@@ -33,3 +33,22 @@ protected override void OnPickup(Hero hero)
 | `hero` | [`Hero`](/api/Global.Hero) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `Pickup_BaseExpOrb`:*
+
+[PickupManager](/api/Global.PickupManager) · [Pickup_LargeExpOrb](/api/Global.Pickup_LargeExpOrb) · [Pickup_MediumExpOrb](/api/Global.Pickup_MediumExpOrb) · [Pickup_SmallExpOrb](/api/Global.Pickup_SmallExpOrb)
+
+### Dependencies (4)
+
+*Types and components that `Pickup_BaseExpOrb` references or depends upon:*
+
+[DewMath](/api/Global.DewMath) · [DewPlayer](/api/Global.DewPlayer) · [Hero](/api/Global.Hero) · [PickupInstance](/api/Global.PickupInstance)
+
+:::

@@ -84,3 +84,20 @@ public void StartLocalGame()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (16)
+
+*Types and components that `DevGameManager` references or depends upon:*
+
+[ConsoleManager](/api/Global.ConsoleManager) · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [GameManager](/api/Global.GameManager) · [HeroLoadoutData](/api/Global.HeroLoadoutData) · [InGameUIManager](/api/Global.InGameUIManager) · `NetworkConnectionToClientExtension` · `NetworkReaderWriterExtensions` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [UIManager](/api/Global.UIManager) · [Zone](/api/Global.Zone) · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+:::

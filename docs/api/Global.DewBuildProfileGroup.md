@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[CreateAssetMenu]`
 
 ```csharp
 [CreateAssetMenu(fileName = "New Build Profile Group", menuName = "Build Profile Group")]
@@ -26,5 +27,22 @@ public class DewBuildProfileGroup : ScriptableObject
 ```csharp
 public void Validate()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `DewBuildProfileGroup` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile)
 
 :::

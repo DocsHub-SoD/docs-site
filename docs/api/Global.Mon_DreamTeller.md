@@ -82,3 +82,20 @@ public override bool ShouldBeSavedWithRoom()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (16)
+
+*Types and components that `Mon_DreamTeller` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Artifact](/api/Global.Artifact) · [ControlManager](/api/Global.ControlManager) · [ConversationManager](/api/Global.ConversationManager) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [IForceHeroicHealthbar](/api/Global.IForceHeroicHealthbar) · [IInteractable](/api/Global.IInteractable) · [ManagerBase`1](/api/Global.ManagerBase`1) · [Monster](/api/Global.Monster) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [QuestManager](/api/Global.QuestManager)
+
+:::

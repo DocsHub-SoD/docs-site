@@ -19,3 +19,18 @@ public class DewPersistence.RoomData
 | **`savedObjects`** | `public List<DewPersistence.RoomSavedObjectData> savedObjects` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

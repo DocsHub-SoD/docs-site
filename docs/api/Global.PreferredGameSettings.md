@@ -47,3 +47,28 @@ public void Validate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `PreferredGameSettings`:*
+
+[DewProfile](/api/Global.DewProfile) · [GameSettingsManager](/api/Global.GameSettingsManager) · [TitleManager](/api/Global.TitleManager)
+
+### Dependencies (3)
+
+*Types and components that `PreferredGameSettings` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [GameSettingsManager](/api/Global.GameSettingsManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AllowMidJoinType`](/enums#allowmidjointype)
+
+:::

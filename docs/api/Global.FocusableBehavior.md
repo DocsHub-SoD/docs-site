@@ -7,3 +7,20 @@
 ```csharp
 public enum FocusableBehavior
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `FocusableBehavior`:*
+
+[IGamepadFocusable](/api/Global.IGamepadFocusable) · `UI_InGame_SkillButtons` · `UI_InGame_WorldMap`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

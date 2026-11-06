@@ -7,3 +7,20 @@
 ```csharp
 public class Coroutiner : MonoBehaviour
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `Coroutiner`:*
+
+[Dew](/api/Global.Dew) · [DewInGameTutorialItem](/api/Global.DewInGameTutorialItem)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

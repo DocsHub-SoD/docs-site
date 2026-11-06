@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[CreateAssetMenu]`
 
 ```csharp
 [CreateAssetMenu(fileName = "New Monster Spawn Rule", menuName = "Monster Spawn Rule")]
@@ -28,5 +29,30 @@ public class MonsterSpawnRule : ScriptableObject
 | **`wavesMin`** | `[TitleGroup("Waves Min, Max", null, TitleAlignments.Left, true, true, false, 0, HorizontalLine = false, BoldTitle = false)] [HorizontalGroup("Waves Min, Max/A", 0, 0, 0, 0)] [HideLabel] [HideIf("isBossSpawn", true)] public int wavesMin` |  |
 | **`waveTimeoutMax`** | `[HorizontalGroup("Wave Timeout Min, Max/A", 0, 0, 0, 0)] [HideLabel] [HideIf("isBossSpawn", true)] public float waveTimeoutMax` |  |
 | **`waveTimeoutMin`** | `[TitleGroup("Wave Timeout Min, Max", null, TitleAlignments.Left, true, true, false, 0, HorizontalLine = false, BoldTitle = false)] [HorizontalGroup("Wave Timeout Min, Max/A", 0, 0, 0, 0)] [HideLabel] [HideIf("isBossSpawn", true)] public float waveTimeoutMin` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `MonsterSpawnRule`:*
+
+`Ink_BossSelector` · [RoomMonsters](/api/Global.RoomMonsters) · [Section_Monsters](/api/Global.Section_Monsters) · `Shrine_MorasDomain_HerPresence` · [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) · [Zone](/api/Global.Zone)
+
+### Dependencies (1)
+
+*Types and components that `MonsterSpawnRule` references or depends upon:*
+
+[MonsterPool](/api/Global.MonsterPool)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`OverpopulationBehavior`](/enums#overpopulationbehavior)
 
 :::

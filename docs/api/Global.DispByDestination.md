@@ -23,3 +23,28 @@ public class DispByDestination : Displacement
 | **`ease`** | `public DewEase ease` | Type of ease function that this displacement will follow over its course. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `DispByDestination`:*
+
+[Dash](/api/Global.Dash) · [DashAttackInstance](/api/Global.DashAttackInstance)
+
+### Dependencies (1)
+
+*Types and components that `DispByDestination` references or depends upon:*
+
+[Displacement](/api/Global.Displacement)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewEase`](/enums#dewease)
+
+:::

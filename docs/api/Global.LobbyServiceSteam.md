@@ -156,3 +156,20 @@ public override UniTask SetLobbyAttribute(string key, object value)
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (10)
+
+*Types and components that `LobbyServiceSteam` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile) · [DewPersistence](/api/Global.DewPersistence) · [DewSave](/api/Global.DewSave) · [LobbyInstance](/api/Global.LobbyInstance) · [LobbyInstanceSteam](/api/Global.LobbyInstanceSteam) · [LobbyMessage](/api/Global.LobbyMessage) · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [TransitionManager](/api/Global.TransitionManager)
+
+:::

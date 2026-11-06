@@ -21,3 +21,20 @@ public class DispByTarget : Displacement
 | **`target`** | `public Entity target` | Target entity that this displacement will chase after. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `DispByTarget` references or depends upon:*
+
+[Displacement](/api/Global.Displacement) · [Entity](/api/Global.Entity)
+
+:::

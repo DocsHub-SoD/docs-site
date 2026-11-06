@@ -9,3 +9,22 @@
 [Serializable]
 public class RoomSectionFloatDictionary : UnitySerializedDictionary<RoomSection, float>
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `RoomSectionFloatDictionary`:*
+
+[RoomSection](/api/Global.RoomSection)
+
+### Dependencies (1)
+
+*Types and components that `RoomSectionFloatDictionary` references or depends upon:*
+
+`UnitySerializedDictionary`2`
+
+:::

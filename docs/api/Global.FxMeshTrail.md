@@ -51,3 +51,20 @@ protected override void ValueSetter(float value)
 | `value` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (9)
+
+*Types and components that `FxMeshTrail` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual) · [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase) · `GetComponentsNonAllocExtension` · `GraphicsManager` · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [SafeAction](/api/Global.SafeAction)
+
+:::

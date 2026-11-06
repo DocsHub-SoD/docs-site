@@ -89,3 +89,22 @@ public void UnPause()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (12)
+
+*Classes and systems that invoke, reference, or depend on `MusicManager`:*
+
+`DewConsoleCommands` · [DewMusicItem](/api/Global.DewMusicItem) · `PlayTutorial_Tutorial_Hunt` · `PlayTutorial_Tutorial_Intro` · `PlayTutorial_Tutorial_SkillsAndEssences` · `Primus_Ending` · [Room](/api/Global.Room) · `RoomMod_DistantMemories` · `Se_Mon_Special_BossPolaris_Holy_PhaseShifter` · `Se_ObliviaxKidnap` · `StarlessPath_BossPolarisManager` · `UI_CreditsView`
+
+### Dependencies (6)
+
+*Types and components that `MusicManager` references or depends upon:*
+
+[AssetRef`1](/api/Global.AssetRef`1) · [AudioManager](/api/Global.AudioManager) · [DewMusicItem](/api/Global.DewMusicItem) · [DewResources](/api/Global.DewResources) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

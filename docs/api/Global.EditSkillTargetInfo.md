@@ -21,3 +21,20 @@ public struct EditSkillTargetInfo
 | **`tooltipRawText`** | `public string tooltipRawText` | Text to show on tooltip as a description of this action. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (11)
+
+*Classes and systems that invoke, reference, or depend on `EditSkillTargetInfo`:*
+
+[EditSkillShrine](/api/Global.EditSkillShrine) · `Shrine_AltarOfCleansing` · `Shrine_Ascension` · `Shrine_BossSoul` · `Shrine_Chaos` · `Shrine_CorruptedChaos` · `Shrine_Destiny` · `Shrine_Entanglement` · `Shrine_MawOfDoom` · `Shrine_ScaredMaw` · `Shrine_UpgradeWell`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

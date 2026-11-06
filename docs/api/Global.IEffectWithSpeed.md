@@ -22,3 +22,20 @@ void ApplySpeedMultiplier(float speed)
 | `speed` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `IEffectWithSpeed`:*
+
+`Ai_Mon_SnowMountain_BossSkoll_AuraBladeRain_Instance` · [ArcTelegraphController](/api/Global.ArcTelegraphController) · [BoxTelegraphController](/api/Global.BoxTelegraphController) · [DewEffect](/api/Global.DewEffect) · [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

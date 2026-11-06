@@ -77,3 +77,22 @@ protected override void OnPickup(Hero hero)
 | `hero` | [`Hero`](/api/Global.Hero) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `Pickup_BaseGoldOrb`:*
+
+[PickupManager](/api/Global.PickupManager) · [Pickup_LargeGoldOrb](/api/Global.Pickup_LargeGoldOrb) · [Pickup_MediumGoldOrb](/api/Global.Pickup_MediumGoldOrb) · [Pickup_SmallGoldOrb](/api/Global.Pickup_SmallGoldOrb)
+
+### Dependencies (12)
+
+*Types and components that `Pickup_BaseGoldOrb` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewMath](/api/Global.DewMath) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EventInfoLoadRoom](/api/Global.EventInfoLoadRoom) · [Hero](/api/Global.Hero) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PickupInstance](/api/Global.PickupInstance) · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

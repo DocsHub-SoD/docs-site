@@ -23,3 +23,20 @@ public class DewMessageSettings
 | **`validator`** | `public Func<bool> validator` | If this returns false, the message will be closed. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `DewMessageSettings`:*
+
+[MessageManager](/api/Global.MessageManager) · `UI_Title_ProfileSelection_LinkEnterCodeWindow`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

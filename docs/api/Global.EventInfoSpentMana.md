@@ -19,3 +19,22 @@ public struct EventInfoSpentMana
 | **`entity`** | `public Entity entity` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoSpentMana`:*
+
+[Actor](/api/Global.Actor) · [ClientEventManager](/api/Global.ClientEventManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `EventInfoSpentMana` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity)
+
+:::

@@ -134,3 +134,22 @@ public void Validate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (17)
+
+*Classes and systems that invoke, reference, or depend on `DewProfileStats`:*
+
+[Dew](/api/Global.Dew) · `DewCloudSave` · [DewPlayer](/api/Global.DewPlayer) · [DewProfileItem](/api/Global.DewProfileItem) · `DewProfileMerge` · [DewSave](/api/Global.DewSave) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [TitleManager](/api/Global.TitleManager) · `TravelerStoryPresenter` · `UI_Lobby_DejavuWindow` · `UI_Lobby_DejavuWindow_Item` · `UI_ProfileStatistics` · `UI_ProfileStatistics_ItemBase` · `UI_Title_ProfileSelection_ListWindow_Item` · `UI_Tooltip_DejavuCost` · `UI_Tooltip_DejavuDescription` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (6)
+
+*Types and components that `DewProfileStats` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewPool](/api/Global.DewPool) · [DewProfile](/api/Global.DewProfile) · [DewResources](/api/Global.DewResources) · [DictionaryReturnHandle`2](/api/Global.DictionaryReturnHandle`2)
+
+:::

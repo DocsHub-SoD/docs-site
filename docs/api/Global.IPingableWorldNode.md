@@ -17,3 +17,20 @@ public interface IPingableWorldNode
 | **`nodeIndex`** | `int nodeIndex { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `IPingableWorldNode`:*
+
+[ControlManager](/api/Global.ControlManager) · `UI_InGame_World_NodeItem`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

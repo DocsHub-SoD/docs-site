@@ -18,3 +18,20 @@ public class ServerActor : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `ServerActor` references or depends upon:*
+
+[Actor](/api/Global.Actor)
+
+:::

@@ -78,3 +78,20 @@ protected virtual void Start()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `CustomLogicBehavior` references or depends upon:*
+
+[LogicBehaviour](/api/Global.LogicBehaviour)
+
+:::

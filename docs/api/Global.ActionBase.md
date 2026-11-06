@@ -72,3 +72,22 @@ public virtual bool Tick()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `ActionBase`:*
+
+[ActionAttackMove](/api/Global.ActionAttackMove) · [ActionCast](/api/Global.ActionCast) · [ActionInteract](/api/Global.ActionInteract) · [EntityControl](/api/Global.EntityControl)
+
+### Dependencies (1)
+
+*Types and components that `ActionBase` references or depends upon:*
+
+[Entity](/api/Global.Entity)
+
+:::

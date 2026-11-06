@@ -20,3 +20,26 @@ public class GetNodeIndexSettings
 | **`preferCloserToExit`** | `public bool preferCloserToExit` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `GetNodeIndexSettings`:*
+
+[NextGoalSettings](/api/Global.NextGoalSettings) · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`WorldNodeType`](/enums#worldnodetype)
+
+:::

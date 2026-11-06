@@ -77,3 +77,22 @@ public static void UnsubscribeItem()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (17)
+
+*Classes and systems that invoke, reference, or depend on `DewSteam`:*
+
+[AchievementManager](/api/Global.AchievementManager) · `DecryptedItemData` · [DewAchievementItem](/api/Global.DewAchievementItem) · [DewMod](/api/Global.DewMod) · [DewNetworkAuthenticator](/api/Global.DewNetworkAuthenticator) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewSave](/api/Global.DewSave) · `LobbyServiceEOS` · `SteamCallbackRunner` · `SteamTicketForWebApi` · [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput) · `UI_Lobby_InviteButtonController` · `UI_Title_CoopButtonManager` · `UI_Title_SplashView_SplashItem_GRAC` · `UI_Title_SplashView_SplashItem_Gift`
+
+### Dependencies (6)
+
+*Types and components that `DewSteam` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile) · `JoinArrayExtensions` · [ManagerBase`1](/api/Global.ManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [TransitionManager](/api/Global.TransitionManager)
+
+:::

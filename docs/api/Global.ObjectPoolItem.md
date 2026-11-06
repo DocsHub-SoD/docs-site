@@ -21,3 +21,20 @@ public class ObjectPoolItem
 | **`lastReuseUnscaledTime`** | `public float lastReuseUnscaledTime` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ObjectPoolItem`:*
+
+[SpawnManager](/api/Global.SpawnManager)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

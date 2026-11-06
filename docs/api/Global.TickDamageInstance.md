@@ -66,3 +66,22 @@ protected override void OnDestroyActor()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `TickDamageInstance`:*
+
+`Ai_Mon_DarkCave_BossSeeker_TunnelVision_Swarm` · `Ai_Mon_Ink_BossDarkMoon_ThrowSpear_AoE` · `Ai_Mon_Ink_BossWhiteNight_EnergyWave_Instance` · `Ai_Mon_Primus_BossPrimusAeron_Adapt_Doom_PyranasFireball` · `Ai_Mon_Special_BossMaw_ChainReaction_Instance` · `Ai_Mon_Special_BossPolaris_Holy_Beam` · `Ai_Mon_Special_BossPolaris_Holy_Purgatory_BurningFloor` · `Ai_Mon_Special_BossPolaris_Monster_Smite_TickInstance` · `Ai_QR_InfernalTales` · `Ai_Q_EmbracingTheChill_AreaDoT` · `Ai_R_Cataclysm_Meteor_Burn` · `Ai_R_ChainReaction` · `Ai_R_DancingBlades` · `Ai_R_Immolation_Damage` · `Ai_R_Lava_LavaField` · `Ai_R_Tranquility_Damage` · `Ai_RoomMod_FireDevil_Tornado` · `Ai_Star_Cetus_F_BI_SelfDamageAoeCold_AOE` · `St_QR_InfernalTales`
+
+### Dependencies (3)
+
+*Types and components that `TickDamageInstance` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [DamageInstance](/api/Global.DamageInstance) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour)
+
+:::

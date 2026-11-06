@@ -33,3 +33,20 @@ public TValue GetOrAdd(TKey key, Func<TValue> valueFactory)
 **Returns:** `TValue`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ComponentCache<TKey, TValue>`:*
+
+[CameraManager](/api/Global.CameraManager) · [ControlManager](/api/Global.ControlManager)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

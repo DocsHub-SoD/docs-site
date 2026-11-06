@@ -58,3 +58,22 @@ public void OnCinematicCameraHelperChanged(bool on)
 | `on` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ObjectHighlightManager`:*
+
+[MeshHighlightProvider](/api/Global.MeshHighlightProvider)
+
+### Dependencies (8)
+
+*Types and components that `ObjectHighlightManager` references or depends upon:*
+
+[ControlManager](/api/Global.ControlManager) · [DewInput](/api/Global.DewInput) · [HighlightProvider](/api/Global.HighlightProvider) · [ICinematicCameraHelperStateReceiver](/api/Global.ICinematicCameraHelperStateReceiver) · [InGameUIManager](/api/Global.InGameUIManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [UIManager](/api/Global.UIManager)
+
+:::

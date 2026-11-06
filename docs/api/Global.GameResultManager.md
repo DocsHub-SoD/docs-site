@@ -27,7 +27,7 @@ public class GameResultManager : NetworkedManagerBase<GameResultManager>, ILogic
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`tracked`** | `[SaveVar(SaveVarFlags.Default)] public DewGameResult tracked { get; }` | Only available on server. |
+| **`tracked`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public DewGameResult tracked { get; }` | Only available on server. |
 
 :::
 
@@ -82,5 +82,30 @@ public void WrapUp(DewGameResult.ResultType type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | [`DewGameResult.ResultType`](/api/Global.DewGameResult) |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `GameResultManager`:*
+
+[DewNetworkManager](/api/Global.DewNetworkManager)
+
+### Dependencies (21)
+
+*Types and components that `GameResultManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [Dew](/api/Global.Dew) · [DewGameResult](/api/Global.DewGameResult) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewSave](/api/Global.DewSave) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [EntityStatus](/api/Global.EntityStatus) · [GameManager](/api/Global.GameManager) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · [InGameUIManager](/api/Global.InGameUIManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [TriggerConfig](/api/Global.TriggerConfig) · [UIManager](/api/Global.UIManager) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

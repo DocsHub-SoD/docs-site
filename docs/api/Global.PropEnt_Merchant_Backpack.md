@@ -35,3 +35,20 @@ protected override void OnDeath(EventInfoKill info)
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `PropEnt_Merchant_Backpack` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [EventInfoKill](/api/Global.EventInfoKill) · [PropEntity](/api/Global.PropEntity)
+
+:::

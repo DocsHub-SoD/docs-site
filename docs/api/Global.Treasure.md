@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor)
 
 ```csharp
@@ -95,5 +96,24 @@ public virtual bool ShouldBeIncludedInPool()
 ```
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (18)
+
+*Classes and systems that invoke, reference, or depend on `Treasure`:*
+
+`NextZoneOverrideTreasure` · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · [PropEnt_Merchant_Smoothie](/api/Global.PropEnt_Merchant_Smoothie) · `Treasure_BlueElixir` · `Treasure_Clairvoyance` · `Treasure_CloakOfGuidance` · `Treasure_CrimsonElixir` · `Treasure_DreamingStarfish` · `Treasure_FragmentOfDetermination` · `Treasure_InvitationToSecretMeetingOfJonas` · `Treasure_SparklingElixir` · `Treasure_StarSeekersJournal` · `Treasure_StrayMemory` · `Treasure_SuspiciousHat` · `Treasure_TokenOfGuidance` · `Treasure_TotallyGenuineTreasureMap` · `Treasure_TreasureMap` · `UI_TooltipManager`
+
+### Dependencies (8)
+
+*Types and components that `Treasure` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Cost](/api/Global.Cost) · [DewPlayer](/api/Global.DewPlayer) · [GameManager](/api/Global.GameManager) · [Hero](/api/Global.Hero) · [IExcludeFromPool](/api/Global.IExcludeFromPool) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base)
 
 :::

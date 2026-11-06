@@ -468,3 +468,22 @@ public static bool ValidateProfileName(string name)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `DewProfile`:*
+
+[AchievementManager](/api/Global.AchievementManager) · `DewCloudSave` · `DewConsoleCommands` · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewProfileItem](/api/Global.DewProfileItem) · `DewProfileMerge` · [DewProfileStats](/api/Global.DewProfileStats) · [DewSave](/api/Global.DewSave) · [GameSettingsManager](/api/Global.GameSettingsManager) · [QuestManager](/api/Global.QuestManager) · `Shrine_Ascension` · [TitleManager](/api/Global.TitleManager) · [Title_LastGameCharacters](/api/Global.Title_LastGameCharacters) · `TravelerStoryPresenter` · `UI_InGame_FloatingWindow_Shop` · `UI_Lobby_Constellations_StarList` · `UI_Title_CreateLobbyView` · `UI_Title_ProfileSelection_RenameProfileWindow` · `UI_Title_SplashView_SplashItem_Gift`
+
+### Dependencies (20)
+
+*Types and components that `DewProfile` references or depends upon:*
+
+`DateTimeExtensions` · `DecryptedItemData` · [Dew](/api/Global.Dew) · [DewAudioSettings_User](/api/Global.DewAudioSettings_User) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewControlSettings_User](/api/Global.DewControlSettings_User) · [DewGameObserverWithProgress](/api/Global.DewGameObserverWithProgress) · [DewGameResult](/api/Global.DewGameResult) · [DewGameplaySettings_User](/api/Global.DewGameplaySettings_User) · `DewItem` · [DewLocalization](/api/Global.DewLocalization) · [DewResources](/api/Global.DewResources) · [DewSave](/api/Global.DewSave) · [DewSteam](/api/Global.DewSteam) · [GlobalLogicPackage](/api/Global.GlobalLogicPackage) · [HeroLoadoutData](/api/Global.HeroLoadoutData) · [HeroSkill](/api/Global.HeroSkill) · [PreferredGameSettings](/api/Global.PreferredGameSettings) · [ResourceLoadSettings](/api/Global.ResourceLoadSettings) · [Skin](/api/Global.Skin)
+
+:::

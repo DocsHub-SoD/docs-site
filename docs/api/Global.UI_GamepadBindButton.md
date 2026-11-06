@@ -30,3 +30,20 @@ public override void FrameUpdate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `UI_GamepadBindButton` references or depends upon:*
+
+[DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [GlobalUIManager](/api/Global.GlobalUIManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

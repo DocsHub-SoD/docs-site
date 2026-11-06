@@ -76,3 +76,20 @@ public override void OnStopServer()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (9)
+
+*Types and components that `DewNetworkAuthenticator` references or depends upon:*
+
+[DewAuthRequestMessage](/api/Global.DewAuthRequestMessage) · [DewAuthResponseMessage](/api/Global.DewAuthResponseMessage) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewSessionError](/api/Global.DewSessionError) · [DewSteam](/api/Global.DewSteam) · [GameSettingsManager](/api/Global.GameSettingsManager) · [LobbyManager](/api/Global.LobbyManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
+
+:::

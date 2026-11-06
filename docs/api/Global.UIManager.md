@@ -83,3 +83,22 @@ public virtual bool ShouldDoAutoFocus()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (45)
+
+*Classes and systems that invoke, reference, or depend on `UIManager`:*
+
+[CameraManager](/api/Global.CameraManager) · [ControlManager](/api/Global.ControlManager) · [CursorManager](/api/Global.CursorManager) · [DevGameManager](/api/Global.DevGameManager) · [DewNetworkManager](/api/Global.DewNetworkManager) · [EditSkillManager](/api/Global.EditSkillManager) · [FPSManager](/api/Global.FPSManager) · [GameResultManager](/api/Global.GameResultManager) · [GlobalUIManager](/api/Global.GlobalUIManager) · [InGameUIManager](/api/Global.InGameUIManager) · [LobbyUIManager](/api/Global.LobbyUIManager) · [ObjectHighlightManager](/api/Global.ObjectHighlightManager) · [PlayLobbyManager](/api/Global.PlayLobbyManager) · [PlayLobby_Character](/api/Global.PlayLobby_Character) · `PlayTutorialManager` · [TimescaleManager](/api/Global.TimescaleManager) · [TitleManager](/api/Global.TitleManager) · `UI_Common_MenuView` · `UI_Constellations` · `UI_CreditsView` · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · `UI_InGame_ArtifactStoryView` · `UI_InGame_CenterMessage` · `UI_InGame_InteractGroup` · `UI_Lobby_ChangeCharacterGamepadButton` · `UI_Lobby_CharacterRotator` · `UI_Lobby_CharacterView` · `UI_Lobby_Constellations` · `UI_Lobby_Constellations_HeroConstellation_StarSlot` · `UI_Lobby_Constellations_MiniHeroConstellation` · `UI_Lobby_DejavuButton` · `UI_Lobby_Emotes_Back` · `UI_Lobby_HeroList` · `UI_Lobby_Loadout_SkillSlot` · `UI_Lobby_ObliterationView` · `UI_Lobby_PlayerNametag` · `UI_Lobby_SelectedHeroInfo_TravelerStoryButton` · `UI_PlayRewardAnnouncer` · `UI_Title_EULAView` · `UI_Title_ProfileSelection_ListWindow` · `UI_Title_ProfileSelection_NewProfileWindow` · `UI_Title_ProfileSelection_RenameProfileWindow` · `UI_TooltipManager` · `UI_Tooltip_SkillStarDescriber` · [View](/api/Global.View)
+
+### Dependencies (2)
+
+*Types and components that `UIManager` references or depends upon:*
+
+[ManagerBase`1](/api/Global.ManagerBase`1) · [SafeAction`2](/api/Global.SafeAction`2)
+
+:::

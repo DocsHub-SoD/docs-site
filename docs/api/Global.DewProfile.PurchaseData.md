@@ -19,3 +19,18 @@ public class DewProfile.PurchaseData
 | **`timestamp`** | `public long timestamp` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

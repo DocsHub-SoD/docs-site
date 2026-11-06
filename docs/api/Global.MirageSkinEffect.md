@@ -82,3 +82,22 @@ public virtual void OnSpecialAttack()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `MirageSkinEffect`:*
+
+`Se_MirageSkin_Armor` · `Se_MirageSkin_Delusion` · `Se_MirageSkin_Oblivion` · `Se_MirageSkin_Oppression` · `Se_MirageSkin_Pulverization` · `Se_MirageSkin_Sanctification`
+
+### Dependencies (9)
+
+*Types and components that `MirageSkinEffect` references or depends upon:*
+
+[DewMath](/api/Global.DewMath) · [Entity](/api/Global.Entity) · [EntityStatus](/api/Global.EntityStatus) · [EntityVisual](/api/Global.EntityVisual) · [EventInfoDamage](/api/Global.EventInfoDamage) · [IOtherPlayersTonedDownDisable](/api/Global.IOtherPlayersTonedDownDisable) · [SafeAction`1](/api/Global.SafeAction`1) · [StatBonus](/api/Global.StatBonus) · [StatusEffect](/api/Global.StatusEffect)
+
+:::

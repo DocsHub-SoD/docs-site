@@ -36,3 +36,22 @@ public virtual void Setup(string emoteName)
 | `emoteName` | `string` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `UI_StationaryEmote`:*
+
+`UI_EmoteList` · `UI_EmoteList_EditEmote` · `UI_EmoteList_EditEmoteWheel_FloatingEmote` · `UI_EmoteList_EditEmoteWheel_Item` · `UI_EmoteList_Item` · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · [UI_EmoteWheel_Item](/api/Global.UI_EmoteWheel_Item) · `UI_ItemIcon`
+
+### Dependencies (3)
+
+*Types and components that `UI_StationaryEmote` references or depends upon:*
+
+[AssetRef`1](/api/Global.AssetRef`1) · [DewResources](/api/Global.DewResources) · [Emote](/api/Global.Emote)
+
+:::

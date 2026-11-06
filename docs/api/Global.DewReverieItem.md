@@ -89,3 +89,22 @@ public void SaveReverieStateToData(DewProfile.ReverieDataBase data)
 | `data` | [`DewProfile.ReverieDataBase`](/api/Global.DewProfile) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (18)
+
+*Classes and systems that invoke, reference, or depend on `DewReverieItem`:*
+
+[DewReverie](/api/Global.DewReverie) · [DewSpecialReverieItem](/api/Global.DewSpecialReverieItem) · [InGameReverieManager](/api/Global.InGameReverieManager) · `Rev_AddToWishlist` · `Rev_DealElementalDamage` · `Rev_EnterPureWhiteDream` · `Rev_JoinDiscord` · `Rev_KillHeroicBosses` · `Rev_KillHeroicBossesInCoop` · `Rev_KillHunters` · `Rev_KillSpecificMonster` · `Rev_PlayCoopTwice` · `Rev_PlayThreeTimes` · `Rev_PlayTwiceWithSpecificTraveler` · `Rev_PlayWithMeleeTraveler` · `Rev_PlayWithRangedTraveler` · `Rev_ReachNightSky` · `UI_Reveries_SlotBase`
+
+### Dependencies (6)
+
+*Types and components that `DewReverieItem` references or depends upon:*
+
+[DewGameObserverWithProgress](/api/Global.DewGameObserverWithProgress) · [DewPersistentGameObserver](/api/Global.DewPersistentGameObserver) · [DewSave](/api/Global.DewSave) · [IExcludeFromPool](/api/Global.IExcludeFromPool) · [InGameReverieManager](/api/Global.InGameReverieManager) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

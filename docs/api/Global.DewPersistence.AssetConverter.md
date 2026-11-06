@@ -57,3 +57,18 @@ public override void WriteJson(JsonWriter writer, object value, JsonSerializer s
 | `serializer` | `Newtonsoft.Json.JsonSerializer` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

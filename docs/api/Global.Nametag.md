@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink] [RequireComponent]`
 
 ```csharp
 [DewResourceLink(ResourceLinkBy.Name)]
@@ -22,7 +23,7 @@ public class Nametag : MonoBehaviour
 | **`conditionValue`** | `[ShowIf("@condition == CosmeticPurchasePrerequisite.NightmareKillCount \|\| condition == CosmeticPurchasePrerequisite.ReachZone \|\| condition == CosmeticPurchasePrerequisite.NightmarePureWhiteDream \|\| condition == CosmeticPurchasePrerequisite.LimboMaxDepth", true)] [LabelText("Required Amount")] public int conditionValue` |  |
 | **`customOrder`** | `public float customOrder` |  |
 | **`generatedFromServer`** | `public bool generatedFromServer` |  |
-| **`iconNormalizedOffsetY`** | `[Space(20)] public float iconNormalizedOffsetY` |  |
+| **`iconNormalizedOffsetY`** | `[Space] [Space(20)] public float iconNormalizedOffsetY` |  |
 | **`iconWidthOffset`** | `public float iconWidthOffset` |  |
 | **`nametagHorizontalMargin`** | `public Vector2 nametagHorizontalMargin` |  |
 | **`price`** | `public int price` |  |
@@ -58,5 +59,30 @@ public void Setup(RectTransform target, bool isIcon)
 | :--- | :--- | :--- |
 | `target` | `UnityEngine.RectTransform` |  |
 | `isIcon` | `bool` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `Nametag`:*
+
+`UI_ItemIcon` · `UI_Lobby_PlayerNametag` · `UI_NametagList_Item` · `UI_NametagList_PreviewWindow`
+
+### Dependencies (4)
+
+*Types and components that `Nametag` references or depends upon:*
+
+[Dew](/api/Global.Dew) · `ICosmetic` · `RectTransformGetWorldRectExtension` · `Vector3FlattenExtension`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CosmeticPurchasePrerequisite`](/enums#cosmeticpurchaseprerequisite)
 
 :::

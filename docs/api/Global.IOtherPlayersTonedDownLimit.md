@@ -17,3 +17,26 @@ public interface IOtherPlayersTonedDownLimit
 | **`maxReduction`** | `ReduceOtherPlayerEffectsStrength maxReduction { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `IOtherPlayersTonedDownLimit`:*
+
+`Ai_R_SanctuaryOfEl_Ground` · [DewResources](/api/Global.DewResources)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ReduceOtherPlayerEffectsStrength`](/enums#reduceotherplayereffectsstrength)
+
+:::

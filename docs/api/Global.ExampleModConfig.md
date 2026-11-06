@@ -16,7 +16,7 @@ public class ExampleModConfig : ModConfig
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`byteTest`** | `public byte byteTest` |  |
-| **`customLabelTest`** | `[ModConfig.LabelText("CUSTOM LABEL WOOHOO!")] public bool customLabelTest` |  |
+| **`customLabelTest`** | `[LabelText] [ModConfig.LabelText("CUSTOM LABEL WOOHOO!")] public bool customLabelTest` |  |
 | **`enumTest`** | `public Quality4Levels enumTest` |  |
 | **`enumTest2`** | `public Quality4Levels enumTest2` |  |
 | **`floatTest`** | `public float floatTest` |  |
@@ -34,5 +34,28 @@ public class ExampleModConfig : ModConfig
 | **`vector3IntTest`** | `public Vector3Int vector3IntTest` |  |
 | **`vector3Test`** | `public Vector3 vector3Test` |  |
 | **`vector4Test`** | `public Vector4 vector4Test` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `ExampleModConfig` references or depends upon:*
+
+[ModConfig](/api/Global.ModConfig)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Quality4Levels`](/enums#quality4levels)
 
 :::

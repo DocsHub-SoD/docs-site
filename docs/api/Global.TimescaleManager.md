@@ -76,3 +76,22 @@ public void TimescaleChanged(float oldVal, float newVal)
 | `newVal` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `TimescaleManager`:*
+
+`DewAudioManager` · [FeedbackManager](/api/Global.FeedbackManager)
+
+### Dependencies (5)
+
+*Types and components that `TimescaleManager` references or depends upon:*
+
+[DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewNetworkManager](/api/Global.DewNetworkManager) · [InGameUIManager](/api/Global.InGameUIManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [UIManager](/api/Global.UIManager)
+
+:::

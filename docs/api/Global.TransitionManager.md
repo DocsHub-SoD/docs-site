@@ -170,3 +170,28 @@ public void UpdateLoadingStatus(string rawText)
 | `rawText` | `string` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (27)
+
+*Classes and systems that invoke, reference, or depend on `TransitionManager`:*
+
+`Ai_Curse_AnchorOfMind_Anchor` · [CameraManager](/api/Global.CameraManager) · [CollectablesManager](/api/Global.CollectablesManager) · `DewConsoleCommands` · [DewMod](/api/Global.DewMod) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewSteam](/api/Global.DewSteam) · `DynamicResolution` · `EOSManager` · [EntityControl](/api/Global.EntityControl) · [GameManager](/api/Global.GameManager) · [GlobalUIManager](/api/Global.GlobalUIManager) · [LobbyServiceSteam](/api/Global.LobbyServiceSteam) · [LootManager](/api/Global.LootManager) · `RoomMod_StardustEverywhere` · [RoomMonsters](/api/Global.RoomMonsters) · `Se_Curse_AnchorOfMind` · `Se_D_PrismaticEyes` · `Se_D_TheKillingFlow` · `Se_Gem_E_Insensitivity_BombSpawner` · `Se_UsingShortcut` · `St_D_ScarOfTheWind` · `St_L_SmallMoltenCore` · `St_Q_MoonlightPact` · [TitleManager](/api/Global.TitleManager) · [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput) · `UI_Title_ProfileSelection_ListWindow`
+
+### Dependencies (7)
+
+*Types and components that `TransitionManager` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkStartSettings](/api/Global.DewNetworkStartSettings) · [DewPlayer](/api/Global.DewPlayer) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [SafeAction](/api/Global.SafeAction)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`LoadingStatus`](/enums#loadingstatus)
+
+:::

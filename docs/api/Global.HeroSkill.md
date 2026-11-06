@@ -31,7 +31,7 @@ public class HeroSkill : HeroComponent, ILogicUpdate, ICleanup
 | **`loadoutQ`** | `public AssetRef<SkillTrigger>[] loadoutQ` |  |
 | **`loadoutR`** | `public AssetRef<SkillTrigger>[] loadoutR` |  |
 | **`loadoutTrait`** | `public AssetRef<SkillTrigger>[] loadoutTrait` |  |
-| **`starNormalizedStrength`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public float starNormalizedStrength` |  |
+| **`starNormalizedStrength`** | `[SyncVar] [SaveVar] [NonSerialized] [SaveVar(SaveVarFlags.Default)] public float starNormalizedStrength` |  |
 
 :::
 
@@ -558,5 +558,30 @@ public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool 
 | `ignoreCanReplace` | `bool` |  |
 
 **Returns:** `SkillTrigger`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (93)
+
+*Classes and systems that invoke, reference, or depend on `HeroSkill`:*
+
+`ACH_THE_EIGHTH_TROPHY` · `Ai_E_MysticDagger` · `Ai_Mon_Special_BossPolaris_Holy_CounterSpell_DisarmProjectile` · `Ai_Q_Lunge` · `Ai_Q_SuperNova` · `Ai_RandomGemUpgrade` · [AnalyticsEquipmentData](/api/Global.AnalyticsEquipmentData) · [ControlManager](/api/Global.ControlManager) · [Dew](/api/Global.Dew) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPersistence](/api/Global.DewPersistence) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [EditSkillManager](/api/Global.EditSkillManager) · [EditSkillShrine](/api/Global.EditSkillShrine) · [GameResultManager](/api/Global.GameResultManager) · [Gem](/api/Global.Gem) · `Gem_E_Opportunity` · `Gem_E_OurStory_Unfinished` · `Gem_L_CamillasGift` · `Gem_L_ChaosApple` · `Gem_R_Flow` · `Gem_R_Glass` · `Gem_U_GuidingCompass_NotCharged` · [Hero](/api/Global.Hero) · `Hero_Bismuth` · `InGameAnalyticsManager` · [PingManager](/api/Global.PingManager) · `PlayTutorialManager` · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `Se_Curse_LossOfIdentity` · `Se_Curse_SoftSkin` · `Se_D_IceColdPresence` · `Se_FallenStar_WaveringIdentity` · `Se_FishScales` · `Se_Mon_Special_BossPolaris_Holy_CounterSpell` · `Se_Mon_Special_BossPolaris_Monster_Scream_SkillLocked` · `Se_R_AnnihilationStance` · `Se_R_Tranquility` · `Se_R_UnbreakableDetermination` · `Se_RoomMod_UnstableVeilOfTime_ModifyCooldowns` · `Se_Shrine_Chaos_StatBonus` · `Se_Star_Bismuth_D_SkillHasteAndAutoCast` · `Se_Star_Cetus_D_ApUpByColdSkillCounts` · `Se_Star_Cetus_L_DodgeCdReductionOnHit` · `Se_Star_Husk_D_MovementSkillHaste` · `Se_Star_Husk_F_DE_MarkHitDodgeCDR` · `Se_Star_Husk_F_LA_DodgeResetOnRed` · `Se_Star_L_DodgeCooldown` · `Se_Star_L_DodgeCooldownOnLowHealth` · `Se_Star_Lacerta_L_DodgeCharges` · `Se_Star_Mist_L_AddedDodgeWithPenalty` · `Se_Star_Mist_L_DodgeCooldownWithPenalty` · `Se_Star_Yubar_D_APPerLightSkill` · `Se_Star_Yubar_F_CC_MeteorPerLightSkill` · `Se_Star_Yubar_L_DodgeChargeWithLongerCooldown` · `Se_Star_Yubar_L_DodgeCooldownWithShorterRange` · `Se_Star_Yubar_L_DodgeRange` · `Shrine_Ascension` · `Shrine_BossSoul` · `Shrine_CorruptedChaos` · `Shrine_Entanglement` · `Shrine_FallenStar` · [SkillTrigger](/api/Global.SkillTrigger) · `St_D_ParryMaster` · `St_E_Rewind` · `St_L_HerosReturn` · [StarEffect](/api/Global.StarEffect) · `Star_Global_DodgeAbilityCooldown` · `Star_Mist_AddDodgeCharge` · `Star_Yubar_IncreaseFlickerRange` · `UI_Collectables_MainView` · `UI_InGame_FloatingWindow_Shop_Item` · `UI_InGame_GemSlot` · `UI_InGame_GemSlot_EditSkill` · `UI_InGame_Interact_Gem` · `UI_InGame_MovementSkillIndicator` · `UI_InGame_PartyDisplay_Item` · `UI_InGame_Scoreboard_PlayerItem_Skill` · `UI_InGame_Scoreboard_PlayerItem_Skill_Gem` · `UI_InGame_SkillButton` · `UI_InGame_SkillButton_EditSkill` · `UI_InGame_SkillButton_GemGroup` · `UI_InGame_SkillNotifications` · `UI_Lobby_Constellations_Skills_Slot` · `UI_Lobby_Constellations_StarList` · `UI_Lobby_Loadout_SkillSlot` · `UI_Tooltip_EditSkillShrineTooltip` · `UI_Tooltip_EquippedGemDescriber` · `UI_Tooltip_ObjEditSkillActions` · `UI_Tooltip_SkillStarDescriber` · `UI_Tooltip_SkillTitle` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (30)
+
+*Types and components that `HeroSkill` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [ClientEventManager](/api/Global.ClientEventManager) · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewGameContentSettings](/api/Global.DewGameContentSettings) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillManager](/api/Global.EditSkillManager) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [EntityComponent](/api/Global.EntityComponent) · [Gem](/api/Global.Gem) · [GemLocation](/api/Global.GemLocation) · [Hero](/api/Global.Hero) · [HeroComponent](/api/Global.HeroComponent) · [ICleanup](/api/Global.ICleanup) · `IHoldableInHandExtension` · [IItem](/api/Global.IItem) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkBehaviourDictionaryWrapper`2` · `NetworkReaderWriterExtensions` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SafeAction`3](/api/Global.SafeAction`3) · [SkillTrigger](/api/Global.SkillTrigger) · [SyncedNetworkBehaviour](/api/Global.SyncedNetworkBehaviour) · `Vector3FlattenExtension` · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation) · [`SaveVarFlags`](/enums#savevarflags)
 
 :::

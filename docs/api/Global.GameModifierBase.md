@@ -40,3 +40,22 @@ public virtual void OnStartServerLobby()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (10)
+
+*Classes and systems that invoke, reference, or depend on `GameModifierBase`:*
+
+`GameMod_CorruptedChaos` · `GameMod_DespairFixStuck` · `GameMod_GoldenLizard` · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [GameMod_MirageSkin](/api/Global.GameMod_MirageSkin) · `GameMod_MorasDomain` · `GameMod_Obliviax` · `GameMod_SantaHat` · `GameMod_StarlessPath` · [GameSettingsManager](/api/Global.GameSettingsManager)
+
+### Dependencies (2)
+
+*Types and components that `GameModifierBase` references or depends upon:*
+
+[GameEffect](/api/Global.GameEffect) · [IExcludeFromPool](/api/Global.IExcludeFromPool)
+
+:::

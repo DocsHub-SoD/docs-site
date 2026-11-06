@@ -66,3 +66,20 @@ public static Color SmoothDamp(Color current, Color target, ref Vector4 currentV
 **Returns:** `UnityEngine.Color`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ColorSmoothDamp`:*
+
+`UI_AnimatedValueText`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

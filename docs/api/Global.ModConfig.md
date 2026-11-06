@@ -48,3 +48,22 @@ public virtual void CopyTo(ModConfig other)
 | `other` | [`ModConfig`](/api/Global.ModConfig) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ModConfig`:*
+
+[DewMod](/api/Global.DewMod) · [ExampleModConfig](/api/Global.ExampleModConfig)
+
+### Dependencies (1)
+
+*Types and components that `ModConfig` references or depends upon:*
+
+[DewGUI](/api/Global.DewGUI)
+
+:::

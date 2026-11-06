@@ -17,3 +17,22 @@ public interface IEditSkillDropTargetGemSlot
 | **`location`** | `GemLocation location { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `IEditSkillDropTargetGemSlot`:*
+
+[EditSkillManager](/api/Global.EditSkillManager) · `UI_InGame_GemSlot_EditSkill`
+
+### Dependencies (1)
+
+*Types and components that `IEditSkillDropTargetGemSlot` references or depends upon:*
+
+[GemLocation](/api/Global.GemLocation)
+
+:::

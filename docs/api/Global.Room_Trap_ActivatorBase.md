@@ -31,3 +31,22 @@ public void Activate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `Room_Trap_ActivatorBase`:*
+
+[Room_Trap_CyclicActivator](/api/Global.Room_Trap_CyclicActivator) · [Room_Trap_ProximityActivator](/api/Global.Room_Trap_ProximityActivator)
+
+### Dependencies (1)
+
+*Types and components that `Room_Trap_ActivatorBase` references or depends upon:*
+
+[DewNetworkBehaviour](/api/Global.DewNetworkBehaviour)
+
+:::

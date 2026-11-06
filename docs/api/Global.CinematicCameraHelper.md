@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[LogicUpdatePriority]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
 
 ```csharp
@@ -67,5 +68,24 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `CinematicCameraHelper`:*
+
+`DewConsoleCommands`
+
+### Dependencies (9)
+
+*Types and components that `CinematicCameraHelper` references or depends upon:*
+
+[ControlManager](/api/Global.ControlManager) · [Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual) · [Hero](/api/Global.Hero) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
 
 :::

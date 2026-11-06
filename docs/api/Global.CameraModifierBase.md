@@ -28,3 +28,22 @@ public void Remove()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `CameraModifierBase`:*
+
+[CameraManager](/api/Global.CameraManager) · [CameraModifierOffset](/api/Global.CameraModifierOffset) · [CameraModifierZoom](/api/Global.CameraModifierZoom) · `PlayTutorial_Tutorial_Intro` · `St_U_ShoutOfOblivion`
+
+### Dependencies (2)
+
+*Types and components that `CameraModifierBase` references or depends upon:*
+
+[CameraManager](/api/Global.CameraManager) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

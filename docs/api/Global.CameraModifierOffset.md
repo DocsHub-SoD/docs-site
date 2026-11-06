@@ -30,3 +30,22 @@ public CameraModifierOffset Apply()
 **Returns:** `CameraModifierOffset`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `CameraModifierOffset`:*
+
+`Ai_R_PrecisionShot` · `Ai_U_WorldCracker` · `St_U_ShoutOfOblivion`
+
+### Dependencies (1)
+
+*Types and components that `CameraModifierOffset` references or depends upon:*
+
+[CameraModifierBase](/api/Global.CameraModifierBase)
+
+:::

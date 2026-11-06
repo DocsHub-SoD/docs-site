@@ -46,3 +46,20 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `FxChangeMaterial` references or depends upon:*
+
+[IEffectComponent](/api/Global.IEffectComponent)
+
+:::

@@ -17,3 +17,20 @@ public void Return()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `ArrayReturnHandle<T>`:*
+
+`Ai_Mon_Sky_BigBaam_BeamAtk` · `Ai_Mon_Special_BossErebos_SpawnTormentor_Attacker_Instance` · [CameraManager](/api/Global.CameraManager) · [Dew](/api/Global.Dew) · [FxSelectiveQuality](/api/Global.FxSelectiveQuality) · [Projectile](/api/Global.Projectile) · [RoomModifierBase](/api/Global.RoomModifierBase)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

@@ -20,3 +20,28 @@ public struct EventInfoApplyElemental
 | **`victim`** | `public Entity victim` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoApplyElemental`:*
+
+`ACH_PRAISE_THE_SUN` · [Actor](/api/Global.Actor) · [ClientEventManager](/api/Global.ClientEventManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `EventInfoApplyElemental` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ElementalType`](/enums#elementaltype)
+
+:::

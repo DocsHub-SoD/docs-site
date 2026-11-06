@@ -16,9 +16,24 @@ public class FxParticleSystem : MonoBehaviour
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`clearParticlesOnStop`** | `public FxParticleSystem.ClearParticlesBehavior clearParticlesOnStop` |  |
-| **`dontDisableAsPartOfEntityRenderer`** | `[Header("Inside Entity Model")] [ToggleLeft] public bool dontDisableAsPartOfEntityRenderer` |  |
+| **`dontDisableAsPartOfEntityRenderer`** | `[Header] [Header("Inside Entity Model")] [ToggleLeft] public bool dontDisableAsPartOfEntityRenderer` |  |
 | **`dontPauseAttachedWhenRendererDisabled`** | `[ToggleLeft] public bool dontPauseAttachedWhenRendererDisabled` |  |
-| **`dontPauseAttachedWhenTeleport`** | `[Header("Attached Effects")] [ToggleLeft] public bool dontPauseAttachedWhenTeleport` |  |
+| **`dontPauseAttachedWhenTeleport`** | `[Header] [Header("Attached Effects")] [ToggleLeft] public bool dontPauseAttachedWhenTeleport` |  |
 | **`hideAttachedWhenRendererDisabled`** | `[ToggleLeft] public bool hideAttachedWhenRendererDisabled` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
 
 :::

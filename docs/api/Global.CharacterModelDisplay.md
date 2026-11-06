@@ -87,3 +87,22 @@ public void UpdateAccessories()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `CharacterModelDisplay`:*
+
+[PlayLobby_Character](/api/Global.PlayLobby_Character) · [PlayLobby_RotateCharacterTutorial](/api/Global.PlayLobby_RotateCharacterTutorial) · `UI_Lobby_PlayerNametag` · `UI_SkinList_PreviewWindow`
+
+### Dependencies (8)
+
+*Types and components that `CharacterModelDisplay` references or depends upon:*
+
+[Accessory](/api/Global.Accessory) · [DewEffect](/api/Global.DewEffect) · [DewResources](/api/Global.DewResources) · [EntityModel](/api/Global.EntityModel) · [ILobbyCharacterModelOnFocus](/api/Global.ILobbyCharacterModelOnFocus) · [ILobbyCharacterModelSetup](/api/Global.ILobbyCharacterModelSetup) · [LogicBehaviour](/api/Global.LogicBehaviour) · `SetLayerRecursiveExtensions`
+
+:::

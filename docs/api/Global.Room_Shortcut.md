@@ -16,7 +16,7 @@ public class Room_Shortcut : DewNetworkBehaviour, ILogicUpdate, IInteractable, I
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`closedEffect`** | `public GameObject closedEffect` |  |
-| **`isOpen`** | `public bool isOpen` |  |
+| **`isOpen`** | `[SyncVar] public bool isOpen` |  |
 | **`openEffect`** | `public GameObject openEffect` |  |
 | **`targetShortcut`** | `public Room_Shortcut targetShortcut` |  |
 | **`walkEndPos`** | `public Transform walkEndPos` |  |
@@ -58,5 +58,24 @@ public override void OnStartClient()
 ```csharp
 public void Open()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `Room_Shortcut`:*
+
+`Se_UsingShortcut`
+
+### Dependencies (13)
+
+*Types and components that `Room_Shortcut` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Cost](/api/Global.Cost) · [Dew](/api/Global.Dew) · [DewGizmos](/api/Global.DewGizmos) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityStatus](/api/Global.EntityStatus) · [Hero](/api/Global.Hero) · [ICustomInteractable](/api/Global.ICustomInteractable) · [IInteractable](/api/Global.IInteractable) · [IPlayerPathablePoint](/api/Global.IPlayerPathablePoint)
 
 :::

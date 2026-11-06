@@ -111,3 +111,22 @@ public static void InvalidateInstance(GameObject activeInstance)
 | `activeInstance` | `UnityEngine.GameObject` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `SpawnManager`:*
+
+[ControlManager](/api/Global.ControlManager) · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [EffectAutoDestroy](/api/Global.EffectAutoDestroy) · [RoomMonsters](/api/Global.RoomMonsters)
+
+### Dependencies (13)
+
+*Types and components that `SpawnManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · `AdaptiveAbilityBaseline` · [CommandMarker](/api/Global.CommandMarker) · [DewEffect](/api/Global.DewEffect) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [EntityVisual](/api/Global.EntityVisual) · `GetComponentsNonAllocExtension` · [ICustomDestroyRoutine](/api/Global.ICustomDestroyRoutine) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [ManagerBase`1](/api/Global.ManagerBase`1) · [ObjectPoolItem](/api/Global.ObjectPoolItem)
+
+:::

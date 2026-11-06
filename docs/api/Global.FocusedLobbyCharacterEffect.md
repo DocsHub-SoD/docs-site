@@ -22,3 +22,20 @@ public void OnLobbyCharacterFocus(bool value)
 | `value` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `FocusedLobbyCharacterEffect` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect) · [ILobbyCharacterModelOnFocus](/api/Global.ILobbyCharacterModelOnFocus)
+
+:::

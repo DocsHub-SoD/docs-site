@@ -45,3 +45,28 @@ public virtual string GetCustomInGameTooltip()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `LucidDream`:*
+
+[Dew](/api/Global.Dew) · `LucidDream_BlandStarSoup` · `LucidDream_BonVoyage` · `LucidDream_EmbraceMortality` · `LucidDream_FalseLifeline` · `LucidDream_FishScales` · `LucidDream_GrievousWounds` · `LucidDream_HarmlessWhispers` · `LucidDream_KindArmadillo` · `LucidDream_MadLife` · `LucidDream_MarshOfDestiny` · `LucidDream_Overpopulation` · `LucidDream_PrudentJellyfish` · `LucidDream_SparklingDreamFlask` · `LucidDream_TheDarkestUrge` · `LucidDream_WILD` · `UI_Achievement_Icon` · `UI_LucidDreamIcon` · `UI_Tooltip_CollectableTargetName`
+
+### Dependencies (1)
+
+*Types and components that `LucidDream` references or depends upon:*
+
+[GameEffect](/api/Global.GameEffect)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`LucidDreamType`](/enums#luciddreamtype)
+
+:::

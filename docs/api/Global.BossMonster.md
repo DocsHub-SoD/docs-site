@@ -17,7 +17,7 @@ public class BossMonster : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutin
 | :--- | :--- | :--- |
 | **`isHiddenBoss`** | `public bool isHiddenBoss` |  |
 | **`playBossKillFeedback`** | `public bool playBossKillFeedback` |  |
-| **`skipBossSoulFlow`** | `[NonSerialized] public bool skipBossSoulFlow` |  |
+| **`skipBossSoulFlow`** | `[SyncVar] [NonSerialized] public bool skipBossSoulFlow` |  |
 
 :::
 
@@ -69,5 +69,24 @@ protected override void OnDeath(EventInfoKill info)
 ```csharp
 protected override void OnDestroyActor()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `BossMonster`:*
+
+`Mon_DarkCave_BossSeeker` · `Mon_Despair_BossAzurak` · `Mon_Despair_BossCrawler` · `Mon_Forest_BossDemon` · `Mon_Ink_BossDarkMoon` · `Mon_Ink_BossWhiteNight` · `Mon_LavaLand_BossInfernus` · `Mon_Primus_BossPrimusAeron` · `Mon_Sky_BossNyx` · `Mon_SnowMountain_BossSkoll` · `Mon_Special_BossErebos` · `Mon_Special_BossLightElemental` · `Mon_Special_BossMaw` · `Mon_Special_BossObliviax` · `Mon_Special_BossPolaris`
+
+### Dependencies (9)
+
+*Types and components that `BossMonster` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoKill](/api/Global.EventInfoKill) · [GameManager](/api/Global.GameManager) · [GameSettingsManager](/api/Global.GameSettingsManager) · [Monster](/api/Global.Monster) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
 
 :::

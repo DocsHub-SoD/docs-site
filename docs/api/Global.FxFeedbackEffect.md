@@ -45,3 +45,20 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `FxFeedbackEffect` references or depends upon:*
+
+[FeedbackManager](/api/Global.FeedbackManager) · [IEffectComponent](/api/Global.IEffectComponent) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

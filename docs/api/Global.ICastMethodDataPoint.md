@@ -19,3 +19,20 @@ public interface ICastMethodDataPoint
 | **`range`** | `float range { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `ICastMethodDataPoint`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [ActionCast](/api/Global.ActionCast) · [CastIndicatorManager](/api/Global.CastIndicatorManager) · [CastMethodData](/api/Global.CastMethodData) · [ControlManager](/api/Global.ControlManager) · [TriggerConfig](/api/Global.TriggerConfig)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

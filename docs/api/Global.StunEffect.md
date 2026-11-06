@@ -18,3 +18,28 @@ public class StunEffect : BasicEffect
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `StunEffect`:*
+
+[StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (1)
+
+*Types and components that `StunEffect` references or depends upon:*
+
+[BasicEffect](/api/Global.BasicEffect)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

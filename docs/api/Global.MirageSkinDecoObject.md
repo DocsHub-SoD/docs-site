@@ -17,3 +17,20 @@ public class MirageSkinDecoObject : MonoBehaviour
 | **`targetEffect`** | `public AssetRef<MirageSkinEffect> targetEffect` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `MirageSkinDecoObject` references or depends upon:*
+
+[AssetRef`1](/api/Global.AssetRef`1)
+
+:::

@@ -22,3 +22,22 @@ public class DewConversationExecutionContext
 | **`waitingForUserInput`** | `public bool waitingForUserInput` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DewConversationExecutionContext`:*
+
+[ConversationManager](/api/Global.ConversationManager)
+
+### Dependencies (1)
+
+*Types and components that `DewConversationExecutionContext` references or depends upon:*
+
+`DewInternal.ConversationData`
+
+:::

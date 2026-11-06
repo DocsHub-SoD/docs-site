@@ -25,3 +25,22 @@ bool Evaluate(Entity self, Entity target)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `IBinaryEntityValidator`:*
+
+[AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [Channel](/api/Global.Channel) · [ControlManager](/api/Global.ControlManager) · [DewCollider](/api/Global.DewCollider) · [DewPhysics](/api/Global.DewPhysics) · [TriggerChannelData](/api/Global.TriggerChannelData)
+
+### Dependencies (1)
+
+*Types and components that `IBinaryEntityValidator` references or depends upon:*
+
+[Entity](/api/Global.Entity)
+
+:::

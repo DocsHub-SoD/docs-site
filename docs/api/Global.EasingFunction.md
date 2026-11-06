@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[Extension]`
 
 ```csharp
 public static class EasingFunction
@@ -1163,5 +1164,30 @@ public static float SpringD(float start, float end, float value)
 | `value` | `float` |  |
 
 **Returns:** `float`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (12)
+
+*Classes and systems that invoke, reference, or depend on `EasingFunction`:*
+
+`Ai_EmbraceNewIdentity` · `Ai_MirageSkin_Oblivion_Orb` · `Ai_Mon_Ink_BossWhiteNight_DestructionWave_Wave` · `Ai_Mon_Primus_BossPrimusAeron_Force_JumpAttack_ConeInstance` · `Ai_Mon_Special_BossLightElemental_Beam` · [ArcTelegraphController](/api/Global.ArcTelegraphController) · [BoxTelegraphController](/api/Global.BoxTelegraphController) · [EntityAnimation](/api/Global.EntityAnimation) · [EntityControl](/api/Global.EntityControl) · [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase) · `Hero_Husk` · `Se_HarmlessWhispers_GrantShield`
+
+### Dependencies (1)
+
+*Types and components that `EasingFunction` references or depends upon:*
+
+[EaseFunction](/api/Global.EaseFunction)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewEase`](/enums#dewease)
 
 :::

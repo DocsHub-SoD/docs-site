@@ -20,3 +20,20 @@ public struct ClearSectionEventData
 | **`sectionIndex`** | `public int sectionIndex` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `ClearSectionEventData` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [Room](/api/Global.Room)
+
+:::

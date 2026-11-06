@@ -24,3 +24,22 @@ public interface ICustomInteractable
 | **`worldOffset`** | `Vector3 worldOffset { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (24)
+
+*Classes and systems that invoke, reference, or depend on `ICustomInteractable`:*
+
+[Artifact](/api/Global.Artifact) · `ConversationShrineBase` · [PingManager](/api/Global.PingManager) · [Room_Shortcut](/api/Global.Room_Shortcut) · `Shrine_AncientRemnants` · `Shrine_Anitya` · `Shrine_ArtifactGiver` · `Shrine_CallOfTheRavenous` · `Shrine_Destiny` · `Shrine_DreamdustBit` · `Shrine_DreamdustBox` · `Shrine_GoldBit` · `Shrine_GoldBox` · `Shrine_Guidance` · `Shrine_LoopCat` · `Shrine_Luck` · `Shrine_Merchant_Backpack` · `Shrine_MorasDomain_HerPresence` · `Shrine_Polaris_Teleporter` · `Shrine_PrimusDoor` · `Shrine_StarCookie` · `Shrine_TheConsortOfNight` · `Shrine_TheConsortOfNight_Rift` · `UI_InGame_Interact_Custom`
+
+### Dependencies (1)
+
+*Types and components that `ICustomInteractable` references or depends upon:*
+
+[Cost](/api/Global.Cost)
+
+:::

@@ -30,3 +30,22 @@ public CameraModifierZoom Apply()
 **Returns:** `CameraModifierZoom`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `CameraModifierZoom`:*
+
+`Ai_R_PrecisionShot` · `Ai_U_WorldCracker` · `PlayTutorial_Tutorial_Intro` · `Primus_Ending` · `StarlessPath_BossPolarisManager`
+
+### Dependencies (1)
+
+*Types and components that `CameraModifierZoom` references or depends upon:*
+
+[CameraModifierBase](/api/Global.CameraModifierBase)
+
+:::

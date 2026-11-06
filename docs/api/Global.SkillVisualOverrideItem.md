@@ -18,7 +18,7 @@ public class SkillVisualOverrideItem
 | **`changeHue`** | `public bool changeHue` |  |
 | **`changeSaturation`** | `public bool changeSaturation` |  |
 | **`changeValue`** | `public bool changeValue` |  |
-| **`hue`** | `[Range(0, 360)] [ShowIf("changeHue", true)] public float hue` |  |
+| **`hue`** | `[Range] [Range(0, 360)] [ShowIf("changeHue", true)] public float hue` |  |
 | **`saturationMultiplier`** | `[ShowIf("changeSaturation", true)] public float saturationMultiplier` |  |
 | **`targets`** | `public string[] targets` |  |
 | **`valueMultiplier`** | `[ShowIf("changeValue", true)] public float valueMultiplier` |  |
@@ -37,5 +37,22 @@ public void Apply(GameObject gobj)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `gobj` | `UnityEngine.GameObject` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `SkillVisualOverrideItem` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect)
 
 :::

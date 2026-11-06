@@ -21,3 +21,20 @@ public class PerBuildVisibility : MonoBehaviour
 | **`release`** | `public bool release` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `PerBuildVisibility` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile)
+
+:::

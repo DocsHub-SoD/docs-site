@@ -21,8 +21,8 @@ public class QuestManager : NetworkedManagerBase<QuestManager>, ILogicUpdate
 | **`ClientEvent_OnArtifactRemoved`** | `public SafeAction<string> ClientEvent_OnArtifactRemoved` |  |
 | **`ClientEvent_OnQuestAdded`** | `public SafeAction<DewQuest> ClientEvent_OnQuestAdded` |  |
 | **`ClientEvent_OnQuestRemoved`** | `public SafeAction<DewQuest> ClientEvent_OnQuestRemoved` |  |
-| **`didCollectArtifactThisLoop`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public bool didCollectArtifactThisLoop` | Available on server. |
-| **`undiscoveredArtifacts`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> undiscoveredArtifacts` | Available on server. List of artifacts that are not discovered by any clients. |
+| **`didCollectArtifactThisLoop`** | `[SaveVar] [NonSerialized] [SaveVar(SaveVarFlags.Default)] public bool didCollectArtifactThisLoop` | Available on server. |
+| **`undiscoveredArtifacts`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> undiscoveredArtifacts` | Available on server. List of artifacts that are not discovered by any clients. |
 
 :::
 
@@ -33,7 +33,7 @@ public class QuestManager : NetworkedManagerBase<QuestManager>, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`artifactPool`** | `public Type[] artifactPool { get; }` |  |
-| **`currentArtifact`** | `[SaveVar(SaveVarFlags.Default)] public string currentArtifact { get; }` |  |
+| **`currentArtifact`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public string currentArtifact { get; }` |  |
 
 :::
 
@@ -185,5 +185,30 @@ public bool TryGetQuest<T>(out T quest) where T : DewQuest
 | `` | `T` |  |
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `QuestManager`:*
+
+[Artifact](/api/Global.Artifact) · [CurseStatusEffect](/api/Global.CurseStatusEffect) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [Mon_DreamTeller](/api/Global.Mon_DreamTeller) · `Primus_Ending` · `RoomMod_Artifact` · `RoomMod_DreamTeller` · `Se_HeroKnockedOut` · `Shrine_ArtifactGiver` · `Shrine_FragmentOfRadiance` · `Shrine_InvitationOfJonasMeeting` · `Shrine_StrayMemory_StartProp` · `Shrine_TheConsortOfNight` · `Treasure_InvitationToSecretMeetingOfJonas` · `Treasure_StarSeekersJournal` · `Treasure_StrayMemory` · `Treasure_TotallyGenuineTreasureMap` · `Treasure_TreasureMap` · `UI_InGame_CurrentArtifact`
+
+### Dependencies (15)
+
+*Types and components that `QuestManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewResources](/api/Global.DewResources) · [DewSave](/api/Global.DewSave) · [Entity](/api/Global.Entity) · [InGameUIManager](/api/Global.InGameUIManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SafeAction`3](/api/Global.SafeAction`3) · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

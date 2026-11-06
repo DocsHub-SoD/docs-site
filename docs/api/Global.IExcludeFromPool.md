@@ -17,3 +17,20 @@ public interface IExcludeFromPool
 | **`excludeFromPool`** | `bool excludeFromPool { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (9)
+
+*Classes and systems that invoke, reference, or depend on `IExcludeFromPool`:*
+
+[Accessory](/api/Global.Accessory) · [Artifact](/api/Global.Artifact) · [DewReverieItem](/api/Global.DewReverieItem) · [GameModifierBase](/api/Global.GameModifierBase) · [Gem](/api/Global.Gem) · [Hero](/api/Global.Hero) · [RoomModifierBase](/api/Global.RoomModifierBase) · [SkillTrigger](/api/Global.SkillTrigger) · [Treasure](/api/Global.Treasure)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

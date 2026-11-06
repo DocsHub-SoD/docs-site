@@ -8,3 +8,20 @@
 ```csharp
 public class Pickup_SmallExpOrb : Pickup_BaseExpOrb, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `Pickup_SmallExpOrb` references or depends upon:*
+
+[Pickup_BaseExpOrb](/api/Global.Pickup_BaseExpOrb)
+
+:::

@@ -76,3 +76,20 @@ public static Quaternion SmoothDamp(Quaternion rot, Quaternion target, ref Quate
 **Returns:** `UnityEngine.Quaternion`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `QuaternionUtil`:*
+
+[AttachToFace](/api/Global.AttachToFace) · `Hero_Bismuth_BookController` · `UI_InGame_FollowAndFaceHero_Base` · `UI_InGame_Interact_Base` · `UI_World_FollowAndFaceCamera` · [WobblyTransform](/api/Global.WobblyTransform)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

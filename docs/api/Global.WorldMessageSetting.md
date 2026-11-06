@@ -21,3 +21,20 @@ public class WorldMessageSetting
 | **`worldPosGetter`** | `[NonSerialized] public Func<Vector3> worldPosGetter` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `WorldMessageSetting`:*
+
+[DewPlayer](/api/Global.DewPlayer) · [InGameUIManager](/api/Global.InGameUIManager) · `UI_DamageNumberGroup` · `UI_InGame_WorldMessage` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

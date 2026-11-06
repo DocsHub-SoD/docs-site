@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[CreateAssetMenu]`
 
 ```csharp
 [CreateAssetMenu(fileName = "New Build Profile", menuName = "Build Profile")]
@@ -122,5 +123,30 @@ public void Init()
 ```csharp
 public void Validate()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (61)
+
+*Classes and systems that invoke, reference, or depend on `DewBuildProfile`:*
+
+[AchievementManager](/api/Global.AchievementManager) · [Dew](/api/Global.Dew) · [DewAchievementItem](/api/Global.DewAchievementItem) · [DewBuildProfileGroup](/api/Global.DewBuildProfileGroup) · `DewConsoleCommands` · [DewDifficultySettings](/api/Global.DewDifficultySettings) · [DewInput](/api/Global.DewInput) · [DewMod](/api/Global.DewMod) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewProfileContinue](/api/Global.DewProfileContinue) · [DewProfileStats](/api/Global.DewProfileStats) · [DewSave](/api/Global.DewSave) · [DewSteam](/api/Global.DewSteam) · `EOSManager` · [GameManager](/api/Global.GameManager) · `GameMod_GoldenLizard` · [Gem](/api/Global.Gem) · `GlobalAnalyticsManager` · [HeroSkill](/api/Global.HeroSkill) · `InGameAnalyticsManager` · [InGameTutorialManager](/api/Global.InGameTutorialManager) · [Intro_SceneController](/api/Global.Intro_SceneController) · `Intro_VideoIntroController` · [LobbyManager](/api/Global.LobbyManager) · `LobbyServiceEOS` · [LobbyServiceSteam](/api/Global.LobbyServiceSteam) · `NextZoneOverrideTreasure` · [PerBuildVisibility](/api/Global.PerBuildVisibility) · `PerFeatureVisibility` · [PerFeatureVisibility_Booth](/api/Global.PerFeatureVisibility_Booth) · [PerPlatformVisibility](/api/Global.PerPlatformVisibility) · [PickupManager](/api/Global.PickupManager) · [Pickup_BaseGoldOrb](/api/Global.Pickup_BaseGoldOrb) · [PlayGameManager](/api/Global.PlayGameManager) · [PlayLobbyManager](/api/Global.PlayLobbyManager) · [PlayLobby_Tutorial](/api/Global.PlayLobby_Tutorial) · [Rift_RoomExit](/api/Global.Rift_RoomExit) · [RoomRewards](/api/Global.RoomRewards) · [RoomRifts](/api/Global.RoomRifts) · [SkillTrigger](/api/Global.SkillTrigger) · `Splash_SceneController` · [TitleManager](/api/Global.TitleManager) · `UI_AccList` · `UI_Constellations` · `UI_Constellations_CategoryGroup` · `UI_DemoPromotionBanner` · `UI_DiscordBanner` · `UI_EmoteList` · `UI_Lobby_Constellations_StarList` · `UI_Lobby_DejavuWindow` · `UI_Lobby_ObliterationView` · `UI_MusicBanner` · `UI_NametagList` · `UI_PlayRewardAnnouncer` · `UI_Reveries_DailySlot` · `UI_ShapeOfDreamsLogo` · `UI_Title_CoopButtonManager` · `UI_Title_PrivateDemoNotice` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (1)
+
+*Types and components that `DewBuildProfile` references or depends upon:*
+
+[DewGameContentSettings](/api/Global.DewGameContentSettings)
+
+### Related Enums (5)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BuildFeatureTag`](/enums#buildfeaturetag) · [`BuildType`](/enums#buildtype) · [`DevelopmentBuildMode`](/enums#developmentbuildmode) · [`PlatformType`](/enums#platformtype) · [`RoomRewardFlowItemType`](/enums#roomrewardflowitemtype)
 
 :::

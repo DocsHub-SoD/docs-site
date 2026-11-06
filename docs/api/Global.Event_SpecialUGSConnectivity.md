@@ -17,3 +17,18 @@ public class Event_SpecialUGSConnectivity : Event
 | **`c_success`** | `public bool c_success { set; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

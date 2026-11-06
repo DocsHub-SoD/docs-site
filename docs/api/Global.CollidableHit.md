@@ -18,3 +18,22 @@ public struct CollidableHit
 | **`projectile`** | `public Projectile projectile` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `CollidableHit`:*
+
+[ICollidableWithProjectile](/api/Global.ICollidableWithProjectile)
+
+### Dependencies (1)
+
+*Types and components that `CollidableHit` references or depends upon:*
+
+[Projectile](/api/Global.Projectile)
+
+:::

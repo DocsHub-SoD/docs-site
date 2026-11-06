@@ -17,3 +17,20 @@ public class PlayLobby_CharacterCamera : MonoBehaviour
 | **`basisCharacter`** | `public PlayLobby_Character basisCharacter` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `PlayLobby_CharacterCamera` references or depends upon:*
+
+[DewPlayer](/api/Global.DewPlayer) · [PlayLobby_Character](/api/Global.PlayLobby_Character)
+
+:::

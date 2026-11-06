@@ -130,3 +130,28 @@ public static void SetMouseSensitivity(int sensitivity)
 | `sensitivity` | `int` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (10)
+
+*Classes and systems that invoke, reference, or depend on `InputManager`:*
+
+[ControlManager](/api/Global.ControlManager) · [DewControlSettings_User](/api/Global.DewControlSettings_User) · [DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [DewSave](/api/Global.DewSave) · [EditSkillManager](/api/Global.EditSkillManager) · [FxCameraShake](/api/Global.FxCameraShake) · `UI_Common_SkipButton` · `UI_ControllerDisconnectedIndicator` · `UI_Lobby_Constellations_StarDetails`
+
+### Dependencies (7)
+
+*Types and components that `InputManager` references or depends upon:*
+
+[DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [ISettingsChangedCallback](/api/Global.ISettingsChangedCallback) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [ShakeInstance](/api/Global.ShakeInstance)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`GamepadButtonEx`](/enums#gamepadbuttonex) · [`MouseButton`](/enums#mousebutton)
+
+:::

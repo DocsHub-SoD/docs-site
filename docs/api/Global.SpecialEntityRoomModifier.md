@@ -64,3 +64,22 @@ protected virtual Entity SpawnNpc(Vector3 pos)
 **Returns:** `Entity`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `SpecialEntityRoomModifier`:*
+
+`RoomMod_DreamTeller` · `RoomMod_GiftMerchant`
+
+### Dependencies (14)
+
+*Types and components that `SpecialEntityRoomModifier` references or depends upon:*
+
+[Actor](/api/Global.Actor) · `ActorRef`1` · [Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomProps](/api/Global.RoomProps) · [RoomSection](/api/Global.RoomSection) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

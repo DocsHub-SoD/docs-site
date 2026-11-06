@@ -21,3 +21,26 @@ public static class DewLaunchOptions
 | **`steamNoRestart`** | `public static bool steamNoRestart` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `DewLaunchOptions` references or depends upon:*
+
+`JoinArrayExtensions`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewTransportPreference`](/enums#dewtransportpreference)
+
+:::

@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[AddComponentMenu] [ExecuteAlways]`
 
 ```csharp
 [AddComponentMenu("Layout/Auto Column Grid Layout")]
@@ -63,5 +64,20 @@ Updates the column count based on the available parent width and cell size.
 ```csharp
 public void UpdateColumnCount()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
 
 :::

@@ -23,13 +23,13 @@ public class DewAudioSource : MonoBehaviour, IEffectComponent, IEffectWithOwnerC
 | **`isLoop`** | `[ToggleLeft] public bool isLoop` |  |
 | **`PitchChangeByTimescaleMultiplier`** | `public const float PitchChangeByTimescaleMultiplier = 0.75` |  |
 | **`pitchMultiplier`** | `public float pitchMultiplier` |  |
-| **`playOnEnable`** | `[Space(20)] [ToggleLeft] public bool playOnEnable` |  |
+| **`playOnEnable`** | `[Space] [Space(20)] [ToggleLeft] public bool playOnEnable` |  |
 | **`rawClip`** | `[ShowIf("@clip == null", true)] public AudioClip rawClip` |  |
 | **`rolloff`** | `[ShowIf("@space != AudioSpaceType.Global", true)] public DewAudioRollOffType rolloff` |  |
 | **`space`** | `public AudioSpaceType space` |  |
 | **`stopWhenEffectStop`** | `[HideIf("isLoop", true)] [ToggleLeft] public bool stopWhenEffectStop` |  |
 | **`type`** | `public AudioType type` |  |
-| **`volumeMultiplier`** | `[Space(20)] public float volumeMultiplier` |  |
+| **`volumeMultiplier`** | `[Space] [Space(20)] public float volumeMultiplier` |  |
 
 :::
 
@@ -71,5 +71,30 @@ public void SetOwnerContext(EffectOwnerContext context)
 ```csharp
 public void Stop()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (11)
+
+*Classes and systems that invoke, reference, or depend on `DewAudioSource`:*
+
+`Ai_Mon_DarkCave_BossSeeker_GreenChaserOrb_Explode` · `Ai_Mon_Sky_LittleBaam_Atk` · `Ai_Q_GoldenBurst` · `Ai_R_PrecisionShot_Projectile` · `DewAudioManager` · [EditSkillManager](/api/Global.EditSkillManager) · [EntitySound](/api/Global.EntitySound) · `UI_Common_ChatBox` · `UI_InGame_Conversations_Instance` · `UI_InGame_CurrentArtifact` · `UI_PlayRewardAnnouncer`
+
+### Dependencies (5)
+
+*Types and components that `DewAudioSource` references or depends upon:*
+
+[DewAudioClip](/api/Global.DewAudioClip) · `DewAudioManager` · [IEffectComponent](/api/Global.IEffectComponent) · [IEffectWithOwnerContext](/api/Global.IEffectWithOwnerContext) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+### Related Enums (4)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AudioSpaceType`](/enums#audiospacetype) · [`AudioType`](/enums#audiotype) · [`DewAudioRollOffType`](/enums#dewaudiorollofftype) · [`EffectOwnerContext`](/enums#effectownercontext)
 
 :::

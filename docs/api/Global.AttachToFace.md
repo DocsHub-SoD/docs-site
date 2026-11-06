@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[ExecuteAlways]`
 
 ```csharp
 [ExecuteAlways]
@@ -24,5 +25,22 @@ public class AttachToFace : MonoBehaviour
 | **`vertexIndex0`** | `public int vertexIndex0` |  |
 | **`vertexIndex1`** | `public int vertexIndex1` |  |
 | **`vertexIndex2`** | `public int vertexIndex2` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (4)
+
+*Types and components that `AttachToFace` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewPool](/api/Global.DewPool) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [QuaternionUtil](/api/Global.QuaternionUtil)
 
 :::

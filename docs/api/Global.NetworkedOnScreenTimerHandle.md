@@ -19,3 +19,20 @@ public class NetworkedOnScreenTimerHandle
 | **`valueGetter`** | `[NonSerialized] public Func<float> valueGetter` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `NetworkedOnScreenTimerHandle`:*
+
+[ChargingChannel](/api/Global.ChargingChannel) · [DewPlayer](/api/Global.DewPlayer) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

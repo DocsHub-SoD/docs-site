@@ -55,3 +55,26 @@ public void Set(Rarity rarity, T value)
 | `value` | `T` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (9)
+
+*Classes and systems that invoke, reference, or depend on `PerRarityData<T>`:*
+
+[DewGameplayExperienceSettings](/api/Global.DewGameplayExperienceSettings) · [GameManager](/api/Global.GameManager) · [Gem](/api/Global.Gem) · [LootManager](/api/Global.LootManager) · `Se_Star_Bismuth_I_KnowledgeBook` · `Shrine_Ascension` · `Shrine_Chaos` · [SkillTrigger](/api/Global.SkillTrigger) · `UI_InGame_FloatingWindow_Chaos_Item`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Rarity`](/enums#rarity)
+
+:::

@@ -36,3 +36,28 @@ public class DewConversationSettings
 | **`seed`** | `public int seed { get; }` | Used for solving randomness consistently across clients. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `DewConversationSettings`:*
+
+[ConversationManager](/api/Global.ConversationManager) · `UI_InGame_Conversations` · `UI_InGame_Conversations_Instance` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (1)
+
+*Types and components that `DewConversationSettings` references or depends upon:*
+
+[DewPlayer](/api/Global.DewPlayer)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ConversationVisibility`](/enums#conversationvisibility)
+
+:::

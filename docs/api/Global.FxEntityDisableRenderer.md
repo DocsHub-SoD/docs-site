@@ -58,3 +58,20 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `FxEntityDisableRenderer` references or depends upon:*
+
+[ActorCheck](/api/Global.ActorCheck) · [Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual) · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [IEffectComponent](/api/Global.IEffectComponent)
+
+:::

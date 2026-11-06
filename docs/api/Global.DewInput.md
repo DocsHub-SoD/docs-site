@@ -419,3 +419,28 @@ public static void StopListenAnyButton()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (84)
+
+*Classes and systems that invoke, reference, or depend on `DewInput`:*
+
+`ButtonDisplay` · [CameraManager](/api/Global.CameraManager) · [CollectablesManager](/api/Global.CollectablesManager) · `ContextMenu` · [ControlManager](/api/Global.ControlManager) · [DewBinding](/api/Global.DewBinding) · [DewControlSettings_User](/api/Global.DewControlSettings_User) · `DewInputReadableTextExtensions` · [DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [DewSave](/api/Global.DewSave) · [EditSkillManager](/api/Global.EditSkillManager) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [FxCameraShake](/api/Global.FxCameraShake) · [GlobalUIManager](/api/Global.GlobalUIManager) · [InputManager](/api/Global.InputManager) · [ObjectHighlightManager](/api/Global.ObjectHighlightManager) · [PerControlVisibility](/api/Global.PerControlVisibility) · [PingManager](/api/Global.PingManager) · `Rev_AddToWishlist` · [UI_BindItem](/api/Global.UI_BindItem) · [UI_BindingWindow](/api/Global.UI_BindingWindow) · `UI_Collectables_MainView` · `UI_Collectables_ObjectDetails` · `UI_Collectables_ObjectItemProvider_Skill` · `UI_Common_ChatBox` · `UI_Common_MenuView` · `UI_Common_SkipButton` · `UI_Constellations` · `UI_Constellations_StarDetails` · `UI_ControllerDisconnectedIndicator` · `UI_CreditsView` · `UI_DemoPromotionBanner` · `UI_DiscordBanner` · `UI_DropdownControls` · `UI_EmoteList_EditEmote` · `UI_EmoteList_EditEmoteWheel_FloatingEmote` · `UI_EmoteList_EditEmoteWheel_Item` · `UI_EmoteList_Item` · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · `UI_EntityHealthBar` · `UI_EntityHealthBarMain` · [UI_GamepadBindButton](/api/Global.UI_GamepadBindButton) · [UI_GamepadInputField](/api/Global.UI_GamepadInputField) · `UI_GamepadScrollRect` · `UI_GamepadShoulderControls` · `UI_InGame_Conversations_Instance` · `UI_InGame_CooldownTimeNotification` · `UI_InGame_EditSkillIndicatorPositionByControl` · `UI_InGame_FloatingGem` · `UI_InGame_FloatingSkill` · `UI_InGame_GemSlot_EditSkill` · `UI_InGame_HeroDetailWindow` · `UI_InGame_HeroInfoBar` · `UI_InGame_InvertedControlsCursor` · `UI_InGame_MouseInputReceiver_EditSkill` · `UI_InGame_Result_HeroSkillItem` · `UI_InGame_ScoreboardView` · `UI_InGame_Scoreboard_PlayerItem_Skill` · `UI_InGame_SkillButton_EditSkill` · `UI_InGame_SkillButtons` · `UI_InGame_WorldMap` · `UI_InGame_World_NodeItem` · `UI_Lobby_CharacterRotator` · `UI_Lobby_CharacterView` · `UI_Lobby_Constellations` · `UI_Lobby_Constellations_FloatingStar` · `UI_Lobby_Constellations_HeroConstellation_StarSlot` · `UI_Lobby_Constellations_StarItem` · `UI_Lobby_Constellations_StarList` · `UI_Lobby_Emotes_Back` · `UI_Lobby_LobbyNameGroup` · `UI_Lobby_SendChatMessage` · `UI_MusicBanner` · `UI_PlayTutorial_AdvanceButton` · `UI_SelectControlPresetWindow` · `UI_Settings_View` · `UI_Title_FindLobbyView` · `UI_Title_LizardSmoothie` · `UI_Title_TitleView` · `UI_TooltipManager` · `UI_TooltipSection` · `UI_Tooltip_ObjEditSkillActions` · `UI_Tooltip_SkillExtraDetails`
+
+### Dependencies (12)
+
+*Types and components that `DewInput` references or depends upon:*
+
+[ControlManager](/api/Global.ControlManager) · [Dew](/api/Global.Dew) · [DewBinding](/api/Global.DewBinding) · [DewBuildProfile](/api/Global.DewBuildProfile) · `DewInputReadableTextExtensions` · [DewLocalization](/api/Global.DewLocalization) · [InputManager](/api/Global.InputManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1)
+
+### Related Enums (5)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BindingType`](/enums#bindingtype) · [`ControllerButtonType`](/enums#controllerbuttontype) · [`GamepadButtonEx`](/enums#gamepadbuttonex) · [`InputMode`](/enums#inputmode) · [`MouseButton`](/enums#mousebutton)
+
+:::

@@ -47,3 +47,22 @@ public override void Setup(string emoteName)
 | `emoteName` | `string` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `UI_EmoteWheel_Item`:*
+
+[UI_EmoteWheel](/api/Global.UI_EmoteWheel)
+
+### Dependencies (1)
+
+*Types and components that `UI_EmoteWheel_Item` references or depends upon:*
+
+[UI_StationaryEmote](/api/Global.UI_StationaryEmote)
+
+:::

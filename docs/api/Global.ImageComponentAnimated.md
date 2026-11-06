@@ -29,3 +29,22 @@ public abstract class ImageComponentAnimated : ImageComponent
 | **`time`** | `public float time { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ImageComponentAnimated`:*
+
+`IMG_FireplaceAlpha` · `IMG_ScrollingTexture`
+
+### Dependencies (1)
+
+*Types and components that `ImageComponentAnimated` references or depends upon:*
+
+[ImageComponent](/api/Global.ImageComponent)
+
+:::

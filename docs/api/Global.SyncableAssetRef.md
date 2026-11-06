@@ -29,8 +29,8 @@ public struct SyncableAssetRef
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`asset`** | `[JsonIgnore] public Object asset { get; set; }` |  |
-| **`lightAsset`** | `[JsonIgnore] public Object lightAsset { get; }` |  |
+| **`asset`** | `[JsonIgnore] [JsonIgnore] public Object asset { get; set; }` |  |
+| **`lightAsset`** | `[JsonIgnore] [JsonIgnore] public Object lightAsset { get; }` |  |
 
 :::
 
@@ -81,5 +81,24 @@ public override int GetHashCode()
 ```
 
 **Returns:** `int`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `SyncableAssetRef`:*
+
+[GameManager](/api/Global.GameManager) · `LucidDream_MarshOfDestiny` · `Shrine_MarshOfDestiny_SeedOfTorment` · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `SyncableAssetRef` references or depends upon:*
+
+`AssetRefTypeResolver` · [DewResources](/api/Global.DewResources)
 
 :::

@@ -36,3 +36,22 @@ public override void OnStopLocalClient()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `DewSpecialReverieItem`:*
+
+[DewReverie](/api/Global.DewReverie) · `Rev_Special_2025WinterSale` · `Rev_Special_Founders` · `Rev_Special_NextFest_Mission0` · `Rev_Special_NextFest_Mission1` · `Rev_Special_NextFest_Mission2` · `Rev_Special_T1Emote`
+
+### Dependencies (2)
+
+*Types and components that `DewSpecialReverieItem` references or depends upon:*
+
+[DewPersistentGameObserver](/api/Global.DewPersistentGameObserver) · [DewReverieItem](/api/Global.DewReverieItem)
+
+:::

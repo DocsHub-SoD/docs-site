@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink] [CreateAssetMenu]`
 
 ```csharp
 [HideMonoScript]
@@ -60,5 +61,24 @@ public float GetPitch()
 ```
 
 **Returns:** `float`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `DewAudioClip`:*
+
+[Artifact](/api/Global.Artifact) · `DewAudioManager` · [DewAudioSource](/api/Global.DewAudioSource) · [EntitySound](/api/Global.EntitySound) · `Gem_R_Blade` · `NetworkReaderWriterExtensions` · `Se_HunterBuff` · [TriggerConfig](/api/Global.TriggerConfig)
+
+### Dependencies (1)
+
+*Types and components that `DewAudioClip` references or depends upon:*
+
+[ILinkedByGuid](/api/Global.ILinkedByGuid)
 
 :::

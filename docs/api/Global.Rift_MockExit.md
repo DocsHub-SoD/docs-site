@@ -18,3 +18,22 @@ public class Rift_MockExit : Rift_RoomExit, ILogicUpdate, ICleanup, ICustomDestr
 | **`onTravel`** | `public UnityEvent<int> onTravel` | Called on interacting client. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `Rift_MockExit`:*
+
+[InGameUIManager](/api/Global.InGameUIManager) · `PlayTutorial_Tutorial_Intro`
+
+### Dependencies (1)
+
+*Types and components that `Rift_MockExit` references or depends upon:*
+
+[Rift_RoomExit](/api/Global.Rift_RoomExit)
+
+:::

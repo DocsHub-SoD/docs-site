@@ -17,3 +17,20 @@ void OnLimboGame()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `ILimboNotifyReceiver`:*
+
+[GameMod_Limbo](/api/Global.GameMod_Limbo) · [LimboObject](/api/Global.LimboObject) · `UI_Lobby_DifficultyGroup`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

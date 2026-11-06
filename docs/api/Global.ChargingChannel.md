@@ -144,3 +144,22 @@ public ChargingChannel UpdateCastMethod()
 **Returns:** `ChargingChannel`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `ChargingChannel`:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · `Ai_C_Pew` · `Ai_E_ShadowVolley` · `Ai_E_StygianRush` · `Ai_QR_DistortedMind_Spawner` · `Ai_Q_BigBorealChunk_Spawner` · `Ai_Q_CruelSun` · `Ai_Q_Laceration_Circle` · `Ai_R_BackOff_Spawner` · `Ai_R_PrecisionShot` · `Ai_R_StaticDischarge` · `Ai_Star_Aurena_F_CR_ChargedCast_InstanceCharger` · [ChargingChannelData](/api/Global.ChargingChannelData) · `Se_R_BoneCrusher` · `Se_U_BeamOfBalance`
+
+### Dependencies (16)
+
+*Types and components that `ChargingChannel` references or depends upon:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · `ActorRef`1` · [BasicEffectWithStrength](/api/Global.BasicEffectWithStrength) · [CastInfo](/api/Global.CastInfo) · [CastMethodData](/api/Global.CastMethodData) · [Channel](/api/Global.Channel) · [ChargingChannelData](/api/Global.ChargingChannelData) · [DewEffect](/api/Global.DewEffect) · [DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityAnimation](/api/Global.EntityAnimation) · [EntityControl](/api/Global.EntityControl) · [NetworkedOnScreenTimerHandle](/api/Global.NetworkedOnScreenTimerHandle)
+
+:::

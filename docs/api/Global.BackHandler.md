@@ -29,3 +29,22 @@ public void Remove()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `BackHandler`:*
+
+`ContextMenu` · [GlobalUIManager](/api/Global.GlobalUIManager) · [MessageManager](/api/Global.MessageManager) · [UI_BackButtonHandler](/api/Global.UI_BackButtonHandler)
+
+### Dependencies (2)
+
+*Types and components that `BackHandler` references or depends upon:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

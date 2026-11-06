@@ -422,3 +422,22 @@ public void UnhighlightForTutorial()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (63)
+
+*Classes and systems that invoke, reference, or depend on `GlobalUIManager`:*
+
+[BackHandler](/api/Global.BackHandler) · `ContextMenu` · [ControlManager](/api/Global.ControlManager) · [DevCanvas](/api/Global.DevCanvas) · [DewMod](/api/Global.DewMod) · [DewSave](/api/Global.DewSave) · [EditSkillManager](/api/Global.EditSkillManager) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [IGamepadFocusable](/api/Global.IGamepadFocusable) · [InGameUIManager](/api/Global.InGameUIManager) · [LobbyUIManager](/api/Global.LobbyUIManager) · [MessageManager](/api/Global.MessageManager) · `TutorialArrow` · [UI_BackButtonHandler](/api/Global.UI_BackButtonHandler) · `UI_Collectables_MainView` · `UI_Common_ChatBox` · `UI_Common_MenuView` · `UI_Constellations` · `UI_Constellations_CategoryGroup` · `UI_DropdownControls` · `UI_EmoteList` · `UI_EmoteList_EditEmote` · `UI_EmoteList_EditEmoteWheel_FloatingEmote` · `UI_EmoteList_EditEmoteWheel_Item` · `UI_EmoteList_Item` · [UI_EmoteWheel](/api/Global.UI_EmoteWheel) · [UI_GamepadBindButton](/api/Global.UI_GamepadBindButton) · [UI_GamepadFocusable](/api/Global.UI_GamepadFocusable) · [UI_GamepadFocusableGroup](/api/Global.UI_GamepadFocusableGroup) · [UI_GamepadInputField](/api/Global.UI_GamepadInputField) · [UI_GamepadNavigationHint](/api/Global.UI_GamepadNavigationHint) · `UI_GamepadScrollRect` · `UI_GamepadShoulderControls` · [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput) · [UI_GamepadTextInput_Key](/api/Global.UI_GamepadTextInput_Key) · `UI_InGame_Conversations_Instance` · `UI_InGame_HeroDetailWindow` · `UI_InGame_HeroInfoBar` · `UI_InGame_SkillButtons` · `UI_InGame_WorldMap` · `UI_Lobby_CharacterView` · `UI_Lobby_Constellations` · `UI_Lobby_Constellations_FloatingStar` · `UI_Lobby_Constellations_HeroConstellation` · `UI_Lobby_Constellations_HeroConstellation_StarSlot` · `UI_Lobby_Constellations_Skills_ContextMenu_Item` · `UI_Lobby_Constellations_StarItem` · `UI_Lobby_Constellations_StarList` · `UI_Lobby_DejavuWindow` · `UI_Lobby_ExpandableStory` · `UI_Lobby_HeroList` · `UI_Lobby_Loadout_AvailableSkills_Item` · `UI_Lobby_LobbyNameGroup` · `UI_Lobby_LucidDreamsWindow` · `UI_Lobby_ReverieButton` · `UI_Lobby_SettingsWindow` · `UI_PlayTutorial_AdvanceButton` · `UI_Settings_Item` · `UI_Settings_View` · `UI_Title_TitleView` · `UI_TooltipManager` · `UI_Tooltip_ObjEditSkillActions` · `UI_TravelerStory_HeroConstellation`
+
+### Dependencies (28)
+
+*Types and components that `GlobalUIManager` references or depends upon:*
+
+[BackHandler](/api/Global.BackHandler) · [Dew](/api/Global.Dew) · [DewDebug](/api/Global.DewDebug) · [DewEffect](/api/Global.DewEffect) · [DewInput](/api/Global.DewInput) · `DewInputReadableTextExtensions` · [DewInputTrigger](/api/Global.DewInputTrigger) · [DewLocalization](/api/Global.DewLocalization) · [DewPool](/api/Global.DewPool) · `GetComponentsNonAllocExtension` · [GetFocusTargetCacheData](/api/Global.GetFocusTargetCacheData) · [GetFocusTargetSettings](/api/Global.GetFocusTargetSettings) · [IGamepadFocusListener](/api/Global.IGamepadFocusListener) · [IGamepadFocusable](/api/Global.IGamepadFocusable) · [IGamepadFocusableOverrideInput](/api/Global.IGamepadFocusableOverrideInput) · [IGamepadNavigationHint](/api/Global.IGamepadNavigationHint) · [IMenuView](/api/Global.IMenuView) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · `RectTransformGetWorldRectExtension` · `TransformExtensions` · [TransitionManager](/api/Global.TransitionManager) · `TutorialHighlightSettings` · [UIManager](/api/Global.UIManager) · [UI_GamepadFocusableGroup](/api/Global.UI_GamepadFocusableGroup) · `Vector3FlattenExtension`
+
+:::

@@ -55,3 +55,22 @@ void OnInteract(Entity entity, bool alt)
 | `alt` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (27)
+
+*Classes and systems that invoke, reference, or depend on `IInteractable`:*
+
+[ActionInteract](/api/Global.ActionInteract) · [Artifact](/api/Global.Artifact) · [CameraManager](/api/Global.CameraManager) · [ControlManager](/api/Global.ControlManager) · [EditSkillManager](/api/Global.EditSkillManager) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [Gem](/api/Global.Gem) · `IInteractableUnityNullCheckExtension` · [Mon_DreamTeller](/api/Global.Mon_DreamTeller) · `Mon_Polaris` · `NetworkReaderWriterExtensions` · [PingInstance](/api/Global.PingInstance) · [PingManager](/api/Global.PingManager) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · [ProxyCollider](/api/Global.ProxyCollider) · [Rift](/api/Global.Rift) · [Room_Shortcut](/api/Global.Room_Shortcut) · [Shrine](/api/Global.Shrine) · `Shrine_Stardust` · [SkillTrigger](/api/Global.SkillTrigger) · `SnowMountain_SecretPlaceTriggerInstance` · `SpawnGemStarProp` · `UI_InGame_InteractGroup` · `UI_InGame_Interact_Base` · `UI_InGame_Interact_Rift` · `UI_TooltipManager`
+
+### Dependencies (1)
+
+*Types and components that `IInteractable` references or depends upon:*
+
+[Entity](/api/Global.Entity)
+
+:::

@@ -15,7 +15,7 @@ public class FxEntityShell : FxInterpolatedEffectBase, IEffectComponent, IEffect
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`color`** | `[ColorUsage(false, true)] public Color color` |  |
+| **`color`** | `[ColorUsage] [ColorUsage(false, true)] public Color color` |  |
 
 :::
 
@@ -44,5 +44,22 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (5)
+
+*Types and components that `FxEntityShell` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [EntityShellModifier](/api/Global.EntityShellModifier) · [EntityVisual](/api/Global.EntityVisual) · [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase) · [IAttachableToEntity](/api/Global.IAttachableToEntity)
 
 :::

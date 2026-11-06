@@ -51,3 +51,28 @@ public void Initialize()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `DewGameplaySettings_User`:*
+
+[DewProfile](/api/Global.DewProfile) · `UI_Settings_View`
+
+### Dependencies (1)
+
+*Types and components that `DewGameplaySettings_User` references or depends upon:*
+
+[IInitializableSettings](/api/Global.IInitializableSettings)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ConfirmMemoryEditBehavior`](/enums#confirmmemoryeditbehavior) · [`DamageNumberVisibility`](/enums#damagenumbervisibility) · [`ReduceOtherPlayerEffectsStrength`](/enums#reduceotherplayereffectsstrength)
+
+:::

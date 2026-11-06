@@ -41,3 +41,22 @@ public void StopNetworked()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FxNetworkedEffect`:*
+
+`Sky_BossIntruder`
+
+### Dependencies (1)
+
+*Types and components that `FxNetworkedEffect` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect)
+
+:::

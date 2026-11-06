@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RequireComponent] [LogicUpdatePriority]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
 
 ```csharp
@@ -24,22 +25,22 @@ public class EntityVisual : EntityComponent, ILogicUpdate, ICleanup
 | **`ClientEvent_OnRendererEnabledChanged`** | `public SafeAction<bool> ClientEvent_OnRendererEnabledChanged` |  |
 | **`ClientEvent_OnSpawnComplete`** | `public SafeAction ClientEvent_OnSpawnComplete` | Called when the entity finishes spawning or spawning is skipped. |
 | **`dazeAfterSpawnDuration`** | `public float dazeAfterSpawnDuration` |  |
-| **`delayLoopEffectTilSpawned`** | `[LabelText("Delay Loop Effect Until Spawned")] [FormerlySerializedAs("delayStartEffectTilSpawned")] [ToggleLeft] public bool delayLoopEffectTilSpawned` |  |
+| **`delayLoopEffectTilSpawned`** | `[FormerlySerializedAs] [LabelText("Delay Loop Effect Until Spawned")] [FormerlySerializedAs("delayStartEffectTilSpawned")] [ToggleLeft] public bool delayLoopEffectTilSpawned` |  |
 | **`delaySpawnEffectOnGroundTilSpawned`** | `[LabelText("Delay Until Spawned")] [ShowIf("@spawnEffectOnGround != null", true)] public bool delaySpawnEffectOnGroundTilSpawned` |  |
 | **`delaySpawnEffectUntilSpawned`** | `[LabelText("Delay Until Spawned")] [ShowIf("@spawnEffect != null", true)] public bool delaySpawnEffectUntilSpawned` |  |
 | **`disableModelTransformUpdate`** | `[NonSerialized] public bool disableModelTransformUpdate` |  |
 | **`doPositionOffset`** | `public bool doPositionOffset` |  |
 | **`doScaling`** | `public bool doScaling` |  |
-| **`invisibleByDefault`** | `[NonSerialized] public bool invisibleByDefault` | Set this true on before spawn to make entities invisible by default, appearing after EnableRenderers is called. |
+| **`invisibleByDefault`** | `[SyncVar] [NonSerialized] public bool invisibleByDefault` | Set this true on before spawn to make entities invisible by default, appearing after EnableRenderers is called. |
 | **`invulnerableWhileSpawning`** | `public bool invulnerableWhileSpawning` |  |
 | **`mirageSkinObjects`** | `public Dictionary<string, List<GameObject>> mirageSkinObjects` |  |
 | **`model`** | `[NonSerialized] public EntityModel model` |  |
 | **`modelTransform`** | `[NonSerialized] public Transform modelTransform` |  |
 | **`renderers`** | `[NonSerialized] public List<Renderer> renderers` |  |
-| **`skipSpawning`** | `[NonSerialized] public bool skipSpawning` | Set this true on before spawn to make entities pop in instead of play its spawning effects, voices and animations. |
+| **`skipSpawning`** | `[SyncVar] [NonSerialized] public bool skipSpawning` | Set this true on before spawn to make entities pop in instead of play its spawning effects, voices and animations. |
 | **`solidRenderers`** | `[NonSerialized] public List<Renderer> solidRenderers` |  |
 | **`spawnAnim`** | `public DewAnimationClip spawnAnim` |  |
-| **`spawnDuration`** | `[Title("Spawn", null, TitleAlignments.Left, true, true)] public float spawnDuration` |  |
+| **`spawnDuration`** | `[SyncVar] [Title("Spawn", null, TitleAlignments.Left, true, true)] public float spawnDuration` |  |
 | **`spawnEffect`** | `[Title("Effects", null, TitleAlignments.Left, true, true)] public GameObject spawnEffect` |  |
 | **`spawnEffectOnGround`** | `public GameObject spawnEffectOnGround` |  |
 | **`spawnXOffset`** | `[ShowIf("doPositionOffset", true)] public AnimationCurve spawnXOffset` |  |
@@ -659,5 +660,30 @@ Cancels ongoing spawn animation of this entity.
 ```csharp
 public void SkipSpawning()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (180)
+
+*Classes and systems that invoke, reference, or depend on `EntityVisual`:*
+
+[ActorManager](/api/Global.ActorManager) · `Ai_Atk_LacertaRifle` · `Ai_Atk_LacertaRifle_Crit` · `Ai_C_BeamOfLight` · `Ai_C_GlacialStomp` · `Ai_C_MassProtection` · `Ai_C_Whirlwind` · `Ai_Curse_AnchorOfMind_Anchor` · `Ai_E_ClutchesOfMalice_ReachAndPull` · `Ai_E_ShadowVolley_Projectile` · `Ai_E_WinterDive` · `Ai_Gem_E_Thunder` · `Ai_Gem_R_Celestial` · `Ai_L_MentalCorruption_Projectile` · `Ai_Mon_Despair_BossAzurak_DoubleStomp_Instance` · `Ai_Mon_Despair_Displacer_Blink` · `Ai_Mon_Despair_DreadBug_Jump` · `Ai_Mon_Despair_DreadBug_JumpBack` · `Ai_Mon_Despair_UnstableRat_Explosion` · `Ai_Mon_Forest_Hound_Charge` · `Ai_Mon_Forest_SpiderSpitter_Backdash` · `Ai_Mon_Forest_SpiderWarrior_Jump` · `Ai_Mon_Ink_BossDarkMoon_Blade` · `Ai_Mon_Ink_BossDarkMoon_Eclipse` · `Ai_Mon_Ink_BossDarkMoon_Hammer` · `Ai_Mon_Ink_BossWhiteNight_AltAtk` · `Ai_Mon_Ink_BossWhiteNight_DestructionWave` · `Ai_Mon_Ink_BossWhiteNight_EnergyWave_Spawner` · `Ai_Mon_Ink_Boss_OnDeath` · `Ai_Mon_Ink_GhostBlade_SwiftStep` · `Ai_Mon_LavaLand_FireElemental_Destruct` · `Ai_Mon_LavaLand_FireElemental_Explosion` · `Ai_Mon_Sky_BigBaam_BeamAtk` · `Ai_Mon_Sky_BossNyx_Blackhole` · `Ai_Mon_Sky_BossNyx_Teleport` · `Ai_Mon_Sky_LittleBaam_Reposition` · `Ai_Mon_SnowMountain_BossSkoll_Whirlwind` · `Ai_Mon_SnowMountain_IceElemental_IceBreaker` · `Ai_Mon_SnowMountain_IceElemental_IceBreaker_SubExplosion` · `Ai_Mon_SnowMountain_Scavenger_Jump` · `Ai_Mon_Special_BossErebos_StarRain_Instance` · `Ai_Mon_Special_BossMaw_AnnihilationStance` · `Ai_Mon_Special_BossMaw_Cataclysm_Spawner` · `Ai_Mon_Special_BossMaw_ChainReaction` · `Ai_Mon_Special_BossMaw_MoonlightPact` · `Ai_Mon_Special_BossMaw_PillarOfFlame_Projectile` · `Ai_Mon_Special_BossMaw_PrecisionShot` · `Ai_Mon_Special_BossObliviax_NeedleAtk_Ready` · `Ai_Mon_Special_BossPolaris_Holy_Purgatory_BurningFloor` · `Ai_Mon_Special_BossPolaris_Holy_Purgatory_Instance` · `Ai_QR_DistortedMind_Spawner` · `Ai_QR_InfernalTales` · `Ai_Q_Discipline_Stomp` · `Ai_Q_Lunge` · `Ai_Q_MoonlightPact` · `Ai_R_Scattershot_Spawner` · `Ai_RoomMod_MeteoricLife_Explosion` · `Ai_Shrine_MawOfDoom_DestroyTarget` · `Ai_UnstableRatSwarm_Projectile` · `At_Atk_YubarStardust` · `BossSeeker_SpotLightController` · [CameraManager](/api/Global.CameraManager) · [CinematicCameraHelper](/api/Global.CinematicCameraHelper) · [ControlManager](/api/Global.ControlManager) · [DamageInstance](/api/Global.DamageInstance) · `DewConsoleCommands` · [DewCutsceneDirector](/api/Global.DewCutsceneDirector) · `DewDamageNumberRenderer` · [Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [EntityAnimation](/api/Global.EntityAnimation) · [EntityColorModifier](/api/Global.EntityColorModifier) · [EntityControl](/api/Global.EntityControl) · [EntityGroundMarker](/api/Global.EntityGroundMarker) · [EntityShellModifier](/api/Global.EntityShellModifier) · [EntitySound](/api/Global.EntitySound) · [EntityTransformModifier](/api/Global.EntityTransformModifier) · [FlavourManager](/api/Global.FlavourManager) · [FxAttachToEntity](/api/Global.FxAttachToEntity) · [FxDoFDynamicFocusDistance](/api/Global.FxDoFDynamicFocusDistance) · [FxEntityColor](/api/Global.FxEntityColor) · [FxEntityDisableRenderer](/api/Global.FxEntityDisableRenderer) · [FxEntityShake](/api/Global.FxEntityShake) · [FxEntityShell](/api/Global.FxEntityShell) · [FxEntityTransform](/api/Global.FxEntityTransform) · [FxMeshTrail](/api/Global.FxMeshTrail) · `Gem_E_Insight` · `Gem_L_Embertail` · `Gem_R_Ricochet` · [GlobalLogicPackage](/api/Global.GlobalLogicPackage) · [Hero](/api/Global.Hero) · `Hero_Bismuth_BookController` · [ISpawnableAsMiniBoss](/api/Global.ISpawnableAsMiniBoss) · `LavaLand_Lava` · [MirageSkinEffect](/api/Global.MirageSkinEffect) · `Mon_DarkCave_CaveSpider` · `Mon_DarkCave_NightOlm` · `Mon_Forest_SpiderSpitter` · `Mon_Forest_SpiderWarrior` · `Mon_GoldenLizard_ElusiveLizard` · `Mon_Ink_BossDarkMoon` · `Mon_Ink_BossDarkMoonHallucination` · `Mon_Ink_BossWhiteNight` · `Mon_Ink_BossWhiteNightHallucination` · `Mon_LavaLand_InfernoSpider` · `Mon_LavaLand_InfernusPillar` · [Mon_RedGiant](/api/Global.Mon_RedGiant) · [Mon_RedMan](/api/Global.Mon_RedMan) · `Mon_Special_AmbushSpawner` · `Mon_Special_BossPolaris` · `PrimusCutsceneEntityVisualOff` · [Projectile](/api/Global.Projectile) · [PropEnt_Stone_DreamDust](/api/Global.PropEnt_Stone_DreamDust) · `RoomMod_Hunted` · `RoomMod_LeafPuppies` · `RoomMod_MeteoricLife` · [Room_Barrier](/api/Global.Room_Barrier) · `Se_AutoDetectPresence` · `Se_D_AstridsMasterpieceEnGarde` · `Se_D_AstridsMasterpieceEnGarde_Exposed` · `Se_D_AstridsMasterpiecePriorite` · `Se_D_ChargedAnguillian` · `Se_D_ConvergencePoint` · `Se_D_ExoticMatter` · `Se_D_IcyVeins` · `Se_D_MercyOfEl` · `Se_DarkCondensationZone` · `Se_E_VileStrike` · `Se_EngulfedInFlame` · `Se_FallenStar_MonsterReinforcement` · `Se_GoldEverywhere` · `Se_HeroKnockedOut` · `Se_HunterBuff_ShadowWalk_Disappear` · `Se_LimboBossDecorator` · `Se_M_Charge` · `Se_M_Flicker` · `Se_MiniBoss_BloodThorn` · `Se_MiniBoss_IceAura` · `Se_MiniBoss_OrbSpitter` · `Se_MiniBoss_SpinningArrow` · `Se_MiniBoss_UnstableExplosive` · `Se_MirageSkin_Sanctification_Protected` · `Se_Mon_DarkCave_BossSeeker_Blink` · `Se_Mon_DarkCave_BossSeeker_Hallucination_Disappear` · `Se_Mon_DarkCave_BossSeeker_TunnelVision_Disappear` · `Se_Mon_DarkCave_DarkElemental_Teleport` · `Se_Mon_Despair_BossAzurak_Hide` · `Se_Mon_Ink_Boss_Rage` · `Se_Mon_Polaris_Blink` · `Se_Mon_Polaris_Disappear` · `Se_Mon_Special_BossPolaris_Holy_Dash` · `Se_ObliviaxKidnap` · `Se_PortalTransition` · `Se_PureDream` · `Se_PureDream_Statue` · `Se_Q_DeathMark_Marked` · `Se_Q_Discipline_Jump` · `Se_Q_GoldenBurst_Wither` · `Se_R_LightningDance` · `Se_R_SerpentineBlessing_Buff` · `Se_R_ShadowWalk_Disappear` · `Se_Shrine_Despair_Teleport` · `Se_Shrine_SmallSoul` · `Se_Star_Husk_I_ShopIntimidation` · `Shrine_HeroSoul` · `Sky_LightFogDamager` · `Sky_NightWaterEffect` · [SpawnManager](/api/Global.SpawnManager) · `St_E_ChainLightning` · `St_QR_ValiantHeart` · `StarlessPath_BossPolarisManager` · [StatusEffect](/api/Global.StatusEffect) · `UI_DamageNumberText` · `UI_EntityFollow` · `UI_EntityGenericStackIndicator` · `UI_EntityHealthBar` · `UI_EntityHealthBarMain` · `UI_HealthBar_Simple` · `UI_InGame_FollowAndFaceHero_Conversation` · `UI_InGame_OffscreenIndicator_Item_Entity`
+
+### Dependencies (36)
+
+*Types and components that `EntityVisual` references or depends upon:*
+
+[Accessory](/api/Global.Accessory) · [Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [Dew](/api/Global.Dew) · [DewAnimationClip](/api/Global.DewAnimationClip) · [DewEffect](/api/Global.DewEffect) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewPool](/api/Global.DewPool) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [EntityAnimation](/api/Global.EntityAnimation) · [EntityColorModifier](/api/Global.EntityColorModifier) · [EntityComponent](/api/Global.EntityComponent) · [EntityControl](/api/Global.EntityControl) · [EntityHighlightProvider](/api/Global.EntityHighlightProvider) · [EntityModel](/api/Global.EntityModel) · [EntityShellModifier](/api/Global.EntityShellModifier) · [EntityStatus](/api/Global.EntityStatus) · [EntityTransformModifier](/api/Global.EntityTransformModifier) · [EventInfoDamage](/api/Global.EventInfoDamage) · [EventInfoKill](/api/Global.EventInfoKill) · `GetComponentsNonAllocExtension` · [GibInfo](/api/Global.GibInfo) · `GraphicsManager` · [ICleanup](/api/Global.ICleanup) · [InvisibleEffect](/api/Global.InvisibleEffect) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MeshHighlightProvider](/api/Global.MeshHighlightProvider) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · `TransformExtensions` · `Vector3FlattenExtension` · `Mirror.GeneratedNetworkCode`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`KnockUpStrength`](/enums#knockupstrength)
 
 :::

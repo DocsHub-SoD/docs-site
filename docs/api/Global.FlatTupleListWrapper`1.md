@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DefaultMember]`
 
 ```csharp
 public class FlatTupleListWrapper<T>
@@ -38,5 +39,22 @@ public IEnumerator<(T, T)> GetEnumerator()
 ```
 
 **Returns:** `System.Collections.Generic.IEnumerator<T><(T, T)>`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FlatTupleListWrapper<T>`:*
+
+[MapData](/api/Global.MapData)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
 
 :::

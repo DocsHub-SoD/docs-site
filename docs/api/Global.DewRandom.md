@@ -217,3 +217,20 @@ public float Value()
 **Returns:** `float`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (18)
+
+*Classes and systems that invoke, reference, or depend on `DewRandom`:*
+
+[Dew](/api/Global.Dew) · [DewMath](/api/Global.DewMath) · [GameManager](/api/Global.GameManager) · [GameMod_MirageSkin](/api/Global.GameMod_MirageSkin) · [MonsterPool](/api/Global.MonsterPool) · [PolygonTools](/api/Global.PolygonTools) · [Room](/api/Global.Room) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomProps](/api/Global.RoomProps) · [RoomRewards](/api/Global.RoomRewards) · [RoomRifts](/api/Global.RoomRifts) · [RoomSection](/api/Global.RoomSection) · [Section_Monsters](/api/Global.Section_Monsters) · `Shrine_Chaos` · `ShuffleListExtension` · [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) · `WagesOfResolveBarrier` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

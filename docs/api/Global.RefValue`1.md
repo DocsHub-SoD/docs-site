@@ -17,3 +17,20 @@ public class RefValue<T>
 | **`value`** | `public T value` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `RefValue<T>`:*
+
+[RoomMonsters](/api/Global.RoomMonsters) · `StarlessPath_BossPolarisManager` · `UI_InGame_Conversations_Instance`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

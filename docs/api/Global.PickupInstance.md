@@ -16,13 +16,13 @@ public class PickupInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDe
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`attractionRange`** | `public float attractionRange` |  |
-| **`enableTimeoutMagnet`** | `[Header("Timeout-Magnet")] public bool enableTimeoutMagnet` |  |
+| **`enableTimeoutMagnet`** | `[Header] [Header("Timeout-Magnet")] public bool enableTimeoutMagnet` |  |
 | **`expirationTime`** | `public float expirationTime` |  |
-| **`fixDirectionMaxSpeedRad`** | `[Header("Velocity")] public float fixDirectionMaxSpeedRad` |  |
-| **`mainEffect`** | `[Header("Effects")] public GameObject mainEffect` |  |
+| **`fixDirectionMaxSpeedRad`** | `[Header] [Header("Velocity")] public float fixDirectionMaxSpeedRad` |  |
+| **`mainEffect`** | `[Header] [Header("Effects")] public GameObject mainEffect` |  |
 | **`maxInitialVelocity`** | `public float maxInitialVelocity` |  |
 | **`maxVelocity`** | `public float maxVelocity` |  |
-| **`pickupDelay`** | `[Header("Behavior")] public float pickupDelay` |  |
+| **`pickupDelay`** | `[Header] [Header("Behavior")] public float pickupDelay` |  |
 | **`pickupEffect`** | `public GameObject pickupEffect` |  |
 | **`pickupEffectOnHero`** | `public GameObject pickupEffectOnHero` |  |
 | **`pickupRange`** | `public float pickupRange` |  |
@@ -111,5 +111,24 @@ protected virtual void OnPickup(Hero hero)
 ```csharp
 protected override void OnPrepare()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (10)
+
+*Classes and systems that invoke, reference, or depend on `PickupInstance`:*
+
+`Ai_Culinary_Pickup` · `Ai_Gem_E_Predation_Pickup` · [Pickup_BaseExpOrb](/api/Global.Pickup_BaseExpOrb) · [Pickup_BaseGoldOrb](/api/Global.Pickup_BaseGoldOrb) · [Pickup_DreamDust](/api/Global.Pickup_DreamDust) · [Pickup_HealthOrb](/api/Global.Pickup_HealthOrb) · [Pickup_ManaOrb](/api/Global.Pickup_ManaOrb) · [Pickup_RegenOrb](/api/Global.Pickup_RegenOrb) · [RandomPickupInstance](/api/Global.RandomPickupInstance) · `StatusEffectRandomPickupInstance`
+
+### Dependencies (8)
+
+*Types and components that `PickupInstance` references or depends upon:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [Actor](/api/Global.Actor) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPhysics](/api/Global.DewPhysics) · [DewPlayer](/api/Global.DewPlayer) · [EntityCheck](/api/Global.EntityCheck) · [Hero](/api/Global.Hero) · `VectorPlaneTransformExtension`
 
 :::

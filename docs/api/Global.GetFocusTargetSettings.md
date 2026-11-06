@@ -24,3 +24,22 @@ public struct GetFocusTargetSettings
 | **`useCenterOfRect`** | `public bool useCenterOfRect` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `GetFocusTargetSettings`:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager)
+
+### Dependencies (1)
+
+*Types and components that `GetFocusTargetSettings` references or depends upon:*
+
+[GetFocusTargetCacheData](/api/Global.GetFocusTargetCacheData)
+
+:::

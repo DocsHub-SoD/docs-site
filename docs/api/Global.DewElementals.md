@@ -23,3 +23,26 @@ public static class DewElementals
 | **`LightDamageAmpPerStack`** | `public const float LightDamageAmpPerStack = 0.05` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DewElementals`:*
+
+[Actor](/api/Global.Actor)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ElementalType`](/enums#elementaltype)
+
+:::

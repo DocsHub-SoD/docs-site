@@ -52,3 +52,20 @@ public void Set(Monster.MonsterType type, T value)
 | `value` | `T` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `PerMonsterTypeData<T>`:*
+
+[DewGameplayExperienceSettings](/api/Global.DewGameplayExperienceSettings) · [GameManager](/api/Global.GameManager) · [PickupManager](/api/Global.PickupManager)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

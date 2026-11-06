@@ -15,12 +15,12 @@ public class CastMethodData : ICastMethodDataArrow, ICastMethodDataCone, ICastMe
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`_angle`** | `[SerializeField] [ShowIf("ShouldAngleFieldShow", true)] public float _angle` |  |
-| **`_isClamping`** | `[SerializeField] [ShowIf("ShouldIsClampingFieldShow", true)] public bool _isClamping` |  |
-| **`_length`** | `[SerializeField] [ShowIf("ShouldLengthFieldShow", true)] public float _length` |  |
-| **`_radius`** | `[SerializeField] [ShowIf("ShouldRadiusFieldShow", true)] public float _radius` |  |
-| **`_range`** | `[SerializeField] [ShowIf("ShouldRangeFieldShow", true)] public float _range` |  |
-| **`_width`** | `[SerializeField] [ShowIf("ShouldWidthFieldShow", true)] public float _width` |  |
+| **`_angle`** | `[SerializeField] [SerializeField] [ShowIf("ShouldAngleFieldShow", true)] public float _angle` |  |
+| **`_isClamping`** | `[SerializeField] [SerializeField] [ShowIf("ShouldIsClampingFieldShow", true)] public bool _isClamping` |  |
+| **`_length`** | `[SerializeField] [SerializeField] [ShowIf("ShouldLengthFieldShow", true)] public float _length` |  |
+| **`_radius`** | `[SerializeField] [SerializeField] [ShowIf("ShouldRadiusFieldShow", true)] public float _radius` |  |
+| **`_range`** | `[SerializeField] [SerializeField] [ShowIf("ShouldRangeFieldShow", true)] public float _range` |  |
+| **`_width`** | `[SerializeField] [SerializeField] [ShowIf("ShouldWidthFieldShow", true)] public float _width` |  |
 | **`type`** | `[HideLabel] [EnumToggleButtons] public CastMethodType type` |  |
 
 :::
@@ -53,5 +53,30 @@ public float GetEffectiveRange(AbilityTrigger parent)
 | `parent` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `float`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (11)
+
+*Classes and systems that invoke, reference, or depend on `CastMethodData`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [ActionCast](/api/Global.ActionCast) · [CastIndicatorManager](/api/Global.CastIndicatorManager) · [CastMethodDataSerialization](/api/Global.CastMethodDataSerialization) · [ChargingChannel](/api/Global.ChargingChannel) · [ChargingChannelData](/api/Global.ChargingChannelData) · [ControlManager](/api/Global.ControlManager) · [DewPlayer](/api/Global.DewPlayer) · [SampleCastInfoContext](/api/Global.SampleCastInfoContext) · `St_Q_Laceration` · [TriggerConfig](/api/Global.TriggerConfig)
+
+### Dependencies (6)
+
+*Types and components that `CastMethodData` references or depends upon:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [ICastMethodDataArrow](/api/Global.ICastMethodDataArrow) · [ICastMethodDataCone](/api/Global.ICastMethodDataCone) · [ICastMethodDataNone](/api/Global.ICastMethodDataNone) · [ICastMethodDataPoint](/api/Global.ICastMethodDataPoint) · [ICastMethodDataTarget](/api/Global.ICastMethodDataTarget)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CastMethodType`](/enums#castmethodtype)
 
 :::

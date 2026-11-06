@@ -7,3 +7,20 @@
 ```csharp
 public enum SelectionDisplayType
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `SelectionDisplayType`:*
+
+[IGamepadFocusable](/api/Global.IGamepadFocusable) · [UI_GamepadFocusable](/api/Global.UI_GamepadFocusable) · `UI_InGame_Conversations_Instance` · `UI_InGame_SkillButtons` · `UI_InGame_WorldMap`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

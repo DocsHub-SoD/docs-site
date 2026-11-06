@@ -21,3 +21,20 @@ public class UI_BackButtonHandler : MonoBehaviour
 | **`priority`** | `public int priority` | Higher priorities will be called first. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (4)
+
+*Types and components that `UI_BackButtonHandler` references or depends upon:*
+
+[BackHandler](/api/Global.BackHandler) · [DewInputTrigger](/api/Global.DewInputTrigger) · [GlobalUIManager](/api/Global.GlobalUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

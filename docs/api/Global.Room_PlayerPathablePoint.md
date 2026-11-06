@@ -17,3 +17,20 @@ public class Room_PlayerPathablePoint : MonoBehaviour, IPlayerPathablePoint
 | **`pathablePosition`** | `public Vector3 pathablePosition { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `Room_PlayerPathablePoint` references or depends upon:*
+
+[IPlayerPathablePoint](/api/Global.IPlayerPathablePoint)
+
+:::

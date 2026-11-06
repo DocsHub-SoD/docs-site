@@ -20,3 +20,22 @@ public struct EventInfoAttackMissed
 | **`victim`** | `public Entity victim` | Victim of this hit. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoAttackMissed`:*
+
+[ClientEventManager](/api/Global.ClientEventManager) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `EventInfoAttackMissed` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity)
+
+:::

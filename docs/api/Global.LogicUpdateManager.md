@@ -66,3 +66,22 @@ public static void Unregister(ILogicUpdate lobj)
 | `lobj` | [`ILogicUpdate`](/api/Global.ILogicUpdate) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `LogicUpdateManager`:*
+
+[DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [LogicBehaviour](/api/Global.LogicBehaviour)
+
+### Dependencies (3)
+
+*Types and components that `LogicUpdateManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ILogicUpdate](/api/Global.ILogicUpdate) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

@@ -49,3 +49,28 @@ public void AddAmount(float originalAmount, float totalMax = Infinity, bool proc
 | `processTotalMax` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `ShieldEffect`:*
+
+[Actor](/api/Global.Actor) · `Ai_Mon_Special_BossObliviax_ChargeSequence_Ready` · [EntityStatus](/api/Global.EntityStatus) · [EventInfoDamageNegatedByShield](/api/Global.EventInfoDamageNegatedByShield) · `Gem_L_Supersymmetry` · `Gem_R_Snow` · `Se_E_Permafrost_Shield` · `Se_GenericShield_OneShot` · `Se_GenericShield_Stacking` · `Se_Mon_Primus_BossPrimusAeron_Rage_DecayingShield` · `Se_Mon_Special_BossMaw_ShieldConversion` · `Se_RoomMod_MisticIceVein_Shield` · `Se_Star_Mist_F_PR_ShieldAndCrit` · `Se_Star_Mist_L_PotionShield_PersistentShield` · [StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (7)
+
+*Types and components that `ShieldEffect` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [BasicEffect](/api/Global.BasicEffect) · [Entity](/api/Global.Entity) · [EntityStatus](/api/Global.EntityStatus) · [ReactionChain](/api/Global.ReactionChain) · [SafeAction`1](/api/Global.SafeAction`1) · [StatusEffect](/api/Global.StatusEffect)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

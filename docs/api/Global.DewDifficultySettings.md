@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[CreateAssetMenu] [DewResourceLink]`
 
 ```csharp
 [HideMonoScript]
@@ -38,7 +39,7 @@ public class DewDifficultySettings : ScriptableObject
 | **`iconScale`** | `public float iconScale` |  |
 | **`lostSoulDistance`** | `public Vector2Int lostSoulDistance` |  |
 | **`maxPopulationMultiplier`** | `[Title("Generic", null, TitleAlignments.Left, true, true)] public float maxPopulationMultiplier` |  |
-| **`miniBossArmor`** | `[Space(16)] public float miniBossArmor` |  |
+| **`miniBossArmor`** | `[Space] [Space(16)] public float miniBossArmor` |  |
 | **`positionSampleCount`** | `[Title("Enemy AI", null, TitleAlignments.Left, true, true)] [LabelText("Sample Count")] public int positionSampleCount` |  |
 | **`positionSampleInterval`** | `[LabelText("Sample Interval")] public float positionSampleInterval` |  |
 | **`positionSampleLagBehindFrames`** | `[LabelText("Lag Behind Count")] public int positionSampleLagBehindFrames` |  |
@@ -78,5 +79,24 @@ public float GetScaledZoneIndexForHealth(float zi = NaN)
 | `zi` | `float` |  |
 
 **Returns:** `float`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `DewDifficultySettings`:*
+
+[GameManager](/api/Global.GameManager) · `NetworkReaderWriterExtensions` · [PlayGameManager](/api/Global.PlayGameManager) · `PlayTutorialManager` · `TestMapGameManager` · `UI_InGame_Difficulty`
+
+### Dependencies (8)
+
+*Types and components that `DewDifficultySettings` references or depends upon:*
+
+[DataProcessorGroup`3](/api/Global.DataProcessorGroup`3) · [DewBuildProfile](/api/Global.DewBuildProfile) · [Entity](/api/Global.Entity) · [EntityStatus](/api/Global.EntityStatus) · [GameManager](/api/Global.GameManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [StatBonus](/api/Global.StatBonus) · [ZoneManager](/api/Global.ZoneManager)
 
 :::

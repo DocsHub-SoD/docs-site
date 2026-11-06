@@ -26,7 +26,7 @@ public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRou
 | **`fxLoop`** | `[Title("Effects", null, TitleAlignments.Left, true, true)] public GameObject fxLoop` |  |
 | **`hiddenOnVisitedNode`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public bool hiddenOnVisitedNode` |  |
 | **`innerDecorations`** | `[BoxGroup("Inner Decorations", true, false, 0)] [InlineProperty] [HideLabel] [ShowIf("enableInnerDecorations", true)] public DecorationSettings innerDecorations` |  |
-| **`isMain`** | `[Title("General", null, TitleAlignments.Left, true, true)] [FormerlySerializedAs("showOnTopRight")] public bool isMain` | Main modifiers will print notification when user enters the node.A node can only have a single main modifier. |
+| **`isMain`** | `[FormerlySerializedAs] [Title("General", null, TitleAlignments.Left, true, true)] [FormerlySerializedAs("showOnTopRight")] public bool isMain` | Main modifiers will print notification when user enters the node.A node can only have a single main modifier. |
 | **`mainColor`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public Color mainColor` |  |
 | **`mapSprite`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public Sprite mapSprite` |  |
 | **`mapSpriteScale`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public float mapSpriteScale` |  |
@@ -48,7 +48,7 @@ public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRou
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`id`** | `[SaveVar(SaveVarFlags.Default)] public int id { get; }` | Modifier id of this modifier instance. |
+| **`id`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public int id { get; }` | Modifier id of this modifier instance. |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 | **`modData`** | `public ModifierData modData { get; }` |  |
 
@@ -184,5 +184,30 @@ public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (73)
+
+*Classes and systems that invoke, reference, or depend on `RoomModifierBase`:*
+
+`Obliviax_Decoration_Generator` · `RoomMod_AcceleratedTime` · `RoomMod_Ambush` · `RoomMod_Anitya` · `RoomMod_ArcticTerritory` · `RoomMod_Artifact` · `RoomMod_BlackRain` · `RoomMod_CallOfTheRavenous` · `RoomMod_ChallengingFight` · `RoomMod_CorruptedChaos_AuraOfPain` · `RoomMod_DarkCondensationZone` · `RoomMod_DistantMemories` · `RoomMod_EngulfedInFlame` · `RoomMod_FallenStar` · `RoomMod_FireDevil` · `RoomMod_FragmentOfRadiance_MysteriousPlace` · `RoomMod_FragmentOfRadiance_StartProp` · `RoomMod_GazeOfErebos` · `RoomMod_GlacialBarrier` · `RoomMod_GoldEverywhere` · `RoomMod_GravityTraining` · `RoomMod_GuidingCompass_SpawnRift` · `RoomMod_HarderFightBetterReward` · `RoomMod_HeroSoul` · `RoomMod_Hunted` · `RoomMod_InkStrikeWarning` · `RoomMod_InversionSigil` · `RoomMod_LeafPuppies` · `RoomMod_Limbo_Decorator` · `RoomMod_LingeringAuraOfGuidance` · `RoomMod_MerchantBackpack` · `RoomMod_MeteoricLife` · `RoomMod_MisticIceVein` · `RoomMod_NoMerchant` · `RoomMod_PureDream` · `RoomMod_RiskOfMeteors` · `RoomMod_SmallSoul` · `RoomMod_SpawnAltarOfCleansing` · `RoomMod_SpawnAscension` · `RoomMod_SpawnBlessedGuidance` · `RoomMod_SpawnDestiny` · `RoomMod_SpawnDisintegration` · `RoomMod_SpawnEntanglement` · `RoomMod_SpawnGuidance` · `RoomMod_SpawnHatred` · `RoomMod_SpawnHiddenStash` · `RoomMod_SpawnJonasChamberRift` · `RoomMod_SpawnMawOfDoom` · `RoomMod_SpawnMiniBoss` · `RoomMod_SpawnMirrorOfRemorse` · `RoomMod_SpawnParadox` · `RoomMod_SpawnPileOfSnow` · `RoomMod_SpawnPotOfGreed` · `RoomMod_SpawnWell` · `RoomMod_StarCookie` · `RoomMod_StardustEverywhere` · `RoomMod_StrangePlace` · `RoomMod_StrayMemory_StartProp` · `RoomMod_SuspiciousTreasureLocation` · `RoomMod_SymbioteHabitat` · `RoomMod_TheConsortOfNight_Raven` · `RoomMod_TheConsortOfNight_Raven_Marker` · `RoomMod_ToxicArea` · `RoomMod_Tutorial_Voice` · `RoomMod_UnstableRatSwarm` · `RoomMod_UnstableVeilOfTime` · `RoomMod_VeilOfDark` · `RoomMod_WagesOfResolve` · `RoomMod_WarpingField` · `Shrine_TheConsortOfNight` · [SpecialEntityRoomModifier](/api/Global.SpecialEntityRoomModifier) · `UI_InGame_RoomModDisplay` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (25)
+
+*Types and components that `RoomModifierBase` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ArrayReturnHandle`1](/api/Global.ArrayReturnHandle`1) · [Cells2D`1](/api/Global.Cells2D`1) · [DecorationSettings](/api/Global.DecorationSettings) · [Dew](/api/Global.Dew) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPersistence](/api/Global.DewPersistence) · [DewPool](/api/Global.DewPool) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EventInfoLoadRoom](/api/Global.EventInfoLoadRoom) · [GameManager](/api/Global.GameManager) · [IExcludeFromPool](/api/Global.IExcludeFromPool) · [MapData](/api/Global.MapData) · [ModifierData](/api/Global.ModifierData) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PlaceShrineSettings](/api/Global.PlaceShrineSettings) · [Room](/api/Global.Room) · [RoomProps](/api/Global.RoomProps) · [RoomSection](/api/Global.RoomSection) · [SafeAction`1](/api/Global.SafeAction`1) · [Shrine](/api/Global.Shrine) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `VectorPlaneTransformExtension` · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (4)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ModifierSpawnType`](/enums#modifierspawntype) · [`NodeModifierVisibility`](/enums#nodemodifiervisibility) · [`SaveVarFlags`](/enums#savevarflags) · [`ScaleWithDifficultyMode`](/enums#scalewithdifficultymode)
 
 :::

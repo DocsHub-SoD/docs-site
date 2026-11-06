@@ -18,3 +18,20 @@ public interface ICastMethodDataCone
 | **`radius`** | `float radius { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ICastMethodDataCone`:*
+
+[CastIndicatorManager](/api/Global.CastIndicatorManager) · [CastMethodData](/api/Global.CastMethodData)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

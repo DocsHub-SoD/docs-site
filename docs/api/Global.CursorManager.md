@@ -80,3 +80,22 @@ public void ResizeTextures()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `CursorManager`:*
+
+[DewSave](/api/Global.DewSave)
+
+### Dependencies (6)
+
+*Types and components that `CursorManager` references or depends upon:*
+
+`ColorExtensions` · [InGameUIManager](/api/Global.InGameUIManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [UIManager](/api/Global.UIManager)
+
+:::

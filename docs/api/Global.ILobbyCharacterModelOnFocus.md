@@ -22,3 +22,20 @@ void OnLobbyCharacterFocus(bool value)
 | `value` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `ILobbyCharacterModelOnFocus`:*
+
+[CharacterModelDisplay](/api/Global.CharacterModelDisplay) · [FocusedLobbyCharacterEffect](/api/Global.FocusedLobbyCharacterEffect)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

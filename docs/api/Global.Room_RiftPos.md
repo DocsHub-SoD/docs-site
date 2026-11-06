@@ -7,3 +7,20 @@
 ```csharp
 public class Room_RiftPos : MonoBehaviour, IBanRoomNodesNearby
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `Room_RiftPos` references or depends upon:*
+
+[IBanRoomNodesNearby](/api/Global.IBanRoomNodesNearby)
+
+:::

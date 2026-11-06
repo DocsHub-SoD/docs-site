@@ -40,3 +40,20 @@ public int GetHashCode(ReactionChain obj)
 **Returns:** `int`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `ReactionChainComparer` references or depends upon:*
+
+[ReactionChain](/api/Global.ReactionChain)
+
+:::

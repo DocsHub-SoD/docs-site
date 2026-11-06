@@ -19,3 +19,22 @@ public class Section_Props : RoomSectionComponent, ILogicUpdate
 | **`sectionRule`** | `public PropSpawnRule sectionRule` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `Section_Props`:*
+
+[RoomSection](/api/Global.RoomSection)
+
+### Dependencies (2)
+
+*Types and components that `Section_Props` references or depends upon:*
+
+[PropSpawnRule](/api/Global.PropSpawnRule) · [RoomSectionComponent](/api/Global.RoomSectionComponent)
+
+:::

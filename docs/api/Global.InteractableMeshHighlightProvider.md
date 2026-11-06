@@ -18,3 +18,20 @@ protected override void Start()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `InteractableMeshHighlightProvider` references or depends upon:*
+
+[ManagerBase`1](/api/Global.ManagerBase`1) · [MeshHighlightProvider](/api/Global.MeshHighlightProvider)
+
+:::

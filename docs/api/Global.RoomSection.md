@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RequireComponent] [RequireComponent] [RequireComponent]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
 
 ```csharp
@@ -189,5 +190,24 @@ public bool TryGetGoodNodePosition(out Vector3 position, DewRandom random = null
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `bool`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (31)
+
+*Classes and systems that invoke, reference, or depend on `RoomSection`:*
+
+`DewConsoleCommands` · [Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [Hero](/api/Global.Hero) · `IPreemptiveMiniBossSection` · `Ink_BossSelector` · `Mon_GoldenLizard_ElusiveLizard` · `PlayTutorial_Tutorial_Intro` · [Room](/api/Global.Room) · `RoomMod_Ambush` · `RoomMod_ChallengingFight` · `RoomMod_CorruptedChaos_AuraOfPain` · `RoomMod_DistantMemories` · `RoomMod_FragmentOfRadiance_StartProp` · `RoomMod_LingeringAuraOfGuidance` · `RoomMod_PureDream` · `RoomMod_SpawnMiniBoss` · `RoomMod_VeilOfDark` · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomProps](/api/Global.RoomProps) · [RoomRewards](/api/Global.RoomRewards) · [RoomSectionComponent](/api/Global.RoomSectionComponent) · [Room_Waypoint](/api/Global.Room_Waypoint) · [Section_Monsters](/api/Global.Section_Monsters) · `Shrine_Despair` · `Shrine_Despair_Vestige` · `Shrine_MorasDomain_HerPresence` · `Shrine_TheConsortOfNight` · [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) · [SpecialEntityRoomModifier](/api/Global.SpecialEntityRoomModifier)
+
+### Dependencies (22)
+
+*Types and components that `RoomSection` references or depends upon:*
+
+[ActorCheck](/api/Global.ActorCheck) · `ActorRef`1` · [CounterBool](/api/Global.CounterBool) · [Dew](/api/Global.Dew) · [DewCollider](/api/Global.DewCollider) · [DewRandom](/api/Global.DewRandom) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityStatus](/api/Global.EntityStatus) · [GameManager](/api/Global.GameManager) · [IPlayerPathablePoint](/api/Global.IPlayerPathablePoint) · [LogicBehaviour](/api/Global.LogicBehaviour) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PointsToTriangleVertices](/api/Global.PointsToTriangleVertices) · [PolygonTools](/api/Global.PolygonTools) · [RoomSectionFloatDictionary](/api/Global.RoomSectionFloatDictionary) · [Section_Monsters](/api/Global.Section_Monsters) · [Section_Props](/api/Global.Section_Props) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `Vector2CrossExtension` · `VectorPlaneTransformExtension` · [ZoneManager](/api/Global.ZoneManager)
 
 :::

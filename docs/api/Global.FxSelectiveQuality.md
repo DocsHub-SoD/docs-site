@@ -18,3 +18,28 @@ public class FxSelectiveQuality : MonoBehaviour
 | **`requiredQuality`** | `public Quality3Levels requiredQuality` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FxSelectiveQuality`:*
+
+[DewEffect](/api/Global.DewEffect)
+
+### Dependencies (2)
+
+*Types and components that `FxSelectiveQuality` references or depends upon:*
+
+[ArrayReturnHandle`1](/api/Global.ArrayReturnHandle`1) · [DewPool](/api/Global.DewPool)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`Quality3Levels`](/enums#quality3levels)
+
+:::

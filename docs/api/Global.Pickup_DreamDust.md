@@ -77,3 +77,20 @@ protected override void OnPickup(Hero hero)
 | `hero` | [`Hero`](/api/Global.Hero) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (12)
+
+*Types and components that `Pickup_DreamDust` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [Dew](/api/Global.Dew) · [DewMath](/api/Global.DewMath) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EventInfoLoadRoom](/api/Global.EventInfoLoadRoom) · [Hero](/api/Global.Hero) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PickupInstance](/api/Global.PickupInstance) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2)
+
+:::

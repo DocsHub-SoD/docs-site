@@ -196,3 +196,28 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (39)
+
+*Classes and systems that invoke, reference, or depend on `Cost`:*
+
+[Artifact](/api/Global.Artifact) · `CostDisplay` · `CostExtensions` · [DewAdvText](/api/Global.DewAdvText) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillShrine](/api/Global.EditSkillShrine) · [FloatCost](/api/Global.FloatCost) · [ICustomInteractable](/api/Global.ICustomInteractable) · [MerchandiseData](/api/Global.MerchandiseData) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · [PropEnt_Merchant_Jonas](/api/Global.PropEnt_Merchant_Jonas) · [PropEnt_Merchant_Smoothie](/api/Global.PropEnt_Merchant_Smoothie) · [Room_Shortcut](/api/Global.Room_Shortcut) · `Se_Star_Cetus_I_ColdDiscountFireSurcharge` · `Se_Star_Husk_I_ShopIntimidation` · [Shrine](/api/Global.Shrine) · `Shrine_AltarOfCleansing` · `Shrine_Ascension` · `Shrine_Disintegration` · `Shrine_Guidance` · `Shrine_Luck` · `Shrine_MawOfDoom` · `Shrine_MorasDomain_HerPresence` · `Shrine_UpgradeWell` · [Treasure](/api/Global.Treasure) · `UI_EmoteList_Item` · `UI_InGame_FloatingWindow_Shop` · `UI_InGame_FloatingWindow_Shop_Item` · `UI_InGame_GemSlot_EditSkill` · `UI_InGame_Interact_Custom` · `UI_InGame_Interact_Shrine` · `UI_InGame_SkillButton_EditSkill` · `UI_Lobby_Constellations_StarList` · `UI_Lobby_ObliterationView` · `UI_Lobby_SkinList_Item` · `UI_NametagList_Item` · `UI_TravelerStory_Details_Story_ChapterItem` · `UI_TravelerStory_HeroNode` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (4)
+
+*Types and components that `Cost` references or depends upon:*
+
+[DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [FloatCost](/api/Global.FloatCost)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AffordType`](/enums#affordtype)
+
+:::

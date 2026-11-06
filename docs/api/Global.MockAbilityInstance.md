@@ -18,3 +18,20 @@ protected override void OnCreate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `MockAbilityInstance` references or depends upon:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [Actor](/api/Global.Actor)
+
+:::

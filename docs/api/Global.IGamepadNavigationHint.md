@@ -77,3 +77,20 @@ bool TryGetUp(out IGamepadFocusable next)
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `IGamepadNavigationHint`:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager) · [UI_GamepadNavigationHint](/api/Global.UI_GamepadNavigationHint) · `UI_Lobby_Constellations_HeroConstellation` · `UI_Lobby_DejavuWindow` · `UI_TravelerStory_HeroConstellation`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

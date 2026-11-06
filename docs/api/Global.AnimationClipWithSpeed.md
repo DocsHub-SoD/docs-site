@@ -21,3 +21,20 @@ public struct AnimationClipWithSpeed
 | **`speed`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public float speed` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `AnimationClipWithSpeed`:*
+
+[EntityAnimation](/api/Global.EntityAnimation) · [EntityModel](/api/Global.EntityModel)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

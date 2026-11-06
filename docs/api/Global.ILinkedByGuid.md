@@ -17,3 +17,20 @@ public interface ILinkedByGuid
 | **`resourceId`** | `string resourceId { get; set; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `ILinkedByGuid`:*
+
+[DewAnimationClip](/api/Global.DewAnimationClip) · [DewAudioClip](/api/Global.DewAudioClip) · [DewMusicItem](/api/Global.DewMusicItem) · [DewResources](/api/Global.DewResources)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

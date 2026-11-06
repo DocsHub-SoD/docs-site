@@ -51,3 +51,22 @@ protected override void OnCreate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (11)
+
+*Classes and systems that invoke, reference, or depend on `PropEntity`:*
+
+`PropEnt_GlacialBarrier` · [PropEnt_Merchant_Backpack](/api/Global.PropEnt_Merchant_Backpack) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `PropEnt_MisticIceVein` · `PropEnt_Sky_Orca` · [PropEnt_Stone_DreamDust](/api/Global.PropEnt_Stone_DreamDust) · [PropEnt_Stone_Gold](/api/Global.PropEnt_Stone_Gold) · [PropEnt_Stone_Nightmare](/api/Global.PropEnt_Stone_Nightmare) · `PropEnt_Stone_PitchBlackOre` · `PropEnt_Tutorial_Obstacle` · `PropEnt_VigilanteHaven_Obstacle`
+
+### Dependencies (5)
+
+*Types and components that `PropEntity` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [EventInfoDamage](/api/Global.EventInfoDamage) · [IProp](/api/Global.IProp) · [SafeAction`1](/api/Global.SafeAction`1)
+
+:::

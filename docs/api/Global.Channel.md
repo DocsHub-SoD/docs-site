@@ -157,3 +157,22 @@ public Channel Dispatch(Entity e)
 **Returns:** `Channel`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (48)
+
+*Classes and systems that invoke, reference, or depend on `Channel`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · `Ai_C_BeamOfLight` · `Ai_E_SliceThroat` · `Ai_Mon_Despair_BossAzurak_DoubleStomp` · `Ai_Mon_Despair_BossAzurak_RoarAtk` · `Ai_Mon_Despair_BossAzurak_Roll` · `Ai_Mon_Despair_BossAzurak_StompBlock` · `Ai_Mon_Despair_BossAzurak_StompGlobal` · `Ai_Mon_Ink_BossDarkMoon_AltAtk_Spawner` · `Ai_Mon_Ink_BossDarkMoon_AltAtk_StingAtk` · `Ai_Mon_Ink_BossDarkMoon_Blade` · `Ai_Mon_Ink_BossDarkMoon_Eclipse` · `Ai_Mon_Ink_BossDarkMoon_TeleportDash` · `Ai_Mon_Ink_BossDarkMoon_ThrowSpear_Spawner` · `Ai_Mon_Ink_BossWhiteNight_AltAtk_Ready` · `Ai_Mon_Ink_BossWhiteNight_Cataclysm` · `Ai_Mon_Ink_BossWhiteNight_DestructionWave_Wave` · `Ai_Mon_LavaLand_BossInfernus_Roar` · `Ai_Mon_Primus_BossPrimusAeron_Rage_Atk` · `Ai_Mon_Sky_BigBaam_BeamAtk` · `Ai_Mon_Sky_BossNyx_AltTeleport` · `Ai_Mon_Sky_BossNyx_Atk` · `Ai_Mon_Sky_BossNyx_LineAtk_Displacement` · `Ai_Mon_Sky_BossNyx_PullAtk` · `Ai_Mon_SnowMountain_BossSkoll_Atk` · `Ai_Mon_Special_BossErebos_AntiGravity_Spawner` · `Ai_Mon_Special_BossMaw_Atk` · `Ai_Mon_Special_BossMaw_Chomp_Charge` · `Ai_Mon_Special_BossMaw_MoonlightPact` · `Ai_Mon_Special_BossMaw_SliceThroat` · `Ai_Mon_Special_BossObliviax_DashAtk` · `Ai_Mon_Special_BossObliviax_NeedleAtk_Ready` · `Ai_Mon_Special_BossPolaris_Holy_Atk_Spawner` · `Ai_Q_SuperNova` · `Ai_U_WorldCracker` · [AttackTrigger](/api/Global.AttackTrigger) · [ChannelData](/api/Global.ChannelData) · [ChargingChannel](/api/Global.ChargingChannel) · [DamageInstance](/api/Global.DamageInstance) · [EntityControl](/api/Global.EntityControl) · `Se_Mon_Despair_BossAzurak_Hide` · `Se_Mon_Ink_BossWhiteNight_Cataclysm` · `Se_Mon_Sky_BossNyx_StarBuff` · `Se_Mon_Special_BossErebos_PhaseChange` · `Se_R_Parry_Start` · `Se_WaypointTeleport` · `StarlessPath_BossPolarisManager` · [TriggerChannelData](/api/Global.TriggerChannelData)
+
+### Dependencies (4)
+
+*Types and components that `Channel` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) · [IEntityValidator](/api/Global.IEntityValidator)
+
+:::

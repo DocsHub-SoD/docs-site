@@ -15,7 +15,7 @@ public abstract class ChoiceShrine : Shrine, ILogicUpdate, ICleanup, ICustomDest
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`choices`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, ChoiceShrineItem[]> choices` |  |
+| **`choices`** | `[SaveVar] [SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, ChoiceShrineItem[]> choices` |  |
 | **`ClientEvent_OnChoicesUpdated`** | `public SafeAction ClientEvent_OnChoicesUpdated` |  |
 | **`itemCount`** | `public int itemCount` |  |
 | **`onItemsPopulated`** | `public SafeAction<DewPlayer> onItemsPopulated` | Called on server. |
@@ -100,5 +100,30 @@ public void PopulatePlayerChoices(DewPlayer player)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `ChoiceShrine`:*
+
+`Se_Star_I_MoreShrineItems` · `Shrine_Enlightenment` · `Shrine_FallenStar` · `Shrine_Luck` · `Shrine_Paradox` · `Shrine_Retrospection` · `UI_InGame_FloatingWindow_ChoiceShrine`
+
+### Dependencies (10)
+
+*Types and components that `ChoiceShrine` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [Shrine](/api/Global.Shrine)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

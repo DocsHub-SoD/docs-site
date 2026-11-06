@@ -41,3 +41,20 @@ protected override void ValueSetter(float value)
 | `value` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `FxMaterialProperty` references or depends upon:*
+
+[FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase)
+
+:::

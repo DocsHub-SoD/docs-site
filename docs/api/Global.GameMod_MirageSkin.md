@@ -16,7 +16,7 @@ public class GameMod_MirageSkin : GameModifierBase, ILogicUpdate, ICleanup, ICus
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`baseChancesByPlayerCount`** | `public GameMod_MirageSkin.MirageSkinChancePerPlayer[] baseChancesByPlayerCount` |  |
-| **`currentZonePool`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<AssetRef<MirageSkinEffect>> currentZonePool` |  |
+| **`currentZonePool`** | `[SaveVar] [NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<AssetRef<MirageSkinEffect>> currentZonePool` |  |
 | **`softInstance`** | `public static GameMod_MirageSkin softInstance` |  |
 
 :::
@@ -64,5 +64,30 @@ protected override void OnDestroyActor()
 ```csharp
 public void RefreshPool()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `GameMod_MirageSkin`:*
+
+`RoomMod_FallenStar` · `RoomMod_HarderFightBetterReward` · `RoomMod_Hunted` · [RoomMonsters](/api/Global.RoomMonsters)
+
+### Dependencies (18)
+
+*Types and components that `GameMod_MirageSkin` references or depends upon:*
+
+[Actor](/api/Global.Actor) · `ArrayGetClampedExtensions` · [AssetRef`1](/api/Global.AssetRef`1) · [Dew](/api/Global.Dew) · [DewRandom](/api/Global.DewRandom) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoLoadRoom](/api/Global.EventInfoLoadRoom) · [EventInfoLoadZone](/api/Global.EventInfoLoadZone) · [GameEffect](/api/Global.GameEffect) · [GameModifierBase](/api/Global.GameModifierBase) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [SafeAction`1](/api/Global.SafeAction`1) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · [ZoneManager](/api/Global.ZoneManager)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`SaveVarFlags`](/enums#savevarflags)
 
 :::

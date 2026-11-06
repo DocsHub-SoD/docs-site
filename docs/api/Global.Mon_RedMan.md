@@ -33,3 +33,20 @@ protected override void OnDeath(EventInfoKill info)
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `Mon_RedMan` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual) · [EventInfoKill](/api/Global.EventInfoKill) · [Monster](/api/Global.Monster) · `QuaternionFlattenExtension`
+
+:::

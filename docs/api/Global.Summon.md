@@ -323,3 +323,22 @@ public void SummonCommand_MoveToDestination(Vector3 destination)
 | `destination` | `UnityEngine.Vector3` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (16)
+
+*Classes and systems that invoke, reference, or depend on `Summon`:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · `Ai_R_NaturesWhisper` · [EntityAI](/api/Global.EntityAI) · [EventInfoSummon](/api/Global.EventInfoSummon) · `Primus_Ending` · `Se_Star_Nachia_F_SC_AtkSpd` · `Se_Star_Nachia_F_SC_MoreSummons` · `Se_Star_Nachia_F_SC_SummonDmgReduction` · `St_D_CircleOfLife` · `Sum_BossMaw_MoonlightPact_Fenrir` · `Sum_L_SmallMoltenCore_Dragon` · `Sum_Q_MoonlightPact_Fenrir` · `Sum_Q_SylvanCall_LeafHound` · `Sum_R_AnnoyingBanner` · `Sum_R_SummonLittleBaam_Baam` · `UI_EntitySummonDuration`
+
+### Dependencies (32)
+
+*Types and components that `Summon` references or depends upon:*
+
+[AbilityInstance](/api/Global.AbilityInstance) · [AbilityTargetValidatorWrapper](/api/Global.AbilityTargetValidatorWrapper) · [AbilityTrigger](/api/Global.AbilityTrigger) · [Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [BasicEffectWithStrength](/api/Global.BasicEffectWithStrength) · [CastInfo](/api/Global.CastInfo) · [CustomAIBehaviors](/api/Global.CustomAIBehaviors) · [DamageData](/api/Global.DamageData) · [Dew](/api/Global.Dew) · [DewPhysics](/api/Global.DewPhysics) · [Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [EntityAIContext](/api/Global.EntityAIContext) · [EntityCheck](/api/Global.EntityCheck) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoAttackHit](/api/Global.EventInfoAttackHit) · [GameManager](/api/Global.GameManager) · [Gem](/api/Global.Gem) · [HealData](/api/Global.HealData) · [Hero](/api/Global.Hero) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [ScalingValue](/api/Global.ScalingValue) · [SkillTrigger](/api/Global.SkillTrigger) · [StatBonus](/api/Global.StatBonus) · `VectorPlaneTransformExtension` · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+:::

@@ -260,3 +260,28 @@ public virtual bool ShouldExitEditModeAfterAction()
 **Returns:** `bool`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (19)
+
+*Classes and systems that invoke, reference, or depend on `EditSkillShrine`:*
+
+[EditSkillManager](/api/Global.EditSkillManager) · `Shrine_AltarOfCleansing` · `Shrine_Ascension` · `Shrine_BossSoul` · `Shrine_Chaos` · `Shrine_CorruptedChaos` · `Shrine_Destiny` · `Shrine_Entanglement` · `Shrine_MawOfDoom` · `Shrine_ScaredMaw` · `Shrine_UpgradeWell` · `UI_InGame_EditSkillBackdrop` · `UI_InGame_EditSkillShrineText` · `UI_InGame_GemSlot` · `UI_InGame_GemSlot_EditSkill` · `UI_InGame_SkillButton` · `UI_InGame_SkillButton_EditSkill` · `UI_Tooltip_EditSkillShrineTooltip` · `UI_Tooltip_ObjEditSkillActions`
+
+### Dependencies (19)
+
+*Types and components that `EditSkillShrine` references or depends upon:*
+
+[ActorCheck](/api/Global.ActorCheck) · [Cost](/api/Global.Cost) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillManager](/api/Global.EditSkillManager) · [EditSkillTargetInfo](/api/Global.EditSkillTargetInfo) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [EntityControl](/api/Global.EntityControl) · [Gem](/api/Global.Gem) · [GemLocation](/api/Global.GemLocation) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · `NetworkReaderWriterExtensions` · [Shrine](/api/Global.Shrine) · [SkillTrigger](/api/Global.SkillTrigger)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`EditSkillTargetType`](/enums#editskilltargettype) · [`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

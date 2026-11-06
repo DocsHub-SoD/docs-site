@@ -20,3 +20,20 @@ public class PerPlatformVisibility : MonoBehaviour
 | **`stove`** | `public bool stove` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `PerPlatformVisibility` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile)
+
+:::

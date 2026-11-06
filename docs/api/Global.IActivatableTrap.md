@@ -17,3 +17,22 @@ void ActivateTrap()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `IActivatableTrap`:*
+
+`Trap_ArrowShooter` · `Trap_Lightning` · `Trap_UnstableMushroom`
+
+### Dependencies (2)
+
+*Types and components that `IActivatableTrap` references or depends upon:*
+
+[IBanCampsNearby](/api/Global.IBanCampsNearby) · [IBanRoomNodesNearby](/api/Global.IBanRoomNodesNearby)
+
+:::

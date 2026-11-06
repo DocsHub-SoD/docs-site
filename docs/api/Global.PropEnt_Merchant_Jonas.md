@@ -78,3 +78,22 @@ protected override void OnRefresh(DewPlayer player)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `PropEnt_Merchant_Jonas`:*
+
+[PropEnt_Merchant_Unmanned](/api/Global.PropEnt_Merchant_Unmanned) · `Se_Star_Cetus_I_ColdDiscountFireSurcharge` · `Se_Star_Husk_I_ShopIntimidation` · `Shrine_CookingPot`
+
+### Dependencies (14)
+
+*Types and components that `PropEnt_Merchant_Jonas` references or depends upon:*
+
+[Cost](/api/Global.Cost) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityAI](/api/Global.EntityAI) · [EntityStatus](/api/Global.EntityStatus) · [Gem](/api/Global.Gem) · [LootManager](/api/Global.LootManager) · [MerchandiseData](/api/Global.MerchandiseData) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · [SafeAction`1](/api/Global.SafeAction`1) · [SkillTrigger](/api/Global.SkillTrigger) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

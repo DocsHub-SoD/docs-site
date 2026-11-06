@@ -73,3 +73,22 @@ public void StopFeedbackEffect(string feedbackName)
 | `feedbackName` | `string` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (16)
+
+*Classes and systems that invoke, reference, or depend on `FeedbackManager`:*
+
+[ControlManager](/api/Global.ControlManager) · [EditSkillManager](/api/Global.EditSkillManager) · [FxFeedbackEffect](/api/Global.FxFeedbackEffect) · [SkillTrigger](/api/Global.SkillTrigger) · `UI_InGame_CurseNotifications` · `UI_InGame_FloatingWindow_Chaos` · `UI_InGame_FloatingWindow_ChoiceShrine` · `UI_InGame_FloatingWindow_CorruptedChaos` · `UI_InGame_FloatingWindow_Hatred` · `UI_InGame_FloatingWindow_SeedOfTorment` · `UI_InGame_FloatingWindow_Shop` · `UI_InGame_ResultView` · `UI_InGame_SkillButton_EditSkill` · `UI_InGame_SkillNotifications` · `UI_InGame_VoteDisplay` · `UI_InGame_WorldView`
+
+### Dependencies (7)
+
+*Types and components that `FeedbackManager` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect) · [DewPlayer](/api/Global.DewPlayer) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [TimescaleManager](/api/Global.TimescaleManager)
+
+:::

@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink]`
 
 ```csharp
 [DewResourceLink(ResourceLinkBy.Name)]
@@ -19,9 +20,9 @@ public class Accessory : MonoBehaviour
 | **`customOffsets`** | `public List<Accessory.AttachOffset> customOffsets` |  |
 | **`generatedFromServer`** | `public bool generatedFromServer` |  |
 | **`previewCustomCenter`** | `[LabelText("Custom Center")] public Transform previewCustomCenter` |  |
-| **`previewImage`** | `[Space(30)] [PreviewField(60)] [LabelText("Thumbnail")] public Sprite previewImage` |  |
+| **`previewImage`** | `[Space] [Space(30)] [PreviewField(60)] [LabelText("Thumbnail")] public Sprite previewImage` |  |
 | **`previewOffset`** | `[LabelText("Normalized Offset")] [ReadOnly] public Vector2 previewOffset` |  |
-| **`previewPadding`** | `[Range(-0.25, 0.25)] [LabelText("Padding")] public float previewPadding` |  |
+| **`previewPadding`** | `[Range] [Range(-0.25, 0.25)] [LabelText("Padding")] public float previewPadding` |  |
 | **`type`** | `public AccType type` |  |
 
 :::
@@ -39,5 +40,30 @@ public void Setup(Transform target, string entityOrSkinName)
 | :--- | :--- | :--- |
 | `target` | `UnityEngine.Transform` |  |
 | `entityOrSkinName` | `string` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `Accessory`:*
+
+`AccessoryPreviewRenderer` · [CharacterModelDisplay](/api/Global.CharacterModelDisplay) · [EntityVisual](/api/Global.EntityVisual) · `UI_TooltipManager` · `UI_TravelerStory_Details_Accessory`
+
+### Dependencies (4)
+
+*Types and components that `Accessory` references or depends upon:*
+
+`Accessory_AttachPoint` · [Entity](/api/Global.Entity) · `ICosmetic` · [IExcludeFromPool](/api/Global.IExcludeFromPool)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AccType`](/enums#acctype)
 
 :::

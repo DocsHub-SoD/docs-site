@@ -30,3 +30,22 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `EntityShellModifier`:*
+
+[EntityVisual](/api/Global.EntityVisual) · [FxEntityShell](/api/Global.FxEntityShell)
+
+### Dependencies (2)
+
+*Types and components that `EntityShellModifier` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [EntityVisual](/api/Global.EntityVisual)
+
+:::

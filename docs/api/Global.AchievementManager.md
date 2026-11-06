@@ -95,3 +95,22 @@ public void StopTrackingAchievements()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `AchievementManager`:*
+
+[DewAchievementItem](/api/Global.DewAchievementItem) · `UI_Tooltip_CollectableAchievementProgress`
+
+### Dependencies (23)
+
+*Types and components that `AchievementManager` references or depends upon:*
+
+[ChatManager](/api/Global.ChatManager) · `DateTimeExtensions` · [Dew](/api/Global.Dew) · [DewAchievementItem](/api/Global.DewAchievementItem) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewGameObserverWithProgress](/api/Global.DewGameObserverWithProgress) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPersistence](/api/Global.DewPersistence) · [DewPersistentGameObserver](/api/Global.DewPersistentGameObserver) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewSave](/api/Global.DewSave) · [DewSteam](/api/Global.DewSteam) · [GameManager](/api/Global.GameManager) · [Gem](/api/Global.Gem) · [Hero](/api/Global.Hero) · [LastGamePlayReward](/api/Global.LastGamePlayReward) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [SkillTrigger](/api/Global.SkillTrigger)
+
+:::

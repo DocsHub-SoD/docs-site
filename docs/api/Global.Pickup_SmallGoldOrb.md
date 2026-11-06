@@ -8,3 +8,20 @@
 ```csharp
 public class Pickup_SmallGoldOrb : Pickup_BaseGoldOrb, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `Pickup_SmallGoldOrb` references or depends upon:*
+
+[Pickup_BaseGoldOrb](/api/Global.Pickup_BaseGoldOrb)
+
+:::

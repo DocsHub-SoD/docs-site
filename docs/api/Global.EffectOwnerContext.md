@@ -7,3 +7,20 @@
 ```csharp
 public enum EffectOwnerContext : byte
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `EffectOwnerContext`:*
+
+[DewAudioSource](/api/Global.DewAudioSource) · [FxCameraShake](/api/Global.FxCameraShake) · [FxVolume](/api/Global.FxVolume) · [IEffectWithOwnerContext](/api/Global.IEffectWithOwnerContext)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

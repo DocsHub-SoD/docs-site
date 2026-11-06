@@ -67,3 +67,28 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `FxCameraShake`:*
+
+`Ai_Gem_E_Fever_Explosion` · `Ai_Mon_DarkCave_BossSeeker_GreenChaserOrb_Explode` · `Ai_Q_GoldenBurst` · `Ai_Q_SuperNova` · `Ai_R_StaticDischarge` · [DewResources](/api/Global.DewResources) · [ShaderManager](/api/Global.ShaderManager)
+
+### Dependencies (6)
+
+*Types and components that `FxCameraShake` references or depends upon:*
+
+[CameraManager](/api/Global.CameraManager) · [DewInput](/api/Global.DewInput) · [IEffectComponent](/api/Global.IEffectComponent) · [IEffectWithOwnerContext](/api/Global.IEffectWithOwnerContext) · [InputManager](/api/Global.InputManager) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`EffectOwnerContext`](/enums#effectownercontext)
+
+:::

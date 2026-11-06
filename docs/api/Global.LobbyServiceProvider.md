@@ -181,3 +181,22 @@ public abstract UniTask SetLobbyAttribute(string key, object value)
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `LobbyServiceProvider`:*
+
+`DewConsoleCommands` · [DewMod](/api/Global.DewMod) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [GameManager](/api/Global.GameManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [LobbyManager](/api/Global.LobbyManager) · `LobbyServiceEOS` · [LobbyServiceSteam](/api/Global.LobbyServiceSteam) · `UI_Lobby_InviteButtonController` · `UI_Lobby_LobbyID` · `UI_Lobby_LobbyNameGroup` · `UI_Lobby_LobbyType` · `UI_Lobby_PlayerListItem` · `UI_Title_FindLobbyView`
+
+### Dependencies (3)
+
+*Types and components that `LobbyServiceProvider` references or depends upon:*
+
+[LobbyInstance](/api/Global.LobbyInstance) · [LobbySearchResult](/api/Global.LobbySearchResult) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

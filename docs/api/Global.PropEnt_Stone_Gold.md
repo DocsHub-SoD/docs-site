@@ -53,3 +53,22 @@ protected override void OnDeath(EventInfoKill info)
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `PropEnt_Stone_Gold`:*
+
+`Se_Star_Aurena_I_BonusFromStones`
+
+### Dependencies (8)
+
+*Types and components that `PropEnt_Stone_Gold` references or depends upon:*
+
+[DewMath](/api/Global.DewMath) · [Entity](/api/Global.Entity) · [EventInfoKill](/api/Global.EventInfoKill) · [Formula](/api/Global.Formula) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PickupManager](/api/Global.PickupManager) · [PropEntity](/api/Global.PropEntity) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

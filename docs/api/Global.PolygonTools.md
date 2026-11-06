@@ -80,3 +80,22 @@ public static int PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2> vertic
 **Returns:** `int`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `PolygonTools`:*
+
+[RoomSection](/api/Global.RoomSection)
+
+### Dependencies (2)
+
+*Types and components that `PolygonTools` references or depends upon:*
+
+[DewRandom](/api/Global.DewRandom) · `Vector2CrossExtension`
+
+:::

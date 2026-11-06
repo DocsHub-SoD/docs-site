@@ -55,3 +55,22 @@ public void StartInput(Action<string> onConfirm = null, Action onCancel = null)
 | `onCancel` | `System.Action` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `UI_GamepadInputField`:*
+
+`UI_Lobby_LobbyNameGroup`
+
+### Dependencies (8)
+
+*Types and components that `UI_GamepadInputField` references or depends upon:*
+
+[DewInput](/api/Global.DewInput) · [GlobalUIManager](/api/Global.GlobalUIManager) · [IGamepadFocusListener](/api/Global.IGamepadFocusListener) · [IGamepadFocusable](/api/Global.IGamepadFocusable) · [ManagerBase`1](/api/Global.ManagerBase`1) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1) · [UI_GamepadFocusable](/api/Global.UI_GamepadFocusable) · [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput)
+
+:::

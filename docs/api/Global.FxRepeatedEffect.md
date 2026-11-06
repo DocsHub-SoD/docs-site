@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #a855f7" data-cat="Buffs & Statuses"></span> Buffs & Statuses
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[LogicUpdatePriority]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
 
 ```csharp
@@ -72,5 +73,22 @@ public void Play()
 ```csharp
 public void Stop()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `FxRepeatedEffect` references or depends upon:*
+
+[ActorCheck](/api/Global.ActorCheck) · [DewEffect](/api/Global.DewEffect) · [Entity](/api/Global.Entity) · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [IEffectComponent](/api/Global.IEffectComponent) · [LogicBehaviour](/api/Global.LogicBehaviour)
 
 :::

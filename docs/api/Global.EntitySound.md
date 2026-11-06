@@ -115,3 +115,22 @@ public void Say(DewAudioClip clip, bool interruptPrevious)
 | `interruptPrevious` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `EntitySound`:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [Entity](/api/Global.Entity) · [EntityFootsteps](/api/Global.EntityFootsteps)
+
+### Dependencies (21)
+
+*Types and components that `EntitySound` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Dew](/api/Global.Dew) · [DewAudioClip](/api/Global.DewAudioClip) · [DewAudioSource](/api/Global.DewAudioSource) · [DewEffect](/api/Global.DewEffect) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewSurfaceData](/api/Global.DewSurfaceData) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityComponent](/api/Global.EntityComponent) · [EntityControl](/api/Global.EntityControl) · [EntityStatus](/api/Global.EntityStatus) · [EntityVisual](/api/Global.EntityVisual) · [EventInfoKill](/api/Global.EventInfoKill) · [ICleanup](/api/Global.ICleanup) · `NetworkReaderWriterExtensions` · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `VectorPlaneTransformExtension`
+
+:::

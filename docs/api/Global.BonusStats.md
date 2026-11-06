@@ -20,7 +20,7 @@ public struct BonusStats
 | **`abilityPowerFlat`** | `public float abilityPowerFlat` |  |
 | **`abilityPowerPercentage`** | `public float abilityPowerPercentage` |  |
 | **`armorFlat`** | `public float armorFlat` |  |
-| **`armorPercentage`** | `[FormerlySerializedAs("armorPercetnage")] public float armorPercentage` |  |
+| **`armorPercentage`** | `[FormerlySerializedAs] [FormerlySerializedAs("armorPercetnage")] public float armorPercentage` |  |
 | **`attackDamageFlat`** | `public float attackDamageFlat` |  |
 | **`attackDamagePercentage`** | `public float attackDamagePercentage` |  |
 | **`attackRangeFlat`** | `public float attackRangeFlat` |  |
@@ -89,5 +89,24 @@ public override int GetHashCode()
 ```
 
 **Returns:** `int`
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `BonusStats`:*
+
+[EntityStatus](/api/Global.EntityStatus) · `LucidDream_MarshOfDestiny` · [StatBonus](/api/Global.StatBonus) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `BonusStats` references or depends upon:*
+
+[DewMath](/api/Global.DewMath) · [StatBonus](/api/Global.StatBonus)
 
 :::

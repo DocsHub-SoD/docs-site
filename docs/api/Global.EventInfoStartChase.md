@@ -18,3 +18,20 @@ public struct EventInfoStartChase
 | **`target`** | `public Entity target` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (1)
+
+*Types and components that `EventInfoStartChase` references or depends upon:*
+
+[Entity](/api/Global.Entity)
+
+:::

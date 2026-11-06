@@ -35,3 +35,20 @@ public void Skip()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `Intro_SceneController` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile)
+
+:::

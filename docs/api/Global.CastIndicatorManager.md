@@ -53,3 +53,22 @@ public void IndicateRangeFailure(float range)
 | `range` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `CastIndicatorManager`:*
+
+[ControlManager](/api/Global.ControlManager)
+
+### Dependencies (13)
+
+*Types and components that `CastIndicatorManager` references or depends upon:*
+
+[AbilityTrigger](/api/Global.AbilityTrigger) · [Actor](/api/Global.Actor) · [CastInfo](/api/Global.CastInfo) · [CastMethodData](/api/Global.CastMethodData) · [ControlManager](/api/Global.ControlManager) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [ICastMethodDataArrow](/api/Global.ICastMethodDataArrow) · [ICastMethodDataCone](/api/Global.ICastMethodDataCone) · [ICastMethodDataPoint](/api/Global.ICastMethodDataPoint) · [ICastMethodDataTarget](/api/Global.ICastMethodDataTarget) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1)
+
+:::

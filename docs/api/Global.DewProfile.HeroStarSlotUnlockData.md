@@ -51,3 +51,24 @@ public void Set(StarType type, List<int> list)
 | `list` | `System.Collections.Generic.List<T><int>` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`StarType`](/enums#startype)
+
+:::

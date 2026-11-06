@@ -74,3 +74,22 @@ public void OnPointerClick(PointerEventData eventData)
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `UI_GamepadTextInput_Key`:*
+
+[UI_GamepadTextInput](/api/Global.UI_GamepadTextInput)
+
+### Dependencies (5)
+
+*Types and components that `UI_GamepadTextInput_Key` references or depends upon:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager) · [IGamepadFocusableOverrideInput](/api/Global.IGamepadFocusableOverrideInput) · [ManagerBase`1](/api/Global.ManagerBase`1) · [UI_GamepadFocusable](/api/Global.UI_GamepadFocusable) · [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput)
+
+:::

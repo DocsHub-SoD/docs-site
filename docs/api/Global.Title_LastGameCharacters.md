@@ -34,3 +34,20 @@ public override void LogicUpdate(float dt)
 | `dt` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `Title_LastGameCharacters` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewGameResult](/api/Global.DewGameResult) · [DewProfile](/api/Global.DewProfile) · `DewProfileMerge` · [LogicBehaviour](/api/Global.LogicBehaviour) · [Skin](/api/Global.Skin)
+
+:::

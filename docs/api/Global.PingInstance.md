@@ -18,3 +18,20 @@ public class PingInstance : MonoBehaviour
 | **`pingLifeTime`** | `public float pingLifeTime` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `PingInstance` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect) · [IInteractable](/api/Global.IInteractable)
+
+:::

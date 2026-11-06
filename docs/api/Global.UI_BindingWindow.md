@@ -69,3 +69,28 @@ public void Show(DewBinding newBinding, BindingType allowedTypes, bool allowModi
 | `onCancel` | `System.Action` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `UI_BindingWindow`:*
+
+[UI_BindItem](/api/Global.UI_BindItem) · [UI_BindingWindow_ClickReceiver](/api/Global.UI_BindingWindow_ClickReceiver)
+
+### Dependencies (4)
+
+*Types and components that `UI_BindingWindow` references or depends upon:*
+
+[DewBinding](/api/Global.DewBinding) · [DewInput](/api/Global.DewInput) · [ManagerBase`1](/api/Global.ManagerBase`1) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BindingType`](/enums#bindingtype)
+
+:::

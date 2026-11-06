@@ -211,3 +211,28 @@ public void Validate()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `DewControlSettings_User`:*
+
+`ButtonDisplay` · [ControlManager](/api/Global.ControlManager) · [DewProfile](/api/Global.DewProfile) · `UI_Collectables_ObjectItemProvider_Skill` · `UI_InGame_SkillButton_EditSkill` · `UI_SelectControlPresetWindow` · `UI_Settings_View`
+
+### Dependencies (6)
+
+*Types and components that `DewControlSettings_User` references or depends upon:*
+
+[DewBinding](/api/Global.DewBinding) · [DewInput](/api/Global.DewInput) · [DewLocalization](/api/Global.DewLocalization) · [IValidatableSettings](/api/Global.IValidatableSettings) · [InputManager](/api/Global.InputManager) · [PCBind](/api/Global.PCBind)
+
+### Related Enums (6)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AimAssistType`](/enums#aimassisttype) · [`BindingType`](/enums#bindingtype) · [`CastConfirmType`](/enums#castconfirmtype) · [`DashDirection`](/enums#dashdirection) · [`HeroSkillLocation`](/enums#heroskilllocation) · [`JoystickClickAction`](/enums#joystickclickaction)
+
+:::

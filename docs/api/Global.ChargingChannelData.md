@@ -66,3 +66,28 @@ public ChargingChannel Get(Actor effectParent)
 **Returns:** `ChargingChannel`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `ChargingChannelData`:*
+
+`Ai_C_Pew` · `Ai_E_ShadowVolley` · `Ai_E_StygianRush` · `Ai_QR_DistortedMind_Spawner` · `Ai_Q_BigBorealChunk_Spawner` · `Ai_Q_CruelSun` · `Ai_Q_Laceration_Circle` · `Ai_R_BackOff_Spawner` · `Ai_R_PrecisionShot` · `Ai_R_StaticDischarge` · `Ai_Star_Aurena_F_CR_ChargedCast_InstanceCharger` · [ChargingChannel](/api/Global.ChargingChannel) · `Se_R_BoneCrusher` · `Se_Star_Husk_F_LA_BlueFormOnly` · `Se_U_BeamOfBalance`
+
+### Dependencies (6)
+
+*Types and components that `ChargingChannelData` references or depends upon:*
+
+[AbilitySelfValidator](/api/Global.AbilitySelfValidator) · [AbilityTargetValidator](/api/Global.AbilityTargetValidator) · [Actor](/api/Global.Actor) · [CastMethodData](/api/Global.CastMethodData) · [ChargingChannel](/api/Global.ChargingChannel) · [DewAnimationClip](/api/Global.DewAnimationClip)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CastMethodType`](/enums#castmethodtype)
+
+:::

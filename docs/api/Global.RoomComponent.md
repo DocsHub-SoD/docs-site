@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RequireComponent]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomMap](/api/Global.RoomMap) → [RoomModifiers](/api/Global.RoomModifiers) → [RoomMonsters](/api/Global.RoomMonsters) → [RoomProps](/api/Global.RoomProps) → [RoomRewards](/api/Global.RoomRewards) → [RoomRifts](/api/Global.RoomRifts)
 
 ```csharp
@@ -95,5 +96,24 @@ Called on server when next room is about to load and this room is cleaning up.Po
 ```csharp
 public virtual void OnRoomStopServer()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `RoomComponent`:*
+
+[Room](/api/Global.Room) · [RoomMap](/api/Global.RoomMap) · [RoomModifiers](/api/Global.RoomModifiers) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomProps](/api/Global.RoomProps) · [RoomRewards](/api/Global.RoomRewards) · [RoomRifts](/api/Global.RoomRifts) · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (2)
+
+*Types and components that `RoomComponent` references or depends upon:*
+
+[DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [Room](/api/Global.Room)
 
 :::

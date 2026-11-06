@@ -21,3 +21,22 @@ public struct EventInfoAttackHit
 | **`victim`** | `public Entity victim` | Victim of this hit. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (18)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoAttackHit`:*
+
+`ACH_THOUSAND_THUNDERS` · [Actor](/api/Global.Actor) · `Ai_Q_IncendiaryRounds_Attack` · [ClientEventManager](/api/Global.ClientEventManager) · `Gem_E_Domination` · `Gem_E_Fangs` · `Gem_R_Crucible` · `Se_R_AnnihilationStance` · `Se_Shrine_SmallSoul` · `Se_Star_Bismuth_D_BonusAttackEffect` · `Se_Star_Bismuth_D_Conquerer_Stacks` · `Se_Star_Husk_L_DodgeCooldownOnKillOrAttack` · `Se_Star_I_GoldPerCrit` · `Se_Star_L_HealOnAttack` · [SkillTrigger](/api/Global.SkillTrigger) · `St_D_QuartetOfDeath` · [Summon](/api/Global.Summon) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (2)
+
+*Types and components that `EventInfoAttackHit` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity)
+
+:::

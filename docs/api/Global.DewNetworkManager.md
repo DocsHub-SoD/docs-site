@@ -221,3 +221,28 @@ protected virtual UniTaskVoid StartSession()
 **Returns:** `Cysharp.Threading.Tasks.UniTaskVoid`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (17)
+
+*Classes and systems that invoke, reference, or depend on `DewNetworkManager`:*
+
+[AchievementManager](/api/Global.AchievementManager) · [CameraManager](/api/Global.CameraManager) · [DewMod](/api/Global.DewMod) · [DewNetworkAuthenticator](/api/Global.DewNetworkAuthenticator) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [GameManager](/api/Global.GameManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [GameSettingsManager](/api/Global.GameSettingsManager) · `InGameAnalyticsManager` · [InGameReverieManager](/api/Global.InGameReverieManager) · `LobbyServiceEOS` · [PlayLobbyManager](/api/Global.PlayLobbyManager) · [TimescaleManager](/api/Global.TimescaleManager) · `TutorialNetworkManager` · `UI_InGame_Map` · `UI_SelectControlPresetWindow`
+
+### Dependencies (35)
+
+*Types and components that `DewNetworkManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [ActorManager](/api/Global.ActorManager) · [ChatManager](/api/Global.ChatManager) · [ConsoleManager](/api/Global.ConsoleManager) · [Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewEffect](/api/Global.DewEffect) · [DewNetworkStartSettings](/api/Global.DewNetworkStartSettings) · [DewPlayer](/api/Global.DewPlayer) · [DewProfile](/api/Global.DewProfile) · [DewResources](/api/Global.DewResources) · [DewSessionError](/api/Global.DewSessionError) · [DewSteam](/api/Global.DewSteam) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityControl](/api/Global.EntityControl) · [GameManager](/api/Global.GameManager) · [GameResultManager](/api/Global.GameResultManager) · [GameSettingsManager](/api/Global.GameSettingsManager) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · `InGameAnalyticsManager` · [InGameUIManager](/api/Global.InGameUIManager) · [LobbyInstance](/api/Global.LobbyInstance) · [LobbyManager](/api/Global.LobbyManager) · `LobbyServiceEOS` · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [TransitionManager](/api/Global.TransitionManager) · [UIManager](/api/Global.UIManager)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ClientTransportChoice`](/enums#clienttransportchoice) · [`DewTransportPreference`](/enums#dewtransportpreference) · [`LoadingStatus`](/enums#loadingstatus)
+
+:::

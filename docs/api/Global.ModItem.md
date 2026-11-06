@@ -27,3 +27,28 @@ public class ModItem
 | **`state`** | `public ModItemState state` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `ModItem`:*
+
+[DewMod](/api/Global.DewMod) · [LoadedModInstance](/api/Global.LoadedModInstance) · [ModBehaviour](/api/Global.ModBehaviour) · `UI_ModManager_Item`
+
+### Dependencies (1)
+
+*Types and components that `ModItem` references or depends upon:*
+
+[ModMetadata](/api/Global.ModMetadata)
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`ModItemState`](/enums#moditemstate) · [`ModSourceType`](/enums#modsourcetype)
+
+:::

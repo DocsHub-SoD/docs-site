@@ -162,3 +162,22 @@ public static string ConvertAdvToText(string adv)
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (6)
+
+*Classes and systems that invoke, reference, or depend on `DewAdvText`:*
+
+[ChatManager](/api/Global.ChatManager) · `DewConsoleCommands` · `Shrine_MarshOfDestiny_SeedOfTorment` · `Shrine_TheConsortOfNight` · `UI_Common_ChatBox_Item` · `UI_InGame_FloatingWindow_SeedOfTorment_Item`
+
+### Dependencies (5)
+
+*Types and components that `DewAdvText` references or depends upon:*
+
+[ChatManager](/api/Global.ChatManager) · [Cost](/api/Global.Cost) · [DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [DewSafety](/api/Global.DewSafety)
+
+:::

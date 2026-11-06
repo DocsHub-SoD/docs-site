@@ -39,3 +39,26 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (3)
+
+*Types and components that `FxEffect` references or depends upon:*
+
+[DewEffect](/api/Global.DewEffect) · [DewPlayer](/api/Global.DewPlayer) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`EffectBindEntityType`](/enums#effectbindentitytype)
+
+:::

@@ -38,3 +38,20 @@ public abstract class Displacement
 | **`isAlive`** | `public bool isAlive { get; }` | Is this displacement on-going? |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (9)
+
+*Classes and systems that invoke, reference, or depend on `Displacement`:*
+
+[Dew](/api/Global.Dew) · [DispByDestination](/api/Global.DispByDestination) · [DispByTarget](/api/Global.DispByTarget) · [EntityControl](/api/Global.EntityControl) · `NetworkReaderWriterExtensions` · `Se_D_TheKillingFlow` · `Se_Star_Mist_D_BonusOnDash` · `St_D_ExplosionArtist` · `St_D_ScarOfTheWind`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

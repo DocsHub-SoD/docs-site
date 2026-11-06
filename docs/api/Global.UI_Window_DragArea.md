@@ -35,3 +35,22 @@ public void OnPointerUp(PointerEventData eventData)
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `UI_Window_DragArea`:*
+
+[UI_Window](/api/Global.UI_Window)
+
+### Dependencies (2)
+
+*Types and components that `UI_Window_DragArea` references or depends upon:*
+
+`RectTransformGetWorldRectExtension` · [UI_Window](/api/Global.UI_Window)
+
+:::

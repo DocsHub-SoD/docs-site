@@ -113,3 +113,22 @@ protected abstract void ValueSetter(float value)
 | `value` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (15)
+
+*Classes and systems that invoke, reference, or depend on `FxInterpolatedEffectBase`:*
+
+`BossSeekerKillBehavior` · [DewEffect](/api/Global.DewEffect) · `FxAnimatorBoneOffset` · `FxCanvasGroup` · [FxEntityColor](/api/Global.FxEntityColor) · [FxEntityShake](/api/Global.FxEntityShake) · [FxEntityShell](/api/Global.FxEntityShell) · [FxEntityTransform](/api/Global.FxEntityTransform) · [FxGameObject](/api/Global.FxGameObject) · [FxGibs](/api/Global.FxGibs) · `FxGibs_Kinematic` · [FxMaterialProperty](/api/Global.FxMaterialProperty) · [FxMeshTrail](/api/Global.FxMeshTrail) · [FxPointLight](/api/Global.FxPointLight) · [FxVolume](/api/Global.FxVolume)
+
+### Dependencies (4)
+
+*Types and components that `FxInterpolatedEffectBase` references or depends upon:*
+
+[EaseFunction](/api/Global.EaseFunction) · [EasingFunction](/api/Global.EasingFunction) · [IEffectComponent](/api/Global.IEffectComponent) · [IEffectWithSpeed](/api/Global.IEffectWithSpeed)
+
+:::

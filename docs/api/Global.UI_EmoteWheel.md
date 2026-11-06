@@ -63,3 +63,28 @@ public void Show()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `UI_EmoteWheel`:*
+
+[ControlManager](/api/Global.ControlManager)
+
+### Dependencies (17)
+
+*Types and components that `UI_EmoteWheel` references or depends upon:*
+
+[ChatManager](/api/Global.ChatManager) · [ControlManager](/api/Global.ControlManager) · [Dew](/api/Global.Dew) · [DewEffect](/api/Global.DewEffect) · [DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [GlobalUIManager](/api/Global.GlobalUIManager) · [ISettingsChangedCallback](/api/Global.ISettingsChangedCallback) · [LobbyUIManager](/api/Global.LobbyUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · `RectTransformGetWorldRectExtension` · [SafeAction`2](/api/Global.SafeAction`2) · [SingletonBehaviour`1](/api/Global.SingletonBehaviour`1) · [UIManager](/api/Global.UIManager) · [UI_EmoteWheel_Item](/api/Global.UI_EmoteWheel_Item) · [UI_StationaryEmote](/api/Global.UI_StationaryEmote)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`InputMode`](/enums#inputmode)
+
+:::

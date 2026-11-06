@@ -18,3 +18,20 @@ public interface IPingableChoiceItem
 | **`shrine`** | `Object shrine { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `IPingableChoiceItem`:*
+
+[ControlManager](/api/Global.ControlManager) · `UI_InGame_FloatingWindow_Chaos_Item` · `UI_InGame_FloatingWindow_ChoiceShrine_Item` · `UI_InGame_FloatingWindow_CorruptedChaos_Item` · `UI_InGame_FloatingWindow_Hatred_Item`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

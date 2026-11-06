@@ -61,3 +61,20 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (6)
+
+*Types and components that `FxEntityAnimation` references or depends upon:*
+
+[ActorCheck](/api/Global.ActorCheck) · [DewAnimationClip](/api/Global.DewAnimationClip) · [Entity](/api/Global.Entity) · [EntityAnimation](/api/Global.EntityAnimation) · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [IEffectComponent](/api/Global.IEffectComponent)
+
+:::

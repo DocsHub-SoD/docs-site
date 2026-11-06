@@ -56,3 +56,28 @@ public void ApplyByDirection(Entity ent, Vector3 dir, Action<DispByDestination> 
 | `beforeApply` | [`System.Action<T><DispByDestination>`](/api/Global.DispByDestination) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (11)
+
+*Classes and systems that invoke, reference, or depend on `Dash`:*
+
+`Ai_C_IceClaw` · `Ai_C_MagicSword` · `Ai_D_ScarOfTheWind_DashAtk` · `Ai_Mon_DarkCave_CaveBat_Dash` · `Ai_Mon_Primus_BossPrimusAeron_Adapt_IceClaw` · `Ai_Mon_Primus_BossPrimusAeron_Dash` · `Ai_Mon_Primus_BossPrimusAeron_Rage_DashAttack` · `Ai_R_BlackArbalest` · `Ai_R_ShadowWalk` · `Ai_U_Hysteria_Claw` · [DashAttackInstance](/api/Global.DashAttackInstance)
+
+### Dependencies (4)
+
+*Types and components that `Dash` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DispByDestination](/api/Global.DispByDestination) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`DewEase`](/enums#dewease)
+
+:::

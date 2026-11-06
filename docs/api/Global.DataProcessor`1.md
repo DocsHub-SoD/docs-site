@@ -7,3 +7,20 @@
 ```csharp
 public delegate void DataProcessor<T>(ref T data) where T : struct
 ```
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DataProcessor<T>`:*
+
+[DataProcessorGroup`1](/api/Global.DataProcessorGroup`1)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

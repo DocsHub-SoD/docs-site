@@ -24,3 +24,20 @@ public static void DrawRect(Rect rect, Color color, float duration)
 | `duration` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `DewDebug`:*
+
+[GlobalUIManager](/api/Global.GlobalUIManager)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

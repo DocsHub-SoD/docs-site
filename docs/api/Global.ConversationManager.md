@@ -127,3 +127,22 @@ public void StopConversation(uint id)
 | `id` | `uint` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (10)
+
+*Classes and systems that invoke, reference, or depend on `ConversationManager`:*
+
+[CameraManager](/api/Global.CameraManager) · [ControlManager](/api/Global.ControlManager) · `ConversationShrineBase` · [Mon_DreamTeller](/api/Global.Mon_DreamTeller) · `PlayTutorial_Tutorial_Hunt` · `PlayTutorial_Tutorial_Intro` · `PlayTutorial_Tutorial_SkillsAndEssences` · `Shrine_ArtifactGiver` · `UI_InGame_Conversations_Instance` · `UI_InGame_CurrentArtifact`
+
+### Dependencies (18)
+
+*Types and components that `ConversationManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ControlManager](/api/Global.ControlManager) · [DewConversationExecutionContext](/api/Global.DewConversationExecutionContext) · [DewConversationSettings](/api/Global.DewConversationSettings) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [Entity](/api/Global.Entity) · [EntityCheck](/api/Global.EntityCheck) · [EntityStatus](/api/Global.EntityStatus) · [ManagerBase`1](/api/Global.ManagerBase`1) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [SafeAction`2](/api/Global.SafeAction`2) · [WildcardMatch](/api/Global.WildcardMatch) · [ZoneManager](/api/Global.ZoneManager) · `Mirror.GeneratedNetworkCode`
+
+:::

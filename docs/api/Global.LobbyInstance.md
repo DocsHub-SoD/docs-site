@@ -52,3 +52,26 @@ public override string ToString()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (8)
+
+*Classes and systems that invoke, reference, or depend on `LobbyInstance`:*
+
+[DewNetworkManager](/api/Global.DewNetworkManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · `LobbyInstanceEpic` · [LobbyInstanceSteam](/api/Global.LobbyInstanceSteam) · `LobbyServiceEOS` · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [LobbyServiceSteam](/api/Global.LobbyServiceSteam) · `UI_Title_FindLobby_LobbyItem`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+### Related Enums (2)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AllowMidJoinType`](/enums#allowmidjointype) · [`LobbyConnectionQuality`](/enums#lobbyconnectionquality)
+
+:::

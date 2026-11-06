@@ -75,3 +75,22 @@ public void SetTarget(MonoBehaviour newTarget)
 | `newTarget` | `UnityEngine.MonoBehaviour` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (22)
+
+*Classes and systems that invoke, reference, or depend on `FloatingWindowManager`:*
+
+[ChoiceShrine](/api/Global.ChoiceShrine) · [ControlManager](/api/Global.ControlManager) · [EditSkillManager](/api/Global.EditSkillManager) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `Shrine_Chaos` · `Shrine_CorruptedChaos` · `Shrine_Hatred` · `Shrine_MarshOfDestiny_SeedOfTorment` · `UI_InGame_FloatingWindow_Chaos` · `UI_InGame_FloatingWindow_Chaos_Item` · `UI_InGame_FloatingWindow_ChoiceShrine` · `UI_InGame_FloatingWindow_ChoiceShrine_Item` · `UI_InGame_FloatingWindow_CorruptedChaos` · `UI_InGame_FloatingWindow_CorruptedChaos_Item` · `UI_InGame_FloatingWindow_Hatred` · `UI_InGame_FloatingWindow_Hatred_Item` · `UI_InGame_FloatingWindow_SeedOfTorment` · `UI_InGame_FloatingWindow_Shop` · `UI_InGame_FloatingWindow_Shop_Item` · `UI_InGame_InvertedControlsCursor` · `UI_InGame_MouseInputReceiver` · `UI_InGame_StardustGroup`
+
+### Dependencies (14)
+
+*Types and components that `FloatingWindowManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [ControlManager](/api/Global.ControlManager) · [DewInput](/api/Global.DewInput) · [DewPlayer](/api/Global.DewPlayer) · [EntityCheck](/api/Global.EntityCheck) · [GlobalUIManager](/api/Global.GlobalUIManager) · [InGameUIManager](/api/Global.InGameUIManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [SafeAction`1](/api/Global.SafeAction`1) · [Shrine](/api/Global.Shrine) · [ZoneManager](/api/Global.ZoneManager)
+
+:::

@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [GameManager](/api/Global.GameManager) → [GameManager](/api/Global.GameManager)
 
 ```csharp
@@ -93,5 +94,22 @@ public void SpawnHero(DewPlayer player, Hero hero, HeroLoadoutData loadout, stri
 | `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `skin` | `string` |  |
 | `accs` | `System.Collections.Generic.List<T><string>` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (16)
+
+*Types and components that `PlayGameManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · [DewDifficultySettings](/api/Global.DewDifficultySettings) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [EntityStatus](/api/Global.EntityStatus) · [GameManager](/api/Global.GameManager) · [GameSettingsManager](/api/Global.GameSettingsManager) · [Hero](/api/Global.Hero) · [HeroLoadoutData](/api/Global.HeroLoadoutData) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Room](/api/Global.Room) · [StatBonus](/api/Global.StatBonus) · [ZoneManager](/api/Global.ZoneManager)
 
 :::

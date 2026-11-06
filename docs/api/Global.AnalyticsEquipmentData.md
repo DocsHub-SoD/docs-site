@@ -30,3 +30,28 @@ public string ToBase64()
 **Returns:** `string`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `AnalyticsEquipmentData`:*
+
+`InGameAnalyticsManager` · [InGameCrashReportManager](/api/Global.InGameCrashReportManager)
+
+### Dependencies (5)
+
+*Types and components that `AnalyticsEquipmentData` references or depends upon:*
+
+[Gem](/api/Global.Gem) · [GemLocation](/api/Global.GemLocation) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · `ItemNumericIdDatabase`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

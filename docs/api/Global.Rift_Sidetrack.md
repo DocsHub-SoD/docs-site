@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[DewResourceLink]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Rift](/api/Global.Rift)
 
 ```csharp
@@ -88,5 +89,24 @@ public override bool ShouldBeSavedWithRoom()
 ```csharp
 public virtual void TravelImmediately()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `Rift_Sidetrack`:*
+
+`GameMod_MorasDomain` · `Rift_Sidetrack_TheDream` · [RoomRifts](/api/Global.RoomRifts) · `StarlessPath_BossPolarisManager` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (15)
+
+*Types and components that `Rift_Sidetrack` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewLocalization](/api/Global.DewLocalization) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewResources](/api/Global.DewResources) · [Entity](/api/Global.Entity) · [Hero](/api/Global.Hero) · [InGameUIManager](/api/Global.InGameUIManager) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · `NetworkConnectionToClientExtension` · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Rift](/api/Global.Rift) · [WildcardMatch](/api/Global.WildcardMatch) · [ZoneManager](/api/Global.ZoneManager)
 
 :::

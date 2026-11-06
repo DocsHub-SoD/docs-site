@@ -18,3 +18,28 @@ public class ArmorBoostEffect : BasicEffectWithStrength
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `ArmorBoostEffect`:*
+
+`Se_Nor_WindowToTheSoul_SpiritualDominance` · `Se_Star_Mist_L_ArmorWithPenalty` · `Se_Star_Nachia_L_SummonBonus` · [StatusEffect](/api/Global.StatusEffect)
+
+### Dependencies (1)
+
+*Types and components that `ArmorBoostEffect` references or depends upon:*
+
+[BasicEffectWithStrength](/api/Global.BasicEffectWithStrength)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

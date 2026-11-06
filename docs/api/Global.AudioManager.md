@@ -125,3 +125,28 @@ public void UpdateMixerAttenuations()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (5)
+
+*Classes and systems that invoke, reference, or depend on `AudioManager`:*
+
+`DewAudioManager` · [DewAudioSourceSetup](/api/Global.DewAudioSourceSetup) · [DewSave](/api/Global.DewSave) · [MusicManager](/api/Global.MusicManager) · `UI_ButtonAudio`
+
+### Dependencies (1)
+
+*Types and components that `AudioManager` references or depends upon:*
+
+[ManagerBase`1](/api/Global.ManagerBase`1)
+
+### Related Enums (3)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`AudioSpaceType`](/enums#audiospacetype) · [`AudioType`](/enums#audiotype) · [`DewAudioRollOffType`](/enums#dewaudiorollofftype)
+
+:::

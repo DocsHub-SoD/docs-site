@@ -141,3 +141,22 @@ public void ShowMods()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `TitleManager`:*
+
+`UI_Title_FindLobbyView` · `UI_Title_TitleView`
+
+### Dependencies (20)
+
+*Types and components that `TitleManager` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [DewBuildProfile](/api/Global.DewBuildProfile) · `DewCloudSave` · [DewLocalization](/api/Global.DewLocalization) · [DewPersistence](/api/Global.DewPersistence) · [DewProfile](/api/Global.DewProfile) · [DewProfileStats](/api/Global.DewProfileStats) · [DewResources](/api/Global.DewResources) · [DewSave](/api/Global.DewSave) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [ISettingsChangedCallback](/api/Global.ISettingsChangedCallback) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [PreferredGameSettings](/api/Global.PreferredGameSettings) · `ShuffleListExtension` · [Skin](/api/Global.Skin) · [TransitionManager](/api/Global.TransitionManager) · [UIManager](/api/Global.UIManager) · [View](/api/Global.View)
+
+:::

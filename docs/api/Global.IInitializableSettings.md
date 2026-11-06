@@ -17,3 +17,20 @@ void Initialize()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `IInitializableSettings`:*
+
+[DewAudioSettings_Platform](/api/Global.DewAudioSettings_Platform) · [DewControlSettings_Platform](/api/Global.DewControlSettings_Platform) · [DewGameplaySettings_Platform](/api/Global.DewGameplaySettings_Platform) · [DewGameplaySettings_User](/api/Global.DewGameplaySettings_User) · [DewGraphicsSettings](/api/Global.DewGraphicsSettings) · [DewPlatformSettings](/api/Global.DewPlatformSettings) · `UI_Settings_Item`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

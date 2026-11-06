@@ -19,3 +19,18 @@ public struct EntityModelCustomMapping
 | **`target`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public GameObject target` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

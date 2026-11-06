@@ -34,3 +34,20 @@ public struct FinalStats
 | **`tenacity`** | `public float tenacity` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `FinalStats`:*
+
+[EntityStatus](/api/Global.EntityStatus) · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

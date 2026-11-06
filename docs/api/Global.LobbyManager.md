@@ -64,3 +64,22 @@ public void SwitchService(LobbyServiceProvider newProvider)
 | `newProvider` | [`LobbyServiceProvider`](/api/Global.LobbyServiceProvider) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (17)
+
+*Classes and systems that invoke, reference, or depend on `LobbyManager`:*
+
+`DewConsoleCommands` · [DewMod](/api/Global.DewMod) · [DewNetworkAuthenticator](/api/Global.DewNetworkAuthenticator) · [DewNetworkManager](/api/Global.DewNetworkManager) · [DewPlayer](/api/Global.DewPlayer) · [DewSave](/api/Global.DewSave) · [GameManager](/api/Global.GameManager) · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [GameSettingsManager](/api/Global.GameSettingsManager) · `LobbyServiceEOS` · `UI_Lobby_InviteButtonController` · `UI_Lobby_LobbyID` · `UI_Lobby_LobbyNameGroup` · `UI_Lobby_LobbyType` · `UI_Lobby_PlayerListItem` · `UI_Title_CreateLobbyView` · `UI_Title_FindLobbyView`
+
+### Dependencies (7)
+
+*Types and components that `LobbyManager` references or depends upon:*
+
+[DewBuildProfile](/api/Global.DewBuildProfile) · [DewLocalization](/api/Global.DewLocalization) · `LobbyServiceEOS` · [LobbyServiceProvider](/api/Global.LobbyServiceProvider) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MessageManager](/api/Global.MessageManager) · [SafeAction](/api/Global.SafeAction)
+
+:::

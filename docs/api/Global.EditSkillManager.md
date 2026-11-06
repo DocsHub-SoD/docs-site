@@ -476,3 +476,28 @@ public void UnselectGround()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (29)
+
+*Classes and systems that invoke, reference, or depend on `EditSkillManager`:*
+
+[ControlManager](/api/Global.ControlManager) · [EditSkillShrine](/api/Global.EditSkillShrine) · [HeroSkill](/api/Global.HeroSkill) · `Primus_Ending` · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `Shrine_Entanglement` · `Shrine_MawOfDoom` · `StarlessPath_BossPolarisManager` · `UI_InGame_EditSkillBackdrop` · `UI_InGame_EditSkillShrineText` · `UI_InGame_FloatingGem` · `UI_InGame_FloatingSkill` · `UI_InGame_GemSlot` · `UI_InGame_GemSlot_EditSkill` · `UI_InGame_HeroDetailWindow` · `UI_InGame_MouseInputReceiver_EditSkill` · `UI_InGame_SkillButton` · `UI_InGame_SkillButton_EditSkill` · `UI_InGame_SkillButtons` · `UI_InGame_SkillButtonsBottomBar` · `UI_InGame_SkillNotifications` · `UI_InGame_TimerDisplay` · `UI_TooltipSection_Gem` · `UI_TooltipSection_Skill` · `UI_Tooltip_EditSkillShrineTooltip` · `UI_Tooltip_EquipSwapActionIndicator` · `UI_Tooltip_EquippedGemDescriber` · `UI_Tooltip_ObjEditSkillActions` · `UI_Tooltip_SkillTitle`
+
+### Dependencies (38)
+
+*Types and components that `EditSkillManager` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [CameraManager](/api/Global.CameraManager) · [ControlManager](/api/Global.ControlManager) · `CostExtensions` · [Dew](/api/Global.Dew) · [DewAudioSource](/api/Global.DewAudioSource) · [DewInput](/api/Global.DewInput) · [DewInputTrigger](/api/Global.DewInputTrigger) · [DewLocalization](/api/Global.DewLocalization) · [DewPlayer](/api/Global.DewPlayer) · [EditSkillShrine](/api/Global.EditSkillShrine) · [Entity](/api/Global.Entity) · [EntityAbility](/api/Global.EntityAbility) · [EntityCheck](/api/Global.EntityCheck) · [FeedbackManager](/api/Global.FeedbackManager) · [FloatingWindowManager](/api/Global.FloatingWindowManager) · [Gem](/api/Global.Gem) · [GemLocation](/api/Global.GemLocation) · [GlobalUIManager](/api/Global.GlobalUIManager) · [Hero](/api/Global.Hero) · [HeroSkill](/api/Global.HeroSkill) · [IEditSkillDropTargetGemSlot](/api/Global.IEditSkillDropTargetGemSlot) · [IEditSkillDropTargetSkillButton](/api/Global.IEditSkillDropTargetSkillButton) · `IHoldableInHandExtension` · [IInteractable](/api/Global.IInteractable) · [IItem](/api/Global.IItem) · [InGameUIManager](/api/Global.InGameUIManager) · [InputManager](/api/Global.InputManager) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) · `RectTransformGetWorldRectExtension` · [SafeAction`1](/api/Global.SafeAction`1) · [SkillTrigger](/api/Global.SkillTrigger) · [UIManager](/api/Global.UIManager) · `Vector3FlattenExtension`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`HeroSkillLocation`](/enums#heroskilllocation)
+
+:::

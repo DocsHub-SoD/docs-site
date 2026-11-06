@@ -22,3 +22,22 @@ public struct EventInfoShield
 | **`target`** | `public Entity target` | The entity receiving the shield. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (9)
+
+*Classes and systems that invoke, reference, or depend on `EventInfoShield`:*
+
+`ACH_BARE_SKIN_SUPREMACY` · [Actor](/api/Global.Actor) · [ClientEventManager](/api/Global.ClientEventManager) · `Gem_C_Love` · `Gem_R_Glass` · `Se_Star_Cetus_L_ArmorBuffOnShield` · `Se_Star_Nachia_L_AllyUnstoppable` · `St_D_HeartOfThePack` · `Mirror.GeneratedNetworkCode`
+
+### Dependencies (3)
+
+*Types and components that `EventInfoShield` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [ReactionChain](/api/Global.ReactionChain) · [StatusEffect](/api/Global.StatusEffect)
+
+:::

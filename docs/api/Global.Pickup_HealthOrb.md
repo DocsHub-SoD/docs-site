@@ -48,3 +48,20 @@ protected override void OnPickup(Hero hero)
 | `hero` | [`Hero`](/api/Global.Hero) |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (4)
+
+*Types and components that `Pickup_HealthOrb` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [Entity](/api/Global.Entity) · [Hero](/api/Global.Hero) · [PickupInstance](/api/Global.PickupInstance)
+
+:::

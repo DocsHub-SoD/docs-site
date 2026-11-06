@@ -35,3 +35,22 @@ void StopTrap()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `IToggleableTrap`:*
+
+[Room_Trap_Toggleable](/api/Global.Room_Trap_Toggleable)
+
+### Dependencies (2)
+
+*Types and components that `IToggleableTrap` references or depends upon:*
+
+[IBanCampsNearby](/api/Global.IBanCampsNearby) · [IBanRoomNodesNearby](/api/Global.IBanRoomNodesNearby)
+
+:::

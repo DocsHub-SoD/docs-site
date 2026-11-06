@@ -17,3 +17,20 @@ public interface ICastMethodDataNone
 | **`radius`** | `float radius { get; }` | Effective range of the ability around the caster. |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `ICastMethodDataNone`:*
+
+[CastMethodData](/api/Global.CastMethodData)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

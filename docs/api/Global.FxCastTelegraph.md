@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[LogicUpdatePriority]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
 
 ```csharp
@@ -57,5 +58,30 @@ public void Setup(CastMethodType method, CastInfo info, float duration)
 | `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `duration` | `float` |  |
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FxCastTelegraph`:*
+
+[DewEffect](/api/Global.DewEffect)
+
+### Dependencies (8)
+
+*Types and components that `FxCastTelegraph` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [CastInfo](/api/Global.CastInfo) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · `GetComponentsNonAllocExtension` · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [LogicBehaviour](/api/Global.LogicBehaviour) · `QuaternionFlattenExtension`
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`CastMethodType`](/enums#castmethodtype)
 
 :::

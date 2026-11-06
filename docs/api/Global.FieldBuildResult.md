@@ -20,3 +20,22 @@ public class FieldBuildResult
 | **`setValue`** | `public Action<object> setValue` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `FieldBuildResult`:*
+
+[DewGUI](/api/Global.DewGUI)
+
+### Dependencies (1)
+
+*Types and components that `FieldBuildResult` references or depends upon:*
+
+[SafeAction`1](/api/Global.SafeAction`1)
+
+:::

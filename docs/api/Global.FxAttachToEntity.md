@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[LogicUpdatePriority]`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
 
 ```csharp
@@ -71,5 +72,22 @@ protected override void OnDisable()
 ```csharp
 protected override void OnEnable()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (7)
+
+*Types and components that `FxAttachToEntity` references or depends upon:*
+
+[Dew](/api/Global.Dew) · [Entity](/api/Global.Entity) · [EntityControl](/api/Global.EntityControl) · [EntityVisual](/api/Global.EntityVisual) · [IAttachableToEntity](/api/Global.IAttachableToEntity) · [LogicBehaviour](/api/Global.LogicBehaviour) · [ManagerBase`1](/api/Global.ManagerBase`1)
 
 :::

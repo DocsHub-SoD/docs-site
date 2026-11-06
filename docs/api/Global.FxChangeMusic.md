@@ -45,3 +45,20 @@ public void Stop()
 ```
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (0)
+
+*No incoming dependencies recorded.*
+
+### Dependencies (2)
+
+*Types and components that `FxChangeMusic` references or depends upon:*
+
+[DewMusicItem](/api/Global.DewMusicItem) · [IEffectComponent](/api/Global.IEffectComponent)
+
+:::

@@ -44,3 +44,22 @@ public SpawnMonsterSettings Clone()
 **Returns:** `SpawnMonsterSettings`
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `SpawnMonsterSettings`:*
+
+[RoomMonsters](/api/Global.RoomMonsters)
+
+### Dependencies (4)
+
+*Types and components that `SpawnMonsterSettings` references or depends upon:*
+
+[DewRandom](/api/Global.DewRandom) · [Hero](/api/Global.Hero) · [MonsterSpawnRule](/api/Global.MonsterSpawnRule) · [RoomSection](/api/Global.RoomSection)
+
+:::

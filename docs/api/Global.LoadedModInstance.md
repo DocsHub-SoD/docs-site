@@ -20,3 +20,22 @@ public class LoadedModInstance
 | **`registeredCommands`** | `public List<string> registeredCommands` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (3)
+
+*Classes and systems that invoke, reference, or depend on `LoadedModInstance`:*
+
+[DewMod](/api/Global.DewMod) · [ModBehaviour](/api/Global.ModBehaviour) · `UI_Settings_ModsSection_Item`
+
+### Dependencies (1)
+
+*Types and components that `LoadedModInstance` references or depends upon:*
+
+[ModItem](/api/Global.ModItem)
+
+:::

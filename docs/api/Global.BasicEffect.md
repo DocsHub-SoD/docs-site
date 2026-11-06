@@ -21,3 +21,28 @@ public abstract class BasicEffect
 | **`victim`** | `public Entity victim { get; }` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (26)
+
+*Classes and systems that invoke, reference, or depend on `BasicEffect`:*
+
+[Actor](/api/Global.Actor) · `Ai_E_MassCleanse` · [AttackCriticalEffect](/api/Global.AttackCriticalEffect) · [AttackEmpowerEffect](/api/Global.AttackEmpowerEffect) · [AttackOverrideEffect](/api/Global.AttackOverrideEffect) · [BasicEffectWithStrength](/api/Global.BasicEffectWithStrength) · [BlindEffect](/api/Global.BlindEffect) · [DeathInterruptEffect](/api/Global.DeathInterruptEffect) · [EntityStatus](/api/Global.EntityStatus) · [EventInfoDamageNegatedByImmunity](/api/Global.EventInfoDamageNegatedByImmunity) · [Gem](/api/Global.Gem) · `Gem_L_Supersymmetry` · [InvisibleEffect](/api/Global.InvisibleEffect) · [InvulnerableEffect](/api/Global.InvulnerableEffect) · `NetworkReaderWriterExtensions` · [ProtectedEffect](/api/Global.ProtectedEffect) · `RevealEffect` · [RootEffect](/api/Global.RootEffect) · `Se_GenericEffectContainer` · [ShieldEffect](/api/Global.ShieldEffect) · [SilenceEffect](/api/Global.SilenceEffect) · [StatusEffect](/api/Global.StatusEffect) · [StunEffect](/api/Global.StunEffect) · [UncollidableEffect](/api/Global.UncollidableEffect) · [UnstoppableEffect](/api/Global.UnstoppableEffect) · `UntargetableEffect`
+
+### Dependencies (2)
+
+*Types and components that `BasicEffect` references or depends upon:*
+
+[Entity](/api/Global.Entity) · [StatusEffect](/api/Global.StatusEffect)
+
+### Related Enums (1)
+
+*Enumerations referenced in fields, properties, or method signatures:*
+
+[`BasicEffectMask`](/enums#basiceffectmask)
+
+:::

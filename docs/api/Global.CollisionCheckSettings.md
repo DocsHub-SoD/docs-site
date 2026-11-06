@@ -23,3 +23,20 @@ public struct CollisionCheckSettings
 | **`sortComparer`** | `public IComparer<Entity> sortComparer` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (2)
+
+*Classes and systems that invoke, reference, or depend on `CollisionCheckSettings`:*
+
+[DewCollider](/api/Global.DewCollider) · [DewPhysics](/api/Global.DewPhysics)
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

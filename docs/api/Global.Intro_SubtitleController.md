@@ -42,3 +42,20 @@ public void AdvanceSubtitle(float duration)
 | `duration` | `float` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (1)
+
+*Classes and systems that invoke, reference, or depend on `Intro_SubtitleController`:*
+
+`Intro_VideoIntroController`
+
+### Dependencies (0)
+
+*No outgoing class dependencies recorded.*
+
+:::

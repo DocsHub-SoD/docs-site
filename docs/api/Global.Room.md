@@ -3,6 +3,7 @@
 - **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
+- **Attributes:** `[RequireComponent] [RequireComponent] [RequireComponent] [RequireComponent] [RequireComponent] [RequireComponent] [RequireComponent]`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `SingletonDewNetworkBehaviour` → [Room](/api/Global.Room)
 
 ```csharp
@@ -281,5 +282,24 @@ public void StopRoom()
 ```csharp
 public void SyncCameraAngle()
 ```
+
+:::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (77)
+
+*Classes and systems that invoke, reference, or depend on `Room`:*
+
+`ACH_PRAYER_FOR_THE_DREAMERS` · `Ai_Mon_Special_AmbushSpawner_Projectile` · `Ai_UnstableRatSwarm_Projectile` · [ClearSectionEventData](/api/Global.ClearSectionEventData) · `DarkCaveCutSceneFogFadeOut` · [DevGameManager](/api/Global.DevGameManager) · `DewConsoleCommands` · `Forest_LoopCat_Spawner` · [GameManager](/api/Global.GameManager) · `GameMod_GoldenLizard` · [GameMod_Limbo](/api/Global.GameMod_Limbo) · [GameMod_MirageSkin](/api/Global.GameMod_MirageSkin) · `Ge_Shrine_PotOfGreed` · `Gem_R_Adventure` · `IPreemptiveMiniBossSection` · `LucidDream_FalseLifeline` · `LucidDream_MarshOfDestiny` · `Mon_Special_AmbushSpawner` · [MonsterSpawnCondition](/api/Global.MonsterSpawnCondition) · `Obliviax_Decoration_Generator` · [PlayGameManager](/api/Global.PlayGameManager) · [Rift_RoomExit](/api/Global.Rift_RoomExit) · [RoomComponent](/api/Global.RoomComponent) · `RoomMod_Ambush` · `RoomMod_ArcticTerritory` · `RoomMod_CallOfTheRavenous` · `RoomMod_ChallengingFight` · `RoomMod_CorruptedChaos_AuraOfPain` · `RoomMod_DistantMemories` · `RoomMod_FallenStar` · `RoomMod_FragmentOfRadiance_MysteriousPlace` · `RoomMod_FragmentOfRadiance_StartProp` · `RoomMod_GoldEverywhere` · `RoomMod_GuidingCompass_SpawnRift` · `RoomMod_HarderFightBetterReward` · `RoomMod_HeroSoul` · `RoomMod_Hunted` · `RoomMod_InkStrikeWarning` · `RoomMod_LeafPuppies` · `RoomMod_LingeringAuraOfGuidance` · `RoomMod_MeteoricLife` · `RoomMod_PureDream` · `RoomMod_RiskOfMeteors` · `RoomMod_SpawnHatred` · `RoomMod_SpawnJonasChamberRift` · `RoomMod_SpawnMawOfDoom` · `RoomMod_SpawnMiniBoss` · `RoomMod_SpawnParadox` · `RoomMod_SpawnPileOfSnow` · `RoomMod_StardustEverywhere` · `RoomMod_StrayMemory_StartProp` · [RoomModifierBase](/api/Global.RoomModifierBase) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomProps](/api/Global.RoomProps) · [RoomRewards](/api/Global.RoomRewards) · [RoomRifts](/api/Global.RoomRifts) · [Room_Barrier](/api/Global.Room_Barrier) · [Room_Waypoint](/api/Global.Room_Waypoint) · `Se_LingeringAuraOfGuidance` · `Se_RoomMod_WarpingField_Unstable` · `Se_StarlessPath_PowerOfGuidance` · [Section_Monsters](/api/Global.Section_Monsters) · `Shrine_CallOfTheRavenous` · `Shrine_Despair` · `Shrine_Despair_Vestige` · `Shrine_Enlightenment` · `Shrine_FallenStar` · `Shrine_Luck` · `Shrine_Paradox` · `Shrine_Retrospection` · `Shrine_TheConsortOfNight` · [SpecialEntityRoomModifier](/api/Global.SpecialEntityRoomModifier) · `UI_InGame_Map` · `UI_InGame_Map_Item` · `UI_InGame_RoomModDisplay` · `WagesOfResolveBarrier` · [ZoneManager](/api/Global.ZoneManager)
+
+### Dependencies (35)
+
+*Types and components that `Room` references or depends upon:*
+
+[Actor](/api/Global.Actor) · [ActorCheck](/api/Global.ActorCheck) · [AssetRef`1](/api/Global.AssetRef`1) · [CameraManager](/api/Global.CameraManager) · [Dew](/api/Global.Dew) · [DewMusicItem](/api/Global.DewMusicItem) · [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) · [DewPlayer](/api/Global.DewPlayer) · [DewPool](/api/Global.DewPool) · [DewRandom](/api/Global.DewRandom) · [DewRoomMetadata](/api/Global.DewRoomMetadata) · [DewSurfaceData](/api/Global.DewSurfaceData) · [Entity](/api/Global.Entity) · [IPlayerPathablePoint](/api/Global.IPlayerPathablePoint) · [ListReturnHandle`1](/api/Global.ListReturnHandle`1) · [ManagerBase`1](/api/Global.ManagerBase`1) · [MusicManager](/api/Global.MusicManager) · [NetworkedManagerBase`1](/api/Global.NetworkedManagerBase`1) · [Rift](/api/Global.Rift) · [Rift_RoomExit](/api/Global.Rift_RoomExit) · [RoomComponent](/api/Global.RoomComponent) · [RoomMap](/api/Global.RoomMap) · [RoomModifiers](/api/Global.RoomModifiers) · [RoomMonsters](/api/Global.RoomMonsters) · [RoomProps](/api/Global.RoomProps) · [RoomRewards](/api/Global.RoomRewards) · [RoomRifts](/api/Global.RoomRifts) · [RoomSection](/api/Global.RoomSection) · [Room_Waypoint](/api/Global.Room_Waypoint) · [SafeAction](/api/Global.SafeAction) · [SafeAction`1](/api/Global.SafeAction`1) · [Section_Monsters](/api/Global.Section_Monsters) · [SingletonDewNetworkBehaviour`1](/api/Global.SingletonDewNetworkBehaviour`1) · `VectorPlaneTransformExtension` · [ZoneManager](/api/Global.ZoneManager)
 
 :::

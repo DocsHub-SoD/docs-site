@@ -93,3 +93,22 @@ public static void ShowError(Exception e, bool isFatal = false, bool isGame = tr
 | `isGame` | `bool` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (4)
+
+*Classes and systems that invoke, reference, or depend on `DewSessionError`:*
+
+[DewNetworkAuthenticator](/api/Global.DewNetworkAuthenticator) · [DewNetworkManager](/api/Global.DewNetworkManager) · [GameManager](/api/Global.GameManager) · [GameSettingsManager](/api/Global.GameSettingsManager)
+
+### Dependencies (3)
+
+*Types and components that `DewSessionError` references or depends upon:*
+
+[DewException](/api/Global.DewException) · [DewLocalization](/api/Global.DewLocalization) · [GlobalLogicPackage](/api/Global.GlobalLogicPackage)
+
+:::

@@ -69,3 +69,22 @@ public void Remove(DataProcessor<T> processor)
 | `processor` | `DataProcessor<T>` |  |
 
 :::
+
+
+## Architecture & Relationships
+
+::: details Click to expand Architecture & Relationships
+
+### Used By (7)
+
+*Classes and systems that invoke, reference, or depend on `DataProcessorGroup<T>`:*
+
+[EntityStatus](/api/Global.EntityStatus) · `Gem_L_Supersymmetry` · `Se_D_TheKillingFlow` · `Se_R_AnnihilationStance` · `Se_Star_Cetus_D_AdApUpByBonusHp` · `Se_Star_Vesper_D_ConvertAPToAD` · `Se_Star_Yubar_D_ConvertADToAP`
+
+### Dependencies (2)
+
+*Types and components that `DataProcessorGroup<T>` references or depends upon:*
+
+[DataProcessor`1](/api/Global.DataProcessor`1) · `IPoolClearable`
+
+:::
