@@ -1,5 +1,9 @@
 # Getting Started with Shape of Dreams Modding
 
+::: info Work in Progress / Note on Modding Methods
+**Please note**: The guide below currently serves as an initial placeholder focused on BepInEx. *Shape of Dreams* supports multiple simpler, native modding approaches (such as the engine's built-in **DewMod** loader, which requires no external injectors). Comprehensive documentation for each of these native modding methods will be published here shortly.
+:::
+
 Welcome to the **Shape of Dreams** modding community! This guide provides a rapid-onboarding overview of the game's modding stack, runtime architecture, and how to create your first mod.
 
 ---
