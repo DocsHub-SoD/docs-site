@@ -5,6 +5,9 @@ export default defineConfig({
   description: "Community API Documentation and Knowledge Base for Shape of Dreams modders",
   base: "/",
   cleanUrls: true,
+  head: [
+    ['link', { rel: 'preload', as: 'image', href: '/ramsey.webp', type: 'image/webp' }]
+  ],
   themeConfig: {
     nav: [
       { text: "Getting Started", link: "/getting-started" },
