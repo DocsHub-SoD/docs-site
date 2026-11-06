@@ -5,6 +5,9 @@ hero:
   name: "Shape of Dreams"
   text: "Modding Documentation"
   tagline: "Community-maintained API reference, method signatures, and guides for modders"
+  image:
+    src: /ramsey.webp
+    alt: "Work in progress"
   actions:
     - theme: brand
       text: Getting Started
