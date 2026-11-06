@@ -37,6 +37,6 @@ public struct ConsoleBindItem
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ConsoleBindItemType`](/enums#consolebinditemtype)
+<a href="/enums#consolebinditemtype" class="enum-link" data-tooltip="Down=0 · Up=1">ConsoleBindItemType</a>
 
 :::

@@ -47,6 +47,6 @@ public class DewProfile.UnlockData
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`UnlockStatus`](/enums#unlockstatus)
+<a href="/enums#unlockstatus" class="enum-link" data-tooltip="Locked=0 · NotDiscovered=1 · Complete=2">UnlockStatus</a>
 
 :::

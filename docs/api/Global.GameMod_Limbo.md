@@ -241,6 +241,6 @@ public override void OnStartServerLobby()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`LimboDepthState`](/enums#limbodepthstate) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#limbodepthstate" class="enum-link" data-tooltip="Available=0 · Completed=1 · Locked=2">LimboDepthState</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

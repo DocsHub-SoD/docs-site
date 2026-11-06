@@ -69,7 +69,7 @@ public static bool NeedsSetupEverytime(AudioType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`AudioType`](/api/Global.AudioType) |  |
+| `type` | <a href="/enums#audiotype" class="enum-link" data-tooltip="UI=0 · Music=1 · SFX=2 · GameBoss=3 · GameSelf=4 (+3 more)">AudioType</a> |  |
 
 **Returns:** `bool`
 
@@ -111,9 +111,9 @@ public void SetupAudioSource(AudioSource source, AudioType type, AudioSpaceType 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `source` | `UnityEngine.AudioSource` |  |
-| `type` | [`AudioType`](/api/Global.AudioType) |  |
-| `space` | [`AudioSpaceType`](/api/Global.AudioSpaceType) |  |
-| `rolloff` | [`DewAudioRollOffType`](/api/Global.DewAudioRollOffType) |  |
+| `type` | <a href="/enums#audiotype" class="enum-link" data-tooltip="UI=0 · Music=1 · SFX=2 · GameBoss=3 · GameSelf=4 (+3 more)">AudioType</a> |  |
+| `space` | <a href="/enums#audiospacetype" class="enum-link" data-tooltip="Normal=0 · Global=1">AudioSpaceType</a> |  |
+| `rolloff` | <a href="/enums#dewaudiorollofftype" class="enum-link" data-tooltip="Default=0 · Loud=1 · Unity=2">DewAudioRollOffType</a> |  |
 | `forceCriticalPriority` | `bool` |  |
 
 :::
@@ -147,6 +147,6 @@ public void UpdateMixerAttenuations()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AudioSpaceType`](/enums#audiospacetype) · [`AudioType`](/enums#audiotype) · [`DewAudioRollOffType`](/enums#dewaudiorollofftype)
+<a href="/enums#audiospacetype" class="enum-link" data-tooltip="Normal=0 · Global=1">AudioSpaceType</a> · <a href="/enums#audiotype" class="enum-link" data-tooltip="UI=0 · Music=1 · SFX=2 · GameBoss=3 · GameSelf=4 (+3 more)">AudioType</a> · <a href="/enums#dewaudiorollofftype" class="enum-link" data-tooltip="Default=0 · Loud=1 · Unity=2">DewAudioRollOffType</a>
 
 :::

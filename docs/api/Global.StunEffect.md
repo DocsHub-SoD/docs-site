@@ -40,6 +40,6 @@ public class StunEffect : BasicEffect
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BasicEffectMask`](/enums#basiceffectmask)
+<a href="/enums#basiceffectmask" class="enum-link" data-tooltip="Slow=1 · Speed=2 · Haste=4 · Cripple=8 · Root=16 (+19 more)">BasicEffectMask</a>
 
 :::

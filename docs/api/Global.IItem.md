@@ -62,6 +62,6 @@ bool IsLockedFor(DewPlayer player)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`Rarity`](/enums#rarity)
+<a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a>
 
 :::

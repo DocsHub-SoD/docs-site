@@ -162,6 +162,6 @@ public bool IsSkillRelated(string s)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`SaveVarFlags`](/enums#savevarflags) · [`SkillType`](/enums#skilltype) · [`StarType`](/enums#startype)
+<a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#skilltype" class="enum-link" data-tooltip="Normal=0 · Ultimate=1">SkillType</a> · <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a>
 
 :::

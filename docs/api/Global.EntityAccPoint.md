@@ -36,6 +36,6 @@ public class EntityAccPoint : MonoBehaviour
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AccAttachPointType`](/enums#accattachpointtype) · [`AccType`](/enums#acctype)
+<a href="/enums#accattachpointtype" class="enum-link" data-tooltip="HatGlasses=0 · HatCigar=1 · HatTopper=2 · HatAliveTopper=3 · HatHeadCover=4 (+4 more)">AccAttachPointType</a> · <a href="/enums#acctype" class="enum-link" data-tooltip="Hat=0 · Hip=1">AccType</a>
 
 :::

@@ -40,6 +40,6 @@ public class FxSelectiveQuality : MonoBehaviour
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`Quality3Levels`](/enums#quality3levels)
+<a href="/enums#quality3levels" class="enum-link" data-tooltip="Low=1 · Medium=2 · High=3">Quality3Levels</a>
 
 :::

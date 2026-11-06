@@ -44,6 +44,6 @@ public struct MerchandiseData
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`MerchandiseType`](/enums#merchandisetype)
+<a href="/enums#merchandisetype" class="enum-link" data-tooltip="Empty=0 · Skill=1 · Gem=2 · Souvenir=3 · Treasure=4">MerchandiseType</a>
 
 :::

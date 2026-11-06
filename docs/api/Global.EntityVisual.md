@@ -365,7 +365,7 @@ public void KnockUp(KnockUpStrength strength, bool isFriendly)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `strength` | [`KnockUpStrength`](/api/Global.KnockUpStrength) |  |
+| `strength` | <a href="/enums#knockupstrength" class="enum-link" data-tooltip="Small=0 · Normal=1 · Big=2">KnockUpStrength</a> |  |
 | `isFriendly` | `bool` |  |
 
 :::
@@ -684,6 +684,6 @@ public void SkipSpawning()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`KnockUpStrength`](/enums#knockupstrength)
+<a href="/enums#knockupstrength" class="enum-link" data-tooltip="Small=0 · Normal=1 · Big=2">KnockUpStrength</a>
 
 :::

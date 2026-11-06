@@ -130,6 +130,6 @@ protected override void OnPrepare()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HatredStrengthType`](/enums#hatredstrengthtype) · [`QuestProgressType`](/enums#questprogresstype) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#hatredstrengthtype" class="enum-link" data-tooltip="None=0 · Mild=1 · Potent=2 · Powerful=4">HatredStrengthType</a> · <a href="/enums#questprogresstype" class="enum-link" data-tooltip="Hidden=0 · Kills=1 · Travel=2 · Collect=3 · TravelZone=4">QuestProgressType</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

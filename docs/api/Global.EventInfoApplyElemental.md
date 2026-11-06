@@ -42,6 +42,6 @@ public struct EventInfoApplyElemental
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ElementalType`](/enums#elementaltype)
+<a href="/enums#elementaltype" class="enum-link" data-tooltip="Fire=0 · Cold=1 · Light=2 · Dark=3">ElementalType</a>
 
 :::

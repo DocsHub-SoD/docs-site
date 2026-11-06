@@ -67,6 +67,6 @@ public virtual string GetCustomInGameTooltip()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`LucidDreamType`](/enums#luciddreamtype)
+<a href="/enums#luciddreamtype" class="enum-link" data-tooltip="Good=0 · Evil=1 · Chaotic=2">LucidDreamType</a>
 
 :::

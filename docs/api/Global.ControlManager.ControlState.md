@@ -40,6 +40,6 @@ public struct ControlManager.ControlState
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CastConfirmType`](/enums#castconfirmtype)
+<a href="/enums#castconfirmtype" class="enum-link" data-tooltip="Normal=0 · Immediately=1 · OnRelease=2">CastConfirmType</a>
 
 :::

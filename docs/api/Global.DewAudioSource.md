@@ -62,7 +62,7 @@ public void SetOwnerContext(EffectOwnerContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [`EffectOwnerContext`](/api/Global.EffectOwnerContext) |  |
+| `context` | <a href="/enums#effectownercontext" class="enum-link" data-tooltip="None=0 · Self=1 · Boss=2 · OtherPlayers=3 · Others=4">EffectOwnerContext</a> |  |
 
 :::
 
@@ -95,6 +95,6 @@ public void Stop()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AudioSpaceType`](/enums#audiospacetype) · [`AudioType`](/enums#audiotype) · [`DewAudioRollOffType`](/enums#dewaudiorollofftype) · [`EffectOwnerContext`](/enums#effectownercontext)
+<a href="/enums#audiospacetype" class="enum-link" data-tooltip="Normal=0 · Global=1">AudioSpaceType</a> · <a href="/enums#audiotype" class="enum-link" data-tooltip="UI=0 · Music=1 · SFX=2 · GameBoss=3 · GameSelf=4 (+3 more)">AudioType</a> · <a href="/enums#dewaudiorollofftype" class="enum-link" data-tooltip="Default=0 · Loud=1 · Unity=2">DewAudioRollOffType</a> · <a href="/enums#effectownercontext" class="enum-link" data-tooltip="None=0 · Self=1 · Boss=2 · OtherPlayers=3 · Others=4">EffectOwnerContext</a>
 
 :::

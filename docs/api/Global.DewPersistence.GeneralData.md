@@ -73,6 +73,6 @@ public virtual T GetPrefab<T>() where T : Object
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ResourceLinkBy`](/enums#resourcelinkby)
+<a href="/enums#resourcelinkby" class="enum-link" data-tooltip="None=0 · Type=1 · Guid=2 · Name=3">ResourceLinkBy</a>
 
 :::

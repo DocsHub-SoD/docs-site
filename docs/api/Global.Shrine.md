@@ -271,6 +271,6 @@ public override bool ShouldBeSavedWithRoom()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AffordType`](/enums#affordtype) · [`MapItemVisibility`](/enums#mapitemvisibility) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#affordtype" class="enum-link" data-tooltip="Yes=0 · NoGold=1 · NoDreamDust=2 · NoStardust=3 · NoHealth=4 (+1 more)">AffordType</a> · <a href="/enums#mapitemvisibility" class="enum-link" data-tooltip="Always=0 · NeedsToBeDiscovered=1 · NeedsToBeVisible=2 · Hidden=10">MapItemVisibility</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

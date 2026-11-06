@@ -427,6 +427,6 @@ public void WakeUp()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EntityRelation`](/enums#entityrelation) · [`SaveVarFlags`](/enums#savevarflags) · [`TeamRelation`](/enums#teamrelation)
+<a href="/enums#entityrelation" class="enum-link" data-tooltip="Self=1 · Neutral=2 · Enemy=4 · Ally=8">EntityRelation</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#teamrelation" class="enum-link" data-tooltip="Own=1 · Neutral=2 · Enemy=4 · Ally=8">TeamRelation</a>
 
 :::

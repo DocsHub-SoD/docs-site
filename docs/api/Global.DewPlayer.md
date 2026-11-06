@@ -705,7 +705,7 @@ public void TpcShowCenterMessage(CenterMessageType type, string key, string[] lo
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
+| `type` | <a href="/enums#centermessagetype" class="enum-link" data-tooltip="General=0 · Error=1">CenterMessageType</a> |  |
 | `key` | `string` |  |
 | `localizedFormatArgs` | `string[]` |  |
 
@@ -720,7 +720,7 @@ public void TpcShowCenterMessage(CenterMessageType type, string key)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
+| `type` | <a href="/enums#centermessagetype" class="enum-link" data-tooltip="General=0 · Error=1">CenterMessageType</a> |  |
 | `key` | `string` |  |
 
 :::
@@ -759,6 +759,6 @@ public void TpcShowWorldPopMessage(WorldMessageSetting message)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CenterMessageType`](/enums#centermessagetype) · [`InputMode`](/enums#inputmode) · [`PlayerState`](/enums#playerstate) · [`SaveVarFlags`](/enums#savevarflags) · [`TeamRelation`](/enums#teamrelation)
+<a href="/enums#centermessagetype" class="enum-link" data-tooltip="General=0 · Error=1">CenterMessageType</a> · <a href="/enums#inputmode" class="enum-link" data-tooltip="KeyboardAndMouse=0 · Gamepad=1">InputMode</a> · <a href="/enums#playerstate" class="enum-link" data-tooltip="None=0 · InLobby=1 · Playing=2 · Spectating=3">PlayerState</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#teamrelation" class="enum-link" data-tooltip="Own=1 · Neutral=2 · Enemy=4 · Ally=8">TeamRelation</a>
 
 :::

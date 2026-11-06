@@ -31,7 +31,7 @@ public static IGamepadFocusable GetEnterFocusable(GameObject parent, EnterGroupB
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `parent` | `UnityEngine.GameObject` |  |
-| `enterBehavior` | [`EnterGroupBehavior`](/api/Global.EnterGroupBehavior) |  |
+| `enterBehavior` | <a href="/enums#entergroupbehavior" class="enum-link" data-tooltip="UseDistanceFromPrevious=0 · PrioritizeLT=1 · PrioritizeRT=2 · PrioritizeLB=3 · PrioritizeRB=4 (+6 more)">EnterGroupBehavior</a> |  |
 | `direction` | `UnityEngine.Vector2` |  |
 
 **Returns:** `IGamepadFocusable`
@@ -84,6 +84,6 @@ public bool IsValid()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EnterGroupBehavior`](/enums#entergroupbehavior)
+<a href="/enums#entergroupbehavior" class="enum-link" data-tooltip="UseDistanceFromPrevious=0 · PrioritizeLT=1 · PrioritizeRT=2 · PrioritizeLB=3 · PrioritizeRB=4 (+6 more)">EnterGroupBehavior</a>
 
 :::

@@ -79,7 +79,7 @@ public bool TryGetSkillData(HeroSkillLocation type, out DewGameResult.SkillData 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `data` | [`DewGameResult.SkillData`](/api/Global.DewGameResult) |  |
 
 **Returns:** `bool`
@@ -103,6 +103,6 @@ public bool TryGetSkillData(HeroSkillLocation type, out DewGameResult.SkillData 
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HeroSkillLocation`](/enums#heroskilllocation)
+<a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a>
 
 :::

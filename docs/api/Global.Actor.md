@@ -190,7 +190,7 @@ public ElementalStatusEffect ApplyElemental(ElementalType type, Entity to, int a
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`ElementalType`](/api/Global.ElementalType) |  |
+| `type` | <a href="/enums#elementaltype" class="enum-link" data-tooltip="Fire=0 · Cold=1 · Light=2 · Dark=3">ElementalType</a> |  |
 | `to` | [`Entity`](/api/Global.Entity) |  |
 | `appliedStacks` | `int` |  |
 
@@ -326,7 +326,7 @@ public Se_GenericEffectContainer CreateBasicEffect(Entity victim, BasicEffect ef
 | `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 | `duration` | `float` |  |
 | `id` | `string` |  |
-| `onDuplicate` | [`DuplicateEffectBehavior`](/api/Global.DuplicateEffectBehavior) |  |
+| `onDuplicate` | <a href="/enums#duplicateeffectbehavior" class="enum-link" data-tooltip="UsePrevious=0 · ReplacePrevious=1 · DoNothing=2">DuplicateEffectBehavior</a> |  |
 
 **Returns:** `Se_GenericEffectContainer`
 
@@ -1343,7 +1343,7 @@ public void TriggerAttackEffects(Entity target, float strength, AttackEffectType
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `strength` | `float` |  |
-| `type` | [`AttackEffectType`](/api/Global.AttackEffectType) |  |
+| `type` | <a href="/enums#attackeffecttype" class="enum-link" data-tooltip="BasicAttackMain=0 · BasicAttackSub=1 · Others=2">AttackEffectType</a> |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 :::
@@ -1410,6 +1410,6 @@ public void UnlockDestroy()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AttackEffectType`](/enums#attackeffecttype) · [`DuplicateEffectBehavior`](/enums#duplicateeffectbehavior) · [`ElementalType`](/enums#elementaltype) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#attackeffecttype" class="enum-link" data-tooltip="BasicAttackMain=0 · BasicAttackSub=1 · Others=2">AttackEffectType</a> · <a href="/enums#duplicateeffectbehavior" class="enum-link" data-tooltip="UsePrevious=0 · ReplacePrevious=1 · DoNothing=2">DuplicateEffectBehavior</a> · <a href="/enums#elementaltype" class="enum-link" data-tooltip="Fire=0 · Cold=1 · Light=2 · Dark=3">ElementalType</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

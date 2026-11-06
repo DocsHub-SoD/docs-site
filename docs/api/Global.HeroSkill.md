@@ -77,7 +77,7 @@ public bool CanReplaceSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `bool`
 
@@ -106,7 +106,7 @@ public void CmdEquipSkill(HeroSkillLocation type, SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 :::
@@ -170,8 +170,8 @@ public void CmdSwapSlotSkill(HeroSkillLocation a, HeroSkillLocation b)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `a` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
-| `b` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `a` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
+| `b` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 :::
 
@@ -198,7 +198,7 @@ public void CmdUnequipSkill(HeroSkillLocation type, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 :::
@@ -226,7 +226,7 @@ public void EquipSkill(HeroSkillLocation type, SkillTrigger skill, bool ignoreCa
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `ignoreCanReplace` | `bool` |  |
 
@@ -241,7 +241,7 @@ public int GetCurrentGemCount(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `int`
 
@@ -256,7 +256,7 @@ public int GetEmptyGemSlot(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `int`
 
@@ -271,7 +271,7 @@ public Gem GetFirstGem(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `Gem`
 
@@ -301,7 +301,7 @@ public IEnumerable<Gem> GetGemsInSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><Gem>`
 
@@ -316,7 +316,7 @@ public IEnumerable<KeyValuePair<GemLocation, Gem>> GetGemsPairInSkill(HeroSkillL
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.KeyValuePair<TKey, TValue><GemLocation,Gem>>`
 
@@ -331,7 +331,7 @@ public SkillTrigger[] GetLoadoutSkills(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `SkillTrigger[]`
 
@@ -346,7 +346,7 @@ public int GetMaxGemCount(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `int`
 
@@ -361,7 +361,7 @@ public SkillTrigger GetSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `SkillTrigger`
 
@@ -434,7 +434,7 @@ public void SetMaxGemCount(HeroSkillLocation type, int count)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `count` | `int` |  |
 
 :::
@@ -505,7 +505,7 @@ public bool TryGetSkill(HeroSkillLocation type, out SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `bool`
@@ -522,7 +522,7 @@ public bool TryGetSkillLocation(SkillTrigger skill, out HeroSkillLocation type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `bool`
 
@@ -553,7 +553,7 @@ public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `ignoreCanReplace` | `bool` |  |
 
@@ -582,6 +582,6 @@ public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool 
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HeroSkillLocation`](/enums#heroskilllocation) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

@@ -45,6 +45,6 @@ public class DewNetworkStartSettings
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewLobbyType`](/enums#dewlobbytype) · [`DewNetworkMode`](/enums#dewnetworkmode)
+<a href="/enums#dewlobbytype" class="enum-link" data-tooltip="Public=0 · InviteOnly=1">DewLobbyType</a> · <a href="/enums#dewnetworkmode" class="enum-link" data-tooltip="Singleplayer=0 · MultiplayerHost=1 · MultiplayerJoinLobby=2 · MultiplayerHostRestart=3 · MultiplayerJoinRestart=4">DewNetworkMode</a>
 
 :::

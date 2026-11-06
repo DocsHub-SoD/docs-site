@@ -37,7 +37,7 @@ public void CmdActivateEditSkillAction(HeroSkillLocation? skillLoc, GemLocation?
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillLoc` | [`HeroSkillLocation?`](/api/Global.HeroSkillLocation) |  |
+| `skillLoc` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation?</a> |  |
 | `gemLoc` | [`GemLocation?`](/api/Global.GemLocation) |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
@@ -174,7 +174,7 @@ public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, HeroSkillLoca
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
-| `loc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `loc` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `target` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `EditSkillTargetInfo`
@@ -227,7 +227,7 @@ protected virtual bool OnActivateEditSkill(DewPlayer player, HeroSkillLocation l
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
-| `loc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `loc` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `target` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `bool`
@@ -282,6 +282,6 @@ public virtual bool ShouldExitEditModeAfterAction()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EditSkillTargetType`](/enums#editskilltargettype) · [`HeroSkillLocation`](/enums#heroskilllocation)
+<a href="/enums#editskilltargettype" class="enum-link" data-tooltip="None=0 · Skill=1 · SkillEmptySlot=2 · Gem=4 · GemEmptySlot=8">EditSkillTargetType</a> · <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a>
 
 :::

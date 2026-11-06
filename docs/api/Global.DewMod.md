@@ -268,6 +268,6 @@ public static UniTask<SubmitItemUpdateResult_t> UpdateItem(PublishedFileId_t id,
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ModSourceType`](/enums#modsourcetype)
+<a href="/enums#modsourcetype" class="enum-link" data-tooltip="Local=0 · Steam=1">ModSourceType</a>
 
 :::

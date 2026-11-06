@@ -52,6 +52,6 @@ public class MapData
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`MapCellType`](/enums#mapcelltype)
+<a href="/enums#mapcelltype" class="enum-link" data-tooltip="None=0 · Playable=1 · Wall=2">MapCellType</a>
 
 :::

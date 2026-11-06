@@ -40,6 +40,6 @@ public struct ChaosReward
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ChaosRewardType`](/enums#chaosrewardtype) · [`Rarity`](/enums#rarity)
+<a href="/enums#chaosrewardtype" class="enum-link" data-tooltip="MaxHealth=0 · AttackDamage=1 · AttackSpeed=2 · AbilityPower=3 · AbilityHaste=4 (+3 more)">ChaosRewardType</a> · <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a>
 
 :::

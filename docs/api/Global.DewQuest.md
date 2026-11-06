@@ -83,7 +83,7 @@ public void FailQuest(FailReason reason)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `reason` | [`FailReason`](/api/Global.FailReason) |  |
+| `reason` | <a href="/enums#failreason" class="enum-link" data-tooltip="NotSpecified=0 · HunterOccupied=1 · MissedDestination=2">FailReason</a> |  |
 
 :::
 
@@ -218,6 +218,6 @@ public void SetLocalizedTitle(string key)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`FailReason`](/enums#failreason) · [`QuestProgressType`](/enums#questprogresstype) · [`QuestState`](/enums#queststate) · [`QuestType`](/enums#questtype) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#failreason" class="enum-link" data-tooltip="NotSpecified=0 · HunterOccupied=1 · MissedDestination=2">FailReason</a> · <a href="/enums#questprogresstype" class="enum-link" data-tooltip="Hidden=0 · Kills=1 · Travel=2 · Collect=3 · TravelZone=4">QuestProgressType</a> · <a href="/enums#queststate" class="enum-link" data-tooltip="Ongoing=0 · Completed=1 · Failed=2">QuestState</a> · <a href="/enums#questtype" class="enum-link" data-tooltip="Goal=0 · Curse=1 · Tutorial=2 · Quest=3">QuestType</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

@@ -50,7 +50,7 @@ public bool HasAttr(DamageAttribute attr)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `attr` | [`DamageAttribute`](/api/Global.DamageAttribute) |  |
+| `attr` | <a href="/enums#damageattribute" class="enum-link" data-tooltip="None=0 · IsCrit=1 · IgnoreArmor=2 · IgnoreShield=4 · IgnoreDamageImmunity=8 (+5 more)">DamageAttribute</a> |  |
 
 **Returns:** `bool`
 
@@ -77,6 +77,6 @@ public bool HasAttr(DamageAttribute attr)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AttackEffectType`](/enums#attackeffecttype) · [`DamageAttribute`](/enums#damageattribute) · [`ElementalType`](/enums#elementaltype)
+<a href="/enums#attackeffecttype" class="enum-link" data-tooltip="BasicAttackMain=0 · BasicAttackSub=1 · Others=2">AttackEffectType</a> · <a href="/enums#damageattribute" class="enum-link" data-tooltip="None=0 · IsCrit=1 · IgnoreArmor=2 · IgnoreShield=4 · IgnoreDamageImmunity=8 (+5 more)">DamageAttribute</a> · <a href="/enums#elementaltype" class="enum-link" data-tooltip="Fire=0 · Cold=1 · Light=2 · Dark=3">ElementalType</a>
 
 :::

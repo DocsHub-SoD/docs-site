@@ -72,6 +72,6 @@ public override string ToString()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AllowMidJoinType`](/enums#allowmidjointype) · [`LobbyConnectionQuality`](/enums#lobbyconnectionquality)
+<a href="/enums#allowmidjointype" class="enum-link" data-tooltip="AllowAll=0 · RejoinOnly=1 · Disallow=2">AllowMidJoinType</a> · <a href="/enums#lobbyconnectionquality" class="enum-link" data-tooltip="Unknown=0 · Bad=1 · Okay=2 · Good=3 · Best=4">LobbyConnectionQuality</a>
 
 :::

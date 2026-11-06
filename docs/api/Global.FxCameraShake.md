@@ -56,7 +56,7 @@ public void SetOwnerContext(EffectOwnerContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [`EffectOwnerContext`](/api/Global.EffectOwnerContext) |  |
+| `context` | <a href="/enums#effectownercontext" class="enum-link" data-tooltip="None=0 · Self=1 · Boss=2 · OtherPlayers=3 · Others=4">EffectOwnerContext</a> |  |
 
 :::
 
@@ -89,6 +89,6 @@ public void Stop()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EffectOwnerContext`](/enums#effectownercontext)
+<a href="/enums#effectownercontext" class="enum-link" data-tooltip="None=0 · Self=1 · Boss=2 · OtherPlayers=3 · Others=4">EffectOwnerContext</a>
 
 :::

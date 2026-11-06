@@ -40,6 +40,6 @@ public struct UI_GamepadNavigationHint.NavigationSettings
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`GamepadNavigation`](/enums#gamepadnavigation)
+<a href="/enums#gamepadnavigation" class="enum-link" data-tooltip="Generic=0 · Grid=10 · GridWrapAround=11 · GridLong=12 · Wide=20 (+2 more)">GamepadNavigation</a>
 
 :::

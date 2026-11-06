@@ -154,7 +154,7 @@ public void UpdateLoadingStatus(LoadingStatus status)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `status` | [`LoadingStatus`](/api/Global.LoadingStatus) |  |
+| `status` | <a href="/enums#loadingstatus" class="enum-link" data-tooltip="Empty=0 · WaitingForService=1 · CheckingLobbyStatus=2 · CleaningUpPreviousLobby=3 · LeavingPreviousLobby=4 (+11 more)">LoadingStatus</a> |  |
 
 :::
 
@@ -192,6 +192,6 @@ public void UpdateLoadingStatus(string rawText)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`LoadingStatus`](/enums#loadingstatus)
+<a href="/enums#loadingstatus" class="enum-link" data-tooltip="Empty=0 · WaitingForService=1 · CheckingLobbyStatus=2 · CleaningUpPreviousLobby=3 · LeavingPreviousLobby=4 (+11 more)">LoadingStatus</a>
 
 :::

@@ -71,6 +71,6 @@ public void Validate()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ControllerButtonType`](/enums#controllerbuttontype)
+<a href="/enums#controllerbuttontype" class="enum-link" data-tooltip="Xbox=1 · PlayStation=2 · Generic=3">ControllerButtonType</a>
 
 :::

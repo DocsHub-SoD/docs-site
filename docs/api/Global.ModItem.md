@@ -49,6 +49,6 @@ public class ModItem
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ModItemState`](/enums#moditemstate) · [`ModSourceType`](/enums#modsourcetype)
+<a href="/enums#moditemstate" class="enum-link" data-tooltip="Ok=0 · InvalidMetadata=1 · IdConflict=2">ModItemState</a> · <a href="/enums#modsourcetype" class="enum-link" data-tooltip="Local=0 · Steam=1">ModSourceType</a>
 
 :::

@@ -218,6 +218,6 @@ public override string ToString()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AffordType`](/enums#affordtype)
+<a href="/enums#affordtype" class="enum-link" data-tooltip="Yes=0 · NoGold=1 · NoDreamDust=2 · NoStardust=3 · NoHealth=4 (+1 more)">AffordType</a>
 
 :::

@@ -74,6 +74,6 @@ public void OnBeforeSerialize()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EffectVisibility`](/enums#effectvisibility)
+<a href="/enums#effectvisibility" class="enum-link" data-tooltip="Everyone=0 · Caster=1 · Target=2 · Victim=3 · Owner=4">EffectVisibility</a>
 
 :::

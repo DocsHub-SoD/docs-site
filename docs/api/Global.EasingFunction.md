@@ -1040,7 +1040,7 @@ public static float Get(this DewEase ease, float x)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ease` | [`DewEase`](/api/Global.DewEase) |  |
+| `ease` | <a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a> |  |
 | `x` | `float` |  |
 
 **Returns:** `float`
@@ -1056,7 +1056,7 @@ public static float GetDelta(this DewEase ease, float x)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ease` | [`DewEase`](/api/Global.DewEase) |  |
+| `ease` | <a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a> |  |
 | `x` | `float` |  |
 
 **Returns:** `float`
@@ -1075,7 +1075,7 @@ public static EaseFunction GetEasingFunction(DewEase easingFunction)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `easingFunction` | [`DewEase`](/api/Global.DewEase) | The enum associated with the easing function. |
+| `easingFunction` | <a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a> | The enum associated with the easing function. |
 
 **Returns:** `EaseFunction: The easing function`
 
@@ -1093,7 +1093,7 @@ public static EaseFunction GetEasingFunctionDerivative(DewEase easingFunction)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `easingFunction` | [`DewEase`](/api/Global.DewEase) |  |
+| `easingFunction` | <a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a> |  |
 
 **Returns:** `EaseFunction: The derivative function`
 
@@ -1188,6 +1188,6 @@ public static float SpringD(float start, float end, float value)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewEase`](/enums#dewease)
+<a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a>
 
 :::

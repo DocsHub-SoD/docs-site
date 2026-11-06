@@ -45,6 +45,6 @@ public class DispByDestination : Displacement
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewEase`](/enums#dewease)
+<a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a>
 
 :::

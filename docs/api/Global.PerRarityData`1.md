@@ -36,7 +36,7 @@ public T Get(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 
 **Returns:** `T`
 
@@ -51,7 +51,7 @@ public void Set(Rarity rarity, T value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `value` | `T` |  |
 
 :::
@@ -75,6 +75,6 @@ public void Set(Rarity rarity, T value)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`Rarity`](/enums#rarity)
+<a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a>
 
 :::

@@ -91,6 +91,6 @@ public void Stop()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BoxTelegraphAnimType`](/enums#boxtelegraphanimtype) · [`DewEase`](/enums#dewease)
+<a href="/enums#boxtelegraphanimtype" class="enum-link" data-tooltip="None=0 · Center=1 · FromStart=2 · FromEnd=3">BoxTelegraphAnimType</a> · <a href="/enums#dewease" class="enum-link" data-tooltip="Linear=0 · EaseInQuad=1 · EaseOutQuad=2 · EaseInOutQuad=3 · EaseInCubic=4 (+27 more)">DewEase</a>
 
 :::

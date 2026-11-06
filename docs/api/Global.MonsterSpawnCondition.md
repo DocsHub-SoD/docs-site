@@ -63,6 +63,6 @@ public bool EvaluateCondition()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`MonsterSpawnConditionType`](/enums#monsterspawnconditiontype)
+<a href="/enums#monsterspawnconditiontype" class="enum-link" data-tooltip="CurrentZoneClearedNodes=0 · GlobalRoomIndex=1 · ActivatedCombatAreas=2">MonsterSpawnConditionType</a>
 
 :::

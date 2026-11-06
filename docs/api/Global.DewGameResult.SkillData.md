@@ -67,6 +67,6 @@ public SkillTrigger GetSkillTrigger()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HeroSkillLocation`](/enums#heroskilllocation) · [`SkillType`](/enums#skilltype)
+<a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> · <a href="/enums#skilltype" class="enum-link" data-tooltip="Normal=0 · Ultimate=1">SkillType</a>
 
 :::

@@ -44,6 +44,6 @@ public struct DewLocalization.DescriptionSettings
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`LevelScaling`](/enums#levelscaling)
+<a href="/enums#levelscaling" class="enum-link" data-tooltip="NoScaling=0 · SkillDefault=1 · GemDefault=2">LevelScaling</a>
 
 :::

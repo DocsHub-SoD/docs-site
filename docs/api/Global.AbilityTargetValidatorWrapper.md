@@ -56,6 +56,6 @@ public bool Evaluate(Entity entity)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EntityRelation`](/enums#entityrelation)
+<a href="/enums#entityrelation" class="enum-link" data-tooltip="Self=1 · Neutral=2 · Enemy=4 · Ally=8">EntityRelation</a>
 
 :::

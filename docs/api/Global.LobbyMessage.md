@@ -38,6 +38,6 @@ public struct LobbyMessage
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`LobbyMessageType`](/enums#lobbymessagetype)
+<a href="/enums#lobbymessagetype" class="enum-link" data-tooltip="GameServerAddress=0">LobbyMessageType</a>
 
 :::

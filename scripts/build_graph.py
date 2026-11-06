@@ -68,6 +68,38 @@ def run():
         )
         compiled["legend"] = raw_graph.get("legend", {})
 
+        # Merge call graph & type usage dependencies
+        deps_path = DATA_REPO_DIR / "dependencies.json"
+        if deps_path.exists():
+            deps = json.loads(deps_path.read_text(encoding="utf-8"))
+            node_ids = {n["id"] for n in compiled["nodes"]}
+            existing_links = {(l["source"], l["target"]) for l in compiled["links"]}
+
+            for s, d in deps.items():
+                if s not in node_ids:
+                    continue
+                for t in d.get("uses", []):
+                    if t in node_ids and s != t and (s, t) not in existing_links:
+                        existing_links.add((s, t))
+                        compiled["links"].append({"source": s, "target": t, "type": "uses"})
+
+            for uid in node_ids:
+                parts = uid.split(".")
+                if len(parts) > 2:
+                    parent_id = ".".join(parts[:-1])
+                    if parent_id in node_ids:
+                        if (parent_id, uid) not in existing_links and (uid, parent_id) not in existing_links:
+                            existing_links.add((parent_id, uid))
+                            compiled["links"].append({"source": parent_id, "target": uid, "type": "declares"})
+
+            connected_ids = set()
+            for l in compiled["links"]:
+                connected_ids.add(l["source"])
+                connected_ids.add(l["target"])
+
+            for n in compiled["nodes"]:
+                n["isOrphan"] = n["id"] not in connected_ids
+
         GRAPH_DATA_PATH.write_text(json.dumps(compiled, indent=2, ensure_ascii=False), encoding="utf-8")
         current_hash = compute_inputs_hash()
         CACHE_HASH_PATH.write_text(current_hash, encoding="utf-8")

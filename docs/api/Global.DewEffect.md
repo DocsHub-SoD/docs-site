@@ -183,7 +183,7 @@ public static void PlayCastEffect(GameObject effect, CastInfo info, CastMethodTy
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
-| `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
+| `method` | <a href="/enums#castmethodtype" class="enum-link" data-tooltip="None=0 · Cone=1 · Arrow=2 · Target=3 · Point=4">CastMethodType</a> |  |
 | `duration` | `float` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
@@ -201,7 +201,7 @@ public static void PlayCastEffectNetworked(NetworkIdentity parent, GameObject ef
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
-| `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
+| `method` | <a href="/enums#castmethodtype" class="enum-link" data-tooltip="None=0 · Cone=1 · Arrow=2 · Target=3 · Point=4">CastMethodType</a> |  |
 | `duration` | `float` |  |
 
 :::
@@ -496,6 +496,6 @@ public static void TintRecursively(GameObject gameObject, Color color)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CastMethodType`](/enums#castmethodtype) · [`Quality3Levels`](/enums#quality3levels)
+<a href="/enums#castmethodtype" class="enum-link" data-tooltip="None=0 · Cone=1 · Arrow=2 · Target=3 · Point=4">CastMethodType</a> · <a href="/enums#quality3levels" class="enum-link" data-tooltip="Low=1 · Medium=2 · High=3">Quality3Levels</a>
 
 :::

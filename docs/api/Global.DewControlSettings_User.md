@@ -151,7 +151,7 @@ public string GetSettingsValueText(string keys, out BindingType type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `keys` | `string` |  |
-| `type` | [`BindingType`](/api/Global.BindingType) |  |
+| `type` | <a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> |  |
 
 **Returns:** `string`
 
@@ -181,7 +181,7 @@ public DewBinding GetSkillBinding(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `DewBinding`
 
@@ -196,7 +196,7 @@ public DewBinding GetSkillEditBinding(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `DewBinding`
 
@@ -233,6 +233,6 @@ public void Validate()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AimAssistType`](/enums#aimassisttype) · [`BindingType`](/enums#bindingtype) · [`CastConfirmType`](/enums#castconfirmtype) · [`DashDirection`](/enums#dashdirection) · [`HeroSkillLocation`](/enums#heroskilllocation) · [`JoystickClickAction`](/enums#joystickclickaction)
+<a href="/enums#aimassisttype" class="enum-link" data-tooltip="None=0 · Medium=1 · High=2 · VeryHigh=3">AimAssistType</a> · <a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> · <a href="/enums#castconfirmtype" class="enum-link" data-tooltip="Normal=0 · Immediately=1 · OnRelease=2">CastConfirmType</a> · <a href="/enums#dashdirection" class="enum-link" data-tooltip="CurrentMovement=0 · CurrentMovementOnlyDodge=1 · AllTowardsCursor=2">DashDirection</a> · <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> · <a href="/enums#joystickclickaction" class="enum-link" data-tooltip="None=0 · Dodge=1 · PingAndEmotes=2">JoystickClickAction</a>
 
 :::

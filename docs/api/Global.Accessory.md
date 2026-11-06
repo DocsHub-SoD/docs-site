@@ -64,6 +64,6 @@ public void Setup(Transform target, string entityOrSkinName)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AccType`](/enums#acctype)
+<a href="/enums#acctype" class="enum-link" data-tooltip="Hat=0 · Hip=1">AccType</a>
 
 :::

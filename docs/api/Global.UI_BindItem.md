@@ -112,6 +112,6 @@ public void UpdateValueDontNotify(DewBinding newReference)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BindingType`](/enums#bindingtype)
+<a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a>
 
 :::

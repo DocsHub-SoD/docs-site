@@ -88,6 +88,6 @@ public ChargingChannel Get(Actor effectParent)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CastMethodType`](/enums#castmethodtype)
+<a href="/enums#castmethodtype" class="enum-link" data-tooltip="None=0 · Cone=1 · Arrow=2 · Target=3 · Point=4">CastMethodType</a>
 
 :::

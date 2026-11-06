@@ -53,6 +53,6 @@ public class MonsterSpawnRule : ScriptableObject
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`OverpopulationBehavior`](/enums#overpopulationbehavior)
+<a href="/enums#overpopulationbehavior" class="enum-link" data-tooltip="Stall=0 · Cancel=1 · Ignore=2">OverpopulationBehavior</a>
 
 :::

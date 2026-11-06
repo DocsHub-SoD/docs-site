@@ -130,7 +130,7 @@ public HeroConstellationSettings GetConstellationSettings(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`StarType`](/api/Global.StarType) |  |
+| `type` | <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a> |  |
 
 **Returns:** `HeroConstellationSettings`
 
@@ -274,6 +274,6 @@ public void ReceiveExperience(int amount)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`SaveVarFlags`](/enums#savevarflags) · [`StarType`](/enums#startype)
+<a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a>
 
 :::

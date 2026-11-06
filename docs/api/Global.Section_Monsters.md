@@ -108,6 +108,6 @@ public Vector3 GetSpawnPositionInSection(float minDist, float maxDist, DewRandom
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CombatAreaActivateCondition`](/enums#combatareaactivatecondition) · [`SectionCombatAreaType`](/enums#sectioncombatareatype)
+<a href="/enums#combatareaactivatecondition" class="enum-link" data-tooltip="OnEnterFirstTime=0 · OnEveryonePresent=1">CombatAreaActivateCondition</a> · <a href="/enums#sectioncombatareatype" class="enum-link" data-tooltip="Random=0 · Yes=1 · No=2">SectionCombatAreaType</a>
 
 :::

@@ -69,6 +69,6 @@ public void Validate()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AllowMidJoinType`](/enums#allowmidjointype)
+<a href="/enums#allowmidjointype" class="enum-link" data-tooltip="AllowAll=0 · RejoinOnly=1 · Disallow=2">AllowMidJoinType</a>
 
 :::

@@ -749,6 +749,6 @@ public void UpdateModifiersByHunterStatus(int currentTravelDestinationNode = -1)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HunterStatus`](/enums#hunterstatus) · [`SaveVarFlags`](/enums#savevarflags) · [`VoteType`](/enums#votetype)
+<a href="/enums#hunterstatus" class="enum-link" data-tooltip="None=0 · AboutToBeTaken=1 · Level1=100 · Level2=101 · Level3=102">HunterStatus</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#votetype" class="enum-link" data-tooltip="None=0 · NextNode=1 · NextZone=2 · Sidetrack=3 · TheDream=4">VoteType</a>
 
 :::

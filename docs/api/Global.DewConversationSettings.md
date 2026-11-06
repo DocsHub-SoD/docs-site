@@ -58,6 +58,6 @@ public class DewConversationSettings
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ConversationVisibility`](/enums#conversationvisibility)
+<a href="/enums#conversationvisibility" class="enum-link" data-tooltip="Everyone=0 · OnlyToPlayer=1">ConversationVisibility</a>
 
 :::

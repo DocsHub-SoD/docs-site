@@ -194,6 +194,6 @@ public void ToggleShift()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`InputMode`](/enums#inputmode)
+<a href="/enums#inputmode" class="enum-link" data-tooltip="KeyboardAndMouse=0 · Gamepad=1">InputMode</a>
 
 :::

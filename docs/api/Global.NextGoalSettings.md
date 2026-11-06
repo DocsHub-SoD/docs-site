@@ -48,6 +48,6 @@ public class NextGoalSettings
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`FailReason`](/enums#failreason)
+<a href="/enums#failreason" class="enum-link" data-tooltip="NotSpecified=0 · HunterOccupied=1 · MissedDestination=2">FailReason</a>
 
 :::

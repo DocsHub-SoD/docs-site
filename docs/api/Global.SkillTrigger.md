@@ -212,7 +212,7 @@ public static int GetBuyGold(Rarity rarity, int level)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `level` | `int` |  |
 
 **Returns:** `int`
@@ -298,7 +298,7 @@ public static int GetGoldValue(Rarity rarity, int level)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `level` | `int` |  |
 
 **Returns:** `int`
@@ -336,7 +336,7 @@ public static int GetSellGold(Rarity rarity, int level)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `level` | `int` |  |
 
 **Returns:** `int`
@@ -628,6 +628,6 @@ public void UpdateSkillBonus()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DescriptionTags`](/enums#descriptiontags) · [`HeroSkillLocation`](/enums#heroskilllocation) · [`Rarity`](/enums#rarity) · [`SaveVarFlags`](/enums#savevarflags) · [`SkillType`](/enums#skilltype)
+<a href="/enums#descriptiontags" class="enum-link" data-tooltip="None=0 · Fire=1 · Cold=2 · Dark=4 · Light=8 (+7 more)">DescriptionTags</a> · <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> · <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#skilltype" class="enum-link" data-tooltip="Normal=0 · Ultimate=1">SkillType</a>
 
 :::

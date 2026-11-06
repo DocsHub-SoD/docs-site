@@ -167,7 +167,7 @@ public Se_GenericEffectContainer CreateBasicEffectWithSource(Actor source, Entit
 | `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 | `duration` | `float` |  |
 | `id` | `string` |  |
-| `onDuplicate` | [`DuplicateEffectBehavior`](/api/Global.DuplicateEffectBehavior) |  |
+| `onDuplicate` | <a href="/enums#duplicateeffectbehavior" class="enum-link" data-tooltip="UsePrevious=0 · ReplacePrevious=1 · DoNothing=2">DuplicateEffectBehavior</a> |  |
 
 **Returns:** `Se_GenericEffectContainer`
 
@@ -221,7 +221,7 @@ public static int GetBuyGold(Rarity rarity, int quality)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `quality` | `int` |  |
 
 **Returns:** `int`
@@ -252,7 +252,7 @@ public static int GetGoldValue(Rarity rarity, int quality)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `quality` | `int` |  |
 
 **Returns:** `int`
@@ -309,7 +309,7 @@ public static int GetSellGold(Rarity rarity, int quality)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 | `quality` | `int` |  |
 
 **Returns:** `int`
@@ -590,6 +590,6 @@ public void StartCooldown()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DescriptionTags`](/enums#descriptiontags) · [`DuplicateEffectBehavior`](/enums#duplicateeffectbehavior) · [`Rarity`](/enums#rarity) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#descriptiontags" class="enum-link" data-tooltip="None=0 · Fire=1 · Cold=2 · Dark=4 · Light=8 (+7 more)">DescriptionTags</a> · <a href="/enums#duplicateeffectbehavior" class="enum-link" data-tooltip="UsePrevious=0 · ReplacePrevious=1 · DoNothing=2">DuplicateEffectBehavior</a> · <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

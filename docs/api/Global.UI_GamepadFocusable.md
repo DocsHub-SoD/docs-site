@@ -116,6 +116,6 @@ public virtual void OnFocusStateChanged(bool state)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`SelectionDisplayType`](/enums#selectiondisplaytype)
+<a href="/enums#selectiondisplaytype" class="enum-link" data-tooltip="Dont=0 · Box=1 · Circle=2">SelectionDisplayType</a>
 
 :::

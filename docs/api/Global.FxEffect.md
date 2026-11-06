@@ -59,6 +59,6 @@ public void Stop()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EffectBindEntityType`](/enums#effectbindentitytype)
+<a href="/enums#effectbindentitytype" class="enum-link" data-tooltip="None=0 · FindType=1 · LocalHero=2">EffectBindEntityType</a>
 
 :::

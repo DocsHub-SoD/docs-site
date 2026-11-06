@@ -112,8 +112,8 @@ public static void DeserializeOnGameObject(GameObject gobj, Dictionary<string, s
 | `gobj` | `UnityEngine.GameObject` |  |
 | `data` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
-| `required` | [`SaveVarFlags`](/api/Global.SaveVarFlags) |  |
-| `excluded` | [`SaveVarFlags`](/api/Global.SaveVarFlags) |  |
+| `required` | <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> |  |
+| `excluded` | <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> |  |
 
 :::
 
@@ -263,6 +263,6 @@ public static string ToJson(object obj, JsonSerializerSettings settings = null)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

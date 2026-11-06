@@ -32,7 +32,7 @@ public List<int> Get(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`StarType`](/api/Global.StarType) |  |
+| `type` | <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a> |  |
 
 **Returns:** `System.Collections.Generic.List<T><int>`
 
@@ -47,7 +47,7 @@ public void Set(StarType type, List<int> list)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`StarType`](/api/Global.StarType) |  |
+| `type` | <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a> |  |
 | `list` | `System.Collections.Generic.List<T><int>` |  |
 
 :::
@@ -69,6 +69,6 @@ public void Set(StarType type, List<int> list)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`StarType`](/enums#startype)
+<a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a>
 
 :::

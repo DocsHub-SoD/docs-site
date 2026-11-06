@@ -208,6 +208,6 @@ public override bool ShouldBeSavedWithRoom()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ModifierSpawnType`](/enums#modifierspawntype) · [`NodeModifierVisibility`](/enums#nodemodifiervisibility) · [`SaveVarFlags`](/enums#savevarflags) · [`ScaleWithDifficultyMode`](/enums#scalewithdifficultymode)
+<a href="/enums#modifierspawntype" class="enum-link" data-tooltip="Chance=0 · Ratio=1 · Count=2">ModifierSpawnType</a> · <a href="/enums#nodemodifiervisibility" class="enum-link" data-tooltip="OnRevealed=0 · OnRevealedFull=1 · Hidden=2 · Always=3">NodeModifierVisibility</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a> · <a href="/enums#scalewithdifficultymode" class="enum-link" data-tooltip="None=0 · Beneficial=1 · Harmful=2">ScaleWithDifficultyMode</a>
 
 :::

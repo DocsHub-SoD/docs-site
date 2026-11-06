@@ -49,7 +49,7 @@ public DewBinding CloneWith(GamepadButtonEx added)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `added` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
+| `added` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> |  |
 
 **Returns:** `DewBinding`
 
@@ -64,7 +64,7 @@ public DewBinding CloneWith(MouseButton added)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `added` | [`MouseButton`](/api/Global.MouseButton) |  |
+| `added` | <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a> |  |
 
 **Returns:** `DewBinding`
 
@@ -206,6 +206,6 @@ public static DewBinding PCAndGamepad(params object[] keys)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BindingType`](/enums#bindingtype) · [`GamepadButtonEx`](/enums#gamepadbuttonex) · [`MouseButton`](/enums#mousebutton)
+<a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> · <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> · <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a>
 
 :::

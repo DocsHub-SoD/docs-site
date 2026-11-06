@@ -44,6 +44,6 @@ public struct EventInfoAttackEffect
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AttackEffectType`](/enums#attackeffecttype)
+<a href="/enums#attackeffecttype" class="enum-link" data-tooltip="BasicAttackMain=0 · BasicAttackSub=1 · Others=2">AttackEffectType</a>
 
 :::

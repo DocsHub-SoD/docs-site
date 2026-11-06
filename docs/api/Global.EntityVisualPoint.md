@@ -35,6 +35,6 @@ public class EntityVisualPoint : MonoBehaviour
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`EntityVisualPointType`](/enums#entityvisualpointtype)
+<a href="/enums#entityvisualpointtype" class="enum-link" data-tooltip="Head=3 · LeftHand=4 · RightHand=5 · LeftFoot=6 · RightFoot=7 (+3 more)">EntityVisualPointType</a>
 
 :::

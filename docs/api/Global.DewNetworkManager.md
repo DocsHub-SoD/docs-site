@@ -243,6 +243,6 @@ protected virtual UniTaskVoid StartSession()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ClientTransportChoice`](/enums#clienttransportchoice) · [`DewTransportPreference`](/enums#dewtransportpreference) · [`LoadingStatus`](/enums#loadingstatus)
+<a href="/enums#clienttransportchoice" class="enum-link" data-tooltip="Eos=0 · Steam=1">ClientTransportChoice</a> · <a href="/enums#dewtransportpreference" class="enum-link" data-tooltip="Auto=0 · ForceEOS=1 · ForceSteam=2">DewTransportPreference</a> · <a href="/enums#loadingstatus" class="enum-link" data-tooltip="Empty=0 · WaitingForService=1 · CheckingLobbyStatus=2 · CleaningUpPreviousLobby=3 · LeavingPreviousLobby=4 (+11 more)">LoadingStatus</a>
 
 :::

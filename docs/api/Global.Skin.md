@@ -90,6 +90,6 @@ public bool IsValidFor(string heroType)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`Rarity`](/enums#rarity) · [`SkinRarity`](/enums#skinrarity)
+<a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> · <a href="/enums#skinrarity" class="enum-link" data-tooltip="Default=0 · Rare=1 · Epic=2 · Legendary=3">SkinRarity</a>
 
 :::

@@ -51,7 +51,7 @@ public bool GetStickDirection(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> |  |
 
 **Returns:** `bool`
 
@@ -66,7 +66,7 @@ public bool GetStickDirectionDown(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> |  |
 
 **Returns:** `bool`
 
@@ -81,7 +81,7 @@ public bool GetStickDirectionUp(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> |  |
 
 **Returns:** `bool`
 
@@ -96,7 +96,7 @@ public bool IsStickDirection(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> |  |
 
 **Returns:** `bool`
 
@@ -152,6 +152,6 @@ public static void SetMouseSensitivity(int sensitivity)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`GamepadButtonEx`](/enums#gamepadbuttonex) · [`MouseButton`](/enums#mousebutton)
+<a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> · <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a>
 
 :::

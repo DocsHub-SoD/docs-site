@@ -81,6 +81,6 @@ RectTransform GetTransform()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`FocusableBehavior`](/enums#focusablebehavior) · [`SelectionDisplayType`](/enums#selectiondisplaytype)
+<a href="/enums#focusablebehavior" class="enum-link" data-tooltip="Normal=0 · BottomBar=1">FocusableBehavior</a> · <a href="/enums#selectiondisplaytype" class="enum-link" data-tooltip="Dont=0 · Box=1 · Circle=2">SelectionDisplayType</a>
 
 :::

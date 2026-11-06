@@ -686,6 +686,6 @@ public void StopTimer()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BasicEffectMask`](/enums#basiceffectmask) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#basiceffectmask" class="enum-link" data-tooltip="Slow=1 · Speed=2 · Haste=4 · Cripple=8 · Root=16 (+19 more)">BasicEffectMask</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

@@ -37,6 +37,6 @@ public interface IOtherPlayersTonedDownLimit
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ReduceOtherPlayerEffectsStrength`](/enums#reduceotherplayereffectsstrength)
+<a href="/enums#reduceotherplayereffectsstrength" class="enum-link" data-tooltip="Low=0 · Medium=1 · High=2 · VeryHigh=3 · Hide=4">ReduceOtherPlayerEffectsStrength</a>
 
 :::

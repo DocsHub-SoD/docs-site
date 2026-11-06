@@ -699,7 +699,7 @@ public static Color GetCurrencyColor(CurrencyType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`CurrencyType`](/api/Global.CurrencyType) |  |
+| `type` | <a href="/enums#currencytype" class="enum-link" data-tooltip="Gold=0 · DreamDust=1 · Stardust=2 · Health=3 · PlatinumCoin=4">CurrencyType</a> |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -714,7 +714,7 @@ public static string GetCurrencyColorHex(CurrencyType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`CurrencyType`](/api/Global.CurrencyType) |  |
+| `type` | <a href="/enums#currencytype" class="enum-link" data-tooltip="Gold=0 · DreamDust=1 · Stardust=2 · Health=3 · PlatinumCoin=4">CurrencyType</a> |  |
 
 **Returns:** `string`
 
@@ -1124,7 +1124,7 @@ public static Color GetRarityColor(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -1139,7 +1139,7 @@ public static Color GetRarityColor(SkinRarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`SkinRarity`](/api/Global.SkinRarity) |  |
+| `rarity` | <a href="/enums#skinrarity" class="enum-link" data-tooltip="Default=0 · Rare=1 · Epic=2 · Legendary=3">SkinRarity</a> |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -1156,7 +1156,7 @@ public static string GetRarityColorHex(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 
 **Returns:** `string`
 
@@ -1171,7 +1171,7 @@ public static string GetRarityColorHex(SkinRarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`SkinRarity`](/api/Global.SkinRarity) |  |
+| `rarity` | <a href="/enums#skinrarity" class="enum-link" data-tooltip="Default=0 · Rare=1 · Epic=2 · Legendary=3">SkinRarity</a> |  |
 
 **Returns:** `string`
 
@@ -1306,7 +1306,7 @@ public static Color GetStarCategoryColor(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`StarType`](/api/Global.StarType) |  |
+| `type` | <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a> |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -2774,6 +2774,6 @@ public static IEnumerator WaitForClientsReadyRoutine(List<DewPlayer> players = n
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CosmeticPurchasePrerequisite`](/enums#cosmeticpurchaseprerequisite) · [`CurrencyType`](/enums#currencytype) · [`Rarity`](/enums#rarity) · [`SkinRarity`](/enums#skinrarity) · [`StarType`](/enums#startype)
+<a href="/enums#cosmeticpurchaseprerequisite" class="enum-link" data-tooltip="None=0 · NightmareKillCount=1 · ReachZone=2 · HeroMastery=3 · NightmareWin=4 (+2 more)">CosmeticPurchasePrerequisite</a> · <a href="/enums#currencytype" class="enum-link" data-tooltip="Gold=0 · DreamDust=1 · Stardust=2 · Health=3 · PlatinumCoin=4">CurrencyType</a> · <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> · <a href="/enums#skinrarity" class="enum-link" data-tooltip="Default=0 · Rare=1 · Epic=2 · Legendary=3">SkinRarity</a> · <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a>
 
 :::

@@ -365,7 +365,7 @@ public static void SetShadowQuality(QualityOff4Levels q)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `q` | [`QualityOff4Levels`](/api/Global.QualityOff4Levels) |  |
+| `q` | <a href="/enums#qualityoff4levels" class="enum-link" data-tooltip="Off=0 · Low=1 · Medium=2 · High=3 · Ultra=4">QualityOff4Levels</a> |  |
 
 :::
 
@@ -406,6 +406,6 @@ public static void SyncAchievements()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewProfileState`](/enums#dewprofilestate) · [`DewSubProfileState`](/enums#dewsubprofilestate) · [`QualityOff4Levels`](/enums#qualityoff4levels)
+<a href="/enums#dewprofilestate" class="enum-link" data-tooltip="Normal=0 · Convertible=1 · UnsupportedEdition=2 · UnsupportedVersion=3 · Corrupted=4">DewProfileState</a> · <a href="/enums#dewsubprofilestate" class="enum-link" data-tooltip="Normal=0 · Corrupted=1 · NonExistent=2">DewSubProfileState</a> · <a href="/enums#qualityoff4levels" class="enum-link" data-tooltip="Off=0 · Low=1 · Medium=2 · High=3 · Ultra=4">QualityOff4Levels</a>
 
 :::

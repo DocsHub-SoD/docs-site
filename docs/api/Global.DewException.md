@@ -37,6 +37,6 @@ public class DewException : Exception
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewExceptionType`](/enums#dewexceptiontype)
+<a href="/enums#dewexceptiontype" class="enum-link" data-tooltip="GameAlreadyStarted=0 · VersionMismatch=1 · LobbyTimeout=2 · UnknownLobby=3 · Disconnected=4 (+39 more)">DewExceptionType</a>
 
 :::

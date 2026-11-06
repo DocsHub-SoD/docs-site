@@ -176,7 +176,7 @@ public void ShowCenterMessage(CenterMessageType type, string key, object[] forma
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
+| `type` | <a href="/enums#centermessagetype" class="enum-link" data-tooltip="General=0 · Error=1">CenterMessageType</a> |  |
 | `key` | `string` |  |
 | `formatArgs` | `object[]` |  |
 
@@ -191,7 +191,7 @@ public void ShowCenterMessageRaw(CenterMessageType type, string raw)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
+| `type` | <a href="/enums#centermessagetype" class="enum-link" data-tooltip="General=0 · Error=1">CenterMessageType</a> |  |
 | `raw` | `string` |  |
 
 :::
@@ -245,6 +245,6 @@ public static bool ValidateInGameActionMessage(bool requireAliveHero = true)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CenterMessageType`](/enums#centermessagetype) · [`WorldDisplayStatus`](/enums#worlddisplaystatus)
+<a href="/enums#centermessagetype" class="enum-link" data-tooltip="General=0 · Error=1">CenterMessageType</a> · <a href="/enums#worlddisplaystatus" class="enum-link" data-tooltip="None=0 · ShownNoMove=1 · Shown=2">WorldDisplayStatus</a>
 
 :::

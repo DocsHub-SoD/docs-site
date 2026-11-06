@@ -73,6 +73,6 @@ public void Initialize()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`ConfirmMemoryEditBehavior`](/enums#confirmmemoryeditbehavior) · [`DamageNumberVisibility`](/enums#damagenumbervisibility) · [`ReduceOtherPlayerEffectsStrength`](/enums#reduceotherplayereffectsstrength)
+<a href="/enums#confirmmemoryeditbehavior" class="enum-link" data-tooltip="All=0 · SellOnly=1 · Off=2">ConfirmMemoryEditBehavior</a> · <a href="/enums#damagenumbervisibility" class="enum-link" data-tooltip="Off=0 · MineOnly=1 · All=2">DamageNumberVisibility</a> · <a href="/enums#reduceotherplayereffectsstrength" class="enum-link" data-tooltip="Low=0 · Medium=1 · High=2 · VeryHigh=3 · Hide=4">ReduceOtherPlayerEffectsStrength</a>
 
 :::

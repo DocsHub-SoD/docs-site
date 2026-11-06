@@ -56,6 +56,6 @@ public class ExampleModConfig : ModConfig
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`Quality4Levels`](/enums#quality4levels)
+<a href="/enums#quality4levels" class="enum-link" data-tooltip="Low=1 · Medium=2 · High=3 · Ultra=4">Quality4Levels</a>
 
 :::

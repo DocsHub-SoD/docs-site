@@ -52,6 +52,6 @@ public object Clone()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`MouseButton`](/enums#mousebutton)
+<a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a>
 
 :::

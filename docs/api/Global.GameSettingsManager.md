@@ -266,6 +266,6 @@ public void ValidateBannedItems(bool printMessage)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AllowMidJoinType`](/enums#allowmidjointype) · [`GameState`](/enums#gamestate) · [`MidJoinBanType`](/enums#midjoinbantype) · [`MidJoinWaitType`](/enums#midjoinwaittype) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#allowmidjointype" class="enum-link" data-tooltip="AllowAll=0 · RejoinOnly=1 · Disallow=2">AllowMidJoinType</a> · <a href="/enums#gamestate" class="enum-link" data-tooltip="InLobby=0 · Starting=1 · InGame=2">GameState</a> · <a href="/enums#midjoinbantype" class="enum-link" data-tooltip="None=0 · GameHasEnded=1 · TooLateToJoin=2">MidJoinBanType</a> · <a href="/enums#midjoinwaittype" class="enum-link" data-tooltip="None=0 · BeforeBossFight=10 · FightingBoss=11 · AfterBossFight=12 · HostLoadingGame=20">MidJoinWaitType</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

@@ -54,6 +54,6 @@ public object Clone()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BackgroundAudioBehavior`](/enums#backgroundaudiobehavior)
+<a href="/enums#backgroundaudiobehavior" class="enum-link" data-tooltip="Mute=0 · MuteMusic=1 · Full=2">BackgroundAudioBehavior</a>
 
 :::

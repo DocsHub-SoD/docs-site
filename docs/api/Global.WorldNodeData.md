@@ -159,6 +159,6 @@ public bool IsSidetrackNode()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`WorldNodeStatus`](/enums#worldnodestatus) · [`WorldNodeType`](/enums#worldnodetype)
+<a href="/enums#worldnodestatus" class="enum-link" data-tooltip="Unexplored=0 · Revealed=1 · RevealedFull=2 · HasVisited=3">WorldNodeStatus</a> · <a href="/enums#worldnodetype" class="enum-link" data-tooltip="Start=0 · Combat=1 · Event=2 · Merchant=100 · Quest=101 (+2 more)">WorldNodeType</a>
 
 :::

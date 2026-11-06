@@ -40,6 +40,6 @@ public class GetNodeIndexSettings
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`WorldNodeType`](/enums#worldnodetype)
+<a href="/enums#worldnodetype" class="enum-link" data-tooltip="Start=0 · Combat=1 · Event=2 · Merchant=100 · Quest=101 (+2 more)">WorldNodeType</a>
 
 :::

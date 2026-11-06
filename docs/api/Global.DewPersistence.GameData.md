@@ -86,6 +86,6 @@ public bool Validate()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewLobbyType`](/enums#dewlobbytype)
+<a href="/enums#dewlobbytype" class="enum-link" data-tooltip="Public=0 · InviteOnly=1">DewLobbyType</a>
 
 :::

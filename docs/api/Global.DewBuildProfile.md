@@ -104,7 +104,7 @@ public bool HasFeature(BuildFeatureTag tag)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `tag` | [`BuildFeatureTag`](/api/Global.BuildFeatureTag) |  |
+| `tag` | <a href="/enums#buildfeaturetag" class="enum-link" data-tooltip="Booth=0 · Prologue=1 · UnlockEverything=2 · TravelerStory=3">BuildFeatureTag</a> |  |
 
 **Returns:** `bool`
 
@@ -147,6 +147,6 @@ public void Validate()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BuildFeatureTag`](/enums#buildfeaturetag) · [`BuildType`](/enums#buildtype) · [`DevelopmentBuildMode`](/enums#developmentbuildmode) · [`PlatformType`](/enums#platformtype) · [`RoomRewardFlowItemType`](/enums#roomrewardflowitemtype)
+<a href="/enums#buildfeaturetag" class="enum-link" data-tooltip="Booth=0 · Prologue=1 · UnlockEverything=2 · TravelerStory=3">BuildFeatureTag</a> · <a href="/enums#buildtype" class="enum-link" data-tooltip="Indev=0 · DemoLite=1 · DemoPrivate=2 · Release=3">BuildType</a> · <a href="/enums#developmentbuildmode" class="enum-link" data-tooltip="None=0 · Full=1 · LeanProfiling=2">DevelopmentBuildMode</a> · <a href="/enums#platformtype" class="enum-link" data-tooltip="DRMFREE=0 · STEAM=1 · STOVE=2">PlatformType</a> · <a href="/enums#roomrewardflowitemtype" class="enum-link" data-tooltip="None=0 · Skill=1 · Gem=2 · Any=3 · Luck=4">RoomRewardFlowItemType</a>
 
 :::

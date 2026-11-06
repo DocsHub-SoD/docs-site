@@ -52,7 +52,7 @@ public int GetSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `int`
 
@@ -67,7 +67,7 @@ public List<LoadoutStarItem> GetStarList(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`StarType`](/api/Global.StarType) |  |
+| `type` | <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a> |  |
 
 **Returns:** `System.Collections.Generic.List<T><LoadoutStarItem>`
 
@@ -105,7 +105,7 @@ public void SetSkill(HeroSkillLocation type, int value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `value` | `int` |  |
 
 :::
@@ -151,6 +151,6 @@ public bool Validate_Imp(string heroType, bool isRepair, bool checkStarLevels, D
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HeroSkillLocation`](/enums#heroskilllocation) · [`StarType`](/enums#startype)
+<a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> · <a href="/enums#startype" class="enum-link" data-tooltip="Destruction=0 · Life=1 · Imagination=2 · Flexible=3">StarType</a>
 
 :::

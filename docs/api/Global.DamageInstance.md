@@ -201,6 +201,6 @@ protected virtual bool ShouldUseDefaultAbilityTargetValidator()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`AttackEffectType`](/enums#attackeffecttype) · [`ElementalType`](/enums#elementaltype)
+<a href="/enums#attackeffecttype" class="enum-link" data-tooltip="BasicAttackMain=0 · BasicAttackSub=1 · Others=2">AttackEffectType</a> · <a href="/enums#elementaltype" class="enum-link" data-tooltip="Fire=0 · Cold=1 · Light=2 · Dark=3">ElementalType</a>
 
 :::

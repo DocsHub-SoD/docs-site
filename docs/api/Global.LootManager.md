@@ -53,7 +53,7 @@ public void SelectGemAndQuality(Rarity? rarity, out Gem gem, out int quality)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity?`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity?</a> |  |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 | `quality` | `int` |  |
 
@@ -68,7 +68,7 @@ public int SelectGemQuality(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 
 **Returns:** `int`
 
@@ -113,7 +113,7 @@ public void SelectSkillAndLevel(Rarity? rarity, out SkillTrigger skill, out int 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity?`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity?</a> |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `level` | `int` |  |
 
@@ -128,7 +128,7 @@ public int SelectSkillLevel(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
+| `rarity` | <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> |  |
 
 **Returns:** `int`
 
@@ -170,6 +170,6 @@ public Rarity SelectSkillRarity(bool isHigh = false)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DescriptionTags`](/enums#descriptiontags) · [`Rarity`](/enums#rarity) · [`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#descriptiontags" class="enum-link" data-tooltip="None=0 · Fire=1 · Cold=2 · Dark=4 · Light=8 (+7 more)">DescriptionTags</a> · <a href="/enums#rarity" class="enum-link" data-tooltip="Common=0 · Rare=1 · Epic=2 · Legendary=3 · Character=4 (+2 more)">Rarity</a> · <a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

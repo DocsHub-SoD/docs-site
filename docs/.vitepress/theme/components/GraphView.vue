@@ -5,6 +5,7 @@ const container = ref(null)
 const loading = ref(true)
 const selectedNode = ref(null)
 const hideOrphans = ref(false)
+const linkMode = ref('selected') // 'selected' | 'all'
 const searchQuery = ref('')
 const searchMatchCount = ref(0)
 const currentZoom = ref(1.0)
@@ -153,14 +154,16 @@ function initPrecomputedGraph() {
       triggerRedraw()
     })
     .linkWidth(l => {
-      if (highlightLinks.has(l)) return 2.5
+      if (highlightLinks.has(l)) return 2.4
+      if (linkMode.value === 'selected') return 0
       if (selectedNode.value || hoveredNode) return 0.5
-      return 0.85
+      return 0.75
     })
     .linkColor(l => {
       if (highlightLinks.has(l)) return 'rgba(255, 255, 255, 0.95)'
-      if (selectedNode.value || (hoveredNode && !isPanning)) return 'rgba(70, 80, 100, 0.025)' // Super subtle when a node is selected or hovered
-      return 'rgba(120, 130, 160, 0.15)'
+      if (linkMode.value === 'selected') return 'transparent'
+      if (selectedNode.value || (hoveredNode && !isPanning)) return 'rgba(70, 80, 100, 0.02)'
+      return 'rgba(120, 130, 160, 0.12)'
     })
     .linkDirectionalParticles(l => highlightLinks.has(l) ? 3 : 0)
     .linkDirectionalParticleSpeed(0.007)
@@ -465,6 +468,11 @@ function toggleOrphans() {
   applyDataToGraph(false)
 }
 
+function toggleLinkMode() {
+  linkMode.value = linkMode.value === 'selected' ? 'all' : 'selected'
+  triggerRedraw()
+}
+
 function recenterCamera() {
   graphInstance?.zoomToFit(500, 40)
 }
@@ -526,6 +534,15 @@ function onZoomSlider(e) {
           @click="toggleOrphans"
         >
           {{ hideOrphans ? 'Show Orphans' : 'Hide Orphans' }}
+        </button>
+
+        <button 
+          :class="['link-mode-toggle', { active: linkMode === 'all' }]"
+          @click="toggleLinkMode"
+          :title="linkMode === 'selected' ? 'Links show only for active node (Clean view). Click to show all links.' : 'Showing all links. Click to show only on selection.'"
+        >
+          <span class="link-icon">☍</span>
+          {{ linkMode === 'selected' ? 'Links: On Select' : 'Links: Show All' }}
         </button>
 
         <button class="reset-camera-btn" @click="recenterCamera">Recenter</button>
@@ -720,7 +737,7 @@ function onZoomSlider(e) {
   border-color: var(--vp-c-brand-1);
 }
 
-.orphan-toggle, .reset-camera-btn {
+.orphan-toggle, .reset-camera-btn, .link-mode-toggle {
   padding: 0.35rem 0.75rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
@@ -729,11 +746,19 @@ function onZoomSlider(e) {
   font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.orphan-toggle.active {
+.orphan-toggle.active, .link-mode-toggle.active {
   border-color: var(--vp-c-brand-1);
   color: var(--vp-c-brand-1);
+}
+
+.link-icon {
+  font-size: 0.95em;
+  opacity: 0.85;
 }
 
 .domain-pills-bar {

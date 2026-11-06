@@ -81,6 +81,6 @@ public void Validate()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`Quality3Levels`](/enums#quality3levels) · [`Quality4Levels`](/enums#quality4levels) · [`QualityOff3Levels`](/enums#qualityoff3levels) · [`QualityOff4Levels`](/enums#qualityoff4levels)
+<a href="/enums#quality3levels" class="enum-link" data-tooltip="Low=1 · Medium=2 · High=3">Quality3Levels</a> · <a href="/enums#quality4levels" class="enum-link" data-tooltip="Low=1 · Medium=2 · High=3 · Ultra=4">Quality4Levels</a> · <a href="/enums#qualityoff3levels" class="enum-link" data-tooltip="Off=0 · Low=1 · Medium=2 · High=3">QualityOff3Levels</a> · <a href="/enums#qualityoff4levels" class="enum-link" data-tooltip="Off=0 · Low=1 · Medium=2 · High=3 · Ultra=4">QualityOff4Levels</a>
 
 :::

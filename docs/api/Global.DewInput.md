@@ -58,7 +58,7 @@ public static bool GetButton(MouseButton m, bool checkGameArea)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [`MouseButton`](/api/Global.MouseButton) |  |
+| `m` | <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a> |  |
 | `checkGameArea` | `bool` |  |
 
 **Returns:** `bool`
@@ -74,7 +74,7 @@ public static bool GetButton(GamepadButtonEx? g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx?`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx?</a> |  |
 
 **Returns:** `bool`
 
@@ -120,7 +120,7 @@ public static bool GetButtonDown(MouseButton m, bool checkGameArea)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [`MouseButton`](/api/Global.MouseButton) |  |
+| `m` | <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a> |  |
 | `checkGameArea` | `bool` |  |
 
 **Returns:** `bool`
@@ -136,7 +136,7 @@ public static bool GetButtonDown(GamepadButtonEx? g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx?`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx?</a> |  |
 
 **Returns:** `bool`
 
@@ -212,7 +212,7 @@ public static bool GetButtonUp(MouseButton m, bool checkGameArea)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [`MouseButton`](/api/Global.MouseButton) |  |
+| `m` | <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a> |  |
 | `checkGameArea` | `bool` |  |
 
 **Returns:** `bool`
@@ -228,7 +228,7 @@ public static bool GetButtonUp(GamepadButtonEx? g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [`GamepadButtonEx?`](/api/Global.GamepadButtonEx) |  |
+| `g` | <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx?</a> |  |
 
 **Returns:** `bool`
 
@@ -271,7 +271,7 @@ public static string GetReadableTextForCurrentMode(DewBinding b, out BindingType
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `b` | [`DewBinding`](/api/Global.DewBinding) |  |
-| `type` | [`BindingType`](/api/Global.BindingType) |  |
+| `type` | <a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> |  |
 
 **Returns:** `string`
 
@@ -302,7 +302,7 @@ public static string GetReadableTextOfGamepad(DewBinding b, out BindingType type
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `b` | [`DewBinding`](/api/Global.DewBinding) |  |
-| `type` | [`BindingType`](/api/Global.BindingType) |  |
+| `type` | <a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> |  |
 
 **Returns:** `string`
 
@@ -333,7 +333,7 @@ public static string GetReadableTextOfPC(DewBinding b, out BindingType type, int
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `b` | [`DewBinding`](/api/Global.DewBinding) |  |
-| `type` | [`BindingType`](/api/Global.BindingType) |  |
+| `type` | <a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> |  |
 | `i` | `int` |  |
 
 **Returns:** `string`
@@ -377,7 +377,7 @@ public static bool IsGameRelatedMouseInputValid(MouseButton button)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `button` | [`MouseButton`](/api/Global.MouseButton) |  |
+| `button` | <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a> |  |
 
 **Returns:** `bool`
 
@@ -408,7 +408,7 @@ public static void SetInputMode(InputMode mode)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `mode` | [`InputMode`](/api/Global.InputMode) |  |
+| `mode` | <a href="/enums#inputmode" class="enum-link" data-tooltip="KeyboardAndMouse=0 · Gamepad=1">InputMode</a> |  |
 
 :::
 
@@ -441,6 +441,6 @@ public static void StopListenAnyButton()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`BindingType`](/enums#bindingtype) · [`ControllerButtonType`](/enums#controllerbuttontype) · [`GamepadButtonEx`](/enums#gamepadbuttonex) · [`InputMode`](/enums#inputmode) · [`MouseButton`](/enums#mousebutton)
+<a href="/enums#bindingtype" class="enum-link" data-tooltip="None=0 · Keyboard=1 · Mouse=2 · Gamepad=4">BindingType</a> · <a href="/enums#controllerbuttontype" class="enum-link" data-tooltip="Xbox=1 · PlayStation=2 · Generic=3">ControllerButtonType</a> · <a href="/enums#gamepadbuttonex" class="enum-link" data-tooltip="DpadUp=0 · DpadDown=1 · DpadLeft=2 · DpadRight=3 · North=4 (+27 more)">GamepadButtonEx</a> · <a href="/enums#inputmode" class="enum-link" data-tooltip="KeyboardAndMouse=0 · Gamepad=1">InputMode</a> · <a href="/enums#mousebutton" class="enum-link" data-tooltip="None=0 · Left=1 · Right=2 · Middle=3 · Forward=4 (+3 more)">MouseButton</a>
 
 :::

@@ -124,6 +124,6 @@ public void PopulatePlayerChoices(DewPlayer player)
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

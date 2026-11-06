@@ -209,6 +209,6 @@ public bool TryGetQuest<T>(out T quest) where T : DewQuest
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`SaveVarFlags`](/enums#savevarflags)
+<a href="/enums#savevarflags" class="enum-link" data-tooltip="Default=0 · ApplyAfterCreation=1 · ApplyAfterFrameDelay=2">SaveVarFlags</a>
 
 :::

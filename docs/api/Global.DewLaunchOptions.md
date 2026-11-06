@@ -41,6 +41,6 @@ public static class DewLaunchOptions
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewTransportPreference`](/enums#dewtransportpreference)
+<a href="/enums#dewtransportpreference" class="enum-link" data-tooltip="Auto=0 · ForceEOS=1 · ForceSteam=2">DewTransportPreference</a>
 
 :::

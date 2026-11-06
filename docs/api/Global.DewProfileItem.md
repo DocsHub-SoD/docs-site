@@ -42,6 +42,6 @@ public class DewProfileItem
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`DewProfileState`](/enums#dewprofilestate)
+<a href="/enums#dewprofilestate" class="enum-link" data-tooltip="Normal=0 · Convertible=1 · UnsupportedEdition=2 · UnsupportedVersion=3 · Corrupted=4">DewProfileState</a>
 
 :::

@@ -65,6 +65,6 @@ public void SetupStationary()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`CosmeticPurchasePrerequisite`](/enums#cosmeticpurchaseprerequisite)
+<a href="/enums#cosmeticpurchaseprerequisite" class="enum-link" data-tooltip="None=0 · NightmareKillCount=1 · ReachZone=2 · HeroMastery=3 · NightmareWin=4 (+2 more)">CosmeticPurchasePrerequisite</a>
 
 :::

@@ -99,7 +99,7 @@ public void DoClickOnSkillButton(HeroSkillLocation skillType)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillType` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skillType` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 :::
 
@@ -206,7 +206,7 @@ public bool IsSlotHighlighted(HeroSkillLocation skillLoc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillLoc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skillLoc` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `bool`
 
@@ -236,7 +236,7 @@ public bool IsSlotSelectable(HeroSkillLocation skillLoc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillLoc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skillLoc` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `bool`
 
@@ -317,7 +317,7 @@ public void SetClientState_SetSkillSlot(HeroSkillLocation type, SkillTrigger ski
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `type` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 :::
@@ -346,7 +346,7 @@ public bool ShouldUseHoldToConfirm(HeroSkillLocation skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skill` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 **Returns:** `bool`
 
@@ -374,7 +374,7 @@ public void StartConfirmHold(HeroSkillLocation skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skill` | <a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a> |  |
 
 :::
 
@@ -498,6 +498,6 @@ public void UnselectGround()
 
 *Enumerations referenced in fields, properties, or method signatures:*
 
-[`HeroSkillLocation`](/enums#heroskilllocation)
+<a href="/enums#heroskilllocation" class="enum-link" data-tooltip="Q=0 · W=1 · E=2 · R=3 · Identity=4 (+1 more)">HeroSkillLocation</a>
 
 :::
