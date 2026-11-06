@@ -9,15 +9,19 @@
 public class RoomRifts : RoomComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`openedSidetrackRifts`** | `public List<string> openedSidetrackRifts` |  |
 
-## Methods
+:::
 
-### `CreateSidetrackRift(Rift_Sidetrack)`
+## Methods (3)
+
+::: details `CreateSidetrackRift(Rift_Sidetrack)`
 
 Create a sidetrack rift on adequate position. This can fail if there's no position to spawn the new rift.
 
@@ -30,16 +34,22 @@ public void CreateSidetrackRift(Rift_Sidetrack prefab)
 | :--- | :--- | :--- |
 | `prefab` | [`Rift_Sidetrack`](/api/Global.Rift_Sidetrack) |  |
 
-### `OnRoomStartServer()`
+:::
+
+::: details `OnRoomStartServer()`
 
 ```csharp
 public override void OnRoomStartServer()
 ```
 
-### `OpenRifts()`
+:::
+
+::: details `OpenRifts()`
 
 Open room exit rift.Can also spawn sidetrack rifts if combat node.
 
 ```csharp
 public void OpenRifts()
 ```
+
+:::

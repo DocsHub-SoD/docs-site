@@ -8,9 +8,9 @@
 public class EntityFootsteps : MonoBehaviour
 ```
 
-## Methods
+## Methods (1)
 
-### `DoFootstep(AnimationEvent)`
+::: details `DoFootstep(AnimationEvent)`
 
 ```csharp
 public void DoFootstep(AnimationEvent e)
@@ -20,3 +20,5 @@ public void DoFootstep(AnimationEvent e)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `e` | `UnityEngine.AnimationEvent` |  |
+
+:::

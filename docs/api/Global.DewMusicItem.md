@@ -10,7 +10,9 @@
 public class DewMusicItem : ScriptableObject, ILinkedByGuid
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,17 +23,25 @@ public class DewMusicItem : ScriptableObject, ILinkedByGuid
 | **`startTime`** | `public float startTime` |  |
 | **`volumeMultiplier`** | `public float volumeMultiplier` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`resourceId`** | `public string resourceId { get; set; }` |  |
 
-## Methods
+:::
 
-### `Play()`
+## Methods (1)
+
+::: details `Play()`
 
 ```csharp
 [Button]
 public void Play()
 ```
+
+:::

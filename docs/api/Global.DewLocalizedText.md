@@ -8,22 +8,30 @@
 public class DewLocalizedText : MonoBehaviour, ILangaugeChangedCallback
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`key`** | `public string key` |  |
 
-## Methods
+:::
 
-### `OnLanguageChanged()`
+## Methods (2)
+
+::: details `OnLanguageChanged()`
 
 ```csharp
 public void OnLanguageChanged()
 ```
 
-### `UpdateText()`
+:::
+
+::: details `UpdateText()`
 
 ```csharp
 public void UpdateText()
 ```
+
+:::

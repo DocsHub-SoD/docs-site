@@ -9,7 +9,9 @@
 public class Room_Barrier : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,58 +20,80 @@ public class Room_Barrier : DewNetworkBehaviour, ILogicUpdate
 | **`openEffect`** | `public GameObject openEffect` |  |
 | **`passThroughCollider`** | `[ShowIf("canPassThroughOneWay", true)] public DewCollider passThroughCollider` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isOpen`** | `public bool isOpen { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (8)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `Close()`
+:::
+
+::: details `Close()`
 
 ```csharp
 public void Close()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `Open()`
+:::
+
+::: details `Open()`
 
 ```csharp
 public void Open()
 ```
 
-### `Toggle()`
+:::
+
+::: details `Toggle()`
 
 ```csharp
 public void Toggle()
 ```
+
+:::

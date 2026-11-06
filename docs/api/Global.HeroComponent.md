@@ -9,8 +9,12 @@
 public abstract class HeroComponent : EntityComponent, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`hero`** | `public Hero hero { get; }` |  |
+
+:::

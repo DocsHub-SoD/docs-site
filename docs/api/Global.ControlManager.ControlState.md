@@ -8,7 +8,9 @@
 public struct ControlManager.ControlState
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public struct ControlManager.ControlState
 | **`isCastInDirectionOfMovement`** | `public bool isCastInDirectionOfMovement` |  |
 | **`trigger`** | `public AbilityTrigger trigger` |  |
 | **`type`** | `public ControlManager.ControlStateType type` |  |
+
+:::

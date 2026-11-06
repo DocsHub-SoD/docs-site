@@ -8,19 +8,25 @@
 public class EntityShellModifier
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`color`** | `public Color color { get; set; }` |  |
 | **`opacity`** | `public float opacity { get; set; }` |  |
 
-## Methods
+:::
 
-### `Stop()`
+## Methods (1)
+
+::: details `Stop()`
 
 Remove this color modifier from its parent.
 
 ```csharp
 public void Stop()
 ```
+
+:::

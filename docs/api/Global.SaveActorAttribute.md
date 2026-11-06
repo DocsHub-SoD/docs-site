@@ -9,8 +9,12 @@
 public class SaveActorAttribute : Attribute
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldBeSaved`** | `public readonly bool shouldBeSaved` |  |
+
+:::

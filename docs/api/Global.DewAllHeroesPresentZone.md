@@ -10,23 +10,33 @@
 public class DewAllHeroesPresentZone : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onActivate`** | `public UnityEvent onActivate` |  |
 | **`once`** | `public bool once` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`currentMembers`** | `public IReadOnlyList<Hero> currentMembers { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (1)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
+
+:::

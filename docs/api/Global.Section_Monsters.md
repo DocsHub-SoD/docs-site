@@ -9,7 +9,9 @@
 public class Section_Monsters : RoomSectionComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,7 +25,11 @@ public class Section_Monsters : RoomSectionComponent, ILogicUpdate
 | **`spawnMiniBossInstead`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public bool spawnMiniBossInstead` |  |
 | **`spawnPosOverride`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public Transform spawnPosOverride` |  |
 
-## Properties
+:::
+
+## Properties (6)
+
+::: details Click to expand Properties (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -34,15 +40,19 @@ public class Section_Monsters : RoomSectionComponent, ILogicUpdate
 | **`maxPopulation`** | `public float maxPopulation { get; }` |  |
 | **`population`** | `public float population { get; }` | Available on server. |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (3)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `GetSpawnPositionInSection(Func<Vector3, bool>, DewRandom)`
+:::
+
+::: details `GetSpawnPositionInSection(Func&lt;Vector3, bool&gt;, DewRandom)`
 
 Evaluator will be provided raw position without NavMesh, ground or any checks.Position got passed by evaluator might not be returned as result of this function.
 
@@ -58,7 +68,9 @@ public Vector3 GetSpawnPositionInSection(Func<Vector3, bool> evaluator = null, D
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetSpawnPositionInSection(float, float, DewRandom)`
+:::
+
+::: details `GetSpawnPositionInSection(float, float, DewRandom)`
 
 ```csharp
 public Vector3 GetSpawnPositionInSection(float minDist, float maxDist, DewRandom random = null)
@@ -72,3 +84,5 @@ public Vector3 GetSpawnPositionInSection(float minDist, float maxDist, DewRandom
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `UnityEngine.Vector3`
+
+:::

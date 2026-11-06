@@ -8,15 +8,23 @@
 public struct ResourceLoadSettings
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`loadLight`** | `public bool loadLight` | Tries to load a lighter version of the given object with unnecessary things like child game objects removed. |
 | **`varDef`** | `public VariantDef varDef` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`Light`** | `public static ResourceLoadSettings Light { get; }` |  |
+
+:::

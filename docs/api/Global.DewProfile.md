@@ -8,7 +8,9 @@
 public class DewProfile
 ```
 
-## Fields
+## Fields (57)
+
+::: details Click to expand Fields (57)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -70,9 +72,11 @@ public class DewProfile
 | **`stars`** | `public Dictionary<string, DewProfile.StarData> stars` | This is obsolete in non-demo builds. |
 | **`totalPlayTimeMinutes`** | `public long totalPlayTimeMinutes` |  |
 
-## Methods
+:::
 
-### `DiscoverArtifact(string)`
+## Methods (31)
+
+::: details `DiscoverArtifact(string)`
 
 ```csharp
 public void DiscoverArtifact(string g)
@@ -83,7 +87,9 @@ public void DiscoverArtifact(string g)
 | :--- | :--- | :--- |
 | `g` | `string` |  |
 
-### `DiscoverGem(string)`
+:::
+
+::: details `DiscoverGem(string)`
 
 ```csharp
 public bool DiscoverGem(string g)
@@ -96,7 +102,9 @@ public bool DiscoverGem(string g)
 
 **Returns:** `bool`
 
-### `DiscoverSkill(string)`
+:::
+
+::: details `DiscoverSkill(string)`
 
 ```csharp
 public bool DiscoverSkill(string s)
@@ -109,7 +117,9 @@ public bool DiscoverSkill(string s)
 
 **Returns:** `bool`
 
-### `GetLockedGemCount()`
+:::
+
+::: details `GetLockedGemCount()`
 
 ```csharp
 public int GetLockedGemCount()
@@ -117,7 +127,9 @@ public int GetLockedGemCount()
 
 **Returns:** `int`
 
-### `GetLockedLucidDreamsCount()`
+:::
+
+::: details `GetLockedLucidDreamsCount()`
 
 ```csharp
 public int GetLockedLucidDreamsCount()
@@ -125,7 +137,9 @@ public int GetLockedLucidDreamsCount()
 
 **Returns:** `int`
 
-### `GetLockedSkillCount()`
+:::
+
+::: details `GetLockedSkillCount()`
 
 ```csharp
 public int GetLockedSkillCount()
@@ -133,7 +147,9 @@ public int GetLockedSkillCount()
 
 **Returns:** `int`
 
-### `GetPreferredGameSettings(string)`
+:::
+
+::: details `GetPreferredGameSettings(string)`
 
 ```csharp
 public PreferredGameSettings GetPreferredGameSettings(string key = null)
@@ -146,7 +162,9 @@ public PreferredGameSettings GetPreferredGameSettings(string key = null)
 
 **Returns:** `PreferredGameSettings`
 
-### `GetUnlockedGemCount()`
+:::
+
+::: details `GetUnlockedGemCount()`
 
 ```csharp
 public int GetUnlockedGemCount()
@@ -154,7 +172,9 @@ public int GetUnlockedGemCount()
 
 **Returns:** `int`
 
-### `GetUnlockedLucidDreamsCount()`
+:::
+
+::: details `GetUnlockedLucidDreamsCount()`
 
 ```csharp
 public int GetUnlockedLucidDreamsCount()
@@ -162,7 +182,9 @@ public int GetUnlockedLucidDreamsCount()
 
 **Returns:** `int`
 
-### `GetUnlockedSkillCount()`
+:::
+
+::: details `GetUnlockedSkillCount()`
 
 ```csharp
 public int GetUnlockedSkillCount()
@@ -170,7 +192,9 @@ public int GetUnlockedSkillCount()
 
 **Returns:** `int`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 This is called on new profiles.
 
@@ -178,7 +202,9 @@ This is called on new profiles.
 public void Initialize()
 ```
 
-### `LockAccessory(string)`
+:::
+
+::: details `LockAccessory(string)`
 
 ```csharp
 public void LockAccessory(string accName)
@@ -189,7 +215,9 @@ public void LockAccessory(string accName)
 | :--- | :--- | :--- |
 | `accName` | `string` |  |
 
-### `LockEmote(string)`
+:::
+
+::: details `LockEmote(string)`
 
 ```csharp
 public void LockEmote(string emoteName)
@@ -200,7 +228,9 @@ public void LockEmote(string emoteName)
 | :--- | :--- | :--- |
 | `emoteName` | `string` |  |
 
-### `LockGem(string)`
+:::
+
+::: details `LockGem(string)`
 
 ```csharp
 public void LockGem(string g)
@@ -211,7 +241,9 @@ public void LockGem(string g)
 | :--- | :--- | :--- |
 | `g` | `string` |  |
 
-### `LockHero(string)`
+:::
+
+::: details `LockHero(string)`
 
 ```csharp
 public void LockHero(string s)
@@ -222,7 +254,9 @@ public void LockHero(string s)
 | :--- | :--- | :--- |
 | `s` | `string` |  |
 
-### `LockLucidDream(string)`
+:::
+
+::: details `LockLucidDream(string)`
 
 ```csharp
 public void LockLucidDream(string l)
@@ -233,7 +267,9 @@ public void LockLucidDream(string l)
 | :--- | :--- | :--- |
 | `l` | `string` |  |
 
-### `LockNametag(string)`
+:::
+
+::: details `LockNametag(string)`
 
 ```csharp
 public void LockNametag(string ntName)
@@ -244,7 +280,9 @@ public void LockNametag(string ntName)
 | :--- | :--- | :--- |
 | `ntName` | `string` |  |
 
-### `LockSkill(string)`
+:::
+
+::: details `LockSkill(string)`
 
 ```csharp
 public void LockSkill(string s)
@@ -255,7 +293,9 @@ public void LockSkill(string s)
 | :--- | :--- | :--- |
 | `s` | `string` |  |
 
-### `LockSkin(string)`
+:::
+
+::: details `LockSkin(string)`
 
 ```csharp
 public void LockSkin(string ntName)
@@ -266,7 +306,9 @@ public void LockSkin(string ntName)
 | :--- | :--- | :--- |
 | `ntName` | `string` |  |
 
-### `RefundPurchase(Func<PurchaseData, bool>)`
+:::
+
+::: details `RefundPurchase(Func&lt;PurchaseData, bool&gt;)`
 
 ```csharp
 public int RefundPurchase(Func<DewProfile.PurchaseData, bool> condition)
@@ -279,7 +321,9 @@ public int RefundPurchase(Func<DewProfile.PurchaseData, bool> condition)
 
 **Returns:** `int`
 
-### `UnlockAccessory(string, string)`
+:::
+
+::: details `UnlockAccessory(string, string)`
 
 ```csharp
 public void UnlockAccessory(string accName, string ownershipKey)
@@ -291,7 +335,9 @@ public void UnlockAccessory(string accName, string ownershipKey)
 | `accName` | `string` |  |
 | `ownershipKey` | `string` |  |
 
-### `UnlockEmote(string, string)`
+:::
+
+::: details `UnlockEmote(string, string)`
 
 ```csharp
 public void UnlockEmote(string emoteName, string ownershipKey)
@@ -303,7 +349,9 @@ public void UnlockEmote(string emoteName, string ownershipKey)
 | `emoteName` | `string` |  |
 | `ownershipKey` | `string` |  |
 
-### `UnlockGem(string)`
+:::
+
+::: details `UnlockGem(string)`
 
 ```csharp
 public void UnlockGem(string g)
@@ -314,7 +362,9 @@ public void UnlockGem(string g)
 | :--- | :--- | :--- |
 | `g` | `string` |  |
 
-### `UnlockHero(string)`
+:::
+
+::: details `UnlockHero(string)`
 
 ```csharp
 public void UnlockHero(string s)
@@ -325,7 +375,9 @@ public void UnlockHero(string s)
 | :--- | :--- | :--- |
 | `s` | `string` |  |
 
-### `UnlockLucidDream(string)`
+:::
+
+::: details `UnlockLucidDream(string)`
 
 ```csharp
 public void UnlockLucidDream(string l)
@@ -336,7 +388,9 @@ public void UnlockLucidDream(string l)
 | :--- | :--- | :--- |
 | `l` | `string` |  |
 
-### `UnlockNametag(string, string)`
+:::
+
+::: details `UnlockNametag(string, string)`
 
 ```csharp
 public void UnlockNametag(string ntName, string ownershipKey)
@@ -348,7 +402,9 @@ public void UnlockNametag(string ntName, string ownershipKey)
 | `ntName` | `string` |  |
 | `ownershipKey` | `string` |  |
 
-### `UnlockServerGeneratedItem(DecryptedItemData)`
+:::
+
+::: details `UnlockServerGeneratedItem(DecryptedItemData)`
 
 ```csharp
 public void UnlockServerGeneratedItem(DecryptedItemData item)
@@ -359,7 +415,9 @@ public void UnlockServerGeneratedItem(DecryptedItemData item)
 | :--- | :--- | :--- |
 | `item` | `DecryptedItemData` |  |
 
-### `UnlockSkill(string)`
+:::
+
+::: details `UnlockSkill(string)`
 
 ```csharp
 public void UnlockSkill(string s)
@@ -370,7 +428,9 @@ public void UnlockSkill(string s)
 | :--- | :--- | :--- |
 | `s` | `string` |  |
 
-### `UnlockSkin(string, string)`
+:::
+
+::: details `UnlockSkin(string, string)`
 
 ```csharp
 public void UnlockSkin(string ntName, string ownershipKey)
@@ -382,7 +442,9 @@ public void UnlockSkin(string ntName, string ownershipKey)
 | `ntName` | `string` |  |
 | `ownershipKey` | `string` |  |
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 Must be called at least once before using this profile. Does error checking and validation.
 
@@ -390,7 +452,9 @@ Must be called at least once before using this profile. Does error checking and 
 public void Validate()
 ```
 
-### `ValidateProfileName(string)`
+:::
+
+::: details `ValidateProfileName(string)`
 
 ```csharp
 public static bool ValidateProfileName(string name)
@@ -402,3 +466,5 @@ public static bool ValidateProfileName(string name)
 | `name` | `string` |  |
 
 **Returns:** `bool`
+
+:::

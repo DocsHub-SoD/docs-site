@@ -8,8 +8,12 @@
 public struct CounterBool
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`count`** | `public int count { get; }` |  |
+
+:::

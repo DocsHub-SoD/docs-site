@@ -9,34 +9,46 @@
 public class FPSManager : ManagerBase<FPSManager>, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldRegisterUpdates`** | `public override bool shouldRegisterUpdates { get; }` |  |
 
-## Methods
+:::
 
-### `OnDisable()`
+## Methods (4)
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `UpdateFPSLimit()`
+:::
+
+::: details `UpdateFPSLimit()`
 
 ```csharp
 public void UpdateFPSLimit()
 ```
+
+:::

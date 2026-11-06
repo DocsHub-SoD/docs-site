@@ -10,7 +10,9 @@
 public class DewBeamRenderer : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,27 +22,35 @@ public class DewBeamRenderer : LogicBehaviour, ILogicUpdate
 | **`lineRenderer`** | `public LineRenderer lineRenderer` |  |
 | **`startEffect`** | `public GameObject startEffect` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (6)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `SetEndPoint(Vector3)`
+:::
+
+::: details `SetEndPoint(Vector3)`
 
 ```csharp
 public void SetEndPoint(Vector3 point)
@@ -51,7 +61,9 @@ public void SetEndPoint(Vector3 point)
 | :--- | :--- | :--- |
 | `point` | `UnityEngine.Vector3` |  |
 
-### `SetPoints(Vector3, Vector3)`
+:::
+
+::: details `SetPoints(Vector3, Vector3)`
 
 ```csharp
 public void SetPoints(Vector3 start, Vector3 end)
@@ -63,7 +75,9 @@ public void SetPoints(Vector3 start, Vector3 end)
 | `start` | `UnityEngine.Vector3` |  |
 | `end` | `UnityEngine.Vector3` |  |
 
-### `SetStartPoint(Vector3)`
+:::
+
+::: details `SetStartPoint(Vector3)`
 
 ```csharp
 public void SetStartPoint(Vector3 point)
@@ -73,3 +87,5 @@ public void SetStartPoint(Vector3 point)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `point` | `UnityEngine.Vector3` |  |
+
+:::

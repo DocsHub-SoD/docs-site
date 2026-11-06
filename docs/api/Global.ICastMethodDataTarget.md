@@ -8,9 +8,13 @@
 public interface ICastMethodDataTarget
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`radius`** | `float radius { get; }` |  |
 | **`range`** | `float range { get; }` |  |
+
+:::

@@ -8,7 +8,9 @@
 public class DewRoomMetadata : ScriptableObject
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class DewRoomMetadata : ScriptableObject
 | **`customRules`** | `public List<MonsterSpawnRule> customRules` |  |
 | **`hasSectionWithNoNodes`** | `public bool hasSectionWithNoNodes` |  |
 | **`sceneActors`** | `public List<string> sceneActors` |  |
+
+:::

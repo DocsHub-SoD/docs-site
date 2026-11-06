@@ -9,7 +9,9 @@
 public class PCBind
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,12 +19,16 @@ public class PCBind
 | **`modifiers`** | `public List<Key> modifiers` |  |
 | **`mouse`** | `public MouseButton mouse` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (1)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
 ```
 
 **Returns:** `object`
+
+:::

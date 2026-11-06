@@ -11,7 +11,9 @@
 public class DewAnimationClip : ScriptableObject, ILinkedByGuid
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,15 +23,21 @@ public class DewAnimationClip : ScriptableObject, ILinkedByGuid
 | **`overrideWalk`** | `[InfoBox("Override Walk cannot be Full if animating only upper body!", InfoMessageType.Error, null, VisibleIf = "@onlyUpperBody && overrideWalk == DewAnimationClip.OverrideWalkBehavior.Full")] public DewAnimationClip.OverrideWalkBehavior overrideWalk` |  |
 | **`overrideWalkNormalizedDuration`** | `[ShowIf("@overrideWalk != OverrideWalkBehavior.None", true)] public float overrideWalkNormalizedDuration` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`resourceId`** | `public string resourceId { get; set; }` |  |
 
-## Methods
+:::
 
-### `GetEntry()`
+## Methods (6)
+
+::: details `GetEntry()`
 
 ```csharp
 public DewAnimationEntry GetEntry()
@@ -37,7 +45,9 @@ public DewAnimationEntry GetEntry()
 
 **Returns:** `DewAnimationEntry`
 
-### `GetEntry(int)`
+:::
+
+::: details `GetEntry(int)`
 
 ```csharp
 public DewAnimationEntry GetEntry(int index)
@@ -50,7 +60,9 @@ public DewAnimationEntry GetEntry(int index)
 
 **Returns:** `DewAnimationEntry`
 
-### `GetEntry(float)`
+:::
+
+::: details `GetEntry(float)`
 
 ```csharp
 public DewAnimationEntry GetEntry(float value)
@@ -63,7 +75,9 @@ public DewAnimationEntry GetEntry(float value)
 
 **Returns:** `DewAnimationEntry`
 
-### `GetEntryIndex()`
+:::
+
+::: details `GetEntryIndex()`
 
 ```csharp
 public int GetEntryIndex()
@@ -71,7 +85,9 @@ public int GetEntryIndex()
 
 **Returns:** `int`
 
-### `GetEntryIndex(float, int)`
+:::
+
+::: details `GetEntryIndex(float, int)`
 
 ```csharp
 public static int GetEntryIndex(float clipSelectValue, int entriesLength)
@@ -85,7 +101,9 @@ public static int GetEntryIndex(float clipSelectValue, int entriesLength)
 
 **Returns:** `int`
 
-### `GetEntryIndex(float)`
+:::
+
+::: details `GetEntryIndex(float)`
 
 ```csharp
 public int GetEntryIndex(float clipSelectValue)
@@ -97,3 +115,5 @@ public int GetEntryIndex(float clipSelectValue)
 | `clipSelectValue` | `float` |  |
 
 **Returns:** `int`
+
+:::

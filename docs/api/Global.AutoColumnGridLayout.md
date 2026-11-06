@@ -10,7 +10,9 @@
 public class AutoColumnGridLayout : GridLayoutGroup
 ```
 
-## Properties
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,36 +20,48 @@ public class AutoColumnGridLayout : GridLayoutGroup
 | **`MaxColumns`** | `public int MaxColumns { get; set; }` |  |
 | **`MinColumns`** | `public int MinColumns { get; set; }` |  |
 
-## Methods
+:::
 
-### `OnDidApplyAnimationProperties()`
+## Methods (5)
+
+::: details `OnDidApplyAnimationProperties()`
 
 ```csharp
 protected override void OnDidApplyAnimationProperties()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `OnRectTransformDimensionsChange()`
+:::
+
+::: details `OnRectTransformDimensionsChange()`
 
 ```csharp
 protected override void OnRectTransformDimensionsChange()
 ```
 
-### `OnTransformParentChanged()`
+:::
+
+::: details `OnTransformParentChanged()`
 
 ```csharp
 protected override void OnTransformParentChanged()
 ```
 
-### `UpdateColumnCount()`
+:::
+
+::: details `UpdateColumnCount()`
 
 Updates the column count based on the available parent width and cell size.
 
 ```csharp
 public void UpdateColumnCount()
 ```
+
+:::

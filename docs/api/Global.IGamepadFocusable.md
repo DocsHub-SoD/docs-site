@@ -8,9 +8,9 @@
 public interface IGamepadFocusable : IGamepadFocusListener
 ```
 
-## Methods
+## Methods (5)
 
-### `CanBeFocused()`
+::: details `CanBeFocused()`
 
 ```csharp
 bool CanBeFocused()
@@ -18,7 +18,9 @@ bool CanBeFocused()
 
 **Returns:** `bool`
 
-### `CanHoldConfirmToRepeat()`
+:::
+
+::: details `CanHoldConfirmToRepeat()`
 
 ```csharp
 bool CanHoldConfirmToRepeat()
@@ -26,7 +28,9 @@ bool CanHoldConfirmToRepeat()
 
 **Returns:** `bool`
 
-### `GetBehavior()`
+:::
+
+::: details `GetBehavior()`
 
 ```csharp
 FocusableBehavior GetBehavior()
@@ -34,7 +38,9 @@ FocusableBehavior GetBehavior()
 
 **Returns:** `FocusableBehavior`
 
-### `GetSelectionDisplayType()`
+:::
+
+::: details `GetSelectionDisplayType()`
 
 ```csharp
 SelectionDisplayType GetSelectionDisplayType()
@@ -42,10 +48,14 @@ SelectionDisplayType GetSelectionDisplayType()
 
 **Returns:** `SelectionDisplayType`
 
-### `GetTransform()`
+:::
+
+::: details `GetTransform()`
 
 ```csharp
 RectTransform GetTransform()
 ```
 
 **Returns:** `UnityEngine.RectTransform`
+
+:::

@@ -8,7 +8,9 @@
 public class Intro_SubtitleController : MonoBehaviour
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,15 +18,19 @@ public class Intro_SubtitleController : MonoBehaviour
 | **`subtitleObject`** | `public GameObject subtitleObject` |  |
 | **`text`** | `public TextMeshProUGUI text` |  |
 
-## Methods
+:::
 
-### `AdvanceSubtitle()`
+## Methods (2)
+
+::: details `AdvanceSubtitle()`
 
 ```csharp
 public void AdvanceSubtitle()
 ```
 
-### `AdvanceSubtitle(float)`
+:::
+
+::: details `AdvanceSubtitle(float)`
 
 ```csharp
 public void AdvanceSubtitle(float duration)
@@ -34,3 +40,5 @@ public void AdvanceSubtitle(float duration)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `duration` | `float` |  |
+
+:::

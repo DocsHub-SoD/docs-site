@@ -9,16 +9,22 @@
 public class NetworkLogicPackage : ManagerBase<NetworkLogicPackage>, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`networkIdentities`** | `public List<NetworkIdentity> networkIdentities` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (1)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
+
+:::

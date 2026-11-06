@@ -8,10 +8,14 @@
 public struct FinalHealData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`amount`** | `public float amount` |  |
 | **`discardedAmount`** | `public float discardedAmount` |  |
 | **`isCrit`** | `public bool isCrit` |  |
+
+:::

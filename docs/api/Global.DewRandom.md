@@ -8,7 +8,9 @@
 public class DewRandom
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,9 +21,11 @@ public class DewRandom
 | **`s2`** | `public uint s2` |  |
 | **`s3`** | `public uint s3` |  |
 
-## Methods
+:::
 
-### `ColorHSV(float, float, float, float, float, float, float, float)`
+## Methods (16)
+
+::: details `ColorHSV(float, float, float, float, float, float, float, float)`
 
 ```csharp
 public Color ColorHSV(float hueMin = 0, float hueMax = 1, float satMin = 0, float satMax = 1, float valMin = 0, float valMax = 1, float alphaMin = 1, float alphaMax = 1)
@@ -41,7 +45,9 @@ public Color ColorHSV(float hueMin = 0, float hueMax = 1, float satMin = 0, floa
 
 **Returns:** `UnityEngine.Color`
 
-### `GetRandomSeed()`
+:::
+
+::: details `GetRandomSeed()`
 
 ```csharp
 public static uint GetRandomSeed()
@@ -49,7 +55,9 @@ public static uint GetRandomSeed()
 
 **Returns:** `uint`
 
-### `InsideUnitCircle()`
+:::
+
+::: details `InsideUnitCircle()`
 
 ```csharp
 public Vector2 InsideUnitCircle()
@@ -57,7 +65,9 @@ public Vector2 InsideUnitCircle()
 
 **Returns:** `UnityEngine.Vector2`
 
-### `InsideUnitSphere()`
+:::
+
+::: details `InsideUnitSphere()`
 
 ```csharp
 public Vector3 InsideUnitSphere()
@@ -65,7 +75,9 @@ public Vector3 InsideUnitSphere()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `NextDouble()`
+:::
+
+::: details `NextDouble()`
 
 ```csharp
 public double NextDouble()
@@ -73,7 +85,9 @@ public double NextDouble()
 
 **Returns:** `double`
 
-### `NextFloat()`
+:::
+
+::: details `NextFloat()`
 
 ```csharp
 public float NextFloat()
@@ -81,7 +95,9 @@ public float NextFloat()
 
 **Returns:** `float`
 
-### `NextFloat(float, float)`
+:::
+
+::: details `NextFloat(float, float)`
 
 ```csharp
 public float NextFloat(float min, float max)
@@ -95,7 +111,9 @@ public float NextFloat(float min, float max)
 
 **Returns:** `float`
 
-### `NextUInt32()`
+:::
+
+::: details `NextUInt32()`
 
 ```csharp
 public uint NextUInt32()
@@ -103,7 +121,9 @@ public uint NextUInt32()
 
 **Returns:** `uint`
 
-### `OnUnitSphere()`
+:::
+
+::: details `OnUnitSphere()`
 
 ```csharp
 public Vector3 OnUnitSphere()
@@ -111,7 +131,9 @@ public Vector3 OnUnitSphere()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `Range(int, int)`
+:::
+
+::: details `Range(int, int)`
 
 ```csharp
 public int Range(int minInclusive, int maxExclusive)
@@ -125,7 +147,9 @@ public int Range(int minInclusive, int maxExclusive)
 
 **Returns:** `int`
 
-### `Range(float, float)`
+:::
+
+::: details `Range(float, float)`
 
 ```csharp
 public float Range(float min, float max)
@@ -139,7 +163,9 @@ public float Range(float min, float max)
 
 **Returns:** `float`
 
-### `Rotation()`
+:::
+
+::: details `Rotation()`
 
 ```csharp
 public Quaternion Rotation()
@@ -147,7 +173,9 @@ public Quaternion Rotation()
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `RotationUniform()`
+:::
+
+::: details `RotationUniform()`
 
 ```csharp
 public Quaternion RotationUniform()
@@ -155,7 +183,9 @@ public Quaternion RotationUniform()
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `SetSeed(uint)`
+:::
+
+::: details `SetSeed(uint)`
 
 ```csharp
 public void SetSeed(uint seed)
@@ -166,7 +196,9 @@ public void SetSeed(uint seed)
 | :--- | :--- | :--- |
 | `seed` | `uint` |  |
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
@@ -174,10 +206,14 @@ public override string ToString()
 
 **Returns:** `string`
 
-### `Value()`
+:::
+
+::: details `Value()`
 
 ```csharp
 public float Value()
 ```
 
 **Returns:** `float`
+
+:::

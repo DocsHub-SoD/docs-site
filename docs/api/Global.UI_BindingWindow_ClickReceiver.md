@@ -8,9 +8,9 @@
 public class UI_BindingWindow_ClickReceiver : MonoBehaviour
 ```
 
-## Methods
+## Methods (1)
 
-### `OnPointerClick(PointerEventData)`
+::: details `OnPointerClick(PointerEventData)`
 
 ```csharp
 public void OnPointerClick(PointerEventData eventData)
@@ -20,3 +20,5 @@ public void OnPointerClick(PointerEventData eventData)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
+
+:::

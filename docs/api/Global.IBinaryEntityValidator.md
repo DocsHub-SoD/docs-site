@@ -8,9 +8,9 @@
 public interface IBinaryEntityValidator
 ```
 
-## Methods
+## Methods (1)
 
-### `Evaluate(Entity, Entity)`
+::: details `Evaluate(Entity, Entity)`
 
 ```csharp
 bool Evaluate(Entity self, Entity target)
@@ -23,3 +23,5 @@ bool Evaluate(Entity self, Entity target)
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

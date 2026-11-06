@@ -8,7 +8,9 @@
 public static class DewMod
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,7 +23,11 @@ public static class DewMod
 | **`onModLoadEnded`** | `public static SafeAction onModLoadEnded` |  |
 | **`onModLoadStarted`** | `public static SafeAction onModLoadStarted` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,9 +35,11 @@ public static class DewMod
 | **`isGameplayAltered`** | `public static bool isGameplayAltered { get; }` | Has the game's gameplay been modified by mods? When this is true, a mod icon will be shown on your lobby when you host a game. |
 | **`isLoadingMod`** | `public static bool isLoadingMod { get; }` |  |
 
-## Methods
+:::
 
-### `BuildJsonOverrideOriginal(string)`
+## Methods (18)
+
+::: details `BuildJsonOverrideOriginal(string)`
 
 ```csharp
 public static void BuildJsonOverrideOriginal(string typeName)
@@ -42,13 +50,17 @@ public static void BuildJsonOverrideOriginal(string typeName)
 | :--- | :--- | :--- |
 | `typeName` | `string` |  |
 
-### `BuildJsonOverrideOriginalsFull()`
+:::
+
+::: details `BuildJsonOverrideOriginalsFull()`
 
 ```csharp
 public static void BuildJsonOverrideOriginalsFull()
 ```
 
-### `CreateItem()`
+:::
+
+::: details `CreateItem()`
 
 ```csharp
 public static UniTask<CreateItemResult_t> CreateItem()
@@ -56,7 +68,9 @@ public static UniTask<CreateItemResult_t> CreateItem()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask<T><CreateItemResult_t>`
 
-### `DeleteItem(PublishedFileId_t)`
+:::
+
+::: details `DeleteItem(PublishedFileId_t)`
 
 ```csharp
 public static UniTask<DeleteItemResult_t> DeleteItem(PublishedFileId_t id)
@@ -69,25 +83,33 @@ public static UniTask<DeleteItemResult_t> DeleteItem(PublishedFileId_t id)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask<T><DeleteItemResult_t>`
 
-### `DisableAutoReload()`
+:::
+
+::: details `DisableAutoReload()`
 
 ```csharp
 public static void DisableAutoReload()
 ```
 
-### `EnableAutoReload()`
+:::
+
+::: details `EnableAutoReload()`
 
 ```csharp
 public static void EnableAutoReload()
 ```
 
-### `EndRegisterJsonOverride()`
+:::
+
+::: details `EndRegisterJsonOverride()`
 
 ```csharp
 public static void EndRegisterJsonOverride()
 ```
 
-### `GetAllLocalModDirectories()`
+:::
+
+::: details `GetAllLocalModDirectories()`
 
 ```csharp
 public static List<string> GetAllLocalModDirectories()
@@ -95,7 +117,9 @@ public static List<string> GetAllLocalModDirectories()
 
 **Returns:** `System.Collections.Generic.List<T><string>`
 
-### `GetSortedModsList(List<ModItem>)`
+:::
+
+::: details `GetSortedModsList(List&lt;ModItem&gt;)`
 
 ```csharp
 public static List<ModItem> GetSortedModsList(List<ModItem> list)
@@ -108,7 +132,9 @@ public static List<ModItem> GetSortedModsList(List<ModItem> list)
 
 **Returns:** `System.Collections.Generic.List<T><ModItem>`
 
-### `Load(string)`
+:::
+
+::: details `Load(string)`
 
 ```csharp
 public static void Load(string id)
@@ -119,7 +145,9 @@ public static void Load(string id)
 | :--- | :--- | :--- |
 | `id` | `string` |  |
 
-### `OpenConfigWindow(LoadedModInstance)`
+:::
+
+::: details `OpenConfigWindow(LoadedModInstance)`
 
 ```csharp
 public static void OpenConfigWindow(LoadedModInstance mod)
@@ -130,13 +158,17 @@ public static void OpenConfigWindow(LoadedModInstance mod)
 | :--- | :--- | :--- |
 | `mod` | [`LoadedModInstance`](/api/Global.LoadedModInstance) |  |
 
-### `Refresh()`
+:::
+
+::: details `Refresh()`
 
 ```csharp
 public static void Refresh()
 ```
 
-### `RegisterJsonOverride(JsonOverrideItem, bool)`
+:::
+
+::: details `RegisterJsonOverride(JsonOverrideItem, bool)`
 
 ```csharp
 public static void RegisterJsonOverride(JsonOverrideItem item, bool isFromServer = false)
@@ -148,7 +180,9 @@ public static void RegisterJsonOverride(JsonOverrideItem item, bool isFromServer
 | `item` | [`JsonOverrideItem`](/api/Global.JsonOverrideItem) |  |
 | `isFromServer` | `bool` |  |
 
-### `RegisterJsonOverride(string)`
+:::
+
+::: details `RegisterJsonOverride(string)`
 
 ```csharp
 public static void RegisterJsonOverride(string path)
@@ -159,7 +193,9 @@ public static void RegisterJsonOverride(string path)
 | :--- | :--- | :--- |
 | `path` | `string` |  |
 
-### `RegisterJsonOverridesInDirectory(string)`
+:::
+
+::: details `RegisterJsonOverridesInDirectory(string)`
 
 ```csharp
 public static void RegisterJsonOverridesInDirectory(string dir)
@@ -170,13 +206,17 @@ public static void RegisterJsonOverridesInDirectory(string dir)
 | :--- | :--- | :--- |
 | `dir` | `string` |  |
 
-### `ReloadFromActiveMods()`
+:::
+
+::: details `ReloadFromActiveMods()`
 
 ```csharp
 public static void ReloadFromActiveMods()
 ```
 
-### `StartRegisterJsonOverride(bool)`
+:::
+
+::: details `StartRegisterJsonOverride(bool)`
 
 You must call this before registering any overrides.
 
@@ -189,7 +229,9 @@ public static void StartRegisterJsonOverride(bool willRegisterAcrossMultipleFram
 | :--- | :--- | :--- |
 | `willRegisterAcrossMultipleFrames` | `bool` |  |
 
-### `UpdateItem(PublishedFileId_t, ModItem)`
+:::
+
+::: details `UpdateItem(PublishedFileId_t, ModItem)`
 
 ```csharp
 public static UniTask<SubmitItemUpdateResult_t> UpdateItem(PublishedFileId_t id, ModItem item)
@@ -202,3 +244,5 @@ public static UniTask<SubmitItemUpdateResult_t> UpdateItem(PublishedFileId_t id,
 | `item` | [`ModItem`](/api/Global.ModItem) |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask<T><SubmitItemUpdateResult_t>`
+
+:::

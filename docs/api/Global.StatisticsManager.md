@@ -9,8 +9,12 @@
 public class StatisticsManager : ManagerBase<StatisticsManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`collectStatistics`** | `public bool collectStatistics` |  |
+
+:::

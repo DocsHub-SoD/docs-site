@@ -10,15 +10,19 @@
 public class AbilityTargetValidator : IBinaryEntityValidator
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`targets`** | `[HideLabel] [EnumToggleButtons] public EntityRelation targets` |  |
 
-## Methods
+:::
 
-### `Evaluate(Entity, Entity)`
+## Methods (1)
+
+::: details `Evaluate(Entity, Entity)`
 
 ```csharp
 public bool Evaluate(Entity self, Entity target)
@@ -31,3 +35,5 @@ public bool Evaluate(Entity self, Entity target)
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

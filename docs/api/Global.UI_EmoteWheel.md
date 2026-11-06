@@ -9,7 +9,9 @@
 public class UI_EmoteWheel : SingletonBehaviour<UI_EmoteWheel>, ISettingsChangedCallback
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,15 +24,21 @@ public class UI_EmoteWheel : SingletonBehaviour<UI_EmoteWheel>, ISettingsChanged
 | **`lineRenderer`** | `public UILineRenderer lineRenderer` |  |
 | **`wheelItems`** | `public UI_EmoteWheel_Item[] wheelItems` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isShown`** | `public bool isShown { get; }` |  |
 
-## Methods
+:::
 
-### `CheckValid()`
+## Methods (3)
+
+::: details `CheckValid()`
 
 ```csharp
 public bool CheckValid()
@@ -38,14 +46,20 @@ public bool CheckValid()
 
 **Returns:** `bool`
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `Show()`
+:::
+
+::: details `Show()`
 
 ```csharp
 public void Show()
 ```
+
+:::

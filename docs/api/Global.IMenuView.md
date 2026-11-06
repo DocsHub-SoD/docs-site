@@ -8,9 +8,9 @@
 public interface IMenuView
 ```
 
-## Methods
+## Methods (4)
 
-### `CanShowMenu()`
+::: details `CanShowMenu()`
 
 ```csharp
 bool CanShowMenu()
@@ -18,13 +18,17 @@ bool CanShowMenu()
 
 **Returns:** `bool`
 
-### `HideMenu()`
+:::
+
+::: details `HideMenu()`
 
 ```csharp
 void HideMenu()
 ```
 
-### `IsShowing()`
+:::
+
+::: details `IsShowing()`
 
 ```csharp
 bool IsShowing()
@@ -32,8 +36,12 @@ bool IsShowing()
 
 **Returns:** `bool`
 
-### `ShowMenu()`
+:::
+
+::: details `ShowMenu()`
 
 ```csharp
 void ShowMenu()
 ```
+
+:::

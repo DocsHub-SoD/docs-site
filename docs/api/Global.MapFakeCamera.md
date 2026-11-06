@@ -9,7 +9,9 @@
 public class MapFakeCamera : MonoBehaviour
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class MapFakeCamera : MonoBehaviour
 | **`followTransform`** | `public Transform followTransform` |  |
 | **`originalOffset`** | `public Vector3 originalOffset` |  |
 | **`vcam`** | `public CinemachineVirtualCamera vcam` |  |
+
+:::

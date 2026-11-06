@@ -8,7 +8,9 @@
 public class DewGameplaySettings_User : IInitializableSettings
 ```
 
-## Fields
+## Fields (15)
+
+::: details Click to expand Fields (15)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,9 +30,11 @@ public class DewGameplaySettings_User : IInitializableSettings
 | **`uiScale`** | `public float uiScale` |  |
 | **`unlockSkillsOutsideEditMode`** | `public bool unlockSkillsOutsideEditMode` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (2)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -38,8 +42,12 @@ public object Clone()
 
 **Returns:** `object`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 ```csharp
 public void Initialize()
 ```
+
+:::

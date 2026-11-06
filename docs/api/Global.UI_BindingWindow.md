@@ -9,39 +9,51 @@
 public class UI_BindingWindow : SingletonBehaviour<UI_BindingWindow>
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`keyText`** | `public TextMeshProUGUI keyText` |  |
 
-## Methods
+:::
 
-### `Cancel()`
+## Methods (5)
+
+::: details `Cancel()`
 
 ```csharp
 public void Cancel()
 ```
 
-### `Clear()`
+:::
+
+::: details `Clear()`
 
 ```csharp
 public void Clear()
 ```
 
-### `Confirm()`
+:::
+
+::: details `Confirm()`
 
 ```csharp
 public void Confirm()
 ```
 
-### `DoLeftClick()`
+:::
+
+::: details `DoLeftClick()`
 
 ```csharp
 public void DoLeftClick()
 ```
 
-### `Show(DewBinding, BindingType, bool, Action, Action)`
+:::
+
+::: details `Show(DewBinding, BindingType, bool, Action, Action)`
 
 ```csharp
 public void Show(DewBinding newBinding, BindingType allowedTypes, bool allowModifiers, Action onFinish, Action onCancel)
@@ -55,3 +67,5 @@ public void Show(DewBinding newBinding, BindingType allowedTypes, bool allowModi
 | `allowModifiers` | `bool` |  |
 | `onFinish` | `System.Action` |  |
 | `onCancel` | `System.Action` |  |
+
+:::

@@ -8,14 +8,20 @@
 public static class DewGUI
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`fieldBuilders`** | `public static List<(DewGUI.FieldBuilderCondition, DewGUI.FieldBuilder)> fieldBuilders` |  |
 | **`SupportedBasicTypes`** | `public static readonly Type[] SupportedBasicTypes` |  |
 
-## Properties
+:::
+
+## Properties (13)
+
+::: details Click to expand Properties (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -33,9 +39,11 @@ public static class DewGUI
 | **`widgetToggleCheck`** | `public static UI_Toggle widgetToggleCheck { get; }` |  |
 | **`widgetWindow`** | `public static UI_Window widgetWindow { get; }` | The window comes with VerticalLayoutGroup and ContentSizeFitter, and is draggable by default. |
 
-## Methods
+:::
 
-### `ApplyLayoutGroupDefaultSettings(HorizontalLayoutGroup, TextAnchor)`
+## Methods (24)
+
+::: details `ApplyLayoutGroupDefaultSettings(HorizontalLayoutGroup, TextAnchor)`
 
 Helper for creating layout groups with nice default values.
 
@@ -49,7 +57,9 @@ public static void ApplyLayoutGroupDefaultSettings(HorizontalLayoutGroup group, 
 | `group` | `UnityEngine.UI.HorizontalLayoutGroup` |  |
 | `alignment` | `UnityEngine.TextAnchor` |  |
 
-### `ApplyLayoutGroupDefaultSettings(VerticalLayoutGroup, TextAnchor)`
+:::
+
+::: details `ApplyLayoutGroupDefaultSettings(VerticalLayoutGroup, TextAnchor)`
 
 Helper for creating layout groups with nice default values.
 
@@ -63,7 +73,9 @@ public static void ApplyLayoutGroupDefaultSettings(VerticalLayoutGroup group, Te
 | `group` | `UnityEngine.UI.VerticalLayoutGroup` |  |
 | `alignment` | `UnityEngine.TextAnchor` |  |
 
-### `CreateHorizontalFlexibleSpace(Transform)`
+:::
+
+::: details `CreateHorizontalFlexibleSpace(Transform)`
 
 ```csharp
 public static LayoutElement CreateHorizontalFlexibleSpace(Transform parent)
@@ -76,7 +88,9 @@ public static LayoutElement CreateHorizontalFlexibleSpace(Transform parent)
 
 **Returns:** `UnityEngine.UI.LayoutElement`
 
-### `CreateHorizontalLayoutGroup(Transform, TextAnchor)`
+:::
+
+::: details `CreateHorizontalLayoutGroup(Transform, TextAnchor)`
 
 Helper for creating layout groups with nice default values.
 
@@ -92,7 +106,9 @@ public static HorizontalLayoutGroup CreateHorizontalLayoutGroup(Transform parent
 
 **Returns:** `UnityEngine.UI.HorizontalLayoutGroup`
 
-### `CreateVerticalFlexibleSpace(Transform)`
+:::
+
+::: details `CreateVerticalFlexibleSpace(Transform)`
 
 ```csharp
 public static LayoutElement CreateVerticalFlexibleSpace(Transform parent)
@@ -105,7 +121,9 @@ public static LayoutElement CreateVerticalFlexibleSpace(Transform parent)
 
 **Returns:** `UnityEngine.UI.LayoutElement`
 
-### `CreateVerticalLayoutGroup(Transform, TextAnchor)`
+:::
+
+::: details `CreateVerticalLayoutGroup(Transform, TextAnchor)`
 
 Helper for creating layout groups with nice default values.
 
@@ -121,7 +139,9 @@ public static VerticalLayoutGroup CreateVerticalLayoutGroup(Transform parent, Te
 
 **Returns:** `UnityEngine.UI.VerticalLayoutGroup`
 
-### `CreateWidgetsForObject(Type, object, Transform, out SafeAction, out SafeAction)`
+:::
+
+::: details `CreateWidgetsForObject(Type, object, Transform, out SafeAction, out SafeAction)`
 
 Creates data-bound widgets for given object type.
 
@@ -138,7 +158,9 @@ public static void CreateWidgetsForObject(Type type, object state, Transform par
 | `onChanged` | [`SafeAction`](/api/Global.SafeAction) |  |
 | `requestUpdate` | [`SafeAction`](/api/Global.SafeAction) |  |
 
-### `GenericInputFieldBuilder<T>(Transform, TryParseFunc<T>, CharacterValidation, out TMP_InputField)`
+:::
+
+::: details `GenericInputFieldBuilder&lt;T&gt;(Transform, TryParseFunc&lt;T&gt;, CharacterValidation, out TMP_InputField)`
 
 ```csharp
 public static FieldBuildResult GenericInputFieldBuilder<T>(Transform parent, DewGUI.TryParseFunc<T> tryParse, TMP_InputField.CharacterValidation validation, out TMP_InputField inputField)
@@ -155,7 +177,9 @@ public static FieldBuildResult GenericInputFieldBuilder<T>(Transform parent, Dew
 
 **Returns:** `FieldBuildResult`
 
-### `SetExpandHeight(GameObject, bool)`
+:::
+
+::: details `SetExpandHeight(GameObject, bool)`
 
 ```csharp
 public static GameObject SetExpandHeight(this GameObject c, bool expand)
@@ -169,7 +193,9 @@ public static GameObject SetExpandHeight(this GameObject c, bool expand)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetExpandHeight(GameObject, float)`
+:::
+
+::: details `SetExpandHeight(GameObject, float)`
 
 ```csharp
 public static GameObject SetExpandHeight(this GameObject c, float value)
@@ -183,7 +209,9 @@ public static GameObject SetExpandHeight(this GameObject c, float value)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetExpandHeight<T>(T, bool)`
+:::
+
+::: details `SetExpandHeight&lt;T&gt;(T, bool)`
 
 ```csharp
 public static T SetExpandHeight<T>(this T c, bool expand) where T : Component
@@ -198,7 +226,9 @@ public static T SetExpandHeight<T>(this T c, bool expand) where T : Component
 
 **Returns:** `T`
 
-### `SetExpandHeight<T>(T, float)`
+:::
+
+::: details `SetExpandHeight&lt;T&gt;(T, float)`
 
 ```csharp
 public static T SetExpandHeight<T>(this T c, float value) where T : Component
@@ -213,7 +243,9 @@ public static T SetExpandHeight<T>(this T c, float value) where T : Component
 
 **Returns:** `T`
 
-### `SetExpandWidth(GameObject, bool)`
+:::
+
+::: details `SetExpandWidth(GameObject, bool)`
 
 ```csharp
 public static GameObject SetExpandWidth(this GameObject c, bool expand)
@@ -227,7 +259,9 @@ public static GameObject SetExpandWidth(this GameObject c, bool expand)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetExpandWidth(GameObject, float)`
+:::
+
+::: details `SetExpandWidth(GameObject, float)`
 
 ```csharp
 public static GameObject SetExpandWidth(this GameObject c, float value)
@@ -241,7 +275,9 @@ public static GameObject SetExpandWidth(this GameObject c, float value)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetExpandWidth<T>(T, bool)`
+:::
+
+::: details `SetExpandWidth&lt;T&gt;(T, bool)`
 
 ```csharp
 public static T SetExpandWidth<T>(this T c, bool expand) where T : Component
@@ -256,7 +292,9 @@ public static T SetExpandWidth<T>(this T c, bool expand) where T : Component
 
 **Returns:** `T`
 
-### `SetExpandWidth<T>(T, float)`
+:::
+
+::: details `SetExpandWidth&lt;T&gt;(T, float)`
 
 ```csharp
 public static T SetExpandWidth<T>(this T c, float value) where T : Component
@@ -271,7 +309,9 @@ public static T SetExpandWidth<T>(this T c, float value) where T : Component
 
 **Returns:** `T`
 
-### `SetHeight(GameObject, float)`
+:::
+
+::: details `SetHeight(GameObject, float)`
 
 ```csharp
 public static GameObject SetHeight(this GameObject c, float height)
@@ -285,7 +325,9 @@ public static GameObject SetHeight(this GameObject c, float height)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetHeight<T>(T, float)`
+:::
+
+::: details `SetHeight&lt;T&gt;(T, float)`
 
 ```csharp
 public static T SetHeight<T>(this T c, float height) where T : Component
@@ -300,7 +342,9 @@ public static T SetHeight<T>(this T c, float height) where T : Component
 
 **Returns:** `T`
 
-### `SetText(GameObject, string)`
+:::
+
+::: details `SetText(GameObject, string)`
 
 ```csharp
 public static GameObject SetText(this GameObject c, string text)
@@ -314,7 +358,9 @@ public static GameObject SetText(this GameObject c, string text)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetText<T>(T, string)`
+:::
+
+::: details `SetText&lt;T&gt;(T, string)`
 
 ```csharp
 public static T SetText<T>(this T c, string text) where T : Component
@@ -329,7 +375,9 @@ public static T SetText<T>(this T c, string text) where T : Component
 
 **Returns:** `T`
 
-### `SetTextLocalized(GameObject, string)`
+:::
+
+::: details `SetTextLocalized(GameObject, string)`
 
 ```csharp
 public static GameObject SetTextLocalized(this GameObject c, string key)
@@ -343,7 +391,9 @@ public static GameObject SetTextLocalized(this GameObject c, string key)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetTextLocalized<T>(T, string)`
+:::
+
+::: details `SetTextLocalized&lt;T&gt;(T, string)`
 
 ```csharp
 public static T SetTextLocalized<T>(this T c, string key) where T : Component
@@ -358,7 +408,9 @@ public static T SetTextLocalized<T>(this T c, string key) where T : Component
 
 **Returns:** `T`
 
-### `SetWidth(GameObject, float)`
+:::
+
+::: details `SetWidth(GameObject, float)`
 
 ```csharp
 public static GameObject SetWidth(this GameObject c, float width)
@@ -372,7 +424,9 @@ public static GameObject SetWidth(this GameObject c, float width)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetWidth<T>(T, float)`
+:::
+
+::: details `SetWidth&lt;T&gt;(T, float)`
 
 ```csharp
 public static T SetWidth<T>(this T c, float width) where T : Component
@@ -386,3 +440,5 @@ public static T SetWidth<T>(this T c, float width) where T : Component
 | `` | `T` |  |
 
 **Returns:** `T`
+
+:::

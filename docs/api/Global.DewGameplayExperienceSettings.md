@@ -9,7 +9,9 @@
 public class DewGameplayExperienceSettings : SerializedScriptableObject
 ```
 
-## Fields
+## Fields (59)
+
+::: details Click to expand Fields (59)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -72,3 +74,5 @@ public class DewGameplayExperienceSettings : SerializedScriptableObject
 | **`valueMultiplierPerGemQuality`** | `public float valueMultiplierPerGemQuality` |  |
 | **`valueMultiplierPerSkillLevel`** | `public float valueMultiplierPerSkillLevel` |  |
 | **`welcomingSpawnPopMultiplierByArea`** | `[Header("Hunters")] public AnimationCurve welcomingSpawnPopMultiplierByArea` |  |
+
+:::

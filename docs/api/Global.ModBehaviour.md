@@ -8,13 +8,19 @@
 public class ModBehaviour : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `[NonSerialized] public LoadedModInstance instance` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +28,11 @@ public class ModBehaviour : MonoBehaviour
 | **`mod`** | `public ModItem mod { get; }` |  |
 | **`modConfigFields`** | `public FieldInfo[] modConfigFields { get; }` |  |
 
-## Methods
+:::
 
-### `CallOnManager<T>(Action, Action)`
+## Methods (16)
+
+::: details `CallOnManager&lt;T&gt;(Action, Action)`
 
 ```csharp
 public void CallOnManager<T>(Action onEnable, Action onDisable = null) where T : ManagerBase<T>
@@ -37,7 +45,9 @@ public void CallOnManager<T>(Action onEnable, Action onDisable = null) where T :
 | `onDisable` | `System.Action` |  |
 | `` | `T` |  |
 
-### `CallOnNetworkedManager<T>(Action, Action)`
+:::
+
+::: details `CallOnNetworkedManager&lt;T&gt;(Action, Action)`
 
 ```csharp
 public void CallOnNetworkedManager<T>(Action onStartClient, Action onStopClient = null) where T : NetworkedManagerBase<T>
@@ -50,7 +60,9 @@ public void CallOnNetworkedManager<T>(Action onStartClient, Action onStopClient 
 | `onStopClient` | `System.Action` |  |
 | `` | `T` |  |
 
-### `GetConsoleSelectedEntity()`
+:::
+
+::: details `GetConsoleSelectedEntity()`
 
 ```csharp
 protected static Entity GetConsoleSelectedEntity()
@@ -58,7 +70,9 @@ protected static Entity GetConsoleSelectedEntity()
 
 **Returns:** `Entity`
 
-### `GetModConfigFilePath(FieldInfo)`
+:::
+
+::: details `GetModConfigFilePath(FieldInfo)`
 
 ```csharp
 public virtual string GetModConfigFilePath(FieldInfo modConfigInfo)
@@ -71,13 +85,17 @@ public virtual string GetModConfigFilePath(FieldInfo modConfigInfo)
 
 **Returns:** `string`
 
-### `LoadConfigsToDisk()`
+:::
+
+::: details `LoadConfigsToDisk()`
 
 ```csharp
 public virtual void LoadConfigsToDisk()
 ```
 
-### `MakeSureClientNonServer()`
+:::
+
+::: details `MakeSureClientNonServer()`
 
 Returns false and logs to console if user is not a non-server client.Meant to be used in custom console commands.
 
@@ -87,7 +105,9 @@ protected static bool MakeSureClientNonServer()
 
 **Returns:** `bool`
 
-### `MakeSureInGame()`
+:::
+
+::: details `MakeSureInGame()`
 
 Returns false and logs to console if not in a game.Meant to be used in custom console commands.
 
@@ -97,7 +117,9 @@ protected static bool MakeSureInGame()
 
 **Returns:** `bool`
 
-### `MakeSureNetworked()`
+:::
+
+::: details `MakeSureNetworked()`
 
 Returns false and logs to console if not in a networking context.Meant to be used in custom console commands.
 
@@ -107,7 +129,9 @@ protected static bool MakeSureNetworked()
 
 **Returns:** `bool`
 
-### `MakeSureNotInGame()`
+:::
+
+::: details `MakeSureNotInGame()`
 
 Returns false and logs to console if in a game.Meant to be used in custom console commands.
 
@@ -117,7 +141,9 @@ protected static bool MakeSureNotInGame()
 
 **Returns:** `bool`
 
-### `MakeSureServer()`
+:::
+
+::: details `MakeSureServer()`
 
 Returns false and logs to console if user is not a server.Meant to be used in custom console commands.
 
@@ -127,19 +153,25 @@ protected static bool MakeSureServer()
 
 **Returns:** `bool`
 
-### `OnConfigChanged()`
+:::
+
+::: details `OnConfigChanged()`
 
 ```csharp
 public virtual void OnConfigChanged()
 ```
 
-### `PrintNoEntitySelected()`
+:::
+
+::: details `PrintNoEntitySelected()`
 
 ```csharp
 protected static void PrintNoEntitySelected()
 ```
 
-### `RegisterConsoleCommand(MethodInfo, string, string)`
+:::
+
+::: details `RegisterConsoleCommand(MethodInfo, string, string)`
 
 Register a command by method info. The method can be either static or not.Command with same name and signature will get a number appended.The command will be automatically unregistered on mod unload.
 
@@ -154,7 +186,9 @@ public void RegisterConsoleCommand(MethodInfo m, string customName = null, strin
 | `customName` | `string` |  |
 | `description` | `string` |  |
 
-### `RegisterConsoleCommand(string, string, string)`
+:::
+
+::: details `RegisterConsoleCommand(string, string, string)`
 
 Register a command by method name. The method can be either static or not.Command with same name and signature will get a number appended.The command will be automatically unregistered on mod unload.
 
@@ -169,13 +203,17 @@ public void RegisterConsoleCommand(string methodName, string customName = null, 
 | `customName` | `string` |  |
 | `description` | `string` |  |
 
-### `SaveConfigsToDisk()`
+:::
+
+::: details `SaveConfigsToDisk()`
 
 ```csharp
 public virtual void SaveConfigsToDisk()
 ```
 
-### `TryGetConsoleSelectedEntity(out Entity)`
+:::
+
+::: details `TryGetConsoleSelectedEntity(out Entity)`
 
 ```csharp
 protected static bool TryGetConsoleSelectedEntity(out Entity ent)
@@ -187,3 +225,5 @@ protected static bool TryGetConsoleSelectedEntity(out Entity ent)
 | `ent` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

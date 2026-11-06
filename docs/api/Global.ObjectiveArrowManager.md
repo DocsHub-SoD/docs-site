@@ -10,17 +10,23 @@
 public class ObjectiveArrowManager : ManagerBase<ObjectiveArrowManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`arrowPivot`** | `public GameObject arrowPivot` |  |
 | **`objectivePosition`** | `public Vector3? objectivePosition` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (1)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
+
+:::

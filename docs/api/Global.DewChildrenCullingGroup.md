@@ -9,10 +9,14 @@
 public class DewChildrenCullingGroup : MonoBehaviour
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`sphereLocalOffset`** | `public Vector3 sphereLocalOffset` |  |
 | **`sphereRadius`** | `public float sphereRadius` |  |
 | **`sphereWorldOffset`** | `public Vector3 sphereWorldOffset` |  |
+
+:::

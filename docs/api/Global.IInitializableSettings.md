@@ -8,10 +8,12 @@
 public interface IInitializableSettings
 ```
 
-## Methods
+## Methods (1)
 
-### `Initialize()`
+::: details `Initialize()`
 
 ```csharp
 void Initialize()
 ```
+
+:::

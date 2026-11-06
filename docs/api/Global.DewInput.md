@@ -8,7 +8,9 @@
 public static class DewInput
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,16 +18,22 @@ public static class DewInput
 | **`NameToMouseButton`** | `public static readonly IReadOnlyDictionary<string, MouseButton> NameToMouseButton` |  |
 | **`onCurrentModeChanged`** | `public static SafeAction<InputMode, InputMode> onCurrentModeChanged` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`controllerButtonType`** | `public static ControllerButtonType controllerButtonType { get; }` |  |
 | **`currentMode`** | `public static InputMode currentMode { get; }` |  |
 
-## Methods
+:::
 
-### `GetButton(DewBinding, bool)`
+## Methods (27)
+
+::: details `GetButton(DewBinding, bool)`
 
 ```csharp
 public static bool GetButton(DewBinding b, bool checkGameAreaForMouse)
@@ -39,7 +47,9 @@ public static bool GetButton(DewBinding b, bool checkGameAreaForMouse)
 
 **Returns:** `bool`
 
-### `GetButton(MouseButton, bool)`
+:::
+
+::: details `GetButton(MouseButton, bool)`
 
 ```csharp
 public static bool GetButton(MouseButton m, bool checkGameArea)
@@ -53,7 +63,9 @@ public static bool GetButton(MouseButton m, bool checkGameArea)
 
 **Returns:** `bool`
 
-### `GetButton(GamepadButtonEx?)`
+:::
+
+::: details `GetButton(GamepadButtonEx?)`
 
 ```csharp
 public static bool GetButton(GamepadButtonEx? g)
@@ -66,7 +78,9 @@ public static bool GetButton(GamepadButtonEx? g)
 
 **Returns:** `bool`
 
-### `GetButton(Key)`
+:::
+
+::: details `GetButton(Key)`
 
 ```csharp
 public static bool GetButton(Key k)
@@ -79,7 +93,9 @@ public static bool GetButton(Key k)
 
 **Returns:** `bool`
 
-### `GetButtonDown(DewBinding, bool)`
+:::
+
+::: details `GetButtonDown(DewBinding, bool)`
 
 ```csharp
 public static bool GetButtonDown(DewBinding b, bool checkGameAreaForMouse)
@@ -93,7 +109,9 @@ public static bool GetButtonDown(DewBinding b, bool checkGameAreaForMouse)
 
 **Returns:** `bool`
 
-### `GetButtonDown(MouseButton, bool)`
+:::
+
+::: details `GetButtonDown(MouseButton, bool)`
 
 ```csharp
 public static bool GetButtonDown(MouseButton m, bool checkGameArea)
@@ -107,7 +125,9 @@ public static bool GetButtonDown(MouseButton m, bool checkGameArea)
 
 **Returns:** `bool`
 
-### `GetButtonDown(GamepadButtonEx?)`
+:::
+
+::: details `GetButtonDown(GamepadButtonEx?)`
 
 ```csharp
 public static bool GetButtonDown(GamepadButtonEx? g)
@@ -120,7 +140,9 @@ public static bool GetButtonDown(GamepadButtonEx? g)
 
 **Returns:** `bool`
 
-### `GetButtonDown(Key)`
+:::
+
+::: details `GetButtonDown(Key)`
 
 ```csharp
 public static bool GetButtonDown(Key k)
@@ -133,7 +155,9 @@ public static bool GetButtonDown(Key k)
 
 **Returns:** `bool`
 
-### `GetButtonDownAnyGamepad()`
+:::
+
+::: details `GetButtonDownAnyGamepad()`
 
 ```csharp
 public static bool GetButtonDownAnyGamepad()
@@ -141,7 +165,9 @@ public static bool GetButtonDownAnyGamepad()
 
 **Returns:** `bool`
 
-### `GetButtonDownAnyKey()`
+:::
+
+::: details `GetButtonDownAnyKey()`
 
 ```csharp
 public static bool GetButtonDownAnyKey()
@@ -149,7 +175,9 @@ public static bool GetButtonDownAnyKey()
 
 **Returns:** `bool`
 
-### `GetButtonDownAnyMouse()`
+:::
+
+::: details `GetButtonDownAnyMouse()`
 
 ```csharp
 public static bool GetButtonDownAnyMouse()
@@ -157,7 +185,9 @@ public static bool GetButtonDownAnyMouse()
 
 **Returns:** `bool`
 
-### `GetButtonUp(DewBinding, bool)`
+:::
+
+::: details `GetButtonUp(DewBinding, bool)`
 
 ```csharp
 public static bool GetButtonUp(DewBinding b, bool checkGameAreaForMouse)
@@ -171,7 +201,9 @@ public static bool GetButtonUp(DewBinding b, bool checkGameAreaForMouse)
 
 **Returns:** `bool`
 
-### `GetButtonUp(MouseButton, bool)`
+:::
+
+::: details `GetButtonUp(MouseButton, bool)`
 
 ```csharp
 public static bool GetButtonUp(MouseButton m, bool checkGameArea)
@@ -185,7 +217,9 @@ public static bool GetButtonUp(MouseButton m, bool checkGameArea)
 
 **Returns:** `bool`
 
-### `GetButtonUp(GamepadButtonEx?)`
+:::
+
+::: details `GetButtonUp(GamepadButtonEx?)`
 
 ```csharp
 public static bool GetButtonUp(GamepadButtonEx? g)
@@ -198,7 +232,9 @@ public static bool GetButtonUp(GamepadButtonEx? g)
 
 **Returns:** `bool`
 
-### `GetButtonUp(Key)`
+:::
+
+::: details `GetButtonUp(Key)`
 
 ```csharp
 public static bool GetButtonUp(Key k)
@@ -211,7 +247,9 @@ public static bool GetButtonUp(Key k)
 
 **Returns:** `bool`
 
-### `GetLeftJoystick()`
+:::
+
+::: details `GetLeftJoystick()`
 
 Magnitude will be full range of 0 ~ 1 regardless of dead zone settings. Returns Vector2.zero if under dead zone.
 
@@ -221,7 +259,9 @@ public static Vector2 GetLeftJoystick()
 
 **Returns:** `UnityEngine.Vector2`
 
-### `GetReadableTextForCurrentMode(DewBinding, out BindingType)`
+:::
+
+::: details `GetReadableTextForCurrentMode(DewBinding, out BindingType)`
 
 ```csharp
 public static string GetReadableTextForCurrentMode(DewBinding b, out BindingType type)
@@ -235,7 +275,9 @@ public static string GetReadableTextForCurrentMode(DewBinding b, out BindingType
 
 **Returns:** `string`
 
-### `GetReadableTextForCurrentMode(DewBinding)`
+:::
+
+::: details `GetReadableTextForCurrentMode(DewBinding)`
 
 ```csharp
 public static string GetReadableTextForCurrentMode(DewBinding b)
@@ -248,7 +290,9 @@ public static string GetReadableTextForCurrentMode(DewBinding b)
 
 **Returns:** `string`
 
-### `GetReadableTextOfGamepad(DewBinding, out BindingType)`
+:::
+
+::: details `GetReadableTextOfGamepad(DewBinding, out BindingType)`
 
 ```csharp
 public static string GetReadableTextOfGamepad(DewBinding b, out BindingType type)
@@ -262,7 +306,9 @@ public static string GetReadableTextOfGamepad(DewBinding b, out BindingType type
 
 **Returns:** `string`
 
-### `GetReadableTextOfGamepad(DewBinding)`
+:::
+
+::: details `GetReadableTextOfGamepad(DewBinding)`
 
 ```csharp
 public static string GetReadableTextOfGamepad(DewBinding b)
@@ -275,7 +321,9 @@ public static string GetReadableTextOfGamepad(DewBinding b)
 
 **Returns:** `string`
 
-### `GetReadableTextOfPC(DewBinding, out BindingType, int)`
+:::
+
+::: details `GetReadableTextOfPC(DewBinding, out BindingType, int)`
 
 ```csharp
 public static string GetReadableTextOfPC(DewBinding b, out BindingType type, int i = 0)
@@ -290,7 +338,9 @@ public static string GetReadableTextOfPC(DewBinding b, out BindingType type, int
 
 **Returns:** `string`
 
-### `GetReadableTextOfPC(DewBinding, int)`
+:::
+
+::: details `GetReadableTextOfPC(DewBinding, int)`
 
 ```csharp
 public static string GetReadableTextOfPC(DewBinding b, int i = 0)
@@ -304,7 +354,9 @@ public static string GetReadableTextOfPC(DewBinding b, int i = 0)
 
 **Returns:** `string`
 
-### `GetRightJoystick()`
+:::
+
+::: details `GetRightJoystick()`
 
 Magnitude will be full range of 0 ~ 1 regardless of dead zone settings. Returns Vector2.zero if under dead zone.
 
@@ -314,7 +366,9 @@ public static Vector2 GetRightJoystick()
 
 **Returns:** `UnityEngine.Vector2`
 
-### `IsGameRelatedMouseInputValid(MouseButton)`
+:::
+
+::: details `IsGameRelatedMouseInputValid(MouseButton)`
 
 ```csharp
 public static bool IsGameRelatedMouseInputValid(MouseButton button)
@@ -327,7 +381,9 @@ public static bool IsGameRelatedMouseInputValid(MouseButton button)
 
 **Returns:** `bool`
 
-### `ListenAnyButtonRaw(Object, Func<InputControl, bool>)`
+:::
+
+::: details `ListenAnyButtonRaw(Object, Func&lt;InputControl, bool&gt;)`
 
 Return true in callback to stop listening.
 
@@ -341,7 +397,9 @@ public static void ListenAnyButtonRaw(Object caller, Func<InputControl, bool> ca
 | `caller` | `UnityEngine.Object` |  |
 | `callback` | `System.Func<T, TResult><InputControl,bool>` |  |
 
-### `SetInputMode(InputMode)`
+:::
+
+::: details `SetInputMode(InputMode)`
 
 ```csharp
 public static void SetInputMode(InputMode mode)
@@ -352,8 +410,12 @@ public static void SetInputMode(InputMode mode)
 | :--- | :--- | :--- |
 | `mode` | [`InputMode`](/api/Global.InputMode) |  |
 
-### `StopListenAnyButton()`
+:::
+
+::: details `StopListenAnyButton()`
 
 ```csharp
 public static void StopListenAnyButton()
 ```
+
+:::

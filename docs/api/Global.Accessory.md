@@ -9,7 +9,9 @@
 public class Accessory : MonoBehaviour
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +24,11 @@ public class Accessory : MonoBehaviour
 | **`previewPadding`** | `[Range(-0.25, 0.25)] [LabelText("Padding")] public float previewPadding` |  |
 | **`type`** | `public AccType type` |  |
 
-## Methods
+:::
 
-### `Setup(Transform, string)`
+## Methods (1)
+
+::: details `Setup(Transform, string)`
 
 ```csharp
 public void Setup(Transform target, string entityOrSkinName)
@@ -35,3 +39,5 @@ public void Setup(Transform target, string entityOrSkinName)
 | :--- | :--- | :--- |
 | `target` | `UnityEngine.Transform` |  |
 | `entityOrSkinName` | `string` |  |
+
+:::

@@ -9,47 +9,63 @@
 public class EntityHighlightProvider : MeshHighlightProvider, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`disableHighlight`** | `public bool disableHighlight` |  |
 | **`HitEffectDuration`** | `public const float HitEffectDuration = 0.1` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (6)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnClickTimeUpdated()`
+:::
+
+::: details `OnClickTimeUpdated()`
 
 ```csharp
 protected override void OnClickTimeUpdated()
 ```
 
-### `OnCursorStatusUpdated()`
+:::
+
+::: details `OnCursorStatusUpdated()`
 
 ```csharp
 protected override void OnCursorStatusUpdated()
 ```
 
-### `ShowHit()`
+:::
+
+::: details `ShowHit()`
 
 ```csharp
 public void ShowHit()
 ```
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 protected override void Start()
 ```
+
+:::

@@ -8,10 +8,12 @@
 public class KillTracker
 ```
 
-## Methods
+## Methods (1)
 
-### `Stop()`
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

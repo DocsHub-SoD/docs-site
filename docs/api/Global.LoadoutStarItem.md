@@ -9,9 +9,13 @@
 public struct LoadoutStarItem
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`level`** | `public int level` | This is only used in loadout data sent to servers.This is pure level as-is of player's save data, before getting offset by valid/invalid slot placements. |
 | **`name`** | `public string name` |  |
+
+:::

@@ -10,7 +10,9 @@
 public class EntityAbility : EntityComponent, ILogicUpdate, ICleanup
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,7 +22,11 @@ public class EntityAbility : EntityComponent, ILogicUpdate, ICleanup
 | **`ClientEvent_OnAbilityAdded`** | `public SafeAction<int, AbilityTrigger> ClientEvent_OnAbilityAdded` |  |
 | **`ClientEvent_OnAbilityRemoved`** | `public SafeAction<int, AbilityTrigger> ClientEvent_OnAbilityRemoved` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,9 +35,11 @@ public class EntityAbility : EntityComponent, ILogicUpdate, ICleanup
 | **`originalAttackAbility`** | `public AttackTrigger originalAttackAbility { get; }` |  |
 | **`overridenAttackAbility`** | `public AbilityTrigger overridenAttackAbility { get; }` |  |
 
-## Methods
+:::
 
-### `AddAbility(AbilityTrigger)`
+## Methods (17)
+
+::: details `AddAbility(AbilityTrigger)`
 
 Add an ability to this entity. It will be equipped on empty index between 0 and 127.
 
@@ -44,7 +52,9 @@ public void AddAbility(AbilityTrigger trigger)
 | :--- | :--- | :--- |
 | `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
-### `AddAbility<T>()`
+:::
+
+::: details `AddAbility&lt;T&gt;()`
 
 Add an ability to this entity. It will be equipped on empty index between 0 and 127.
 
@@ -59,13 +69,17 @@ public T AddAbility<T>() where T : AbilityTrigger
 
 **Returns:** `T`
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `GetAbility<T>()`
+:::
+
+::: details `GetAbility&lt;T&gt;()`
 
 Get this entity's first ability of the given type. Can be null.
 
@@ -80,7 +94,9 @@ public T GetAbility<T>() where T : AbilityTrigger
 
 **Returns:** `T`
 
-### `GetNewAbilityLockHandle(bool)`
+:::
+
+::: details `GetNewAbilityLockHandle(bool)`
 
 ```csharp
 public AbilityLockHandle GetNewAbilityLockHandle(bool shouldShowLockIcon = false)
@@ -93,7 +109,9 @@ public AbilityLockHandle GetNewAbilityLockHandle(bool shouldShowLockIcon = false
 
 **Returns:** `AbilityLockHandle`
 
-### `IsAbilityCastLocked(int)`
+:::
+
+::: details `IsAbilityCastLocked(int)`
 
 Is an ability locked by AbilityLockHandle? Available everywhere.
 
@@ -108,7 +126,9 @@ public bool IsAbilityCastLocked(int index)
 
 **Returns:** `bool`
 
-### `IsAbilityEditLocked(int)`
+:::
+
+::: details `IsAbilityEditLocked(int)`
 
 ```csharp
 public bool IsAbilityEditLocked(int index)
@@ -121,7 +141,9 @@ public bool IsAbilityEditLocked(int index)
 
 **Returns:** `bool`
 
-### `IsAttackAbilityLocked(int)`
+:::
+
+::: details `IsAttackAbilityLocked(int)`
 
 ```csharp
 public bool IsAttackAbilityLocked(int index)
@@ -134,7 +156,9 @@ public bool IsAttackAbilityLocked(int index)
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -145,19 +169,25 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `RemoveAbility(int)`
+:::
+
+::: details `RemoveAbility(int)`
 
 ```csharp
 public AbilityTrigger RemoveAbility(int index)
@@ -170,7 +200,9 @@ public AbilityTrigger RemoveAbility(int index)
 
 **Returns:** `AbilityTrigger`
 
-### `RemoveAttackAbility()`
+:::
+
+::: details `RemoveAttackAbility()`
 
 Remove previous attack ability from this entity.
 
@@ -180,7 +212,9 @@ public AbilityTrigger RemoveAttackAbility()
 
 **Returns:** `AbilityTrigger`
 
-### `SetAbility(int, AbilityTrigger)`
+:::
+
+::: details `SetAbility(int, AbilityTrigger)`
 
 Give this entity a new ability at the given index. Previously equipped ability will be unequipped.
 
@@ -194,7 +228,9 @@ public void SetAbility(int index, AbilityTrigger trigger)
 | `index` | `int` |  |
 | `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
-### `SetAttackAbility(AttackTrigger)`
+:::
+
+::: details `SetAttackAbility(AttackTrigger)`
 
 Give a new attack ability to this entity. Previous one will be unequipped.
 
@@ -207,7 +243,9 @@ public void SetAttackAbility(AttackTrigger trigger)
 | :--- | :--- | :--- |
 | `trigger` | [`AttackTrigger`](/api/Global.AttackTrigger) |  |
 
-### `ShouldShowAbilityLockIcon(int)`
+:::
+
+::: details `ShouldShowAbilityLockIcon(int)`
 
 ```csharp
 public bool ShouldShowAbilityLockIcon(int index)
@@ -220,7 +258,9 @@ public bool ShouldShowAbilityLockIcon(int index)
 
 **Returns:** `bool`
 
-### `TryGetAbility<T>(out T)`
+:::
+
+::: details `TryGetAbility&lt;T&gt;(out T)`
 
 ```csharp
 public bool TryGetAbility<T>(out T trigger) where T : AbilityTrigger
@@ -233,3 +273,5 @@ public bool TryGetAbility<T>(out T trigger) where T : AbilityTrigger
 | `` | `T` |  |
 
 **Returns:** `bool`
+
+:::

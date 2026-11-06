@@ -8,8 +8,12 @@
 public interface IEnableWandering
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldWanderAround`** | `bool shouldWanderAround { get; }` | Chekced on server. |
+
+:::

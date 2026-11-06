@@ -9,7 +9,9 @@
 public class DewShadingProfile : ScriptableObject
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class DewShadingProfile : ScriptableObject
 | **`termAlpha`** | `public float termAlpha` |  |
 | **`termBeta`** | `public float termBeta` |  |
 | **`termGamma`** | `public float termGamma` |  |
+
+:::

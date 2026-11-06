@@ -9,21 +9,29 @@
 public class DewPersistentGameObserver
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`_coroutines`** | `protected List<Coroutine> _coroutines` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`name`** | `public string name { get; }` |  |
 
-## Methods
+:::
 
-### `AchOnDealDamage(Action<EventInfoDamage>)`
+## Methods (14)
+
+::: details `AchOnDealDamage(Action&lt;EventInfoDamage&gt;)`
 
 ```csharp
 protected void AchOnDealDamage(Action<EventInfoDamage> func)
@@ -34,7 +42,9 @@ protected void AchOnDealDamage(Action<EventInfoDamage> func)
 | :--- | :--- | :--- |
 | `func` | [`System.Action<T><EventInfoDamage>`](/api/Global.EventInfoDamage) |  |
 
-### `AchOnDoHeal(Action<EventInfoHeal>)`
+:::
+
+::: details `AchOnDoHeal(Action&lt;EventInfoHeal&gt;)`
 
 ```csharp
 protected void AchOnDoHeal(Action<EventInfoHeal> func)
@@ -45,7 +55,9 @@ protected void AchOnDoHeal(Action<EventInfoHeal> func)
 | :--- | :--- | :--- |
 | `func` | [`System.Action<T><EventInfoHeal>`](/api/Global.EventInfoHeal) |  |
 
-### `AchOnGameConcluded(Action<DewGameResult>)`
+:::
+
+::: details `AchOnGameConcluded(Action&lt;DewGameResult&gt;)`
 
 ```csharp
 protected void AchOnGameConcluded(Action<DewGameResult> func)
@@ -56,7 +68,9 @@ protected void AchOnGameConcluded(Action<DewGameResult> func)
 | :--- | :--- | :--- |
 | `func` | [`System.Action<T><DewGameResult>`](/api/Global.DewGameResult) |  |
 
-### `AchOnKillLastHit(Action<EventInfoKill>)`
+:::
+
+::: details `AchOnKillLastHit(Action&lt;EventInfoKill&gt;)`
 
 ```csharp
 protected void AchOnKillLastHit(Action<EventInfoKill> func)
@@ -67,7 +81,9 @@ protected void AchOnKillLastHit(Action<EventInfoKill> func)
 | :--- | :--- | :--- |
 | `func` | [`System.Action<T><EventInfoKill>`](/api/Global.EventInfoKill) |  |
 
-### `AchOnKillOrAssist(Action<EventInfoKill>)`
+:::
+
+::: details `AchOnKillOrAssist(Action&lt;EventInfoKill&gt;)`
 
 ```csharp
 protected void AchOnKillOrAssist(Action<EventInfoKill> func)
@@ -78,7 +94,9 @@ protected void AchOnKillOrAssist(Action<EventInfoKill> func)
 | :--- | :--- | :--- |
 | `func` | [`System.Action<T><EventInfoKill>`](/api/Global.EventInfoKill) |  |
 
-### `AchOnTakeDamage(Action<EventInfoDamage>)`
+:::
+
+::: details `AchOnTakeDamage(Action&lt;EventInfoDamage&gt;)`
 
 ```csharp
 protected void AchOnTakeDamage(Action<EventInfoDamage> func)
@@ -89,7 +107,9 @@ protected void AchOnTakeDamage(Action<EventInfoDamage> func)
 | :--- | :--- | :--- |
 | `func` | [`System.Action<T><EventInfoDamage>`](/api/Global.EventInfoDamage) |  |
 
-### `AchSetInterval(Action, float)`
+:::
+
+::: details `AchSetInterval(Action, float)`
 
 ```csharp
 protected void AchSetInterval(Action func, float interval)
@@ -101,7 +121,9 @@ protected void AchSetInterval(Action func, float interval)
 | `func` | `System.Action` |  |
 | `interval` | `float` |  |
 
-### `AchStartCoroutine(IEnumerator)`
+:::
+
+::: details `AchStartCoroutine(IEnumerator)`
 
 ```csharp
 protected void AchStartCoroutine(IEnumerator routine)
@@ -112,13 +134,17 @@ protected void AchStartCoroutine(IEnumerator routine)
 | :--- | :--- | :--- |
 | `routine` | `System.Collections.IEnumerator` |  |
 
-### `AchStopAllCoroutines()`
+:::
+
+::: details `AchStopAllCoroutines()`
 
 ```csharp
 protected void AchStopAllCoroutines()
 ```
 
-### `FeedGameResult(DewGameResult)`
+:::
+
+::: details `FeedGameResult(DewGameResult)`
 
 This needs to be called when the game ends by appropriate observer managers, e.g. AchievementManager, InGameReverieManager
 
@@ -131,7 +157,9 @@ public void FeedGameResult(DewGameResult obj)
 | :--- | :--- | :--- |
 | `obj` | [`DewGameResult`](/api/Global.DewGameResult) |  |
 
-### `LoadState(Dictionary<string, string>)`
+:::
+
+::: details `LoadState(Dictionary&lt;string, string&gt;)`
 
 Load all persistent variables from the provided dictionary.
 
@@ -144,13 +172,17 @@ public void LoadState(Dictionary<string, string> storage)
 | :--- | :--- | :--- |
 | `storage` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
 
-### `OnStartLocalClient()`
+:::
+
+::: details `OnStartLocalClient()`
 
 ```csharp
 public virtual void OnStartLocalClient()
 ```
 
-### `OnStopLocalClient()`
+:::
+
+::: details `OnStopLocalClient()`
 
 Helper trackers are unregistered automatically, you only have to unregister custom handlers.
 
@@ -158,7 +190,9 @@ Helper trackers are unregistered automatically, you only have to unregister cust
 public virtual void OnStopLocalClient()
 ```
 
-### `SaveState(Dictionary<string, string>)`
+:::
+
+::: details `SaveState(Dictionary&lt;string, string&gt;)`
 
 Save all persistent variables to the provided dictionary.
 
@@ -170,3 +204,5 @@ public void SaveState(Dictionary<string, string> storage)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `storage` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
+
+:::

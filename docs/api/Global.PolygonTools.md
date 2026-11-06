@@ -8,15 +8,19 @@
 public static class PolygonTools
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`_areas`** | `public static float[] _areas` |  |
 
-## Methods
+:::
 
-### `GetArea(IReadOnlyList<Vector2>)`
+## Methods (4)
+
+::: details `GetArea(IReadOnlyList&lt;Vector2&gt;)`
 
 ```csharp
 public static float GetArea(IReadOnlyList<Vector2> vertices)
@@ -29,7 +33,9 @@ public static float GetArea(IReadOnlyList<Vector2> vertices)
 
 **Returns:** `float`
 
-### `GetRandomPositionInTriangle(Vector2[], DewRandom)`
+:::
+
+::: details `GetRandomPositionInTriangle(Vector2[], DewRandom)`
 
 ```csharp
 public static Vector2 GetRandomPositionInTriangle(Vector2[] triVerts, DewRandom random = null)
@@ -43,7 +49,9 @@ public static Vector2 GetRandomPositionInTriangle(Vector2[] triVerts, DewRandom 
 
 **Returns:** `UnityEngine.Vector2`
 
-### `GetVerticesArray(IReadOnlyList<Vector2>, ref Vector2[])`
+:::
+
+::: details `GetVerticesArray(IReadOnlyList&lt;Vector2&gt;, ref Vector2[])`
 
 ```csharp
 public static void GetVerticesArray(IReadOnlyList<Vector2> points, ref Vector2[] verts)
@@ -55,7 +63,9 @@ public static void GetVerticesArray(IReadOnlyList<Vector2> points, ref Vector2[]
 | `points` | `System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>` |  |
 | `verts` | `UnityEngine.Vector2[]` |  |
 
-### `PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2>, ref Vector2[])`
+:::
+
+::: details `PickRandomTriangleWeightedByArea(IReadOnlyList&lt;Vector2&gt;, ref Vector2[])`
 
 ```csharp
 public static int PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2> vertices, ref Vector2[] triVerts)
@@ -68,3 +78,5 @@ public static int PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2> vertic
 | `triVerts` | `UnityEngine.Vector2[]` |  |
 
 **Returns:** `int`
+
+:::

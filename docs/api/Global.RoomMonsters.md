@@ -10,7 +10,9 @@
 public class RoomMonsters : RoomComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (24)
+
+::: details Click to expand Fields (24)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -39,16 +41,22 @@ public class RoomMonsters : RoomComponent, ILogicUpdate
 | **`SpawnDelayMin`** | `public const float SpawnDelayMin = 0.1` |  |
 | **`spawnedPopMultiplier`** | `public float spawnedPopMultiplier` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`didSetupCombatAreas`** | `public bool didSetupCombatAreas { get; }` |  |
 | **`isDoingHunterWelcomingSpawn`** | `public bool isDoingHunterWelcomingSpawn { get; }` | Available on server. |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (12)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -59,37 +67,49 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `FinishAllOngoingSpawns()`
+:::
+
+::: details `FinishAllOngoingSpawns()`
 
 ```csharp
 public void FinishAllOngoingSpawns()
 ```
 
-### `OnRoomStart()`
+:::
+
+::: details `OnRoomStart()`
 
 ```csharp
 public override void OnRoomStart()
 ```
 
-### `OnRoomStartServer()`
+:::
+
+::: details `OnRoomStartServer()`
 
 ```csharp
 public override void OnRoomStartServer()
 ```
 
-### `OnRoomStop()`
+:::
+
+::: details `OnRoomStop()`
 
 ```csharp
 public override void OnRoomStop()
 ```
 
-### `OnRoomStopServer()`
+:::
+
+::: details `OnRoomStopServer()`
 
 ```csharp
 public override void OnRoomStopServer()
 ```
 
-### `OverrideMonsterType(Monster)`
+:::
+
+::: details `OverrideMonsterType(Monster)`
 
 Make this room spawn a single type of monsters. This cannot be undone.
 
@@ -102,7 +122,9 @@ public void OverrideMonsterType(Monster m)
 | :--- | :--- | :--- |
 | `m` | [`Monster`](/api/Global.Monster) |  |
 
-### `RemoveAllCamps()`
+:::
+
+::: details `RemoveAllCamps()`
 
 Remove all camps and any spawned entities.
 
@@ -110,7 +132,9 @@ Remove all camps and any spawned entities.
 public void RemoveAllCamps()
 ```
 
-### `SelectMiniBoss(out Entity, out MiniBossEffect, DewRandom)`
+:::
+
+::: details `SelectMiniBoss(out Entity, out MiniBossEffect, DewRandom)`
 
 ```csharp
 public void SelectMiniBoss(out Entity entity, out MiniBossEffect effect, DewRandom random)
@@ -123,7 +147,9 @@ public void SelectMiniBoss(out Entity entity, out MiniBossEffect effect, DewRand
 | `effect` | [`MiniBossEffect`](/api/Global.MiniBossEffect) |  |
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
-### `SpawnMiniBoss(SpawnMonsterSettings, Entity, StatusEffect)`
+:::
+
+::: details `SpawnMiniBoss(SpawnMonsterSettings, Entity, StatusEffect)`
 
 ```csharp
 public void SpawnMiniBoss(SpawnMonsterSettings settings, Entity ent = null, StatusEffect se = null)
@@ -136,7 +162,9 @@ public void SpawnMiniBoss(SpawnMonsterSettings settings, Entity ent = null, Stat
 | `ent` | [`Entity`](/api/Global.Entity) |  |
 | `se` | [`StatusEffect`](/api/Global.StatusEffect) |  |
 
-### `SpawnMonsters(SpawnMonsterSettings)`
+:::
+
+::: details `SpawnMonsters(SpawnMonsterSettings)`
 
 ```csharp
 public void SpawnMonsters(SpawnMonsterSettings settings)
@@ -147,7 +175,9 @@ public void SpawnMonsters(SpawnMonsterSettings settings)
 | :--- | :--- | :--- |
 | `settings` | [`SpawnMonsterSettings`](/api/Global.SpawnMonsterSettings) |  |
 
-### `SpawnMonstersAsync(SpawnMonsterSettings)`
+:::
+
+::: details `SpawnMonstersAsync(SpawnMonsterSettings)`
 
 ```csharp
 public UniTask SpawnMonstersAsync(SpawnMonsterSettings settings)
@@ -159,3 +189,5 @@ public UniTask SpawnMonstersAsync(SpawnMonsterSettings settings)
 | `settings` | [`SpawnMonsterSettings`](/api/Global.SpawnMonsterSettings) |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
+
+:::

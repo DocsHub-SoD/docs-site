@@ -8,7 +8,9 @@
 public class ModMetadata
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class ModMetadata
 | **`id`** | `public string id` |  |
 | **`modVer`** | `public string modVer` |  |
 | **`name`** | `public string name` |  |
+
+:::

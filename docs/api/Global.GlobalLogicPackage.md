@@ -9,21 +9,27 @@
 public class GlobalLogicPackage : ManagerBase<GlobalLogicPackage>, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`showFps`** | `[NonSerialized] public bool showFps` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (2)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CallOnReady(Action)`
+:::
+
+::: details `CallOnReady(Action)`
 
 Call the action after global package has been added. If the global package already exists, it will be called immediately.
 
@@ -35,3 +41,5 @@ public static void CallOnReady(Action callback)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `callback` | `System.Action` |  |
+
+:::

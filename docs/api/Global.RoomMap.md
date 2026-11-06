@@ -9,7 +9,9 @@
 public class RoomMap : RoomComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,21 @@ public class RoomMap : RoomComponent, ILogicUpdate
 | **`mapData`** | `[HideInInspector] public MapData mapData` |  |
 | **`mapTexture`** | `public Texture2D mapTexture` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`fowTexture`** | `public Texture2D fowTexture { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (5)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -36,7 +44,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `IsWorldPosVisible(Vector3)`
+:::
+
+::: details `IsWorldPosVisible(Vector3)`
 
 ```csharp
 public bool IsWorldPosVisible(Vector3 worldPos)
@@ -49,7 +59,9 @@ public bool IsWorldPosVisible(Vector3 worldPos)
 
 **Returns:** `bool`
 
-### `IsWorldPosVisited(Vector3)`
+:::
+
+::: details `IsWorldPosVisited(Vector3)`
 
 ```csharp
 public bool IsWorldPosVisited(Vector3 worldPos)
@@ -62,14 +74,20 @@ public bool IsWorldPosVisited(Vector3 worldPos)
 
 **Returns:** `bool`
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnRoomStart()`
+:::
+
+::: details `OnRoomStart()`
 
 ```csharp
 public override void OnRoomStart()
 ```
+
+:::

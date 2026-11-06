@@ -9,9 +9,13 @@
 public struct EntityModelCustomMapping
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`id`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public string id` |  |
 | **`target`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public GameObject target` |  |
+
+:::

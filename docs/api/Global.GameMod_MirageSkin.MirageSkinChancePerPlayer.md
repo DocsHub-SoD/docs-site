@@ -9,7 +9,9 @@
 public struct GameMod_MirageSkin.MirageSkinChancePerPlayer
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public struct GameMod_MirageSkin.MirageSkinChancePerPlayer
 | **`zone4`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public float zone4` |  |
 | **`zone5`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public float zone5` |  |
 
-## Methods
+:::
 
-### `Get(int)`
+## Methods (1)
+
+::: details `Get(int)`
 
 ```csharp
 public float Get(int index)
@@ -34,3 +38,5 @@ public float Get(int index)
 | `index` | `int` |  |
 
 **Returns:** `float`
+
+:::

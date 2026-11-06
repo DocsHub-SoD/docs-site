@@ -9,7 +9,9 @@
 public class DispByDestination : Displacement
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public class DispByDestination : Displacement
 | **`destination`** | `public Vector3 destination` | Destination of this displacement. You should feed in a valid agent position using Dew.GetValidAgentPosition() |
 | **`duration`** | `public float duration` | Duration of this displacement. |
 | **`ease`** | `public DewEase ease` | Type of ease function that this displacement will follow over its course. |
+
+:::

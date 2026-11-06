@@ -11,7 +11,9 @@
 public class DewCutsceneDirector : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -27,47 +29,65 @@ public class DewCutsceneDirector : DewNetworkBehaviour, ILogicUpdate
 | **`reenableAiDelay`** | `[ShowIf("disableAi", true)] public float reenableAiDelay` |  |
 | **`stopAllPlayers`** | `public bool stopAllPlayers` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (6)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CmdSkip()`
+:::
+
+::: details `CmdSkip()`
 
 ```csharp
 public void CmdSkip()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 [Button]
 public void Play()
 ```
 
-### `PlayNetworked()`
+:::
+
+::: details `PlayNetworked()`
 
 ```csharp
 public void PlayNetworked()
 ```
+
+:::

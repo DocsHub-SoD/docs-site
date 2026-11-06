@@ -9,9 +9,13 @@
 public class DewProfile.DailyReverieData : DewProfile.ReverieDataBase
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`nextRefillTimestamp`** | `public long nextRefillTimestamp` |  |
 | **`wasNeverFilled`** | `public bool wasNeverFilled` |  |
+
+:::

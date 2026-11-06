@@ -8,9 +8,13 @@
 public struct EventInfoSkillUse
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`skill`** | `public SkillTrigger skill` |  |
 | **`type`** | `public HeroSkillLocation type` |  |
+
+:::

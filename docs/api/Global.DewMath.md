@@ -8,9 +8,9 @@
 public static class DewMath
 ```
 
-## Methods
+## Methods (4)
 
-### `Lerp(Vector2, float)`
+::: details `Lerp(Vector2, float)`
 
 ```csharp
 public static float Lerp(this Vector2 vec, float t)
@@ -24,7 +24,9 @@ public static float Lerp(this Vector2 vec, float t)
 
 **Returns:** `float`
 
-### `MultiplyPercentageBonuses(float, float)`
+:::
+
+::: details `MultiplyPercentageBonuses(float, float)`
 
 Multiply percentage bonuses.This(50, 50) = 125. (1.5 * 1.5 = 2.25)This(100, 100) = 300. (2 * 2 = 4)This(-50, 50) = -25. (0.5 * 1.5 = 0.75)
 
@@ -40,7 +42,9 @@ public static float MultiplyPercentageBonuses(float a, float b)
 
 **Returns:** `float`
 
-### `RandomRange(Vector2)`
+:::
+
+::: details `RandomRange(Vector2)`
 
 ```csharp
 public static float RandomRange(this Vector2 vec)
@@ -53,7 +57,9 @@ public static float RandomRange(this Vector2 vec)
 
 **Returns:** `float`
 
-### `RandomRoundToInt(float, DewRandom)`
+:::
+
+::: details `RandomRoundToInt(float, DewRandom)`
 
 ```csharp
 public static int RandomRoundToInt(float value, DewRandom random = null)
@@ -66,3 +72,5 @@ public static int RandomRoundToInt(float value, DewRandom random = null)
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `int`
+
+:::

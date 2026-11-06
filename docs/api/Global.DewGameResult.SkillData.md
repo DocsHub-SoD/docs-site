@@ -8,7 +8,9 @@
 public struct DewGameResult.SkillData
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,9 +23,11 @@ public struct DewGameResult.SkillData
 | **`netId`** | `public uint netId` |  |
 | **`type`** | `public SkillType type` |  |
 
-## Methods
+:::
 
-### `CaptureTooltipFields(SkillTrigger)`
+## Methods (2)
+
+::: details `CaptureTooltipFields(SkillTrigger)`
 
 ```csharp
 public void CaptureTooltipFields(SkillTrigger skill)
@@ -34,10 +38,14 @@ public void CaptureTooltipFields(SkillTrigger skill)
 | :--- | :--- | :--- |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
-### `GetSkillTrigger()`
+:::
+
+::: details `GetSkillTrigger()`
 
 ```csharp
 public SkillTrigger GetSkillTrigger()
 ```
 
 **Returns:** `SkillTrigger`
+
+:::

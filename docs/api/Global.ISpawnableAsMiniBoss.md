@@ -8,9 +8,9 @@
 public interface ISpawnableAsMiniBoss
 ```
 
-## Methods
+## Methods (3)
 
-### `GiveGenericMiniBossBonus(Entity, float)`
+::: details `GiveGenericMiniBossBonus(Entity, float)`
 
 ```csharp
 public static void GiveGenericMiniBossBonus(Entity entity, float postDelayMultiplier = 0.5)
@@ -22,7 +22,9 @@ public static void GiveGenericMiniBossBonus(Entity entity, float postDelayMultip
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `postDelayMultiplier` | `float` |  |
 
-### `OnBeforeSpawnAsMiniBoss()`
+:::
+
+::: details `OnBeforeSpawnAsMiniBoss()`
 
 Called on server before being spawned as an elite.
 
@@ -30,10 +32,14 @@ Called on server before being spawned as an elite.
 void OnBeforeSpawnAsMiniBoss()
 ```
 
-### `OnCreateAsMiniBoss()`
+:::
+
+::: details `OnCreateAsMiniBoss()`
 
 Called everywhere after being spawned as an elite.
 
 ```csharp
 void OnCreateAsMiniBoss()
 ```
+
+:::

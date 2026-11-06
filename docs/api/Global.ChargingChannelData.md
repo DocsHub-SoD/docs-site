@@ -9,7 +9,9 @@
 public class ChargingChannelData
 ```
 
-## Fields
+## Fields (30)
+
+::: details Click to expand Fields (30)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -44,9 +46,11 @@ public class ChargingChannelData
 | **`showOnScreenTimer`** | `[ToggleLeft] public bool showOnScreenTimer` |  |
 | **`targetValidator`** | `[HideLabel] public AbilityTargetValidator targetValidator` |  |
 
-## Methods
+:::
 
-### `Get(Actor)`
+## Methods (1)
+
+::: details `Get(Actor)`
 
 Create charging channel with clone of this data.You can modify the data in the created channel.
 
@@ -60,3 +64,5 @@ public ChargingChannel Get(Actor effectParent)
 | `effectParent` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `ChargingChannel`
+
+:::

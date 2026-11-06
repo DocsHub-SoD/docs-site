@@ -8,9 +8,9 @@
 public class DewMod.FieldsOnlyResolver : DefaultContractResolver
 ```
 
-## Methods
+## Methods (1)
 
-### `CreateProperty(MemberInfo, MemberSerialization)`
+::: details `CreateProperty(MemberInfo, MemberSerialization)`
 
 ```csharp
 protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
@@ -23,3 +23,5 @@ protected override JsonProperty CreateProperty(MemberInfo member, MemberSerializ
 | `memberSerialization` | `Newtonsoft.Json.MemberSerialization` |  |
 
 **Returns:** `Newtonsoft.Json.Serialization.JsonProperty`
+
+:::

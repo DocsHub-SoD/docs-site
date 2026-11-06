@@ -16,7 +16,9 @@
 public class Room : SingletonDewNetworkBehaviour<Room>, ILogicUpdate
 ```
 
-## Fields
+## Fields (14)
+
+::: details Click to expand Fields (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -35,7 +37,11 @@ public class Room : SingletonDewNetworkBehaviour<Room>, ILogicUpdate
 | **`openRoomExitOnClear`** | `[ToggleLeft] public bool openRoomExitOnClear` |  |
 | **`playerPathablePoints`** | `public readonly List<Vector3> playerPathablePoints` | Available everywhere. |
 
-## Properties
+:::
+
+## Properties (16)
+
+::: details Click to expand Properties (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -56,9 +62,11 @@ public class Room : SingletonDewNetworkBehaviour<Room>, ILogicUpdate
 | **`sections`** | `public IList<RoomSection> sections { get; }` |  |
 | **`unlockedWaypoints`** | `public IReadOnlyList<Room_Waypoint> unlockedWaypoints { get; }` |  |
 
-## Methods
+:::
 
-### `AddUnlockedWaypoint(Room_Waypoint)`
+## Methods (20)
+
+::: details `AddUnlockedWaypoint(Room_Waypoint)`
 
 ```csharp
 public void AddUnlockedWaypoint(Room_Waypoint waypoint)
@@ -69,19 +77,25 @@ public void AddUnlockedWaypoint(Room_Waypoint waypoint)
 | :--- | :--- | :--- |
 | `waypoint` | [`Room_Waypoint`](/api/Global.Room_Waypoint) |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `ClearRoom()`
+:::
+
+::: details `ClearRoom()`
 
 ```csharp
 public void ClearRoom()
 ```
 
-### `GetFinalSection()`
+:::
+
+::: details `GetFinalSection()`
 
 Get a section closest to exit rift.
 
@@ -91,7 +105,9 @@ public RoomSection GetFinalSection()
 
 **Returns:** `RoomSection`
 
-### `GetHeroSpawnPosition()`
+:::
+
+::: details `GetHeroSpawnPosition()`
 
 Get randomly offset spawn position.
 
@@ -101,7 +117,9 @@ public Vector3 GetHeroSpawnPosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetHeroSpawnRotation()`
+:::
+
+::: details `GetHeroSpawnRotation()`
 
 Get spawn rotation.
 
@@ -111,7 +129,9 @@ public Quaternion GetHeroSpawnRotation()
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `GetRoomRandom(int)`
+:::
+
+::: details `GetRoomRandom(int)`
 
 Get a random instance for this room. States for these random instances are persistent.
 
@@ -126,7 +146,9 @@ public DewRandom GetRoomRandom(int offset)
 
 **Returns:** `DewRandom`
 
-### `GetSectionFromWorldPos(Vector3)`
+:::
+
+::: details `GetSectionFromWorldPos(Vector3)`
 
 ```csharp
 public RoomSection GetSectionFromWorldPos(Vector3 pos)
@@ -139,31 +161,41 @@ public RoomSection GetSectionFromWorldPos(Vector3 pos)
 
 **Returns:** `RoomSection`
 
-### `OnLateStart()`
+:::
+
+::: details `OnLateStart()`
 
 ```csharp
 public override void OnLateStart()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OverrideHeroSpawn(Vector3, Quaternion)`
+:::
+
+::: details `OverrideHeroSpawn(Vector3, Quaternion)`
 
 ```csharp
 public void OverrideHeroSpawn(Vector3 pos, Quaternion rot)
@@ -175,7 +207,9 @@ public void OverrideHeroSpawn(Vector3 pos, Quaternion rot)
 | `pos` | `UnityEngine.Vector3` |  |
 | `rot` | `UnityEngine.Quaternion` |  |
 
-### `RemoveCombat(bool)`
+:::
+
+::: details `RemoveCombat(bool)`
 
 Disables enemy spawns, and removes any existing enemies or camps.It is recommended to call this with Dew.CallDelayed() if you're calling it in RoomModifierBase.OnCreate().
 
@@ -188,7 +222,9 @@ public void RemoveCombat(bool clearRoomOnEnteringLastSection)
 | :--- | :--- | :--- |
 | `clearRoomOnEnteringLastSection` | `bool` |  |
 
-### `RemoveObstacles()`
+:::
+
+::: details `RemoveObstacles()`
 
 Remove any kind of progression-blocking obstacles, like barriers, locked teleport shrines and such.It is recommended to call this with Dew.CallDelayed() if you're calling it in RoomModifierBase.OnCreate().
 
@@ -196,7 +232,9 @@ Remove any kind of progression-blocking obstacles, like barriers, locked telepor
 public void RemoveObstacles()
 ```
 
-### `RemoveUnlockedWaypoint(Room_Waypoint)`
+:::
+
+::: details `RemoveUnlockedWaypoint(Room_Waypoint)`
 
 ```csharp
 public void RemoveUnlockedWaypoint(Room_Waypoint waypoint)
@@ -207,7 +245,9 @@ public void RemoveUnlockedWaypoint(Room_Waypoint waypoint)
 | :--- | :--- | :--- |
 | `waypoint` | [`Room_Waypoint`](/api/Global.Room_Waypoint) |  |
 
-### `SetCameraAngleIndex_Local(int)`
+:::
+
+::: details `SetCameraAngleIndex_Local(int)`
 
 ```csharp
 public void SetCameraAngleIndex_Local(int index)
@@ -218,20 +258,28 @@ public void SetCameraAngleIndex_Local(int index)
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 
-### `StartRoom()`
+:::
+
+::: details `StartRoom()`
 
 ```csharp
 public void StartRoom()
 ```
 
-### `StopRoom()`
+:::
+
+::: details `StopRoom()`
 
 ```csharp
 public void StopRoom()
 ```
 
-### `SyncCameraAngle()`
+:::
+
+::: details `SyncCameraAngle()`
 
 ```csharp
 public void SyncCameraAngle()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public class CastMethodData : ICastMethodDataArrow, ICastMethodDataCone, ICastMethodDataNone, ICastMethodDataPoint, ICastMethodDataTarget
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,7 +23,11 @@ public class CastMethodData : ICastMethodDataArrow, ICastMethodDataCone, ICastMe
 | **`_width`** | `[SerializeField] [ShowIf("ShouldWidthFieldShow", true)] public float _width` |  |
 | **`type`** | `[HideLabel] [EnumToggleButtons] public CastMethodType type` |  |
 
-## Properties
+:::
+
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -31,9 +37,11 @@ public class CastMethodData : ICastMethodDataArrow, ICastMethodDataCone, ICastMe
 | **`pointData`** | `public ICastMethodDataPoint pointData { get; }` |  |
 | **`targetData`** | `public ICastMethodDataTarget targetData { get; }` |  |
 
-## Methods
+:::
 
-### `GetEffectiveRange(AbilityTrigger)`
+## Methods (1)
+
+::: details `GetEffectiveRange(AbilityTrigger)`
 
 ```csharp
 public float GetEffectiveRange(AbilityTrigger parent)
@@ -45,3 +53,5 @@ public float GetEffectiveRange(AbilityTrigger parent)
 | `parent` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `float`
+
+:::

@@ -9,7 +9,9 @@
 public class CursorManager : ManagerBase<CursorManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class CursorManager : ManagerBase<CursorManager>, ILogicUpdate
 | **`scaleMultiplier`** | `public float scaleMultiplier` |  |
 | **`textures`** | `public Texture2D[] textures` |  |
 
-## Methods
+:::
 
-### `ApplyCursor(int)`
+## Methods (5)
+
+::: details `ApplyCursor(int)`
 
 ```csharp
 public void ApplyCursor(int index)
@@ -30,7 +34,9 @@ public void ApplyCursor(int index)
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 
-### `CreateScaledCopy(Texture2D, float)`
+:::
+
+::: details `CreateScaledCopy(Texture2D, float)`
 
 ```csharp
 public Texture2D CreateScaledCopy(Texture2D source, float scaleFactor)
@@ -44,13 +50,17 @@ public Texture2D CreateScaledCopy(Texture2D source, float scaleFactor)
 
 **Returns:** `UnityEngine.Texture2D`
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -61,8 +71,12 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `ResizeTextures()`
+:::
+
+::: details `ResizeTextures()`
 
 ```csharp
 public void ResizeTextures()
 ```
+
+:::

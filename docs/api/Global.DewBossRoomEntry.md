@@ -10,8 +10,12 @@
 public class DewBossRoomEntry : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`cutscene`** | `public DewCutsceneDirector cutscene` |  |
+
+:::

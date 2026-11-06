@@ -9,7 +9,9 @@
 public class DashAttackInstance : DamageInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,19 @@ public class DashAttackInstance : DamageInstance, ILogicUpdate, ICleanup, ICusto
 | **`dash`** | `[InlineProperty] [HideLabel] public Dash dash` |  |
 | **`isDirectionMode`** | `public bool isDirectionMode` |  |
 
-## Methods
+:::
 
-### `ActiveFrameUpdate()`
+## Methods (5)
+
+::: details `ActiveFrameUpdate()`
 
 ```csharp
 protected override void ActiveFrameUpdate()
 ```
 
-### `ActiveLogicUpdate(float)`
+:::
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -36,7 +42,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnBeforeDispatchDamage(ref DamageData, Entity)`
+:::
+
+::: details `OnBeforeDispatchDamage(ref DamageData, Entity)`
 
 ```csharp
 protected override void OnBeforeDispatchDamage(ref DamageData dmg, Entity target)
@@ -48,13 +56,17 @@ protected override void OnBeforeDispatchDamage(ref DamageData dmg, Entity target
 | `dmg` | [`DamageData`](/api/Global.DamageData) |  |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnSetupDash(DispByDestination)`
+:::
+
+::: details `OnSetupDash(DispByDestination)`
 
 ```csharp
 protected virtual void OnSetupDash(DispByDestination disp)
@@ -64,3 +76,5 @@ protected virtual void OnSetupDash(DispByDestination disp)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `disp` | [`DispByDestination`](/api/Global.DispByDestination) |  |
+
+:::

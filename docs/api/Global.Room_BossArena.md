@@ -9,21 +9,29 @@
 public class Room_BossArena : SingletonBehaviour<Room_BossArena>
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`radius`** | `public float radius` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`center`** | `public Vector3 center { get; }` |  |
 
-## Methods
+:::
 
-### `GetRandomPathablePosition()`
+## Methods (2)
+
+::: details `GetRandomPathablePosition()`
 
 ```csharp
 public Vector3 GetRandomPathablePosition()
@@ -31,10 +39,14 @@ public Vector3 GetRandomPathablePosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetRandomPosition()`
+:::
+
+::: details `GetRandomPosition()`
 
 ```csharp
 public Vector3 GetRandomPosition()
 ```
 
 **Returns:** `UnityEngine.Vector3`
+
+:::

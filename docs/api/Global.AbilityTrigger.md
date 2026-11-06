@@ -10,7 +10,9 @@
 public class AbilityTrigger : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (14)
+
+::: details Click to expand Fields (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,7 +31,11 @@ public class AbilityTrigger : Actor, ILogicUpdate, ICleanup, ICustomDestroyRouti
 | **`TriggerEvent_OnCastCompleteBeforePrepare`** | `public Action<EventInfoCast> TriggerEvent_OnCastCompleteBeforePrepare` |  |
 | **`TriggerEvent_OnCastStart`** | `public Action<EventInfoCast> TriggerEvent_OnCastStart` |  |
 
-## Properties
+:::
+
+## Properties (15)
+
+::: details Click to expand Properties (15)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -49,15 +55,19 @@ public class AbilityTrigger : Actor, ILogicUpdate, ICleanup, ICustomDestroyRouti
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 | **`owner`** | `public Entity owner { get; set; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (61)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanBeCast()`
+:::
+
+::: details `CanBeCast()`
 
 Can this ability be cast? By default this checks charges/delay/mana cost/self validator/self applied status effects.This must return same value for everyone to ensure consistency.
 
@@ -67,7 +77,9 @@ public virtual bool CanBeCast()
 
 **Returns:** `bool`
 
-### `CanBeReserved()`
+:::
+
+::: details `CanBeReserved()`
 
 Can this ability be reserved? By default this checks everything that CanBeCast() checks but self validators.This must return same value for everyone to ensure consistency.
 
@@ -77,7 +89,9 @@ public virtual bool CanBeReserved()
 
 **Returns:** `bool`
 
-### `ChangeConfigTimed(int, float, Action<EventInfoAbilityInstance>, Action, bool)`
+:::
+
+::: details `ChangeConfigTimed(int, float, Action&lt;EventInfoAbilityInstance&gt;, Action, bool)`
 
 ```csharp
 public AbilityTrigger.ChangedConfigHandle ChangeConfigTimed(int index, float duration, Action<EventInfoAbilityInstance> onUse = null, Action onExpire = null, bool setFillAmount = true)
@@ -94,7 +108,9 @@ public AbilityTrigger.ChangedConfigHandle ChangeConfigTimed(int index, float dur
 
 **Returns:** `AbilityTrigger.ChangedConfigHandle`
 
-### `ChangeConfigTimedOnce(int, float, Action<EventInfoAbilityInstance>, Action, bool)`
+:::
+
+::: details `ChangeConfigTimedOnce(int, float, Action&lt;EventInfoAbilityInstance&gt;, Action, bool)`
 
 ```csharp
 public AbilityTrigger.ChangedConfigHandle ChangeConfigTimedOnce(int index, float duration, Action<EventInfoAbilityInstance> onUse = null, Action onExpire = null, bool setFillAmount = true)
@@ -111,7 +127,9 @@ public AbilityTrigger.ChangedConfigHandle ChangeConfigTimedOnce(int index, float
 
 **Returns:** `AbilityTrigger.ChangedConfigHandle`
 
-### `GetActorReadableName()`
+:::
+
+::: details `GetActorReadableName()`
 
 ```csharp
 public override string GetActorReadableName()
@@ -119,7 +137,9 @@ public override string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetAnimationSpeed()`
+:::
+
+::: details `GetAnimationSpeed()`
 
 ```csharp
 public virtual float GetAnimationSpeed()
@@ -127,7 +147,9 @@ public virtual float GetAnimationSpeed()
 
 **Returns:** `float`
 
-### `GetCastInfoToTarget(Entity)`
+:::
+
+::: details `GetCastInfoToTarget(Entity)`
 
 ```csharp
 public CastInfo GetCastInfoToTarget(Entity target)
@@ -140,7 +162,9 @@ public CastInfo GetCastInfoToTarget(Entity target)
 
 **Returns:** `CastInfo`
 
-### `GetChannelDurationMultiplier()`
+:::
+
+::: details `GetChannelDurationMultiplier()`
 
 ```csharp
 public virtual float GetChannelDurationMultiplier()
@@ -148,7 +172,9 @@ public virtual float GetChannelDurationMultiplier()
 
 **Returns:** `float`
 
-### `GetCooldownTimeMultiplier(int)`
+:::
+
+::: details `GetCooldownTimeMultiplier(int)`
 
 ```csharp
 public virtual float GetCooldownTimeMultiplier(int configIndex)
@@ -161,7 +187,9 @@ public virtual float GetCooldownTimeMultiplier(int configIndex)
 
 **Returns:** `float`
 
-### `GetCooldownTimeMultiplierByAbilityHaste(float)`
+:::
+
+::: details `GetCooldownTimeMultiplierByAbilityHaste(float)`
 
 ```csharp
 public static float GetCooldownTimeMultiplierByAbilityHaste(float abilityHaste)
@@ -174,7 +202,9 @@ public static float GetCooldownTimeMultiplierByAbilityHaste(float abilityHaste)
 
 **Returns:** `float`
 
-### `GetCooldownTimeOffset(int)`
+:::
+
+::: details `GetCooldownTimeOffset(int)`
 
 ```csharp
 public virtual float GetCooldownTimeOffset(int configIndex)
@@ -187,7 +217,9 @@ public virtual float GetCooldownTimeOffset(int configIndex)
 
 **Returns:** `float`
 
-### `GetInstanceSpawnPosition(int, CastInfo)`
+:::
+
+::: details `GetInstanceSpawnPosition(int, CastInfo)`
 
 ```csharp
 protected virtual Vector3 GetInstanceSpawnPosition(int configIndex, CastInfo info)
@@ -201,7 +233,9 @@ protected virtual Vector3 GetInstanceSpawnPosition(int configIndex, CastInfo inf
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetInstanceSpawnRotation(int, CastInfo)`
+:::
+
+::: details `GetInstanceSpawnRotation(int, CastInfo)`
 
 ```csharp
 protected virtual Quaternion? GetInstanceSpawnRotation(int configIndex, CastInfo info)
@@ -215,7 +249,9 @@ protected virtual Quaternion? GetInstanceSpawnRotation(int configIndex, CastInfo
 
 **Returns:** `UnityEngine.Quaternion?`
 
-### `GetMaxCooldownTime(int, bool)`
+:::
+
+::: details `GetMaxCooldownTime(int, bool)`
 
 ```csharp
 public float GetMaxCooldownTime(int configIndex, bool scaled = true)
@@ -229,7 +265,9 @@ public float GetMaxCooldownTime(int configIndex, bool scaled = true)
 
 **Returns:** `float`
 
-### `GetPostDelayDurationMultiplier()`
+:::
+
+::: details `GetPostDelayDurationMultiplier()`
 
 ```csharp
 public virtual float GetPostDelayDurationMultiplier()
@@ -237,7 +275,9 @@ public virtual float GetPostDelayDurationMultiplier()
 
 **Returns:** `float`
 
-### `GetPredictedCastInfoToTarget(Entity, float)`
+:::
+
+::: details `GetPredictedCastInfoToTarget(Entity, float)`
 
 ```csharp
 public CastInfo GetPredictedCastInfoToTarget(Entity target, float strength)
@@ -251,7 +291,9 @@ public CastInfo GetPredictedCastInfoToTarget(Entity target, float strength)
 
 **Returns:** `CastInfo`
 
-### `GetPredictedCastInfoToTarget(Entity)`
+:::
+
+::: details `GetPredictedCastInfoToTarget(Entity)`
 
 ```csharp
 public CastInfo GetPredictedCastInfoToTarget(Entity target)
@@ -264,7 +306,9 @@ public CastInfo GetPredictedCastInfoToTarget(Entity target)
 
 **Returns:** `CastInfo`
 
-### `IsConfigLocked(int)`
+:::
+
+::: details `IsConfigLocked(int)`
 
 ```csharp
 public bool IsConfigLocked(int configIndex)
@@ -277,7 +321,9 @@ public bool IsConfigLocked(int configIndex)
 
 **Returns:** `bool`
 
-### `IsTargetInRange(Entity)`
+:::
+
+::: details `IsTargetInRange(Entity)`
 
 ```csharp
 public bool IsTargetInRange(Entity target)
@@ -290,7 +336,9 @@ public bool IsTargetInRange(Entity target)
 
 **Returns:** `bool`
 
-### `LockCooldown(int)`
+:::
+
+::: details `LockCooldown(int)`
 
 ```csharp
 public void LockCooldown(int configIndex)
@@ -301,7 +349,9 @@ public void LockCooldown(int configIndex)
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -312,7 +362,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnCastCancel(int, CastInfo)`
+:::
+
+::: details `OnCastCancel(int, CastInfo)`
 
 Called on server when this ability's cast channel is canceled.By default, this sets the cooldown time to 1 second if its smaller than 1 second.
 
@@ -326,7 +378,9 @@ protected virtual void OnCastCancel(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastCancelSetCooldownTime(int, CastInfo)`
+:::
+
+::: details `OnCastCancelSetCooldownTime(int, CastInfo)`
 
 ```csharp
 protected virtual void OnCastCancelSetCooldownTime(int configIndex, CastInfo info)
@@ -338,7 +392,9 @@ protected virtual void OnCastCancelSetCooldownTime(int configIndex, CastInfo inf
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastComplete(int, CastInfo)`
+:::
+
+::: details `OnCastComplete(int, CastInfo)`
 
 Called on server when this ability's cast channel is completed.By default, this spends mana and ability charge, sets the appropriate cooldown time, delay, and creates the configured ability instance using the owner's position and rotation.If the config is direction-type, the rotation will be based off of the cast direction.
 
@@ -354,7 +410,9 @@ public virtual AbilityInstance OnCastComplete(int configIndex, CastInfo info)
 
 **Returns:** `AbilityInstance`
 
-### `OnCastCompleteBeforePrepare(EventInfoCast)`
+:::
+
+::: details `OnCastCompleteBeforePrepare(EventInfoCast)`
 
 ```csharp
 public virtual void OnCastCompleteBeforePrepare(EventInfoCast cast)
@@ -365,7 +423,9 @@ public virtual void OnCastCompleteBeforePrepare(EventInfoCast cast)
 | :--- | :--- | :--- |
 | `cast` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
-### `OnCastCompleteSetCharge(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSetCharge(int, CastInfo)`
 
 ```csharp
 public virtual void OnCastCompleteSetCharge(int configIndex, CastInfo info)
@@ -377,7 +437,9 @@ public virtual void OnCastCompleteSetCharge(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastCompleteSetCooldownTime(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSetCooldownTime(int, CastInfo)`
 
 ```csharp
 public virtual void OnCastCompleteSetCooldownTime(int configIndex, CastInfo info)
@@ -389,7 +451,9 @@ public virtual void OnCastCompleteSetCooldownTime(int configIndex, CastInfo info
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastCompleteSetMinimumDelay(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSetMinimumDelay(int, CastInfo)`
 
 ```csharp
 public virtual void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo info)
@@ -401,7 +465,9 @@ public virtual void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo info
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastCompleteSpendMana(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSpendMana(int, CastInfo)`
 
 ```csharp
 public virtual void OnCastCompleteSpendMana(int configIndex, CastInfo info)
@@ -413,7 +479,9 @@ public virtual void OnCastCompleteSpendMana(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastStart(int, CastInfo)`
+:::
+
+::: details `OnCastStart(int, CastInfo)`
 
 Called on server when this ability is cast.By default, this plays the animation and starts the configured channel.IffaceForwardis set to true, it will cause the owner to rotate towards the target/point/direction/cursor position.Target validation will be done on the channel if the cast method is set to Target.
 
@@ -427,7 +495,9 @@ public virtual void OnCastStart(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnConfigChanged(int, int)`
+:::
+
+::: details `OnConfigChanged(int, int)`
 
 Called everywhere when current config index is changed or set initial value.
 
@@ -441,13 +511,17 @@ protected virtual void OnConfigChanged(int oldIndex, int newIndex)
 | `oldIndex` | `int` |  |
 | `newIndex` | `int` |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDeserialize(NetworkReader, bool)`
+:::
+
+::: details `OnDeserialize(NetworkReader, bool)`
 
 ```csharp
 public override void OnDeserialize(NetworkReader reader, bool initialState)
@@ -459,7 +533,9 @@ public override void OnDeserialize(NetworkReader reader, bool initialState)
 | `reader` | `Mirror.NetworkReader` |  |
 | `initialState` | `bool` |  |
 
-### `OnEquip(Entity)`
+:::
+
+::: details `OnEquip(Entity)`
 
 Called on everyone when the trigger is being equipped.
 
@@ -472,7 +548,9 @@ protected virtual void OnEquip(Entity newOwner)
 | :--- | :--- | :--- |
 | `newOwner` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnRotateForward(int, CastInfo)`
+:::
+
+::: details `OnRotateForward(int, CastInfo)`
 
 ```csharp
 protected virtual void OnRotateForward(int configIndex, CastInfo info)
@@ -484,7 +562,9 @@ protected virtual void OnRotateForward(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnSerialize(NetworkWriter, bool)`
+:::
+
+::: details `OnSerialize(NetworkWriter, bool)`
 
 ```csharp
 public override void OnSerialize(NetworkWriter writer, bool initialState)
@@ -496,7 +576,9 @@ public override void OnSerialize(NetworkWriter writer, bool initialState)
 | `writer` | `Mirror.NetworkWriter` |  |
 | `initialState` | `bool` |  |
 
-### `OnStartChannel(int, CastInfo)`
+:::
+
+::: details `OnStartChannel(int, CastInfo)`
 
 ```csharp
 protected virtual void OnStartChannel(int configIndex, CastInfo info)
@@ -508,19 +590,25 @@ protected virtual void OnStartChannel(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `OnUnequip(Entity)`
+:::
+
+::: details `OnUnequip(Entity)`
 
 Called on everyone when the trigger is being unequipped.
 
@@ -533,7 +621,9 @@ protected virtual void OnUnequip(Entity formerOwner)
 | :--- | :--- | :--- |
 | `formerOwner` | [`Entity`](/api/Global.Entity) |  |
 
-### `PredictAngle_Simple(float, Entity, Vector3, float)`
+:::
+
+::: details `PredictAngle_Simple(float, Entity, Vector3, float)`
 
 ```csharp
 public static float PredictAngle_Simple(float strength, Entity target, Vector3 startPos, float delay)
@@ -549,7 +639,9 @@ public static float PredictAngle_Simple(float strength, Entity target, Vector3 s
 
 **Returns:** `float`
 
-### `PredictAngle_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float)`
+:::
+
+::: details `PredictAngle_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float)`
 
 ```csharp
 public static float PredictAngle_SpeedAcceleration(float strength, Entity target, Vector3 startPos, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)
@@ -569,7 +661,9 @@ public static float PredictAngle_SpeedAcceleration(float strength, Entity target
 
 **Returns:** `float`
 
-### `PredictPoint_Simple(float, Entity, float)`
+:::
+
+::: details `PredictPoint_Simple(float, Entity, float)`
 
 ```csharp
 public static Vector3 PredictPoint_Simple(float strength, Entity target, float delay)
@@ -584,7 +678,9 @@ public static Vector3 PredictPoint_Simple(float strength, Entity target, float d
 
 **Returns:** `UnityEngine.Vector3`
 
-### `PredictPoint_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float)`
+:::
+
+::: details `PredictPoint_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float)`
 
 ```csharp
 public static Vector3 PredictPoint_SpeedAcceleration(float strength, Entity target, Vector3 startPos, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)
@@ -604,7 +700,9 @@ public static Vector3 PredictPoint_SpeedAcceleration(float strength, Entity targ
 
 **Returns:** `UnityEngine.Vector3`
 
-### `PredictPointClamped_Simple(float, Entity, Vector3, float, float)`
+:::
+
+::: details `PredictPointClamped_Simple(float, Entity, Vector3, float, float)`
 
 ```csharp
 public static Vector3 PredictPointClamped_Simple(float strength, Entity target, Vector3 startPos, float range, float delay)
@@ -621,7 +719,9 @@ public static Vector3 PredictPointClamped_Simple(float strength, Entity target, 
 
 **Returns:** `UnityEngine.Vector3`
 
-### `PredictPointClamped_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float, float)`
+:::
+
+::: details `PredictPointClamped_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float, float)`
 
 ```csharp
 public static Vector3 PredictPointClamped_SpeedAcceleration(float strength, Entity target, Vector3 startPos, float range, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)
@@ -642,7 +742,9 @@ public static Vector3 PredictPointClamped_SpeedAcceleration(float strength, Enti
 
 **Returns:** `UnityEngine.Vector3`
 
-### `PredictTime_SpeedAcceleration(Entity, Vector3, float, float, float, float, float)`
+:::
+
+::: details `PredictTime_SpeedAcceleration(Entity, Vector3, float, float, float, float, float)`
 
 ```csharp
 public static float PredictTime_SpeedAcceleration(Entity target, Vector3 startPos, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)
@@ -661,7 +763,9 @@ public static float PredictTime_SpeedAcceleration(Entity target, Vector3 startPo
 
 **Returns:** `float`
 
-### `ProcessRange(float)`
+:::
+
+::: details `ProcessRange(float)`
 
 ```csharp
 public virtual float ProcessRange(float original)
@@ -674,7 +778,9 @@ public virtual float ProcessRange(float original)
 
 **Returns:** `float`
 
-### `ProcessReceivedCooldownReduction(ref CooldownReductionSettings, Actor)`
+:::
+
+::: details `ProcessReceivedCooldownReduction(ref CooldownReductionSettings, Actor)`
 
 ```csharp
 public void ProcessReceivedCooldownReduction(ref CooldownReductionSettings data, Actor actor)
@@ -686,7 +792,9 @@ public void ProcessReceivedCooldownReduction(ref CooldownReductionSettings data,
 | `data` | [`CooldownReductionSettings`](/api/Global.CooldownReductionSettings) |  |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatioSettings, Actor)`
+:::
+
+::: details `ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatioSettings, Actor)`
 
 ```csharp
 public void ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatioSettings data, Actor actor)
@@ -698,7 +806,9 @@ public void ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatio
 | `data` | [`CooldownReductionByRatioSettings`](/api/Global.CooldownReductionByRatioSettings) |  |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `SetCharge(int, int)`
+:::
+
+::: details `SetCharge(int, int)`
 
 ```csharp
 public void SetCharge(int configIndex, int charge)
@@ -710,7 +820,9 @@ public void SetCharge(int configIndex, int charge)
 | `configIndex` | `int` |  |
 | `charge` | `int` |  |
 
-### `SetChargeAll(int)`
+:::
+
+::: details `SetChargeAll(int)`
 
 ```csharp
 public void SetChargeAll(int charge)
@@ -721,7 +833,9 @@ public void SetChargeAll(int charge)
 | :--- | :--- | :--- |
 | `charge` | `int` |  |
 
-### `SetCooldownTime(int, float, bool)`
+:::
+
+::: details `SetCooldownTime(int, float, bool)`
 
 ```csharp
 public void SetCooldownTime(int configIndex, float time, bool scaled = true)
@@ -734,7 +848,9 @@ public void SetCooldownTime(int configIndex, float time, bool scaled = true)
 | `time` | `float` |  |
 | `scaled` | `bool` |  |
 
-### `SetCooldownTimeAll(float, bool)`
+:::
+
+::: details `SetCooldownTimeAll(float, bool)`
 
 ```csharp
 public void SetCooldownTimeAll(float time, bool scaled = true)
@@ -746,7 +862,9 @@ public void SetCooldownTimeAll(float time, bool scaled = true)
 | `time` | `float` |  |
 | `scaled` | `bool` |  |
 
-### `SetMinimumDelay(int, float)`
+:::
+
+::: details `SetMinimumDelay(int, float)`
 
 ```csharp
 public void SetMinimumDelay(int configIndex, float delay)
@@ -758,7 +876,9 @@ public void SetMinimumDelay(int configIndex, float delay)
 | `configIndex` | `int` |  |
 | `delay` | `float` |  |
 
-### `SetMinimumDelayAll(float)`
+:::
+
+::: details `SetMinimumDelayAll(float)`
 
 ```csharp
 public void SetMinimumDelayAll(float delay)
@@ -769,7 +889,9 @@ public void SetMinimumDelayAll(float delay)
 | :--- | :--- | :--- |
 | `delay` | `float` |  |
 
-### `ShouldTickCooldown(int)`
+:::
+
+::: details `ShouldTickCooldown(int)`
 
 If false, this trigger will not tick cooldowns by itself nor replenish charges.
 Delays will tick as usual.
@@ -786,7 +908,9 @@ protected virtual bool ShouldTickCooldown(int configIndex)
 
 **Returns:** `bool`
 
-### `SyncCastMethodChanges(int)`
+:::
+
+::: details `SyncCastMethodChanges(int)`
 
 ```csharp
 public void SyncCastMethodChanges(int configIndex)
@@ -797,13 +921,17 @@ public void SyncCastMethodChanges(int configIndex)
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
 
-### `UndoChangeConfig()`
+:::
+
+::: details `UndoChangeConfig()`
 
 ```csharp
 public void UndoChangeConfig()
 ```
 
-### `UnlockCooldown(int)`
+:::
+
+::: details `UnlockCooldown(int)`
 
 ```csharp
 public void UnlockCooldown(int configIndex)
@@ -813,3 +941,5 @@ public void UnlockCooldown(int configIndex)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
+
+:::

@@ -9,7 +9,9 @@
 public class AttackEmpowerEffect : BasicEffect
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,8 +19,14 @@ public class AttackEmpowerEffect : BasicEffect
 | **`onAttackEffect`** | `public Action<EventInfoAttackEffect, int> onAttackEffect` |  |
 | **`onDepleted`** | `public Action onDepleted` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
+
+:::

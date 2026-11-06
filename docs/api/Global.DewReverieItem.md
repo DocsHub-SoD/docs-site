@@ -9,14 +9,20 @@
 public abstract class DewReverieItem : DewGameObserverWithProgress, IExcludeFromPool
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`index`** | `public int index` |  |
 | **`ReverieSlotCount`** | `public const int ReverieSlotCount = 3` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,21 +31,27 @@ public abstract class DewReverieItem : DewGameObserverWithProgress, IExcludeFrom
 | **`grantedStardust`** | `public abstract int grantedStardust { get; }` |  |
 | **`reverieListButtonText`** | `public virtual string reverieListButtonText { get; }` |  |
 
-## Methods
+:::
 
-### `OnComplete()`
+## Methods (6)
+
+::: details `OnComplete()`
 
 ```csharp
 public override void OnComplete()
 ```
 
-### `OnReverieListButtonClick()`
+:::
+
+::: details `OnReverieListButtonClick()`
 
 ```csharp
 public virtual void OnReverieListButtonClick()
 ```
 
-### `OnSetupReverie()`
+:::
+
+::: details `OnSetupReverie()`
 
 Called on a reverie item when the entry gets created for the very first time. You must set persistent variables needed for this reverie to function properly.
 
@@ -47,19 +59,25 @@ Called on a reverie item when the entry gets created for the very first time. Yo
 public virtual void OnSetupReverie()
 ```
 
-### `OnStartLocalClient()`
+:::
+
+::: details `OnStartLocalClient()`
 
 ```csharp
 public override void OnStartLocalClient()
 ```
 
-### `OnStopLocalClient()`
+:::
+
+::: details `OnStopLocalClient()`
 
 ```csharp
 public override void OnStopLocalClient()
 ```
 
-### `SaveReverieStateToData(ReverieDataBase)`
+:::
+
+::: details `SaveReverieStateToData(ReverieDataBase)`
 
 ```csharp
 public void SaveReverieStateToData(DewProfile.ReverieDataBase data)
@@ -69,3 +87,5 @@ public void SaveReverieStateToData(DewProfile.ReverieDataBase data)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `data` | [`DewProfile.ReverieDataBase`](/api/Global.DewProfile) |  |
+
+:::

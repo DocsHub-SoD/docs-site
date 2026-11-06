@@ -8,7 +8,9 @@
 public class EntityGroundMarker : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class EntityGroundMarker : MonoBehaviour
 | **`neutralObject`** | `public GameObject neutralObject` |  |
 | **`offset`** | `public Vector3 offset` |  |
 | **`ownObject`** | `public GameObject ownObject` |  |
+
+:::

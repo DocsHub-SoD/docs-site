@@ -10,27 +10,35 @@
 public class FxGameObject : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`disableWhenStopped`** | `public bool disableWhenStopped` |  |
 
-## Methods
+:::
 
-### `OnInit()`
+## Methods (3)
+
+::: details `OnInit()`
 
 ```csharp
 protected override void OnInit()
 ```
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public override void Play()
 ```
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -40,3 +48,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

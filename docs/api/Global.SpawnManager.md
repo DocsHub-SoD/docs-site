@@ -9,7 +9,9 @@
 public class SpawnManager : ManagerBase<SpawnManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,15 +20,19 @@ public class SpawnManager : ManagerBase<SpawnManager>, ILogicUpdate
 | **`showPoolInfo`** | `[NonSerialized] public bool showPoolInfo` |  |
 | **`usePooling`** | `[NonSerialized] public bool usePooling` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (6)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `Create<T>(T, Vector3, Quaternion, Transform)`
+:::
+
+::: details `Create&lt;T&gt;(T, Vector3, Quaternion, Transform)`
 
 ```csharp
 public static T Create<T>(T prefab, Vector3 position, Quaternion rotation, Transform parent) where T : Object
@@ -43,7 +49,9 @@ public static T Create<T>(T prefab, Vector3 position, Quaternion rotation, Trans
 
 **Returns:** `T`
 
-### `Create<T>(T, Vector3, Quaternion)`
+:::
+
+::: details `Create&lt;T&gt;(T, Vector3, Quaternion)`
 
 ```csharp
 public static T Create<T>(T prefab, Vector3 position, Quaternion rotation) where T : Object
@@ -59,7 +67,9 @@ public static T Create<T>(T prefab, Vector3 position, Quaternion rotation) where
 
 **Returns:** `T`
 
-### `Destroy(GameObject)`
+:::
+
+::: details `Destroy(GameObject)`
 
 ```csharp
 public static void Destroy(GameObject gobj)
@@ -70,7 +80,9 @@ public static void Destroy(GameObject gobj)
 | :--- | :--- | :--- |
 | `gobj` | `UnityEngine.GameObject` |  |
 
-### `InvalidateInstance(Component)`
+:::
+
+::: details `InvalidateInstance(Component)`
 
 Invalidate an instance from pool, preventing it from being reused.
 
@@ -83,7 +95,9 @@ public static void InvalidateInstance(Component activeInstance)
 | :--- | :--- | :--- |
 | `activeInstance` | `UnityEngine.Component` |  |
 
-### `InvalidateInstance(GameObject)`
+:::
+
+::: details `InvalidateInstance(GameObject)`
 
 Invalidate an instance from pool, preventing it from being reused.
 
@@ -95,3 +109,5 @@ public static void InvalidateInstance(GameObject activeInstance)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `activeInstance` | `UnityEngine.GameObject` |  |
+
+:::

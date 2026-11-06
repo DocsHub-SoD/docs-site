@@ -9,16 +9,20 @@
 public class MonsterPool : ScriptableObject
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`entries`** | `[ListDrawerSettings(Expanded = true)] public List<MonsterPool.SpawnRuleEntry> entries` |  |
 | **`scrambleOrder`** | `public bool scrambleOrder` |  |
 
-## Methods
+:::
 
-### `GetFilteredEntries()`
+## Methods (2)
+
+::: details `GetFilteredEntries()`
 
 Get only the entries included in the build.
 
@@ -28,7 +32,9 @@ public List<MonsterPool.SpawnRuleEntry> GetFilteredEntries()
 
 **Returns:** `System.Collections.Generic.List<T><MonsterPool.SpawnRuleEntry>`
 
-### `GetMonsters(int, DewRandom)`
+:::
+
+::: details `GetMonsters(int, DewRandom)`
 
 ```csharp
 public IEnumerator<Monster> GetMonsters(int sectionIndex, DewRandom random = null)
@@ -41,3 +47,5 @@ public IEnumerator<Monster> GetMonsters(int sectionIndex, DewRandom random = nul
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `System.Collections.Generic.IEnumerator<T><Monster>`
+
+:::

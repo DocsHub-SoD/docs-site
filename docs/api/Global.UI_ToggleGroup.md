@@ -8,14 +8,22 @@
 public class UI_ToggleGroup : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onCurrentIndexChanged`** | `public UnityEvent<int> onCurrentIndexChanged` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`currentIndex`** | `public int currentIndex { get; set; }` |  |
+
+:::

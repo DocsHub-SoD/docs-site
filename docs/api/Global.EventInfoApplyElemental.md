@@ -8,7 +8,9 @@
 public struct EventInfoApplyElemental
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct EventInfoApplyElemental
 | **`addedStack`** | `public int addedStack` |  |
 | **`type`** | `public ElementalType type` |  |
 | **`victim`** | `public Entity victim` |  |
+
+:::

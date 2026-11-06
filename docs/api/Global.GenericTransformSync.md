@@ -9,21 +9,27 @@
 public class GenericTransformSync : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`mode`** | `public GenericTransformSync.SyncMode mode` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (2)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -33,3 +39,5 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

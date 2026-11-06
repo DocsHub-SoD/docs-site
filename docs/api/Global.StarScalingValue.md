@@ -11,7 +11,9 @@
 public struct StarScalingValue
 ```
 
-## Fields
+## Fields (15)
+
+::: details Click to expand Fields (15)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -31,9 +33,11 @@ public struct StarScalingValue
 | **`v6`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 7", true)] public float v6` |  |
 | **`v7`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 8", true)] public float v7` |  |
 
-## Methods
+:::
 
-### `Get(int)`
+## Methods (3)
+
+::: details `Get(int)`
 
 ```csharp
 public float Get(int index)
@@ -46,7 +50,9 @@ public float Get(int index)
 
 **Returns:** `float`
 
-### `GetValue(int, float)`
+:::
+
+::: details `GetValue(int, float)`
 
 ```csharp
 public float GetValue(int level, float strength)
@@ -60,7 +66,9 @@ public float GetValue(int level, float strength)
 
 **Returns:** `float`
 
-### `Set(int, float)`
+:::
+
+::: details `Set(int, float)`
 
 ```csharp
 public void Set(int index, float value)
@@ -71,3 +79,5 @@ public void Set(int index, float value)
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 | `value` | `float` |  |
+
+:::

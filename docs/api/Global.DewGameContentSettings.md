@@ -10,7 +10,9 @@
 public class DewGameContentSettings : ScriptableObject
 ```
 
-## Fields
+## Fields (38)
+
+::: details Click to expand Fields (38)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -53,9 +55,11 @@ public class DewGameContentSettings : ScriptableObject
 | **`parent`** | `public DewGameContentSettings parent` |  |
 | **`zoneCountByTier`** | `[NonSerialized] public List<int> zoneCountByTier` |  |
 
-## Methods
+:::
 
-### `FilterZones(string[])`
+## Methods (4)
+
+::: details `FilterZones(string[])`
 
 ```csharp
 public string[] FilterZones(string[] zones)
@@ -68,7 +72,9 @@ public string[] FilterZones(string[] zones)
 
 **Returns:** `string[]`
 
-### `FilterZones(Zone[])`
+:::
+
+::: details `FilterZones(Zone[])`
 
 ```csharp
 public Zone[] FilterZones(Zone[] zones)
@@ -81,7 +87,9 @@ public Zone[] FilterZones(Zone[] zones)
 
 **Returns:** `Zone[]`
 
-### `Init(bool)`
+:::
+
+::: details `Init(bool)`
 
 ```csharp
 public void Init(bool skipValidation = false)
@@ -92,8 +100,12 @@ public void Init(bool skipValidation = false)
 | :--- | :--- | :--- |
 | `skipValidation` | `bool` |  |
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

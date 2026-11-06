@@ -9,16 +9,22 @@
 public class RoomModifiers : RoomComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`modifierInstances`** | `[NonSerialized] public List<RoomModifierBase> modifierInstances` | Available on server. |
 
-## Methods
+:::
 
-### `OnRoomStartServer()`
+## Methods (1)
+
+::: details `OnRoomStartServer()`
 
 ```csharp
 public override void OnRoomStartServer()
 ```
+
+:::

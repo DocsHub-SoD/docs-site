@@ -9,8 +9,12 @@
 public class RoomSavedObject : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`guid`** | `[ReadOnly] [SerializeField] public string guid` |  |
+
+:::

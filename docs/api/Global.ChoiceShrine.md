@@ -9,7 +9,9 @@
 public abstract class ChoiceShrine : Shrine, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IProp, IBanRoomNodesNearby
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,15 +20,19 @@ public abstract class ChoiceShrine : Shrine, ILogicUpdate, ICleanup, ICustomDest
 | **`itemCount`** | `public int itemCount` |  |
 | **`onItemsPopulated`** | `public SafeAction<DewPlayer> onItemsPopulated` | Called on server. |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (7)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CmdChoose(int, NetworkConnectionToClient)`
+:::
+
+::: details `CmdChoose(int, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdChoose(int index, NetworkConnectionToClient sender = null)
@@ -38,19 +44,25 @@ public void CmdChoose(int index, NetworkConnectionToClient sender = null)
 | `index` | `int` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPopulateChoices(DewPlayer)`
+:::
+
+::: details `OnPopulateChoices(DewPlayer)`
 
 ```csharp
 protected abstract void OnPopulateChoices(DewPlayer player)
@@ -61,7 +73,9 @@ protected abstract void OnPopulateChoices(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `OnUse(Entity)`
+:::
+
+::: details `OnUse(Entity)`
 
 ```csharp
 protected override bool OnUse(Entity entity)
@@ -74,7 +88,9 @@ protected override bool OnUse(Entity entity)
 
 **Returns:** `bool`
 
-### `PopulatePlayerChoices(DewPlayer)`
+:::
+
+::: details `PopulatePlayerChoices(DewPlayer)`
 
 ```csharp
 public void PopulatePlayerChoices(DewPlayer player)
@@ -84,3 +100,5 @@ public void PopulatePlayerChoices(DewPlayer player)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+
+:::

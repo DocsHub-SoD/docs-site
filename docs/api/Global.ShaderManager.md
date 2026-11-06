@@ -10,22 +10,28 @@
 public class ShaderManager : ManagerBase<ShaderManager>, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Methods
+## Methods (3)
 
-### `FrameUpdate()`
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `UpdateRoomRotation()`
+:::
+
+::: details `UpdateRoomRotation()`
 
 ```csharp
 public static void UpdateRoomRotation()
 ```
+
+:::

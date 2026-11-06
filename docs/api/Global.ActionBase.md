@@ -9,21 +9,29 @@
 public class ActionBase
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isAllowedToMove`** | `public bool isAllowedToMove` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isFirstTick`** | `public bool isFirstTick { get; }` |  |
 
-## Methods
+:::
 
-### `GetMoveDestination()`
+## Methods (4)
+
+::: details `GetMoveDestination()`
 
 ```csharp
 public virtual Vector3? GetMoveDestination()
@@ -31,7 +39,9 @@ public virtual Vector3? GetMoveDestination()
 
 **Returns:** `UnityEngine.Vector3?`
 
-### `GetMoveDestinationRequiredDistance()`
+:::
+
+::: details `GetMoveDestinationRequiredDistance()`
 
 ```csharp
 public virtual float GetMoveDestinationRequiredDistance()
@@ -39,7 +49,9 @@ public virtual float GetMoveDestinationRequiredDistance()
 
 **Returns:** `float`
 
-### `ShouldCancelIfDisallowedToMove()`
+:::
+
+::: details `ShouldCancelIfDisallowedToMove()`
 
 ```csharp
 public virtual bool ShouldCancelIfDisallowedToMove()
@@ -47,7 +59,9 @@ public virtual bool ShouldCancelIfDisallowedToMove()
 
 **Returns:** `bool`
 
-### `Tick()`
+:::
+
+::: details `Tick()`
 
 Returns true if complete.
 
@@ -56,3 +70,5 @@ public virtual bool Tick()
 ```
 
 **Returns:** `bool`
+
+:::

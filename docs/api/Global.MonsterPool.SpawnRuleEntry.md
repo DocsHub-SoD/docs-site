@@ -9,7 +9,9 @@
 public class MonsterPool.SpawnRuleEntry
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public class MonsterPool.SpawnRuleEntry
 | **`monster`** | `[HideLabel] public AssetRef<Monster> monster` |  |
 | **`useAnd`** | `[LabelText("All Conditions Must Match (AND)")] [ToggleLeft] [ShowIf("@conditions != null && conditions.Count > 1", true)] public bool useAnd` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (2)
+
+::: details `Clone()`
 
 ```csharp
 public MonsterPool.SpawnRuleEntry Clone()
@@ -30,10 +34,14 @@ public MonsterPool.SpawnRuleEntry Clone()
 
 **Returns:** `MonsterPool.SpawnRuleEntry`
 
-### `EvaluateCondition()`
+:::
+
+::: details `EvaluateCondition()`
 
 ```csharp
 public bool EvaluateCondition()
 ```
 
 **Returns:** `bool`
+
+:::

@@ -8,7 +8,9 @@
 public class DewGameplaySettings_Platform : IInitializableSettings
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class DewGameplaySettings_Platform : IInitializableSettings
 | **`skipIntro`** | `public bool skipIntro` |  |
 | **`skipPhotosensitivityWarning`** | `public bool skipPhotosensitivityWarning` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (2)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -27,8 +31,12 @@ public object Clone()
 
 **Returns:** `object`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 ```csharp
 public void Initialize()
 ```
+
+:::

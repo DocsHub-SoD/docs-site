@@ -8,9 +8,9 @@
 public interface IEffectWithOwnerContext
 ```
 
-## Methods
+## Methods (1)
 
-### `SetOwnerContext(EffectOwnerContext)`
+::: details `SetOwnerContext(EffectOwnerContext)`
 
 ```csharp
 void SetOwnerContext(EffectOwnerContext context)
@@ -20,3 +20,5 @@ void SetOwnerContext(EffectOwnerContext context)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `context` | [`EffectOwnerContext`](/api/Global.EffectOwnerContext) |  |
+
+:::

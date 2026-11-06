@@ -9,15 +9,19 @@
 public class FxEntityShell : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`color`** | `[ColorUsage(false, true)] public Color color` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (2)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -28,7 +32,9 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -38,3 +44,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

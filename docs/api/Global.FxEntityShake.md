@@ -9,7 +9,9 @@
 public class FxEntityShake : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class FxEntityShake : FxInterpolatedEffectBase, IEffectComponent, IEffect
 | **`shakeInterval`** | `public float shakeInterval` |  |
 | **`useUnscaledInterval`** | `public bool useUnscaledInterval` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (3)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -31,13 +35,17 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `Update()`
+:::
+
+::: details `Update()`
 
 ```csharp
 protected override void Update()
 ```
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -47,3 +55,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

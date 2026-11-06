@@ -8,10 +8,14 @@
 public class NetworkedOnScreenTimerHandle
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`localeKey`** | `public string localeKey` |  |
 | **`skillKey`** | `public string skillKey` |  |
 | **`valueGetter`** | `[NonSerialized] public Func<float> valueGetter` |  |
+
+:::

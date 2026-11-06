@@ -8,9 +8,13 @@
 public struct EventInfoStartChase
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`entity`** | `public Entity entity` |  |
 | **`target`** | `public Entity target` |  |
+
+:::

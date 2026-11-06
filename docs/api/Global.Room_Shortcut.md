@@ -9,7 +9,9 @@
 public class Room_Shortcut : DewNetworkBehaviour, ILogicUpdate, IInteractable, ICustomInteractable, IPlayerPathablePoint
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,29 +22,41 @@ public class Room_Shortcut : DewNetworkBehaviour, ILogicUpdate, IInteractable, I
 | **`walkEndPos`** | `public Transform walkEndPos` |  |
 | **`walkStartPos`** | `public Transform walkStartPos` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`altInteractProgress`** | `public float? altInteractProgress { get; }` |  |
 | **`cost`** | `public Cost cost { get; }` |  |
 
-## Methods
+:::
 
-### `Close()`
+## Methods (3)
+
+::: details `Close()`
 
 ```csharp
 public void Close()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `Open()`
+:::
+
+::: details `Open()`
 
 ```csharp
 public void Open()
 ```
+
+:::

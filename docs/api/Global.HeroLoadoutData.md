@@ -8,7 +8,9 @@
 public class HeroLoadoutData
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +24,11 @@ public class HeroLoadoutData
 | **`skillR`** | `public int skillR` |  |
 | **`skillTrait`** | `public int skillTrait` |  |
 
-## Methods
+:::
 
-### `ContainsStar(string)`
+## Methods (7)
+
+::: details `ContainsStar(string)`
 
 ```csharp
 public bool ContainsStar(string starName)
@@ -37,7 +41,9 @@ public bool ContainsStar(string starName)
 
 **Returns:** `bool`
 
-### `GetSkill(HeroSkillLocation)`
+:::
+
+::: details `GetSkill(HeroSkillLocation)`
 
 ```csharp
 public int GetSkill(HeroSkillLocation type)
@@ -50,7 +56,9 @@ public int GetSkill(HeroSkillLocation type)
 
 **Returns:** `int`
 
-### `GetStarList(StarType)`
+:::
+
+::: details `GetStarList(StarType)`
 
 ```csharp
 public List<LoadoutStarItem> GetStarList(StarType type)
@@ -63,7 +71,9 @@ public List<LoadoutStarItem> GetStarList(StarType type)
 
 **Returns:** `System.Collections.Generic.List<T><LoadoutStarItem>`
 
-### `IsValidFor(string)`
+:::
+
+::: details `IsValidFor(string)`
 
 ```csharp
 public bool IsValidFor(string heroType)
@@ -76,13 +86,17 @@ public bool IsValidFor(string heroType)
 
 **Returns:** `bool`
 
-### `PopulateLevelsByLocalSaveData()`
+:::
+
+::: details `PopulateLevelsByLocalSaveData()`
 
 ```csharp
 public void PopulateLevelsByLocalSaveData()
 ```
 
-### `SetSkill(HeroSkillLocation, int)`
+:::
+
+::: details `SetSkill(HeroSkillLocation, int)`
 
 ```csharp
 public void SetSkill(HeroSkillLocation type, int value)
@@ -94,7 +108,9 @@ public void SetSkill(HeroSkillLocation type, int value)
 | `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `value` | `int` |  |
 
-### `Validate_Imp(string, bool, bool, HeroStarSlotUnlockData)`
+:::
+
+::: details `Validate_Imp(string, bool, bool, HeroStarSlotUnlockData)`
 
 Returns false if something is invalid.If isRepair is true, the loadout data will be repaired.If not, nothing will be changed.
 
@@ -111,3 +127,5 @@ public bool Validate_Imp(string heroType, bool isRepair, bool checkStarLevels, D
 | `unlockedSlots` | [`DewProfile.HeroStarSlotUnlockData`](/api/Global.DewProfile) |  |
 
 **Returns:** `bool`
+
+:::

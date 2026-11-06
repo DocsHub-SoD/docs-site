@@ -9,8 +9,12 @@
 public class Rift_MockExit : Rift_RoomExit, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby, IBanRoomNodesNearbyMultiple
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onTravel`** | `public UnityEvent<int> onTravel` | Called on interacting client. |
+
+:::

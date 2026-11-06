@@ -8,15 +8,19 @@
 public class AbilityLockHandle
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldShowLockEffect`** | `public bool shouldShowLockEffect { get; }` |  |
 
-## Methods
+:::
 
-### `LockAbilityCast(int)`
+## Methods (17)
+
+::: details `LockAbilityCast(int)`
 
 ```csharp
 public AbilityLockHandle LockAbilityCast(int index)
@@ -29,7 +33,9 @@ public AbilityLockHandle LockAbilityCast(int index)
 
 **Returns:** `AbilityLockHandle`
 
-### `LockAbilityEdit(int)`
+:::
+
+::: details `LockAbilityEdit(int)`
 
 ```csharp
 public AbilityLockHandle LockAbilityEdit(int index)
@@ -42,7 +48,9 @@ public AbilityLockHandle LockAbilityEdit(int index)
 
 **Returns:** `AbilityLockHandle`
 
-### `LockAllAbilitiesCast()`
+:::
+
+::: details `LockAllAbilitiesCast()`
 
 This includes attack ability and movement ability.
 
@@ -52,7 +60,9 @@ public AbilityLockHandle LockAllAbilitiesCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `LockAllActiveMainSkillsCast()`
+:::
+
+::: details `LockAllActiveMainSkillsCast()`
 
 Locks Q, W, E, R
 
@@ -62,7 +72,9 @@ public AbilityLockHandle LockAllActiveMainSkillsCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `LockAllMainSkillsCast()`
+:::
+
+::: details `LockAllMainSkillsCast()`
 
 Locks Q, W, E, R, Trait
 
@@ -72,7 +84,9 @@ public AbilityLockHandle LockAllMainSkillsCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `LockAllMainSkillsEdit()`
+:::
+
+::: details `LockAllMainSkillsEdit()`
 
 Locks Q, W, E, R, Trait
 
@@ -82,7 +96,9 @@ public AbilityLockHandle LockAllMainSkillsEdit()
 
 **Returns:** `AbilityLockHandle`
 
-### `LockAttackAbilityCast()`
+:::
+
+::: details `LockAttackAbilityCast()`
 
 ```csharp
 public AbilityLockHandle LockAttackAbilityCast()
@@ -90,7 +106,9 @@ public AbilityLockHandle LockAttackAbilityCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `LockMovementSkillCast()`
+:::
+
+::: details `LockMovementSkillCast()`
 
 ```csharp
 public AbilityLockHandle LockMovementSkillCast()
@@ -98,7 +116,9 @@ public AbilityLockHandle LockMovementSkillCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public AbilityLockHandle Stop()
@@ -106,7 +126,9 @@ public AbilityLockHandle Stop()
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAbilityCast(int)`
+:::
+
+::: details `UnlockAbilityCast(int)`
 
 ```csharp
 public AbilityLockHandle UnlockAbilityCast(int index)
@@ -119,7 +141,9 @@ public AbilityLockHandle UnlockAbilityCast(int index)
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAbilityEdit(int)`
+:::
+
+::: details `UnlockAbilityEdit(int)`
 
 ```csharp
 public AbilityLockHandle UnlockAbilityEdit(int index)
@@ -132,7 +156,9 @@ public AbilityLockHandle UnlockAbilityEdit(int index)
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAllAbilitiesCast()`
+:::
+
+::: details `UnlockAllAbilitiesCast()`
 
 This includes attack ability and movement ability.
 
@@ -142,7 +168,9 @@ public AbilityLockHandle UnlockAllAbilitiesCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAllActiveMainSkillsCast()`
+:::
+
+::: details `UnlockAllActiveMainSkillsCast()`
 
 Unlocks Q, W, E, R
 
@@ -152,7 +180,9 @@ public AbilityLockHandle UnlockAllActiveMainSkillsCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAllMainSkillsCast()`
+:::
+
+::: details `UnlockAllMainSkillsCast()`
 
 Unlocks Q, W, E, R, Trait
 
@@ -162,7 +192,9 @@ public AbilityLockHandle UnlockAllMainSkillsCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAllMainSkillsEdit()`
+:::
+
+::: details `UnlockAllMainSkillsEdit()`
 
 Unlocks Q, W, E, R, Trait
 
@@ -172,7 +204,9 @@ public AbilityLockHandle UnlockAllMainSkillsEdit()
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockAttackAbilityCast()`
+:::
+
+::: details `UnlockAttackAbilityCast()`
 
 ```csharp
 public AbilityLockHandle UnlockAttackAbilityCast()
@@ -180,10 +214,14 @@ public AbilityLockHandle UnlockAttackAbilityCast()
 
 **Returns:** `AbilityLockHandle`
 
-### `UnlockMovementSkillCast()`
+:::
+
+::: details `UnlockMovementSkillCast()`
 
 ```csharp
 public AbilityLockHandle UnlockMovementSkillCast()
 ```
 
 **Returns:** `AbilityLockHandle`
+
+:::

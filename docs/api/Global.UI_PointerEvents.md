@@ -8,7 +8,9 @@
 public class UI_PointerEvents : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class UI_PointerEvents : MonoBehaviour
 | **`onPointerExit`** | `public UnityEvent onPointerExit` |  |
 | **`onPointerUp`** | `public UnityEvent onPointerUp` |  |
 
-## Methods
+:::
 
-### `OnPointerClick(PointerEventData)`
+## Methods (5)
+
+::: details `OnPointerClick(PointerEventData)`
 
 ```csharp
 public void OnPointerClick(PointerEventData eventData)
@@ -31,7 +35,9 @@ public void OnPointerClick(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerDown(PointerEventData)`
+:::
+
+::: details `OnPointerDown(PointerEventData)`
 
 ```csharp
 public void OnPointerDown(PointerEventData eventData)
@@ -42,7 +48,9 @@ public void OnPointerDown(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerEnter(PointerEventData)`
+:::
+
+::: details `OnPointerEnter(PointerEventData)`
 
 ```csharp
 public void OnPointerEnter(PointerEventData eventData)
@@ -53,7 +61,9 @@ public void OnPointerEnter(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerExit(PointerEventData)`
+:::
+
+::: details `OnPointerExit(PointerEventData)`
 
 ```csharp
 public void OnPointerExit(PointerEventData eventData)
@@ -64,7 +74,9 @@ public void OnPointerExit(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerUp(PointerEventData)`
+:::
+
+::: details `OnPointerUp(PointerEventData)`
 
 ```csharp
 public void OnPointerUp(PointerEventData eventData)
@@ -74,3 +86,5 @@ public void OnPointerUp(PointerEventData eventData)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
+
+:::

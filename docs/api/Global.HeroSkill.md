@@ -9,7 +9,9 @@
 public class HeroSkill : HeroComponent, ILogicUpdate, ICleanup
 ```
 
-## Fields
+## Fields (17)
+
+::: details Click to expand Fields (17)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -31,7 +33,11 @@ public class HeroSkill : HeroComponent, ILogicUpdate, ICleanup
 | **`loadoutTrait`** | `public AssetRef<SkillTrigger>[] loadoutTrait` |  |
 | **`starNormalizedStrength`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public float starNormalizedStrength` |  |
 
-## Properties
+:::
+
+## Properties (14)
+
+::: details Click to expand Properties (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -50,15 +56,19 @@ public class HeroSkill : HeroComponent, ILogicUpdate, ICleanup
 | **`R`** | `public SkillTrigger R { get; set; }` |  |
 | **`W`** | `public SkillTrigger W { get; set; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (36)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanReplaceSkill(HeroSkillLocation)`
+:::
+
+::: details `CanReplaceSkill(HeroSkillLocation)`
 
 ```csharp
 public bool CanReplaceSkill(HeroSkillLocation type)
@@ -71,7 +81,9 @@ public bool CanReplaceSkill(HeroSkillLocation type)
 
 **Returns:** `bool`
 
-### `CmdEquipGem(GemLocation, Gem)`
+:::
+
+::: details `CmdEquipGem(GemLocation, Gem)`
 
 ```csharp
 public void CmdEquipGem(GemLocation loc, Gem gem)
@@ -83,7 +95,9 @@ public void CmdEquipGem(GemLocation loc, Gem gem)
 | `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 
-### `CmdEquipSkill(HeroSkillLocation, SkillTrigger)`
+:::
+
+::: details `CmdEquipSkill(HeroSkillLocation, SkillTrigger)`
 
 ```csharp
 public void CmdEquipSkill(HeroSkillLocation type, SkillTrigger skill)
@@ -95,7 +109,9 @@ public void CmdEquipSkill(HeroSkillLocation type, SkillTrigger skill)
 | `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
-### `CmdMoveGem(Gem, Vector3)`
+:::
+
+::: details `CmdMoveGem(Gem, Vector3)`
 
 ```csharp
 public void CmdMoveGem(Gem gem, Vector3 position)
@@ -107,7 +123,9 @@ public void CmdMoveGem(Gem gem, Vector3 position)
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `CmdMoveSkill(SkillTrigger, Vector3)`
+:::
+
+::: details `CmdMoveSkill(SkillTrigger, Vector3)`
 
 ```csharp
 public void CmdMoveSkill(SkillTrigger skill, Vector3 position)
@@ -119,13 +137,17 @@ public void CmdMoveSkill(SkillTrigger skill, Vector3 position)
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `CmdStopHoldInHand()`
+:::
+
+::: details `CmdStopHoldInHand()`
 
 ```csharp
 public void CmdStopHoldInHand()
 ```
 
-### `CmdSwapSlotGem(GemLocation, GemLocation)`
+:::
+
+::: details `CmdSwapSlotGem(GemLocation, GemLocation)`
 
 ```csharp
 public void CmdSwapSlotGem(GemLocation a, GemLocation b)
@@ -137,7 +159,9 @@ public void CmdSwapSlotGem(GemLocation a, GemLocation b)
 | `a` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `b` | [`GemLocation`](/api/Global.GemLocation) |  |
 
-### `CmdSwapSlotSkill(HeroSkillLocation, HeroSkillLocation)`
+:::
+
+::: details `CmdSwapSlotSkill(HeroSkillLocation, HeroSkillLocation)`
 
 ```csharp
 public void CmdSwapSlotSkill(HeroSkillLocation a, HeroSkillLocation b)
@@ -149,7 +173,9 @@ public void CmdSwapSlotSkill(HeroSkillLocation a, HeroSkillLocation b)
 | `a` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `b` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
-### `CmdUnequipGem(GemLocation, Vector3)`
+:::
+
+::: details `CmdUnequipGem(GemLocation, Vector3)`
 
 ```csharp
 public void CmdUnequipGem(GemLocation loc, Vector3 position)
@@ -161,7 +187,9 @@ public void CmdUnequipGem(GemLocation loc, Vector3 position)
 | `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `CmdUnequipSkill(HeroSkillLocation, Vector3)`
+:::
+
+::: details `CmdUnequipSkill(HeroSkillLocation, Vector3)`
 
 ```csharp
 public void CmdUnequipSkill(HeroSkillLocation type, Vector3 position)
@@ -173,7 +201,9 @@ public void CmdUnequipSkill(HeroSkillLocation type, Vector3 position)
 | `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `EquipGem(GemLocation, Gem)`
+:::
+
+::: details `EquipGem(GemLocation, Gem)`
 
 ```csharp
 public void EquipGem(GemLocation loc, Gem gem)
@@ -185,7 +215,9 @@ public void EquipGem(GemLocation loc, Gem gem)
 | `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 
-### `EquipSkill(HeroSkillLocation, SkillTrigger, bool)`
+:::
+
+::: details `EquipSkill(HeroSkillLocation, SkillTrigger, bool)`
 
 ```csharp
 public void EquipSkill(HeroSkillLocation type, SkillTrigger skill, bool ignoreCanReplace = false)
@@ -198,7 +230,9 @@ public void EquipSkill(HeroSkillLocation type, SkillTrigger skill, bool ignoreCa
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `ignoreCanReplace` | `bool` |  |
 
-### `GetCurrentGemCount(HeroSkillLocation)`
+:::
+
+::: details `GetCurrentGemCount(HeroSkillLocation)`
 
 ```csharp
 public int GetCurrentGemCount(HeroSkillLocation type)
@@ -211,7 +245,9 @@ public int GetCurrentGemCount(HeroSkillLocation type)
 
 **Returns:** `int`
 
-### `GetEmptyGemSlot(HeroSkillLocation)`
+:::
+
+::: details `GetEmptyGemSlot(HeroSkillLocation)`
 
 ```csharp
 public int GetEmptyGemSlot(HeroSkillLocation type)
@@ -224,7 +260,9 @@ public int GetEmptyGemSlot(HeroSkillLocation type)
 
 **Returns:** `int`
 
-### `GetFirstGem(HeroSkillLocation)`
+:::
+
+::: details `GetFirstGem(HeroSkillLocation)`
 
 ```csharp
 public Gem GetFirstGem(HeroSkillLocation type)
@@ -237,7 +275,9 @@ public Gem GetFirstGem(HeroSkillLocation type)
 
 **Returns:** `Gem`
 
-### `GetGem(GemLocation)`
+:::
+
+::: details `GetGem(GemLocation)`
 
 ```csharp
 public Gem GetGem(GemLocation loc)
@@ -250,7 +290,9 @@ public Gem GetGem(GemLocation loc)
 
 **Returns:** `Gem`
 
-### `GetGemsInSkill(HeroSkillLocation)`
+:::
+
+::: details `GetGemsInSkill(HeroSkillLocation)`
 
 ```csharp
 public IEnumerable<Gem> GetGemsInSkill(HeroSkillLocation type)
@@ -263,7 +305,9 @@ public IEnumerable<Gem> GetGemsInSkill(HeroSkillLocation type)
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><Gem>`
 
-### `GetGemsPairInSkill(HeroSkillLocation)`
+:::
+
+::: details `GetGemsPairInSkill(HeroSkillLocation)`
 
 ```csharp
 public IEnumerable<KeyValuePair<GemLocation, Gem>> GetGemsPairInSkill(HeroSkillLocation type)
@@ -276,7 +320,9 @@ public IEnumerable<KeyValuePair<GemLocation, Gem>> GetGemsPairInSkill(HeroSkillL
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.KeyValuePair<TKey, TValue><GemLocation,Gem>>`
 
-### `GetLoadoutSkills(HeroSkillLocation)`
+:::
+
+::: details `GetLoadoutSkills(HeroSkillLocation)`
 
 ```csharp
 public SkillTrigger[] GetLoadoutSkills(HeroSkillLocation type)
@@ -289,7 +335,9 @@ public SkillTrigger[] GetLoadoutSkills(HeroSkillLocation type)
 
 **Returns:** `SkillTrigger[]`
 
-### `GetMaxGemCount(HeroSkillLocation)`
+:::
+
+::: details `GetMaxGemCount(HeroSkillLocation)`
 
 ```csharp
 public int GetMaxGemCount(HeroSkillLocation type)
@@ -302,7 +350,9 @@ public int GetMaxGemCount(HeroSkillLocation type)
 
 **Returns:** `int`
 
-### `GetSkill(HeroSkillLocation)`
+:::
+
+::: details `GetSkill(HeroSkillLocation)`
 
 ```csharp
 public SkillTrigger GetSkill(HeroSkillLocation type)
@@ -315,7 +365,9 @@ public SkillTrigger GetSkill(HeroSkillLocation type)
 
 **Returns:** `SkillTrigger`
 
-### `HasGemOfType(string)`
+:::
+
+::: details `HasGemOfType(string)`
 
 ```csharp
 public bool HasGemOfType(string type)
@@ -328,7 +380,9 @@ public bool HasGemOfType(string type)
 
 **Returns:** `bool`
 
-### `HoldInHand(IItem)`
+:::
+
+::: details `HoldInHand(IItem)`
 
 ```csharp
 public void HoldInHand(IItem holdable)
@@ -339,7 +393,9 @@ public void HoldInHand(IItem holdable)
 | :--- | :--- | :--- |
 | `holdable` | [`IItem`](/api/Global.IItem) |  |
 
-### `MergeGem(Gem, Gem)`
+:::
+
+::: details `MergeGem(Gem, Gem)`
 
 ```csharp
 public void MergeGem(Gem victim, Gem receivingGem)
@@ -351,19 +407,25 @@ public void MergeGem(Gem victim, Gem receivingGem)
 | `victim` | [`Gem`](/api/Global.Gem) |  |
 | `receivingGem` | [`Gem`](/api/Global.Gem) |  |
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `SetMaxGemCount(HeroSkillLocation, int)`
+:::
+
+::: details `SetMaxGemCount(HeroSkillLocation, int)`
 
 ```csharp
 public void SetMaxGemCount(HeroSkillLocation type, int count)
@@ -375,13 +437,17 @@ public void SetMaxGemCount(HeroSkillLocation type, int count)
 | `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `count` | `int` |  |
 
-### `StopHoldInHand()`
+:::
+
+::: details `StopHoldInHand()`
 
 ```csharp
 public void StopHoldInHand()
 ```
 
-### `TryGetEquippedGemOfSameType(Type, out GemLocation, out Gem)`
+:::
+
+::: details `TryGetEquippedGemOfSameType(Type, out GemLocation, out Gem)`
 
 ```csharp
 public bool TryGetEquippedGemOfSameType(Type type, out GemLocation loc, out Gem gem)
@@ -396,7 +462,9 @@ public bool TryGetEquippedGemOfSameType(Type type, out GemLocation loc, out Gem 
 
 **Returns:** `bool`
 
-### `TryGetGem(GemLocation, out Gem)`
+:::
+
+::: details `TryGetGem(GemLocation, out Gem)`
 
 ```csharp
 public bool TryGetGem(GemLocation loc, out Gem gem)
@@ -410,7 +478,9 @@ public bool TryGetGem(GemLocation loc, out Gem gem)
 
 **Returns:** `bool`
 
-### `TryGetGemLocation(Gem, out GemLocation)`
+:::
+
+::: details `TryGetGemLocation(Gem, out GemLocation)`
 
 ```csharp
 public bool TryGetGemLocation(Gem gem, out GemLocation location)
@@ -424,7 +494,9 @@ public bool TryGetGemLocation(Gem gem, out GemLocation location)
 
 **Returns:** `bool`
 
-### `TryGetSkill(HeroSkillLocation, out SkillTrigger)`
+:::
+
+::: details `TryGetSkill(HeroSkillLocation, out SkillTrigger)`
 
 ```csharp
 public bool TryGetSkill(HeroSkillLocation type, out SkillTrigger skill)
@@ -438,7 +510,9 @@ public bool TryGetSkill(HeroSkillLocation type, out SkillTrigger skill)
 
 **Returns:** `bool`
 
-### `TryGetSkillLocation(SkillTrigger, out HeroSkillLocation)`
+:::
+
+::: details `TryGetSkillLocation(SkillTrigger, out HeroSkillLocation)`
 
 ```csharp
 public bool TryGetSkillLocation(SkillTrigger skill, out HeroSkillLocation type)
@@ -452,7 +526,9 @@ public bool TryGetSkillLocation(SkillTrigger skill, out HeroSkillLocation type)
 
 **Returns:** `bool`
 
-### `UnequipGem(GemLocation, Vector3)`
+:::
+
+::: details `UnequipGem(GemLocation, Vector3)`
 
 ```csharp
 public Gem UnequipGem(GemLocation loc, Vector3 position)
@@ -466,7 +542,9 @@ public Gem UnequipGem(GemLocation loc, Vector3 position)
 
 **Returns:** `Gem`
 
-### `UnequipSkill(HeroSkillLocation, Vector3, bool)`
+:::
+
+::: details `UnequipSkill(HeroSkillLocation, Vector3, bool)`
 
 ```csharp
 public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool ignoreCanReplace = false)
@@ -480,3 +558,5 @@ public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool 
 | `ignoreCanReplace` | `bool` |  |
 
 **Returns:** `SkillTrigger`
+
+:::

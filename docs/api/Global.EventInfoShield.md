@@ -8,7 +8,9 @@
 public struct EventInfoShield
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public struct EventInfoShield
 | **`originalAmount`** | `public float originalAmount` | The amount of shield before being processed by processors. |
 | **`statusEffect`** | `public StatusEffect statusEffect` | The status effect that is giving the entity shield. |
 | **`target`** | `public Entity target` | The entity receiving the shield. |
+
+:::

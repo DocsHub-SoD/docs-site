@@ -8,9 +8,9 @@
 public class SafeAction<T1, T2, T3>
 ```
 
-## Methods
+## Methods (4)
 
-### `Add(Action<T1, T2, T3>)`
+::: details `Add(Action&lt;T1, T2, T3&gt;)`
 
 ```csharp
 public SafeAction<T1, T2, T3> Add(Action<T1, T2, T3> handler)
@@ -23,7 +23,9 @@ public SafeAction<T1, T2, T3> Add(Action<T1, T2, T3> handler)
 
 **Returns:** `SafeAction<T1, T2, T3>`
 
-### `Contains(Action<T1, T2, T3>)`
+:::
+
+::: details `Contains(Action&lt;T1, T2, T3&gt;)`
 
 ```csharp
 public bool Contains(Action<T1, T2, T3> handler)
@@ -36,7 +38,9 @@ public bool Contains(Action<T1, T2, T3> handler)
 
 **Returns:** `bool`
 
-### `Invoke(T1, T2, T3)`
+:::
+
+::: details `Invoke(T1, T2, T3)`
 
 ```csharp
 public void Invoke(T1 a, T2 b, T3 c)
@@ -49,7 +53,9 @@ public void Invoke(T1 a, T2 b, T3 c)
 | `b` | `T2` |  |
 | `c` | `T3` |  |
 
-### `Remove(Action<T1, T2, T3>)`
+:::
+
+::: details `Remove(Action&lt;T1, T2, T3&gt;)`
 
 ```csharp
 public SafeAction<T1, T2, T3> Remove(Action<T1, T2, T3> handler)
@@ -61,3 +67,5 @@ public SafeAction<T1, T2, T3> Remove(Action<T1, T2, T3> handler)
 | `handler` | `System.Action<T1, T2, T3>` |  |
 
 **Returns:** `SafeAction<T1, T2, T3>`
+
+:::

@@ -9,7 +9,9 @@
 public class DecorationSettings
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,3 +23,5 @@ public class DecorationSettings
 | **`decoScaleMax`** | `public Vector3 decoScaleMax` |  |
 | **`decoScaleMin`** | `public Vector3 decoScaleMin` |  |
 | **`uniformScale`** | `public bool uniformScale` |  |
+
+:::

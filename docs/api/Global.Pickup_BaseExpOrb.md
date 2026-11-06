@@ -9,15 +9,19 @@
 public class Pickup_BaseExpOrb : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`amount`** | `[NonSerialized] public float amount` |  |
 
-## Methods
+:::
 
-### `OnPickup(Hero)`
+## Methods (1)
+
+::: details `OnPickup(Hero)`
 
 ```csharp
 protected override void OnPickup(Hero hero)
@@ -27,3 +31,5 @@ protected override void OnPickup(Hero hero)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `hero` | [`Hero`](/api/Global.Hero) |  |
+
+:::

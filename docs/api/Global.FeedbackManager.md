@@ -9,7 +9,9 @@
 public class FeedbackManager : ManagerBase<FeedbackManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (12)
+
+::: details Click to expand Fields (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,21 +28,27 @@ public class FeedbackManager : ManagerBase<FeedbackManager>, ILogicUpdate
 | **`takeDmg`** | `public FeedbackManager.EffectPool takeDmg` |  |
 | **`takeDmgDot`** | `public FeedbackManager.EffectPool takeDmgDot` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (4)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `PlayFeedbackEffect(string)`
+:::
+
+::: details `PlayFeedbackEffect(string)`
 
 ```csharp
 public void PlayFeedbackEffect(string feedbackName)
@@ -51,7 +59,9 @@ public void PlayFeedbackEffect(string feedbackName)
 | :--- | :--- | :--- |
 | `feedbackName` | `string` |  |
 
-### `StopFeedbackEffect(string)`
+:::
+
+::: details `StopFeedbackEffect(string)`
 
 ```csharp
 public void StopFeedbackEffect(string feedbackName)
@@ -61,3 +71,5 @@ public void StopFeedbackEffect(string feedbackName)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `feedbackName` | `string` |  |
+
+:::

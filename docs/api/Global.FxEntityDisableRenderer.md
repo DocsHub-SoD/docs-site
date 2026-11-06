@@ -8,21 +8,29 @@
 public class FxEntityDisableRenderer : MonoBehaviour, IEffectComponent, IAttachableToEntity
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`delay`** | `public float delay` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (3)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -33,14 +41,20 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

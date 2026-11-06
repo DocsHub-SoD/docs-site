@@ -10,7 +10,9 @@
 public struct UI_GamepadNavigationHint.NavigationSettings
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public struct UI_GamepadNavigationHint.NavigationSettings
 | **`customTarget`** | `[ShowIf("@navigation == GamepadNavigation.Custom", true)] public GameObject customTarget` |  |
 | **`limitToChildren`** | `[ShowIf("@navigation != GamepadNavigation.Custom", true)] [ToggleLeft] public bool limitToChildren` |  |
 | **`navigation`** | `[EnumToggleButtons] [HideLabel] public GamepadNavigation navigation` |  |
+
+:::

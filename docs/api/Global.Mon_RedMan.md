@@ -9,15 +9,19 @@
 public class Mon_RedMan : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`deathEffects`** | `public GameObject deathEffects` |  |
 
-## Methods
+:::
 
-### `OnDeath(EventInfoKill)`
+## Methods (1)
+
+::: details `OnDeath(EventInfoKill)`
 
 ```csharp
 protected override void OnDeath(EventInfoKill info)
@@ -27,3 +31,5 @@ protected override void OnDeath(EventInfoKill info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
+
+:::

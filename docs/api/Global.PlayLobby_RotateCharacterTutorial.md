@@ -8,8 +8,12 @@
 public class PlayLobby_RotateCharacterTutorial : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`lobbyCharacters`** | `public PlayLobby_Character[] lobbyCharacters` |  |
+
+:::

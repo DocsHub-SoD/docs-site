@@ -9,16 +9,20 @@
 public abstract class ImageComponent : MonoBehaviour
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`image`** | `public Image image { get; }` |  |
 | **`material`** | `public Material material { get; }` |  |
 
-## Methods
+:::
 
-### `Init()`
+## Methods (5)
+
+::: details `Init()`
 
 It's guaranteed image and material to be non-null when this is called.
 
@@ -26,19 +30,25 @@ It's guaranteed image and material to be non-null when this is called.
 public virtual void Init()
 ```
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 public void OnDestroy()
 ```
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 public virtual void Start()
 ```
 
-### `Tick()`
+:::
+
+::: details `Tick()`
 
 It's guaranteed image and material to be non-null when this is called.
 
@@ -46,8 +56,12 @@ It's guaranteed image and material to be non-null when this is called.
 public virtual void Tick()
 ```
 
-### `Update()`
+:::
+
+::: details `Update()`
 
 ```csharp
 public virtual void Update()
 ```
+
+:::

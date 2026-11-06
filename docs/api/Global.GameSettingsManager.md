@@ -9,7 +9,9 @@
 public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,7 +32,11 @@ public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, IL
 | **`localPlayerDejavuCost`** | `public int localPlayerDejavuCost` |  |
 | **`unlockedGameItems`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> unlockedGameItems` |  |
 
-## Properties
+:::
+
+## Properties (11)
+
+::: details Click to expand Properties (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -46,9 +52,11 @@ public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, IL
 | **`midJoinWaitType`** | `public MidJoinWaitType midJoinWaitType { get; set; }` | This should be set and unset accordingly mid-run. |
 | **`state`** | `public GameState state { get; set; }` |  |
 
-## Methods
+:::
 
-### `AddLucidDream(string)`
+## Methods (18)
+
+::: details `AddLucidDream(string)`
 
 ```csharp
 public void AddLucidDream(string type)
@@ -59,31 +67,41 @@ public void AddLucidDream(string type)
 | :--- | :--- | :--- |
 | `type` | `string` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `ClearLucidDreams()`
+:::
+
+::: details `ClearLucidDreams()`
 
 ```csharp
 public void ClearLucidDreams()
 ```
 
-### `DisconnectByMidJoinBan()`
+:::
+
+::: details `DisconnectByMidJoinBan()`
 
 ```csharp
 public void DisconnectByMidJoinBan()
 ```
 
-### `DisconnectByMidJoinWaitBlock()`
+:::
+
+::: details `DisconnectByMidJoinWaitBlock()`
 
 ```csharp
 public void DisconnectByMidJoinWaitBlock()
 ```
 
-### `GetLocalPreferredGameSettings()`
+:::
+
+::: details `GetLocalPreferredGameSettings()`
 
 ```csharp
 public PreferredGameSettings GetLocalPreferredGameSettings()
@@ -91,7 +109,9 @@ public PreferredGameSettings GetLocalPreferredGameSettings()
 
 **Returns:** `PreferredGameSettings`
 
-### `Lobby_UpdateAttribute(string)`
+:::
+
+::: details `Lobby_UpdateAttribute(string)`
 
 ```csharp
 public UniTask Lobby_UpdateAttribute(string key)
@@ -104,7 +124,9 @@ public UniTask Lobby_UpdateAttribute(string key)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `Lobby_UpdateCanJoinAndGameStarted(bool?)`
+:::
+
+::: details `Lobby_UpdateCanJoinAndGameStarted(bool?)`
 
 ```csharp
 public UniTask Lobby_UpdateCanJoinAndGameStarted(bool? hasGameStartedOverride = null)
@@ -117,7 +139,9 @@ public UniTask Lobby_UpdateCanJoinAndGameStarted(bool? hasGameStartedOverride = 
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `Lobby_UpdateGameAttributes()`
+:::
+
+::: details `Lobby_UpdateGameAttributes()`
 
 ```csharp
 public UniTask Lobby_UpdateGameAttributes()
@@ -125,7 +149,9 @@ public UniTask Lobby_UpdateGameAttributes()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `Lobby_UpdateGameStartTimestamp()`
+:::
+
+::: details `Lobby_UpdateGameStartTimestamp()`
 
 ```csharp
 public UniTask Lobby_UpdateGameStartTimestamp()
@@ -133,7 +159,9 @@ public UniTask Lobby_UpdateGameStartTimestamp()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -144,25 +172,33 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `RemoveLucidDream(string)`
+:::
+
+::: details `RemoveLucidDream(string)`
 
 ```csharp
 public void RemoveLucidDream(string type)
@@ -173,7 +209,9 @@ public void RemoveLucidDream(string type)
 | :--- | :--- | :--- |
 | `type` | `string` |  |
 
-### `SetEnableVotes(bool)`
+:::
+
+::: details `SetEnableVotes(bool)`
 
 ```csharp
 public void SetEnableVotes(bool value)
@@ -184,13 +222,17 @@ public void SetEnableVotes(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `UpdateAvailableLucidDreams()`
+:::
+
+::: details `UpdateAvailableLucidDreams()`
 
 ```csharp
 public void UpdateAvailableLucidDreams()
 ```
 
-### `ValidateBannedItems(bool)`
+:::
+
+::: details `ValidateBannedItems(bool)`
 
 ```csharp
 public void ValidateBannedItems(bool printMessage)
@@ -200,3 +242,5 @@ public void ValidateBannedItems(bool printMessage)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `printMessage` | `bool` |  |
+
+:::

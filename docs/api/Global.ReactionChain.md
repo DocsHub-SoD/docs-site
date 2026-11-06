@@ -8,9 +8,9 @@
 public struct ReactionChain
 ```
 
-## Methods
+## Methods (5)
 
-### `DidReact(Actor, bool)`
+::: details `DidReact(Actor, bool)`
 
 Check if the actor has already contributed to this reaction chain.
 
@@ -26,7 +26,9 @@ public bool DidReact(Actor actor, bool checkOnlyType = false)
 
 **Returns:** `bool`
 
-### `Equals(ReactionChain)`
+:::
+
+::: details `Equals(ReactionChain)`
 
 ```csharp
 public bool Equals(ReactionChain other)
@@ -39,7 +41,9 @@ public bool Equals(ReactionChain other)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -52,7 +56,9 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
@@ -60,7 +66,9 @@ public override int GetHashCode()
 
 **Returns:** `int`
 
-### `New(Actor)`
+:::
+
+::: details `New(Actor)`
 
 Returns new reaction chain with given actor in contribution.
 
@@ -74,3 +82,5 @@ public ReactionChain New(Actor actor)
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `ReactionChain`
+
+:::

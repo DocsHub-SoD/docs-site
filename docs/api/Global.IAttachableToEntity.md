@@ -8,9 +8,9 @@
 public interface IAttachableToEntity
 ```
 
-## Methods
+## Methods (1)
 
-### `OnAttachToEntity(Entity)`
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 void OnAttachToEntity(Entity target)
@@ -20,3 +20,5 @@ void OnAttachToEntity(Entity target)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
+
+:::

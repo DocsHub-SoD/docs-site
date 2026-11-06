@@ -9,7 +9,9 @@
 public class SkillTrigger : AbilityTrigger, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IItem, IExcludeFromPool
 ```
 
-## Fields
+## Fields (34)
+
+::: details Click to expand Fields (34)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -48,7 +50,11 @@ public class SkillTrigger : AbilityTrigger, ILogicUpdate, ICleanup, ICustomDestr
 | **`Ult_PerTakenNonElementalDamage`** | `public const float Ult_PerTakenNonElementalDamage = 0.2125` |  |
 | **`useCustomSkillHastePerLevel`** | `[BoxGroup("Skill Settings", true, false, 0)] public bool useCustomSkillHastePerLevel` |  |
 
-## Properties
+:::
+
+## Properties (25)
+
+::: details Click to expand Properties (25)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -78,9 +84,11 @@ public class SkillTrigger : AbilityTrigger, ILogicUpdate, ICleanup, ICustomDestr
 | **`tempOwner`** | `public DewPlayer tempOwner { get; set; }` |  |
 | **`worldModel`** | `public ItemWorldModel worldModel { get; }` |  |
 
-## Methods
+:::
 
-### `AddSkillBonus(SkillBonus)`
+## Methods (39)
+
+::: details `AddSkillBonus(SkillBonus)`
 
 ```csharp
 public SkillBonus AddSkillBonus(SkillBonus bonus)
@@ -93,13 +101,17 @@ public SkillBonus AddSkillBonus(SkillBonus bonus)
 
 **Returns:** `SkillBonus`
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanInteract(Entity)`
+:::
+
+::: details `CanInteract(Entity)`
 
 ```csharp
 public bool CanInteract(Entity entity)
@@ -112,7 +124,9 @@ public bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `CreateDamage(SourceType, ScalingValue, float)`
+:::
+
+::: details `CreateDamage(SourceType, ScalingValue, float)`
 
 ```csharp
 public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, float procCoefficient = 1)
@@ -127,7 +141,9 @@ public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, f
 
 **Returns:** `DamageData`
 
-### `Damage(ScalingValue, float)`
+:::
+
+::: details `Damage(ScalingValue, float)`
 
 ```csharp
 public DamageData Damage(ScalingValue value, float procCoefficient = 1)
@@ -141,7 +157,9 @@ public DamageData Damage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `DefaultDamage(ScalingValue, float)`
+:::
+
+::: details `DefaultDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
@@ -155,13 +173,17 @@ public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `DismantleSkill()`
+:::
+
+::: details `DismantleSkill()`
 
 ```csharp
 public void DismantleSkill()
 ```
 
-### `GetActorReadableName()`
+:::
+
+::: details `GetActorReadableName()`
 
 ```csharp
 public override string GetActorReadableName()
@@ -169,7 +191,9 @@ public override string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetBuyGold()`
+:::
+
+::: details `GetBuyGold()`
 
 ```csharp
 public int GetBuyGold()
@@ -177,7 +201,9 @@ public int GetBuyGold()
 
 **Returns:** `int`
 
-### `GetBuyGold(Rarity, int)`
+:::
+
+::: details `GetBuyGold(Rarity, int)`
 
 ```csharp
 public static int GetBuyGold(Rarity rarity, int level)
@@ -191,7 +217,9 @@ public static int GetBuyGold(Rarity rarity, int level)
 
 **Returns:** `int`
 
-### `GetCooldownTimeMultiplier(int)`
+:::
+
+::: details `GetCooldownTimeMultiplier(int)`
 
 ```csharp
 public override float GetCooldownTimeMultiplier(int configIndex)
@@ -204,7 +232,9 @@ public override float GetCooldownTimeMultiplier(int configIndex)
 
 **Returns:** `float`
 
-### `GetCooldownTimeOffset(int)`
+:::
+
+::: details `GetCooldownTimeOffset(int)`
 
 ```csharp
 public override float GetCooldownTimeOffset(int configIndex)
@@ -217,7 +247,9 @@ public override float GetCooldownTimeOffset(int configIndex)
 
 **Returns:** `float`
 
-### `GetCooldownTimeOnLevel(int)`
+:::
+
+::: details `GetCooldownTimeOnLevel(int)`
 
 ```csharp
 public float GetCooldownTimeOnLevel(int lvl)
@@ -230,7 +262,9 @@ public float GetCooldownTimeOnLevel(int lvl)
 
 **Returns:** `float`
 
-### `GetDismantleAmount(DewPlayer)`
+:::
+
+::: details `GetDismantleAmount(DewPlayer)`
 
 ```csharp
 public int GetDismantleAmount(DewPlayer player)
@@ -243,7 +277,9 @@ public int GetDismantleAmount(DewPlayer player)
 
 **Returns:** `int`
 
-### `GetFormattedSkillTitle()`
+:::
+
+::: details `GetFormattedSkillTitle()`
 
 ```csharp
 public string GetFormattedSkillTitle()
@@ -251,7 +287,9 @@ public string GetFormattedSkillTitle()
 
 **Returns:** `string`
 
-### `GetGoldValue(Rarity, int)`
+:::
+
+::: details `GetGoldValue(Rarity, int)`
 
 ```csharp
 public static int GetGoldValue(Rarity rarity, int level)
@@ -265,7 +303,9 @@ public static int GetGoldValue(Rarity rarity, int level)
 
 **Returns:** `int`
 
-### `GetLoadoutHero()`
+:::
+
+::: details `GetLoadoutHero()`
 
 Get a hero that contains this skill in their loadout.Returns null if this is not from a hero.Note this can be an expensive operation to be calling every frame, since it will iterate through all hero types in the game.
 
@@ -275,7 +315,9 @@ public Type GetLoadoutHero()
 
 **Returns:** `System.Type`
 
-### `GetSellGold()`
+:::
+
+::: details `GetSellGold()`
 
 ```csharp
 public int GetSellGold()
@@ -283,7 +325,9 @@ public int GetSellGold()
 
 **Returns:** `int`
 
-### `GetSellGold(Rarity, int)`
+:::
+
+::: details `GetSellGold(Rarity, int)`
 
 ```csharp
 public static int GetSellGold(Rarity rarity, int level)
@@ -297,7 +341,9 @@ public static int GetSellGold(Rarity rarity, int level)
 
 **Returns:** `int`
 
-### `GetValue(ScalingValue)`
+:::
+
+::: details `GetValue(ScalingValue)`
 
 ```csharp
 public float GetValue(ScalingValue val)
@@ -310,7 +356,9 @@ public float GetValue(ScalingValue val)
 
 **Returns:** `float`
 
-### `Heal(ScalingValue)`
+:::
+
+::: details `Heal(ScalingValue)`
 
 ```csharp
 public HealData Heal(ScalingValue amount)
@@ -323,7 +371,9 @@ public HealData Heal(ScalingValue amount)
 
 **Returns:** `HealData`
 
-### `IsLockedFor(DewPlayer)`
+:::
+
+::: details `IsLockedFor(DewPlayer)`
 
 ```csharp
 public bool IsLockedFor(DewPlayer player)
@@ -336,7 +386,9 @@ public bool IsLockedFor(DewPlayer player)
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -347,7 +399,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MagicDamage(ScalingValue, float)`
+:::
+
+::: details `MagicDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
@@ -361,7 +415,9 @@ public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `OnCastComplete(int, CastInfo)`
+:::
+
+::: details `OnCastComplete(int, CastInfo)`
 
 ```csharp
 public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)
@@ -375,7 +431,9 @@ public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)
 
 **Returns:** `AbilityInstance`
 
-### `OnEquip(Entity)`
+:::
+
+::: details `OnEquip(Entity)`
 
 ```csharp
 protected override void OnEquip(Entity newOwner)
@@ -386,7 +444,9 @@ protected override void OnEquip(Entity newOwner)
 | :--- | :--- | :--- |
 | `newOwner` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnLevelChange(int, int)`
+:::
+
+::: details `OnLevelChange(int, int)`
 
 Called everywhere when this skill's level is changed.
 
@@ -400,25 +460,33 @@ protected virtual void OnLevelChange(int oldLevel, int newLevel)
 | `oldLevel` | `int` |  |
 | `newLevel` | `int` |  |
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnUnequip(Entity)`
+:::
+
+::: details `OnUnequip(Entity)`
 
 ```csharp
 protected override void OnUnequip(Entity formerOwner)
@@ -429,7 +497,9 @@ protected override void OnUnequip(Entity formerOwner)
 | :--- | :--- | :--- |
 | `formerOwner` | [`Entity`](/api/Global.Entity) |  |
 
-### `PhysicalDamage(ScalingValue, float)`
+:::
+
+::: details `PhysicalDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
@@ -443,7 +513,9 @@ public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `PhysicalMagicDamage(ScalingValue, float)`
+:::
+
+::: details `PhysicalMagicDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient = 1)
@@ -457,7 +529,9 @@ public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient 
 
 **Returns:** `DamageData`
 
-### `PureDamage(ScalingValue, float)`
+:::
+
+::: details `PureDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
@@ -471,7 +545,9 @@ public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `RemoveSkillBonus(SkillBonus)`
+:::
+
+::: details `RemoveSkillBonus(SkillBonus)`
 
 ```csharp
 public void RemoveSkillBonus(SkillBonus bonus)
@@ -482,7 +558,9 @@ public void RemoveSkillBonus(SkillBonus bonus)
 | :--- | :--- | :--- |
 | `bonus` | [`SkillBonus`](/api/Global.SkillBonus) |  |
 
-### `RpcSetPositionAndRotation(Vector3, Quaternion)`
+:::
+
+::: details `RpcSetPositionAndRotation(Vector3, Quaternion)`
 
 ```csharp
 public void RpcSetPositionAndRotation(Vector3 pos, Quaternion rot)
@@ -494,7 +572,9 @@ public void RpcSetPositionAndRotation(Vector3 pos, Quaternion rot)
 | `pos` | `UnityEngine.Vector3` |  |
 | `rot` | `UnityEngine.Quaternion` |  |
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
@@ -502,7 +582,9 @@ public override bool ShouldBeSavedWithRoom()
 
 **Returns:** `bool`
 
-### `ShouldTickCooldown(int)`
+:::
+
+::: details `ShouldTickCooldown(int)`
 
 ```csharp
 protected override bool ShouldTickCooldown(int configIndex)
@@ -515,8 +597,12 @@ protected override bool ShouldTickCooldown(int configIndex)
 
 **Returns:** `bool`
 
-### `UpdateSkillBonus()`
+:::
+
+::: details `UpdateSkillBonus()`
 
 ```csharp
 public void UpdateSkillBonus()
 ```
+
+:::

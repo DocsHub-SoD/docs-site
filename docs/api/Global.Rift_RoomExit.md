@@ -9,7 +9,9 @@
 public class Rift_RoomExit : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby, IBanRoomNodesNearbyMultiple
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,21 +19,29 @@ public class Rift_RoomExit : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`nextNodeIndex`** | `public int nextNodeIndex` |  |
 | **`softInstance`** | `public static Rift_RoomExit softInstance` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static Rift_RoomExit instance { get; }` | If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive. |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (6)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `GetBanSpots()`
+:::
+
+::: details `GetBanSpots()`
 
 ```csharp
 public Vector3[] GetBanSpots()
@@ -39,7 +49,9 @@ public Vector3[] GetBanSpots()
 
 **Returns:** `UnityEngine.Vector3[]`
 
-### `GetSidetrackPortalPositions(List<(Vector3, Quaternion)>)`
+:::
+
+::: details `GetSidetrackPortalPositions(List&lt;(Vector3, Quaternion)&gt;)`
 
 ```csharp
 public void GetSidetrackPortalPositions(List<(Vector3, Quaternion)> list)
@@ -50,13 +62,17 @@ public void GetSidetrackPortalPositions(List<(Vector3, Quaternion)> list)
 | :--- | :--- | :--- |
 | `list` | `System.Collections.Generic.List<T><(UnityEngine.Vector3,UnityEngine.Quaternion)>` |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnInteractRift(Hero)`
+:::
+
+::: details `OnInteractRift(Hero)`
 
 ```csharp
 protected override bool OnInteractRift(Hero hero)
@@ -69,7 +85,9 @@ protected override bool OnInteractRift(Hero hero)
 
 **Returns:** `bool`
 
-### `TpcInteract(NetworkConnectionToClient)`
+:::
+
+::: details `TpcInteract(NetworkConnectionToClient)`
 
 ```csharp
 public void TpcInteract(NetworkConnectionToClient target)
@@ -79,3 +97,5 @@ public void TpcInteract(NetworkConnectionToClient target)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `target` | `Mirror.NetworkConnectionToClient` |  |
+
+:::

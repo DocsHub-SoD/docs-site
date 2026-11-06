@@ -9,8 +9,12 @@
 public struct ObjectHighlightManager.OutlineStyle
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`color`** | `public Color color` |  |
+
+:::

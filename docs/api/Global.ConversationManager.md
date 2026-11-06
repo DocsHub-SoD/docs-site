@@ -9,7 +9,9 @@
 public class ConversationManager : NetworkedManagerBase<ConversationManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,16 +21,22 @@ public class ConversationManager : NetworkedManagerBase<ConversationManager>, IL
 | **`ClientEvent_OnStopConversation`** | `public SafeAction<uint> ClientEvent_OnStopConversation` |  |
 | **`convSettings`** | `public readonly Dictionary<uint, DewConversationSettings> convSettings` | Currently ongoing conversations. Available everywhere. |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`hasOngoingLocalConversation`** | `public bool hasOngoingLocalConversation { get; }` | Does local has ongoing conversation with advance authority? |
 | **`ongoingLocalConversation`** | `public DewConversationSettings ongoingLocalConversation { get; }` |  |
 
-## Methods
+:::
 
-### `CmdDoUserInputOnConversation(uint, int, int, NetworkConnectionToClient)`
+## Methods (7)
+
+::: details `CmdDoUserInputOnConversation(uint, int, int, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdDoUserInputOnConversation(uint id, int lineIndexFrom, int userInput, NetworkConnectionToClient sender = null)
@@ -42,7 +50,9 @@ public void CmdDoUserInputOnConversation(uint id, int lineIndexFrom, int userInp
 | `userInput` | `int` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdRequestLineCompletion(uint, int, NetworkConnectionToClient)`
+:::
+
+::: details `CmdRequestLineCompletion(uint, int, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdRequestLineCompletion(uint id, int lineIndex, NetworkConnectionToClient sender = null)
@@ -55,19 +65,25 @@ public void CmdRequestLineCompletion(uint id, int lineIndex, NetworkConnectionTo
 | `lineIndex` | `int` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `StartConversation(DewConversationSettings)`
+:::
+
+::: details `StartConversation(DewConversationSettings)`
 
 ```csharp
 public uint StartConversation(DewConversationSettings s)
@@ -80,7 +96,9 @@ public uint StartConversation(DewConversationSettings s)
 
 **Returns:** `uint`
 
-### `StartConversationRoutine(DewConversationSettings)`
+:::
+
+::: details `StartConversationRoutine(DewConversationSettings)`
 
 A coroutine that ends when the conversation ends.
 
@@ -95,7 +113,9 @@ public IEnumerator StartConversationRoutine(DewConversationSettings s)
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `StopConversation(uint)`
+:::
+
+::: details `StopConversation(uint)`
 
 ```csharp
 public void StopConversation(uint id)
@@ -105,3 +125,5 @@ public void StopConversation(uint id)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `uint` |  |
+
+:::

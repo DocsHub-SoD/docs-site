@@ -11,7 +11,9 @@
 public struct AbilityTrigger.PredictionSettings
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,3 +25,5 @@ public struct AbilityTrigger.PredictionSettings
 | **`targetSpeed`** | `[ShowIf("_shouldShowSpeedAccelerationParameters", true)] public float targetSpeed` |  |
 | **`type`** | `[LabelText("Prediction")] public AbilityTrigger.PredictionSettings.ModelType type` |  |
 | **`useCustomParameters`** | `[ShowIf("_shouldShowCustomParameters", true)] public bool useCustomParameters` |  |
+
+:::

@@ -9,22 +9,30 @@
 public class LobbyUIManager : UIManager, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`lobbyEffect`** | `public GameObject lobbyEffect` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static LobbyUIManager instance { get; }` | If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive. |
 | **`softInstance`** | `public static LobbyUIManager softInstance { get; }` |  |
 
-## Methods
+:::
 
-### `LogicUpdate(float)`
+## Methods (3)
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -35,7 +43,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnStateChanged(string, string)`
+:::
+
+::: details `OnStateChanged(string, string)`
 
 ```csharp
 protected override void OnStateChanged(string oldState, string newState)
@@ -47,8 +57,12 @@ protected override void OnStateChanged(string oldState, string newState)
 | `oldState` | `string` |  |
 | `newState` | `string` |  |
 
-### `OpenCharacterSelection()`
+:::
+
+::: details `OpenCharacterSelection()`
 
 ```csharp
 public void OpenCharacterSelection()
 ```
+
+:::

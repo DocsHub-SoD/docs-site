@@ -8,7 +8,9 @@
 public struct EventInfoAttackHit
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public struct EventInfoAttackHit
 | **`isCrit`** | `public bool isCrit` | Is hit attack critical hit? |
 | **`strength`** | `public float strength` | Strength of this attack. Set to 1 by default. |
 | **`victim`** | `public Entity victim` | Victim of this hit. |
+
+:::

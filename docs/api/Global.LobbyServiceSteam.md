@@ -9,28 +9,38 @@
 public class LobbyServiceSteam : LobbyServiceProvider
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`disableVersionCheck`** | `public bool disableVersionCheck` |  |
 | **`lobbyMembers`** | `public List<CSteamID> lobbyMembers` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`currentLobby`** | `public override LobbyInstance currentLobby { get; }` |  |
 
-## Methods
+:::
 
-### `ActivateGameOverlayInviteDialog()`
+## Methods (10)
+
+::: details `ActivateGameOverlayInviteDialog()`
 
 ```csharp
 public void ActivateGameOverlayInviteDialog()
 ```
 
-### `CreateLobby()`
+:::
+
+::: details `CreateLobby()`
 
 ```csharp
 public override UniTask CreateLobby()
@@ -38,7 +48,9 @@ public override UniTask CreateLobby()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `GetGameServerAddress()`
+:::
+
+::: details `GetGameServerAddress()`
 
 ```csharp
 public override string GetGameServerAddress()
@@ -46,7 +58,9 @@ public override string GetGameServerAddress()
 
 **Returns:** `string`
 
-### `GetLobbies(Action<LobbySearchResult>, object)`
+:::
+
+::: details `GetLobbies(Action&lt;LobbySearchResult&gt;, object)`
 
 ```csharp
 public override UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object continuationToken = null)
@@ -60,7 +74,9 @@ public override UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object c
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `HandleUserLeavingGame(string)`
+:::
+
+::: details `HandleUserLeavingGame(string)`
 
 ```csharp
 public override UniTask HandleUserLeavingGame(string id)
@@ -73,7 +89,9 @@ public override UniTask HandleUserLeavingGame(string id)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `InviteToLobby(CSteamID)`
+:::
+
+::: details `InviteToLobby(CSteamID)`
 
 ```csharp
 public bool InviteToLobby(CSteamID friend)
@@ -86,7 +104,9 @@ public bool InviteToLobby(CSteamID friend)
 
 **Returns:** `bool`
 
-### `JoinGameOfCurrentLobby()`
+:::
+
+::: details `JoinGameOfCurrentLobby()`
 
 ```csharp
 public override UniTask JoinGameOfCurrentLobby()
@@ -94,7 +114,9 @@ public override UniTask JoinGameOfCurrentLobby()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `JoinLobby(object)`
+:::
+
+::: details `JoinLobby(object)`
 
 ```csharp
 public override UniTask JoinLobby(object lobby)
@@ -107,7 +129,9 @@ public override UniTask JoinLobby(object lobby)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `LeaveLobby()`
+:::
+
+::: details `LeaveLobby()`
 
 ```csharp
 public override UniTask LeaveLobby()
@@ -115,7 +139,9 @@ public override UniTask LeaveLobby()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `SetLobbyAttribute(string, object)`
+:::
+
+::: details `SetLobbyAttribute(string, object)`
 
 ```csharp
 public override UniTask SetLobbyAttribute(string key, object value)
@@ -128,3 +154,5 @@ public override UniTask SetLobbyAttribute(string key, object value)
 | `value` | `object` |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
+
+:::

@@ -9,7 +9,9 @@
 public class PropEnt_Merchant_Backpack : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class PropEnt_Merchant_Backpack : PropEntity, ILogicUpdate, ICleanup, ICu
 | **`spawnDelay`** | `public float spawnDelay` |  |
 | **`spawnSkillRatio`** | `public float spawnSkillRatio` |  |
 
-## Methods
+:::
 
-### `OnDeath(EventInfoKill)`
+## Methods (1)
+
+::: details `OnDeath(EventInfoKill)`
 
 ```csharp
 protected override void OnDeath(EventInfoKill info)
@@ -29,3 +33,5 @@ protected override void OnDeath(EventInfoKill info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
+
+:::

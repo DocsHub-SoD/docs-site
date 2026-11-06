@@ -9,7 +9,9 @@
 public class FxEntityColor : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,9 +26,11 @@ public class FxEntityColor : FxInterpolatedEffectBase, IEffectComponent, IEffect
 | **`emission`** | `[ColorUsage(false, true)] [ShowIf("doEmission", true)] public Color emission` |  |
 | **`opacity`** | `[ShowIf("doOpacity", true)] public float opacity` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (2)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -37,7 +41,9 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -47,3 +53,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

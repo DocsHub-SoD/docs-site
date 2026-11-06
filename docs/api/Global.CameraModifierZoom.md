@@ -9,18 +9,24 @@
 public class CameraModifierZoom : CameraModifierBase
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`zoomIndex`** | `public float zoomIndex` |  |
 
-## Methods
+:::
 
-### `Apply()`
+## Methods (1)
+
+::: details `Apply()`
 
 ```csharp
 public CameraModifierZoom Apply()
 ```
 
 **Returns:** `CameraModifierZoom`
+
+:::

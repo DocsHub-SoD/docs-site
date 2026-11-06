@@ -9,7 +9,9 @@
 public class GameMod_MirageSkin : GameModifierBase, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,21 @@ public class GameMod_MirageSkin : GameModifierBase, ILogicUpdate, ICleanup, ICus
 | **`currentZonePool`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<AssetRef<MirageSkinEffect>> currentZonePool` |  |
 | **`softInstance`** | `public static GameMod_MirageSkin softInstance` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static GameMod_MirageSkin instance { get; }` | If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive. |
 
-## Methods
+:::
 
-### `GetCurrentBaseMirageChance()`
+## Methods (4)
+
+::: details `GetCurrentBaseMirageChance()`
 
 ```csharp
 public float GetCurrentBaseMirageChance()
@@ -33,20 +41,28 @@ public float GetCurrentBaseMirageChance()
 
 **Returns:** `float`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `RefreshPool()`
+:::
+
+::: details `RefreshPool()`
 
 ```csharp
 public void RefreshPool()
 ```
+
+:::

@@ -8,10 +8,14 @@
 public struct DewEffect.PlayEffectMessage
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isNew`** | `public bool isNew` |  |
 | **`parent`** | `public NetworkIdentity parent` |  |
 | **`path`** | `public string path` |  |
+
+:::

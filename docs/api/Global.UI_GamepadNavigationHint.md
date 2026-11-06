@@ -8,7 +8,9 @@
 public class UI_GamepadNavigationHint : MonoBehaviour, IGamepadNavigationHint
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,9 +21,11 @@ public class UI_GamepadNavigationHint : MonoBehaviour, IGamepadNavigationHint
 | **`up`** | `[Header("Up")] [ShowIf("useDifferentNavigationsPerDirection", true)] [HideLabel] public UI_GamepadNavigationHint.NavigationSettings up` |  |
 | **`useDifferentNavigationsPerDirection`** | `[ToggleLeft] public bool useDifferentNavigationsPerDirection` |  |
 
-## Methods
+:::
 
-### `TryGetDown(out IGamepadFocusable)`
+## Methods (4)
+
+::: details `TryGetDown(out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetDown(out IGamepadFocusable next)
@@ -34,7 +38,9 @@ public bool TryGetDown(out IGamepadFocusable next)
 
 **Returns:** `bool`
 
-### `TryGetLeft(out IGamepadFocusable)`
+:::
+
+::: details `TryGetLeft(out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetLeft(out IGamepadFocusable next)
@@ -47,7 +53,9 @@ public bool TryGetLeft(out IGamepadFocusable next)
 
 **Returns:** `bool`
 
-### `TryGetRight(out IGamepadFocusable)`
+:::
+
+::: details `TryGetRight(out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetRight(out IGamepadFocusable next)
@@ -60,7 +68,9 @@ public bool TryGetRight(out IGamepadFocusable next)
 
 **Returns:** `bool`
 
-### `TryGetUp(out IGamepadFocusable)`
+:::
+
+::: details `TryGetUp(out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetUp(out IGamepadFocusable next)
@@ -72,3 +82,5 @@ public bool TryGetUp(out IGamepadFocusable next)
 | `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
+
+:::

@@ -10,7 +10,9 @@
 public class Rift_Sidetrack : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,22 +25,30 @@ public class Rift_Sidetrack : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutin
 | **`useWildcardPattern`** | `[Title("Destination", null, TitleAlignments.Left, true, true)] public bool useWildcardPattern` |  |
 | **`wildcardPattern`** | `[ShowIf("useWildcardPattern", true)] public string wildcardPattern` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static Rift_Sidetrack instance { get; }` | If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive. |
 | **`isValid`** | `public bool isValid { get; }` | Is this sidetrack rift valid for use? Sidetrack rifts with no rooms are invalid. |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (5)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `GetConfirmMessage()`
+:::
+
+::: details `GetConfirmMessage()`
 
 ```csharp
 protected virtual string GetConfirmMessage()
@@ -46,7 +56,9 @@ protected virtual string GetConfirmMessage()
 
 **Returns:** `string`
 
-### `OnInteractRift(Hero)`
+:::
+
+::: details `OnInteractRift(Hero)`
 
 ```csharp
 protected override bool OnInteractRift(Hero hero)
@@ -59,7 +71,9 @@ protected override bool OnInteractRift(Hero hero)
 
 **Returns:** `bool`
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
@@ -67,8 +81,12 @@ public override bool ShouldBeSavedWithRoom()
 
 **Returns:** `bool`
 
-### `TravelImmediately()`
+:::
+
+::: details `TravelImmediately()`
 
 ```csharp
 public virtual void TravelImmediately()
 ```
+
+:::

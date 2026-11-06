@@ -8,7 +8,9 @@
 public class DewProfileStats.ItemData
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public class DewProfileStats.ItemData
 | **`sellCount`** | `public long sellCount` |  |
 | **`upgradeCount`** | `public long upgradeCount` |  |
 | **`wins`** | `public long wins` |  |
+
+:::

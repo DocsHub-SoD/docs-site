@@ -10,7 +10,9 @@
 public class PlayLobby_Fireplace : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,10 +23,14 @@ public class PlayLobby_Fireplace : LogicBehaviour, ILogicUpdate
 | **`positionNewTargetTime`** | `public float positionNewTargetTime` |  |
 | **`positionSmoothTime`** | `public float positionSmoothTime` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (1)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
+
+:::

@@ -8,10 +8,12 @@
 public interface ILobbyCharacterModelSetup
 ```
 
-## Methods
+## Methods (1)
 
-### `OnLobbyCharacterSetup()`
+::: details `OnLobbyCharacterSetup()`
 
 ```csharp
 void OnLobbyCharacterSetup()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public struct PingManager.Ping
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,12 +20,16 @@ public struct PingManager.Ping
 | **`target`** | `public NetworkBehaviour target` |  |
 | **`type`** | `public PingManager.PingType type` |  |
 
-## Methods
+:::
 
-### `IsValid()`
+## Methods (1)
+
+::: details `IsValid()`
 
 ```csharp
 public bool IsValid()
 ```
 
 **Returns:** `bool`
+
+:::

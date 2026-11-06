@@ -8,12 +8,14 @@
 public interface IGamepadFocusableOverrideTooltip
 ```
 
-## Methods
+## Methods (1)
 
-### `OnUpdateTooltip()`
+::: details `OnUpdateTooltip()`
 
 ```csharp
 bool OnUpdateTooltip()
 ```
 
 **Returns:** `bool`
+
+:::

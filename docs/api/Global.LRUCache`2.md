@@ -8,21 +8,27 @@
 public class LRUCache<TKey, TValue>
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`Count`** | `public int Count { get; }` |  |
 
-## Methods
+:::
 
-### `Clear()`
+## Methods (3)
+
+::: details `Clear()`
 
 ```csharp
 public void Clear()
 ```
 
-### `Set(TKey, TValue)`
+:::
+
+::: details `Set(TKey, TValue)`
 
 Adds or updates a key/value pair. If added, it becomes the most recently used.
 If the cache is at capacity, the least recently used item is removed.
@@ -37,7 +43,9 @@ public void Set(TKey key, TValue value)
 | `key` | `TKey` |  |
 | `value` | `TValue` |  |
 
-### `TryGet(TKey, out TValue)`
+:::
+
+::: details `TryGet(TKey, out TValue)`
 
 Tries to get a value from the cache. If found, it's marked as most recently used.
 
@@ -52,3 +60,5 @@ public bool TryGet(TKey key, out TValue value)
 | `value` | `TValue` |  |
 
 **Returns:** `bool`
+
+:::

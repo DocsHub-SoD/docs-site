@@ -9,7 +9,9 @@
 public class EntitySound : EntityComponent, ILogicUpdate, ICleanup
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,15 +23,21 @@ public class EntitySound : EntityComponent, ILogicUpdate, ICleanup
 | **`voiceIdleInterval`** | `public Vector2 voiceIdleInterval` |  |
 | **`voiceStart`** | `public DewAudioClip voiceStart` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`canDestroy`** | `public bool canDestroy { get; }` |  |
 
-## Methods
+:::
 
-### `DoFootstep()`
+## Methods (8)
+
+::: details `DoFootstep()`
 
 Play footstep effect.
 
@@ -37,7 +45,9 @@ Play footstep effect.
 public void DoFootstep()
 ```
 
-### `DoPeriodicSurfaceEffect()`
+:::
+
+::: details `DoPeriodicSurfaceEffect()`
 
 Do periodic effect on the surface the entity is currently on.
 
@@ -45,7 +55,9 @@ Do periodic effect on the surface the entity is currently on.
 public void DoPeriodicSurfaceEffect()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -56,31 +68,41 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnCleanup()`
+:::
+
+::: details `OnCleanup()`
 
 ```csharp
 public void OnCleanup()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `Say(DewAudioClip, bool)`
+:::
+
+::: details `Say(DewAudioClip, bool)`
 
 ```csharp
 public void Say(DewAudioClip clip, bool interruptPrevious)
@@ -91,3 +113,5 @@ public void Say(DewAudioClip clip, bool interruptPrevious)
 | :--- | :--- | :--- |
 | `clip` | [`DewAudioClip`](/api/Global.DewAudioClip) |  |
 | `interruptPrevious` | `bool` |  |
+
+:::

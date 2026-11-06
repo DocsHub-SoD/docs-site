@@ -8,9 +8,9 @@
 public interface ICollidableWithProjectile
 ```
 
-## Methods
+## Methods (1)
 
-### `OnProjectileCollision(CollidableHit)`
+::: details `OnProjectileCollision(CollidableHit)`
 
 ```csharp
 void OnProjectileCollision(CollidableHit hit)
@@ -20,3 +20,5 @@ void OnProjectileCollision(CollidableHit hit)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `hit` | [`CollidableHit`](/api/Global.CollidableHit) |  |
+
+:::

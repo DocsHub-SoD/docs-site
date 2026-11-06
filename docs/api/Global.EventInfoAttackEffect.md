@@ -8,7 +8,9 @@
 public struct EventInfoAttackEffect
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public struct EventInfoAttackEffect
 | **`strength`** | `public float strength` |  |
 | **`type`** | `public AttackEffectType type` |  |
 | **`victim`** | `public Entity victim` |  |
+
+:::

@@ -10,7 +10,9 @@
 public class CinematicCameraHelper : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (18)
+
+::: details Click to expand Fields (18)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -33,21 +35,29 @@ public class CinematicCameraHelper : LogicBehaviour, ILogicUpdate
 | **`radius`** | `public float radius` |  |
 | **`weightGainPerSecond`** | `public float weightGainPerSecond` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isCinematicHelperEnabled`** | `public bool isCinematicHelperEnabled { get; set; }` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (2)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -57,3 +67,5 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

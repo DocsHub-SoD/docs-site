@@ -8,17 +8,23 @@
 public class FxFindEntity : MonoBehaviour, IEffectSetupComponent
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`exactMatch`** | `public bool exactMatch` |  |
 | **`findType`** | `public string findType` |  |
 
-## Methods
+:::
 
-### `OnEffectSetup()`
+## Methods (1)
+
+::: details `OnEffectSetup()`
 
 ```csharp
 public void OnEffectSetup()
 ```
+
+:::

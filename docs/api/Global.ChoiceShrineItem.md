@@ -8,9 +8,13 @@
 public struct ChoiceShrineItem
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`level`** | `public int level` |  |
 | **`typeName`** | `public string typeName` |  |
+
+:::

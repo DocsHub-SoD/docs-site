@@ -8,7 +8,9 @@
 public class LastGamePlayReward
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public class LastGamePlayReward
 | **`heroType`** | `public string heroType` |  |
 | **`unlockedAchievements`** | `public List<Type> unlockedAchievements` |  |
 | **`unlockedArtifacts`** | `public List<string> unlockedArtifacts` |  |
+
+:::

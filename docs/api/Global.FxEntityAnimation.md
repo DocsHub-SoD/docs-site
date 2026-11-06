@@ -8,7 +8,9 @@
 public class FxEntityAnimation : MonoBehaviour, IEffectComponent, IAttachableToEntity
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,21 @@ public class FxEntityAnimation : MonoBehaviour, IEffectComponent, IAttachableToE
 | **`speed`** | `public float speed` |  |
 | **`stopAnimationWhenStopped`** | `[ToggleLeft] public bool stopAnimationWhenStopped` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (3)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -36,14 +44,20 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

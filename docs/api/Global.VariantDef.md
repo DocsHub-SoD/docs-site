@@ -8,7 +8,9 @@
 public struct VariantDef
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,9 +21,11 @@ public struct VariantDef
 | **`id4`** | `public int id4` |  |
 | **`id5`** | `public int id5` |  |
 
-## Methods
+:::
 
-### `Add(int)`
+## Methods (6)
+
+::: details `Add(int)`
 
 ```csharp
 public VariantDef Add(int id)
@@ -34,7 +38,9 @@ public VariantDef Add(int id)
 
 **Returns:** `VariantDef`
 
-### `Contains(int)`
+:::
+
+::: details `Contains(int)`
 
 ```csharp
 public bool Contains(int id)
@@ -47,7 +53,9 @@ public bool Contains(int id)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -60,7 +68,9 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `Equals(VariantDef)`
+:::
+
+::: details `Equals(VariantDef)`
 
 ```csharp
 public bool Equals(VariantDef other)
@@ -73,7 +83,9 @@ public bool Equals(VariantDef other)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
@@ -81,10 +93,14 @@ public override int GetHashCode()
 
 **Returns:** `int`
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

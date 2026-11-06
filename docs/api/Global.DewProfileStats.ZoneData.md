@@ -8,7 +8,9 @@
 public class DewProfileStats.ZoneData
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,3 +23,5 @@ public class DewProfileStats.ZoneData
 | **`visited`** | `public long visited` |  |
 | **`visitedHunterLocations`** | `public long visitedHunterLocations` |  |
 | **`visitedLocations`** | `public long visitedLocations` |  |
+
+:::

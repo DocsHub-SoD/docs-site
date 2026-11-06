@@ -9,7 +9,9 @@
 public class InGameReverieManager : ManagerBase<InGameReverieManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,21 @@ public class InGameReverieManager : ManagerBase<InGameReverieManager>, ILogicUpd
 | **`RerollMaxCount`** | `public const int RerollMaxCount = 3` |  |
 | **`SpecialReverieIndex`** | `public const int SpecialReverieIndex = -99` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isTrackingReveries`** | `public bool isTrackingReveries { get; }` |  |
 
-## Methods
+:::
 
-### `CompleteReverie(DewReverieItem)`
+## Methods (1)
+
+::: details `CompleteReverie(DewReverieItem)`
 
 ```csharp
 public void CompleteReverie(DewReverieItem item)
@@ -35,3 +43,5 @@ public void CompleteReverie(DewReverieItem item)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `item` | [`DewReverieItem`](/api/Global.DewReverieItem) |  |
+
+:::

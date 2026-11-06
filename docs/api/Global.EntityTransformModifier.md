@@ -8,7 +8,9 @@
 public class EntityTransformModifier
 ```
 
-## Properties
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,12 +19,16 @@ public class EntityTransformModifier
 | **`scaleMultiplier`** | `public Vector3 scaleMultiplier { get; set; }` |  |
 | **`worldOffset`** | `public Vector3 worldOffset { get; set; }` |  |
 
-## Methods
+:::
 
-### `Stop()`
+## Methods (1)
+
+::: details `Stop()`
 
 Remove this transform modifier from its parent.
 
 ```csharp
 public void Stop()
 ```
+
+:::

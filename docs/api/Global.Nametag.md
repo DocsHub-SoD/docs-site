@@ -10,7 +10,9 @@
 public class Nametag : MonoBehaviour
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,9 +27,11 @@ public class Nametag : MonoBehaviour
 | **`nametagHorizontalMargin`** | `public Vector2 nametagHorizontalMargin` |  |
 | **`price`** | `public int price` |  |
 
-## Methods
+:::
 
-### `CheckPrerequisites(out bool, out int, out int, out string)`
+## Methods (2)
+
+::: details `CheckPrerequisites(out bool, out int, out int, out string)`
 
 ```csharp
 public void CheckPrerequisites(out bool canPurchase, out int currentProgress, out int maxProgress, out string conditionText)
@@ -41,7 +45,9 @@ public void CheckPrerequisites(out bool canPurchase, out int currentProgress, ou
 | `maxProgress` | `int` |  |
 | `conditionText` | `string` |  |
 
-### `Setup(RectTransform, bool)`
+:::
+
+::: details `Setup(RectTransform, bool)`
 
 ```csharp
 public void Setup(RectTransform target, bool isIcon)
@@ -52,3 +58,5 @@ public void Setup(RectTransform target, bool isIcon)
 | :--- | :--- | :--- |
 | `target` | `UnityEngine.RectTransform` |  |
 | `isIcon` | `bool` |  |
+
+:::

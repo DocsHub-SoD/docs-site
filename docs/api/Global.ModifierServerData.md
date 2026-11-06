@@ -8,9 +8,13 @@
 public class ModifierServerData
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`didCreateInstance`** | `public bool didCreateInstance` |  |
 | **`persistentData`** | `public Dictionary<string, string> persistentData` |  |
+
+:::

@@ -9,7 +9,9 @@
 public class TitleManager : ManagerBase<TitleManager>, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,15 +23,21 @@ public class TitleManager : ManagerBase<TitleManager>, ILogicUpdate, ISettingsCh
 | **`riftParticleSystem`** | `public ParticleSystem riftParticleSystem` |  |
 | **`splashView`** | `public View splashView` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`needTutorial`** | `public bool needTutorial { get; }` |  |
 
-## Methods
+:::
 
-### `CheckTutorial(Action)`
+## Methods (11)
+
+::: details `CheckTutorial(Action)`
 
 Execute the callback if user has played tutorial.If not, ask if the user wants to skip the tutorial.
 
@@ -42,43 +50,57 @@ public void CheckTutorial(Action callback)
 | :--- | :--- | :--- |
 | `callback` | `System.Action` |  |
 
-### `EnterCollectables()`
+:::
+
+::: details `EnterCollectables()`
 
 ```csharp
 public void EnterCollectables()
 ```
 
-### `EnterContinueDreaming()`
+:::
+
+::: details `EnterContinueDreaming()`
 
 ```csharp
 public void EnterContinueDreaming()
 ```
 
-### `EnterSingleplayerLimbo()`
+:::
+
+::: details `EnterSingleplayerLimbo()`
 
 ```csharp
 public void EnterSingleplayerLimbo()
 ```
 
-### `EnterSingleplayerShapeOfDreams()`
+:::
+
+::: details `EnterSingleplayerShapeOfDreams()`
 
 ```csharp
 public void EnterSingleplayerShapeOfDreams()
 ```
 
-### `EnterTutorial()`
+:::
+
+::: details `EnterTutorial()`
 
 ```csharp
 public void EnterTutorial()
 ```
 
-### `ExitToDesktop()`
+:::
+
+::: details `ExitToDesktop()`
 
 ```csharp
 public void ExitToDesktop()
 ```
 
-### `JoinLobby(string)`
+:::
+
+::: details `JoinLobby(string)`
 
 ```csharp
 public void JoinLobby(string lobbyId)
@@ -89,7 +111,9 @@ public void JoinLobby(string lobbyId)
 | :--- | :--- | :--- |
 | `lobbyId` | `string` |  |
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -100,14 +124,20 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `ShowMods()`
+:::
+
+::: details `ShowMods()`
 
 ```csharp
 public void ShowMods()
 ```
+
+:::

@@ -10,7 +10,9 @@
 public class FxVolume : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IEffectWithOwnerContext
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,21 +20,27 @@ public class FxVolume : FxInterpolatedEffectBase, IEffectComponent, IEffectWithS
 | **`targetStrength`** | `public float targetStrength` |  |
 | **`useCustomOtherPlayersMultiplier`** | `[ToggleLeft] public bool useCustomOtherPlayersMultiplier` |  |
 
-## Methods
+:::
 
-### `OnInit()`
+## Methods (6)
+
+::: details `OnInit()`
 
 ```csharp
 protected override void OnInit()
 ```
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public override void Play()
 ```
 
-### `SetOwnerContext(EffectOwnerContext)`
+:::
+
+::: details `SetOwnerContext(EffectOwnerContext)`
 
 ```csharp
 public void SetOwnerContext(EffectOwnerContext context)
@@ -43,19 +51,25 @@ public void SetOwnerContext(EffectOwnerContext context)
 | :--- | :--- | :--- |
 | `context` | [`EffectOwnerContext`](/api/Global.EffectOwnerContext) |  |
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 protected override void Start()
 ```
 
-### `UpdateVolume()`
+:::
+
+::: details `UpdateVolume()`
 
 ```csharp
 public void UpdateVolume()
 ```
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -65,3 +79,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

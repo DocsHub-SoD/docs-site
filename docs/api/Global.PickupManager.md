@@ -9,7 +9,9 @@
 public class PickupManager : NetworkedManagerBase<PickupManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,9 +27,11 @@ public class PickupManager : NetworkedManagerBase<PickupManager>, ILogicUpdate
 | **`smallExpOrbAmount`** | `public int smallExpOrbAmount` |  |
 | **`smallGoldOrbAmount`** | `public int smallGoldOrbAmount` |  |
 
-## Methods
+:::
 
-### `DropDreamDust(bool, int, Vector3, Hero)`
+## Methods (5)
+
+::: details `DropDreamDust(bool, int, Vector3, Hero)`
 
 ```csharp
 public void DropDreamDust(bool isGivenByOtherPlayer, int amount, Vector3 position, Hero target = null)
@@ -41,7 +45,9 @@ public void DropDreamDust(bool isGivenByOtherPlayer, int amount, Vector3 positio
 | `position` | `UnityEngine.Vector3` |  |
 | `target` | [`Hero`](/api/Global.Hero) |  |
 
-### `DropExp(int, Vector3)`
+:::
+
+::: details `DropExp(int, Vector3)`
 
 ```csharp
 public void DropExp(int amount, Vector3 position)
@@ -53,7 +59,9 @@ public void DropExp(int amount, Vector3 position)
 | `amount` | `int` |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `DropGold(bool, bool, int, Vector3, Hero)`
+:::
+
+::: details `DropGold(bool, bool, int, Vector3, Hero)`
 
 ```csharp
 public void DropGold(bool isKillGold, bool isGivenByOtherPlayer, int amount, Vector3 position, Hero target = null)
@@ -68,7 +76,9 @@ public void DropGold(bool isKillGold, bool isGivenByOtherPlayer, int amount, Vec
 | `position` | `UnityEngine.Vector3` |  |
 | `target` | [`Hero`](/api/Global.Hero) |  |
 
-### `DropStarDust(int, Vector3)`
+:::
+
+::: details `DropStarDust(int, Vector3)`
 
 ```csharp
 public void DropStarDust(int amount, Vector3 position)
@@ -80,8 +90,12 @@ public void DropStarDust(int amount, Vector3 position)
 | `amount` | `int` |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
+
+:::

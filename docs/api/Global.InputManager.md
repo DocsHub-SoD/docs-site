@@ -9,9 +9,9 @@
 public class InputManager : ManagerBase<InputManager>, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Methods
+## Methods (10)
 
-### `AddShakeInstance(ShakeInstance)`
+::: details `AddShakeInstance(ShakeInstance)`
 
 ```csharp
 public void AddShakeInstance(ShakeInstance si)
@@ -22,13 +22,17 @@ public void AddShakeInstance(ShakeInstance si)
 | :--- | :--- | :--- |
 | `si` | [`ShakeInstance`](/api/Global.ShakeInstance) |  |
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetMouseSensitivity()`
+:::
+
+::: details `GetMouseSensitivity()`
 
 ```csharp
 public static int GetMouseSensitivity()
@@ -36,7 +40,9 @@ public static int GetMouseSensitivity()
 
 **Returns:** `int`
 
-### `GetStickDirection(GamepadButtonEx)`
+:::
+
+::: details `GetStickDirection(GamepadButtonEx)`
 
 ```csharp
 public bool GetStickDirection(GamepadButtonEx g)
@@ -49,7 +55,9 @@ public bool GetStickDirection(GamepadButtonEx g)
 
 **Returns:** `bool`
 
-### `GetStickDirectionDown(GamepadButtonEx)`
+:::
+
+::: details `GetStickDirectionDown(GamepadButtonEx)`
 
 ```csharp
 public bool GetStickDirectionDown(GamepadButtonEx g)
@@ -62,7 +70,9 @@ public bool GetStickDirectionDown(GamepadButtonEx g)
 
 **Returns:** `bool`
 
-### `GetStickDirectionUp(GamepadButtonEx)`
+:::
+
+::: details `GetStickDirectionUp(GamepadButtonEx)`
 
 ```csharp
 public bool GetStickDirectionUp(GamepadButtonEx g)
@@ -75,7 +85,9 @@ public bool GetStickDirectionUp(GamepadButtonEx g)
 
 **Returns:** `bool`
 
-### `IsStickDirection(GamepadButtonEx)`
+:::
+
+::: details `IsStickDirection(GamepadButtonEx)`
 
 ```csharp
 public bool IsStickDirection(GamepadButtonEx g)
@@ -88,19 +100,25 @@ public bool IsStickDirection(GamepadButtonEx g)
 
 **Returns:** `bool`
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `ResetInputDevices()`
+:::
+
+::: details `ResetInputDevices()`
 
 ```csharp
 public void ResetInputDevices()
 ```
 
-### `SetMouseSensitivity(int)`
+:::
+
+::: details `SetMouseSensitivity(int)`
 
 ```csharp
 public static void SetMouseSensitivity(int sensitivity)
@@ -110,3 +128,5 @@ public static void SetMouseSensitivity(int sensitivity)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `sensitivity` | `int` |  |
+
+:::

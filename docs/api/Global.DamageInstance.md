@@ -9,7 +9,9 @@
 public abstract class DamageInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (30)
+
+::: details Click to expand Fields (30)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -44,9 +46,11 @@ public abstract class DamageInstance : AbilityInstance, ILogicUpdate, ICleanup, 
 | **`type`** | `[Title("Damage", null, TitleAlignments.Left, true, true)] public DamageData.SourceType type` |  |
 | **`useDirectionOfCast`** | `[ShowIf("doKnockback", true)] public bool useDirectionOfCast` |  |
 
-## Methods
+:::
 
-### `AddToDuplicateTracker(Entity)`
+## Methods (11)
+
+::: details `AddToDuplicateTracker(Entity)`
 
 ```csharp
 protected void AddToDuplicateTracker(Entity ent)
@@ -57,7 +61,9 @@ protected void AddToDuplicateTracker(Entity ent)
 | :--- | :--- | :--- |
 | `ent` | [`Entity`](/api/Global.Entity) |  |
 
-### `CheckShouldBeDestroyed()`
+:::
+
+::: details `CheckShouldBeDestroyed()`
 
 ```csharp
 protected bool CheckShouldBeDestroyed()
@@ -65,7 +71,9 @@ protected bool CheckShouldBeDestroyed()
 
 **Returns:** `bool`
 
-### `DoCollisionChecks()`
+:::
+
+::: details `DoCollisionChecks()`
 
 Can be called multiple times. Duplicates will be excluded.
 
@@ -73,7 +81,9 @@ Can be called multiple times. Duplicates will be excluded.
 protected void DoCollisionChecks()
 ```
 
-### `IsDuplicate(Entity)`
+:::
+
+::: details `IsDuplicate(Entity)`
 
 ```csharp
 protected bool IsDuplicate(Entity ent)
@@ -86,7 +96,9 @@ protected bool IsDuplicate(Entity ent)
 
 **Returns:** `bool`
 
-### `OnBeforeDispatchDamage(ref DamageData, Entity)`
+:::
+
+::: details `OnBeforeDispatchDamage(ref DamageData, Entity)`
 
 Called on server to process damage before applying it.
 
@@ -100,25 +112,33 @@ protected virtual void OnBeforeDispatchDamage(ref DamageData dmg, Entity target)
 | `dmg` | [`DamageData`](/api/Global.DamageData) |  |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnCollisionCheck()`
+:::
+
+::: details `OnCollisionCheck()`
 
 ```csharp
 protected virtual void OnCollisionCheck()
 ```
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnHit(Entity)`
+:::
+
+::: details `OnHit(Entity)`
 
 Called on server when this instance hits an entity.
 
@@ -131,7 +151,9 @@ protected virtual void OnHit(Entity entity)
 | :--- | :--- | :--- |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnValidateTarget(Entity)`
+:::
+
+::: details `OnValidateTarget(Entity)`
 
 Called on server to validate hits on entity. Return false here to ignore certain hit on an entity.
 
@@ -146,10 +168,14 @@ protected virtual bool OnValidateTarget(Entity entity)
 
 **Returns:** `bool`
 
-### `ShouldUseDefaultAbilityTargetValidator()`
+:::
+
+::: details `ShouldUseDefaultAbilityTargetValidator()`
 
 ```csharp
 protected virtual bool ShouldUseDefaultAbilityTargetValidator()
 ```
 
 **Returns:** `bool`
+
+:::

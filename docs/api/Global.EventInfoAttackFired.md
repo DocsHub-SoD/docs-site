@@ -8,7 +8,9 @@
 public struct EventInfoAttackFired
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public struct EventInfoAttackFired
 | **`isCrit`** | `public bool isCrit` | Is fired attack critical hit? |
 | **`isNextAttackFourthAttack`** | `public bool isNextAttackFourthAttack` | Is next attack going to be fourth attack? |
 | **`isThisAttackFourthAttack`** | `public bool isThisAttackFourthAttack` | Is this attack fourth attack? |
+
+:::

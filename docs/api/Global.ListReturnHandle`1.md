@@ -8,18 +8,24 @@
 public struct ListReturnHandle<T>
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`needToReturn`** | `public bool needToReturn { get; }` |  |
 
-## Methods
+:::
 
-### `Return()`
+## Methods (1)
+
+::: details `Return()`
 
 Clear and return the borrowed list.
 
 ```csharp
 public void Return()
 ```
+
+:::

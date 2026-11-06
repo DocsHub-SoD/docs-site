@@ -8,7 +8,9 @@
 public class PreferredGameSettings
 ```
 
-## Fields
+## Fields (13)
+
+::: details Click to expand Fields (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,16 +28,22 @@ public class PreferredGameSettings
 | **`lucidDreams`** | `public List<string> lucidDreams` |  |
 | **`tags`** | `public List<string> tags` |  |
 
-## Methods
+:::
 
-### `ApplyToGame()`
+## Methods (2)
+
+::: details `ApplyToGame()`
 
 ```csharp
 public void ApplyToGame()
 ```
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

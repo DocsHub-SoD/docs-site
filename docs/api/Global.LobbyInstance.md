@@ -9,7 +9,9 @@
 public class LobbyInstance
 ```
 
-## Fields
+## Fields (23)
+
+::: details Click to expand Fields (23)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -37,12 +39,16 @@ public class LobbyInstance
 | **`shortCode`** | `public string shortCode` |  |
 | **`version`** | `public string version` |  |
 
-## Methods
+:::
 
-### `ToString()`
+## Methods (1)
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

@@ -8,9 +8,13 @@
 public interface ICastMethodDataCone
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`angle`** | `float angle { get; }` |  |
 | **`radius`** | `float radius { get; }` |  |
+
+:::

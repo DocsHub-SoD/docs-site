@@ -8,10 +8,12 @@
 public struct ArrayReturnHandle<T>
 ```
 
-## Methods
+## Methods (1)
 
-### `Return()`
+::: details `Return()`
 
 ```csharp
 public void Return()
 ```
+
+:::

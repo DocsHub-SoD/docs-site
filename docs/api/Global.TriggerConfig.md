@@ -9,7 +9,9 @@
 public class TriggerConfig
 ```
 
-## Fields
+## Fields (34)
+
+::: details Click to expand Fields (34)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -48,7 +50,11 @@ public class TriggerConfig
 | **`unstoppableWhileCasting`** | `[BoxGroup("A", false, false, 0)] [ToggleLeft] [HideIf("@!isActive", true)] public bool unstoppableWhileCasting` |  |
 | **`victim`** | `[ShowIf("@(spawnedInstance is StatusEffect) && (castMethod.type == CastMethodType.Target)", true)] public TriggerConfig.StatusEffectVictimType victim` |  |
 
-## Properties
+:::
+
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -61,9 +67,11 @@ public class TriggerConfig
 | **`minimumDelay`** | `public float minimumDelay { get; set; }` |  |
 | **`spawnedInstance`** | `public AbilityInstance spawnedInstance { get; set; }` |  |
 
-## Methods
+:::
 
-### `CheckRange(CastInfo)`
+## Methods (5)
+
+::: details `CheckRange(CastInfo)`
 
 Returns true if provided info can be casted immediately.Returns false if provided info needs further movement to get in range.You may call this regardless of cast method type,But note that CastMethodType.Point will always return true if isClamping is true.
 
@@ -78,7 +86,9 @@ public bool CheckRange(CastInfo info)
 
 **Returns:** `bool`
 
-### `CheckRange(Entity, Entity)`
+:::
+
+::: details `CheckRange(Entity, Entity)`
 
 ```csharp
 public bool CheckRange(Entity caster, Entity target)
@@ -92,7 +102,9 @@ public bool CheckRange(Entity caster, Entity target)
 
 **Returns:** `bool`
 
-### `GetMoveToCastDestination(CastInfo)`
+:::
+
+::: details `GetMoveToCastDestination(CastInfo)`
 
 Get move-to-cast destination.
 
@@ -107,7 +119,9 @@ public Vector3 GetMoveToCastDestination(CastInfo info)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetMoveToCastRequiredDistance(CastInfo)`
+:::
+
+::: details `GetMoveToCastRequiredDistance(CastInfo)`
 
 Get move-to-cast required distance on XZ plane (agent position).
 
@@ -122,10 +136,14 @@ public float GetMoveToCastRequiredDistance(CastInfo info)
 
 **Returns:** `float`
 
-### `IsStatusEffectNonTargeted()`
+:::
+
+::: details `IsStatusEffectNonTargeted()`
 
 ```csharp
 public bool IsStatusEffectNonTargeted()
 ```
 
 **Returns:** `bool`
+
+:::

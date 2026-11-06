@@ -8,7 +8,9 @@
 public class FxEffect : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,16 +20,22 @@ public class FxEffect : MonoBehaviour
 | **`playOnEnable`** | `public bool playOnEnable` |  |
 | **`typeSubstring`** | `[ShowIf("@bindToEntity == EffectBindEntityType.FindType", true)] public string typeSubstring` |  |
 
-## Methods
+:::
 
-### `Play()`
+## Methods (2)
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

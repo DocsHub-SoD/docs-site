@@ -8,7 +8,9 @@
 public class DewControlSettings_Platform : IInitializableSettings, IValidatableSettings
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class DewControlSettings_Platform : IInitializableSettings, IValidatableS
 | **`joystick1Dead`** | `public float joystick1Dead` |  |
 | **`joystick1Max`** | `public float joystick1Max` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (3)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -28,14 +32,20 @@ public object Clone()
 
 **Returns:** `object`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 ```csharp
 public void Initialize()
 ```
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

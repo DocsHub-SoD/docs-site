@@ -8,8 +8,12 @@
 public class UI_GameInputPassThrough : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`exceptLeftClick`** | `public bool exceptLeftClick` |  |
+
+:::

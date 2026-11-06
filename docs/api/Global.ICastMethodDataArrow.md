@@ -8,9 +8,13 @@
 public interface ICastMethodDataArrow
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`length`** | `float length { get; }` |  |
 | **`width`** | `float width { get; }` |  |
+
+:::

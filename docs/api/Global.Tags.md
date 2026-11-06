@@ -8,9 +8,13 @@
 public static class Tags
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`GameCanvas`** | `public const string GameCanvas = "GameCanvas"` |  |
 | **`PortraitCamera`** | `public const string PortraitCamera = "PortraitCamera"` |  |
+
+:::

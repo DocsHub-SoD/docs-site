@@ -8,9 +8,9 @@
 public interface IWorldPositionReceiver
 ```
 
-## Methods
+## Methods (1)
 
-### `SetWorldPosition(Vector3)`
+::: details `SetWorldPosition(Vector3)`
 
 ```csharp
 void SetWorldPosition(Vector3 worldPos)
@@ -20,3 +20,5 @@ void SetWorldPosition(Vector3 worldPos)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `worldPos` | `UnityEngine.Vector3` |  |
+
+:::

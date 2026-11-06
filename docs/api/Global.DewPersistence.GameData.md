@@ -8,7 +8,9 @@
 public class DewPersistence.GameData
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,9 +25,11 @@ public class DewPersistence.GameData
 | **`serverActorData`** | `public Dictionary<string, string> serverActorData` |  |
 | **`shouldShowVersionWarning`** | `public bool shouldShowVersionWarning` |  |
 
-## Methods
+:::
 
-### `GetElapsedGameTimeSeconds()`
+## Methods (4)
+
+::: details `GetElapsedGameTimeSeconds()`
 
 ```csharp
 public int GetElapsedGameTimeSeconds()
@@ -33,7 +37,9 @@ public int GetElapsedGameTimeSeconds()
 
 **Returns:** `int`
 
-### `GetReadableDescription()`
+:::
+
+::: details `GetReadableDescription()`
 
 ```csharp
 public string GetReadableDescription()
@@ -41,7 +47,9 @@ public string GetReadableDescription()
 
 **Returns:** `string`
 
-### `GetReadableGameType()`
+:::
+
+::: details `GetReadableGameType()`
 
 ```csharp
 public string GetReadableGameType()
@@ -49,10 +57,14 @@ public string GetReadableGameType()
 
 **Returns:** `string`
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public bool Validate()
 ```
 
 **Returns:** `bool`
+
+:::

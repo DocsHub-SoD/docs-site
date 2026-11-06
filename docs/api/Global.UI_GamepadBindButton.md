@@ -9,7 +9,9 @@
 public class UI_GamepadBindButton : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,10 +19,14 @@ public class UI_GamepadBindButton : LogicBehaviour, ILogicUpdate
 | **`buttonType`** | `public UI_GamepadBindButton.ButtonType buttonType` |  |
 | **`ignoreInteractableForObject`** | `public bool ignoreInteractableForObject` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (1)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public struct SyncableAssetRef
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,22 +21,30 @@ public struct SyncableAssetRef
 | **`typeAssemblyQualifiedName`** | `public string typeAssemblyQualifiedName` |  |
 | **`typeName`** | `public string typeName` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`asset`** | `[JsonIgnore] public Object asset { get; set; }` |  |
 | **`lightAsset`** | `[JsonIgnore] public Object lightAsset { get; }` |  |
 
-## Methods
+:::
 
-### `ClearCache()`
+## Methods (4)
+
+::: details `ClearCache()`
 
 ```csharp
 public void ClearCache()
 ```
 
-### `Equals(SyncableAssetRef)`
+:::
+
+::: details `Equals(SyncableAssetRef)`
 
 ```csharp
 public bool Equals(SyncableAssetRef other)
@@ -47,7 +57,9 @@ public bool Equals(SyncableAssetRef other)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -60,10 +72,14 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
 ```
 
 **Returns:** `int`
+
+:::

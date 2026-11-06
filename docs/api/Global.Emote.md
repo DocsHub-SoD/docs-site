@@ -9,7 +9,9 @@
 public class Emote : MonoBehaviour
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,16 +23,22 @@ public class Emote : MonoBehaviour
 | **`posGetter`** | `public Func<Vector3> posGetter` |  |
 | **`price`** | `public int price` |  |
 
-## Methods
+:::
 
-### `SetupPreview()`
+## Methods (2)
+
+::: details `SetupPreview()`
 
 ```csharp
 public void SetupPreview()
 ```
 
-### `SetupStationary()`
+:::
+
+::: details `SetupStationary()`
 
 ```csharp
 public void SetupStationary()
 ```
+
+:::

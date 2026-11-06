@@ -8,7 +8,9 @@
 public class AbilityTrigger.ChangedConfigHandle
 ```
 
-## Properties
+## Properties (6)
+
+::: details Click to expand Properties (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,12 +21,16 @@ public class AbilityTrigger.ChangedConfigHandle
 | **`remainingTime`** | `public float remainingTime { get; }` |  |
 | **`setFillAmount`** | `public bool setFillAmount { get; }` |  |
 
-## Methods
+:::
 
-### `Stop()`
+## Methods (1)
+
+::: details `Stop()`
 
 Stop this config change. This will not call onExpire!
 
 ```csharp
 public void Stop()
 ```
+
+:::

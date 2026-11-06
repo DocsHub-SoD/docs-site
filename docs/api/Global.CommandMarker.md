@@ -9,16 +9,22 @@
 public class CommandMarker : EffectAutoDestroy
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`followTransform`** | `public Transform followTransform` |  |
 
-## Methods
+:::
 
-### `Update()`
+## Methods (1)
+
+::: details `Update()`
 
 ```csharp
 protected override void Update()
 ```
+
+:::

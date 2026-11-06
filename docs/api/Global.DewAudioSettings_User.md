@@ -8,7 +8,9 @@
 public class DewAudioSettings_User
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,12 +21,16 @@ public class DewAudioSettings_User
 | **`sfxVolume`** | `public float sfxVolume` |  |
 | **`uiVolume`** | `public float uiVolume` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (1)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
 ```
 
 **Returns:** `object`
+
+:::

@@ -8,10 +8,12 @@
 public interface ILimboNotifyReceiver
 ```
 
-## Methods
+## Methods (1)
 
-### `OnLimboGame()`
+::: details `OnLimboGame()`
 
 ```csharp
 void OnLimboGame()
 ```
+
+:::

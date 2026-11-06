@@ -8,7 +8,9 @@
 public class DewPlatformSettings : IInitializableSettings
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,9 +26,11 @@ public class DewPlatformSettings : IInitializableSettings
 | **`lastProfilePath`** | `public string lastProfilePath` |  |
 | **`saveVersion`** | `public int saveVersion` |  |
 
-## Methods
+:::
 
-### `Initialize()`
+## Methods (2)
+
+::: details `Initialize()`
 
 This is called on new platform settings.
 
@@ -34,10 +38,14 @@ This is called on new platform settings.
 public void Initialize()
 ```
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 Must be called at least once before using this platform settings. Does error checking and validation.
 
 ```csharp
 public void Validate()
 ```
+
+:::

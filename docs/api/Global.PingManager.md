@@ -9,7 +9,9 @@
 public class PingManager : NetworkedManagerBase<PingManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public class PingManager : NetworkedManagerBase<PingManager>, ILogicUpdate
 | **`pingIndicatorParent`** | `public Transform pingIndicatorParent` |  |
 | **`worldNode`** | `public PingManager.PingPrefabBindings worldNode` |  |
 
-## Methods
+:::
 
-### `BroadcastPing(Ping)`
+## Methods (4)
+
+::: details `BroadcastPing(Ping)`
 
 ```csharp
 public void BroadcastPing(PingManager.Ping ping)
@@ -33,7 +37,9 @@ public void BroadcastPing(PingManager.Ping ping)
 | :--- | :--- | :--- |
 | `ping` | [`PingManager.Ping`](/api/Global.PingManager) |  |
 
-### `CmdSendPing(Ping, NetworkConnectionToClient)`
+:::
+
+::: details `CmdSendPing(Ping, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdSendPing(PingManager.Ping ping, NetworkConnectionToClient sender = null)
@@ -45,7 +51,9 @@ public void CmdSendPing(PingManager.Ping ping, NetworkConnectionToClient sender 
 | `ping` | [`PingManager.Ping`](/api/Global.PingManager) |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `GetPingUIValue(string, string)`
+:::
+
+::: details `GetPingUIValue(string, string)`
 
 ```csharp
 public static string GetPingUIValue(string key, string accentColor = "#63e3ff")
@@ -59,8 +67,12 @@ public static string GetPingUIValue(string key, string accentColor = "#63e3ff")
 
 **Returns:** `string`
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
+
+:::

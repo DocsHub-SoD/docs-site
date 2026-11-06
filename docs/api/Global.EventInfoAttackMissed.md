@@ -8,7 +8,9 @@
 public struct EventInfoAttackMissed
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct EventInfoAttackMissed
 | **`attacker`** | `public Entity attacker` | Attacker of this hit. |
 | **`isCrit`** | `public bool isCrit` | Is hit attack critical hit? |
 | **`victim`** | `public Entity victim` | Victim of this hit. |
+
+:::

@@ -9,7 +9,9 @@
 public class TransitionManager : ManagerBase<TransitionManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,22 +27,30 @@ public class TransitionManager : ManagerBase<TransitionManager>, ILogicUpdate
 | **`tipText`** | `public TextMeshProUGUI tipText` |  |
 | **`whiteFadeCg`** | `public CanvasGroup whiteFadeCg` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`state`** | `[ShowInInspector] public TransitionManager.StateType state { get; }` |  |
 
-## Methods
+:::
 
-### `FadeIn()`
+## Methods (11)
+
+::: details `FadeIn()`
 
 ```csharp
 [Button]
 public void FadeIn()
 ```
 
-### `FadeInRoutine()`
+:::
+
+::: details `FadeInRoutine()`
 
 ```csharp
 public IEnumerator FadeInRoutine()
@@ -48,14 +58,18 @@ public IEnumerator FadeInRoutine()
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `FadeOut()`
+:::
+
+::: details `FadeOut()`
 
 ```csharp
 [Button]
 public void FadeOut()
 ```
 
-### `FadeOut(bool)`
+:::
+
+::: details `FadeOut(bool)`
 
 ```csharp
 public void FadeOut(bool showTips)
@@ -66,7 +80,9 @@ public void FadeOut(bool showTips)
 | :--- | :--- | :--- |
 | `showTips` | `bool` |  |
 
-### `FadeOutRoutine(bool)`
+:::
+
+::: details `FadeOutRoutine(bool)`
 
 ```csharp
 public IEnumerator FadeOutRoutine(bool showTips)
@@ -79,13 +95,17 @@ public IEnumerator FadeOutRoutine(bool showTips)
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LoadScene(string, bool)`
+:::
+
+::: details `LoadScene(string, bool)`
 
 ```csharp
 public void LoadScene(string sceneName, bool dontFadeIn = false)
@@ -97,7 +117,9 @@ public void LoadScene(string sceneName, bool dontFadeIn = false)
 | `sceneName` | `string` |  |
 | `dontFadeIn` | `bool` |  |
 
-### `PlayGame(DewNetworkStartSettings)`
+:::
+
+::: details `PlayGame(DewNetworkStartSettings)`
 
 ```csharp
 public void PlayGame(DewNetworkStartSettings settings)
@@ -108,7 +130,9 @@ public void PlayGame(DewNetworkStartSettings settings)
 | :--- | :--- | :--- |
 | `settings` | [`DewNetworkStartSettings`](/api/Global.DewNetworkStartSettings) |  |
 
-### `SetBusy(bool)`
+:::
+
+::: details `SetBusy(bool)`
 
 ```csharp
 public void SetBusy(bool value)
@@ -119,7 +143,9 @@ public void SetBusy(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `UpdateLoadingStatus(LoadingStatus)`
+:::
+
+::: details `UpdateLoadingStatus(LoadingStatus)`
 
 ```csharp
 public void UpdateLoadingStatus(LoadingStatus status)
@@ -130,7 +156,9 @@ public void UpdateLoadingStatus(LoadingStatus status)
 | :--- | :--- | :--- |
 | `status` | [`LoadingStatus`](/api/Global.LoadingStatus) |  |
 
-### `UpdateLoadingStatus(string)`
+:::
+
+::: details `UpdateLoadingStatus(string)`
 
 ```csharp
 public void UpdateLoadingStatus(string rawText)
@@ -140,3 +168,5 @@ public void UpdateLoadingStatus(string rawText)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `rawText` | `string` |  |
+
+:::

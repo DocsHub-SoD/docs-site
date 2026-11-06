@@ -8,9 +8,9 @@
 public interface ILobbyCharacterModelOnFocus
 ```
 
-## Methods
+## Methods (1)
 
-### `OnLobbyCharacterFocus(bool)`
+::: details `OnLobbyCharacterFocus(bool)`
 
 ```csharp
 void OnLobbyCharacterFocus(bool value)
@@ -20,3 +20,5 @@ void OnLobbyCharacterFocus(bool value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
+
+:::

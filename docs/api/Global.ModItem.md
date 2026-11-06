@@ -8,7 +8,9 @@
 public class ModItem
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,3 +25,5 @@ public class ModItem
 | **`publishedFileId`** | `public ulong publishedFileId` |  |
 | **`source`** | `public ModSourceType source` |  |
 | **`state`** | `public ModItemState state` |  |
+
+:::

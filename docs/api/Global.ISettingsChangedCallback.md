@@ -8,10 +8,12 @@
 public interface ISettingsChangedCallback
 ```
 
-## Methods
+## Methods (1)
 
-### `OnSettingsChanged()`
+::: details `OnSettingsChanged()`
 
 ```csharp
 void OnSettingsChanged()
 ```
+
+:::

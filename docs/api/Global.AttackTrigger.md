@@ -9,22 +9,28 @@
 public class AttackTrigger : AbilityTrigger, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`allowNonTargetedCast`** | `public bool allowNonTargetedCast` |  |
 | **`factor`** | `public ScalingValue factor` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (18)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CallAttackCompleteBeforePrepareRoutines(EventInfoCast)`
+:::
+
+::: details `CallAttackCompleteBeforePrepareRoutines(EventInfoCast)`
 
 ```csharp
 public void CallAttackCompleteBeforePrepareRoutines(EventInfoCast cast)
@@ -35,7 +41,9 @@ public void CallAttackCompleteBeforePrepareRoutines(EventInfoCast cast)
 | :--- | :--- | :--- |
 | `cast` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
-### `CallAttackCompleteRoutines(AbilityInstance, int, CastInfo)`
+:::
+
+::: details `CallAttackCompleteRoutines(AbilityInstance, int, CastInfo)`
 
 ```csharp
 public void CallAttackCompleteRoutines(AbilityInstance newInstance, int configIndex, CastInfo info)
@@ -48,7 +56,9 @@ public void CallAttackCompleteRoutines(AbilityInstance newInstance, int configIn
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `GetAnimationSpeed()`
+:::
+
+::: details `GetAnimationSpeed()`
 
 ```csharp
 public override float GetAnimationSpeed()
@@ -56,7 +66,9 @@ public override float GetAnimationSpeed()
 
 **Returns:** `float`
 
-### `GetChannelDurationMultiplier()`
+:::
+
+::: details `GetChannelDurationMultiplier()`
 
 ```csharp
 public override float GetChannelDurationMultiplier()
@@ -64,7 +76,9 @@ public override float GetChannelDurationMultiplier()
 
 **Returns:** `float`
 
-### `GetCooldownTimeMultiplier(int)`
+:::
+
+::: details `GetCooldownTimeMultiplier(int)`
 
 ```csharp
 public override float GetCooldownTimeMultiplier(int configIndex)
@@ -77,7 +91,9 @@ public override float GetCooldownTimeMultiplier(int configIndex)
 
 **Returns:** `float`
 
-### `GetPostDelayDurationMultiplier()`
+:::
+
+::: details `GetPostDelayDurationMultiplier()`
 
 ```csharp
 public override float GetPostDelayDurationMultiplier()
@@ -85,7 +101,9 @@ public override float GetPostDelayDurationMultiplier()
 
 **Returns:** `float`
 
-### `OnCastCancelSetCooldownTime(int, CastInfo)`
+:::
+
+::: details `OnCastCancelSetCooldownTime(int, CastInfo)`
 
 ```csharp
 protected override void OnCastCancelSetCooldownTime(int configIndex, CastInfo info)
@@ -97,7 +115,9 @@ protected override void OnCastCancelSetCooldownTime(int configIndex, CastInfo in
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastComplete(int, CastInfo)`
+:::
+
+::: details `OnCastComplete(int, CastInfo)`
 
 ```csharp
 public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)
@@ -111,7 +131,9 @@ public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)
 
 **Returns:** `AbilityInstance`
 
-### `OnCastCompleteBeforePrepare(EventInfoCast)`
+:::
+
+::: details `OnCastCompleteBeforePrepare(EventInfoCast)`
 
 ```csharp
 public override void OnCastCompleteBeforePrepare(EventInfoCast cast)
@@ -122,7 +144,9 @@ public override void OnCastCompleteBeforePrepare(EventInfoCast cast)
 | :--- | :--- | :--- |
 | `cast` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
-### `OnCastCompleteSetCharge(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSetCharge(int, CastInfo)`
 
 ```csharp
 public override void OnCastCompleteSetCharge(int configIndex, CastInfo info)
@@ -134,7 +158,9 @@ public override void OnCastCompleteSetCharge(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastCompleteSetCooldownTime(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSetCooldownTime(int, CastInfo)`
 
 ```csharp
 public override void OnCastCompleteSetCooldownTime(int configIndex, CastInfo info)
@@ -146,7 +172,9 @@ public override void OnCastCompleteSetCooldownTime(int configIndex, CastInfo inf
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastCompleteSetMinimumDelay(int, CastInfo)`
+:::
+
+::: details `OnCastCompleteSetMinimumDelay(int, CastInfo)`
 
 ```csharp
 public override void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo info)
@@ -158,7 +186,9 @@ public override void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo inf
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnCastStart(int, CastInfo)`
+:::
+
+::: details `OnCastStart(int, CastInfo)`
 
 ```csharp
 public override void OnCastStart(int configIndex, CastInfo info)
@@ -170,7 +200,9 @@ public override void OnCastStart(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnRotateForward(int, CastInfo)`
+:::
+
+::: details `OnRotateForward(int, CastInfo)`
 
 ```csharp
 protected override void OnRotateForward(int configIndex, CastInfo info)
@@ -182,7 +214,9 @@ protected override void OnRotateForward(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `OnStartChannel(int, CastInfo)`
+:::
+
+::: details `OnStartChannel(int, CastInfo)`
 
 ```csharp
 protected override void OnStartChannel(int configIndex, CastInfo info)
@@ -194,7 +228,9 @@ protected override void OnStartChannel(int configIndex, CastInfo info)
 | `configIndex` | `int` |  |
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
-### `ProcessRange(float)`
+:::
+
+::: details `ProcessRange(float)`
 
 ```csharp
 public override float ProcessRange(float original)
@@ -207,8 +243,12 @@ public override float ProcessRange(float original)
 
 **Returns:** `float`
 
-### `UpdateConfigIndexForCrit()`
+:::
+
+::: details `UpdateConfigIndexForCrit()`
 
 ```csharp
 public void UpdateConfigIndexForCrit()
 ```
+
+:::

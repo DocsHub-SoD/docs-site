@@ -9,21 +9,27 @@
 public class LogicBehaviour : MonoBehaviour, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldRegisterUpdates`** | `public virtual bool shouldRegisterUpdates { get; }` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (5)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public virtual void FrameUpdate()
 ```
 
-### `GetComponent<T>(out T)`
+:::
+
+::: details `GetComponent&lt;T&gt;(out T)`
 
 ```csharp
 protected void GetComponent<T>(out T comp)
@@ -35,7 +41,9 @@ protected void GetComponent<T>(out T comp)
 | `comp` | `T` |  |
 | `` | `T` |  |
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public virtual void LogicUpdate(float dt)
@@ -46,14 +54,20 @@ public virtual void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected virtual void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected virtual void OnEnable()
 ```
+
+:::

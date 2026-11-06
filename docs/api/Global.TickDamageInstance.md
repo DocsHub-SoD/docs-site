@@ -9,7 +9,9 @@
 public class TickDamageInstance : DamageInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,15 +22,21 @@ public class TickDamageInstance : DamageInstance, ILogicUpdate, ICleanup, ICusto
 | **`tickInterval`** | `public float tickInterval` |  |
 | **`ticks`** | `public int ticks` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`duration`** | `[ShowInInspector] public float duration { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (3)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -39,7 +47,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnCreateSequenced()`
+:::
+
+::: details `OnCreateSequenced()`
 
 ```csharp
 protected override IEnumerator OnCreateSequenced()
@@ -47,8 +57,12 @@ protected override IEnumerator OnCreateSequenced()
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
+
+:::

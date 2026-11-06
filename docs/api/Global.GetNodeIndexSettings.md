@@ -8,7 +8,9 @@
 public class GetNodeIndexSettings
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class GetNodeIndexSettings
 | **`avoidMainModifier`** | `public bool avoidMainModifier` |  |
 | **`desiredDistance`** | `public Vector2Int desiredDistance` |  |
 | **`preferCloserToExit`** | `public bool preferCloserToExit` |  |
+
+:::

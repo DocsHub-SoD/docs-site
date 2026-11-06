@@ -8,12 +8,14 @@
 public interface IShrineCustomAction
 ```
 
-## Methods
+## Methods (1)
 
-### `GetRawAction()`
+::: details `GetRawAction()`
 
 ```csharp
 string GetRawAction()
 ```
 
 **Returns:** `string`
+
+:::

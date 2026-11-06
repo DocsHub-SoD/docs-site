@@ -9,8 +9,12 @@
 public class PropEnt_Stone_Nightmare : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isRegularReward`** | `public override bool isRegularReward { get; }` |  |
+
+:::

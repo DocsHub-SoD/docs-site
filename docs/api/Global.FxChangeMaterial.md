@@ -8,29 +8,41 @@
 public class FxChangeMaterial : MonoBehaviour, IEffectComponent
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`materials`** | `public Material[] materials` |  |
 | **`renderers`** | `public Renderer[] renderers` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `Play()`
+## Methods (2)
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

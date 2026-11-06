@@ -8,7 +8,9 @@
 public class UI_BackButtonHandler : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class UI_BackButtonHandler : MonoBehaviour
 | **`consume`** | `public bool consume` |  |
 | **`onHandle`** | `public UnityEvent onHandle` |  |
 | **`priority`** | `public int priority` | Higher priorities will be called first. |
+
+:::

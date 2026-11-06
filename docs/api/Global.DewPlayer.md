@@ -10,7 +10,9 @@
 public class DewPlayer : DewNetworkBehaviour, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Fields
+## Fields (41)
+
+::: details Click to expand Fields (41)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -56,7 +58,11 @@ public class DewPlayer : DewNetworkBehaviour, ILogicUpdate, ISettingsChangedCall
 | **`steamId`** | `public CSteamID steamId` |  |
 | **`unlockedGameItems`** | `public readonly SyncList<string> unlockedGameItems` |  |
 
-## Properties
+:::
+
+## Properties (46)
+
+::: details Click to expand Properties (46)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -107,9 +113,11 @@ public class DewPlayer : DewNetworkBehaviour, ILogicUpdate, ISettingsChangedCall
 | **`state`** | `[ShowInInspector] [ReadOnly] public PlayerState state { get; set; }` |  |
 | **`totalMasteryLevel`** | `public int totalMasteryLevel { get; }` |  |
 
-## Methods
+:::
 
-### `AddDreamDust(int)`
+## Methods (53)
+
+::: details `AddDreamDust(int)`
 
 ```csharp
 public void AddDreamDust(int amount)
@@ -120,7 +128,9 @@ public void AddDreamDust(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `AddGold(int)`
+:::
+
+::: details `AddGold(int)`
 
 ```csharp
 public void AddGold(int amount)
@@ -131,13 +141,17 @@ public void AddGold(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CheckEnemyOrNeutral(Entity)`
+:::
+
+::: details `CheckEnemyOrNeutral(Entity)`
 
 ```csharp
 public bool CheckEnemyOrNeutral(Entity target)
@@ -150,7 +164,9 @@ public bool CheckEnemyOrNeutral(Entity target)
 
 **Returns:** `bool`
 
-### `CmdAuthorizeForUse(string)`
+:::
+
+::: details `CmdAuthorizeForUse(string)`
 
 ```csharp
 public void CmdAuthorizeForUse(string ownershipKey)
@@ -161,7 +177,9 @@ public void CmdAuthorizeForUse(string ownershipKey)
 | :--- | :--- | :--- |
 | `ownershipKey` | `string` |  |
 
-### `CmdGiveCurrency(int, int, DewPlayer)`
+:::
+
+::: details `CmdGiveCurrency(int, int, DewPlayer)`
 
 ```csharp
 public void CmdGiveCurrency(int goldAmount, int dreamDustAmount, DewPlayer target)
@@ -174,13 +192,17 @@ public void CmdGiveCurrency(int goldAmount, int dreamDustAmount, DewPlayer targe
 | `dreamDustAmount` | `int` |  |
 | `target` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `CmdNotifyEveryInfoSet()`
+:::
+
+::: details `CmdNotifyEveryInfoSet()`
 
 ```csharp
 public void CmdNotifyEveryInfoSet()
 ```
 
-### `CmdNotifyMidJoinReady(string)`
+:::
+
+::: details `CmdNotifyMidJoinReady(string)`
 
 ```csharp
 public void CmdNotifyMidJoinReady(string sceneName)
@@ -191,25 +213,33 @@ public void CmdNotifyMidJoinReady(string sceneName)
 | :--- | :--- | :--- |
 | `sceneName` | `string` |  |
 
-### `CmdPing()`
+:::
+
+::: details `CmdPing()`
 
 ```csharp
 public void CmdPing()
 ```
 
-### `CmdRequestMidJoin()`
+:::
+
+::: details `CmdRequestMidJoin()`
 
 ```csharp
 public void CmdRequestMidJoin()
 ```
 
-### `CmdRequestOverrides()`
+:::
+
+::: details `CmdRequestOverrides()`
 
 ```csharp
 public void CmdRequestOverrides()
 ```
 
-### `CmdRequestStardust(int)`
+:::
+
+::: details `CmdRequestStardust(int)`
 
 ```csharp
 public void CmdRequestStardust(int amount)
@@ -220,13 +250,17 @@ public void CmdRequestStardust(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `CmdRequestToJoinCurrentLobby()`
+:::
+
+::: details `CmdRequestToJoinCurrentLobby()`
 
 ```csharp
 public void CmdRequestToJoinCurrentLobby()
 ```
 
-### `CmdSetAccessories(List<string>)`
+:::
+
+::: details `CmdSetAccessories(List&lt;string&gt;)`
 
 ```csharp
 public void CmdSetAccessories(List<string> accessories)
@@ -237,7 +271,9 @@ public void CmdSetAccessories(List<string> accessories)
 | :--- | :--- | :--- |
 | `accessories` | `System.Collections.Generic.List<T><string>` |  |
 
-### `CmdSetDejavuItem(string)`
+:::
+
+::: details `CmdSetDejavuItem(string)`
 
 ```csharp
 public void CmdSetDejavuItem(string item)
@@ -248,7 +284,9 @@ public void CmdSetDejavuItem(string item)
 | :--- | :--- | :--- |
 | `item` | `string` |  |
 
-### `CmdSetHeroLoadoutData(HeroLoadoutData)`
+:::
+
+::: details `CmdSetHeroLoadoutData(HeroLoadoutData)`
 
 ```csharp
 public void CmdSetHeroLoadoutData(HeroLoadoutData newData)
@@ -259,7 +297,9 @@ public void CmdSetHeroLoadoutData(HeroLoadoutData newData)
 | :--- | :--- | :--- |
 | `newData` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 
-### `CmdSetHeroType(string)`
+:::
+
+::: details `CmdSetHeroType(string)`
 
 Set local player's hero type. Can only be called in local machine of this DewPlayer.
 
@@ -272,7 +312,9 @@ public void CmdSetHeroType(string newType)
 | :--- | :--- | :--- |
 | `newType` | `string` |  |
 
-### `CmdSetIsReady(bool)`
+:::
+
+::: details `CmdSetIsReady(bool)`
 
 ```csharp
 public void CmdSetIsReady(bool newReady)
@@ -283,7 +325,9 @@ public void CmdSetIsReady(bool newReady)
 | :--- | :--- | :--- |
 | `newReady` | `bool` |  |
 
-### `CmdSetNametag(string)`
+:::
+
+::: details `CmdSetNametag(string)`
 
 ```csharp
 public void CmdSetNametag(string ntName)
@@ -294,7 +338,9 @@ public void CmdSetNametag(string ntName)
 | :--- | :--- | :--- |
 | `ntName` | `string` |  |
 
-### `CmdSetProfileStats(DewProfileStats)`
+:::
+
+::: details `CmdSetProfileStats(DewProfileStats)`
 
 ```csharp
 public void CmdSetProfileStats(DewProfileStats stats)
@@ -305,7 +351,9 @@ public void CmdSetProfileStats(DewProfileStats stats)
 | :--- | :--- | :--- |
 | `stats` | [`DewProfileStats`](/api/Global.DewProfileStats) |  |
 
-### `CmdSetSkin(string)`
+:::
+
+::: details `CmdSetSkin(string)`
 
 ```csharp
 public void CmdSetSkin(string skin)
@@ -316,13 +364,17 @@ public void CmdSetSkin(string skin)
 | :--- | :--- | :--- |
 | `skin` | `string` |  |
 
-### `CmdSetUnlockedGameItems()`
+:::
+
+::: details `CmdSetUnlockedGameItems()`
 
 ```csharp
 public void CmdSetUnlockedGameItems()
 ```
 
-### `EarnDreamDust(int)`
+:::
+
+::: details `EarnDreamDust(int)`
 
 ```csharp
 public void EarnDreamDust(int amount)
@@ -333,7 +385,9 @@ public void EarnDreamDust(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `EarnGold(int)`
+:::
+
+::: details `EarnGold(int)`
 
 ```csharp
 public void EarnGold(int amount)
@@ -344,7 +398,9 @@ public void EarnGold(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `GetLocalUnlockedGameItems()`
+:::
+
+::: details `GetLocalUnlockedGameItems()`
 
 ```csharp
 public static string[] GetLocalUnlockedGameItems()
@@ -352,7 +408,9 @@ public static string[] GetLocalUnlockedGameItems()
 
 **Returns:** `string[]`
 
-### `GetTeamRelation(DewPlayer)`
+:::
+
+::: details `GetTeamRelation(DewPlayer)`
 
 ```csharp
 public TeamRelation GetTeamRelation(DewPlayer other)
@@ -365,7 +423,9 @@ public TeamRelation GetTeamRelation(DewPlayer other)
 
 **Returns:** `TeamRelation`
 
-### `GetTeamRelation(Entity)`
+:::
+
+::: details `GetTeamRelation(Entity)`
 
 ```csharp
 public TeamRelation GetTeamRelation(Entity other)
@@ -378,7 +438,9 @@ public TeamRelation GetTeamRelation(Entity other)
 
 **Returns:** `TeamRelation`
 
-### `GiveStardust(int)`
+:::
+
+::: details `GiveStardust(int)`
 
 ```csharp
 public void GiveStardust(int amount)
@@ -389,7 +451,9 @@ public void GiveStardust(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `HideOnScreenTimer(NetworkedOnScreenTimerHandle)`
+:::
+
+::: details `HideOnScreenTimer(NetworkedOnScreenTimerHandle)`
 
 ```csharp
 public void HideOnScreenTimer(NetworkedOnScreenTimerHandle handle)
@@ -400,7 +464,9 @@ public void HideOnScreenTimer(NetworkedOnScreenTimerHandle handle)
 | :--- | :--- | :--- |
 | `handle` | [`NetworkedOnScreenTimerHandle`](/api/Global.NetworkedOnScreenTimerHandle) |  |
 
-### `IsAllowedToUseItem(string)`
+:::
+
+::: details `IsAllowedToUseItem(string)`
 
 ```csharp
 public bool IsAllowedToUseItem(string itemName)
@@ -413,13 +479,17 @@ public bool IsAllowedToUseItem(string itemName)
 
 **Returns:** `bool`
 
-### `Kick()`
+:::
+
+::: details `Kick()`
 
 ```csharp
 public void Kick()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -430,43 +500,57 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStop()`
+:::
+
+::: details `OnStop()`
 
 ```csharp
 public override void OnStop()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `PurgeRelationsList()`
+:::
+
+::: details `PurgeRelationsList()`
 
 Purge any despawned / null entries in player relation lists.
 
@@ -474,13 +558,17 @@ Purge any despawned / null entries in player relation lists.
 public void PurgeRelationsList()
 ```
 
-### `RevalidateAllItems()`
+:::
+
+::: details `RevalidateAllItems()`
 
 ```csharp
 public void RevalidateAllItems()
 ```
 
-### `RpcInvokeOnSpendStardust(int)`
+:::
+
+::: details `RpcInvokeOnSpendStardust(int)`
 
 ```csharp
 public void RpcInvokeOnSpendStardust(int amount)
@@ -491,7 +579,9 @@ public void RpcInvokeOnSpendStardust(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `SendLog(string)`
+:::
+
+::: details `SendLog(string)`
 
 ```csharp
 public void SendLog(string message)
@@ -502,7 +592,9 @@ public void SendLog(string message)
 | :--- | :--- | :--- |
 | `message` | `string` |  |
 
-### `SendLogError(string)`
+:::
+
+::: details `SendLogError(string)`
 
 ```csharp
 public void SendLogError(string message)
@@ -513,7 +605,9 @@ public void SendLogError(string message)
 | :--- | :--- | :--- |
 | `message` | `string` |  |
 
-### `SendLogWarning(string)`
+:::
+
+::: details `SendLogWarning(string)`
 
 ```csharp
 public void SendLogWarning(string message)
@@ -524,7 +618,9 @@ public void SendLogWarning(string message)
 | :--- | :--- | :--- |
 | `message` | `string` |  |
 
-### `ShowOnScreenTimer(NetworkedOnScreenTimerHandle)`
+:::
+
+::: details `ShowOnScreenTimer(NetworkedOnScreenTimerHandle)`
 
 ```csharp
 public void ShowOnScreenTimer(NetworkedOnScreenTimerHandle handle)
@@ -535,7 +631,9 @@ public void ShowOnScreenTimer(NetworkedOnScreenTimerHandle handle)
 | :--- | :--- | :--- |
 | `handle` | [`NetworkedOnScreenTimerHandle`](/api/Global.NetworkedOnScreenTimerHandle) |  |
 
-### `Spend(Cost)`
+:::
+
+::: details `Spend(Cost)`
 
 Note this will not work for stardusts.
 
@@ -548,7 +646,9 @@ public void Spend(Cost cost)
 | :--- | :--- | :--- |
 | `cost` | [`Cost`](/api/Global.Cost) |  |
 
-### `SpendDreamDust(int)`
+:::
+
+::: details `SpendDreamDust(int)`
 
 ```csharp
 public void SpendDreamDust(int amount)
@@ -559,7 +659,9 @@ public void SpendDreamDust(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `SpendGold(int)`
+:::
+
+::: details `SpendGold(int)`
 
 ```csharp
 public void SpendGold(int amount)
@@ -570,7 +672,9 @@ public void SpendGold(int amount)
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
 
-### `TpcMakePlayerChangeLobby(string)`
+:::
+
+::: details `TpcMakePlayerChangeLobby(string)`
 
 ```csharp
 public void TpcMakePlayerChangeLobby(string lobbyId)
@@ -581,13 +685,17 @@ public void TpcMakePlayerChangeLobby(string lobbyId)
 | :--- | :--- | :--- |
 | `lobbyId` | `string` |  |
 
-### `TpcNotifyDejavuUse()`
+:::
+
+::: details `TpcNotifyDejavuUse()`
 
 ```csharp
 public void TpcNotifyDejavuUse()
 ```
 
-### `TpcShowCenterMessage(CenterMessageType, string, string[])`
+:::
+
+::: details `TpcShowCenterMessage(CenterMessageType, string, string[])`
 
 ```csharp
 public void TpcShowCenterMessage(CenterMessageType type, string key, string[] localizedFormatArgs)
@@ -600,7 +708,9 @@ public void TpcShowCenterMessage(CenterMessageType type, string key, string[] lo
 | `key` | `string` |  |
 | `localizedFormatArgs` | `string[]` |  |
 
-### `TpcShowCenterMessage(CenterMessageType, string)`
+:::
+
+::: details `TpcShowCenterMessage(CenterMessageType, string)`
 
 ```csharp
 public void TpcShowCenterMessage(CenterMessageType type, string key)
@@ -612,7 +722,9 @@ public void TpcShowCenterMessage(CenterMessageType type, string key)
 | `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
 | `key` | `string` |  |
 
-### `TpcShowWorldPopMessage(WorldMessageSetting)`
+:::
+
+::: details `TpcShowWorldPopMessage(WorldMessageSetting)`
 
 ```csharp
 public void TpcShowWorldPopMessage(WorldMessageSetting message)
@@ -622,3 +734,5 @@ public void TpcShowWorldPopMessage(WorldMessageSetting message)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `message` | [`WorldMessageSetting`](/api/Global.WorldMessageSetting) |  |
+
+:::

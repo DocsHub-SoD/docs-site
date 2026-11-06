@@ -9,7 +9,9 @@
 public class AchievementManager : ManagerBase<AchievementManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,21 +21,29 @@ public class AchievementManager : ManagerBase<AchievementManager>, ILogicUpdate
 | **`LocalClientEvent_OnLimboDepthComplete`** | `public SafeAction<int, string> LocalClientEvent_OnLimboDepthComplete` |  |
 | **`trackedAchievements`** | `public List<DewAchievementItem> trackedAchievements` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isTrackingAchievements`** | `public bool isTrackingAchievements { get; }` | Is locally tracking achievement? |
 
-## Methods
+:::
 
-### `CheckAndApplyLocalContinueData()`
+## Methods (7)
+
+::: details `CheckAndApplyLocalContinueData()`
 
 ```csharp
 public void CheckAndApplyLocalContinueData()
 ```
 
-### `CompleteAchievement(DewAchievementItem)`
+:::
+
+::: details `CompleteAchievement(DewAchievementItem)`
 
 ```csharp
 public void CompleteAchievement(DewAchievementItem item)
@@ -44,32 +54,44 @@ public void CompleteAchievement(DewAchievementItem item)
 | :--- | :--- | :--- |
 | `item` | [`DewAchievementItem`](/api/Global.DewAchievementItem) |  |
 
-### `DeleteLocalContinueData()`
+:::
+
+::: details `DeleteLocalContinueData()`
 
 ```csharp
 public void DeleteLocalContinueData()
 ```
 
-### `SaveLocalContinueData()`
+:::
+
+::: details `SaveLocalContinueData()`
 
 ```csharp
 public void SaveLocalContinueData()
 ```
 
-### `SetPlatformStats()`
+:::
+
+::: details `SetPlatformStats()`
 
 ```csharp
 public void SetPlatformStats()
 ```
 
-### `StartTrackingAchievements()`
+:::
+
+::: details `StartTrackingAchievements()`
 
 ```csharp
 public void StartTrackingAchievements()
 ```
 
-### `StopTrackingAchievements()`
+:::
+
+::: details `StopTrackingAchievements()`
 
 ```csharp
 public void StopTrackingAchievements()
 ```
+
+:::

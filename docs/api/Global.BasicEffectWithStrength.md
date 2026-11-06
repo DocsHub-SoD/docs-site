@@ -9,9 +9,13 @@
 public abstract class BasicEffectWithStrength : BasicEffect
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`decay`** | `public bool decay { get; set; }` | If true, strength will be scaled to remaining duration of the status effect.Works only if the status effect has a timer active. |
 | **`strength`** | `public float strength { get; set; }` |  |
+
+:::

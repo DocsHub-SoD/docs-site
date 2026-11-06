@@ -8,12 +8,14 @@
 public interface IEffectSetupComponent
 ```
 
-## Methods
+## Methods (1)
 
-### `OnEffectSetup()`
+::: details `OnEffectSetup()`
 
 This is called before effects are called.
 
 ```csharp
 void OnEffectSetup()
 ```
+
+:::

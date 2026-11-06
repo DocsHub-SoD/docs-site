@@ -9,7 +9,9 @@
 public class GlobalUIManager : ManagerBase<GlobalUIManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (26)
+
+::: details Click to expand Fields (26)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -40,7 +42,11 @@ public class GlobalUIManager : ManagerBase<GlobalUIManager>, ILogicUpdate
 | **`tutHighlightObject`** | `public GameObject tutHighlightObject` |  |
 | **`tutHighlightText`** | `public TextMeshProUGUI tutHighlightText` |  |
 
-## Properties
+:::
+
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -50,9 +56,11 @@ public class GlobalUIManager : ManagerBase<GlobalUIManager>, ILogicUpdate
 | **`lastFocusChangeUnscaledTime`** | `public float lastFocusChangeUnscaledTime { get; }` |  |
 | **`tooltipScreenSpaceRect`** | `public Rect tooltipScreenSpaceRect { get; }` |  |
 
-## Methods
+:::
 
-### `AddBackHandler(MonoBehaviour, int, Func<bool>)`
+## Methods (26)
+
+::: details `AddBackHandler(MonoBehaviour, int, Func&lt;bool&gt;)`
 
 Add handler for back buttons.Handler must return boolean value as indication of whether the back button event is consumed or not.Callback with highest priority will fire first when back button is pressed.If priority is the same, last added item will be fired first.If owner is destroyed, back handler will automatically be unregistered.
 
@@ -69,7 +77,9 @@ public BackHandler AddBackHandler(MonoBehaviour owner, int priority, Func<bool> 
 
 **Returns:** `BackHandler`
 
-### `AddGamepadFocusable(IGamepadFocusable)`
+:::
+
+::: details `AddGamepadFocusable(IGamepadFocusable)`
 
 ```csharp
 public void AddGamepadFocusable(IGamepadFocusable focusable)
@@ -80,25 +90,33 @@ public void AddGamepadFocusable(IGamepadFocusable focusable)
 | :--- | :--- | :--- |
 | `focusable` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
-### `ClickHighlightForTutorial()`
+:::
+
+::: details `ClickHighlightForTutorial()`
 
 ```csharp
 public void ClickHighlightForTutorial()
 ```
 
-### `EnforceFontFallbackOrder()`
+:::
+
+::: details `EnforceFontFallbackOrder()`
 
 ```csharp
 public void EnforceFontFallbackOrder()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetFocusedComponent<T>()`
+:::
+
+::: details `GetFocusedComponent&lt;T&gt;()`
 
 ```csharp
 public T GetFocusedComponent<T>() where T : Component
@@ -111,7 +129,9 @@ public T GetFocusedComponent<T>() where T : Component
 
 **Returns:** `T`
 
-### `GetIntersectingRects(List<Rect>, Vector2, Vector2, float, float)`
+:::
+
+::: details `GetIntersectingRects(List&lt;Rect&gt;, Vector2, Vector2, float, float)`
 
 ```csharp
 public static List<GlobalUIManager.RectResult> GetIntersectingRects(List<Rect> rects, Vector2 origin, Vector2 direction, float angle, float radius)
@@ -128,7 +148,9 @@ public static List<GlobalUIManager.RectResult> GetIntersectingRects(List<Rect> r
 
 **Returns:** `System.Collections.Generic.List<T><GlobalUIManager.RectResult>`
 
-### `GoBack()`
+:::
+
+::: details `GoBack()`
 
 Handle go back event with registered handlers.
 
@@ -136,7 +158,9 @@ Handle go back event with registered handlers.
 public void GoBack()
 ```
 
-### `HighlightForTutorial(TutorialHighlightSettings)`
+:::
+
+::: details `HighlightForTutorial(TutorialHighlightSettings)`
 
 ```csharp
 public IEnumerator HighlightForTutorial(TutorialHighlightSettings s)
@@ -149,7 +173,9 @@ public IEnumerator HighlightForTutorial(TutorialHighlightSettings s)
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `IsUIElementClickable(RectTransform)`
+:::
+
+::: details `IsUIElementClickable(RectTransform)`
 
 This checks for occlusions.
 
@@ -164,7 +190,9 @@ public bool IsUIElementClickable(RectTransform rectTransform)
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -175,7 +203,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MoveFocus(Vector3, float, float, float, Func<IGamepadFocusable, bool>, Func<IGamepadFocusable, float>)`
+:::
+
+::: details `MoveFocus(Vector3, float, float, float, Func&lt;IGamepadFocusable, bool&gt;, Func&lt;IGamepadFocusable, float&gt;)`
 
 ```csharp
 public bool MoveFocus(Vector3 direction, float angleLimit, float normalizedPerpendicularDistLimit, float normalizedDistLimit, Func<IGamepadFocusable, bool> condition = null, Func<IGamepadFocusable, float> customScoreFunc = null)
@@ -193,7 +223,9 @@ public bool MoveFocus(Vector3 direction, float angleLimit, float normalizedPerpe
 
 **Returns:** `bool`
 
-### `MoveFocus(Vector3, Vector2, Vector2, Vector2, Func<IGamepadFocusable, bool>, Func<IGamepadFocusable, float>)`
+:::
+
+::: details `MoveFocus(Vector3, Vector2, Vector2, Vector2, Func&lt;IGamepadFocusable, bool&gt;, Func&lt;IGamepadFocusable, float&gt;)`
 
 ```csharp
 public bool MoveFocus(Vector3 direction, Vector2 angleLimit, Vector2 normalizedPerpendicularDistLimit, Vector2 normalizedDistLimit, Func<IGamepadFocusable, bool> condition = null, Func<IGamepadFocusable, float> customScoreFunc = null)
@@ -211,7 +243,9 @@ public bool MoveFocus(Vector3 direction, Vector2 angleLimit, Vector2 normalizedP
 
 **Returns:** `bool`
 
-### `MoveFocus(Vector3)`
+:::
+
+::: details `MoveFocus(Vector3)`
 
 ```csharp
 public bool MoveFocus(Vector3 direction)
@@ -224,7 +258,9 @@ public bool MoveFocus(Vector3 direction)
 
 **Returns:** `bool`
 
-### `PopulateCacheData(ref GetFocusTargetSettings, out Action)`
+:::
+
+::: details `PopulateCacheData(ref GetFocusTargetSettings, out Action)`
 
 Populate cache data for the given settings to make consecutive GetTarget calls faster.
 
@@ -238,7 +274,9 @@ public void PopulateCacheData(ref GetFocusTargetSettings settings, out Action ha
 | `settings` | [`GetFocusTargetSettings`](/api/Global.GetFocusTargetSettings) |  |
 | `handle` | `System.Action` |  |
 
-### `RemoveBackHandler(BackHandler)`
+:::
+
+::: details `RemoveBackHandler(BackHandler)`
 
 Remove the provided back handler if it exists in current handler list.If owner is destroyed, back handler will automatically be unregistered.
 
@@ -251,7 +289,9 @@ public void RemoveBackHandler(BackHandler handle)
 | :--- | :--- | :--- |
 | `handle` | [`BackHandler`](/api/Global.BackHandler) |  |
 
-### `RemoveGamepadFocusable(IGamepadFocusable)`
+:::
+
+::: details `RemoveGamepadFocusable(IGamepadFocusable)`
 
 ```csharp
 public void RemoveGamepadFocusable(IGamepadFocusable focusable)
@@ -262,7 +302,9 @@ public void RemoveGamepadFocusable(IGamepadFocusable focusable)
 | :--- | :--- | :--- |
 | `focusable` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
-### `SetFocus(IGamepadFocusable)`
+:::
+
+::: details `SetFocus(IGamepadFocusable)`
 
 ```csharp
 public void SetFocus(IGamepadFocusable focusable)
@@ -273,7 +315,9 @@ public void SetFocus(IGamepadFocusable focusable)
 | :--- | :--- | :--- |
 | `focusable` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
-### `SetFocusOnComponent(Component)`
+:::
+
+::: details `SetFocusOnComponent(Component)`
 
 ```csharp
 public void SetFocusOnComponent(Component focusable)
@@ -284,7 +328,9 @@ public void SetFocusOnComponent(Component focusable)
 | :--- | :--- | :--- |
 | `focusable` | `UnityEngine.Component` |  |
 
-### `SetFocusOnFirstFocusable(GameObject)`
+:::
+
+::: details `SetFocusOnFirstFocusable(GameObject)`
 
 ```csharp
 public void SetFocusOnFirstFocusable(GameObject parent)
@@ -295,7 +341,9 @@ public void SetFocusOnFirstFocusable(GameObject parent)
 | :--- | :--- | :--- |
 | `parent` | `UnityEngine.GameObject` |  |
 
-### `ShowDevText(string, bool)`
+:::
+
+::: details `ShowDevText(string, bool)`
 
 Show developer-only floating text in top-left corner of the screen for some time.This is not shown to non-developers.
 
@@ -309,7 +357,9 @@ public void ShowDevText(string rawText, bool log = true)
 | `rawText` | `string` |  |
 | `log` | `bool` |  |
 
-### `SimulateClickOnUIElement(Component)`
+:::
+
+::: details `SimulateClickOnUIElement(Component)`
 
 ```csharp
 public void SimulateClickOnUIElement(Component comp)
@@ -320,7 +370,9 @@ public void SimulateClickOnUIElement(Component comp)
 | :--- | :--- | :--- |
 | `comp` | `UnityEngine.Component` |  |
 
-### `TryGetFocusTarget(GetFocusTargetSettings, out IGamepadFocusable)`
+:::
+
+::: details `TryGetFocusTarget(GetFocusTargetSettings, out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetFocusTarget(GetFocusTargetSettings s, out IGamepadFocusable next)
@@ -334,7 +386,9 @@ public bool TryGetFocusTarget(GetFocusTargetSettings s, out IGamepadFocusable ne
 
 **Returns:** `bool`
 
-### `TryGetFocusTargetGeneric(Vector3, Func<IGamepadFocusable, bool>, out IGamepadFocusable)`
+:::
+
+::: details `TryGetFocusTargetGeneric(Vector3, Func&lt;IGamepadFocusable, bool&gt;, out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetFocusTargetGeneric(Vector3 direction, Func<IGamepadFocusable, bool> condition, out IGamepadFocusable next)
@@ -349,7 +403,9 @@ public bool TryGetFocusTargetGeneric(Vector3 direction, Func<IGamepadFocusable, 
 
 **Returns:** `bool`
 
-### `TryMoveFocusBack()`
+:::
+
+::: details `TryMoveFocusBack()`
 
 ```csharp
 public bool TryMoveFocusBack()
@@ -357,8 +413,12 @@ public bool TryMoveFocusBack()
 
 **Returns:** `bool`
 
-### `UnhighlightForTutorial()`
+:::
+
+::: details `UnhighlightForTutorial()`
 
 ```csharp
 public void UnhighlightForTutorial()
 ```
+
+:::

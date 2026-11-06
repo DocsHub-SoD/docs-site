@@ -8,7 +8,9 @@
 public struct CastInfo
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,16 +20,22 @@ public struct CastInfo
 | **`point`** | `public Vector3 point` |  |
 | **`target`** | `public Entity target` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`forward`** | `public Vector3 forward { get; }` |  |
 | **`rotation`** | `public Quaternion rotation { get; }` |  |
 
-## Methods
+:::
 
-### `GetAngle(Quaternion)`
+## Methods (2)
+
+::: details `GetAngle(Quaternion)`
 
 ```csharp
 public static float GetAngle(Quaternion rotation)
@@ -40,7 +48,9 @@ public static float GetAngle(Quaternion rotation)
 
 **Returns:** `float`
 
-### `GetAngle(Vector3)`
+:::
+
+::: details `GetAngle(Vector3)`
 
 ```csharp
 public static float GetAngle(Vector3 forward)
@@ -52,3 +62,5 @@ public static float GetAngle(Vector3 forward)
 | `forward` | `UnityEngine.Vector3` |  |
 
 **Returns:** `float`
+
+:::

@@ -8,7 +8,9 @@
 public class UI_CursorEvents : MonoBehaviour
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,3 +22,5 @@ public class UI_CursorEvents : MonoBehaviour
 | **`onPointerExit`** | `public Action<PointerEventData> onPointerExit` |  |
 | **`onPointerMove`** | `public Action<PointerEventData> onPointerMove` |  |
 | **`onPointerUp`** | `public Action<PointerEventData> onPointerUp` |  |
+
+:::

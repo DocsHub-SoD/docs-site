@@ -8,7 +8,9 @@
 public struct EventInfoDamageNegatedByImmunity
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct EventInfoDamageNegatedByImmunity
 | **`data`** | `public FinalDamageData data` | Final damage data that is prevented. |
 | **`effect`** | `public BasicEffect effect` | The basic effect responsible for the negated damage. e.g. ProtectedEffect, InvulnerableEffect |
 | **`victim`** | `public Entity victim` | Victim of the negated damage. |
+
+:::

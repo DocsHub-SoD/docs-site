@@ -9,7 +9,9 @@
 public class AttachToFace : MonoBehaviour
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,3 +24,5 @@ public class AttachToFace : MonoBehaviour
 | **`vertexIndex0`** | `public int vertexIndex0` |  |
 | **`vertexIndex1`** | `public int vertexIndex1` |  |
 | **`vertexIndex2`** | `public int vertexIndex2` |  |
+
+:::

@@ -9,7 +9,9 @@
 public class PlayLobbyManager : ManagerBase<PlayLobbyManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,7 +20,11 @@ public class PlayLobbyManager : ManagerBase<PlayLobbyManager>, ILogicUpdate
 | **`fxRiftLoop`** | `public GameObject fxRiftLoop` |  |
 | **`fxRiftOpen`** | `public GameObject fxRiftOpen` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,9 +32,11 @@ public class PlayLobbyManager : ManagerBase<PlayLobbyManager>, ILogicUpdate
 | **`numOfReadyPlayers`** | `public int numOfReadyPlayers { get; }` |  |
 | **`numOfReadyPlayersMax`** | `public int numOfReadyPlayersMax { get; }` |  |
 
-## Methods
+:::
 
-### `AddStartGameCondition(Func<string>)`
+## Methods (9)
+
+::: details `AddStartGameCondition(Func&lt;string&gt;)`
 
 Given function must return a reason for start button unavailability. Return null for approval.
 
@@ -41,7 +49,9 @@ public void AddStartGameCondition(Func<string> func)
 | :--- | :--- | :--- |
 | `func` | `System.Func<TResult><string>` |  |
 
-### `CheckStartGameCondition(out string, bool)`
+:::
+
+::: details `CheckStartGameCondition(out string, bool)`
 
 ```csharp
 public bool CheckStartGameCondition(out string reason, bool showMessage)
@@ -55,19 +65,25 @@ public bool CheckStartGameCondition(out string reason, bool showMessage)
 
 **Returns:** `bool`
 
-### `GoBack()`
+:::
+
+::: details `GoBack()`
 
 ```csharp
 public void GoBack()
 ```
 
-### `JoinMidGame()`
+:::
+
+::: details `JoinMidGame()`
 
 ```csharp
 public void JoinMidGame()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -78,7 +94,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `RemoveStartGameCondition(Func<string>)`
+:::
+
+::: details `RemoveStartGameCondition(Func&lt;string&gt;)`
 
 ```csharp
 public void RemoveStartGameCondition(Func<string> func)
@@ -89,7 +107,9 @@ public void RemoveStartGameCondition(Func<string> func)
 | :--- | :--- | :--- |
 | `func` | `System.Func<TResult><string>` |  |
 
-### `SetReady(bool)`
+:::
+
+::: details `SetReady(bool)`
 
 ```csharp
 public void SetReady(bool ready)
@@ -100,14 +120,20 @@ public void SetReady(bool ready)
 | :--- | :--- | :--- |
 | `ready` | `bool` |  |
 
-### `StartGame()`
+:::
+
+::: details `StartGame()`
 
 ```csharp
 public void StartGame()
 ```
 
-### `ToggleReady()`
+:::
+
+::: details `ToggleReady()`
 
 ```csharp
 public void ToggleReady()
 ```
+
+:::

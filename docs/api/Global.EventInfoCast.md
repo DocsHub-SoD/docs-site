@@ -8,7 +8,9 @@
 public struct EventInfoCast
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct EventInfoCast
 | **`info`** | `public CastInfo info` |  |
 | **`instance`** | `public AbilityInstance instance` |  |
 | **`trigger`** | `public AbilityTrigger trigger` |  |
+
+:::

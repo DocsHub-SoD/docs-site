@@ -10,22 +10,28 @@
 public class RoomProps : RoomComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`defaultPerSectionRule`** | `public PropSpawnRule defaultPerSectionRule` |  |
 | **`globalRule`** | `public PropSpawnRule globalRule` |  |
 
-## Methods
+:::
 
-### `OnRoomStartServer()`
+## Methods (2)
+
+::: details `OnRoomStartServer()`
 
 ```csharp
 public override void OnRoomStartServer()
 ```
 
-### `TryGetGoodNodePosition(out Vector3, DewRandom)`
+:::
+
+::: details `TryGetGoodNodePosition(out Vector3, DewRandom)`
 
 Returns false if suboptimal position is returned.
 
@@ -40,3 +46,5 @@ public bool TryGetGoodNodePosition(out Vector3 position, DewRandom random = null
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `bool`
+
+:::

@@ -8,7 +8,9 @@
 public class DewProfileItem
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class DewProfileItem
 | **`peek`** | `public DewProfile peek` |  |
 | **`peekStats`** | `public DewProfileStats peekStats` |  |
 | **`state`** | `public DewProfileState state` |  |
+
+:::

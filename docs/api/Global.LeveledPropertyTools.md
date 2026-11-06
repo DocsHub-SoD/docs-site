@@ -8,9 +8,9 @@
 public static class LeveledPropertyTools
 ```
 
-## Methods
+## Methods (3)
 
-### `ParseFloatValues(string)`
+::: details `ParseFloatValues(string)`
 
 ```csharp
 public static float[] ParseFloatValues(string values)
@@ -23,7 +23,9 @@ public static float[] ParseFloatValues(string values)
 
 **Returns:** `float[]`
 
-### `ParseIntValues(string)`
+:::
+
+::: details `ParseIntValues(string)`
 
 ```csharp
 public static int[] ParseIntValues(string values)
@@ -36,7 +38,9 @@ public static int[] ParseIntValues(string values)
 
 **Returns:** `int[]`
 
-### `SetPropertyOrFieldValue(object, string, string)`
+:::
+
+::: details `SetPropertyOrFieldValue(object, string, string)`
 
 ```csharp
 public static void SetPropertyOrFieldValue(object target, string name, string value)
@@ -48,3 +52,5 @@ public static void SetPropertyOrFieldValue(object target, string name, string va
 | `target` | `object` |  |
 | `name` | `string` |  |
 | `value` | `string` |  |
+
+:::

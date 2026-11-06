@@ -8,9 +8,9 @@
 public static class WildcardMatch
 ```
 
-## Methods
+## Methods (2)
 
-### `EqualsWildcard(string, string, bool)`
+::: details `EqualsWildcard(string, string, bool)`
 
 ```csharp
 public static bool EqualsWildcard(this string text, string wildcardString, bool ignoreCase)
@@ -25,7 +25,9 @@ public static bool EqualsWildcard(this string text, string wildcardString, bool 
 
 **Returns:** `bool`
 
-### `EqualsWildcard(string, string)`
+:::
+
+::: details `EqualsWildcard(string, string)`
 
 Compares a string to a wildcard pattern.
 '?' matches any single character.
@@ -43,3 +45,5 @@ public static bool EqualsWildcard(this string text, string wildcardString)
 | `wildcardString` | `string` | The wildcard pattern to match against. |
 
 **Returns:** `bool: True if the string matches the pattern, otherwise false.`
+
+:::

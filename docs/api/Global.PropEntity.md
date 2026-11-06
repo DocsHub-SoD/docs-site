@@ -9,7 +9,9 @@
 public class PropEntity : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,16 +19,22 @@ public class PropEntity : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine,
 | **`isUnstoppable`** | `public bool isUnstoppable` |  |
 | **`takeOneDamageOnHit`** | `public bool takeOneDamageOnHit` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isRegularReward`** | `public virtual bool isRegularReward { get; }` |  |
 | **`scaleSpawnRateWithPlayers`** | `public bool scaleSpawnRateWithPlayers { get; }` |  |
 
-## Methods
+:::
 
-### `GetStaggerSettings()`
+## Methods (2)
+
+::: details `GetStaggerSettings()`
 
 ```csharp
 protected override Entity.StaggerSettings GetStaggerSettings()
@@ -34,8 +42,12 @@ protected override Entity.StaggerSettings GetStaggerSettings()
 
 **Returns:** `Entity.StaggerSettings`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public struct EventInfoLoadRoom
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public struct EventInfoLoadRoom
 | **`isSidetrackTransition`** | `public bool isSidetrackTransition` |  |
 | **`isTraveling`** | `public bool isTraveling` | Is this load result of traveling through a rift? (including the start of the game)This is true if:We just started the gameWe moved through the rift to visit a new / previously visited locationWe are loading from save, which were done in the middle of traveling.This is false if:We are loading from save, which were done after clearing the room. |
 | **`toIndex`** | `public int toIndex` |  |
+
+:::

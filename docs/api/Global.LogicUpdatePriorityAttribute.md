@@ -9,8 +9,12 @@
 public class LogicUpdatePriorityAttribute : Attribute
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`priority`** | `public readonly int priority` |  |
+
+:::

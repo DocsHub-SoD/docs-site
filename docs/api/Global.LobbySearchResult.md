@@ -8,9 +8,13 @@
 public class LobbySearchResult
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`continuationToken`** | `public object continuationToken` |  |
 | **`lobbies`** | `public List<LobbyInstance> lobbies` |  |
+
+:::

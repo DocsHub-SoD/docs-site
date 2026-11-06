@@ -8,15 +8,19 @@
 public class UI_HoldToRapidClickButton : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onClick`** | `[InfoBox("Subscribe to this instead of Button's to prevent double clicks.", InfoMessageType.Info, null)] public UnityEvent onClick` |  |
 
-## Methods
+:::
 
-### `OnPointerDown(PointerEventData)`
+## Methods (2)
+
+::: details `OnPointerDown(PointerEventData)`
 
 ```csharp
 public void OnPointerDown(PointerEventData eventData)
@@ -27,7 +31,9 @@ public void OnPointerDown(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerUp(PointerEventData)`
+:::
+
+::: details `OnPointerUp(PointerEventData)`
 
 ```csharp
 public void OnPointerUp(PointerEventData eventData)
@@ -37,3 +43,5 @@ public void OnPointerUp(PointerEventData eventData)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
+
+:::

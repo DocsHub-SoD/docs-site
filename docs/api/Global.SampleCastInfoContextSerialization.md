@@ -8,9 +8,9 @@
 public static class SampleCastInfoContextSerialization
 ```
 
-## Methods
+## Methods (2)
 
-### `ReadSampleCastInfoContext(NetworkReader)`
+::: details `ReadSampleCastInfoContext(NetworkReader)`
 
 ```csharp
 public static SampleCastInfoContext? ReadSampleCastInfoContext(this NetworkReader reader)
@@ -23,7 +23,9 @@ public static SampleCastInfoContext? ReadSampleCastInfoContext(this NetworkReade
 
 **Returns:** `SampleCastInfoContext?`
 
-### `WriteSampleCastInfoContext(NetworkWriter, SampleCastInfoContext?)`
+:::
+
+::: details `WriteSampleCastInfoContext(NetworkWriter, SampleCastInfoContext?)`
 
 ```csharp
 public static void WriteSampleCastInfoContext(this NetworkWriter writer, SampleCastInfoContext? value)
@@ -34,3 +36,5 @@ public static void WriteSampleCastInfoContext(this NetworkWriter writer, SampleC
 | :--- | :--- | :--- |
 | `writer` | `Mirror.NetworkWriter` |  |
 | `value` | [`SampleCastInfoContext?`](/api/Global.SampleCastInfoContext) |  |
+
+:::

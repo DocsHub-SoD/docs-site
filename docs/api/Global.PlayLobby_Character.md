@@ -10,7 +10,9 @@
 public class PlayLobby_Character : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,21 +22,27 @@ public class PlayLobby_Character : LogicBehaviour, ILogicUpdate
 | **`model`** | `public CharacterModelDisplay model` |  |
 | **`playerIndex`** | `public int playerIndex` |  |
 
-## Methods
+:::
 
-### `Click()`
+## Methods (4)
+
+::: details `Click()`
 
 ```csharp
 public void Click()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `IsLocalPlayer()`
+:::
+
+::: details `IsLocalPlayer()`
 
 ```csharp
 public bool IsLocalPlayer()
@@ -42,7 +50,9 @@ public bool IsLocalPlayer()
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -52,3 +62,5 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

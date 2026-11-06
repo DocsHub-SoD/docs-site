@@ -9,7 +9,9 @@
 public class Accessory.AttachOffset
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class Accessory.AttachOffset
 | **`localPosition`** | `public Vector3 localPosition` |  |
 | **`localRotation`** | `public Vector3 localRotation` |  |
 | **`localScale`** | `public float localScale` |  |
+
+:::

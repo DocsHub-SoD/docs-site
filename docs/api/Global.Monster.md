@@ -9,7 +9,9 @@
 public class Monster : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,7 +20,11 @@ public class Monster : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`disableLoot`** | `[NonSerialized] public bool disableLoot` |  |
 | **`type`** | `[BoxGroup("Monster Settings", true, false, 0)] public Monster.MonsterType type` |  |
 
-## Properties
+:::
+
+## Properties (6)
+
+::: details Click to expand Properties (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,9 +35,11 @@ public class Monster : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`spawnPosOverride`** | `public virtual Vector3? spawnPosOverride { get; }` | Override spawn position for this monster. This has higher priority than all other spawn pos overrides. |
 | **`spawnRotOverride`** | `public virtual Quaternion? spawnRotOverride { get; }` | Override spawn rotation for this monster. This has higher priority than all other spawn rot overrides. |
 
-## Methods
+:::
 
-### `AIUpdate(ref EntityAIContext)`
+## Methods (5)
+
+::: details `AIUpdate(ref EntityAIContext)`
 
 ```csharp
 protected override void AIUpdate(ref EntityAIContext context)
@@ -42,7 +50,9 @@ protected override void AIUpdate(ref EntityAIContext context)
 | :--- | :--- | :--- |
 | `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
-### `GetStaggerSettings()`
+:::
+
+::: details `GetStaggerSettings()`
 
 ```csharp
 protected override Entity.StaggerSettings GetStaggerSettings()
@@ -50,20 +60,28 @@ protected override Entity.StaggerSettings GetStaggerSettings()
 
 **Returns:** `Entity.StaggerSettings`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
+
+:::

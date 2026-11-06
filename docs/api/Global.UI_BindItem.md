@@ -9,7 +9,9 @@
 public class UI_BindItem : LogicBehaviour, ILogicUpdate, ILangaugeChangedCallback
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,21 +22,29 @@ public class UI_BindItem : LogicBehaviour, ILogicUpdate, ILangaugeChangedCallbac
 | **`notHoverObject`** | `public GameObject notHoverObject` |  |
 | **`onValueChanged`** | `public Action<DewBinding> onValueChanged` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`value`** | `public DewBinding value { get; set; }` |  |
 
-## Methods
+:::
 
-### `OnLanguageChanged()`
+## Methods (5)
+
+::: details `OnLanguageChanged()`
 
 ```csharp
 public void OnLanguageChanged()
 ```
 
-### `OnPointerEnter(PointerEventData)`
+:::
+
+::: details `OnPointerEnter(PointerEventData)`
 
 ```csharp
 public void OnPointerEnter(PointerEventData eventData)
@@ -45,7 +55,9 @@ public void OnPointerEnter(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerExit(PointerEventData)`
+:::
+
+::: details `OnPointerExit(PointerEventData)`
 
 ```csharp
 public void OnPointerExit(PointerEventData eventData)
@@ -56,13 +68,17 @@ public void OnPointerExit(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `StartListening()`
+:::
+
+::: details `StartListening()`
 
 ```csharp
 public void StartListening()
 ```
 
-### `UpdateValueDontNotify(DewBinding)`
+:::
+
+::: details `UpdateValueDontNotify(DewBinding)`
 
 ```csharp
 public void UpdateValueDontNotify(DewBinding newReference)
@@ -72,3 +88,5 @@ public void UpdateValueDontNotify(DewBinding newReference)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `newReference` | [`DewBinding`](/api/Global.DewBinding) |  |
+
+:::

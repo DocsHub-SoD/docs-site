@@ -9,7 +9,9 @@
 public class MeleeAttackInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,16 +26,24 @@ public class MeleeAttackInstance : AbilityInstance, ILogicUpdate, ICleanup, ICus
 | **`subTargetAttackEffect`** | `public float subTargetAttackEffect` |  |
 | **`subTargetDamage`** | `public float subTargetDamage` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`didHit`** | `public bool didHit { get; }` | Available on server. |
 
-## Methods
+:::
 
-### `OnCreate()`
+## Methods (1)
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
+
+:::

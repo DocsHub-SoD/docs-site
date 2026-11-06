@@ -8,7 +8,9 @@
 public class UI_Toggle : MonoBehaviour
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,9 +21,15 @@ public class UI_Toggle : MonoBehaviour
 | **`onIsCheckedChanged`** | `public UnityEvent<bool> onIsCheckedChanged` |  |
 | **`onObject`** | `public GameObject onObject` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`interactable`** | `public bool interactable { get; set; }` |  |
 | **`isChecked`** | `public bool isChecked { get; set; }` |  |
+
+:::

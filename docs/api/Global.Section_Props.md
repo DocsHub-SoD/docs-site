@@ -9,9 +9,13 @@
 public class Section_Props : RoomSectionComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`excludeFromGlobalRule`** | `public bool excludeFromGlobalRule` |  |
 | **`sectionRule`** | `public PropSpawnRule sectionRule` |  |
+
+:::

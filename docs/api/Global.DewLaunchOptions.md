@@ -8,7 +8,9 @@
 public static class DewLaunchOptions
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public static class DewLaunchOptions
 | **`forceKeyboardAndMouse`** | `public static bool forceKeyboardAndMouse` |  |
 | **`modDir`** | `public static string modDir` |  |
 | **`steamNoRestart`** | `public static bool steamNoRestart` |  |
+
+:::

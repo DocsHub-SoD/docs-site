@@ -10,7 +10,9 @@
 public class GameEffect : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,30 +20,42 @@ public class GameEffect : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`loopEffect`** | `[BoxGroup("Effects", true, false, 0)] public GameObject loopEffect` |  |
 | **`startEffect`** | `[BoxGroup("Effects", true, false, 0)] public GameObject startEffect` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 
-## Methods
+:::
 
-### `OnCreate()`
+## Methods (3)
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::

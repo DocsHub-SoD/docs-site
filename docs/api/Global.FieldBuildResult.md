@@ -8,7 +8,9 @@
 public class FieldBuildResult
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class FieldBuildResult
 | **`onChanged`** | `public SafeAction<object> onChanged` | Notification sent from created field widgets when a change is done on UI-side. |
 | **`root`** | `public GameObject root` |  |
 | **`setValue`** | `public Action<object> setValue` |  |
+
+:::

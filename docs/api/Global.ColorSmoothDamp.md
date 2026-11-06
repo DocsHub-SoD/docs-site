@@ -8,9 +8,9 @@
 public static class ColorSmoothDamp
 ```
 
-## Methods
+## Methods (3)
 
-### `SmoothDamp(Color, Color, ref Vector4, float, float, float)`
+::: details `SmoothDamp(Color, Color, ref Vector4, float, float, float)`
 
 ```csharp
 public static Color SmoothDamp(Color current, Color target, ref Vector4 currentVelocity, float smoothTime, float maxSpeed, float deltaTime)
@@ -28,7 +28,9 @@ public static Color SmoothDamp(Color current, Color target, ref Vector4 currentV
 
 **Returns:** `UnityEngine.Color`
 
-### `SmoothDamp(Color, Color, ref Vector4, float, float)`
+:::
+
+::: details `SmoothDamp(Color, Color, ref Vector4, float, float)`
 
 ```csharp
 public static Color SmoothDamp(Color current, Color target, ref Vector4 currentVelocity, float smoothTime, float maxSpeed)
@@ -45,7 +47,9 @@ public static Color SmoothDamp(Color current, Color target, ref Vector4 currentV
 
 **Returns:** `UnityEngine.Color`
 
-### `SmoothDamp(Color, Color, ref Vector4, float)`
+:::
+
+::: details `SmoothDamp(Color, Color, ref Vector4, float)`
 
 ```csharp
 public static Color SmoothDamp(Color current, Color target, ref Vector4 currentVelocity, float smoothTime)
@@ -60,3 +64,5 @@ public static Color SmoothDamp(Color current, Color target, ref Vector4 currentV
 | `smoothTime` | `float` |  |
 
 **Returns:** `UnityEngine.Color`
+
+:::

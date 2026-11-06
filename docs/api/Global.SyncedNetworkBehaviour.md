@@ -8,16 +8,20 @@
 public struct SyncedNetworkBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`componentIndex`** | `public byte componentIndex` |  |
 | **`netId`** | `public uint netId` |  |
 
-## Methods
+:::
 
-### `Equals(SyncedNetworkBehaviour)`
+## Methods (3)
+
+::: details `Equals(SyncedNetworkBehaviour)`
 
 ```csharp
 public bool Equals(SyncedNetworkBehaviour other)
@@ -30,7 +34,9 @@ public bool Equals(SyncedNetworkBehaviour other)
 
 **Returns:** `bool`
 
-### `Equals(uint, int)`
+:::
+
+::: details `Equals(uint, int)`
 
 ```csharp
 public bool Equals(uint netId, int componentIndex)
@@ -44,10 +50,14 @@ public bool Equals(uint netId, int componentIndex)
 
 **Returns:** `bool`
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

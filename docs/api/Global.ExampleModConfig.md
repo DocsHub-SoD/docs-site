@@ -9,7 +9,9 @@
 public class ExampleModConfig : ModConfig
 ```
 
-## Fields
+## Fields (19)
+
+::: details Click to expand Fields (19)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -32,3 +34,5 @@ public class ExampleModConfig : ModConfig
 | **`vector3IntTest`** | `public Vector3Int vector3IntTest` |  |
 | **`vector3Test`** | `public Vector3 vector3Test` |  |
 | **`vector4Test`** | `public Vector4 vector4Test` |  |
+
+:::

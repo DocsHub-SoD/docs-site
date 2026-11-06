@@ -9,9 +9,9 @@
 public abstract class ModConfig
 ```
 
-## Methods
+## Methods (3)
 
-### `BuildWidgets(Transform, out SafeAction, out SafeAction)`
+::: details `BuildWidgets(Transform, out SafeAction, out SafeAction)`
 
 ```csharp
 public virtual void BuildWidgets(Transform parent, out SafeAction onChanged, out SafeAction requestUpdate)
@@ -24,7 +24,9 @@ public virtual void BuildWidgets(Transform parent, out SafeAction onChanged, out
 | `onChanged` | [`SafeAction`](/api/Global.SafeAction) |  |
 | `requestUpdate` | [`SafeAction`](/api/Global.SafeAction) |  |
 
-### `Clone()`
+:::
+
+::: details `Clone()`
 
 ```csharp
 public virtual ModConfig Clone()
@@ -32,7 +34,9 @@ public virtual ModConfig Clone()
 
 **Returns:** `ModConfig`
 
-### `CopyTo(ModConfig)`
+:::
+
+::: details `CopyTo(ModConfig)`
 
 ```csharp
 public virtual void CopyTo(ModConfig other)
@@ -42,3 +46,5 @@ public virtual void CopyTo(ModConfig other)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `other` | [`ModConfig`](/api/Global.ModConfig) |  |
+
+:::

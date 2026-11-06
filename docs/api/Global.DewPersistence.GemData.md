@@ -9,15 +9,19 @@
 public class DewPersistence.GemData : DewPersistence.GeneralData
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`location`** | `public GemLocation location` |  |
 
-## Methods
+:::
 
-### `Capture(Actor)`
+## Methods (1)
+
+::: details `Capture(Actor)`
 
 ```csharp
 public override DewPersistence.GeneralData Capture(Actor target)
@@ -29,3 +33,5 @@ public override DewPersistence.GeneralData Capture(Actor target)
 | `target` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `DewPersistence.GeneralData`
+
+:::

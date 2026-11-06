@@ -8,7 +8,9 @@
 public class DewQuest.ReachNodeGoal
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public class DewQuest.ReachNodeGoal
 | **`settings`** | `public NextGoalSettings settings` |  |
 | **`waitingForZoneIndex`** | `public bool waitingForZoneIndex` |  |
 | **`zoneIndex`** | `public int zoneIndex` |  |
+
+:::

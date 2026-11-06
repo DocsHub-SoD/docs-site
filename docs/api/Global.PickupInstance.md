@@ -9,7 +9,9 @@
 public class PickupInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (17)
+
+::: details Click to expand Fields (17)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -31,15 +33,19 @@ public class PickupInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDe
 | **`velocityDeceleration`** | `public float velocityDeceleration` |  |
 | **`yPosFromGround`** | `public float yPosFromGround` |  |
 
-## Methods
+:::
 
-### `ActiveFrameUpdate()`
+## Methods (7)
+
+::: details `ActiveFrameUpdate()`
 
 ```csharp
 protected override void ActiveFrameUpdate()
 ```
 
-### `ActiveLogicUpdate(float)`
+:::
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -50,7 +56,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `CanBeUsedBy(Hero)`
+:::
+
+::: details `CanBeUsedBy(Hero)`
 
 Checked on server.
 
@@ -65,19 +73,25 @@ protected virtual bool CanBeUsedBy(Hero hero)
 
 **Returns:** `bool`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPickup(Hero)`
+:::
+
+::: details `OnPickup(Hero)`
 
 Called on server when this pickup instance is picked up. After this function call the instance is immediately destroyed.
 
@@ -90,8 +104,12 @@ protected virtual void OnPickup(Hero hero)
 | :--- | :--- | :--- |
 | `hero` | [`Hero`](/api/Global.Hero) |  |
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
+
+:::

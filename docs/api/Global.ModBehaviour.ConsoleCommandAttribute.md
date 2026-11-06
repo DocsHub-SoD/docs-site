@@ -9,9 +9,13 @@
 public class ModBehaviour.ConsoleCommandAttribute : Attribute
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`CustomName`** | `public readonly string CustomName` |  |
 | **`Description`** | `public readonly string Description` |  |
+
+:::

@@ -8,19 +8,25 @@
 public static class DewEula
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`CurrentEulaSetKey`** | `public const string CurrentEulaSetKey = "EULA20251210"` |  |
 | **`needsToAgree`** | `public static bool needsToAgree` |  |
 
-## Methods
+:::
 
-### `AgreeEula()`
+## Methods (1)
+
+::: details `AgreeEula()`
 
 ```csharp
 public static UniTask AgreeEula()
 ```
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
+
+:::

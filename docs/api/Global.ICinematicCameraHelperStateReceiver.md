@@ -8,9 +8,9 @@
 public interface ICinematicCameraHelperStateReceiver
 ```
 
-## Methods
+## Methods (1)
 
-### `OnCinematicCameraHelperChanged(bool)`
+::: details `OnCinematicCameraHelperChanged(bool)`
 
 ```csharp
 void OnCinematicCameraHelperChanged(bool on)
@@ -20,3 +20,5 @@ void OnCinematicCameraHelperChanged(bool on)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `on` | `bool` |  |
+
+:::

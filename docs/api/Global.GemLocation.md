@@ -8,16 +8,20 @@
 public struct GemLocation
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`index`** | `public int index` |  |
 | **`skill`** | `public HeroSkillLocation skill` |  |
 
-## Methods
+:::
 
-### `Equals(GemLocation)`
+## Methods (3)
+
+::: details `Equals(GemLocation)`
 
 ```csharp
 public bool Equals(GemLocation other)
@@ -30,7 +34,9 @@ public bool Equals(GemLocation other)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -43,10 +49,14 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
 ```
 
 **Returns:** `int`
+
+:::

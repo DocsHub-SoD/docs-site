@@ -8,10 +8,12 @@
 public interface ICustomDestroyRoutine
 ```
 
-## Methods
+## Methods (1)
 
-### `CustomDestroyRoutine()`
+::: details `CustomDestroyRoutine()`
 
 ```csharp
 void CustomDestroyRoutine()
 ```
+
+:::

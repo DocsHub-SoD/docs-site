@@ -9,7 +9,9 @@
 public abstract class StatusEffect : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (13)
+
+::: details Click to expand Fields (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -27,7 +29,11 @@ public abstract class StatusEffect : AbilityInstance, ILogicUpdate, ICleanup, IC
 | **`startEffectVictim`** | `[Title("Effects On Victim", null, TitleAlignments.Left, true, true)] [BoxGroup("StatusEffect Settings", true, false, 0)] [LabelText("Start Effect")] public GameObject startEffectVictim` |  |
 | **`topColor`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ShowIf("_showIcon", true)] public Color topColor` |  |
 
-## Properties
+:::
+
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -40,9 +46,11 @@ public abstract class StatusEffect : AbilityInstance, ILogicUpdate, ICleanup, IC
 | **`showIcon`** | `public bool showIcon { get; set; }` |  |
 | **`victim`** | `[SaveVar(SaveVarFlags.Default)] public Entity victim { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (44)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -53,7 +61,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `DoAbility(Func<AbilityTrigger, bool>, Func<AbilityTrigger, Action>)`
+:::
+
+::: details `DoAbility(Func&lt;AbilityTrigger, bool&gt;, Func&lt;AbilityTrigger, Action&gt;)`
 
 Do custom action on all matching ability and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -69,7 +79,9 @@ public SafeAction DoAbility(Func<AbilityTrigger, bool> condition, Func<AbilityTr
 
 **Returns:** `SafeAction`
 
-### `DoArmorBoost(float)`
+:::
+
+::: details `DoArmorBoost(float)`
 
 ArmorBoost reduces all taken damage.
 
@@ -84,7 +96,9 @@ public ArmorBoostEffect DoArmorBoost(float strength)
 
 **Returns:** `ArmorBoostEffect`
 
-### `DoArmorReduction(float)`
+:::
+
+::: details `DoArmorReduction(float)`
 
 ArmorReduction increases all taken damage.
 
@@ -99,7 +113,9 @@ public ArmorReductionEffect DoArmorReduction(float strength)
 
 **Returns:** `ArmorReductionEffect`
 
-### `DoAttackCritical(Action)`
+:::
+
+::: details `DoAttackCritical(Action)`
 
 AttackCritical makes the entity's attacks to always do a critical hit.
 
@@ -114,7 +130,9 @@ public AttackCriticalEffect DoAttackCritical(Action onUse)
 
 **Returns:** `AttackCriticalEffect`
 
-### `DoAttackEmpower(Action<EventInfoAttackEffect, int>, int, Action)`
+:::
+
+::: details `DoAttackEmpower(Action&lt;EventInfoAttackEffect, int&gt;, int, Action)`
 
 Note this will lock the status effect until basic attack instance is destroyed.
 
@@ -131,7 +149,9 @@ public AttackEmpowerEffect DoAttackEmpower(Action<EventInfoAttackEffect, int> on
 
 **Returns:** `AttackEmpowerEffect`
 
-### `DoAttackOverride(AbilityTrigger, Action)`
+:::
+
+::: details `DoAttackOverride(AbilityTrigger, Action)`
 
 AttackOverride replaces the entity's attack AbilityTrigger with something else.This version uses an existing ability trigger.
 
@@ -147,7 +167,9 @@ public AttackOverrideEffect DoAttackOverride(AbilityTrigger trigger, Action onUs
 
 **Returns:** `AttackOverrideEffect`
 
-### `DoAttackOverride<T>(Action)`
+:::
+
+::: details `DoAttackOverride&lt;T&gt;(Action)`
 
 AttackOverride replaces the entity's attack AbilityTrigger with something else.This version creates a new ability trigger of the given type and automatically disposes after use.
 
@@ -163,7 +185,9 @@ public AttackOverrideEffect DoAttackOverride<T>(Action onUse) where T : AbilityT
 
 **Returns:** `AttackOverrideEffect`
 
-### `DoBasicEffect(BasicEffect)`
+:::
+
+::: details `DoBasicEffect(BasicEffect)`
 
 ```csharp
 public void DoBasicEffect(BasicEffect eff)
@@ -174,7 +198,9 @@ public void DoBasicEffect(BasicEffect eff)
 | :--- | :--- | :--- |
 | `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 
-### `DoBlind()`
+:::
+
+::: details `DoBlind()`
 
 Blind makes the entity miss its attacks.
 
@@ -184,7 +210,9 @@ public BlindEffect DoBlind()
 
 **Returns:** `BlindEffect`
 
-### `DoCripple(float)`
+:::
+
+::: details `DoCripple(float)`
 
 Cripple reduces the entity's attack speed.
 
@@ -199,7 +227,9 @@ public CrippleEffect DoCripple(float strength)
 
 **Returns:** `CrippleEffect`
 
-### `DoDeathInterrupt(Action<EventInfoKill>, int)`
+:::
+
+::: details `DoDeathInterrupt(Action&lt;EventInfoKill&gt;, int)`
 
 Death Interrupt fires before entity's imminent death.DeathInterrupts with lower priority will be fired/checked earlier.Healing entity by any amount in an interrupt will prevent entity's death.If an interrupt prevents the death, other interrupts will not be fired.Note that interrupts can be ignored byEntity.KillNoInterrupt()
 
@@ -215,7 +245,9 @@ public DeathInterruptEffect DoDeathInterrupt(Action<EventInfoKill> onInterrupt, 
 
 **Returns:** `DeathInterruptEffect`
 
-### `DoFakeMaxHealthEffect(float)`
+:::
+
+::: details `DoFakeMaxHealthEffect(float)`
 
 FakeMaxHealth increases shown max health only in health bars.
 
@@ -230,7 +262,9 @@ public FakeMaxHealthEffect DoFakeMaxHealthEffect(float amount)
 
 **Returns:** `FakeMaxHealthEffect`
 
-### `DoHaste(float)`
+:::
+
+::: details `DoHaste(float)`
 
 Haste increases the entity's attack speed.
 
@@ -245,7 +279,9 @@ public HasteEffect DoHaste(float strength)
 
 **Returns:** `HasteEffect`
 
-### `DoInvisible()`
+:::
+
+::: details `DoInvisible()`
 
 Invisible makes the entity untargetable by targeted abilities and undetectable to enemies. Note this doesn't change the entity's graphical visibility.
 
@@ -255,7 +291,9 @@ public InvisibleEffect DoInvisible()
 
 **Returns:** `InvisibleEffect`
 
-### `DoInvulnerable(Action<EventInfoDamageNegatedByImmunity>)`
+:::
+
+::: details `DoInvulnerable(Action&lt;EventInfoDamageNegatedByImmunity&gt;)`
 
 Invulnerable makes the entity immune to damage and crowd controls.
 
@@ -270,7 +308,9 @@ public InvulnerableEffect DoInvulnerable(Action<EventInfoDamageNegatedByImmunity
 
 **Returns:** `InvulnerableEffect`
 
-### `DoProtected(Action<EventInfoDamageNegatedByImmunity>)`
+:::
+
+::: details `DoProtected(Action&lt;EventInfoDamageNegatedByImmunity&gt;)`
 
 Protected makes the entity immune to damage.
 
@@ -285,7 +325,9 @@ public ProtectedEffect DoProtected(Action<EventInfoDamageNegatedByImmunity> onDa
 
 **Returns:** `ProtectedEffect`
 
-### `DoRoot()`
+:::
+
+::: details `DoRoot()`
 
 Root impairs the entity's movement/movement ability.
 
@@ -295,7 +337,9 @@ public RootEffect DoRoot()
 
 **Returns:** `RootEffect`
 
-### `DoShield(float, Action<EventInfoDamageNegatedByShield>)`
+:::
+
+::: details `DoShield(float, Action&lt;EventInfoDamageNegatedByShield&gt;)`
 
 ```csharp
 public ShieldEffect DoShield(float amount, Action<EventInfoDamageNegatedByShield> onDamageNegated = null)
@@ -309,7 +353,9 @@ public ShieldEffect DoShield(float amount, Action<EventInfoDamageNegatedByShield
 
 **Returns:** `ShieldEffect`
 
-### `DoSilence()`
+:::
+
+::: details `DoSilence()`
 
 Silence prevents the entity from using abilities.
 
@@ -319,7 +365,9 @@ public SilenceEffect DoSilence()
 
 **Returns:** `SilenceEffect`
 
-### `DoSkill<T>(Action<T>)`
+:::
+
+::: details `DoSkill&lt;T&gt;(Action&lt;T&gt;)`
 
 Do custom action on all matching skill. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -335,7 +383,9 @@ public SafeAction DoSkill<T>(Action<T> callback) where T : SkillTrigger
 
 **Returns:** `SafeAction`
 
-### `DoSkill<T>(Func<T, Action>)`
+:::
+
+::: details `DoSkill&lt;T&gt;(Func&lt;T, Action&gt;)`
 
 Do custom action on all matching skill and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -351,7 +401,9 @@ public SafeAction DoSkill<T>(Func<T, Action> callback) where T : SkillTrigger
 
 **Returns:** `SafeAction`
 
-### `DoSlow(float)`
+:::
+
+::: details `DoSlow(float)`
 
 Slow reduces the entity's movement speed.
 
@@ -366,7 +418,9 @@ public SlowEffect DoSlow(float strength)
 
 **Returns:** `SlowEffect`
 
-### `DoSpeed(float)`
+:::
+
+::: details `DoSpeed(float)`
 
 Speed increases the entity's movement speed.
 
@@ -381,7 +435,9 @@ public SpeedEffect DoSpeed(float strength)
 
 **Returns:** `SpeedEffect`
 
-### `DoStatBonus()`
+:::
+
+::: details `DoStatBonus()`
 
 Do a stat bonus to victim that expires on destruction of this status effect.
 
@@ -391,7 +447,9 @@ public StatBonus DoStatBonus()
 
 **Returns:** `StatBonus`
 
-### `DoStatBonus(StatBonus)`
+:::
+
+::: details `DoStatBonus(StatBonus)`
 
 Do a stat bonus to victim that expires on destruction of this status effect.
 
@@ -406,7 +464,9 @@ public StatBonus DoStatBonus(StatBonus bonus)
 
 **Returns:** `StatBonus`
 
-### `DoStun()`
+:::
+
+::: details `DoStun()`
 
 Stun prevents the entity from moving/using abilities/attacking.
 
@@ -416,7 +476,9 @@ public StunEffect DoStun()
 
 **Returns:** `StunEffect`
 
-### `DoUncollidable()`
+:::
+
+::: details `DoUncollidable()`
 
 Uncollidable makes the entity uncollidable by non-targeted projectiles and abilities.
 
@@ -426,7 +488,9 @@ public UncollidableEffect DoUncollidable()
 
 **Returns:** `UncollidableEffect`
 
-### `DoUnstoppable()`
+:::
+
+::: details `DoUnstoppable()`
 
 Unstoppable makes the entity immune to crowd controls.
 
@@ -436,13 +500,17 @@ public UnstoppableEffect DoUnstoppable()
 
 **Returns:** `UnstoppableEffect`
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetActorReadableName()`
+:::
+
+::: details `GetActorReadableName()`
 
 ```csharp
 public override string GetActorReadableName()
@@ -450,7 +518,9 @@ public override string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetCustomTooltipDescription()`
+:::
+
+::: details `GetCustomTooltipDescription()`
 
 Called on the local client hovering over the status effect icon.
 
@@ -460,7 +530,9 @@ public virtual string GetCustomTooltipDescription()
 
 **Returns:** `string`
 
-### `GetCustomTooltipName()`
+:::
+
+::: details `GetCustomTooltipName()`
 
 Called on the local client hovering over the status effect icon.
 
@@ -470,7 +542,9 @@ public virtual string GetCustomTooltipName()
 
 **Returns:** `string`
 
-### `HideOnScreenTimer()`
+:::
+
+::: details `HideOnScreenTimer()`
 
 Hide this status effect's timer on the screen of the victim. Has no effect on non-player victim
 
@@ -478,25 +552,33 @@ Hide this status effect's timer on the screen of the victim. Has no effect on no
 public void HideOnScreenTimer()
 ```
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `ResetTimer()`
+:::
+
+::: details `ResetTimer()`
 
 Reset a timer set bySetTimerto its initial duration.
 
@@ -504,7 +586,9 @@ Reset a timer set bySetTimerto its initial duration.
 public void ResetTimer()
 ```
 
-### `SetTimer(float, float)`
+:::
+
+::: details `SetTimer(float, float)`
 
 Set a timer that kills this status effect on expiration. The timer will update fillAmount automatically.
 
@@ -518,7 +602,9 @@ public void SetTimer(float maxDuration, float duration)
 | `maxDuration` | `float` |  |
 | `duration` | `float` |  |
 
-### `SetTimer(float)`
+:::
+
+::: details `SetTimer(float)`
 
 Set a timer that kills this status effect on expiration. The timer will update fillAmount automatically.
 
@@ -531,7 +617,9 @@ public void SetTimer(float duration)
 | :--- | :--- | :--- |
 | `duration` | `float` |  |
 
-### `ShowOnScreenTimer(string, Color, bool)`
+:::
+
+::: details `ShowOnScreenTimer(string, Color, bool)`
 
 Show this status effect's timer on the screen of the victim. Has no effect on non-player victim
 
@@ -546,13 +634,17 @@ public void ShowOnScreenTimer(string customNameKey = null, Color color = default
 | `color` | `UnityEngine.Color` |  |
 | `invertValue` | `bool` |  |
 
-### `StopAllBasicEffects()`
+:::
+
+::: details `StopAllBasicEffects()`
 
 ```csharp
 protected void StopAllBasicEffects()
 ```
 
-### `StopBasicEffect(BasicEffect)`
+:::
+
+::: details `StopBasicEffect(BasicEffect)`
 
 ```csharp
 protected void StopBasicEffect(BasicEffect eff)
@@ -563,8 +655,12 @@ protected void StopBasicEffect(BasicEffect eff)
 | :--- | :--- | :--- |
 | `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 
-### `StopTimer()`
+:::
+
+::: details `StopTimer()`
 
 ```csharp
 public void StopTimer()
 ```
+
+:::

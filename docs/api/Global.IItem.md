@@ -8,7 +8,9 @@
 public interface IItem
 ```
 
-## Properties
+## Properties (7)
+
+::: details Click to expand Properties (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public interface IItem
 | **`tempOwner`** | `DewPlayer tempOwner { get; set; }` |  |
 | **`worldModel`** | `ItemWorldModel worldModel { get; }` |  |
 
-## Methods
+:::
 
-### `IsLockedFor(DewPlayer)`
+## Methods (1)
+
+::: details `IsLockedFor(DewPlayer)`
 
 ```csharp
 bool IsLockedFor(DewPlayer player)
@@ -34,3 +38,5 @@ bool IsLockedFor(DewPlayer player)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `bool`
+
+:::

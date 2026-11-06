@@ -8,7 +8,9 @@
 public class DewInputTrigger
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,10 +23,16 @@ public class DewInputTrigger
 | **`owner`** | `public Object owner` |  |
 | **`priority`** | `public int priority` | Lower will be checked first. |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`down`** | `public bool down { get; }` |  |
 | **`downRepeated`** | `public bool downRepeated { get; }` |  |
 | **`up`** | `public bool up { get; }` |  |
+
+:::

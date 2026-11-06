@@ -8,9 +8,13 @@
 public class PingInstance : MonoBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`effect`** | `public GameObject effect` |  |
 | **`pingLifeTime`** | `public float pingLifeTime` |  |
+
+:::

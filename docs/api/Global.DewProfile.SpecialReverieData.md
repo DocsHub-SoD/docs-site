@@ -9,8 +9,12 @@
 public class DewProfile.SpecialReverieData : DewProfile.ReverieDataBase
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`timeLimitTimestamp`** | `public long timeLimitTimestamp` |  |
+
+:::

@@ -8,14 +8,20 @@
 public struct DamageData
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`elemental`** | `public ElementalType? elemental` |  |
 | **`source`** | `public DamageData.SourceType source` | Source type of this damage. |
 
-## Properties
+:::
+
+## Properties (15)
+
+::: details Click to expand Properties (15)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -35,9 +41,11 @@ public struct DamageData
 | **`procCoefficient`** | `public readonly float procCoefficient { get; }` | Proc coefficient of damage. |
 | **`reductionMultiplier`** | `public readonly float reductionMultiplier { get; }` | Damage multiplier for reductions. Reductions are multiplicatively combined. This value will be multiplied to the damage after flatModifier. |
 
-## Methods
+:::
 
-### `AddFlatAmount(float)`
+## Methods (25)
+
+::: details `AddFlatAmount(float)`
 
 Add a flat amount to this damage.
 
@@ -52,7 +60,9 @@ public DamageData AddFlatAmount(float amount)
 
 **Returns:** `DamageData`
 
-### `ApplyAmplification(float)`
+:::
+
+::: details `ApplyAmplification(float)`
 
 Amplify this damage by the value specified, stacking multiplicatively.e.g. One Amplication by 0.5 will cause 50% increase in damage.Two Amplifications by 0.5 will cause 125% increase in damage.
 
@@ -67,7 +77,9 @@ public DamageData ApplyAmplification(float value)
 
 **Returns:** `DamageData`
 
-### `ApplyDamageToShieldMultiplier(float)`
+:::
+
+::: details `ApplyDamageToShieldMultiplier(float)`
 
 ```csharp
 public DamageData ApplyDamageToShieldMultiplier(float multiplier)
@@ -80,7 +92,9 @@ public DamageData ApplyDamageToShieldMultiplier(float multiplier)
 
 **Returns:** `DamageData`
 
-### `ApplyRawMultiplier(float)`
+:::
+
+::: details `ApplyRawMultiplier(float)`
 
 Apply raw multiplier to this damage's original amount.
 
@@ -95,7 +109,9 @@ public DamageData ApplyRawMultiplier(float multiplier)
 
 **Returns:** `DamageData`
 
-### `ApplyReduction(float)`
+:::
+
+::: details `ApplyReduction(float)`
 
 Reduce this damage by the value specified, stacking multiplicatively.e.g. One Reduction by 0.5 will cause 50% decrease in damage.Two Reductions by 0.5 will cause 75% decrease in damage.
 
@@ -110,7 +126,9 @@ public DamageData ApplyReduction(float value)
 
 **Returns:** `DamageData`
 
-### `ApplyStrength(float)`
+:::
+
+::: details `ApplyStrength(float)`
 
 Apply the given multiplier to the damage and the proc coefficient.
 
@@ -125,7 +143,9 @@ public DamageData ApplyStrength(float multiplier)
 
 **Returns:** `DamageData`
 
-### `BlockWithImmunity()`
+:::
+
+::: details `BlockWithImmunity()`
 
 Block this damage with damage immunity. Note this will be ignored ifIgnoreDamageImmunityis set to true.
 
@@ -135,7 +155,9 @@ public DamageData BlockWithImmunity()
 
 **Returns:** `DamageData`
 
-### `Dispatch(Entity, ReactionChain)`
+:::
+
+::: details `Dispatch(Entity, ReactionChain)`
 
 ```csharp
 public void Dispatch(Entity victim, ReactionChain chain = default)
@@ -147,7 +169,9 @@ public void Dispatch(Entity victim, ReactionChain chain = default)
 | `victim` | [`Entity`](/api/Global.Entity) |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `DoAttackEffect(AttackEffectType, float)`
+:::
+
+::: details `DoAttackEffect(AttackEffectType, float)`
 
 ```csharp
 public DamageData DoAttackEffect(AttackEffectType type, float strength = 1)
@@ -161,7 +185,9 @@ public DamageData DoAttackEffect(AttackEffectType type, float strength = 1)
 
 **Returns:** `DamageData`
 
-### `HasAttr(DamageAttribute)`
+:::
+
+::: details `HasAttr(DamageAttribute)`
 
 Does this damage has specific attribute?
 
@@ -176,7 +202,9 @@ public bool HasAttr(DamageAttribute attr)
 
 **Returns:** `bool`
 
-### `IsAmountModifiedBy(Actor)`
+:::
+
+::: details `IsAmountModifiedBy(Actor)`
 
 ```csharp
 public bool IsAmountModifiedBy(Actor actor)
@@ -189,7 +217,9 @@ public bool IsAmountModifiedBy(Actor actor)
 
 **Returns:** `bool`
 
-### `IsAmountModifiedBy(Type)`
+:::
+
+::: details `IsAmountModifiedBy(Type)`
 
 ```csharp
 public bool IsAmountModifiedBy(Type actorType)
@@ -202,7 +232,9 @@ public bool IsAmountModifiedBy(Type actorType)
 
 **Returns:** `bool`
 
-### `SetActor(Actor)`
+:::
+
+::: details `SetActor(Actor)`
 
 ```csharp
 public DamageData SetActor(Actor actor)
@@ -215,7 +247,9 @@ public DamageData SetActor(Actor actor)
 
 **Returns:** `DamageData`
 
-### `SetAmountModifiedBy(Actor)`
+:::
+
+::: details `SetAmountModifiedBy(Actor)`
 
 ```csharp
 public DamageData SetAmountModifiedBy(Actor actor)
@@ -228,7 +262,9 @@ public DamageData SetAmountModifiedBy(Actor actor)
 
 **Returns:** `DamageData`
 
-### `SetAmountModifiedBy(Type)`
+:::
+
+::: details `SetAmountModifiedBy(Type)`
 
 ```csharp
 public DamageData SetAmountModifiedBy(Type actorType)
@@ -241,7 +277,9 @@ public DamageData SetAmountModifiedBy(Type actorType)
 
 **Returns:** `DamageData`
 
-### `SetAmountOrigin(FinalDamageData)`
+:::
+
+::: details `SetAmountOrigin(FinalDamageData)`
 
 If amount of this damage originates from other damage, you can specify it here to make it inherit its modifier flags and attributes.
 
@@ -256,7 +294,9 @@ public DamageData SetAmountOrigin(FinalDamageData damage)
 
 **Returns:** `DamageData`
 
-### `SetAmountOrigin(FinalHealData)`
+:::
+
+::: details `SetAmountOrigin(FinalHealData)`
 
 If amount of this damage originates from other heal, you can specify it here to make it inherit its modifier flags and isCrit.
 
@@ -271,7 +311,9 @@ public DamageData SetAmountOrigin(FinalHealData heal)
 
 **Returns:** `DamageData`
 
-### `SetAttr(DamageAttribute)`
+:::
+
+::: details `SetAttr(DamageAttribute)`
 
 Add special attribute for this damage.
 
@@ -286,7 +328,9 @@ public DamageData SetAttr(DamageAttribute attr)
 
 **Returns:** `DamageData`
 
-### `SetDirection(Quaternion)`
+:::
+
+::: details `SetDirection(Quaternion)`
 
 ```csharp
 public DamageData SetDirection(Quaternion rot)
@@ -299,7 +343,9 @@ public DamageData SetDirection(Quaternion rot)
 
 **Returns:** `DamageData`
 
-### `SetDirection(Vector3)`
+:::
+
+::: details `SetDirection(Vector3)`
 
 ```csharp
 public DamageData SetDirection(Vector3 dir)
@@ -312,7 +358,9 @@ public DamageData SetDirection(Vector3 dir)
 
 **Returns:** `DamageData`
 
-### `SetElemental(ElementalType?)`
+:::
+
+::: details `SetElemental(ElementalType?)`
 
 ```csharp
 public DamageData SetElemental(ElementalType? type)
@@ -325,7 +373,9 @@ public DamageData SetElemental(ElementalType? type)
 
 **Returns:** `DamageData`
 
-### `SetOriginPosition(Vector3)`
+:::
+
+::: details `SetOriginPosition(Vector3)`
 
 ```csharp
 public DamageData SetOriginPosition(Vector3 pos)
@@ -338,7 +388,9 @@ public DamageData SetOriginPosition(Vector3 pos)
 
 **Returns:** `DamageData`
 
-### `SetOverrideElementalStacks(int)`
+:::
+
+::: details `SetOverrideElementalStacks(int)`
 
 Set this to override number of elemental stacks this damage applies.
 
@@ -353,7 +405,9 @@ public DamageData SetOverrideElementalStacks(int stacks)
 
 **Returns:** `DamageData`
 
-### `SetSourceType(SourceType)`
+:::
+
+::: details `SetSourceType(SourceType)`
 
 ```csharp
 public DamageData SetSourceType(DamageData.SourceType type)
@@ -366,7 +420,9 @@ public DamageData SetSourceType(DamageData.SourceType type)
 
 **Returns:** `DamageData`
 
-### `SubtractFlatAmount(float)`
+:::
+
+::: details `SubtractFlatAmount(float)`
 
 Subtract a flat amount from this damage.
 
@@ -380,3 +436,5 @@ public DamageData SubtractFlatAmount(float amount)
 | `amount` | `float` | The amount to subtract. Must be a positive number or zero. |
 
 **Returns:** `DamageData`
+
+:::

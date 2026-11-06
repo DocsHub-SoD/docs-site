@@ -9,7 +9,9 @@
 public abstract class Displacement
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,10 +25,16 @@ public abstract class Displacement
 | **`rotateForward`** | `public bool rotateForward` | Will the entity rotate towards its velocity during the displacement?Default value is true. |
 | **`rotateSmoothly`** | `public bool rotateSmoothly` | Smoothly rotate if rotateForward is on.Default value is false. |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`elapsedTime`** | `public float elapsedTime { get; }` | Time elapsed starting from the moment this displacement has started. |
 | **`hasStarted`** | `public bool hasStarted { get; }` | Has this displacement started? |
 | **`isAlive`** | `public bool isAlive { get; }` | Is this displacement on-going? |
+
+:::

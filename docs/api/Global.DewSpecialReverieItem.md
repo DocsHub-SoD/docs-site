@@ -9,22 +9,30 @@
 public abstract class DewSpecialReverieItem : DewReverieItem, IExcludeFromPool
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`nextReverie`** | `public virtual Type nextReverie { get; }` |  |
 
-## Methods
+:::
 
-### `OnStartLocalClient()`
+## Methods (2)
+
+::: details `OnStartLocalClient()`
 
 ```csharp
 public override void OnStartLocalClient()
 ```
 
-### `OnStopLocalClient()`
+:::
+
+::: details `OnStopLocalClient()`
 
 ```csharp
 public override void OnStopLocalClient()
 ```
+
+:::

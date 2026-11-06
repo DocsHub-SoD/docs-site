@@ -9,7 +9,9 @@
 public class PropSpawnRule.PropEntry
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class PropSpawnRule.PropEntry
 | **`count`** | `public Vector2Int count` |  |
 | **`prop`** | `public AssetRef<GameObject> prop` |  |
 | **`roomIndexRange`** | `public Vector2Int roomIndexRange` |  |
+
+:::

@@ -9,7 +9,9 @@
 public abstract class DewQuest : GameEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,7 +19,11 @@ public abstract class DewQuest : GameEffect, ILogicUpdate, ICleanup, ICustomDest
 | **`DefaultStep`** | `public const string DefaultStep = "Default"` |  |
 | **`type`** | `[BoxGroup("Quest Settings", true, false, 0)] public QuestType type` |  |
 
-## Properties
+:::
+
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,9 +36,11 @@ public abstract class DewQuest : GameEffect, ILogicUpdate, ICleanup, ICustomDest
 | **`state`** | `public QuestState state { get; set; }` |  |
 | **`step`** | `[SaveVar(SaveVarFlags.ApplyAfterCreation)] public string step { get; set; }` |  |
 
-## Methods
+:::
 
-### `AddStepGoal_ReachNode(NextGoalSettings)`
+## Methods (13)
+
+::: details `AddStepGoal_ReachNode(NextGoalSettings)`
 
 ```csharp
 public void AddStepGoal_ReachNode(NextGoalSettings settings)
@@ -43,13 +51,17 @@ public void AddStepGoal_ReachNode(NextGoalSettings settings)
 | :--- | :--- | :--- |
 | `settings` | [`NextGoalSettings`](/api/Global.NextGoalSettings) |  |
 
-### `CompleteQuest()`
+:::
+
+::: details `CompleteQuest()`
 
 ```csharp
 public void CompleteQuest()
 ```
 
-### `EndStep(string)`
+:::
+
+::: details `EndStep(string)`
 
 ```csharp
 public void EndStep(string nextStep = null)
@@ -60,7 +72,9 @@ public void EndStep(string nextStep = null)
 | :--- | :--- | :--- |
 | `nextStep` | `string` |  |
 
-### `FailQuest(FailReason)`
+:::
+
+::: details `FailQuest(FailReason)`
 
 ```csharp
 public void FailQuest(FailReason reason)
@@ -71,7 +85,9 @@ public void FailQuest(FailReason reason)
 | :--- | :--- | :--- |
 | `reason` | [`FailReason`](/api/Global.FailReason) |  |
 
-### `GetInitialStep()`
+:::
+
+::: details `GetInitialStep()`
 
 Called on server.
 
@@ -81,7 +97,9 @@ public virtual string GetInitialStep()
 
 **Returns:** `string`
 
-### `IsVisibleLocally()`
+:::
+
+::: details `IsVisibleLocally()`
 
 Is this quest visible locally? This is checked everywhere when this quest is added.
 
@@ -91,19 +109,25 @@ public virtual bool IsVisibleLocally()
 
 **Returns:** `bool`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnStepEnded(string)`
+:::
+
+::: details `OnStepEnded(string)`
 
 Called everywhere when a step of this quest has ended.
 
@@ -116,7 +140,9 @@ protected virtual void OnStepEnded(string formerStep)
 | :--- | :--- | :--- |
 | `formerStep` | `string` |  |
 
-### `OnStepStarted(bool)`
+:::
+
+::: details `OnStepStarted(bool)`
 
 Called everywhere when a new step starts.
 
@@ -129,7 +155,9 @@ protected virtual void OnStepStarted(bool isLoadedFromSave)
 | :--- | :--- | :--- |
 | `isLoadedFromSave` | `bool` |  |
 
-### `RpcInvokeQuestUpdated()`
+:::
+
+::: details `RpcInvokeQuestUpdated()`
 
 Invoke UI update across clients. You usually don't need to call this yourself.
 
@@ -137,7 +165,9 @@ Invoke UI update across clients. You usually don't need to call this yourself.
 public void RpcInvokeQuestUpdated()
 ```
 
-### `SetLocalizedDescription(string)`
+:::
+
+::: details `SetLocalizedDescription(string)`
 
 Provide null for default desc.
 
@@ -150,7 +180,9 @@ public void SetLocalizedDescription(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-### `SetLocalizedTitle(string)`
+:::
+
+::: details `SetLocalizedTitle(string)`
 
 Provide null for default title.
 
@@ -162,3 +194,5 @@ public void SetLocalizedTitle(string key)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `key` | `string` |  |
+
+:::

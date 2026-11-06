@@ -8,7 +8,9 @@
 public class WobblyTransform : MonoBehaviour
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class WobblyTransform : MonoBehaviour
 | **`rotationSmoothTime`** | `public float rotationSmoothTime` |  |
 | **`rotationTargetInterval`** | `public float rotationTargetInterval` |  |
 | **`rotationTargetMagnitude`** | `public Vector3 rotationTargetMagnitude` |  |
+
+:::

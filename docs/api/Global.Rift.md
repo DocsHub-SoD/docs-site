@@ -10,7 +10,9 @@
 public class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,7 +26,11 @@ public class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInter
 | **`fxUnlocked`** | `public GameObject fxUnlocked` |  |
 | **`softInstance`** | `public static Rift softInstance` |  |
 
-## Properties
+:::
+
+## Properties (7)
+
+::: details Click to expand Properties (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -36,15 +42,19 @@ public class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInter
 | **`isLocked`** | `[SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
 | **`isOpen`** | `[SaveVar(SaveVarFlags.Default)] public bool isOpen { get; set; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (8)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanInteract(Entity)`
+:::
+
+::: details `CanInteract(Entity)`
 
 ```csharp
 public virtual bool CanInteract(Entity entity)
@@ -57,26 +67,34 @@ public virtual bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `Close()`
+:::
+
+::: details `Close()`
 
 ```csharp
 [Button]
 public void Close()
 ```
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnInteractRift(Hero)`
+:::
+
+::: details `OnInteractRift(Hero)`
 
 Called on server when a hero interacts with this rift.Return true to indicate success of interaction. (Will play activate effect)
 
@@ -91,7 +109,9 @@ protected virtual bool OnInteractRift(Hero hero)
 
 **Returns:** `bool`
 
-### `Open()`
+:::
+
+::: details `Open()`
 
 Open the rift with charging animation. If you wish to skip the animation, set the isOpen property directly.
 
@@ -100,10 +120,14 @@ Open the rift with charging animation. If you wish to skip the animation, set th
 public void Open()
 ```
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::

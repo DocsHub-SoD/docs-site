@@ -10,7 +10,9 @@
 public abstract class AbilityInstance : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (12)
+
+::: details Click to expand Fields (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -27,7 +29,11 @@ public abstract class AbilityInstance : Actor, ILogicUpdate, ICleanup, ICustomDe
 | **`tvDefaultUsefulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets` |  |
 | **`useBudgetSystem`** | `public static bool useBudgetSystem` |  |
 
-## Properties
+:::
+
+## Properties (7)
+
+::: details Click to expand Properties (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -39,9 +45,11 @@ public abstract class AbilityInstance : Actor, ILogicUpdate, ICleanup, ICustomDe
 | **`skillLevel`** | `[SaveVar(SaveVarFlags.Default)] public int skillLevel { get; set; }` | Level of its origin skill trigger at the time this instance was cast. Defaults to -1 or that of parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.You can override level by setting this field when the instance is preparing. |
 | **`statEntity`** | `public Entity statEntity { get; }` |  |
 
-## Methods
+:::
 
-### `Budget_ShouldDoFullCalculations()`
+## Methods (29)
+
+::: details `Budget_ShouldDoFullCalculations()`
 
 Should this instance skip calculations? Based on current budget pressure.Use this as a default suggested behavior.
 
@@ -51,7 +59,9 @@ public bool Budget_ShouldDoFullCalculations()
 
 **Returns:** `bool`
 
-### `Budget_ShouldPlayEffects()`
+:::
+
+::: details `Budget_ShouldPlayEffects()`
 
 Should this instance play effects? Based on current budget pressure.Use this as a default suggested behavior.
 
@@ -61,7 +71,9 @@ public bool Budget_ShouldPlayEffects()
 
 **Returns:** `bool`
 
-### `CreateDamage(SourceType, ScalingValue, float)`
+:::
+
+::: details `CreateDamage(SourceType, ScalingValue, float)`
 
 ```csharp
 public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, float procCoefficient = 1)
@@ -76,7 +88,9 @@ public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, f
 
 **Returns:** `DamageData`
 
-### `CreateStatusEffect<T>(T, Entity, Action<T>)`
+:::
+
+::: details `CreateStatusEffect&lt;T&gt;(T, Entity, Action&lt;T&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -94,7 +108,9 @@ public T CreateStatusEffect<T>(T prefab, Entity victim, Action<T> beforePrepare 
 
 **Returns:** `T`
 
-### `CreateStatusEffect<T>(Entity, Action<T>)`
+:::
+
+::: details `CreateStatusEffect&lt;T&gt;(Entity, Action&lt;T&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -111,7 +127,9 @@ public T CreateStatusEffect<T>(Entity victim, Action<T> beforePrepare = null) wh
 
 **Returns:** `T`
 
-### `Damage(ScalingValue, float)`
+:::
+
+::: details `Damage(ScalingValue, float)`
 
 ```csharp
 public DamageData Damage(ScalingValue value, float procCoefficient = 1)
@@ -125,7 +143,9 @@ public DamageData Damage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `DefaultDamage(ScalingValue, float)`
+:::
+
+::: details `DefaultDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
@@ -139,7 +159,9 @@ public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `DestroyOnCondition(Func<bool>)`
+:::
+
+::: details `DestroyOnCondition(Func&lt;bool&gt;)`
 
 Kill this instance when condition is met.
 
@@ -154,7 +176,9 @@ public AbilityInstance.WatchedCondition DestroyOnCondition(Func<bool> condition)
 
 **Returns:** `AbilityInstance.WatchedCondition`
 
-### `DestroyOnDeath(Entity, bool)`
+:::
+
+::: details `DestroyOnDeath(Entity, bool)`
 
 Kill this instance when the specified entity dies/gets destroyed.
 
@@ -168,7 +192,9 @@ public void DestroyOnDeath(Entity entity, bool includeKnockOuts = false)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `includeKnockOuts` | `bool` |  |
 
-### `DestroyOnDestroy(Actor)`
+:::
+
+::: details `DestroyOnDestroy(Actor)`
 
 Remove this instance when the specified actor gets destroyed.
 
@@ -181,7 +207,9 @@ public void DestroyOnDestroy(Actor actor)
 | :--- | :--- | :--- |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `GetActorReadableName()`
+:::
+
+::: details `GetActorReadableName()`
 
 ```csharp
 public override string GetActorReadableName()
@@ -189,7 +217,9 @@ public override string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetValue(ScalingValue)`
+:::
+
+::: details `GetValue(ScalingValue)`
 
 ```csharp
 public float GetValue(ScalingValue val)
@@ -202,7 +232,9 @@ public float GetValue(ScalingValue val)
 
 **Returns:** `float`
 
-### `GetValue(StarScalingValue)`
+:::
+
+::: details `GetValue(StarScalingValue)`
 
 ```csharp
 public float GetValue(StarScalingValue value)
@@ -215,7 +247,9 @@ public float GetValue(StarScalingValue value)
 
 **Returns:** `float`
 
-### `GetValue<T>(T[])`
+:::
+
+::: details `GetValue&lt;T&gt;(T[])`
 
 ```csharp
 public T GetValue<T>(T[] val)
@@ -229,7 +263,9 @@ public T GetValue<T>(T[] val)
 
 **Returns:** `T`
 
-### `GetValueInt(StarScalingValue)`
+:::
+
+::: details `GetValueInt(StarScalingValue)`
 
 ```csharp
 public int GetValueInt(StarScalingValue value)
@@ -242,7 +278,9 @@ public int GetValueInt(StarScalingValue value)
 
 **Returns:** `int`
 
-### `Heal(ScalingValue)`
+:::
+
+::: details `Heal(ScalingValue)`
 
 ```csharp
 public HealData Heal(ScalingValue amount)
@@ -255,7 +293,9 @@ public HealData Heal(ScalingValue amount)
 
 **Returns:** `HealData`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -266,7 +306,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MagicDamage(ScalingValue, float)`
+:::
+
+::: details `MagicDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
@@ -280,13 +322,17 @@ public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnCreateSequenced()`
+:::
+
+::: details `OnCreateSequenced()`
 
 Started everywhere when this ability instance is created, running on LogicUpdates.This will stop running when this instance gets killed.Return SequenceInstructions (e.g.new SI.WaitForSeconds()) to yield this sequence.Returning null has same effect ofnew SI.WaitForNextLogicUpdate().
 
@@ -296,13 +342,17 @@ protected virtual IEnumerator OnCreateSequenced()
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 Called on server right before this instance to be spawned.Configure this instance's initial state here.By default this sets skillLevel to parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.
 
@@ -310,13 +360,17 @@ Called on server right before this instance to be spawned.Configure this instanc
 protected override void OnPrepare()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `PhysicalDamage(ScalingValue, float)`
+:::
+
+::: details `PhysicalDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
@@ -330,7 +384,9 @@ public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `PhysicalMagicDamage(ScalingValue, float)`
+:::
+
+::: details `PhysicalMagicDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient = 1)
@@ -344,7 +400,9 @@ public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient 
 
 **Returns:** `DamageData`
 
-### `PureDamage(ScalingValue, float)`
+:::
+
+::: details `PureDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
@@ -358,13 +416,17 @@ public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `ResetBudget()`
+:::
+
+::: details `ResetBudget()`
 
 ```csharp
 public static void ResetBudget()
 ```
 
-### `StartChargingChannel(ChargingChannel)`
+:::
+
+::: details `StartChargingChannel(ChargingChannel)`
 
 ```csharp
 public void StartChargingChannel(ChargingChannel channel)
@@ -375,7 +437,9 @@ public void StartChargingChannel(ChargingChannel channel)
 | :--- | :--- | :--- |
 | `channel` | [`ChargingChannel`](/api/Global.ChargingChannel) |  |
 
-### `StartSequence(IEnumerator)`
+:::
+
+::: details `StartSequence(IEnumerator)`
 
 Start a sequence that will run while this instance is alive on LogicUpdates.
 
@@ -387,3 +451,5 @@ protected void StartSequence(IEnumerator sequence)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `sequence` | `System.Collections.IEnumerator` |  |
+
+:::

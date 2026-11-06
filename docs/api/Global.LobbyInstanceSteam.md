@@ -9,9 +9,9 @@
 public class LobbyInstanceSteam : LobbyInstance
 ```
 
-## Methods
+## Methods (2)
 
-### `GetCSteamId()`
+::: details `GetCSteamId()`
 
 ```csharp
 public CSteamID GetCSteamId()
@@ -19,7 +19,9 @@ public CSteamID GetCSteamId()
 
 **Returns:** `Steamworks.CSteamID`
 
-### `SetCSteamId(CSteamID)`
+:::
+
+::: details `SetCSteamId(CSteamID)`
 
 ```csharp
 public void SetCSteamId(CSteamID lobbyId)
@@ -29,3 +31,5 @@ public void SetCSteamId(CSteamID lobbyId)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `lobbyId` | `Steamworks.CSteamID` |  |
+
+:::

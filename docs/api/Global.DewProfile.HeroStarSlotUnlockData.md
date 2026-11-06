@@ -8,7 +8,9 @@
 public class DewProfile.HeroStarSlotUnlockData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class DewProfile.HeroStarSlotUnlockData
 | **`addedImagination`** | `public List<int> addedImagination` |  |
 | **`addedLife`** | `public List<int> addedLife` |  |
 
-## Methods
+:::
 
-### `Get(StarType)`
+## Methods (2)
+
+::: details `Get(StarType)`
 
 ```csharp
 public List<int> Get(StarType type)
@@ -32,7 +36,9 @@ public List<int> Get(StarType type)
 
 **Returns:** `System.Collections.Generic.List<T><int>`
 
-### `Set(StarType, List<int>)`
+:::
+
+::: details `Set(StarType, List&lt;int&gt;)`
 
 ```csharp
 public void Set(StarType type, List<int> list)
@@ -43,3 +49,5 @@ public void Set(StarType type, List<int> list)
 | :--- | :--- | :--- |
 | `type` | [`StarType`](/api/Global.StarType) |  |
 | `list` | `System.Collections.Generic.List<T><int>` |  |
+
+:::

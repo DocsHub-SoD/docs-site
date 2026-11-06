@@ -9,7 +9,9 @@
 public class CastIndicatorManager : ManagerBase<CastIndicatorManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,21 +21,27 @@ public class CastIndicatorManager : ManagerBase<CastIndicatorManager>, ILogicUpd
 | **`playerOrigin`** | `public Transform playerOrigin` |  |
 | **`secondaryCircleRegion`** | `public CircleRegion secondaryCircleRegion` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (3)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `IndicateRangeFailure(float)`
+:::
+
+::: details `IndicateRangeFailure(float)`
 
 ```csharp
 public void IndicateRangeFailure(float range)
@@ -43,3 +51,5 @@ public void IndicateRangeFailure(float range)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `range` | `float` |  |
+
+:::

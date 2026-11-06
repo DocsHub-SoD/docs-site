@@ -9,16 +9,22 @@
 public class MockEntity : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`conversationNameUIKey`** | `public string conversationNameUIKey` |  |
 
-## Methods
+:::
 
-### `OnCreate()`
+## Methods (1)
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
+
+:::

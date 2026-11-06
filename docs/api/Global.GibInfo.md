@@ -9,10 +9,14 @@
 public struct GibInfo
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`normalizedCurrentDamage`** | `public Vector3 normalizedCurrentDamage` |  |
 | **`velocity`** | `public Vector3 velocity` |  |
 | **`yVelocity`** | `public float yVelocity` |  |
+
+:::

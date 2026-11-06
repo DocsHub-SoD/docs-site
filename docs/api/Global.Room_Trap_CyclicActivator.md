@@ -9,7 +9,9 @@
 public class Room_Trap_CyclicActivator : Room_Trap_ActivatorBase, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class Room_Trap_CyclicActivator : Room_Trap_ActivatorBase, ILogicUpdate
 | **`minDistanceFromPlayerToBeActive`** | `public float minDistanceFromPlayerToBeActive` |  |
 | **`timeScale`** | `public float timeScale` |  |
 
-## Methods
+:::
 
-### `LogicUpdate(float)`
+## Methods (1)
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -30,3 +34,5 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

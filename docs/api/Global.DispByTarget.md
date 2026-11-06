@@ -9,7 +9,9 @@
 public class DispByTarget : Displacement
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class DispByTarget : Displacement
 | **`goalDistance`** | `public float goalDistance` | Goal distance. The displacement will finish when it reaches this distance to the target entity. |
 | **`speed`** | `public float speed` | This displacement's speed in unit/s. |
 | **`target`** | `public Entity target` | Target entity that this displacement will chase after. |
+
+:::

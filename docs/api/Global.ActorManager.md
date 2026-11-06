@@ -9,7 +9,9 @@
 public class ActorManager : NetworkedManagerBase<ActorManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,7 +32,11 @@ public class ActorManager : NetworkedManagerBase<ActorManager>, ILogicUpdate
 | **`enableUsefulActorName`** | `public static bool enableUsefulActorName` |  |
 | **`onActorBeforePrepare`** | `public SafeAction<Actor> onActorBeforePrepare` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -39,21 +45,27 @@ public class ActorManager : NetworkedManagerBase<ActorManager>, ILogicUpdate
 | **`numOfHeroes`** | `[ShowInInspector] public int numOfHeroes { get; }` |  |
 | **`serverActor`** | `public Actor serverActor { get; set; }` |  |
 
-## Methods
+:::
 
-### `CleanupActorsBeforeShutdown()`
+## Methods (6)
+
+::: details `CleanupActorsBeforeShutdown()`
 
 ```csharp
 public static void CleanupActorsBeforeShutdown()
 ```
 
-### `ClearSceneIdOfAllActors()`
+:::
+
+::: details `ClearSceneIdOfAllActors()`
 
 ```csharp
 public void ClearSceneIdOfAllActors()
 ```
 
-### `DoSleepLogicUpdate(float)`
+:::
+
+::: details `DoSleepLogicUpdate(float)`
 
 ```csharp
 public void DoSleepLogicUpdate(float dt)
@@ -64,7 +76,9 @@ public void DoSleepLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -75,14 +89,20 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
+
+:::

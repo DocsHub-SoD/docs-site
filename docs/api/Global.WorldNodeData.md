@@ -9,7 +9,9 @@
 public struct WorldNodeData
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +24,11 @@ public struct WorldNodeData
 | **`status`** | `public WorldNodeStatus status` |  |
 | **`type`** | `public WorldNodeType type` |  |
 
-## Methods
+:::
 
-### `FindModifierIndex(string)`
+## Methods (8)
+
+::: details `FindModifierIndex(string)`
 
 ```csharp
 public int FindModifierIndex(string modName)
@@ -37,7 +41,9 @@ public int FindModifierIndex(string modName)
 
 **Returns:** `int`
 
-### `FindModifierIndex<T>()`
+:::
+
+::: details `FindModifierIndex&lt;T&gt;()`
 
 ```csharp
 public int FindModifierIndex<T>() where T : RoomModifierBase
@@ -50,7 +56,9 @@ public int FindModifierIndex<T>() where T : RoomModifierBase
 
 **Returns:** `int`
 
-### `HasMainModifier()`
+:::
+
+::: details `HasMainModifier()`
 
 ```csharp
 public bool HasMainModifier()
@@ -58,7 +66,9 @@ public bool HasMainModifier()
 
 **Returns:** `bool`
 
-### `HasModifier(int)`
+:::
+
+::: details `HasModifier(int)`
 
 ```csharp
 public bool HasModifier(int id)
@@ -71,7 +81,9 @@ public bool HasModifier(int id)
 
 **Returns:** `bool`
 
-### `HasModifier(string)`
+:::
+
+::: details `HasModifier(string)`
 
 ```csharp
 public bool HasModifier(string modName)
@@ -84,7 +96,9 @@ public bool HasModifier(string modName)
 
 **Returns:** `bool`
 
-### `HasModifier<T>()`
+:::
+
+::: details `HasModifier&lt;T&gt;()`
 
 ```csharp
 public bool HasModifier<T>() where T : RoomModifierBase
@@ -97,7 +111,9 @@ public bool HasModifier<T>() where T : RoomModifierBase
 
 **Returns:** `bool`
 
-### `IsModifierVisible(int)`
+:::
+
+::: details `IsModifierVisible(int)`
 
 ```csharp
 public bool IsModifierVisible(int index)
@@ -110,10 +126,14 @@ public bool IsModifierVisible(int index)
 
 **Returns:** `bool`
 
-### `IsSidetrackNode()`
+:::
+
+::: details `IsSidetrackNode()`
 
 ```csharp
 public bool IsSidetrackNode()
 ```
 
 **Returns:** `bool`
+
+:::

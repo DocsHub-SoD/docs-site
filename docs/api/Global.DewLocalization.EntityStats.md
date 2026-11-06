@@ -8,7 +8,9 @@
 public struct DewLocalization.EntityStats
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public struct DewLocalization.EntityStats
 | **`armor`** | `public float armor` |  |
 | **`attackDamage`** | `public float attackDamage` |  |
 | **`critChance`** | `public float critChance` |  |
+
+:::

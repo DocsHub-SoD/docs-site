@@ -8,15 +8,19 @@
 public interface IEntityValidator
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`AlwaysTrue`** | `public static IEntityValidator AlwaysTrue` |  |
 
-## Methods
+:::
 
-### `Evaluate(Entity)`
+## Methods (1)
+
+::: details `Evaluate(Entity)`
 
 ```csharp
 bool Evaluate(Entity entity)
@@ -28,3 +32,5 @@ bool Evaluate(Entity entity)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

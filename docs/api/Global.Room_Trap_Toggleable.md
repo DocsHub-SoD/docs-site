@@ -10,23 +10,31 @@
 public abstract class Room_Trap_Toggleable : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IToggleableTrap, IBanRoomNodesNearby, IBanCampsNearby
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`fxOff`** | `public GameObject fxOff` |  |
 | **`fxOn`** | `public GameObject fxOn` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isOn`** | `public bool isOn { get; }` |  |
 | **`startTime`** | `public float startTime { get; }` | Available on server. Based onTime.time. By default it is negative infinity. |
 
-## Methods
+:::
 
-### `OnStartTrapServer()`
+## Methods (4)
+
+::: details `OnStartTrapServer()`
 
 Called on server when this trap is started.
 
@@ -34,7 +42,9 @@ Called on server when this trap is started.
 protected virtual void OnStartTrapServer()
 ```
 
-### `OnStopTrapServer()`
+:::
+
+::: details `OnStopTrapServer()`
 
 Called on server when this trap is stopped.
 
@@ -42,14 +52,20 @@ Called on server when this trap is stopped.
 protected virtual void OnStopTrapServer()
 ```
 
-### `StartTrap()`
+:::
+
+::: details `StartTrap()`
 
 ```csharp
 public void StartTrap()
 ```
 
-### `StopTrap()`
+:::
+
+::: details `StopTrap()`
 
 ```csharp
 public void StopTrap()
 ```
+
+:::

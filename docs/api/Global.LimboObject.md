@@ -8,16 +8,22 @@
 public class LimboObject : MonoBehaviour, ILimboNotifyReceiver
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`showOnLimbo`** | `public bool showOnLimbo` |  |
 
-## Methods
+:::
 
-### `OnLimboGame()`
+## Methods (1)
+
+::: details `OnLimboGame()`
 
 ```csharp
 public void OnLimboGame()
 ```
+
+:::

@@ -8,8 +8,12 @@
 public interface IOtherPlayersTonedDownLimit
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`maxReduction`** | `ReduceOtherPlayerEffectsStrength maxReduction { get; }` |  |
+
+:::

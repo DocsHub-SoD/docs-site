@@ -8,10 +8,14 @@
 public class DewProfileStats.MonsterData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`deaths`** | `public long deaths` |  |
 | **`kills`** | `public long kills` |  |
 | **`nightmareKills`** | `public long nightmareKills` |  |
+
+:::

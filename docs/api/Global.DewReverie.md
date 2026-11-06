@@ -8,15 +8,17 @@
 public static class DewReverie
 ```
 
-## Methods
+## Methods (9)
 
-### `CheckSpecialReveries()`
+::: details `CheckSpecialReveries()`
 
 ```csharp
 public static void CheckSpecialReveries()
 ```
 
-### `ClearDailyReverie(int)`
+:::
+
+::: details `ClearDailyReverie(int)`
 
 ```csharp
 public static void ClearDailyReverie(int index)
@@ -27,13 +29,17 @@ public static void ClearDailyReverie(int index)
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 
-### `ClearSpecialReverie()`
+:::
+
+::: details `ClearSpecialReverie()`
 
 ```csharp
 public static void ClearSpecialReverie()
 ```
 
-### `ReceiveRewardOfReverie(ReverieDataBase)`
+:::
+
+::: details `ReceiveRewardOfReverie(ReverieDataBase)`
 
 Receive the reward of a specific reverie. This does not remove the reverie.If succeeds, returns true.On error, this returns false and prints out error message to the user.
 
@@ -48,7 +54,9 @@ public static UniTask<bool> ReceiveRewardOfReverie(DewProfile.ReverieDataBase da
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask<T><bool>`
 
-### `SetDailyReverie(int, Type)`
+:::
+
+::: details `SetDailyReverie(int, Type)`
 
 ```csharp
 public static void SetDailyReverie(int index, Type type)
@@ -60,7 +68,9 @@ public static void SetDailyReverie(int index, Type type)
 | `index` | `int` |  |
 | `type` | `System.Type` |  |
 
-### `SetDailyReverie<T>(int)`
+:::
+
+::: details `SetDailyReverie&lt;T&gt;(int)`
 
 ```csharp
 public static void SetDailyReverie<T>(int index)
@@ -72,7 +82,9 @@ public static void SetDailyReverie<T>(int index)
 | `index` | `int` |  |
 | `` | `T` |  |
 
-### `SetRandomDailyReverie(int)`
+:::
+
+::: details `SetRandomDailyReverie(int)`
 
 ```csharp
 public static void SetRandomDailyReverie(int index)
@@ -83,7 +95,9 @@ public static void SetRandomDailyReverie(int index)
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 
-### `SetSpecialReverie(Type, DateTime)`
+:::
+
+::: details `SetSpecialReverie(Type, DateTime)`
 
 ```csharp
 public static void SetSpecialReverie(Type type, DateTime endDate)
@@ -95,8 +109,12 @@ public static void SetSpecialReverie(Type type, DateTime endDate)
 | `type` | `System.Type` |  |
 | `endDate` | `System.DateTime` |  |
 
-### `StartNextSpecialReverieOrClear()`
+:::
+
+::: details `StartNextSpecialReverieOrClear()`
 
 ```csharp
 public static void StartNextSpecialReverieOrClear()
 ```
+
+:::

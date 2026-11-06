@@ -8,7 +8,9 @@
 public interface IInteractable
 ```
 
-## Properties
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public interface IInteractable
 | **`interactPivot`** | `Transform interactPivot { get; }` |  |
 | **`priority`** | `int priority { get; }` | Lower values are prioritized |
 
-## Methods
+:::
 
-### `CanInteract(Entity)`
+## Methods (2)
+
+::: details `CanInteract(Entity)`
 
 Can this object be interacted by given entity? Checked everywhere, hence this should return consistent results regardless of caller.
 
@@ -34,7 +38,9 @@ bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `OnInteract(Entity, bool)`
+:::
+
+::: details `OnInteract(Entity, bool)`
 
 Called everywhere when an entity interacts with an interactable.
 
@@ -47,3 +53,5 @@ void OnInteract(Entity entity, bool alt)
 | :--- | :--- | :--- |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
+
+:::

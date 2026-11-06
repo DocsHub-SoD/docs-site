@@ -8,8 +8,12 @@
 public interface IEditSkillDropTargetGemSlot
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`location`** | `GemLocation location { get; }` |  |
+
+:::

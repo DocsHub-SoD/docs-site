@@ -8,15 +8,17 @@
 public interface ILogicUpdate
 ```
 
-## Methods
+## Methods (2)
 
-### `FrameUpdate()`
+::: details `FrameUpdate()`
 
 ```csharp
 void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 void LogicUpdate(float dt)
@@ -26,3 +28,5 @@ void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

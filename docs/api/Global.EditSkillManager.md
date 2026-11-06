@@ -9,7 +9,9 @@
 public class EditSkillManager : ManagerBase<EditSkillManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (18)
+
+::: details Click to expand Fields (18)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -32,7 +34,11 @@ public class EditSkillManager : ManagerBase<EditSkillManager>, ILogicUpdate
 | **`OnSkillVisibleClientState`** | `public Action<SkillTrigger, bool> OnSkillVisibleClientState` |  |
 | **`skillButtons`** | `public GameObject skillButtons` |  |
 
-## Properties
+:::
+
+## Properties (12)
+
+::: details Click to expand Properties (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -49,15 +55,19 @@ public class EditSkillManager : ManagerBase<EditSkillManager>, ILogicUpdate
 | **`selectedSkillSlot`** | `public HeroSkillLocation? selectedSkillSlot { get; set; }` |  |
 | **`shouldEndAfterAction`** | `public bool shouldEndAfterAction { get; }` |  |
 
-## Methods
+:::
 
-### `ClearGamepadSelection()`
+## Methods (35)
+
+::: details `ClearGamepadSelection()`
 
 ```csharp
 public void ClearGamepadSelection()
 ```
 
-### `DoBack()`
+:::
+
+::: details `DoBack()`
 
 ```csharp
 public bool DoBack()
@@ -65,7 +75,9 @@ public bool DoBack()
 
 **Returns:** `bool`
 
-### `DoClickOnGemSlot(GemLocation)`
+:::
+
+::: details `DoClickOnGemSlot(GemLocation)`
 
 ```csharp
 public void DoClickOnGemSlot(GemLocation location)
@@ -76,7 +88,9 @@ public void DoClickOnGemSlot(GemLocation location)
 | :--- | :--- | :--- |
 | `location` | [`GemLocation`](/api/Global.GemLocation) |  |
 
-### `DoClickOnSkillButton(HeroSkillLocation)`
+:::
+
+::: details `DoClickOnSkillButton(HeroSkillLocation)`
 
 ```csharp
 public void DoClickOnSkillButton(HeroSkillLocation skillType)
@@ -87,7 +101,9 @@ public void DoClickOnSkillButton(HeroSkillLocation skillType)
 | :--- | :--- | :--- |
 | `skillType` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
-### `DoConfirm()`
+:::
+
+::: details `DoConfirm()`
 
 ```csharp
 public bool DoConfirm()
@@ -95,7 +111,9 @@ public bool DoConfirm()
 
 **Returns:** `bool`
 
-### `DoDpadDown()`
+:::
+
+::: details `DoDpadDown()`
 
 ```csharp
 public bool DoDpadDown()
@@ -103,7 +121,9 @@ public bool DoDpadDown()
 
 **Returns:** `bool`
 
-### `DoDpadLeft()`
+:::
+
+::: details `DoDpadLeft()`
 
 ```csharp
 public bool DoDpadLeft()
@@ -111,7 +131,9 @@ public bool DoDpadLeft()
 
 **Returns:** `bool`
 
-### `DoDpadRight()`
+:::
+
+::: details `DoDpadRight()`
 
 ```csharp
 public bool DoDpadRight()
@@ -119,7 +141,9 @@ public bool DoDpadRight()
 
 **Returns:** `bool`
 
-### `DoDpadUp()`
+:::
+
+::: details `DoDpadUp()`
 
 ```csharp
 public bool DoDpadUp()
@@ -127,7 +151,9 @@ public bool DoDpadUp()
 
 **Returns:** `bool`
 
-### `EndDrag(bool)`
+:::
+
+::: details `EndDrag(bool)`
 
 ```csharp
 public void EndDrag(bool isCancel)
@@ -138,19 +164,25 @@ public void EndDrag(bool isCancel)
 | :--- | :--- | :--- |
 | `isCancel` | `bool` |  |
 
-### `EndEdit()`
+:::
+
+::: details `EndEdit()`
 
 ```csharp
 public void EndEdit()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `IsSlotHighlighted(GemLocation)`
+:::
+
+::: details `IsSlotHighlighted(GemLocation)`
 
 ```csharp
 public bool IsSlotHighlighted(GemLocation gemLoc)
@@ -163,7 +195,9 @@ public bool IsSlotHighlighted(GemLocation gemLoc)
 
 **Returns:** `bool`
 
-### `IsSlotHighlighted(HeroSkillLocation)`
+:::
+
+::: details `IsSlotHighlighted(HeroSkillLocation)`
 
 ```csharp
 public bool IsSlotHighlighted(HeroSkillLocation skillLoc)
@@ -176,7 +210,9 @@ public bool IsSlotHighlighted(HeroSkillLocation skillLoc)
 
 **Returns:** `bool`
 
-### `IsSlotSelectable(GemLocation)`
+:::
+
+::: details `IsSlotSelectable(GemLocation)`
 
 ```csharp
 public bool IsSlotSelectable(GemLocation gemLoc)
@@ -189,7 +225,9 @@ public bool IsSlotSelectable(GemLocation gemLoc)
 
 **Returns:** `bool`
 
-### `IsSlotSelectable(HeroSkillLocation)`
+:::
+
+::: details `IsSlotSelectable(HeroSkillLocation)`
 
 ```csharp
 public bool IsSlotSelectable(HeroSkillLocation skillLoc)
@@ -202,7 +240,9 @@ public bool IsSlotSelectable(HeroSkillLocation skillLoc)
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -213,7 +253,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `NotifyEndOfAction()`
+:::
+
+::: details `NotifyEndOfAction()`
 
 This will end edit if it is marked to end after action.
 
@@ -221,19 +263,25 @@ This will end edit if it is marked to end after action.
 public void NotifyEndOfAction()
 ```
 
-### `SelectAnyRelevantSlot()`
+:::
+
+::: details `SelectAnyRelevantSlot()`
 
 ```csharp
 public void SelectAnyRelevantSlot()
 ```
 
-### `SelectGround()`
+:::
+
+::: details `SelectGround()`
 
 ```csharp
 public void SelectGround()
 ```
 
-### `SetClientState_MergeGemVictim(Gem)`
+:::
+
+::: details `SetClientState_MergeGemVictim(Gem)`
 
 ```csharp
 public void SetClientState_MergeGemVictim(Gem gem)
@@ -244,7 +292,9 @@ public void SetClientState_MergeGemVictim(Gem gem)
 | :--- | :--- | :--- |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 
-### `SetClientState_SetGemSlot(GemLocation, Gem)`
+:::
+
+::: details `SetClientState_SetGemSlot(GemLocation, Gem)`
 
 ```csharp
 public void SetClientState_SetGemSlot(GemLocation loc, Gem gem)
@@ -256,7 +306,9 @@ public void SetClientState_SetGemSlot(GemLocation loc, Gem gem)
 | `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 
-### `SetClientState_SetSkillSlot(HeroSkillLocation, SkillTrigger)`
+:::
+
+::: details `SetClientState_SetSkillSlot(HeroSkillLocation, SkillTrigger)`
 
 ```csharp
 public void SetClientState_SetSkillSlot(HeroSkillLocation type, SkillTrigger skill)
@@ -268,7 +320,9 @@ public void SetClientState_SetSkillSlot(HeroSkillLocation type, SkillTrigger ski
 | `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
-### `ShouldUseHoldToConfirm(GemLocation)`
+:::
+
+::: details `ShouldUseHoldToConfirm(GemLocation)`
 
 ```csharp
 public bool ShouldUseHoldToConfirm(GemLocation gem)
@@ -281,7 +335,9 @@ public bool ShouldUseHoldToConfirm(GemLocation gem)
 
 **Returns:** `bool`
 
-### `ShouldUseHoldToConfirm(HeroSkillLocation)`
+:::
+
+::: details `ShouldUseHoldToConfirm(HeroSkillLocation)`
 
 ```csharp
 public bool ShouldUseHoldToConfirm(HeroSkillLocation skill)
@@ -294,7 +350,9 @@ public bool ShouldUseHoldToConfirm(HeroSkillLocation skill)
 
 **Returns:** `bool`
 
-### `StartConfirmHold(GemLocation)`
+:::
+
+::: details `StartConfirmHold(GemLocation)`
 
 ```csharp
 public void StartConfirmHold(GemLocation gem)
@@ -305,7 +363,9 @@ public void StartConfirmHold(GemLocation gem)
 | :--- | :--- | :--- |
 | `gem` | [`GemLocation`](/api/Global.GemLocation) |  |
 
-### `StartConfirmHold(HeroSkillLocation)`
+:::
+
+::: details `StartConfirmHold(HeroSkillLocation)`
 
 ```csharp
 public void StartConfirmHold(HeroSkillLocation skill)
@@ -316,7 +376,9 @@ public void StartConfirmHold(HeroSkillLocation skill)
 | :--- | :--- | :--- |
 | `skill` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
-### `StartDrag(Object)`
+:::
+
+::: details `StartDrag(Object)`
 
 ```csharp
 public void StartDrag(Object obj)
@@ -327,7 +389,9 @@ public void StartDrag(Object obj)
 | :--- | :--- | :--- |
 | `obj` | `UnityEngine.Object` |  |
 
-### `StartEditSkillShrine(EditSkillShrine)`
+:::
+
+::: details `StartEditSkillShrine(EditSkillShrine)`
 
 ```csharp
 public void StartEditSkillShrine(EditSkillShrine provider)
@@ -338,7 +402,9 @@ public void StartEditSkillShrine(EditSkillShrine provider)
 | :--- | :--- | :--- |
 | `provider` | [`EditSkillShrine`](/api/Global.EditSkillShrine) |  |
 
-### `StartEquipGem(Gem)`
+:::
+
+::: details `StartEquipGem(Gem)`
 
 ```csharp
 public void StartEquipGem(Gem gem)
@@ -349,7 +415,9 @@ public void StartEquipGem(Gem gem)
 | :--- | :--- | :--- |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 
-### `StartEquipSkill(SkillTrigger)`
+:::
+
+::: details `StartEquipSkill(SkillTrigger)`
 
 ```csharp
 public void StartEquipSkill(SkillTrigger skill)
@@ -360,7 +428,9 @@ public void StartEquipSkill(SkillTrigger skill)
 | :--- | :--- | :--- |
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
-### `StartRegularEdit(bool)`
+:::
+
+::: details `StartRegularEdit(bool)`
 
 ```csharp
 public void StartRegularEdit(bool endAfterAction)
@@ -371,7 +441,9 @@ public void StartRegularEdit(bool endAfterAction)
 | :--- | :--- | :--- |
 | `endAfterAction` | `bool` |  |
 
-### `StartSell(PropEnt_Merchant_Base)`
+:::
+
+::: details `StartSell(PropEnt_Merchant_Base)`
 
 ```csharp
 public void StartSell(PropEnt_Merchant_Base merchant)
@@ -382,7 +454,9 @@ public void StartSell(PropEnt_Merchant_Base merchant)
 | :--- | :--- | :--- |
 | `merchant` | [`PropEnt_Merchant_Base`](/api/Global.PropEnt_Merchant_Base) |  |
 
-### `StopConfirmHold(bool)`
+:::
+
+::: details `StopConfirmHold(bool)`
 
 ```csharp
 public void StopConfirmHold(bool showHelpIfNeeded = false)
@@ -393,8 +467,12 @@ public void StopConfirmHold(bool showHelpIfNeeded = false)
 | :--- | :--- | :--- |
 | `showHelpIfNeeded` | `bool` |  |
 
-### `UnselectGround()`
+:::
+
+::: details `UnselectGround()`
 
 ```csharp
 public void UnselectGround()
 ```
+
+:::

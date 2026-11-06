@@ -8,9 +8,9 @@
 public class DewInterestManagement : InterestManagement
 ```
 
-## Methods
+## Methods (3)
 
-### `OnCheckObserver(NetworkIdentity, NetworkConnectionToClient)`
+::: details `OnCheckObserver(NetworkIdentity, NetworkConnectionToClient)`
 
 ```csharp
 public override bool OnCheckObserver(NetworkIdentity identity, NetworkConnectionToClient newObserver)
@@ -24,7 +24,9 @@ public override bool OnCheckObserver(NetworkIdentity identity, NetworkConnection
 
 **Returns:** `bool`
 
-### `OnRebuildObservers(NetworkIdentity, HashSet<NetworkConnectionToClient>)`
+:::
+
+::: details `OnRebuildObservers(NetworkIdentity, HashSet&lt;NetworkConnectionToClient&gt;)`
 
 ```csharp
 public override void OnRebuildObservers(NetworkIdentity identity, HashSet<NetworkConnectionToClient> newObservers)
@@ -36,7 +38,9 @@ public override void OnRebuildObservers(NetworkIdentity identity, HashSet<Networ
 | `identity` | `Mirror.NetworkIdentity` |  |
 | `newObservers` | `System.Collections.Generic.HashSet<T><Mirror.NetworkConnectionToClient>` |  |
 
-### `SetHostVisibility(NetworkIdentity, bool)`
+:::
+
+::: details `SetHostVisibility(NetworkIdentity, bool)`
 
 ```csharp
 public override void SetHostVisibility(NetworkIdentity identity, bool visible)
@@ -47,3 +51,5 @@ public override void SetHostVisibility(NetworkIdentity identity, bool visible)
 | :--- | :--- | :--- |
 | `identity` | `Mirror.NetworkIdentity` |  |
 | `visible` | `bool` |  |
+
+:::

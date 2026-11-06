@@ -10,29 +10,39 @@
 public class HighlightProvider : LogicBehaviour, ILogicUpdate
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`cursorStatus`** | `public HighlightProvider.CursorStatus cursorStatus { get; set; }` |  |
 | **`elapsedClickTime`** | `public float elapsedClickTime { get; }` |  |
 
-## Methods
+:::
 
-### `OnClickTimeUpdated()`
+## Methods (3)
+
+::: details `OnClickTimeUpdated()`
 
 ```csharp
 protected virtual void OnClickTimeUpdated()
 ```
 
-### `OnCursorStatusUpdated()`
+:::
+
+::: details `OnCursorStatusUpdated()`
 
 ```csharp
 protected virtual void OnCursorStatusUpdated()
 ```
 
-### `ShowClick()`
+:::
+
+::: details `ShowClick()`
 
 ```csharp
 public void ShowClick()
 ```
+
+:::

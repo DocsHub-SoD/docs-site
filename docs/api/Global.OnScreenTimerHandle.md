@@ -8,7 +8,9 @@
 public class OnScreenTimerHandle
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class OnScreenTimerHandle
 | **`fillAmountGetter`** | `public Func<float> fillAmountGetter` |  |
 | **`rawText`** | `public string rawText` |  |
 | **`rawTextGetter`** | `public Func<string> rawTextGetter` |  |
+
+:::

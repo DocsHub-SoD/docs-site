@@ -8,7 +8,9 @@
 public struct ChatManager.Message
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public struct ChatManager.Message
 | **`itemPrice`** | `public Cost itemPrice` |  |
 | **`itemType`** | `public string itemType` |  |
 | **`type`** | `public ChatManager.MessageType type` |  |
+
+:::

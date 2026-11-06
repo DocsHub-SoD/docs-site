@@ -8,7 +8,9 @@
 public struct Entity.StaggerSettings
 ```
 
-## Fields
+## Fields (17)
+
+::: details Click to expand Fields (17)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,3 +31,5 @@ public struct Entity.StaggerSettings
 | **`staggerImmunityTime`** | `public float staggerImmunityTime` |  |
 | **`stunDuration`** | `public float stunDuration` |  |
 | **`SummonDefault`** | `public static readonly Entity.StaggerSettings SummonDefault` |  |
+
+:::

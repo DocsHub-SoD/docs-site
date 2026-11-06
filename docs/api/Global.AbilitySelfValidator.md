@@ -9,7 +9,9 @@
 public class AbilitySelfValidator : IEntityValidator
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,9 +21,11 @@ public class AbilitySelfValidator : IEntityValidator
 | **`Default`** | `public static AbilitySelfValidator Default` |  |
 | **`isMovementAbility`** | `[ToggleLeft] public bool isMovementAbility` |  |
 
-## Methods
+:::
 
-### `Evaluate(Entity)`
+## Methods (1)
+
+::: details `Evaluate(Entity)`
 
 ```csharp
 public bool Evaluate(Entity self)
@@ -33,3 +37,5 @@ public bool Evaluate(Entity self)
 | `self` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

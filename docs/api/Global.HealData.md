@@ -8,7 +8,9 @@
 public struct HealData
 ```
 
-## Properties
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,9 +23,11 @@ public struct HealData
 | **`originalAmount`** | `public readonly float originalAmount { get; }` | Original amount of heal. |
 | **`reductionMultiplier`** | `public readonly float reductionMultiplier { get; }` | Heal multiplier for reductions. |
 
-## Methods
+:::
 
-### `AddAmount(float)`
+## Methods (16)
+
+::: details `AddAmount(float)`
 
 Add a flat amount to this heal.
 
@@ -38,7 +42,9 @@ public HealData AddAmount(float amount)
 
 **Returns:** `HealData`
 
-### `ApplyAmplification(float)`
+:::
+
+::: details `ApplyAmplification(float)`
 
 Amplify this heal by the value specified, stacking additively.e.g. One Amplication by 0.5 will cause 50% increase in heal.Two Amplifications by 0.5 will cause 125% increase in heal.
 
@@ -53,7 +59,9 @@ public HealData ApplyAmplification(float value)
 
 **Returns:** `HealData`
 
-### `ApplyRawMultiplier(float)`
+:::
+
+::: details `ApplyRawMultiplier(float)`
 
 Apply raw multiplier to this heal's original amount.
 
@@ -68,7 +76,9 @@ public HealData ApplyRawMultiplier(float multiplier)
 
 **Returns:** `HealData`
 
-### `ApplyReduction(float)`
+:::
+
+::: details `ApplyReduction(float)`
 
 Reduce this heal by the value specified, stacking multiplicatively.e.g. One Reduction by 0.5 will cause 50% decrease in heal.Two Reductions by 0.5 will cause 75% decrease in heal.
 
@@ -83,7 +93,9 @@ public HealData ApplyReduction(float value)
 
 **Returns:** `HealData`
 
-### `Dispatch(Entity, ReactionChain)`
+:::
+
+::: details `Dispatch(Entity, ReactionChain)`
 
 ```csharp
 public void Dispatch(Entity victim, ReactionChain chain = default)
@@ -95,7 +107,9 @@ public void Dispatch(Entity victim, ReactionChain chain = default)
 | `victim` | [`Entity`](/api/Global.Entity) |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `IsAmountModifiedBy(Actor)`
+:::
+
+::: details `IsAmountModifiedBy(Actor)`
 
 ```csharp
 public bool IsAmountModifiedBy(Actor actor)
@@ -108,7 +122,9 @@ public bool IsAmountModifiedBy(Actor actor)
 
 **Returns:** `bool`
 
-### `IsAmountModifiedBy(Type)`
+:::
+
+::: details `IsAmountModifiedBy(Type)`
 
 ```csharp
 public bool IsAmountModifiedBy(Type actorType)
@@ -121,7 +137,9 @@ public bool IsAmountModifiedBy(Type actorType)
 
 **Returns:** `bool`
 
-### `SetActor(Actor)`
+:::
+
+::: details `SetActor(Actor)`
 
 ```csharp
 public HealData SetActor(Actor actor)
@@ -134,7 +152,9 @@ public HealData SetActor(Actor actor)
 
 **Returns:** `HealData`
 
-### `SetAmountModifiedBy(Actor)`
+:::
+
+::: details `SetAmountModifiedBy(Actor)`
 
 ```csharp
 public HealData SetAmountModifiedBy(Actor actor)
@@ -147,7 +167,9 @@ public HealData SetAmountModifiedBy(Actor actor)
 
 **Returns:** `HealData`
 
-### `SetAmountModifiedBy(Type)`
+:::
+
+::: details `SetAmountModifiedBy(Type)`
 
 ```csharp
 public HealData SetAmountModifiedBy(Type actorType)
@@ -160,7 +182,9 @@ public HealData SetAmountModifiedBy(Type actorType)
 
 **Returns:** `HealData`
 
-### `SetAmountOrigin(FinalDamageData)`
+:::
+
+::: details `SetAmountOrigin(FinalDamageData)`
 
 If amount of this heal originates from other damage, you can specify it here to make it inherit its flags and isCrit.
 
@@ -175,7 +199,9 @@ public HealData SetAmountOrigin(FinalDamageData damage)
 
 **Returns:** `HealData`
 
-### `SetAmountOrigin(FinalHealData)`
+:::
+
+::: details `SetAmountOrigin(FinalHealData)`
 
 If amount of this heal originates from other heal, you can specify it here to make it inherit its flags and isCrit.
 
@@ -190,7 +216,9 @@ public HealData SetAmountOrigin(FinalHealData heal)
 
 **Returns:** `HealData`
 
-### `SetCanMerge()`
+:::
+
+::: details `SetCanMerge()`
 
 Make this heal mergeable into one damage number in UI.
 
@@ -200,7 +228,9 @@ public HealData SetCanMerge()
 
 **Returns:** `HealData`
 
-### `SetCrit()`
+:::
+
+::: details `SetCrit()`
 
 Make this heal show a critical hit marker.
 
@@ -210,7 +240,9 @@ public HealData SetCrit()
 
 **Returns:** `HealData`
 
-### `SetOriginalAmount(float)`
+:::
+
+::: details `SetOriginalAmount(float)`
 
 ```csharp
 public HealData SetOriginalAmount(float newAmount)
@@ -223,7 +255,9 @@ public HealData SetOriginalAmount(float newAmount)
 
 **Returns:** `HealData`
 
-### `SubtractAmount(float)`
+:::
+
+::: details `SubtractAmount(float)`
 
 Subtract a flat amount from this heal.
 
@@ -237,3 +271,5 @@ public HealData SubtractAmount(float amount)
 | `amount` | `float` | The amount to subtract. Must be a positive number or zero. |
 
 **Returns:** `HealData`
+
+:::

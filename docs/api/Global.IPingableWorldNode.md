@@ -8,8 +8,12 @@
 public interface IPingableWorldNode
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`nodeIndex`** | `int nodeIndex { get; }` |  |
+
+:::

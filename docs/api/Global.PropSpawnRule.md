@@ -9,8 +9,12 @@
 public class PropSpawnRule : ScriptableObject
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`entries`** | `[ListDrawerSettings(Expanded = true)] public List<PropSpawnRule.PropEntry> entries` |  |
+
+:::

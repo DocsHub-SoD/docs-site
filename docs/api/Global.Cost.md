@@ -9,7 +9,9 @@
 public struct Cost
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,9 +21,11 @@ public struct Cost
 | **`platinumCoin`** | `public int platinumCoin` |  |
 | **`stardust`** | `public int stardust` |  |
 
-## Methods
+:::
 
-### `CanAfford(DewPlayer, int)`
+## Methods (12)
+
+::: details `CanAfford(DewPlayer, int)`
 
 ```csharp
 public AffordType CanAfford(DewPlayer player, int playerStardust = -1)
@@ -35,7 +39,9 @@ public AffordType CanAfford(DewPlayer player, int playerStardust = -1)
 
 **Returns:** `AffordType`
 
-### `CanAfford(Entity, int)`
+:::
+
+::: details `CanAfford(Entity, int)`
 
 ```csharp
 public AffordType CanAfford(Entity entity, int playerStardust = -1)
@@ -49,7 +55,9 @@ public AffordType CanAfford(Entity entity, int playerStardust = -1)
 
 **Returns:** `AffordType`
 
-### `DreamDust(int)`
+:::
+
+::: details `DreamDust(int)`
 
 ```csharp
 public static Cost DreamDust(int amount)
@@ -62,7 +70,9 @@ public static Cost DreamDust(int amount)
 
 **Returns:** `Cost`
 
-### `Equals(Cost)`
+:::
+
+::: details `Equals(Cost)`
 
 ```csharp
 public bool Equals(Cost other)
@@ -75,7 +85,9 @@ public bool Equals(Cost other)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -88,7 +100,9 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
@@ -96,7 +110,9 @@ public override int GetHashCode()
 
 **Returns:** `int`
 
-### `Gold(int)`
+:::
+
+::: details `Gold(int)`
 
 ```csharp
 public static Cost Gold(int amount)
@@ -109,7 +125,9 @@ public static Cost Gold(int amount)
 
 **Returns:** `Cost`
 
-### `HealthPercentage(int)`
+:::
+
+::: details `HealthPercentage(int)`
 
 ```csharp
 public static Cost HealthPercentage(int amount)
@@ -122,7 +140,9 @@ public static Cost HealthPercentage(int amount)
 
 **Returns:** `Cost`
 
-### `MultiplyGold(float)`
+:::
+
+::: details `MultiplyGold(float)`
 
 ```csharp
 public Cost MultiplyGold(float scalar)
@@ -135,7 +155,9 @@ public Cost MultiplyGold(float scalar)
 
 **Returns:** `Cost`
 
-### `Platinum(int)`
+:::
+
+::: details `Platinum(int)`
 
 ```csharp
 public static Cost Platinum(int amount)
@@ -148,7 +170,9 @@ public static Cost Platinum(int amount)
 
 **Returns:** `Cost`
 
-### `Stardust(int)`
+:::
+
+::: details `Stardust(int)`
 
 ```csharp
 public static Cost Stardust(int amount)
@@ -161,10 +185,14 @@ public static Cost Stardust(int amount)
 
 **Returns:** `Cost`
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

@@ -9,16 +9,20 @@
 public class ActionAttackMove : ActionBase
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`destination`** | `public Vector3 destination` |  |
 | **`useDistanceFromDestination`** | `public bool useDistanceFromDestination` |  |
 
-## Methods
+:::
 
-### `FindAttackMoveTarget(Entity, Vector3)`
+## Methods (6)
+
+::: details `FindAttackMoveTarget(Entity, Vector3)`
 
 ```csharp
 public static Entity FindAttackMoveTarget(Entity ent, Vector3 sortPivot)
@@ -32,7 +36,9 @@ public static Entity FindAttackMoveTarget(Entity ent, Vector3 sortPivot)
 
 **Returns:** `Entity`
 
-### `GetMoveDestination()`
+:::
+
+::: details `GetMoveDestination()`
 
 ```csharp
 public override Vector3? GetMoveDestination()
@@ -40,7 +46,9 @@ public override Vector3? GetMoveDestination()
 
 **Returns:** `UnityEngine.Vector3?`
 
-### `GetMoveDestinationRequiredDistance()`
+:::
+
+::: details `GetMoveDestinationRequiredDistance()`
 
 ```csharp
 public override float GetMoveDestinationRequiredDistance()
@@ -48,7 +56,9 @@ public override float GetMoveDestinationRequiredDistance()
 
 **Returns:** `float`
 
-### `ShouldCancelIfDisallowedToMove()`
+:::
+
+::: details `ShouldCancelIfDisallowedToMove()`
 
 ```csharp
 public override bool ShouldCancelIfDisallowedToMove()
@@ -56,7 +66,9 @@ public override bool ShouldCancelIfDisallowedToMove()
 
 **Returns:** `bool`
 
-### `Tick()`
+:::
+
+::: details `Tick()`
 
 ```csharp
 public override bool Tick()
@@ -64,10 +76,14 @@ public override bool Tick()
 
 **Returns:** `bool`
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

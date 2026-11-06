@@ -10,7 +10,9 @@
 public class StarEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,7 +22,11 @@ public class StarEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRo
 | **`starIcon`** | `[BoxGroup("Star Settings", true, false, 0)] public Sprite starIcon` |  |
 | **`type`** | `[BoxGroup("Star Settings", true, false, 0)] public StarType type` |  |
 
-## Properties
+:::
+
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -33,9 +39,11 @@ public class StarEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRo
 | **`skillType`** | `public virtual Type skillType { get; }` |  |
 | **`strength`** | `[SaveVar(SaveVarFlags.Default)] public float strength { get; set; }` | Strength of this star effect. Usually 1.0f, but can be lower if non-flexible star is slotted in different category slot. |
 
-## Methods
+:::
 
-### `DoSkill(Action<SkillTrigger>)`
+## Methods (6)
+
+::: details `DoSkill(Action&lt;SkillTrigger&gt;)`
 
 Do custom action on all matching skill. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -50,7 +58,9 @@ public SafeAction DoSkill(Action<SkillTrigger> callback)
 
 **Returns:** `SafeAction`
 
-### `DoSkill(Func<SkillTrigger, Action>)`
+:::
+
+::: details `DoSkill(Func&lt;SkillTrigger, Action&gt;)`
 
 Do custom action on all matching skill and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -65,7 +75,9 @@ public SafeAction DoSkill(Func<SkillTrigger, Action> callback)
 
 **Returns:** `SafeAction`
 
-### `DoSkillBonusAll(SkillBonus)`
+:::
+
+::: details `DoSkillBonusAll(SkillBonus)`
 
 Note the given bonus will be cloned. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -80,7 +92,9 @@ public SafeAction DoSkillBonusAll(SkillBonus bonus)
 
 **Returns:** `SafeAction`
 
-### `IsIncompatibleWith(Hero, HeroLoadoutData)`
+:::
+
+::: details `IsIncompatibleWith(Hero, HeroLoadoutData)`
 
 ```csharp
 public bool IsIncompatibleWith(Hero h, HeroLoadoutData l)
@@ -94,7 +108,9 @@ public bool IsIncompatibleWith(Hero h, HeroLoadoutData l)
 
 **Returns:** `bool`
 
-### `IsSkillRelated(SkillTrigger)`
+:::
+
+::: details `IsSkillRelated(SkillTrigger)`
 
 ```csharp
 public bool IsSkillRelated(SkillTrigger s)
@@ -107,7 +123,9 @@ public bool IsSkillRelated(SkillTrigger s)
 
 **Returns:** `bool`
 
-### `IsSkillRelated(string)`
+:::
+
+::: details `IsSkillRelated(string)`
 
 ```csharp
 public bool IsSkillRelated(string s)
@@ -119,3 +137,5 @@ public bool IsSkillRelated(string s)
 | `s` | `string` |  |
 
 **Returns:** `bool`
+
+:::

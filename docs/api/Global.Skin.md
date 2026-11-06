@@ -9,7 +9,9 @@
 public class Skin : MonoBehaviour
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,15 +24,21 @@ public class Skin : MonoBehaviour
 | **`requiredLevel`** | `public int requiredLevel` |  |
 | **`skillVisuals`** | `public SkillVisualOverrideItem[] skillVisuals` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`stardustPrice`** | `public int stardustPrice { get; }` |  |
 
-## Methods
+:::
 
-### `GetDefaultSkin(string)`
+## Methods (2)
+
+::: details `GetDefaultSkin(string)`
 
 ```csharp
 public static string GetDefaultSkin(string heroType)
@@ -43,7 +51,9 @@ public static string GetDefaultSkin(string heroType)
 
 **Returns:** `string`
 
-### `IsValidFor(string)`
+:::
+
+::: details `IsValidFor(string)`
 
 ```csharp
 public bool IsValidFor(string heroType)
@@ -55,3 +65,5 @@ public bool IsValidFor(string heroType)
 | `heroType` | `string` |  |
 
 **Returns:** `bool`
+
+:::

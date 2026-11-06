@@ -9,7 +9,9 @@
 public class AttackProjectile : StandardProjectile, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,19 @@ public class AttackProjectile : StandardProjectile, ILogicUpdate, ICleanup, ICus
 | **`isMain`** | `[NonSerialized] public bool isMain` |  |
 | **`strength`** | `public float strength` |  |
 
-## Methods
+:::
 
-### `OnCreate()`
+## Methods (3)
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnEntity(EntityHit)`
+:::
+
+::: details `OnEntity(EntityHit)`
 
 ```csharp
 protected override void OnEntity(Projectile.EntityHit hit)
@@ -36,8 +42,12 @@ protected override void OnEntity(Projectile.EntityHit hit)
 | :--- | :--- | :--- |
 | `hit` | [`Projectile.EntityHit`](/api/Global.Projectile) |  |
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
+
+:::

@@ -9,8 +9,12 @@
 public class LoadCallbackAttribute : Attribute
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`flags`** | `public readonly SaveVarFlags flags` |  |
+
+:::

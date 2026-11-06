@@ -12,7 +12,9 @@
 public class RoomSection : LogicBehaviour, ILogicUpdate, IPlayerPathablePoint
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,7 +28,11 @@ public class RoomSection : LogicBehaviour, ILogicUpdate, IPlayerPathablePoint
 | **`vectors`** | `public Vector2[] vectors` |  |
 | **`waitForAggroedEnemiesToDie`** | `[ToggleLeft] [ShowIf("clearRoomOnEnterFirstTime", true)] public bool waitForAggroedEnemiesToDie` |  |
 
-## Properties
+:::
+
+## Properties (7)
+
+::: details Click to expand Properties (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -38,9 +44,11 @@ public class RoomSection : LogicBehaviour, ILogicUpdate, IPlayerPathablePoint
 | **`pathablePivot`** | `public Vector3 pathablePivot { get; }` |  |
 | **`props`** | `public Section_Props props { get; }` |  |
 
-## Methods
+:::
 
-### `GetAnyRandomNode()`
+## Methods (11)
+
+::: details `GetAnyRandomNode()`
 
 Get any random node.
 
@@ -50,7 +58,9 @@ public Vector3 GetAnyRandomNode()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetGoodWanderPosition(Vector3)`
+:::
+
+::: details `GetGoodWanderPosition(Vector3)`
 
 ```csharp
 public Vector3 GetGoodWanderPosition(Vector3 from)
@@ -63,7 +73,9 @@ public Vector3 GetGoodWanderPosition(Vector3 from)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetNavDistanceTo(RoomSection)`
+:::
+
+::: details `GetNavDistanceTo(RoomSection)`
 
 ```csharp
 public float GetNavDistanceTo(RoomSection sec)
@@ -76,7 +88,9 @@ public float GetNavDistanceTo(RoomSection sec)
 
 **Returns:** `float`
 
-### `GetRandomLocalPosition(DewRandom)`
+:::
+
+::: details `GetRandomLocalPosition(DewRandom)`
 
 ```csharp
 public Vector3 GetRandomLocalPosition(DewRandom random = null)
@@ -89,7 +103,9 @@ public Vector3 GetRandomLocalPosition(DewRandom random = null)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetRandomWorldPosition(DewRandom)`
+:::
+
+::: details `GetRandomWorldPosition(DewRandom)`
 
 ```csharp
 public Vector3 GetRandomWorldPosition(DewRandom random = null)
@@ -102,7 +118,9 @@ public Vector3 GetRandomWorldPosition(DewRandom random = null)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -113,19 +131,25 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `OverlapPoint(Vector2)`
+:::
+
+::: details `OverlapPoint(Vector2)`
 
 Available only on runtime.
 
@@ -140,13 +164,17 @@ public bool OverlapPoint(Vector2 point)
 
 **Returns:** `bool`
 
-### `ResetUsedNodeIndices()`
+:::
+
+::: details `ResetUsedNodeIndices()`
 
 ```csharp
 public void ResetUsedNodeIndices()
 ```
 
-### `TryGetGoodNodePosition(out Vector3, DewRandom)`
+:::
+
+::: details `TryGetGoodNodePosition(out Vector3, DewRandom)`
 
 Try to pick a node that hasn't been used that's not too close to previously used node.Returns false if suboptimal position is returned.
 
@@ -161,3 +189,5 @@ public bool TryGetGoodNodePosition(out Vector3 position, DewRandom random = null
 | `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `bool`
+
+:::

@@ -9,7 +9,9 @@
 public class FxSelectiveVisibility : MonoBehaviour
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public class FxSelectiveVisibility : MonoBehaviour
 | **`visibleTo`** | `[InfoBox("@_helpText", InfoMessageType.Info, null)] public EffectVisibility visibleTo` |  |
 | **`wasDisabled`** | `[HideInInspector] public bool wasDisabled` |  |
 
-## Methods
+:::
 
-### `IsVisibleLocally()`
+## Methods (3)
+
+::: details `IsVisibleLocally()`
 
 ```csharp
 public bool IsVisibleLocally()
@@ -30,14 +34,20 @@ public bool IsVisibleLocally()
 
 **Returns:** `bool`
 
-### `OnAfterDeserialize()`
+:::
+
+::: details `OnAfterDeserialize()`
 
 ```csharp
 public void OnAfterDeserialize()
 ```
 
-### `OnBeforeSerialize()`
+:::
+
+::: details `OnBeforeSerialize()`
 
 ```csharp
 public void OnBeforeSerialize()
 ```
+
+:::

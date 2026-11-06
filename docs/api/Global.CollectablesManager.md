@@ -9,21 +9,25 @@
 public class CollectablesManager : ManagerBase<CollectablesManager>, ILogicUpdate
 ```
 
-## Methods
+## Methods (3)
 
-### `GoBack()`
+::: details `GoBack()`
 
 ```csharp
 public void GoBack()
 ```
 
-### `ShowUnlockEverythingMessage()`
+:::
+
+::: details `ShowUnlockEverythingMessage()`
 
 ```csharp
 public void ShowUnlockEverythingMessage()
 ```
 
-### `TransitionToScene(string)`
+:::
+
+::: details `TransitionToScene(string)`
 
 ```csharp
 public void TransitionToScene(string sceneName)
@@ -33,3 +37,5 @@ public void TransitionToScene(string sceneName)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `sceneName` | `string` |  |
+
+:::

@@ -8,10 +8,14 @@
 public class PerLaunchOptionVisibility : MonoBehaviour
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`alwaysShowInEditor`** | `public bool alwaysShowInEditor` |  |
 | **`hideIf`** | `public PerLaunchOptionVisibility.LaunchOptions hideIf` |  |
 | **`showIf`** | `public PerLaunchOptionVisibility.LaunchOptions showIf` |  |
+
+:::

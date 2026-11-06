@@ -8,16 +8,20 @@
 public static class DewEffect
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`disablePlay`** | `public static bool disablePlay` |  |
 | **`disablePlayNew`** | `public static bool disablePlayNew` |  |
 
-## Methods
+:::
 
-### `ApplySpeedMultiplier(GameObject, float)`
+## Methods (28)
+
+::: details `ApplySpeedMultiplier(GameObject, float)`
 
 ```csharp
 public static void ApplySpeedMultiplier(GameObject effect, float multiplier)
@@ -29,7 +33,9 @@ public static void ApplySpeedMultiplier(GameObject effect, float multiplier)
 | `effect` | `UnityEngine.GameObject` |  |
 | `multiplier` | `float` |  |
 
-### `ApplySpeedMultiplierNetworked(NetworkIdentity, GameObject, float)`
+:::
+
+::: details `ApplySpeedMultiplierNetworked(NetworkIdentity, GameObject, float)`
 
 ```csharp
 public static void ApplySpeedMultiplierNetworked(NetworkIdentity parent, GameObject effect, float multiplier)
@@ -42,7 +48,9 @@ public static void ApplySpeedMultiplierNetworked(NetworkIdentity parent, GameObj
 | `effect` | `UnityEngine.GameObject` |  |
 | `multiplier` | `float` |  |
 
-### `ChangeColorObject(object, float?, float, float, float)`
+:::
+
+::: details `ChangeColorObject(object, float?, float, float, float)`
 
 ```csharp
 public static void ChangeColorObject(object obj, float? hue = null, float saturationMult = 1, float valueMult = 1, float alphaMult = 1)
@@ -57,7 +65,9 @@ public static void ChangeColorObject(object obj, float? hue = null, float satura
 | `valueMult` | `float` |  |
 | `alphaMult` | `float` |  |
 
-### `ChangeColorRecursively(GameObject, float?, float, float, float)`
+:::
+
+::: details `ChangeColorRecursively(GameObject, float?, float, float, float)`
 
 ```csharp
 public static void ChangeColorRecursively(GameObject gameObject, float? hue = null, float saturationMult = 1, float valueMult = 1, float alphaMult = 1)
@@ -72,7 +82,9 @@ public static void ChangeColorRecursively(GameObject gameObject, float? hue = nu
 | `valueMult` | `float` |  |
 | `alphaMult` | `float` |  |
 
-### `GetPath(Transform, Transform)`
+:::
+
+::: details `GetPath(Transform, Transform)`
 
 ```csharp
 public static string GetPath(Transform root, Transform target)
@@ -86,7 +98,9 @@ public static string GetPath(Transform root, Transform target)
 
 **Returns:** `string`
 
-### `Play(GameObject, Entity, NetworkIdentity)`
+:::
+
+::: details `Play(GameObject, Entity, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -101,7 +115,9 @@ public static void Play(GameObject effect, Entity attach, NetworkIdentity parent
 | `attach` | [`Entity`](/api/Global.Entity) |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `Play(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)`
+:::
+
+::: details `Play(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -118,7 +134,9 @@ public static void Play(GameObject effect, Entity attach, Vector3 position, Quat
 | `rotation` | `UnityEngine.Quaternion?` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `Play(GameObject, NetworkIdentity)`
+:::
+
+::: details `Play(GameObject, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -132,7 +150,9 @@ public static void Play(GameObject effect, NetworkIdentity parent = null)
 | `effect` | `UnityEngine.GameObject` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `Play(GameObject, Vector3, Quaternion?, NetworkIdentity)`
+:::
+
+::: details `Play(GameObject, Vector3, Quaternion?, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -148,7 +168,9 @@ public static void Play(GameObject effect, Vector3 position, Quaternion? rotatio
 | `rotation` | `UnityEngine.Quaternion?` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `PlayCastEffect(GameObject, CastInfo, CastMethodType, float, NetworkIdentity)`
+:::
+
+::: details `PlayCastEffect(GameObject, CastInfo, CastMethodType, float, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -165,7 +187,9 @@ public static void PlayCastEffect(GameObject effect, CastInfo info, CastMethodTy
 | `duration` | `float` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `PlayCastEffectNetworked(NetworkIdentity, GameObject, CastInfo, CastMethodType, float)`
+:::
+
+::: details `PlayCastEffectNetworked(NetworkIdentity, GameObject, CastInfo, CastMethodType, float)`
 
 ```csharp
 public static void PlayCastEffectNetworked(NetworkIdentity parent, GameObject effect, CastInfo info, CastMethodType method, float duration = -1)
@@ -180,7 +204,9 @@ public static void PlayCastEffectNetworked(NetworkIdentity parent, GameObject ef
 | `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
 | `duration` | `float` |  |
 
-### `PlayNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)`
+:::
+
+::: details `PlayNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)`
 
 ```csharp
 public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Entity entity, Vector3 position, Quaternion? rotation)
@@ -195,7 +221,9 @@ public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Enti
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `PlayNetworked(NetworkIdentity, GameObject, Entity)`
+:::
+
+::: details `PlayNetworked(NetworkIdentity, GameObject, Entity)`
 
 ```csharp
 public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Entity entity)
@@ -208,7 +236,9 @@ public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Enti
 | `effect` | `UnityEngine.GameObject` |  |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
-### `PlayNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)`
+:::
+
+::: details `PlayNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)`
 
 ```csharp
 public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Vector3 position, Quaternion? rotation)
@@ -222,7 +252,9 @@ public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Vect
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `PlayNetworked(NetworkIdentity, GameObject)`
+:::
+
+::: details `PlayNetworked(NetworkIdentity, GameObject)`
 
 ```csharp
 public static void PlayNetworked(NetworkIdentity parent, GameObject effect)
@@ -234,7 +266,9 @@ public static void PlayNetworked(NetworkIdentity parent, GameObject effect)
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `PlayNew(GameObject, Entity, NetworkIdentity)`
+:::
+
+::: details `PlayNew(GameObject, Entity, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -249,7 +283,9 @@ public static void PlayNew(GameObject effect, Entity attach, NetworkIdentity par
 | `attach` | [`Entity`](/api/Global.Entity) |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `PlayNew(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)`
+:::
+
+::: details `PlayNew(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -266,7 +302,9 @@ public static void PlayNew(GameObject effect, Entity attach, Vector3 position, Q
 | `rotation` | `UnityEngine.Quaternion?` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `PlayNew(GameObject, NetworkIdentity)`
+:::
+
+::: details `PlayNew(GameObject, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -280,7 +318,9 @@ public static void PlayNew(GameObject effect, NetworkIdentity parent = null)
 | `effect` | `UnityEngine.GameObject` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `PlayNew(GameObject, Vector3, Quaternion?, NetworkIdentity)`
+:::
+
+::: details `PlayNew(GameObject, Vector3, Quaternion?, NetworkIdentity)`
 
 Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.
 
@@ -296,7 +336,9 @@ public static void PlayNew(GameObject effect, Vector3 position, Quaternion? rota
 | `rotation` | `UnityEngine.Quaternion?` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
-### `PlayNewNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)`
+:::
+
+::: details `PlayNewNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)`
 
 ```csharp
 public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, Entity entity, Vector3 position, Quaternion? rotation)
@@ -311,7 +353,9 @@ public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, E
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `PlayNewNetworked(NetworkIdentity, GameObject, Entity)`
+:::
+
+::: details `PlayNewNetworked(NetworkIdentity, GameObject, Entity)`
 
 ```csharp
 public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, Entity entity)
@@ -324,7 +368,9 @@ public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, E
 | `effect` | `UnityEngine.GameObject` |  |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
-### `PlayNewNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)`
+:::
+
+::: details `PlayNewNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)`
 
 ```csharp
 public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, Vector3 position, Quaternion? rotation)
@@ -338,7 +384,9 @@ public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, V
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `PlayNewNetworked(NetworkIdentity, GameObject)`
+:::
+
+::: details `PlayNewNetworked(NetworkIdentity, GameObject)`
 
 ```csharp
 public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect)
@@ -350,7 +398,9 @@ public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect)
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `ResolvePath(Transform, string, bool)`
+:::
+
+::: details `ResolvePath(Transform, string, bool)`
 
 ```csharp
 public static GameObject ResolvePath(Transform root, string path, bool warnOnFail = true)
@@ -365,7 +415,9 @@ public static GameObject ResolvePath(Transform root, string path, bool warnOnFai
 
 **Returns:** `UnityEngine.GameObject`
 
-### `Stop(GameObject)`
+:::
+
+::: details `Stop(GameObject)`
 
 ```csharp
 public static void Stop(GameObject effect)
@@ -376,7 +428,9 @@ public static void Stop(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `StopNetworked(NetworkIdentity, GameObject)`
+:::
+
+::: details `StopNetworked(NetworkIdentity, GameObject)`
 
 ```csharp
 public static void StopNetworked(NetworkIdentity parent, GameObject effect)
@@ -388,7 +442,9 @@ public static void StopNetworked(NetworkIdentity parent, GameObject effect)
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `TintObject(object, Color, bool)`
+:::
+
+::: details `TintObject(object, Color, bool)`
 
 Tint color of the object. (Multiply given color to its color)
 
@@ -403,7 +459,9 @@ public static void TintObject(object obj, Color color, bool dontLogWarning = fal
 | `color` | `UnityEngine.Color` |  |
 | `dontLogWarning` | `bool` |  |
 
-### `TintRecursively(GameObject, Color)`
+:::
+
+::: details `TintRecursively(GameObject, Color)`
 
 ```csharp
 public static void TintRecursively(GameObject gameObject, Color color)
@@ -414,3 +472,5 @@ public static void TintRecursively(GameObject gameObject, Color color)
 | :--- | :--- | :--- |
 | `gameObject` | `UnityEngine.GameObject` |  |
 | `color` | `UnityEngine.Color` |  |
+
+:::

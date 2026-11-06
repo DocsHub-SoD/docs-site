@@ -8,7 +8,9 @@
 public class DewGraphicsSettings : IInitializableSettings, IValidatableSettings
 ```
 
-## Fields
+## Fields (15)
+
+::: details Click to expand Fields (15)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,9 +30,11 @@ public class DewGraphicsSettings : IInitializableSettings, IValidatableSettings
 | **`vegetationQuality`** | `public Quality3Levels vegetationQuality` |  |
 | **`vSync`** | `public bool vSync` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (3)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -38,14 +42,20 @@ public object Clone()
 
 **Returns:** `object`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 ```csharp
 public void Initialize()
 ```
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

@@ -10,16 +10,20 @@
 public class FeedbackManager.EffectPool
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`effect`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public GameObject effect` |  |
 | **`numOfSources`** | `[HideLabel] [HorizontalGroup("A", 0, 0, 0, 0)] public int numOfSources` |  |
 
-## Methods
+:::
 
-### `Init(Transform)`
+## Methods (2)
+
+::: details `Init(Transform)`
 
 ```csharp
 public void Init(Transform parent)
@@ -30,8 +34,12 @@ public void Init(Transform parent)
 | :--- | :--- | :--- |
 | `parent` | `UnityEngine.Transform` |  |
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
+
+:::

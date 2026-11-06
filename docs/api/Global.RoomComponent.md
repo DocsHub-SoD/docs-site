@@ -10,7 +10,9 @@
 public class RoomComponent : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Properties
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class RoomComponent : DewNetworkBehaviour, ILogicUpdate
 | **`isRoomActive`** | `public bool isRoomActive { get; }` |  |
 | **`room`** | `public Room room { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (7)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected virtual void ActiveLogicUpdate(float dt)
@@ -31,13 +35,17 @@ protected virtual void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -48,7 +56,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnRoomStart()`
+:::
+
+::: details `OnRoomStart()`
 
 Called everywhere when this room has finished loading and needs setup.
 
@@ -56,7 +66,9 @@ Called everywhere when this room has finished loading and needs setup.
 public virtual void OnRoomStart()
 ```
 
-### `OnRoomStartServer()`
+:::
+
+::: details `OnRoomStartServer()`
 
 Called on server when this room has finished loading and needs setup.
 
@@ -64,7 +76,9 @@ Called on server when this room has finished loading and needs setup.
 public virtual void OnRoomStartServer()
 ```
 
-### `OnRoomStop()`
+:::
+
+::: details `OnRoomStop()`
 
 Called everywhere when next room is about to load and this room is cleaning up.
 
@@ -72,10 +86,14 @@ Called everywhere when next room is about to load and this room is cleaning up.
 public virtual void OnRoomStop()
 ```
 
-### `OnRoomStopServer()`
+:::
+
+::: details `OnRoomStopServer()`
 
 Called on server when next room is about to load and this room is cleaning up.Populate save data here.
 
 ```csharp
 public virtual void OnRoomStopServer()
 ```
+
+:::

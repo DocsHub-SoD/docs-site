@@ -8,15 +8,19 @@
 public class DataProcessorGroup<T> where T : struct
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`count`** | `public int count { get; }` |  |
 
-## Methods
+:::
 
-### `Add(DataProcessor<T>, int)`
+## Methods (4)
+
+::: details `Add(DataProcessor&lt;T&gt;, int)`
 
 Processors with lower priority value will be executed first.
 
@@ -30,13 +34,17 @@ public void Add(DataProcessor<T> processor, int priority = 0)
 | `processor` | `DataProcessor<T>` |  |
 | `priority` | `int` |  |
 
-### `Clear()`
+:::
+
+::: details `Clear()`
 
 ```csharp
 public void Clear()
 ```
 
-### `Process(ref T)`
+:::
+
+::: details `Process(ref T)`
 
 ```csharp
 public void Process(ref T data)
@@ -47,7 +55,9 @@ public void Process(ref T data)
 | :--- | :--- | :--- |
 | `data` | `T` |  |
 
-### `Remove(DataProcessor<T>)`
+:::
+
+::: details `Remove(DataProcessor&lt;T&gt;)`
 
 ```csharp
 public void Remove(DataProcessor<T> processor)
@@ -57,3 +67,5 @@ public void Remove(DataProcessor<T> processor)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `processor` | `DataProcessor<T>` |  |
+
+:::

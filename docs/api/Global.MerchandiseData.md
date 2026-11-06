@@ -8,7 +8,9 @@
 public struct MerchandiseData
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public struct MerchandiseData
 | **`level`** | `public int level` |  |
 | **`price`** | `public Cost price` |  |
 | **`type`** | `public MerchandiseType type` |  |
+
+:::

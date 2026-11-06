@@ -9,7 +9,9 @@
 public class Pickup_BaseGoldOrb : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,15 +20,21 @@ public class Pickup_BaseGoldOrb : PickupInstance, ILogicUpdate, ICleanup, ICusto
 | **`isKillGold`** | `[NonSerialized] public bool isKillGold` |  |
 | **`target`** | `[NonSerialized] public Hero target` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 
-## Methods
+:::
 
-### `CanBeUsedBy(Hero)`
+## Methods (4)
+
+::: details `CanBeUsedBy(Hero)`
 
 ```csharp
 protected override bool CanBeUsedBy(Hero hero)
@@ -39,19 +47,25 @@ protected override bool CanBeUsedBy(Hero hero)
 
 **Returns:** `bool`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPickup(Hero)`
+:::
+
+::: details `OnPickup(Hero)`
 
 ```csharp
 protected override void OnPickup(Hero hero)
@@ -61,3 +75,5 @@ protected override void OnPickup(Hero hero)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `hero` | [`Hero`](/api/Global.Hero) |  |
+
+:::

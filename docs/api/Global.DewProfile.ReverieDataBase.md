@@ -9,7 +9,9 @@
 public class DewProfile.ReverieDataBase
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,12 +23,16 @@ public class DewProfile.ReverieDataBase
 | **`persistentVariables`** | `public Dictionary<string, string> persistentVariables` |  |
 | **`type`** | `public string type` |  |
 
-## Methods
+:::
 
-### `IsEmpty()`
+## Methods (1)
+
+::: details `IsEmpty()`
 
 ```csharp
 public bool IsEmpty()
 ```
 
 **Returns:** `bool`
+
+:::

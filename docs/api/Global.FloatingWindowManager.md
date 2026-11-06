@@ -9,7 +9,9 @@
 public class FloatingWindowManager : ManagerBase<FloatingWindowManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,28 +19,38 @@ public class FloatingWindowManager : ManagerBase<FloatingWindowManager>, ILogicU
 | **`maxDistance`** | `public float maxDistance` |  |
 | **`onTargetChanged`** | `public Action<MonoBehaviour> onTargetChanged` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`currentTarget`** | `public MonoBehaviour currentTarget { get; }` |  |
 | **`lastSetTargetUnscaledTime`** | `public float lastSetTargetUnscaledTime { get; }` |  |
 
-## Methods
+:::
 
-### `ClearTarget()`
+## Methods (4)
+
+::: details `ClearTarget()`
 
 ```csharp
 public void ClearTarget()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -49,7 +61,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `SetTarget(MonoBehaviour)`
+:::
+
+::: details `SetTarget(MonoBehaviour)`
 
 ```csharp
 public void SetTarget(MonoBehaviour newTarget)
@@ -59,3 +73,5 @@ public void SetTarget(MonoBehaviour newTarget)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `newTarget` | `UnityEngine.MonoBehaviour` |  |
+
+:::

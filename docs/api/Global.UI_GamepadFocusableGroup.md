@@ -8,16 +8,20 @@
 public class UI_GamepadFocusableGroup : MonoBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`customTarget`** | `[ShowIf("@enterBehavior == EnterGroupBehavior.Custom", true)] public GameObject customTarget` |  |
 | **`enterBehavior`** | `[HideLabel] [LabelText("When Entering")] public EnterGroupBehavior enterBehavior` |  |
 
-## Methods
+:::
 
-### `GetEnterFocusable(GameObject, EnterGroupBehavior, Vector2)`
+## Methods (3)
+
+::: details `GetEnterFocusable(GameObject, EnterGroupBehavior, Vector2)`
 
 ```csharp
 public static IGamepadFocusable GetEnterFocusable(GameObject parent, EnterGroupBehavior enterBehavior, Vector2 direction)
@@ -32,7 +36,9 @@ public static IGamepadFocusable GetEnterFocusable(GameObject parent, EnterGroupB
 
 **Returns:** `IGamepadFocusable`
 
-### `GetEnterFocusable(Vector2)`
+:::
+
+::: details `GetEnterFocusable(Vector2)`
 
 ```csharp
 public virtual IGamepadFocusable GetEnterFocusable(Vector2 direction)
@@ -45,10 +51,14 @@ public virtual IGamepadFocusable GetEnterFocusable(Vector2 direction)
 
 **Returns:** `IGamepadFocusable`
 
-### `IsValid()`
+:::
+
+::: details `IsValid()`
 
 ```csharp
 public bool IsValid()
 ```
 
 **Returns:** `bool`
+
+:::

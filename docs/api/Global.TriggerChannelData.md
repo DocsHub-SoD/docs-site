@@ -9,16 +9,20 @@
 public class TriggerChannelData
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`blockedActions`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [DisableIf("@duration <= 0f")] public Channel.BlockedAction blockedActions` |  |
 | **`duration`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [LabelText("Channel Duration")] public float duration` |  |
 
-## Methods
+:::
 
-### `CreateChannel(Action, Action, IEntityValidator, Entity, IBinaryEntityValidator)`
+## Methods (2)
+
+::: details `CreateChannel(Action, Action, IEntityValidator, Entity, IBinaryEntityValidator)`
 
 Create a channel out of this data.
 
@@ -37,7 +41,9 @@ public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidato
 
 **Returns:** `Channel`
 
-### `CreateChannel(Action, Action, IEntityValidator)`
+:::
+
+::: details `CreateChannel(Action, Action, IEntityValidator)`
 
 Create a channel out of this data.
 
@@ -53,3 +59,5 @@ public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidato
 | `selfValidator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
 
 **Returns:** `Channel`
+
+:::

@@ -9,7 +9,9 @@
 public class Gem : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IItem, IExcludeFromPool
 ```
 
-## Fields
+## Fields (26)
+
+::: details Click to expand Fields (26)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -40,7 +42,11 @@ public class Gem : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IIntera
 | **`tvDefaultHarmfulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets` |  |
 | **`tvDefaultUsefulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets` |  |
 
-## Properties
+:::
+
+## Properties (25)
+
+::: details Click to expand Properties (25)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -70,9 +76,11 @@ public class Gem : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IIntera
 | **`tempOwner`** | `public DewPlayer tempOwner { get; set; }` |  |
 | **`worldModel`** | `public ItemWorldModel worldModel { get; }` |  |
 
-## Methods
+:::
 
-### `ApplyCooldownReduction(float)`
+## Methods (36)
+
+::: details `ApplyCooldownReduction(float)`
 
 ```csharp
 public void ApplyCooldownReduction(float amount)
@@ -83,7 +91,9 @@ public void ApplyCooldownReduction(float amount)
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
 
-### `ApplyCooldownReductionByRatio(float)`
+:::
+
+::: details `ApplyCooldownReductionByRatio(float)`
 
 ```csharp
 public void ApplyCooldownReductionByRatio(float ratio)
@@ -94,13 +104,17 @@ public void ApplyCooldownReductionByRatio(float ratio)
 | :--- | :--- | :--- |
 | `ratio` | `float` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanInteract(Entity)`
+:::
+
+::: details `CanInteract(Entity)`
 
 ```csharp
 public bool CanInteract(Entity entity)
@@ -113,7 +127,9 @@ public bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `CreateAbilityInstanceWithSource<T>(Actor, Vector3, Quaternion?, CastInfo, Action<T>)`
+:::
+
+::: details `CreateAbilityInstanceWithSource&lt;T&gt;(Actor, Vector3, Quaternion?, CastInfo, Action&lt;T&gt;)`
 
 Create an ability instance on behalf of source actor, but make it inherit this gem's quality. You MUST ensure source will not be destroyed before calling this. Call this right after instance spawn or use Actor.LockDestroy().
 
@@ -133,7 +149,9 @@ public T CreateAbilityInstanceWithSource<T>(Actor source, Vector3 position, Quat
 
 **Returns:** `T`
 
-### `CreateBasicEffectWithSource(Actor, Entity, BasicEffect, float, string, DuplicateEffectBehavior)`
+:::
+
+::: details `CreateBasicEffectWithSource(Actor, Entity, BasicEffect, float, string, DuplicateEffectBehavior)`
 
 Create a basic effect container on behalf of source actor. You MUST ensure source will not be destroyed before calling this. Call this right after instance spawn or use Actor.LockDestroy().
 
@@ -153,7 +171,9 @@ public Se_GenericEffectContainer CreateBasicEffectWithSource(Actor source, Entit
 
 **Returns:** `Se_GenericEffectContainer`
 
-### `CreateStatusEffectWithSource<T>(Actor, Entity, CastInfo, Action<T>)`
+:::
+
+::: details `CreateStatusEffectWithSource&lt;T&gt;(Actor, Entity, CastInfo, Action&lt;T&gt;)`
 
 Create a status effect on behalf of source actor, but make it inherit this gem's quality. You MUST ensure source will not be destroyed before calling this. Call this right after instance spawn or use Actor.LockDestroy().
 
@@ -172,13 +192,17 @@ public T CreateStatusEffectWithSource<T>(Actor source, Entity victim, CastInfo i
 
 **Returns:** `T`
 
-### `DismantleGem()`
+:::
+
+::: details `DismantleGem()`
 
 ```csharp
 public void DismantleGem()
 ```
 
-### `GetBuyGold()`
+:::
+
+::: details `GetBuyGold()`
 
 ```csharp
 public int GetBuyGold()
@@ -186,7 +210,9 @@ public int GetBuyGold()
 
 **Returns:** `int`
 
-### `GetBuyGold(Rarity, int)`
+:::
+
+::: details `GetBuyGold(Rarity, int)`
 
 ```csharp
 public static int GetBuyGold(Rarity rarity, int quality)
@@ -200,7 +226,9 @@ public static int GetBuyGold(Rarity rarity, int quality)
 
 **Returns:** `int`
 
-### `GetDismantleAmount(DewPlayer)`
+:::
+
+::: details `GetDismantleAmount(DewPlayer)`
 
 ```csharp
 public int GetDismantleAmount(DewPlayer player)
@@ -213,7 +241,9 @@ public int GetDismantleAmount(DewPlayer player)
 
 **Returns:** `int`
 
-### `GetGoldValue(Rarity, int)`
+:::
+
+::: details `GetGoldValue(Rarity, int)`
 
 ```csharp
 public static int GetGoldValue(Rarity rarity, int quality)
@@ -227,7 +257,9 @@ public static int GetGoldValue(Rarity rarity, int quality)
 
 **Returns:** `int`
 
-### `GetMergedQuality(int, int)`
+:::
+
+::: details `GetMergedQuality(int, int)`
 
 ```csharp
 public static int GetMergedQuality(int a, int b)
@@ -241,7 +273,9 @@ public static int GetMergedQuality(int a, int b)
 
 **Returns:** `int`
 
-### `GetQualityType(float)`
+:::
+
+::: details `GetQualityType(float)`
 
 ```csharp
 public static Gem.QualityType GetQualityType(float quality)
@@ -254,7 +288,9 @@ public static Gem.QualityType GetQualityType(float quality)
 
 **Returns:** `Gem.QualityType`
 
-### `GetSellGold()`
+:::
+
+::: details `GetSellGold()`
 
 ```csharp
 public int GetSellGold()
@@ -262,7 +298,9 @@ public int GetSellGold()
 
 **Returns:** `int`
 
-### `GetSellGold(Rarity, int)`
+:::
+
+::: details `GetSellGold(Rarity, int)`
 
 ```csharp
 public static int GetSellGold(Rarity rarity, int quality)
@@ -276,7 +314,9 @@ public static int GetSellGold(Rarity rarity, int quality)
 
 **Returns:** `int`
 
-### `GetValue(ScalingValue)`
+:::
+
+::: details `GetValue(ScalingValue)`
 
 Gets value of the given scaling value using this gem's level and caster.
 
@@ -291,7 +331,9 @@ public float GetValue(ScalingValue val)
 
 **Returns:** `float`
 
-### `IsLockedFor(DewPlayer)`
+:::
+
+::: details `IsLockedFor(DewPlayer)`
 
 ```csharp
 public bool IsLockedFor(DewPlayer player)
@@ -304,7 +346,9 @@ public bool IsLockedFor(DewPlayer player)
 
 **Returns:** `bool`
 
-### `IsReady()`
+:::
+
+::: details `IsReady()`
 
 Is this gem ready? By default this checks if the gem is cooled down and has at least 1 use left (rate-limit).This must return the same value everywhere(server/clients) for consistent behavior.
 
@@ -314,7 +358,9 @@ public virtual bool IsReady()
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -325,7 +371,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `NotifyUse()`
+:::
+
+::: details `NotifyUse()`
 
 Flash this gem in UI for highlighting or giving attention to player.If this gem is rate-limited, it will decrement remaining use.
 
@@ -333,7 +381,9 @@ Flash this gem in UI for highlighting or giving attention to player.If this gem 
 public void NotifyUse()
 ```
 
-### `OnCastComplete(EventInfoCast)`
+:::
+
+::: details `OnCastComplete(EventInfoCast)`
 
 Called on server when equipped skill completes casting.
 
@@ -346,7 +396,9 @@ protected virtual void OnCastComplete(EventInfoCast info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
-### `OnCastCompleteBeforePrepare(EventInfoCast)`
+:::
+
+::: details `OnCastCompleteBeforePrepare(EventInfoCast)`
 
 Called on server when equipped skill creates ability instance before it is spawned and prepared.
 
@@ -359,7 +411,9 @@ protected virtual void OnCastCompleteBeforePrepare(EventInfoCast info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
-### `OnDealDamage(EventInfoDamage)`
+:::
+
+::: details `OnDealDamage(EventInfoDamage)`
 
 Called on server when equipped skill deals damage.
 
@@ -372,7 +426,9 @@ protected virtual void OnDealDamage(EventInfoDamage info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoDamage`](/api/Global.EventInfoDamage) |  |
 
-### `OnDoHeal(EventInfoHeal)`
+:::
+
+::: details `OnDoHeal(EventInfoHeal)`
 
 Called on server when equipped skill does heal.
 
@@ -385,7 +441,9 @@ protected virtual void OnDoHeal(EventInfoHeal obj)
 | :--- | :--- | :--- |
 | `obj` | [`EventInfoHeal`](/api/Global.EventInfoHeal) |  |
 
-### `OnEquipGem(Hero)`
+:::
+
+::: details `OnEquipGem(Hero)`
 
 Called everywhere when this gem is picked up by hero.
 
@@ -398,7 +456,9 @@ public virtual void OnEquipGem(Hero newOwner)
 | :--- | :--- | :--- |
 | `newOwner` | [`Hero`](/api/Global.Hero) |  |
 
-### `OnEquipSkill(SkillTrigger)`
+:::
+
+::: details `OnEquipSkill(SkillTrigger)`
 
 Called everywhere when this gem starts taking effect on skill.
 
@@ -411,13 +471,17 @@ public virtual void OnEquipSkill(SkillTrigger newSkill)
 | :--- | :--- | :--- |
 | `newSkill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
 
-### `OnQualityChange(int, int)`
+:::
+
+::: details `OnQualityChange(int, int)`
 
 Called everywhere when this gem's quality is changed.
 
@@ -431,19 +495,25 @@ protected virtual void OnQualityChange(int oldQuality, int newQuality)
 | `oldQuality` | `int` |  |
 | `newQuality` | `int` |  |
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnUnequipGem(Hero)`
+:::
+
+::: details `OnUnequipGem(Hero)`
 
 Called everywhere when this gem is dropped by hero.
 
@@ -456,7 +526,9 @@ public virtual void OnUnequipGem(Hero oldOwner)
 | :--- | :--- | :--- |
 | `oldOwner` | [`Hero`](/api/Global.Hero) |  |
 
-### `OnUnequipSkill(SkillTrigger)`
+:::
+
+::: details `OnUnequipSkill(SkillTrigger)`
 
 Called everywhere when this gem stops taking effect on skill.
 
@@ -469,13 +541,17 @@ public virtual void OnUnequipSkill(SkillTrigger oldSkill)
 | :--- | :--- | :--- |
 | `oldSkill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
-### `ResetCooldown()`
+:::
+
+::: details `ResetCooldown()`
 
 ```csharp
 public void ResetCooldown()
 ```
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
@@ -483,8 +559,12 @@ public override bool ShouldBeSavedWithRoom()
 
 **Returns:** `bool`
 
-### `StartCooldown()`
+:::
+
+::: details `StartCooldown()`
 
 ```csharp
 public void StartCooldown()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public struct DewLocalization.DescriptionSettings
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,3 +24,5 @@ public struct DewLocalization.DescriptionSettings
 | **`starLevels`** | `public int[] starLevels` |  |
 | **`starStrength`** | `public float? starStrength` |  |
 | **`stats`** | `public DewLocalization.EntityStats? stats` |  |
+
+:::

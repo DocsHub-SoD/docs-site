@@ -9,7 +9,9 @@
 public class ZoneManager : NetworkedManagerBase<ZoneManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (35)
+
+::: details Click to expand Fields (35)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -49,7 +51,11 @@ public class ZoneManager : NetworkedManagerBase<ZoneManager>, ILogicUpdate
 | **`WorldHeight`** | `public static float WorldHeight` |  |
 | **`WorldWidth`** | `public static float WorldWidth` |  |
 
-## Properties
+:::
+
+## Properties (27)
+
+::: details Click to expand Properties (27)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -81,9 +87,11 @@ public class ZoneManager : NetworkedManagerBase<ZoneManager>, ILogicUpdate
 | **`voteRemainingSeconds`** | `public int voteRemainingSeconds { get; }` |  |
 | **`worldSeed`** | `public uint worldSeed { get; set; }` |  |
 
-## Methods
+:::
 
-### `AddModifier(int, ModifierData, Action<RoomModifierBase>)`
+## Methods (47)
+
+::: details `AddModifier(int, ModifierData, Action&lt;RoomModifierBase&gt;)`
 
 Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.
 
@@ -100,7 +108,9 @@ public int AddModifier(int nodeIndex, ModifierData mod, Action<RoomModifierBase>
 
 **Returns:** `int`
 
-### `AddModifier<T>(int, Action<T>)`
+:::
+
+::: details `AddModifier&lt;T&gt;(int, Action&lt;T&gt;)`
 
 Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.
 
@@ -117,7 +127,9 @@ public int AddModifier<T>(int nodeIndex, Action<T> beforePrepare = null) where T
 
 **Returns:** `int`
 
-### `AddModifier<T>(int, string, Action<T>)`
+:::
+
+::: details `AddModifier&lt;T&gt;(int, string, Action&lt;T&gt;)`
 
 Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.
 
@@ -135,7 +147,9 @@ public int AddModifier<T>(int nodeIndex, string clientData, Action<T> beforePrep
 
 **Returns:** `int`
 
-### `AddSidetrackNode(string)`
+:::
+
+::: details `AddSidetrackNode(string)`
 
 ```csharp
 public void AddSidetrackNode(string roomName)
@@ -146,7 +160,9 @@ public void AddSidetrackNode(string roomName)
 | :--- | :--- | :--- |
 | `roomName` | `string` |  |
 
-### `AddTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool>)`
+:::
+
+::: details `AddTravelToNodeInterrupt(Func&lt;EventInfoTravelToNodeInterrupt, bool&gt;)`
 
 Add travel-to-node interruptor.Return true to interrupt travel for something cinematic and cool.Note this cannot interrupt sidetracks, zone travels or fake travels.
 
@@ -159,7 +175,9 @@ public void AddTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool> 
 | :--- | :--- | :--- |
 | `func` | [`System.Func<T, TResult><EventInfoTravelToNodeInterrupt,bool>`](/api/Global.EventInfoTravelToNodeInterrupt) |  |
 
-### `AdvanceHunterTurn(bool)`
+:::
+
+::: details `AdvanceHunterTurn(bool)`
 
 ```csharp
 public void AdvanceHunterTurn(bool forceMove = false)
@@ -170,7 +188,9 @@ public void AdvanceHunterTurn(bool forceMove = false)
 | :--- | :--- | :--- |
 | `forceMove` | `bool` |  |
 
-### `CallOnReadyAfterTransition(Action)`
+:::
+
+::: details `CallOnReadyAfterTransition(Action)`
 
 Called after a reasonable amount of time has passed after transition ends.Immediately called if not on a transition.
 
@@ -183,7 +203,9 @@ public void CallOnReadyAfterTransition(Action action)
 | :--- | :--- | :--- |
 | `action` | `System.Action` |  |
 
-### `CmdCancelVote(NetworkConnectionToClient)`
+:::
+
+::: details `CmdCancelVote(NetworkConnectionToClient)`
 
 ```csharp
 public void CmdCancelVote(NetworkConnectionToClient sender = null)
@@ -194,7 +216,9 @@ public void CmdCancelVote(NetworkConnectionToClient sender = null)
 | :--- | :--- | :--- |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdTravelToNextZone(NetworkConnectionToClient)`
+:::
+
+::: details `CmdTravelToNextZone(NetworkConnectionToClient)`
 
 ```csharp
 public void CmdTravelToNextZone(NetworkConnectionToClient sender = null)
@@ -205,7 +229,9 @@ public void CmdTravelToNextZone(NetworkConnectionToClient sender = null)
 | :--- | :--- | :--- |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdTravelToNode(int, NetworkConnectionToClient)`
+:::
+
+::: details `CmdTravelToNode(int, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdTravelToNode(int index, NetworkConnectionToClient sender = null)
@@ -217,7 +243,9 @@ public void CmdTravelToNode(int index, NetworkConnectionToClient sender = null)
 | `index` | `int` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `DoDeadEndTravel()`
+:::
+
+::: details `DoDeadEndTravel()`
 
 Do initial travel node animation and soft lock the game.
 
@@ -225,13 +253,17 @@ Do initial travel node animation and soft lock the game.
 public void DoDeadEndTravel()
 ```
 
-### `GenerateWorldAuto()`
+:::
+
+::: details `GenerateWorldAuto()`
 
 ```csharp
 public void GenerateWorldAuto()
 ```
 
-### `GenerateWorldWithSeed(uint)`
+:::
+
+::: details `GenerateWorldWithSeed(uint)`
 
 ```csharp
 public void GenerateWorldWithSeed(uint seed)
@@ -242,7 +274,9 @@ public void GenerateWorldWithSeed(uint seed)
 | :--- | :--- | :--- |
 | `seed` | `uint` |  |
 
-### `GetCannotTravelReason()`
+:::
+
+::: details `GetCannotTravelReason()`
 
 ```csharp
 public string GetCannotTravelReason()
@@ -250,7 +284,9 @@ public string GetCannotTravelReason()
 
 **Returns:** `string`
 
-### `GetCannotTravelReasonByDroppedGem(Gem)`
+:::
+
+::: details `GetCannotTravelReasonByDroppedGem(Gem)`
 
 ```csharp
 public string GetCannotTravelReasonByDroppedGem(Gem g)
@@ -263,7 +299,9 @@ public string GetCannotTravelReasonByDroppedGem(Gem g)
 
 **Returns:** `string`
 
-### `GetCannotTravelReasonByDroppedSkill(SkillTrigger)`
+:::
+
+::: details `GetCannotTravelReasonByDroppedSkill(SkillTrigger)`
 
 ```csharp
 public string GetCannotTravelReasonByDroppedSkill(SkillTrigger st)
@@ -276,7 +314,9 @@ public string GetCannotTravelReasonByDroppedSkill(SkillTrigger st)
 
 **Returns:** `string`
 
-### `GetHunterProgress()`
+:::
+
+::: details `GetHunterProgress()`
 
 Get hunter progress in this world. Returns value between 0 ~ 1
 
@@ -286,7 +326,9 @@ public float GetHunterProgress()
 
 **Returns:** `float`
 
-### `GetNodeDistance(int, int)`
+:::
+
+::: details `GetNodeDistance(int, int)`
 
 ```csharp
 public int GetNodeDistance(int a, int b)
@@ -300,7 +342,9 @@ public int GetNodeDistance(int a, int b)
 
 **Returns:** `int`
 
-### `GetVoteSidetrackRift()`
+:::
+
+::: details `GetVoteSidetrackRift()`
 
 ```csharp
 public Rift_Sidetrack GetVoteSidetrackRift()
@@ -308,7 +352,9 @@ public Rift_Sidetrack GetVoteSidetrackRift()
 
 **Returns:** `Rift_Sidetrack`
 
-### `GetWorldRandom(int)`
+:::
+
+::: details `GetWorldRandom(int)`
 
 Get a random instance for this world.
 
@@ -323,7 +369,9 @@ public DewRandom GetWorldRandom(int offset)
 
 **Returns:** `DewRandom`
 
-### `IsNodeConnected(int, int)`
+:::
+
+::: details `IsNodeConnected(int, int)`
 
 ```csharp
 public bool IsNodeConnected(int a, int b)
@@ -337,7 +385,9 @@ public bool IsNodeConnected(int a, int b)
 
 **Returns:** `bool`
 
-### `LoadModifierLightPrefabsOfCurrentZone()`
+:::
+
+::: details `LoadModifierLightPrefabsOfCurrentZone()`
 
 ```csharp
 public List<RoomModifierBase> LoadModifierLightPrefabsOfCurrentZone()
@@ -345,13 +395,17 @@ public List<RoomModifierBase> LoadModifierLightPrefabsOfCurrentZone()
 
 **Returns:** `System.Collections.Generic.List<T><RoomModifierBase>`
 
-### `LoadNextZoneByContentSettings()`
+:::
+
+::: details `LoadNextZoneByContentSettings()`
 
 ```csharp
 public void LoadNextZoneByContentSettings()
 ```
 
-### `LoadNode(LoadNodeSettings)`
+:::
+
+::: details `LoadNode(LoadNodeSettings)`
 
 ```csharp
 public void LoadNode(LoadNodeSettings s)
@@ -362,7 +416,9 @@ public void LoadNode(LoadNodeSettings s)
 | :--- | :--- | :--- |
 | `s` | [`LoadNodeSettings`](/api/Global.LoadNodeSettings) |  |
 
-### `LoadSidetrackRoom(string)`
+:::
+
+::: details `LoadSidetrackRoom(string)`
 
 ```csharp
 public void LoadSidetrackRoom(string roomName)
@@ -373,13 +429,17 @@ public void LoadSidetrackRoom(string roomName)
 | :--- | :--- | :--- |
 | `roomName` | `string` |  |
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `RemoveModifier(int, int)`
+:::
+
+::: details `RemoveModifier(int, int)`
 
 ```csharp
 public void RemoveModifier(int nodeIndex, int modifierId)
@@ -391,7 +451,9 @@ public void RemoveModifier(int nodeIndex, int modifierId)
 | `nodeIndex` | `int` |  |
 | `modifierId` | `int` |  |
 
-### `RemoveModifier(int)`
+:::
+
+::: details `RemoveModifier(int)`
 
 ```csharp
 public void RemoveModifier(int modifierId)
@@ -402,7 +464,9 @@ public void RemoveModifier(int modifierId)
 | :--- | :--- | :--- |
 | `modifierId` | `int` |  |
 
-### `RemoveModifier<T>(int)`
+:::
+
+::: details `RemoveModifier&lt;T&gt;(int)`
 
 ```csharp
 public bool RemoveModifier<T>(int nodeIndex)
@@ -416,7 +480,9 @@ public bool RemoveModifier<T>(int nodeIndex)
 
 **Returns:** `bool`
 
-### `RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool>)`
+:::
+
+::: details `RemoveTravelToNodeInterrupt(Func&lt;EventInfoTravelToNodeInterrupt, bool&gt;)`
 
 ```csharp
 public void RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool> func)
@@ -427,13 +493,17 @@ public void RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, boo
 | :--- | :--- | :--- |
 | `func` | [`System.Func<T, TResult><EventInfoTravelToNodeInterrupt,bool>`](/api/Global.EventInfoTravelToNodeInterrupt) |  |
 
-### `ReturnFromSidetracking()`
+:::
+
+::: details `ReturnFromSidetracking()`
 
 ```csharp
 public void ReturnFromSidetracking()
 ```
 
-### `RevealNodesAndAnnounce(DewPlayer, int)`
+:::
+
+::: details `RevealNodesAndAnnounce(DewPlayer, int)`
 
 ```csharp
 public void RevealNodesAndAnnounce(DewPlayer revealer, int nodeCount)
@@ -445,7 +515,9 @@ public void RevealNodesAndAnnounce(DewPlayer revealer, int nodeCount)
 | `revealer` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `nodeCount` | `int` |  |
 
-### `RevealWorld(bool)`
+:::
+
+::: details `RevealWorld(bool)`
 
 ```csharp
 public void RevealWorld(bool fully = false)
@@ -456,7 +528,9 @@ public void RevealWorld(bool fully = false)
 | :--- | :--- | :--- |
 | `fully` | `bool` |  |
 
-### `SetCurrentNodeIndexAndRevealAdjacent(int)`
+:::
+
+::: details `SetCurrentNodeIndexAndRevealAdjacent(int)`
 
 ```csharp
 public void SetCurrentNodeIndexAndRevealAdjacent(int index)
@@ -467,7 +541,9 @@ public void SetCurrentNodeIndexAndRevealAdjacent(int index)
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 
-### `SetRoom(int, string)`
+:::
+
+::: details `SetRoom(int, string)`
 
 ```csharp
 public void SetRoom(int nodeIndex, string room)
@@ -479,7 +555,9 @@ public void SetRoom(int nodeIndex, string room)
 | `nodeIndex` | `int` |  |
 | `room` | `string` |  |
 
-### `SetRoomOverride(int, string)`
+:::
+
+::: details `SetRoomOverride(int, string)`
 
 ```csharp
 public void SetRoomOverride(int nodeIndex, string roomOverride)
@@ -491,7 +569,9 @@ public void SetRoomOverride(int nodeIndex, string roomOverride)
 | `nodeIndex` | `int` |  |
 | `roomOverride` | `string` |  |
 
-### `SetRoomRotIndex(int, int)`
+:::
+
+::: details `SetRoomRotIndex(int, int)`
 
 ```csharp
 public void SetRoomRotIndex(int nodeIndex, int roomRotIndex)
@@ -503,7 +583,9 @@ public void SetRoomRotIndex(int nodeIndex, int roomRotIndex)
 | `nodeIndex` | `int` |  |
 | `roomRotIndex` | `int` |  |
 
-### `ShouldVoteOnTravel()`
+:::
+
+::: details `ShouldVoteOnTravel()`
 
 ```csharp
 public bool ShouldVoteOnTravel()
@@ -511,7 +593,9 @@ public bool ShouldVoteOnTravel()
 
 **Returns:** `bool`
 
-### `StartVoteNextNode(DewPlayer, int)`
+:::
+
+::: details `StartVoteNextNode(DewPlayer, int)`
 
 ```csharp
 public void StartVoteNextNode(DewPlayer player, int nextNodeIndex)
@@ -523,7 +607,9 @@ public void StartVoteNextNode(DewPlayer player, int nextNodeIndex)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `nextNodeIndex` | `int` |  |
 
-### `StartVoteNextZone(DewPlayer)`
+:::
+
+::: details `StartVoteNextZone(DewPlayer)`
 
 ```csharp
 public void StartVoteNextZone(DewPlayer player)
@@ -534,7 +620,9 @@ public void StartVoteNextZone(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `StartVoteSidetrack(DewPlayer, Rift_Sidetrack)`
+:::
+
+::: details `StartVoteSidetrack(DewPlayer, Rift_Sidetrack)`
 
 ```csharp
 public void StartVoteSidetrack(DewPlayer player, Rift_Sidetrack rift)
@@ -546,7 +634,9 @@ public void StartVoteSidetrack(DewPlayer player, Rift_Sidetrack rift)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `rift` | [`Rift_Sidetrack`](/api/Global.Rift_Sidetrack) |  |
 
-### `SyncNodeChanges(int)`
+:::
+
+::: details `SyncNodeChanges(int)`
 
 Force node changes to be synced across clients.
 
@@ -559,7 +649,9 @@ public void SyncNodeChanges(int nodeIndex)
 | :--- | :--- | :--- |
 | `nodeIndex` | `int` |  |
 
-### `TravelToNode(int, bool, bool, bool)`
+:::
+
+::: details `TravelToNode(int, bool, bool, bool)`
 
 ```csharp
 public void TravelToNode(int to, bool advanceTurn = true, bool isSidetrackTransition = false, bool ignoreInterrupts = false)
@@ -573,7 +665,9 @@ public void TravelToNode(int to, bool advanceTurn = true, bool isSidetrackTransi
 | `isSidetrackTransition` | `bool` |  |
 | `ignoreInterrupts` | `bool` |  |
 
-### `TravelToZone(Zone, bool)`
+:::
+
+::: details `TravelToZone(Zone, bool)`
 
 ```csharp
 public void TravelToZone(Zone prefab, bool noAdvance = false)
@@ -585,7 +679,9 @@ public void TravelToZone(Zone prefab, bool noAdvance = false)
 | `prefab` | [`Zone`](/api/Global.Zone) |  |
 | `noAdvance` | `bool` |  |
 
-### `TravelWithValidationAndConfirmation(Action, bool)`
+:::
+
+::: details `TravelWithValidationAndConfirmation(Action, bool)`
 
 Check for active vote, artifact window, leftover rewards and hero souls.
 
@@ -599,7 +695,9 @@ public void TravelWithValidationAndConfirmation(Action action, bool ignoreSidetr
 | `action` | `System.Action` |  |
 | `ignoreSidetrack` | `bool` |  |
 
-### `TryGetNodeIndexForNextGoal(GetNodeIndexSettings, out int)`
+:::
+
+::: details `TryGetNodeIndexForNextGoal(GetNodeIndexSettings, out int)`
 
 Get a good node location for next goal (revive player, quest, etc)Unvisited node in desired distance, preferably closer to boss node.
 
@@ -615,7 +713,9 @@ public bool TryGetNodeIndexForNextGoal(GetNodeIndexSettings s, out int nodeIndex
 
 **Returns:** `bool`
 
-### `UpdateModifiersByHunterStatus(int)`
+:::
+
+::: details `UpdateModifiersByHunterStatus(int)`
 
 ```csharp
 public void UpdateModifiersByHunterStatus(int currentTravelDestinationNode = -1)
@@ -625,3 +725,5 @@ public void UpdateModifiersByHunterStatus(int currentTravelDestinationNode = -1)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `currentTravelDestinationNode` | `int` |  |
+
+:::

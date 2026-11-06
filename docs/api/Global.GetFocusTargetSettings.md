@@ -8,7 +8,9 @@
 public struct GetFocusTargetSettings
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,3 +22,5 @@ public struct GetFocusTargetSettings
 | **`normalizedDistLimit`** | `public Vector2 normalizedDistLimit` |  |
 | **`normalizedPerpendicularDistLimit`** | `public Vector2 normalizedPerpendicularDistLimit` |  |
 | **`useCenterOfRect`** | `public bool useCenterOfRect` |  |
+
+:::

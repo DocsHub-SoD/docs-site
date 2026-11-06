@@ -8,9 +8,9 @@
 public interface IGamepadFocusableOverrideInput
 ```
 
-## Methods
+## Methods (7)
 
-### `OnGamepadBack()`
+::: details `OnGamepadBack()`
 
 ```csharp
 bool OnGamepadBack()
@@ -18,7 +18,9 @@ bool OnGamepadBack()
 
 **Returns:** `bool`
 
-### `OnGamepadConfirm()`
+:::
+
+::: details `OnGamepadConfirm()`
 
 ```csharp
 bool OnGamepadConfirm()
@@ -26,7 +28,9 @@ bool OnGamepadConfirm()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadDown()`
+:::
+
+::: details `OnGamepadDpadDown()`
 
 ```csharp
 bool OnGamepadDpadDown()
@@ -34,7 +38,9 @@ bool OnGamepadDpadDown()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadLeft()`
+:::
+
+::: details `OnGamepadDpadLeft()`
 
 ```csharp
 bool OnGamepadDpadLeft()
@@ -42,7 +48,9 @@ bool OnGamepadDpadLeft()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadRight()`
+:::
+
+::: details `OnGamepadDpadRight()`
 
 ```csharp
 bool OnGamepadDpadRight()
@@ -50,7 +58,9 @@ bool OnGamepadDpadRight()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadUp()`
+:::
+
+::: details `OnGamepadDpadUp()`
 
 ```csharp
 bool OnGamepadDpadUp()
@@ -58,8 +68,12 @@ bool OnGamepadDpadUp()
 
 **Returns:** `bool`
 
-### `OnGamepadUpdate()`
+:::
+
+::: details `OnGamepadUpdate()`
 
 ```csharp
 void OnGamepadUpdate()
 ```
+
+:::

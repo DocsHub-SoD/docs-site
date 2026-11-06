@@ -8,7 +8,9 @@
 public class ArtifactWorldModel : MonoBehaviour
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public class ArtifactWorldModel : MonoBehaviour
 | **`interactPivot`** | `public Transform interactPivot` |  |
 | **`tinted`** | `public GameObject[] tinted` |  |
 
-## Methods
+:::
 
-### `Setup(Artifact)`
+## Methods (1)
+
+::: details `Setup(Artifact)`
 
 ```csharp
 public void Setup(Artifact a)
@@ -32,3 +36,5 @@ public void Setup(Artifact a)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `a` | [`Artifact`](/api/Global.Artifact) |  |
+
+:::

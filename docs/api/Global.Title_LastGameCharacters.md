@@ -9,16 +9,20 @@
 public class Title_LastGameCharacters : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`displayingObject`** | `public GameObject displayingObject` |  |
 | **`models`** | `public CharacterModelDisplay[] models` |  |
 
-## Methods
+:::
 
-### `LogicUpdate(float)`
+## Methods (1)
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -28,3 +32,5 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

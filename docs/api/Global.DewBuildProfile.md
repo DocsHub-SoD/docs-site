@@ -9,7 +9,9 @@
 public class DewBuildProfile : ScriptableObject
 ```
 
-## Fields
+## Fields (24)
+
+::: details Click to expand Fields (24)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -38,15 +40,21 @@ public class DewBuildProfile : ScriptableObject
 | **`useSteamLobbyAndRelay`** | `[ShowIf("@platform == PlatformType.STEAM", true)] public bool useSteamLobbyAndRelay` |  |
 | **`worldNodeCountOffset`** | `public int worldNodeCountOffset` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`current`** | `public static DewBuildProfile current { get; }` |  |
 
-## Methods
+:::
 
-### `GetBundleVersion(string)`
+## Methods (6)
+
+::: details `GetBundleVersion(string)`
 
 ```csharp
 public string GetBundleVersion(string codename)
@@ -59,7 +67,9 @@ public string GetBundleVersion(string codename)
 
 **Returns:** `string`
 
-### `GetExtraScriptingDefines()`
+:::
+
+::: details `GetExtraScriptingDefines()`
 
 ```csharp
 public string[] GetExtraScriptingDefines()
@@ -67,7 +77,9 @@ public string[] GetExtraScriptingDefines()
 
 **Returns:** `string[]`
 
-### `GetFolderName(string)`
+:::
+
+::: details `GetFolderName(string)`
 
 ```csharp
 public string GetFolderName(string codename)
@@ -80,7 +92,9 @@ public string GetFolderName(string codename)
 
 **Returns:** `string`
 
-### `HasFeature(BuildFeatureTag)`
+:::
+
+::: details `HasFeature(BuildFeatureTag)`
 
 ```csharp
 public bool HasFeature(BuildFeatureTag tag)
@@ -93,14 +107,20 @@ public bool HasFeature(BuildFeatureTag tag)
 
 **Returns:** `bool`
 
-### `Init()`
+:::
+
+::: details `Init()`
 
 ```csharp
 public void Init()
 ```
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

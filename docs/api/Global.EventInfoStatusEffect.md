@@ -8,9 +8,13 @@
 public struct EventInfoStatusEffect
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`effect`** | `public StatusEffect effect` |  |
 | **`victim`** | `public Entity victim` |  |
+
+:::

@@ -8,16 +8,20 @@
 public static class DewLocalization
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`buildData`** | `public static DewLocalizationBuildData buildData { get; }` |  |
 | **`data`** | `public static PerLanguageLocalizationData data { get; }` |  |
 
-## Methods
+:::
 
-### `CaptureDescriptionExpressions(IReadOnlyList<LocaleNode>, Dictionary<string, string>, DescriptionSettings)`
+## Methods (55)
+
+::: details `CaptureDescriptionExpressions(IReadOnlyList&lt;LocaleNode&gt;, Dictionary&lt;string, string&gt;, DescriptionSettings)`
 
 ```csharp
 public static void CaptureDescriptionExpressions(IReadOnlyList<LocaleNode> nodes, Dictionary<string, string> data, DewLocalization.DescriptionSettings settings)
@@ -30,7 +34,9 @@ public static void CaptureDescriptionExpressions(IReadOnlyList<LocaleNode> nodes
 | `data` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
 | `settings` | [`DewLocalization.DescriptionSettings`](/api/Global.DewLocalization) |  |
 
-### `ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode>, DescriptionSettings)`
+:::
+
+::: details `ConvertDescriptionNodesToText(IReadOnlyList&lt;LocaleNode&gt;, DescriptionSettings)`
 
 ```csharp
 public static string ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode> nodes, DewLocalization.DescriptionSettings settings)
@@ -44,7 +50,9 @@ public static string ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode> nod
 
 **Returns:** `string`
 
-### `EvaluateAndRenderExpression(ExpressionData, DescriptionSettings, bool)`
+:::
+
+::: details `EvaluateAndRenderExpression(ExpressionData, DescriptionSettings, bool)`
 
 ```csharp
 public static string EvaluateAndRenderExpression(ExpressionData exp, DewLocalization.DescriptionSettings settings, bool shouldShowDetail)
@@ -59,7 +67,9 @@ public static string EvaluateAndRenderExpression(ExpressionData exp, DewLocaliza
 
 **Returns:** `string`
 
-### `GetAchievementDescription(string)`
+:::
+
+::: details `GetAchievementDescription(string)`
 
 ```csharp
 public static string GetAchievementDescription(string key)
@@ -72,7 +82,9 @@ public static string GetAchievementDescription(string key)
 
 **Returns:** `string`
 
-### `GetAchievementName(string)`
+:::
+
+::: details `GetAchievementName(string)`
 
 ```csharp
 public static string GetAchievementName(string key)
@@ -85,7 +97,9 @@ public static string GetAchievementName(string key)
 
 **Returns:** `string`
 
-### `GetArtifactKey(string)`
+:::
+
+::: details `GetArtifactKey(string)`
 
 ```csharp
 public static string GetArtifactKey(string artifactType)
@@ -98,7 +112,9 @@ public static string GetArtifactKey(string artifactType)
 
 **Returns:** `string`
 
-### `GetArtifactKey(Type)`
+:::
+
+::: details `GetArtifactKey(Type)`
 
 ```csharp
 public static string GetArtifactKey(Type artifactType)
@@ -111,7 +127,9 @@ public static string GetArtifactKey(Type artifactType)
 
 **Returns:** `string`
 
-### `GetArtifactName(string)`
+:::
+
+::: details `GetArtifactName(string)`
 
 ```csharp
 public static string GetArtifactName(string key)
@@ -124,7 +142,9 @@ public static string GetArtifactName(string key)
 
 **Returns:** `string`
 
-### `GetArtifactShortStory(string)`
+:::
+
+::: details `GetArtifactShortStory(string)`
 
 ```csharp
 public static string[] GetArtifactShortStory(string key)
@@ -137,7 +157,9 @@ public static string[] GetArtifactShortStory(string key)
 
 **Returns:** `string[]`
 
-### `GetArtifactStory(string)`
+:::
+
+::: details `GetArtifactStory(string)`
 
 ```csharp
 public static string GetArtifactStory(string key)
@@ -150,7 +172,9 @@ public static string GetArtifactStory(string key)
 
 **Returns:** `string`
 
-### `GetConversationData(string)`
+:::
+
+::: details `GetConversationData(string)`
 
 ```csharp
 public static ConversationData GetConversationData(string key)
@@ -163,7 +187,9 @@ public static ConversationData GetConversationData(string key)
 
 **Returns:** `DewInternal.ConversationData`
 
-### `GetCurseDescription(string)`
+:::
+
+::: details `GetCurseDescription(string)`
 
 ```csharp
 public static List<LocaleNode> GetCurseDescription(string key)
@@ -176,7 +202,9 @@ public static List<LocaleNode> GetCurseDescription(string key)
 
 **Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
-### `GetCurseKey(string)`
+:::
+
+::: details `GetCurseKey(string)`
 
 ```csharp
 public static string GetCurseKey(string name)
@@ -189,7 +217,9 @@ public static string GetCurseKey(string name)
 
 **Returns:** `string`
 
-### `GetCurseName(string)`
+:::
+
+::: details `GetCurseName(string)`
 
 ```csharp
 public static string GetCurseName(string key)
@@ -202,7 +232,9 @@ public static string GetCurseName(string key)
 
 **Returns:** `string`
 
-### `GetCurseShortDescription(string)`
+:::
+
+::: details `GetCurseShortDescription(string)`
 
 ```csharp
 public static List<LocaleNode> GetCurseShortDescription(string key)
@@ -215,7 +247,9 @@ public static List<LocaleNode> GetCurseShortDescription(string key)
 
 **Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
-### `GetFormat(string, string)`
+:::
+
+::: details `GetFormat(string, string)`
 
 ```csharp
 public static string GetFormat(string formatString, string lang = null)
@@ -229,7 +263,9 @@ public static string GetFormat(string formatString, string lang = null)
 
 **Returns:** `string`
 
-### `GetGemDescription(string)`
+:::
+
+::: details `GetGemDescription(string)`
 
 ```csharp
 public static IReadOnlyList<LocaleNode> GetGemDescription(string key)
@@ -242,7 +278,9 @@ public static IReadOnlyList<LocaleNode> GetGemDescription(string key)
 
 **Returns:** `System.Collections.Generic.IReadOnlyList<T><LocaleNode>`
 
-### `GetGemDescriptionKey(Gem)`
+:::
+
+::: details `GetGemDescriptionKey(Gem)`
 
 ```csharp
 public static string GetGemDescriptionKey(Gem gem)
@@ -255,7 +293,9 @@ public static string GetGemDescriptionKey(Gem gem)
 
 **Returns:** `string`
 
-### `GetGemKey(string)`
+:::
+
+::: details `GetGemKey(string)`
 
 ```csharp
 public static string GetGemKey(string gemType)
@@ -268,7 +308,9 @@ public static string GetGemKey(string gemType)
 
 **Returns:** `string`
 
-### `GetGemKey(Type)`
+:::
+
+::: details `GetGemKey(Type)`
 
 ```csharp
 public static string GetGemKey(Type gemType)
@@ -281,7 +323,9 @@ public static string GetGemKey(Type gemType)
 
 **Returns:** `string`
 
-### `GetGemMemory(string)`
+:::
+
+::: details `GetGemMemory(string)`
 
 ```csharp
 public static string GetGemMemory(string key)
@@ -294,7 +338,9 @@ public static string GetGemMemory(string key)
 
 **Returns:** `string`
 
-### `GetGemName(Gem)`
+:::
+
+::: details `GetGemName(Gem)`
 
 ```csharp
 public static string GetGemName(Gem gem)
@@ -307,7 +353,9 @@ public static string GetGemName(Gem gem)
 
 **Returns:** `string`
 
-### `GetGemName(string)`
+:::
+
+::: details `GetGemName(string)`
 
 ```csharp
 public static string GetGemName(string key)
@@ -320,7 +368,9 @@ public static string GetGemName(string key)
 
 **Returns:** `string`
 
-### `GetGemNameKey(Gem)`
+:::
+
+::: details `GetGemNameKey(Gem)`
 
 ```csharp
 public static string GetGemNameKey(Gem gem)
@@ -333,7 +383,9 @@ public static string GetGemNameKey(Gem gem)
 
 **Returns:** `string`
 
-### `GetGemShortDescription(string)`
+:::
+
+::: details `GetGemShortDescription(string)`
 
 ```csharp
 public static string GetGemShortDescription(string key)
@@ -346,7 +398,9 @@ public static string GetGemShortDescription(string key)
 
 **Returns:** `string`
 
-### `GetGemTemplate(string)`
+:::
+
+::: details `GetGemTemplate(string)`
 
 ```csharp
 public static string GetGemTemplate(string key)
@@ -359,7 +413,9 @@ public static string GetGemTemplate(string key)
 
 **Returns:** `string`
 
-### `GetRecommendedSupportedLanguage()`
+:::
+
+::: details `GetRecommendedSupportedLanguage()`
 
 ```csharp
 public static string GetRecommendedSupportedLanguage()
@@ -367,7 +423,9 @@ public static string GetRecommendedSupportedLanguage()
 
 **Returns:** `string`
 
-### `GetSkillDescription(string, int)`
+:::
+
+::: details `GetSkillDescription(string, int)`
 
 ```csharp
 public static List<LocaleNode> GetSkillDescription(string key, int configIndex)
@@ -381,7 +439,9 @@ public static List<LocaleNode> GetSkillDescription(string key, int configIndex)
 
 **Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
-### `GetSkillDescriptionKey(SkillTrigger, int)`
+:::
+
+::: details `GetSkillDescriptionKey(SkillTrigger, int)`
 
 ```csharp
 public static string GetSkillDescriptionKey(SkillTrigger skill, int configIndex)
@@ -395,7 +455,9 @@ public static string GetSkillDescriptionKey(SkillTrigger skill, int configIndex)
 
 **Returns:** `string`
 
-### `GetSkillKey(string)`
+:::
+
+::: details `GetSkillKey(string)`
 
 ```csharp
 public static string GetSkillKey(string skillType)
@@ -408,7 +470,9 @@ public static string GetSkillKey(string skillType)
 
 **Returns:** `string`
 
-### `GetSkillKey(Type)`
+:::
+
+::: details `GetSkillKey(Type)`
 
 ```csharp
 public static string GetSkillKey(Type skillType)
@@ -421,7 +485,9 @@ public static string GetSkillKey(Type skillType)
 
 **Returns:** `string`
 
-### `GetSkillLevelKey(int)`
+:::
+
+::: details `GetSkillLevelKey(int)`
 
 ```csharp
 public static string GetSkillLevelKey(int level)
@@ -434,7 +500,9 @@ public static string GetSkillLevelKey(int level)
 
 **Returns:** `string`
 
-### `GetSkillLevelSuffix(int)`
+:::
+
+::: details `GetSkillLevelSuffix(int)`
 
 ```csharp
 public static string GetSkillLevelSuffix(int level)
@@ -447,7 +515,9 @@ public static string GetSkillLevelSuffix(int level)
 
 **Returns:** `string`
 
-### `GetSkillLevelTemplate(int, int?)`
+:::
+
+::: details `GetSkillLevelTemplate(int, int?)`
 
 ```csharp
 public static string GetSkillLevelTemplate(int level, int? toLevel = null)
@@ -461,7 +531,9 @@ public static string GetSkillLevelTemplate(int level, int? toLevel = null)
 
 **Returns:** `string`
 
-### `GetSkillMemory(string)`
+:::
+
+::: details `GetSkillMemory(string)`
 
 ```csharp
 public static string GetSkillMemory(string key)
@@ -474,7 +546,9 @@ public static string GetSkillMemory(string key)
 
 **Returns:** `string`
 
-### `GetSkillName(SkillTrigger, int)`
+:::
+
+::: details `GetSkillName(SkillTrigger, int)`
 
 ```csharp
 public static string GetSkillName(SkillTrigger skill, int configIndex)
@@ -488,7 +562,9 @@ public static string GetSkillName(SkillTrigger skill, int configIndex)
 
 **Returns:** `string`
 
-### `GetSkillName(string, int)`
+:::
+
+::: details `GetSkillName(string, int)`
 
 ```csharp
 public static string GetSkillName(string key, int configIndex)
@@ -502,7 +578,9 @@ public static string GetSkillName(string key, int configIndex)
 
 **Returns:** `string`
 
-### `GetSkillNameKey(SkillTrigger, int)`
+:::
+
+::: details `GetSkillNameKey(SkillTrigger, int)`
 
 ```csharp
 public static string GetSkillNameKey(SkillTrigger skill, int configIndex)
@@ -516,7 +594,9 @@ public static string GetSkillNameKey(SkillTrigger skill, int configIndex)
 
 **Returns:** `string`
 
-### `GetSkillShortDesc(string, int)`
+:::
+
+::: details `GetSkillShortDesc(string, int)`
 
 ```csharp
 public static string GetSkillShortDesc(string key, int configIndex)
@@ -530,7 +610,9 @@ public static string GetSkillShortDesc(string key, int configIndex)
 
 **Returns:** `string`
 
-### `GetStarDescription(string)`
+:::
+
+::: details `GetStarDescription(string)`
 
 ```csharp
 public static List<LocaleNode> GetStarDescription(string key)
@@ -543,7 +625,9 @@ public static List<LocaleNode> GetStarDescription(string key)
 
 **Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
-### `GetStarDescription(Type)`
+:::
+
+::: details `GetStarDescription(Type)`
 
 ```csharp
 public static List<LocaleNode> GetStarDescription(Type type)
@@ -556,7 +640,9 @@ public static List<LocaleNode> GetStarDescription(Type type)
 
 **Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
-### `GetStarLore(string)`
+:::
+
+::: details `GetStarLore(string)`
 
 ```csharp
 public static string GetStarLore(string key)
@@ -569,7 +655,9 @@ public static string GetStarLore(string key)
 
 **Returns:** `string`
 
-### `GetStarName(string)`
+:::
+
+::: details `GetStarName(string)`
 
 ```csharp
 public static string GetStarName(string key)
@@ -582,7 +670,9 @@ public static string GetStarName(string key)
 
 **Returns:** `string`
 
-### `GetStarName(Type)`
+:::
+
+::: details `GetStarName(Type)`
 
 ```csharp
 public static string GetStarName(Type type)
@@ -595,7 +685,9 @@ public static string GetStarName(Type type)
 
 **Returns:** `string`
 
-### `GetTreasureDescription(string)`
+:::
+
+::: details `GetTreasureDescription(string)`
 
 ```csharp
 public static IReadOnlyList<LocaleNode> GetTreasureDescription(string key)
@@ -608,7 +700,9 @@ public static IReadOnlyList<LocaleNode> GetTreasureDescription(string key)
 
 **Returns:** `System.Collections.Generic.IReadOnlyList<T><LocaleNode>`
 
-### `GetTreasureKey(string)`
+:::
+
+::: details `GetTreasureKey(string)`
 
 ```csharp
 public static string GetTreasureKey(string treasureType)
@@ -621,7 +715,9 @@ public static string GetTreasureKey(string treasureType)
 
 **Returns:** `string`
 
-### `GetTreasureLore(string)`
+:::
+
+::: details `GetTreasureLore(string)`
 
 ```csharp
 public static string GetTreasureLore(string key)
@@ -634,7 +730,9 @@ public static string GetTreasureLore(string key)
 
 **Returns:** `string`
 
-### `GetTreasureName(string)`
+:::
+
+::: details `GetTreasureName(string)`
 
 ```csharp
 public static string GetTreasureName(string key)
@@ -647,7 +745,9 @@ public static string GetTreasureName(string key)
 
 **Returns:** `string`
 
-### `GetUIValue(string)`
+:::
+
+::: details `GetUIValue(string)`
 
 ```csharp
 public static string GetUIValue(string key)
@@ -660,7 +760,9 @@ public static string GetUIValue(string key)
 
 **Returns:** `string`
 
-### `HighlightKeywords(string)`
+:::
+
+::: details `HighlightKeywords(string)`
 
 ```csharp
 public static string HighlightKeywords(string input)
@@ -673,13 +775,17 @@ public static string HighlightKeywords(string input)
 
 **Returns:** `string`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 ```csharp
 public static void Initialize()
 ```
 
-### `ProcessGenericBacktickedString(string, object, string)`
+:::
+
+::: details `ProcessGenericBacktickedString(string, object, string)`
 
 refObject can be any object including System.Type.Supported Field Types: Field/const value in refObject, Field/const value in refType instance of DewResources Database.
 
@@ -696,7 +802,9 @@ public static string ProcessGenericBacktickedString(string text, object refObjec
 
 **Returns:** `string`
 
-### `RenderChangedValue(string, string)`
+:::
+
+::: details `RenderChangedValue(string, string)`
 
 ```csharp
 public static string RenderChangedValue(string prev, string after)
@@ -710,7 +818,9 @@ public static string RenderChangedValue(string prev, string after)
 
 **Returns:** `string`
 
-### `RenderWeakenedValue(string, string)`
+:::
+
+::: details `RenderWeakenedValue(string, string)`
 
 ```csharp
 public static string RenderWeakenedValue(string prev, string after)
@@ -724,7 +834,9 @@ public static string RenderWeakenedValue(string prev, string after)
 
 **Returns:** `string`
 
-### `TryGetUIValue(string, out string)`
+:::
+
+::: details `TryGetUIValue(string, out string)`
 
 ```csharp
 public static bool TryGetUIValue(string key, out string value)
@@ -737,3 +849,5 @@ public static bool TryGetUIValue(string key, out string value)
 | `value` | `string` |  |
 
 **Returns:** `bool`
+
+:::

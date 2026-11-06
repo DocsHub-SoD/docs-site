@@ -8,7 +8,9 @@
 public class DewProfile.AchievementData
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class DewProfile.AchievementData
 | **`isNew`** | `public bool isNew` |  |
 | **`maxProgress`** | `public int maxProgress` |  |
 | **`persistentVariables`** | `public Dictionary<string, string> persistentVariables` |  |
+
+:::

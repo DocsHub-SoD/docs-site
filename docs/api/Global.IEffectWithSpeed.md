@@ -8,9 +8,9 @@
 public interface IEffectWithSpeed
 ```
 
-## Methods
+## Methods (1)
 
-### `ApplySpeedMultiplier(float)`
+::: details `ApplySpeedMultiplier(float)`
 
 ```csharp
 void ApplySpeedMultiplier(float speed)
@@ -20,3 +20,5 @@ void ApplySpeedMultiplier(float speed)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `speed` | `float` |  |
+
+:::

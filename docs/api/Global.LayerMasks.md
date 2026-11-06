@@ -8,7 +8,9 @@
 public static class LayerMasks
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public static class LayerMasks
 | **`Ground`** | `public static readonly int Ground` |  |
 | **`IncludeInNavigation`** | `public static readonly int IncludeInNavigation` |  |
 | **`Interactable`** | `public static readonly int Interactable` |  |
+
+:::

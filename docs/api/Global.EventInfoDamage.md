@@ -8,7 +8,9 @@
 public struct EventInfoDamage
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public struct EventInfoDamage
 | **`damage`** | `public FinalDamageData damage` |  |
 | **`negatedAmountByShield`** | `public float negatedAmountByShield` |  |
 | **`victim`** | `public Entity victim` |  |
+
+:::

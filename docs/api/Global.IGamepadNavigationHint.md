@@ -8,9 +8,9 @@
 public interface IGamepadNavigationHint
 ```
 
-## Methods
+## Methods (4)
 
-### `TryGetDown(out IGamepadFocusable)`
+::: details `TryGetDown(out IGamepadFocusable)`
 
 Return false to fallback to default generic navigation
 
@@ -25,7 +25,9 @@ bool TryGetDown(out IGamepadFocusable next)
 
 **Returns:** `bool`
 
-### `TryGetLeft(out IGamepadFocusable)`
+:::
+
+::: details `TryGetLeft(out IGamepadFocusable)`
 
 Return false to fallback to default generic navigation
 
@@ -40,7 +42,9 @@ bool TryGetLeft(out IGamepadFocusable next)
 
 **Returns:** `bool`
 
-### `TryGetRight(out IGamepadFocusable)`
+:::
+
+::: details `TryGetRight(out IGamepadFocusable)`
 
 Return false to fallback to default generic navigation
 
@@ -55,7 +59,9 @@ bool TryGetRight(out IGamepadFocusable next)
 
 **Returns:** `bool`
 
-### `TryGetUp(out IGamepadFocusable)`
+:::
+
+::: details `TryGetUp(out IGamepadFocusable)`
 
 Return false to fallback to default generic navigation
 
@@ -69,3 +75,5 @@ bool TryGetUp(out IGamepadFocusable next)
 | `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
+
+:::

@@ -9,7 +9,9 @@
 public class Dash
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,9 +23,11 @@ public class Dash
 | **`rotateForward`** | `public bool rotateForward` |  |
 | **`useLinearSweep`** | `public bool useLinearSweep` |  |
 
-## Methods
+:::
 
-### `ApplyByDestination(Entity, Vector3, Action<DispByDestination>)`
+## Methods (2)
+
+::: details `ApplyByDestination(Entity, Vector3, Action&lt;DispByDestination&gt;)`
 
 ```csharp
 public void ApplyByDestination(Entity ent, Vector3 dest, Action<DispByDestination> beforeApply = null)
@@ -36,7 +40,9 @@ public void ApplyByDestination(Entity ent, Vector3 dest, Action<DispByDestinatio
 | `dest` | `UnityEngine.Vector3` |  |
 | `beforeApply` | [`System.Action<T><DispByDestination>`](/api/Global.DispByDestination) |  |
 
-### `ApplyByDirection(Entity, Vector3, Action<DispByDestination>)`
+:::
+
+::: details `ApplyByDirection(Entity, Vector3, Action&lt;DispByDestination&gt;)`
 
 ```csharp
 public void ApplyByDirection(Entity ent, Vector3 dir, Action<DispByDestination> beforeApply = null)
@@ -48,3 +54,5 @@ public void ApplyByDirection(Entity ent, Vector3 dir, Action<DispByDestination> 
 | `ent` | [`Entity`](/api/Global.Entity) |  |
 | `dir` | `UnityEngine.Vector3` |  |
 | `beforeApply` | [`System.Action<T><DispByDestination>`](/api/Global.DispByDestination) |  |
+
+:::

@@ -8,9 +8,9 @@
 public static class EntityCheck
 ```
 
-## Methods
+## Methods (2)
 
-### `IsAnyBoss(Entity)`
+::: details `IsAnyBoss(Entity)`
 
 ```csharp
 public static bool IsAnyBoss(this Entity e)
@@ -23,7 +23,9 @@ public static bool IsAnyBoss(this Entity e)
 
 **Returns:** `bool`
 
-### `IsNullInactiveDeadOrKnockedOut(Entity)`
+:::
+
+::: details `IsNullInactiveDeadOrKnockedOut(Entity)`
 
 ```csharp
 public static bool IsNullInactiveDeadOrKnockedOut(this Entity e)
@@ -35,3 +37,5 @@ public static bool IsNullInactiveDeadOrKnockedOut(this Entity e)
 | `e` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

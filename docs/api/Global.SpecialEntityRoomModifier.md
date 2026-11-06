@@ -9,7 +9,9 @@
 public abstract class SpecialEntityRoomModifier : RoomModifierBase, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public abstract class SpecialEntityRoomModifier : RoomModifierBase, ILogicUpdate
 | **`spawnedGold`** | `public Vector2Int spawnedGold` |  |
 | **`spawnedStardust`** | `public Vector2Int spawnedStardust` |  |
 
-## Methods
+:::
 
-### `GetEntityType()`
+## Methods (4)
+
+::: details `GetEntityType()`
 
 ```csharp
 protected abstract Type GetEntityType()
@@ -28,19 +32,25 @@ protected abstract Type GetEntityType()
 
 **Returns:** `System.Type`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `SpawnNpc(Vector3)`
+:::
+
+::: details `SpawnNpc(Vector3)`
 
 ```csharp
 protected virtual Entity SpawnNpc(Vector3 pos)
@@ -52,3 +62,5 @@ protected virtual Entity SpawnNpc(Vector3 pos)
 | `pos` | `UnityEngine.Vector3` |  |
 
 **Returns:** `Entity`
+
+:::

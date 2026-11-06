@@ -17,7 +17,9 @@
 public class Entity : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (24)
+
+::: details Click to expand Fields (24)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -46,7 +48,11 @@ public class Entity : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`takenManaHealProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> takenManaHealProcessor` | Processor for received mana heals. This is only valid on server. |
 | **`takenShieldProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> takenShieldProcessor` | Processor for received shields. This is only valid on server. |
 
-## Properties
+:::
+
+## Properties (22)
+
+::: details Click to expand Properties (22)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -73,9 +79,11 @@ public class Entity : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`Status`** | `public EntityStatus Status { get; }` |  |
 | **`Visual`** | `public EntityVisual Visual { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (28)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -86,7 +94,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AIUpdate(ref EntityAIContext)`
+:::
+
+::: details `AIUpdate(ref EntityAIContext)`
 
 AI update will not fire if entity is channeling an ability.
 
@@ -99,13 +109,17 @@ protected virtual void AIUpdate(ref EntityAIContext context)
 | :--- | :--- | :--- |
 | `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanAggroTo(Entity)`
+:::
+
+::: details `CanAggroTo(Entity)`
 
 ```csharp
 public virtual bool CanAggroTo(Entity target)
@@ -118,7 +132,9 @@ public virtual bool CanAggroTo(Entity target)
 
 **Returns:** `bool`
 
-### `CheckEnemyOrNeutral(Entity)`
+:::
+
+::: details `CheckEnemyOrNeutral(Entity)`
 
 ```csharp
 public bool CheckEnemyOrNeutral(Entity target)
@@ -131,7 +147,9 @@ public bool CheckEnemyOrNeutral(Entity target)
 
 **Returns:** `bool`
 
-### `GetActorReadableName()`
+:::
+
+::: details `GetActorReadableName()`
 
 ```csharp
 public override string GetActorReadableName()
@@ -139,7 +157,9 @@ public override string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetNetworkAuthorityConnection()`
+:::
+
+::: details `GetNetworkAuthorityConnection()`
 
 ```csharp
 protected override NetworkConnectionToClient GetNetworkAuthorityConnection()
@@ -147,7 +167,9 @@ protected override NetworkConnectionToClient GetNetworkAuthorityConnection()
 
 **Returns:** `Mirror.NetworkConnectionToClient`
 
-### `GetRelation(Entity)`
+:::
+
+::: details `GetRelation(Entity)`
 
 ```csharp
 public EntityRelation GetRelation(Entity other)
@@ -160,7 +182,9 @@ public EntityRelation GetRelation(Entity other)
 
 **Returns:** `EntityRelation`
 
-### `GetStaggerSettings()`
+:::
+
+::: details `GetStaggerSettings()`
 
 ```csharp
 protected virtual Entity.StaggerSettings GetStaggerSettings()
@@ -168,7 +192,9 @@ protected virtual Entity.StaggerSettings GetStaggerSettings()
 
 **Returns:** `Entity.StaggerSettings`
 
-### `GetTeamRelation(DewPlayer)`
+:::
+
+::: details `GetTeamRelation(DewPlayer)`
 
 ```csharp
 public TeamRelation GetTeamRelation(DewPlayer other)
@@ -181,7 +207,9 @@ public TeamRelation GetTeamRelation(DewPlayer other)
 
 **Returns:** `TeamRelation`
 
-### `Kill()`
+:::
+
+::: details `Kill()`
 
 Kill this entity. Note this can be prevented by death interrupts.
 
@@ -189,7 +217,9 @@ Kill this entity. Note this can be prevented by death interrupts.
 public void Kill()
 ```
 
-### `KillNoInterrupt()`
+:::
+
+::: details `KillNoInterrupt()`
 
 Kill this entity ignoring any death interrupts.
 
@@ -197,13 +227,17 @@ Kill this entity ignoring any death interrupts.
 public void KillNoInterrupt()
 ```
 
-### `LoadEntityModelLocal()`
+:::
+
+::: details `LoadEntityModelLocal()`
 
 ```csharp
 public virtual void LoadEntityModelLocal()
 ```
 
-### `OnDeath(EventInfoKill)`
+:::
+
+::: details `OnDeath(EventInfoKill)`
 
 Called everywhere when this entity dies.
 
@@ -216,43 +250,57 @@ protected virtual void OnDeath(EventInfoKill info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnDrawGizmos()`
+:::
+
+::: details `OnDrawGizmos()`
 
 ```csharp
 protected virtual void OnDrawGizmos()
 ```
 
-### `OnModelLoaded()`
+:::
+
+::: details `OnModelLoaded()`
 
 ```csharp
 public virtual void OnModelLoaded()
 ```
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `ProcessReceivedDamage(ref DamageData, Actor)`
+:::
+
+::: details `ProcessReceivedDamage(ref DamageData, Actor)`
 
 Process the given damage with this entity's received damage preprocessors.
 
@@ -266,7 +314,9 @@ public void ProcessReceivedDamage(ref DamageData data, Actor actor)
 | `data` | [`DamageData`](/api/Global.DamageData) |  |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `ProcessReceivedHeal(ref HealData, Actor)`
+:::
+
+::: details `ProcessReceivedHeal(ref HealData, Actor)`
 
 Process the given heal with this entity's received heal preprocessors.
 
@@ -280,7 +330,9 @@ public void ProcessReceivedHeal(ref HealData data, Actor actor)
 | `data` | [`HealData`](/api/Global.HealData) |  |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `ProcessReceivedManaHeal(ref HealData, Actor)`
+:::
+
+::: details `ProcessReceivedManaHeal(ref HealData, Actor)`
 
 Process the given mana heal with this entity's received mana heal preprocessors.
 
@@ -294,7 +346,9 @@ public void ProcessReceivedManaHeal(ref HealData data, Actor actor)
 | `data` | [`HealData`](/api/Global.HealData) |  |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `ProcessReceivedShield(ref HealData, Actor)`
+:::
+
+::: details `ProcessReceivedShield(ref HealData, Actor)`
 
 ```csharp
 public void ProcessReceivedShield(ref HealData data, Actor actor)
@@ -306,7 +360,9 @@ public void ProcessReceivedShield(ref HealData data, Actor actor)
 | `data` | [`HealData`](/api/Global.HealData) |  |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
@@ -314,7 +370,9 @@ public override bool ShouldBeSavedWithRoom()
 
 **Returns:** `bool`
 
-### `Sleep()`
+:::
+
+::: details `Sleep()`
 
 Make this entity sleep.
 
@@ -322,7 +380,9 @@ Make this entity sleep.
 public void Sleep()
 ```
 
-### `Stagger(Vector3?)`
+:::
+
+::: details `Stagger(Vector3?)`
 
 ```csharp
 public void Stagger(Vector3? dir)
@@ -333,10 +393,14 @@ public void Stagger(Vector3? dir)
 | :--- | :--- | :--- |
 | `dir` | `UnityEngine.Vector3?` |  |
 
-### `WakeUp()`
+:::
+
+::: details `WakeUp()`
 
 Wake this entity up.
 
 ```csharp
 public void WakeUp()
 ```
+
+:::

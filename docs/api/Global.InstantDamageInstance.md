@@ -9,16 +9,20 @@
 public class InstantDamageInstance : DamageInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`damageDelay`** | `[Title("Instant Damage Instance", null, TitleAlignments.Left, true, true)] [LabelText("Delay")] public float damageDelay` |  |
 | **`mainEffectAfterDelay`** | `[LabelText("Main Effect (After Delay)")] public GameObject mainEffectAfterDelay` |  |
 
-## Methods
+:::
 
-### `OnAfterDelay()`
+## Methods (2)
+
+::: details `OnAfterDelay()`
 
 Called after instant damage instance's delay on server.
 
@@ -26,10 +30,14 @@ Called after instant damage instance's delay on server.
 protected virtual void OnAfterDelay()
 ```
 
-### `OnCreateSequenced()`
+:::
+
+::: details `OnCreateSequenced()`
 
 ```csharp
 protected override IEnumerator OnCreateSequenced()
 ```
 
 **Returns:** `System.Collections.IEnumerator`
+
+:::

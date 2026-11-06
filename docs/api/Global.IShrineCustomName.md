@@ -8,12 +8,14 @@
 public interface IShrineCustomName
 ```
 
-## Methods
+## Methods (1)
 
-### `GetRawName()`
+::: details `GetRawName()`
 
 ```csharp
 string GetRawName()
 ```
 
 **Returns:** `string`
+
+:::

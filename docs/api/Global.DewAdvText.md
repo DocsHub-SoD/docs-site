@@ -8,9 +8,9 @@
 public static class DewAdvText
 ```
 
-## Methods
+## Methods (10)
 
-### `Adv_ChatContent(DewPlayer, string)`
+::: details `Adv_ChatContent(DewPlayer, string)`
 
 ```csharp
 public static string Adv_ChatContent(DewPlayer player, string content)
@@ -24,7 +24,9 @@ public static string Adv_ChatContent(DewPlayer player, string content)
 
 **Returns:** `string`
 
-### `Adv_ColoredDescribedPlayerName(DewPlayer)`
+:::
+
+::: details `Adv_ColoredDescribedPlayerName(DewPlayer)`
 
 ```csharp
 public static string Adv_ColoredDescribedPlayerName(DewPlayer player)
@@ -37,7 +39,9 @@ public static string Adv_ColoredDescribedPlayerName(DewPlayer player)
 
 **Returns:** `string`
 
-### `Adv_Cost(Cost)`
+:::
+
+::: details `Adv_Cost(Cost)`
 
 ```csharp
 public static string Adv_Cost(Cost cost)
@@ -50,7 +54,9 @@ public static string Adv_Cost(Cost cost)
 
 **Returns:** `string`
 
-### `Adv_DescribedPlayerName(DewPlayer)`
+:::
+
+::: details `Adv_DescribedPlayerName(DewPlayer)`
 
 ```csharp
 public static string Adv_DescribedPlayerName(DewPlayer player)
@@ -63,7 +69,9 @@ public static string Adv_DescribedPlayerName(DewPlayer player)
 
 **Returns:** `string`
 
-### `Adv_Format(string, params string[])`
+:::
+
+::: details `Adv_Format(string, params string[])`
 
 ```csharp
 public static string Adv_Format(string template, params string[] args)
@@ -77,7 +85,9 @@ public static string Adv_Format(string template, params string[] args)
 
 **Returns:** `string`
 
-### `Adv_LocCurseName(string)`
+:::
+
+::: details `Adv_LocCurseName(string)`
 
 ```csharp
 public static string Adv_LocCurseName(string key)
@@ -90,7 +100,9 @@ public static string Adv_LocCurseName(string key)
 
 **Returns:** `string`
 
-### `Adv_LocCurseShortDesc(string)`
+:::
+
+::: details `Adv_LocCurseShortDesc(string)`
 
 ```csharp
 public static string Adv_LocCurseShortDesc(string key)
@@ -103,7 +115,9 @@ public static string Adv_LocCurseShortDesc(string key)
 
 **Returns:** `string`
 
-### `Adv_LocUI(string)`
+:::
+
+::: details `Adv_LocUI(string)`
 
 ```csharp
 public static string Adv_LocUI(string key)
@@ -116,7 +130,9 @@ public static string Adv_LocUI(string key)
 
 **Returns:** `string`
 
-### `Adv_Number(float, string)`
+:::
+
+::: details `Adv_Number(float, string)`
 
 ```csharp
 public static string Adv_Number(float value, string format = "#,##0")
@@ -130,7 +146,9 @@ public static string Adv_Number(float value, string format = "#,##0")
 
 **Returns:** `string`
 
-### `ConvertAdvToText(string)`
+:::
+
+::: details `ConvertAdvToText(string)`
 
 ```csharp
 public static string ConvertAdvToText(string adv)
@@ -142,3 +160,5 @@ public static string ConvertAdvToText(string adv)
 | `adv` | `string` |  |
 
 **Returns:** `string`
+
+:::

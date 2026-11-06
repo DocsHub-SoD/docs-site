@@ -9,7 +9,9 @@
 public class FxGibs : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,27 +21,35 @@ public class FxGibs : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpe
 | **`minImpulse`** | `public float minImpulse` |  |
 | **`randomImpulse`** | `public float randomImpulse` |  |
 
-## Methods
+:::
 
-### `OnInit()`
+## Methods (4)
+
+::: details `OnInit()`
 
 ```csharp
 protected override void OnInit()
 ```
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public override void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public override void Stop()
 ```
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -49,3 +59,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

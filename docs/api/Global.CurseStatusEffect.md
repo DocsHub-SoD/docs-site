@@ -10,7 +10,9 @@
 public class CurseStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,7 +22,11 @@ public class CurseStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDe
 | **`dontRemoveOnKnockOut`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public bool dontRemoveOnKnockOut` |  |
 | **`quest`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public Quest_KillToLiftCurse quest` |  |
 
-## Properties
+:::
+
+## Properties (6)
+
+::: details Click to expand Properties (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -31,9 +37,11 @@ public class CurseStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDe
 | **`progressType`** | `[SaveVar(SaveVarFlags.Default)] public QuestProgressType progressType { get; set; }` |  |
 | **`requiredAmount`** | `[SaveVar(SaveVarFlags.Default)] public int requiredAmount { get; set; }` |  |
 
-## Methods
+:::
 
-### `GetName()`
+## Methods (6)
+
+::: details `GetName()`
 
 ```csharp
 public string GetName()
@@ -41,7 +49,9 @@ public string GetName()
 
 **Returns:** `string`
 
-### `GetValue<T>(T[])`
+:::
+
+::: details `GetValue&lt;T&gt;(T[])`
 
 ```csharp
 public T GetValue<T>(T[] arr)
@@ -55,7 +65,9 @@ public T GetValue<T>(T[] arr)
 
 **Returns:** `T`
 
-### `IsViable(Entity)`
+:::
+
+::: details `IsViable(Entity)`
 
 Is this curse viable on this entity? Checked on server, on prefab CurseStatusEffect.If this returns false, this curse will not be chosen.
 
@@ -70,20 +82,28 @@ public virtual bool IsViable(Entity target)
 
 **Returns:** `bool`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
+
+:::

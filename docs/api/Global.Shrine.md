@@ -9,7 +9,9 @@
 public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IProp, IBanRoomNodesNearby
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,7 +32,11 @@ public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRout
 | **`useEffectLocal`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject useEffectLocal` |  |
 | **`useLockedEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject useLockedEffect` |  |
 
-## Properties
+:::
+
+## Properties (9)
+
+::: details Click to expand Properties (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -44,9 +50,11 @@ public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRout
 | **`scaleSpawnRateWithPlayers`** | `public bool scaleSpawnRateWithPlayers { get; }` |  |
 | **`totalUseCount`** | `[SaveVar(SaveVarFlags.Default)] public int totalUseCount { get; set; }` |  |
 
-## Methods
+:::
 
-### `CanAfford(Entity)`
+## Methods (15)
+
+::: details `CanAfford(Entity)`
 
 Checked everywhere.
 
@@ -61,7 +69,9 @@ public AffordType CanAfford(Entity entity)
 
 **Returns:** `AffordType`
 
-### `CanInteract(Entity)`
+:::
+
+::: details `CanInteract(Entity)`
 
 ```csharp
 public virtual bool CanInteract(Entity entity)
@@ -74,7 +84,9 @@ public virtual bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `DoPostUseRoutines(Entity)`
+:::
+
+::: details `DoPostUseRoutines(Entity)`
 
 Deduct cost from the entity, increment use count and invoke callbacks.
 
@@ -87,7 +99,9 @@ public void DoPostUseRoutines(Entity entity)
 | :--- | :--- | :--- |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
-### `GetClosestPointOnShrine(Vector3)`
+:::
+
+::: details `GetClosestPointOnShrine(Vector3)`
 
 ```csharp
 public Vector3 GetClosestPointOnShrine(Vector3 pos)
@@ -100,7 +114,9 @@ public Vector3 GetClosestPointOnShrine(Vector3 pos)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetCost(Entity)`
+:::
+
+::: details `GetCost(Entity)`
 
 Get gold/health cost of this shrine for specified activator. This must return consistent values across server and clients.
 
@@ -115,7 +131,9 @@ public virtual Cost? GetCost(Entity activator)
 
 **Returns:** `Cost?`
 
-### `GetRandomSpawnPosition(Vector3)`
+:::
+
+::: details `GetRandomSpawnPosition(Vector3)`
 
 ```csharp
 public Vector3 GetRandomSpawnPosition(Vector3 activatorPos)
@@ -128,7 +146,9 @@ public Vector3 GetRandomSpawnPosition(Vector3 activatorPos)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetUseCountByPlayer(DewPlayer)`
+:::
+
+::: details `GetUseCountByPlayer(DewPlayer)`
 
 ```csharp
 public int GetUseCountByPlayer(DewPlayer player)
@@ -141,7 +161,9 @@ public int GetUseCountByPlayer(DewPlayer player)
 
 **Returns:** `int`
 
-### `MakeAvailable()`
+:::
+
+::: details `MakeAvailable()`
 
 Forcibly make the shrine available for use. Callable on server.
 
@@ -150,7 +172,9 @@ Forcibly make the shrine available for use. Callable on server.
 public void MakeAvailable()
 ```
 
-### `MakeUnavailable()`
+:::
+
+::: details `MakeUnavailable()`
 
 Forcibly make the shrine unavailable for use. Callable on server.
 
@@ -159,19 +183,25 @@ Forcibly make the shrine unavailable for use. Callable on server.
 public void MakeUnavailable()
 ```
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnInteract(Entity, bool)`
+:::
+
+::: details `OnInteract(Entity, bool)`
 
 ```csharp
 public virtual void OnInteract(Entity entity, bool alt)
@@ -183,7 +213,9 @@ public virtual void OnInteract(Entity entity, bool alt)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
-### `OnUse(Entity)`
+:::
+
+::: details `OnUse(Entity)`
 
 Called on server when an entity uses this shrine. Return value must indicate success of this use.Returning true will play use effect, increment use count, and deduct cost from entity.
 
@@ -198,16 +230,22 @@ protected abstract bool OnUse(Entity entity)
 
 **Returns:** `bool`
 
-### `ResetUseCounts()`
+:::
+
+::: details `ResetUseCounts()`
 
 ```csharp
 public void ResetUseCounts()
 ```
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::

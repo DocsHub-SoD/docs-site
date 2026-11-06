@@ -9,7 +9,9 @@
 public class QuestManager : NetworkedManagerBase<QuestManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,16 +24,22 @@ public class QuestManager : NetworkedManagerBase<QuestManager>, ILogicUpdate
 | **`didCollectArtifactThisLoop`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public bool didCollectArtifactThisLoop` | Available on server. |
 | **`undiscoveredArtifacts`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> undiscoveredArtifacts` | Available on server. List of artifacts that are not discovered by any clients. |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`artifactPool`** | `public Type[] artifactPool { get; }` |  |
 | **`currentArtifact`** | `[SaveVar(SaveVarFlags.Default)] public string currentArtifact { get; }` |  |
 
-## Methods
+:::
 
-### `DiscoverArtifactAndShowStory(string)`
+## Methods (11)
+
+::: details `DiscoverArtifactAndShowStory(string)`
 
 Discover an artifact and show the story to everyone.
 
@@ -44,7 +52,9 @@ public void DiscoverArtifactAndShowStory(string artifact)
 | :--- | :--- | :--- |
 | `artifact` | `string` |  |
 
-### `HasQuest(Type)`
+:::
+
+::: details `HasQuest(Type)`
 
 ```csharp
 public bool HasQuest(Type type)
@@ -57,7 +67,9 @@ public bool HasQuest(Type type)
 
 **Returns:** `bool`
 
-### `HasQuest<T>()`
+:::
+
+::: details `HasQuest&lt;T&gt;()`
 
 ```csharp
 public bool HasQuest<T>() where T : DewQuest
@@ -70,19 +82,25 @@ public bool HasQuest<T>() where T : DewQuest
 
 **Returns:** `bool`
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `PickUpArtifact(string, DewPlayer, Vector3)`
+:::
+
+::: details `PickUpArtifact(string, DewPlayer, Vector3)`
 
 ```csharp
 public void PickUpArtifact(string artifactName, DewPlayer player, Vector3 worldPos)
@@ -95,13 +113,17 @@ public void PickUpArtifact(string artifactName, DewPlayer player, Vector3 worldP
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `worldPos` | `UnityEngine.Vector3` |  |
 
-### `RemoveArtifact()`
+:::
+
+::: details `RemoveArtifact()`
 
 ```csharp
 public void RemoveArtifact()
 ```
 
-### `StartQuest<T>(T, Action<T>)`
+:::
+
+::: details `StartQuest&lt;T&gt;(T, Action&lt;T&gt;)`
 
 ```csharp
 public T StartQuest<T>(T prefab, Action<T> beforePrepare = null) where T : DewQuest
@@ -116,7 +138,9 @@ public T StartQuest<T>(T prefab, Action<T> beforePrepare = null) where T : DewQu
 
 **Returns:** `T`
 
-### `StartQuest<T>(Action<T>)`
+:::
+
+::: details `StartQuest&lt;T&gt;(Action&lt;T&gt;)`
 
 ```csharp
 public T StartQuest<T>(Action<T> beforePrepare = null) where T : DewQuest
@@ -130,7 +154,9 @@ public T StartQuest<T>(Action<T> beforePrepare = null) where T : DewQuest
 
 **Returns:** `T`
 
-### `TryGetQuest(Type, out DewQuest)`
+:::
+
+::: details `TryGetQuest(Type, out DewQuest)`
 
 ```csharp
 public bool TryGetQuest(Type type, out DewQuest quest)
@@ -144,7 +170,9 @@ public bool TryGetQuest(Type type, out DewQuest quest)
 
 **Returns:** `bool`
 
-### `TryGetQuest<T>(out T)`
+:::
+
+::: details `TryGetQuest&lt;T&gt;(out T)`
 
 ```csharp
 public bool TryGetQuest<T>(out T quest) where T : DewQuest
@@ -157,3 +185,5 @@ public bool TryGetQuest<T>(out T quest) where T : DewQuest
 | `` | `T` |  |
 
 **Returns:** `bool`
+
+:::

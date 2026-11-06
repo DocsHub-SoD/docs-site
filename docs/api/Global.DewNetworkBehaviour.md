@@ -9,21 +9,25 @@
 public class DewNetworkBehaviour : NetworkBehaviour, ILogicUpdate
 ```
 
-## Methods
+## Methods (34)
 
-### `Awake()`
+::: details `Awake()`
 
 ```csharp
 protected virtual void Awake()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public virtual void FrameUpdate()
 ```
 
-### `FxApplySpeedMultiplier(GameObject, float)`
+:::
+
+::: details `FxApplySpeedMultiplier(GameObject, float)`
 
 Change speed of an effect, affecting ParticleSystems and IEffectWithSpeed inheritors.
 
@@ -37,7 +41,9 @@ public void FxApplySpeedMultiplier(GameObject effect, float multiplier)
 | `effect` | `UnityEngine.GameObject` |  |
 | `multiplier` | `float` |  |
 
-### `FxApplySpeedMultiplierNetworked(GameObject, float)`
+:::
+
+::: details `FxApplySpeedMultiplierNetworked(GameObject, float)`
 
 Change speed of an effect, affecting ParticleSystems and IEffectWithSpeed inheritors.
 
@@ -51,7 +57,9 @@ public void FxApplySpeedMultiplierNetworked(GameObject effect, float multiplier)
 | `effect` | `UnityEngine.GameObject` |  |
 | `multiplier` | `float` |  |
 
-### `FxPlay(GameObject, Entity, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlay(GameObject, Entity, Vector3, Quaternion?)`
 
 Play effect locally attached to given entity, positioned.
 
@@ -67,7 +75,9 @@ public void FxPlay(GameObject effect, Entity attach, Vector3 position, Quaternio
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlay(GameObject, Entity)`
+:::
+
+::: details `FxPlay(GameObject, Entity)`
 
 Play effect locally attached to given entity.
 
@@ -81,7 +91,9 @@ public void FxPlay(GameObject effect, Entity attach)
 | `effect` | `UnityEngine.GameObject` |  |
 | `attach` | [`Entity`](/api/Global.Entity) |  |
 
-### `FxPlay(GameObject, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlay(GameObject, Vector3, Quaternion?)`
 
 Play effect locally at given position.
 
@@ -96,7 +108,9 @@ public void FxPlay(GameObject effect, Vector3 position, Quaternion? rotation)
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlay(GameObject)`
+:::
+
+::: details `FxPlay(GameObject)`
 
 Play effect locally.
 
@@ -109,7 +123,9 @@ public void FxPlay(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `FxPlayNetworked(GameObject, Entity, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlayNetworked(GameObject, Entity, Vector3, Quaternion?)`
 
 Play effect everywhere attached to given entity, positioned. Only callable in server.
 
@@ -125,7 +141,9 @@ public void FxPlayNetworked(GameObject effect, Entity entity, Vector3 position, 
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlayNetworked(GameObject, Entity)`
+:::
+
+::: details `FxPlayNetworked(GameObject, Entity)`
 
 Play effect everywhere attached to given entity. Only callable in server.
 
@@ -139,7 +157,9 @@ public void FxPlayNetworked(GameObject effect, Entity entity)
 | `effect` | `UnityEngine.GameObject` |  |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
-### `FxPlayNetworked(GameObject, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlayNetworked(GameObject, Vector3, Quaternion?)`
 
 Play effect everywhere. Only callable in server.
 
@@ -154,7 +174,9 @@ public void FxPlayNetworked(GameObject effect, Vector3 position, Quaternion? rot
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlayNetworked(GameObject)`
+:::
+
+::: details `FxPlayNetworked(GameObject)`
 
 Play effect everywhere. Only callable in server.
 
@@ -167,7 +189,9 @@ public void FxPlayNetworked(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `FxPlayNew(GameObject, Entity, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlayNew(GameObject, Entity, Vector3, Quaternion?)`
 
 Instantiate and play effect locally attached to given entity, positioned.
 
@@ -183,7 +207,9 @@ public void FxPlayNew(GameObject effect, Entity attach, Vector3 position, Quater
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlayNew(GameObject, Entity)`
+:::
+
+::: details `FxPlayNew(GameObject, Entity)`
 
 Instantiate and play effect locally attached to given entity.
 
@@ -197,7 +223,9 @@ public void FxPlayNew(GameObject effect, Entity attach)
 | `effect` | `UnityEngine.GameObject` |  |
 | `attach` | [`Entity`](/api/Global.Entity) |  |
 
-### `FxPlayNew(GameObject, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlayNew(GameObject, Vector3, Quaternion?)`
 
 Instantiate and play effect locally at given position.
 
@@ -212,7 +240,9 @@ public void FxPlayNew(GameObject effect, Vector3 position, Quaternion? rotation)
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlayNew(GameObject)`
+:::
+
+::: details `FxPlayNew(GameObject)`
 
 Instantiate and play effect locally.
 
@@ -225,7 +255,9 @@ public void FxPlayNew(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `FxPlayNewNetworked(GameObject, Entity, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlayNewNetworked(GameObject, Entity, Vector3, Quaternion?)`
 
 Instantiate and play effect everywhere attached to given entity, positioned. Only callable in server.
 
@@ -241,7 +273,9 @@ public void FxPlayNewNetworked(GameObject effect, Entity entity, Vector3 positio
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlayNewNetworked(GameObject, Entity)`
+:::
+
+::: details `FxPlayNewNetworked(GameObject, Entity)`
 
 Instantiate and play effect everywhere attached to given entity. Only callable in server.
 
@@ -255,7 +289,9 @@ public void FxPlayNewNetworked(GameObject effect, Entity entity)
 | `effect` | `UnityEngine.GameObject` |  |
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
-### `FxPlayNewNetworked(GameObject, Vector3, Quaternion?)`
+:::
+
+::: details `FxPlayNewNetworked(GameObject, Vector3, Quaternion?)`
 
 Instantiate and play effect everywhere at given position. Only callable in server.
 
@@ -270,7 +306,9 @@ public void FxPlayNewNetworked(GameObject effect, Vector3 position, Quaternion? 
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
-### `FxPlayNewNetworked(GameObject)`
+:::
+
+::: details `FxPlayNewNetworked(GameObject)`
 
 Instantiate and play effect everywhere. Only callable in server.
 
@@ -283,7 +321,9 @@ public void FxPlayNewNetworked(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `FxStop(GameObject)`
+:::
+
+::: details `FxStop(GameObject)`
 
 Stop effect locally.
 
@@ -296,7 +336,9 @@ public void FxStop(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `FxStopNetworked(GameObject)`
+:::
+
+::: details `FxStopNetworked(GameObject)`
 
 Stop effect everywhere. Only callable in server. Use non-networked variant in DewEffect if you want to stop effect locally.
 
@@ -309,7 +351,9 @@ public void FxStopNetworked(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `GetComponent<T>(out T)`
+:::
+
+::: details `GetComponent&lt;T&gt;(out T)`
 
 ```csharp
 protected void GetComponent<T>(out T comp)
@@ -321,7 +365,9 @@ protected void GetComponent<T>(out T comp)
 | `comp` | `T` |  |
 | `` | `T` |  |
 
-### `InvalidateInstance()`
+:::
+
+::: details `InvalidateInstance()`
 
 Invalidate an instance from pool, preventing it from being reused.
 
@@ -329,7 +375,9 @@ Invalidate an instance from pool, preventing it from being reused.
 public void InvalidateInstance()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public virtual void LogicUpdate(float dt)
@@ -340,56 +388,76 @@ public virtual void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected virtual void OnDestroy()
 ```
 
-### `OnLateStart()`
+:::
+
+::: details `OnLateStart()`
 
 ```csharp
 public virtual void OnLateStart()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public virtual void OnLateStartServer()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public virtual void OnStart()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStop()`
+:::
+
+::: details `OnStop()`
 
 ```csharp
 public virtual void OnStop()
 ```
 
-### `OnStopClient()`
+:::
+
+::: details `OnStopClient()`
 
 ```csharp
 public override void OnStopClient()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
+
+:::

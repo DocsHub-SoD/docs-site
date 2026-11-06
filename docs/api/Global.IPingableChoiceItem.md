@@ -8,9 +8,13 @@
 public interface IPingableChoiceItem
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`choiceIndex`** | `int choiceIndex { get; }` |  |
 | **`shrine`** | `Object shrine { get; }` |  |
+
+:::

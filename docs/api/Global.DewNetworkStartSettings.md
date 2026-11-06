@@ -8,7 +8,9 @@
 public class DewNetworkStartSettings
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,3 +23,5 @@ public class DewNetworkStartSettings
 | **`lobbyType`** | `public DewLobbyType lobbyType` |  |
 | **`maxPlayers`** | `public int maxPlayers` |  |
 | **`networkMode`** | `public DewNetworkMode networkMode` |  |
+
+:::

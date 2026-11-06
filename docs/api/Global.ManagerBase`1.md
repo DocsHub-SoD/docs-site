@@ -10,29 +10,39 @@
 public class ManagerBase<T> : LogicBehaviour, ILogicUpdate where T : LogicBehaviour
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static T instance { get; }` | If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive. |
 | **`softInstance`** | `public static T softInstance { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (3)
+
+::: details `Awake()`
 
 ```csharp
 protected virtual void Awake()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
+
+:::

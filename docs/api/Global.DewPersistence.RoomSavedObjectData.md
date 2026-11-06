@@ -8,7 +8,9 @@
 public class DewPersistence.RoomSavedObjectData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,9 +18,11 @@ public class DewPersistence.RoomSavedObjectData
 | **`persistenceData`** | `public Dictionary<string, string> persistenceData` |  |
 | **`scenePath`** | `public string scenePath` |  |
 
-## Methods
+:::
 
-### `Capture(RoomSavedObject)`
+## Methods (1)
+
+::: details `Capture(RoomSavedObject)`
 
 This object is mutated, and self is returned.
 
@@ -32,3 +36,5 @@ public DewPersistence.RoomSavedObjectData Capture(RoomSavedObject target)
 | `target` | [`RoomSavedObject`](/api/Global.RoomSavedObject) |  |
 
 **Returns:** `DewPersistence.RoomSavedObjectData`
+
+:::

@@ -8,15 +8,19 @@
 public class SafeAction
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`Count`** | `public int Count { get; }` |  |
 
-## Methods
+:::
 
-### `Add(Action)`
+## Methods (4)
+
+::: details `Add(Action)`
 
 ```csharp
 public SafeAction Add(Action handler)
@@ -29,7 +33,9 @@ public SafeAction Add(Action handler)
 
 **Returns:** `SafeAction`
 
-### `Contains(Action)`
+:::
+
+::: details `Contains(Action)`
 
 ```csharp
 public bool Contains(Action handler)
@@ -42,13 +48,17 @@ public bool Contains(Action handler)
 
 **Returns:** `bool`
 
-### `Invoke()`
+:::
+
+::: details `Invoke()`
 
 ```csharp
 public void Invoke()
 ```
 
-### `Remove(Action)`
+:::
+
+::: details `Remove(Action)`
 
 ```csharp
 public SafeAction Remove(Action handler)
@@ -60,3 +70,5 @@ public SafeAction Remove(Action handler)
 | `handler` | `System.Action` |  |
 
 **Returns:** `SafeAction`
+
+:::

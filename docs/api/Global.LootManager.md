@@ -9,7 +9,9 @@
 public class LootManager : NetworkedManagerBase<LootManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,15 +32,19 @@ public class LootManager : NetworkedManagerBase<LootManager>, ILogicUpdate
 | **`skillRarityChance`** | `[Title("Skill", null, TitleAlignments.Left, true, true)] public PerRarityData<float> skillRarityChance` |  |
 | **`skillRarityChanceHigh`** | `public PerRarityData<float> skillRarityChanceHigh` |  |
 
-## Methods
+:::
 
-### `OnStartServer()`
+## Methods (8)
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `SelectGemAndQuality(Rarity?, out Gem, out int)`
+:::
+
+::: details `SelectGemAndQuality(Rarity?, out Gem, out int)`
 
 ```csharp
 public void SelectGemAndQuality(Rarity? rarity, out Gem gem, out int quality)
@@ -51,7 +57,9 @@ public void SelectGemAndQuality(Rarity? rarity, out Gem gem, out int quality)
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 | `quality` | `int` |  |
 
-### `SelectGemQuality(Rarity)`
+:::
+
+::: details `SelectGemQuality(Rarity)`
 
 ```csharp
 public int SelectGemQuality(Rarity rarity)
@@ -64,7 +72,9 @@ public int SelectGemQuality(Rarity rarity)
 
 **Returns:** `int`
 
-### `SelectGemRarity(bool)`
+:::
+
+::: details `SelectGemRarity(bool)`
 
 ```csharp
 public Rarity SelectGemRarity(bool isHigh = false)
@@ -77,7 +87,9 @@ public Rarity SelectGemRarity(bool isHigh = false)
 
 **Returns:** `Rarity`
 
-### `SelectRarity(PerRarityData<float>)`
+:::
+
+::: details `SelectRarity(PerRarityData&lt;float&gt;)`
 
 ```csharp
 public static Rarity SelectRarity(PerRarityData<float> chances)
@@ -90,7 +102,9 @@ public static Rarity SelectRarity(PerRarityData<float> chances)
 
 **Returns:** `Rarity`
 
-### `SelectSkillAndLevel(Rarity?, out SkillTrigger, out int)`
+:::
+
+::: details `SelectSkillAndLevel(Rarity?, out SkillTrigger, out int)`
 
 ```csharp
 public void SelectSkillAndLevel(Rarity? rarity, out SkillTrigger skill, out int level)
@@ -103,7 +117,9 @@ public void SelectSkillAndLevel(Rarity? rarity, out SkillTrigger skill, out int 
 | `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `level` | `int` |  |
 
-### `SelectSkillLevel(Rarity)`
+:::
+
+::: details `SelectSkillLevel(Rarity)`
 
 ```csharp
 public int SelectSkillLevel(Rarity rarity)
@@ -116,7 +132,9 @@ public int SelectSkillLevel(Rarity rarity)
 
 **Returns:** `int`
 
-### `SelectSkillRarity(bool)`
+:::
+
+::: details `SelectSkillRarity(bool)`
 
 ```csharp
 public Rarity SelectSkillRarity(bool isHigh = false)
@@ -128,3 +146,5 @@ public Rarity SelectSkillRarity(bool isHigh = false)
 | `isHigh` | `bool` |  |
 
 **Returns:** `Rarity`
+
+:::

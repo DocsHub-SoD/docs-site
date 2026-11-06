@@ -10,22 +10,30 @@
 public class FxRepeatedEffect : LogicBehaviour, ILogicUpdate, IEffectComponent, IAttachableToEntity
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`interval`** | `public float interval` |  |
 | **`playNew`** | `public bool playNew` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `LogicUpdate(float)`
+## Methods (4)
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -36,7 +44,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnAttachToEntity(Entity)`
+:::
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -47,14 +57,20 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

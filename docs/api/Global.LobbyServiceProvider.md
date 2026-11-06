@@ -9,7 +9,9 @@
 public abstract class LobbyServiceProvider : MonoBehaviour
 ```
 
-## Properties
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public abstract class LobbyServiceProvider : MonoBehaviour
 | **`foundLobbies`** | `public LobbySearchResult foundLobbies { get; set; }` |  |
 | **`isRefreshingLobby`** | `public bool isRefreshingLobby { get; }` |  |
 
-## Methods
+:::
 
-### `CreateLobby()`
+## Methods (12)
+
+::: details `CreateLobby()`
 
 Create a new lobby. You can use this to either create a new lobby or replace old faulty/deleted lobby mid-session.
 
@@ -29,7 +33,9 @@ public abstract UniTask CreateLobby()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `GenerateRandomShortCode()`
+:::
+
+::: details `GenerateRandomShortCode()`
 
 ```csharp
 public string GenerateRandomShortCode()
@@ -37,7 +43,9 @@ public string GenerateRandomShortCode()
 
 **Returns:** `string`
 
-### `GetGameServerAddress()`
+:::
+
+::: details `GetGameServerAddress()`
 
 ```csharp
 public abstract string GetGameServerAddress()
@@ -45,7 +53,9 @@ public abstract string GetGameServerAddress()
 
 **Returns:** `string`
 
-### `GetLobbies(Action<LobbySearchResult>, object)`
+:::
+
+::: details `GetLobbies(Action&lt;LobbySearchResult&gt;, object)`
 
 Get list of lobbies we can join.
 
@@ -61,7 +71,9 @@ public abstract UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object c
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `HandleUserLeavingGame(string)`
+:::
+
+::: details `HandleUserLeavingGame(string)`
 
 Handle user leaving the game server. The user must be removed from the lobby if possible.
 
@@ -76,7 +88,9 @@ public abstract UniTask HandleUserLeavingGame(string id)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `InvokeOnCurrentLobbyChanged()`
+:::
+
+::: details `InvokeOnCurrentLobbyChanged()`
 
 You must call this when currentLobby's value changes or its property(s) changes.
 
@@ -84,7 +98,9 @@ You must call this when currentLobby's value changes or its property(s) changes.
 protected void InvokeOnCurrentLobbyChanged()
 ```
 
-### `JoinGameOfCurrentLobby()`
+:::
+
+::: details `JoinGameOfCurrentLobby()`
 
 ```csharp
 public virtual UniTask JoinGameOfCurrentLobby()
@@ -92,7 +108,9 @@ public virtual UniTask JoinGameOfCurrentLobby()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `JoinLobby(object)`
+:::
+
+::: details `JoinLobby(object)`
 
 Join a lobby. If you want to join the game of the lobby, you need to call respective function as well.
 
@@ -107,7 +125,9 @@ public abstract UniTask JoinLobby(object lobby)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `LeaveLobby()`
+:::
+
+::: details `LeaveLobby()`
 
 Leave current lobby. This can be called anytime even when you are not in a lobby, to make sure you don't have any leftover lobbies.
 
@@ -117,7 +137,9 @@ public abstract UniTask LeaveLobby()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `RefreshLobbies(object)`
+:::
+
+::: details `RefreshLobbies(object)`
 
 Refresh foundLobbies result.
 
@@ -132,7 +154,9 @@ public UniTaskVoid RefreshLobbies(object continuationToken = null)
 
 **Returns:** `Cysharp.Threading.Tasks.UniTaskVoid`
 
-### `SetBasicAttributes()`
+:::
+
+::: details `SetBasicAttributes()`
 
 ```csharp
 public UniTask SetBasicAttributes()
@@ -140,7 +164,9 @@ public UniTask SetBasicAttributes()
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
 
-### `SetLobbyAttribute(string, object)`
+:::
+
+::: details `SetLobbyAttribute(string, object)`
 
 ```csharp
 public abstract UniTask SetLobbyAttribute(string key, object value)
@@ -153,3 +179,5 @@ public abstract UniTask SetLobbyAttribute(string key, object value)
 | `value` | `object` |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`
+
+:::

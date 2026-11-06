@@ -9,7 +9,9 @@
 public class CharacterModelDisplay : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,15 +22,19 @@ public class CharacterModelDisplay : LogicBehaviour, ILogicUpdate
 | **`opacity`** | `public float opacity` |  |
 | **`skinType`** | `public string skinType` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (6)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetAbovePosition()`
+:::
+
+::: details `GetAbovePosition()`
 
 ```csharp
 public Vector3 GetAbovePosition()
@@ -36,7 +42,9 @@ public Vector3 GetAbovePosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetCenterPosition()`
+:::
+
+::: details `GetCenterPosition()`
 
 ```csharp
 public Vector3 GetCenterPosition()
@@ -44,7 +52,9 @@ public Vector3 GetCenterPosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -55,7 +65,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `Setup(string)`
+:::
+
+::: details `Setup(string)`
 
 ```csharp
 public void Setup(string skinName)
@@ -66,8 +78,12 @@ public void Setup(string skinName)
 | :--- | :--- | :--- |
 | `skinName` | `string` |  |
 
-### `UpdateAccessories()`
+:::
+
+::: details `UpdateAccessories()`
 
 ```csharp
 public void UpdateAccessories()
 ```
+
+:::

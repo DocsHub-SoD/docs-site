@@ -9,7 +9,9 @@
 public struct ModifierData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public struct ModifierData
 | **`id`** | `public int id` |  |
 | **`isForceRevealed`** | `public bool isForceRevealed` |  |
 | **`type`** | `public string type` |  |
+
+:::

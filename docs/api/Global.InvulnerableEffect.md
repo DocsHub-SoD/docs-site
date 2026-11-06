@@ -9,14 +9,22 @@
 public class InvulnerableEffect : BasicEffect
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onDamageNegated`** | `public Action<EventInfoDamageNegatedByImmunity> onDamageNegated` | If multiple effect is protecting this entity, only the last basic effect's callback will be called prioritizing InvulnerableEffect. |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
+
+:::

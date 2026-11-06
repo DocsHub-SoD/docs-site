@@ -8,7 +8,9 @@
 public static class Layers
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,3 +30,5 @@ public static class Layers
 | **`TransparentFX`** | `public const int TransparentFX = 1` |  |
 | **`UI`** | `public const int UI = 5` |  |
 | **`Water`** | `public const int Water = 4` |  |
+
+:::

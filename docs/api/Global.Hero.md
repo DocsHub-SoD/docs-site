@@ -10,7 +10,9 @@
 public class Hero : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool
 ```
 
-## Fields
+## Fields (26)
+
+::: details Click to expand Fields (26)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -41,7 +43,11 @@ public class Hero : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcl
 | **`maxLevelOverride`** | `public int? maxLevelOverride` |  |
 | **`summons`** | `[NonSerialized] public List<Summon> summons` | Available everywhere. |
 
-## Properties
+:::
+
+## Properties (9)
+
+::: details Click to expand Properties (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -55,9 +61,11 @@ public class Hero : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcl
 | **`Skill`** | `public HeroSkill Skill { get; }` |  |
 | **`skin`** | `public string skin { get; set; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (19)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -68,7 +76,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AIUpdate(ref EntityAIContext)`
+:::
+
+::: details `AIUpdate(ref EntityAIContext)`
 
 ```csharp
 protected override void AIUpdate(ref EntityAIContext context)
@@ -79,13 +89,17 @@ protected override void AIUpdate(ref EntityAIContext context)
 | :--- | :--- | :--- |
 | `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CmdTeleportToWaypoint(Room_Waypoint)`
+:::
+
+::: details `CmdTeleportToWaypoint(Room_Waypoint)`
 
 ```csharp
 public void CmdTeleportToWaypoint(Room_Waypoint waypoint)
@@ -96,13 +110,17 @@ public void CmdTeleportToWaypoint(Room_Waypoint waypoint)
 | :--- | :--- | :--- |
 | `waypoint` | [`Room_Waypoint`](/api/Global.Room_Waypoint) |  |
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetConstellationSettings(StarType)`
+:::
+
+::: details `GetConstellationSettings(StarType)`
 
 ```csharp
 public HeroConstellationSettings GetConstellationSettings(StarType type)
@@ -115,7 +133,9 @@ public HeroConstellationSettings GetConstellationSettings(StarType type)
 
 **Returns:** `HeroConstellationSettings`
 
-### `GetStaggerSettings()`
+:::
+
+::: details `GetStaggerSettings()`
 
 ```csharp
 protected override Entity.StaggerSettings GetStaggerSettings()
@@ -123,7 +143,9 @@ protected override Entity.StaggerSettings GetStaggerSettings()
 
 **Returns:** `Entity.StaggerSettings`
 
-### `IsMeleeHero()`
+:::
+
+::: details `IsMeleeHero()`
 
 ```csharp
 public bool IsMeleeHero()
@@ -131,7 +153,9 @@ public bool IsMeleeHero()
 
 **Returns:** `bool`
 
-### `IsRangedHero()`
+:::
+
+::: details `IsRangedHero()`
 
 ```csharp
 public bool IsRangedHero()
@@ -139,61 +163,81 @@ public bool IsRangedHero()
 
 **Returns:** `bool`
 
-### `LoadEntityModelLocal()`
+:::
+
+::: details `LoadEntityModelLocal()`
 
 ```csharp
 public override void LoadEntityModelLocal()
 ```
 
-### `MarkAsInCombat()`
+:::
+
+::: details `MarkAsInCombat()`
 
 ```csharp
 public void MarkAsInCombat()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnModelLoaded()`
+:::
+
+::: details `OnModelLoaded()`
 
 ```csharp
 public override void OnModelLoaded()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartAuthority()`
+:::
+
+::: details `OnStartAuthority()`
 
 ```csharp
 public override void OnStartAuthority()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopAuthority()`
+:::
+
+::: details `OnStopAuthority()`
 
 ```csharp
 public override void OnStopAuthority()
 ```
 
-### `ReceiveExperience(int)`
+:::
+
+::: details `ReceiveExperience(int)`
 
 Add to experience of this hero.
 
@@ -205,3 +249,5 @@ public void ReceiveExperience(int amount)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `amount` | `int` |  |
+
+:::

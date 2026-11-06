@@ -8,8 +8,12 @@
 public class RefValue<T>
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`value`** | `public T value` |  |
+
+:::

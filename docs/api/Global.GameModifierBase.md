@@ -9,15 +9,19 @@
 public class GameModifierBase : GameEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`excludeFromPool`** | `public bool excludeFromPool` |  |
 
-## Methods
+:::
 
-### `OnStartClientLobby()`
+## Methods (2)
+
+::: details `OnStartClientLobby()`
 
 Called in the lobby scene on the prefab asset, if this game modifier is included in current game.
 
@@ -25,10 +29,14 @@ Called in the lobby scene on the prefab asset, if this game modifier is included
 public virtual void OnStartClientLobby()
 ```
 
-### `OnStartServerLobby()`
+:::
+
+::: details `OnStartServerLobby()`
 
 Called in the lobby scene on the prefab asset, if this game modifier is included in current game.
 
 ```csharp
 public virtual void OnStartServerLobby()
 ```
+
+:::

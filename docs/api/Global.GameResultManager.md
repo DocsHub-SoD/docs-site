@@ -9,7 +9,9 @@
 public class GameResultManager : NetworkedManagerBase<GameResultManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,27 +19,37 @@ public class GameResultManager : NetworkedManagerBase<GameResultManager>, ILogic
 | **`current`** | `public DewGameResult current` | Currently registered game result. The server gives this out to clients periodically, and when the game concludes.Available everywhere. |
 | **`onUpdateGameResult`** | `public SafeAction<DewGameResult> onUpdateGameResult` | Called on server when updating game result mid-game or when the game has concluded.You can use this to modify stats or add custom ones to the result, before it gets sent to clients. |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`tracked`** | `[SaveVar(SaveVarFlags.Default)] public DewGameResult tracked { get; }` | Only available on server. |
 
-## Methods
+:::
 
-### `OnStartClient()`
+## Methods (5)
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `StartTrackingPlayer(DewPlayer)`
+:::
+
+::: details `StartTrackingPlayer(DewPlayer)`
 
 ```csharp
 public void StartTrackingPlayer(DewPlayer p)
@@ -48,13 +60,17 @@ public void StartTrackingPlayer(DewPlayer p)
 | :--- | :--- | :--- |
 | `p` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `UpdateAndSendMidGameResultToClients()`
+:::
+
+::: details `UpdateAndSendMidGameResultToClients()`
 
 ```csharp
 public void UpdateAndSendMidGameResultToClients()
 ```
 
-### `WrapUp(ResultType)`
+:::
+
+::: details `WrapUp(ResultType)`
 
 Ends tracking and shows statistics to everyone.
 
@@ -66,3 +82,5 @@ public void WrapUp(DewGameResult.ResultType type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | [`DewGameResult.ResultType`](/api/Global.DewGameResult) |  |
+
+:::

@@ -9,7 +9,9 @@
 public class InGameUIManager : UIManager, ILogicUpdate
 ```
 
-## Fields
+## Fields (13)
+
+::: details Click to expand Fields (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -27,7 +29,11 @@ public class InGameUIManager : UIManager, ILogicUpdate
 | **`onWorldDisplayedChanged`** | `public Action<WorldDisplayStatus> onWorldDisplayedChanged` |  |
 | **`whiteFadeCg`** | `public CanvasGroup whiteFadeCg` |  |
 
-## Properties
+:::
+
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -40,9 +46,11 @@ public class InGameUIManager : UIManager, ILogicUpdate
 | **`lastWorldDisplayUnscaledTime`** | `public float lastWorldDisplayUnscaledTime { get; }` |  |
 | **`softInstance`** | `public static InGameUIManager softInstance { get; }` |  |
 
-## Methods
+:::
 
-### `DecrementWorldNodePingCounter()`
+## Methods (15)
+
+::: details `DecrementWorldNodePingCounter()`
 
 This decrements internal counter. You must pair this with equivalent number EnableMiniWorldMap calls.
 
@@ -50,25 +58,33 @@ This decrements internal counter. You must pair this with equivalent number Enab
 public void DecrementWorldNodePingCounter()
 ```
 
-### `DisablePlayingInput()`
+:::
+
+::: details `DisablePlayingInput()`
 
 ```csharp
 public void DisablePlayingInput()
 ```
 
-### `EnablePlayingInput()`
+:::
+
+::: details `EnablePlayingInput()`
 
 ```csharp
 public void EnablePlayingInput()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetContinueRelatedDescription()`
+:::
+
+::: details `GetContinueRelatedDescription()`
 
 ```csharp
 public string GetContinueRelatedDescription()
@@ -76,7 +92,9 @@ public string GetContinueRelatedDescription()
 
 **Returns:** `string`
 
-### `GetWorldNodeUIPos(int)`
+:::
+
+::: details `GetWorldNodeUIPos(int)`
 
 ```csharp
 public Vector2 GetWorldNodeUIPos(int index)
@@ -89,13 +107,17 @@ public Vector2 GetWorldNodeUIPos(int index)
 
 **Returns:** `UnityEngine.Vector2`
 
-### `IncrementWorldNodePingCounter()`
+:::
+
+::: details `IncrementWorldNodePingCounter()`
 
 ```csharp
 public void IncrementWorldNodePingCounter()
 ```
 
-### `OnStateChanged(string, string)`
+:::
+
+::: details `OnStateChanged(string, string)`
 
 ```csharp
 protected override void OnStateChanged(string oldState, string newState)
@@ -107,7 +129,9 @@ protected override void OnStateChanged(string oldState, string newState)
 | `oldState` | `string` |  |
 | `newState` | `string` |  |
 
-### `SetIsDoingEnding(bool)`
+:::
+
+::: details `SetIsDoingEnding(bool)`
 
 ```csharp
 public void SetIsDoingEnding(bool value)
@@ -118,7 +142,9 @@ public void SetIsDoingEnding(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `SetWhiteFade(bool)`
+:::
+
+::: details `SetWhiteFade(bool)`
 
 ```csharp
 public void SetWhiteFade(bool value)
@@ -129,7 +155,9 @@ public void SetWhiteFade(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `ShouldDoAutoFocus()`
+:::
+
+::: details `ShouldDoAutoFocus()`
 
 ```csharp
 public override bool ShouldDoAutoFocus()
@@ -137,7 +165,9 @@ public override bool ShouldDoAutoFocus()
 
 **Returns:** `bool`
 
-### `ShowCenterMessage(CenterMessageType, string, object[])`
+:::
+
+::: details `ShowCenterMessage(CenterMessageType, string, object[])`
 
 ```csharp
 public void ShowCenterMessage(CenterMessageType type, string key, object[] formatArgs = null)
@@ -150,7 +180,9 @@ public void ShowCenterMessage(CenterMessageType type, string key, object[] forma
 | `key` | `string` |  |
 | `formatArgs` | `object[]` |  |
 
-### `ShowCenterMessageRaw(CenterMessageType, string)`
+:::
+
+::: details `ShowCenterMessageRaw(CenterMessageType, string)`
 
 ```csharp
 public void ShowCenterMessageRaw(CenterMessageType type, string raw)
@@ -162,7 +194,9 @@ public void ShowCenterMessageRaw(CenterMessageType type, string raw)
 | `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
 | `raw` | `string` |  |
 
-### `ShowWorldPopMessage(WorldMessageSetting)`
+:::
+
+::: details `ShowWorldPopMessage(WorldMessageSetting)`
 
 ```csharp
 public void ShowWorldPopMessage(WorldMessageSetting message)
@@ -173,7 +207,9 @@ public void ShowWorldPopMessage(WorldMessageSetting message)
 | :--- | :--- | :--- |
 | `message` | [`WorldMessageSetting`](/api/Global.WorldMessageSetting) |  |
 
-### `ValidateInGameActionMessage(bool)`
+:::
+
+::: details `ValidateInGameActionMessage(bool)`
 
 ```csharp
 public static bool ValidateInGameActionMessage(bool requireAliveHero = true)
@@ -185,3 +221,5 @@ public static bool ValidateInGameActionMessage(bool requireAliveHero = true)
 | `requireAliveHero` | `bool` |  |
 
 **Returns:** `bool`
+
+:::

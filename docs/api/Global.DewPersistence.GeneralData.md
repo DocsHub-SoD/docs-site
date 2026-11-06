@@ -9,7 +9,9 @@
 public class DewPersistence.GeneralData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class DewPersistence.GeneralData
 | **`resId`** | `public string resId` |  |
 | **`resType`** | `public ResourceLinkBy resType` |  |
 
-## Methods
+:::
 
-### `Capture(Actor)`
+## Methods (2)
+
+::: details `Capture(Actor)`
 
 This object is mutated, and self is returned.
 
@@ -35,7 +39,9 @@ public virtual DewPersistence.GeneralData Capture(Actor target)
 
 **Returns:** `DewPersistence.GeneralData`
 
-### `GetPrefab<T>()`
+:::
+
+::: details `GetPrefab&lt;T&gt;()`
 
 ```csharp
 public virtual T GetPrefab<T>() where T : Object
@@ -47,3 +53,5 @@ public virtual T GetPrefab<T>() where T : Object
 | `` | `T` |  |
 
 **Returns:** `T`
+
+:::

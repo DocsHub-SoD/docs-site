@@ -9,7 +9,9 @@
 public class Room_Waypoint : DewNetworkBehaviour, ILogicUpdate, IPlayerPathablePoint
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,34 +19,48 @@ public class Room_Waypoint : DewNetworkBehaviour, ILogicUpdate, IPlayerPathableP
 | **`lockedEffect`** | `public GameObject lockedEffect` |  |
 | **`unlockedEffect`** | `public GameObject unlockedEffect` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isUnlocked`** | `public bool isUnlocked { get; }` |  |
 
-## Methods
+:::
 
-### `Lock()`
+## Methods (4)
+
+::: details `Lock()`
 
 ```csharp
 public void Lock()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `Unlock()`
+:::
+
+::: details `Unlock()`
 
 ```csharp
 public void Unlock()
 ```
+
+:::

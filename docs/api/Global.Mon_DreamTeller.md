@@ -9,14 +9,20 @@
 public class Mon_DreamTeller : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IForceHeroicHealthbar
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`fxExplode`** | `public GameObject fxExplode` |  |
 | **`showStoryDelay`** | `public float showStoryDelay` |  |
 
-## Properties
+:::
+
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,9 +32,11 @@ public class Mon_DreamTeller : Monster, ILogicUpdate, ICleanup, ICustomDestroyRo
 | **`interactPivot`** | `public Transform interactPivot { get; }` |  |
 | **`priority`** | `public int priority { get; }` |  |
 
-## Methods
+:::
 
-### `CanInteract(Entity)`
+## Methods (4)
+
+::: details `CanInteract(Entity)`
 
 ```csharp
 public bool CanInteract(Entity entity)
@@ -41,13 +49,17 @@ public bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnInteract(Entity, bool)`
+:::
+
+::: details `OnInteract(Entity, bool)`
 
 ```csharp
 public void OnInteract(Entity entity, bool alt)
@@ -59,10 +71,14 @@ public void OnInteract(Entity entity, bool alt)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::

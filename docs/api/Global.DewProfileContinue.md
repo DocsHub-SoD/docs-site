@@ -8,17 +8,23 @@
 public class DewProfileContinue
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`achContinueData`** | `public List<DewPersistence.AchievementsData> achContinueData` |  |
 | **`continueData`** | `public string continueData` |  |
 
-## Methods
+:::
 
-### `Validate()`
+## Methods (1)
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

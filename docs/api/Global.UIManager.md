@@ -9,22 +9,30 @@
 public class UIManager : ManagerBase<UIManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onStateChanged`** | `public SafeAction<string, string> onStateChanged` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`availableStates`** | `public IReadOnlyCollection<string> availableStates { get; }` |  |
 | **`state`** | `public string state { get; }` |  |
 
-## Methods
+:::
 
-### `IsState(string)`
+## Methods (4)
+
+::: details `IsState(string)`
 
 ```csharp
 public bool IsState(string state)
@@ -37,7 +45,9 @@ public bool IsState(string state)
 
 **Returns:** `bool`
 
-### `OnStateChanged(string, string)`
+:::
+
+::: details `OnStateChanged(string, string)`
 
 ```csharp
 protected virtual void OnStateChanged(string oldState, string newState)
@@ -49,7 +59,9 @@ protected virtual void OnStateChanged(string oldState, string newState)
 | `oldState` | `string` |  |
 | `newState` | `string` |  |
 
-### `SetState(string)`
+:::
+
+::: details `SetState(string)`
 
 ```csharp
 public void SetState(string newState)
@@ -60,10 +72,14 @@ public void SetState(string newState)
 | :--- | :--- | :--- |
 | `newState` | `string` |  |
 
-### `ShouldDoAutoFocus()`
+:::
+
+::: details `ShouldDoAutoFocus()`
 
 ```csharp
 public virtual bool ShouldDoAutoFocus()
 ```
 
 **Returns:** `bool`
+
+:::

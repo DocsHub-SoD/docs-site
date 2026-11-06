@@ -9,23 +9,31 @@
 public class ShieldEffect : BasicEffect
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onAmountModified`** | `public Action<float, float> onAmountModified` | Called when the amount of this shield is modified by any means. In code, by damage, etc. |
 | **`onDamageNegated`** | `public SafeAction<EventInfoDamageNegatedByShield> onDamageNegated` | Called when this shield negates a damage. Partially or completely. |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`amount`** | `public float amount { get; set; }` |  |
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
 
-## Methods
+:::
 
-### `AddAmount(float, float, bool)`
+## Methods (1)
+
+::: details `AddAmount(float, float, bool)`
 
 This will process, add the amount to the effect, and invoke relevant effects.
 
@@ -39,3 +47,5 @@ public void AddAmount(float originalAmount, float totalMax = Infinity, bool proc
 | `originalAmount` | `float` |  |
 | `totalMax` | `float` |  |
 | `processTotalMax` | `bool` |  |
+
+:::

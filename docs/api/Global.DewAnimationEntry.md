@@ -9,7 +9,9 @@
 public class DewAnimationEntry
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,10 +20,14 @@ public class DewAnimationEntry
 | **`timeCurve`** | `[LabelText("Ease")] public DewEase timeCurve` |  |
 | **`trimRange`** | `[MinMaxSlider(0, "_rawClipLength", false)] public Vector2 trimRange` |  |
 
-## Methods
+:::
 
-### `Validate()`
+## Methods (1)
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

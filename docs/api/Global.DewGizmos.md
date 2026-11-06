@@ -8,9 +8,9 @@
 public static class DewGizmos
 ```
 
-## Methods
+## Methods (4)
 
-### `DrawArrow(Vector3, Vector3, Color, float)`
+::: details `DrawArrow(Vector3, Vector3, Color, float)`
 
 ```csharp
 public static void DrawArrow(Vector3 start, Vector3 end, Color color, float headSize)
@@ -24,7 +24,9 @@ public static void DrawArrow(Vector3 start, Vector3 end, Color color, float head
 | `color` | `UnityEngine.Color` |  |
 | `headSize` | `float` |  |
 
-### `DrawLine(Vector3, Vector3, Color)`
+:::
+
+::: details `DrawLine(Vector3, Vector3, Color)`
 
 ```csharp
 public static void DrawLine(Vector3 start, Vector3 end, Color color)
@@ -37,7 +39,9 @@ public static void DrawLine(Vector3 start, Vector3 end, Color color)
 | `end` | `UnityEngine.Vector3` |  |
 | `color` | `UnityEngine.Color` |  |
 
-### `DrawRift(Color, Vector3, Quaternion)`
+:::
+
+::: details `DrawRift(Color, Vector3, Quaternion)`
 
 ```csharp
 public static void DrawRift(Color color, Vector3 position, Quaternion rotation)
@@ -50,7 +54,9 @@ public static void DrawRift(Color color, Vector3 position, Quaternion rotation)
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion` |  |
 
-### `DrawText(string, Vector3, Color, int)`
+:::
+
+::: details `DrawText(string, Vector3, Color, int)`
 
 ```csharp
 public static void DrawText(string text, Vector3 pos, Color color, int fontSize)
@@ -63,3 +69,5 @@ public static void DrawText(string text, Vector3 pos, Color color, int fontSize)
 | `pos` | `UnityEngine.Vector3` |  |
 | `color` | `UnityEngine.Color` |  |
 | `fontSize` | `int` |  |
+
+:::

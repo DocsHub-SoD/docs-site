@@ -8,10 +8,14 @@
 public class DewProfile.PurchaseData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`item`** | `public string item` |  |
 | **`stardust`** | `public int stardust` |  |
 | **`timestamp`** | `public long timestamp` |  |
+
+:::

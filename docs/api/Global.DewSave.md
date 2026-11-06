@@ -8,7 +8,9 @@
 public static class DewSave
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,7 +23,11 @@ public static class DewSave
 | **`profileMain`** | `public static DewProfile profileMain` |  |
 | **`profileStats`** | `public static DewProfileStats profileStats` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,9 +36,11 @@ public static class DewSave
 | **`profileStatsPath`** | `public static string profileStatsPath { get; }` |  |
 | **`SavePrefix`** | `public static string SavePrefix { get; }` |  |
 
-## Methods
+:::
 
-### `AddMissingServerGeneratedItemsToProfile(DewProfile)`
+## Methods (29)
+
+::: details `AddMissingServerGeneratedItemsToProfile(DewProfile)`
 
 ```csharp
 public static void AddMissingServerGeneratedItemsToProfile(DewProfile p)
@@ -43,7 +51,9 @@ public static void AddMissingServerGeneratedItemsToProfile(DewProfile p)
 | :--- | :--- | :--- |
 | `p` | [`DewProfile`](/api/Global.DewProfile) |  |
 
-### `AddServerGeneratedItem(DecryptedItemData)`
+:::
+
+::: details `AddServerGeneratedItem(DecryptedItemData)`
 
 ```csharp
 public static void AddServerGeneratedItem(DecryptedItemData item)
@@ -54,13 +64,17 @@ public static void AddServerGeneratedItem(DecryptedItemData item)
 | :--- | :--- | :--- |
 | `item` | `DecryptedItemData` |  |
 
-### `ApplyCultureSettings()`
+:::
+
+::: details `ApplyCultureSettings()`
 
 ```csharp
 public static void ApplyCultureSettings()
 ```
 
-### `ApplySettings()`
+:::
+
+::: details `ApplySettings()`
 
 Apply current profile settings / platform settings to the game.
 
@@ -69,7 +83,9 @@ Apply current profile settings / platform settings to the game.
 public static void ApplySettings()
 ```
 
-### `ClearItemsFromItemStorage()`
+:::
+
+::: details `ClearItemsFromItemStorage()`
 
 Clear all items from item-storage
 
@@ -77,7 +93,9 @@ Clear all items from item-storage
 public static void ClearItemsFromItemStorage()
 ```
 
-### `ConsumeGameResult(DewGameResult, ref LastGamePlayReward)`
+:::
+
+::: details `ConsumeGameResult(DewGameResult, ref LastGamePlayReward)`
 
 ```csharp
 public static void ConsumeGameResult(DewGameResult result, ref LastGamePlayReward rewardSummary)
@@ -89,7 +107,9 @@ public static void ConsumeGameResult(DewGameResult result, ref LastGamePlayRewar
 | `result` | [`DewGameResult`](/api/Global.DewGameResult) |  |
 | `rewardSummary` | [`LastGamePlayReward`](/api/Global.LastGamePlayReward) |  |
 
-### `ConvertProfile(string)`
+:::
+
+::: details `ConvertProfile(string)`
 
 Create a new converted profile of different edition to make it compatible with current version.Previous profile will be deleted.
 
@@ -102,7 +122,9 @@ public static void ConvertProfile(string path)
 | :--- | :--- | :--- |
 | `path` | `string` |  |
 
-### `CreateProfile(string)`
+:::
+
+::: details `CreateProfile(string)`
 
 Create and use new profile.
 
@@ -115,7 +137,9 @@ public static void CreateProfile(string name)
 | :--- | :--- | :--- |
 | `name` | `string` |  |
 
-### `CreateSubProfilesIfNonExistent(string)`
+:::
+
+::: details `CreateSubProfilesIfNonExistent(string)`
 
 ```csharp
 public static void CreateSubProfilesIfNonExistent(string mainPath)
@@ -126,7 +150,9 @@ public static void CreateSubProfilesIfNonExistent(string mainPath)
 | :--- | :--- | :--- |
 | `mainPath` | `string` |  |
 
-### `CreateZipWithJsonFiles(string, string)`
+:::
+
+::: details `CreateZipWithJsonFiles(string, string)`
 
 ```csharp
 public static void CreateZipWithJsonFiles(string sourceDirectory, string zipFilePath)
@@ -138,7 +164,9 @@ public static void CreateZipWithJsonFiles(string sourceDirectory, string zipFile
 | `sourceDirectory` | `string` |  |
 | `zipFilePath` | `string` |  |
 
-### `DeleteProfile(string)`
+:::
+
+::: details `DeleteProfile(string)`
 
 ```csharp
 public static void DeleteProfile(string path)
@@ -149,7 +177,9 @@ public static void DeleteProfile(string path)
 | :--- | :--- | :--- |
 | `path` | `string` |  |
 
-### `Exists(string)`
+:::
+
+::: details `Exists(string)`
 
 ```csharp
 public static bool Exists(string path)
@@ -162,7 +192,9 @@ public static bool Exists(string path)
 
 **Returns:** `bool`
 
-### `GetNormalProfiles()`
+:::
+
+::: details `GetNormalProfiles()`
 
 ```csharp
 public static List<DewProfileItem> GetNormalProfiles()
@@ -170,7 +202,9 @@ public static List<DewProfileItem> GetNormalProfiles()
 
 **Returns:** `System.Collections.Generic.List<T><DewProfileItem>`
 
-### `GetPlatformSettingsFileName()`
+:::
+
+::: details `GetPlatformSettingsFileName()`
 
 ```csharp
 public static string GetPlatformSettingsFileName()
@@ -178,7 +212,9 @@ public static string GetPlatformSettingsFileName()
 
 **Returns:** `string`
 
-### `GetProfileMainFileName(string)`
+:::
+
+::: details `GetProfileMainFileName(string)`
 
 ```csharp
 public static string GetProfileMainFileName(string guid)
@@ -191,7 +227,9 @@ public static string GetProfileMainFileName(string guid)
 
 **Returns:** `string`
 
-### `GetProfiles()`
+:::
+
+::: details `GetProfiles()`
 
 ```csharp
 public static List<DewProfileItem> GetProfiles()
@@ -199,7 +237,9 @@ public static List<DewProfileItem> GetProfiles()
 
 **Returns:** `System.Collections.Generic.List<T><DewProfileItem>`
 
-### `LoadPlatformSettings()`
+:::
+
+::: details `LoadPlatformSettings()`
 
 Loads platform settings. Returns true iif the operation succeeds.
 
@@ -209,7 +249,9 @@ public static bool LoadPlatformSettings()
 
 **Returns:** `bool`
 
-### `LoadProfile()`
+:::
+
+::: details `LoadProfile()`
 
 Load saved user profile of appropriate index. Can load transient profile. Returns true if succeeds.
 
@@ -219,7 +261,9 @@ public static bool LoadProfile()
 
 **Returns:** `bool`
 
-### `LoadProfile(string)`
+:::
+
+::: details `LoadProfile(string)`
 
 Loads saved user profile. Returns true if succeeds.
 
@@ -234,25 +278,33 @@ public static bool LoadProfile(string path)
 
 **Returns:** `bool`
 
-### `ResetPlatformSettings()`
+:::
+
+::: details `ResetPlatformSettings()`
 
 ```csharp
 public static void ResetPlatformSettings()
 ```
 
-### `SaveItems()`
+:::
+
+::: details `SaveItems()`
 
 ```csharp
 public static void SaveItems()
 ```
 
-### `SavePlatformSettings()`
+:::
+
+::: details `SavePlatformSettings()`
 
 ```csharp
 public static void SavePlatformSettings()
 ```
 
-### `SaveProfileAll(bool)`
+:::
+
+::: details `SaveProfileAll(bool)`
 
 ```csharp
 public static void SaveProfileAll(bool immediate = false)
@@ -263,7 +315,9 @@ public static void SaveProfileAll(bool immediate = false)
 | :--- | :--- | :--- |
 | `immediate` | `bool` |  |
 
-### `SaveProfileContinue(bool)`
+:::
+
+::: details `SaveProfileContinue(bool)`
 
 ```csharp
 public static void SaveProfileContinue(bool immediate = false)
@@ -274,7 +328,9 @@ public static void SaveProfileContinue(bool immediate = false)
 | :--- | :--- | :--- |
 | `immediate` | `bool` |  |
 
-### `SaveProfileMain(bool)`
+:::
+
+::: details `SaveProfileMain(bool)`
 
 ```csharp
 public static void SaveProfileMain(bool immediate = false)
@@ -285,7 +341,9 @@ public static void SaveProfileMain(bool immediate = false)
 | :--- | :--- | :--- |
 | `immediate` | `bool` |  |
 
-### `SaveProfileStats(bool)`
+:::
+
+::: details `SaveProfileStats(bool)`
 
 ```csharp
 public static void SaveProfileStats(bool immediate = false)
@@ -296,7 +354,9 @@ public static void SaveProfileStats(bool immediate = false)
 | :--- | :--- | :--- |
 | `immediate` | `bool` |  |
 
-### `SetShadowQuality(QualityOff4Levels)`
+:::
+
+::: details `SetShadowQuality(QualityOff4Levels)`
 
 ```csharp
 public static void SetShadowQuality(QualityOff4Levels q)
@@ -307,14 +367,20 @@ public static void SetShadowQuality(QualityOff4Levels q)
 | :--- | :--- | :--- |
 | `q` | [`QualityOff4Levels`](/api/Global.QualityOff4Levels) |  |
 
-### `ShowSaveLoadErrorAndExit()`
+:::
+
+::: details `ShowSaveLoadErrorAndExit()`
 
 ```csharp
 public static void ShowSaveLoadErrorAndExit()
 ```
 
-### `SyncAchievements()`
+:::
+
+::: details `SyncAchievements()`
 
 ```csharp
 public static void SyncAchievements()
 ```
+
+:::

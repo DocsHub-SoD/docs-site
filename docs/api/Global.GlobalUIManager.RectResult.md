@@ -8,9 +8,13 @@
 public struct GlobalUIManager.RectResult
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`distance`** | `public float distance` |  |
 | **`rect`** | `public Rect rect` |  |
+
+:::

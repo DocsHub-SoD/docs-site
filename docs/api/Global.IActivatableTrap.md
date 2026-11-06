@@ -8,10 +8,12 @@
 public interface IActivatableTrap : IBanRoomNodesNearby, IBanCampsNearby
 ```
 
-## Methods
+## Methods (1)
 
-### `ActivateTrap()`
+::: details `ActivateTrap()`
 
 ```csharp
 void ActivateTrap()
 ```
+
+:::

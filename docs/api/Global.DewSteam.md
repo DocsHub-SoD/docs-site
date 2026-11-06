@@ -8,13 +8,19 @@
 public static class DewSteam
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onGameOverlayShownChanged`** | `public static SafeAction<bool> onGameOverlayShownChanged` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +28,11 @@ public static class DewSteam
 | **`isInitialized`** | `public static bool isInitialized { get; }` |  |
 | **`steamId`** | `public static CSteamID steamId { get; }` |  |
 
-## Methods
+:::
 
-### `GetTicketForWebApi(string)`
+## Methods (3)
+
+::: details `GetTicketForWebApi(string)`
 
 ```csharp
 public static UniTask<SteamTicketForWebApi> GetTicketForWebApi(string pchIdentity = "DewOwnership")
@@ -37,7 +45,9 @@ public static UniTask<SteamTicketForWebApi> GetTicketForWebApi(string pchIdentit
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask<T><SteamTicketForWebApi>`
 
-### `TryStartGamepadInput(string, string, bool, bool, int, Action<string>, Action)`
+:::
+
+::: details `TryStartGamepadInput(string, string, bool, bool, int, Action&lt;string&gt;, Action)`
 
 If Steam gamepad input is not available, this returns false and no callbacks are called.
 
@@ -58,8 +68,12 @@ public static bool TryStartGamepadInput(string previousText, string placeholderT
 
 **Returns:** `bool`
 
-### `UnsubscribeItem()`
+:::
+
+::: details `UnsubscribeItem()`
 
 ```csharp
 public static void UnsubscribeItem()
 ```
+
+:::

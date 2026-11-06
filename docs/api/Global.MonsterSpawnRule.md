@@ -9,7 +9,9 @@
 public class MonsterSpawnRule : ScriptableObject
 ```
 
-## Fields
+## Fields (13)
+
+::: details Click to expand Fields (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,3 +28,5 @@ public class MonsterSpawnRule : ScriptableObject
 | **`wavesMin`** | `[TitleGroup("Waves Min, Max", null, TitleAlignments.Left, true, true, false, 0, HorizontalLine = false, BoldTitle = false)] [HorizontalGroup("Waves Min, Max/A", 0, 0, 0, 0)] [HideLabel] [HideIf("isBossSpawn", true)] public int wavesMin` |  |
 | **`waveTimeoutMax`** | `[HorizontalGroup("Wave Timeout Min, Max/A", 0, 0, 0, 0)] [HideLabel] [HideIf("isBossSpawn", true)] public float waveTimeoutMax` |  |
 | **`waveTimeoutMin`** | `[TitleGroup("Wave Timeout Min, Max", null, TitleAlignments.Left, true, true, false, 0, HorizontalLine = false, BoldTitle = false)] [HorizontalGroup("Wave Timeout Min, Max/A", 0, 0, 0, 0)] [HideLabel] [HideIf("isBossSpawn", true)] public float waveTimeoutMin` |  |
+
+:::

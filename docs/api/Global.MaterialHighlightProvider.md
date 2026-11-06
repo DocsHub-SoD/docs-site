@@ -9,7 +9,9 @@
 public class MaterialHighlightProvider : HighlightProvider, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,22 +20,30 @@ public class MaterialHighlightProvider : HighlightProvider, ILogicUpdate
 | **`targetMaterial`** | `public Material targetMaterial` |  |
 | **`targetProperty`** | `public string targetProperty` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (3)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnClickTimeUpdated()`
+:::
+
+::: details `OnClickTimeUpdated()`
 
 ```csharp
 protected override void OnClickTimeUpdated()
 ```
 
-### `OnCursorStatusUpdated()`
+:::
+
+::: details `OnCursorStatusUpdated()`
 
 ```csharp
 protected override void OnCursorStatusUpdated()
 ```
+
+:::

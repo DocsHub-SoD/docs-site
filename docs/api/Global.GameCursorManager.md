@@ -9,10 +9,14 @@
 public class GameCursorManager : ManagerBase<GameCursorManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`currentCursor`** | `public GameCursorManager.CursorData currentCursor` |  |
 | **`cursors`** | `public GameCursorManager.CursorData[] cursors` |  |
 | **`downCursors`** | `public GameCursorManager.CursorData[] downCursors` |  |
+
+:::

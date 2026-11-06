@@ -8,8 +8,12 @@
 public class WaitForEvent : CustomYieldInstruction
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`keepWaiting`** | `public override bool keepWaiting { get; }` |  |
+
+:::

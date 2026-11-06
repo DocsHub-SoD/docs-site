@@ -8,7 +8,9 @@
 public class NextGoalSettings
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,3 +24,5 @@ public class NextGoalSettings
 | **`onFail`** | `[NonSerialized] public Action<FailReason> onFail` | Called when players fails to reach the goal node. This can be due to skipping the goal node and moving to the next world, the applied modifier being removed by hunters, room override being overriden by other quest, etc. |
 | **`onReachDestination`** | `[NonSerialized] public Action onReachDestination` | Called when players reach the goal node. |
 | **`roomOverride`** | `public string roomOverride` |  |
+
+:::

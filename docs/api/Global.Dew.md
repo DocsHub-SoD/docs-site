@@ -8,7 +8,9 @@
 public static class Dew
 ```
 
-## Fields
+## Fields (26)
+
+::: details Click to expand Fields (26)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -39,7 +41,11 @@ public static class Dew
 | **`UniqueColor`** | `public static readonly Color UniqueColor` |  |
 | **`UniqueColorHex`** | `public static readonly string UniqueColorHex` |  |
 
-## Properties
+:::
+
+## Properties (20)
+
+::: details Click to expand Properties (20)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -64,9 +70,11 @@ public static class Dew
 | **`resourceLinkTypes`** | `public static IReadOnlyList<(Type, DewResourceLinkAttribute)> resourceLinkTypes { get; }` |  |
 | **`reveriesByName`** | `public static IReadOnlyDictionary<string, DewReverieItem> reveriesByName { get; }` |  |
 
-## Methods
+:::
 
-### `CallDelayed(Action, int)`
+## Methods (168)
+
+::: details `CallDelayed(Action, int)`
 
 Call a function delayed by one frame.
 
@@ -80,7 +88,9 @@ public static void CallDelayed(Action func, int frameCount = 1)
 | `func` | `System.Action` |  |
 | `frameCount` | `int` |  |
 
-### `CallOnReady(MonoBehaviour, Func<bool>, Action)`
+:::
+
+::: details `CallOnReady(MonoBehaviour, Func&lt;bool&gt;, Action)`
 
 ```csharp
 public static void CallOnReady(MonoBehaviour caller, Func<bool> condition, Action func)
@@ -93,13 +103,17 @@ public static void CallOnReady(MonoBehaviour caller, Func<bool> condition, Actio
 | `condition` | `System.Func<TResult><bool>` |  |
 | `func` | `System.Action` |  |
 
-### `ClearTypeReferences()`
+:::
+
+::: details `ClearTypeReferences()`
 
 ```csharp
 public static void ClearTypeReferences()
 ```
 
-### `ContainsData(IDictionary<string, string>, string, string, string)`
+:::
+
+::: details `ContainsData(IDictionary&lt;string, string&gt;, string, string, string)`
 
 ```csharp
 public static bool ContainsData(this IDictionary<string, string> dict, string key0, string key1, string key2)
@@ -115,7 +129,9 @@ public static bool ContainsData(this IDictionary<string, string> dict, string ke
 
 **Returns:** `bool`
 
-### `ContainsData(IDictionary<string, string>, string, string)`
+:::
+
+::: details `ContainsData(IDictionary&lt;string, string&gt;, string, string)`
 
 ```csharp
 public static bool ContainsData(this IDictionary<string, string> dict, string key0, string key1)
@@ -130,7 +146,9 @@ public static bool ContainsData(this IDictionary<string, string> dict, string ke
 
 **Returns:** `bool`
 
-### `ContainsData(IDictionary<string, string>, string)`
+:::
+
+::: details `ContainsData(IDictionary&lt;string, string&gt;, string)`
 
 ```csharp
 public static bool ContainsData(this IDictionary<string, string> dict, string key0)
@@ -144,7 +162,9 @@ public static bool ContainsData(this IDictionary<string, string> dict, string ke
 
 **Returns:** `bool`
 
-### `ConvertToStringInvariantCulture(object)`
+:::
+
+::: details `ConvertToStringInvariantCulture(object)`
 
 ```csharp
 public static string ConvertToStringInvariantCulture(object value)
@@ -157,7 +177,9 @@ public static string ConvertToStringInvariantCulture(object value)
 
 **Returns:** `string`
 
-### `CreateAbilityInstance<T>(T, Vector3, Quaternion?, Actor, CastInfo, Action<T>)`
+:::
+
+::: details `CreateAbilityInstance&lt;T&gt;(T, Vector3, Quaternion?, Actor, CastInfo, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -176,7 +198,9 @@ public static T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion?
 
 **Returns:** `T`
 
-### `CreateAbilityInstance<T>(Vector3, Quaternion?, Actor, CastInfo, Action<T>)`
+:::
+
+::: details `CreateAbilityInstance&lt;T&gt;(Vector3, Quaternion?, Actor, CastInfo, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -194,7 +218,9 @@ public static T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation,
 
 **Returns:** `T`
 
-### `CreateAbilityTrigger<T>(T, Action<T>)`
+:::
+
+::: details `CreateAbilityTrigger&lt;T&gt;(T, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateAbilityTrigger<T>(T trigger, Action<T> beforePrepare = null) where T : AbilityTrigger
@@ -209,7 +235,9 @@ public static T CreateAbilityTrigger<T>(T trigger, Action<T> beforePrepare = nul
 
 **Returns:** `T`
 
-### `CreateAbilityTrigger<T>(Action<T>)`
+:::
+
+::: details `CreateAbilityTrigger&lt;T&gt;(Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateAbilityTrigger<T>(Action<T> beforeSpawn = null) where T : AbilityTrigger
@@ -223,7 +251,9 @@ public static T CreateAbilityTrigger<T>(Action<T> beforeSpawn = null) where T : 
 
 **Returns:** `T`
 
-### `CreateActor<T>()`
+:::
+
+::: details `CreateActor&lt;T&gt;()`
 
 ```csharp
 public static T CreateActor<T>() where T : Actor
@@ -236,7 +266,9 @@ public static T CreateActor<T>() where T : Actor
 
 **Returns:** `T`
 
-### `CreateActor<T>(T, Vector3, Quaternion?, Actor, Action<T>)`
+:::
+
+::: details `CreateActor&lt;T&gt;(T, Vector3, Quaternion?, Actor, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateActor<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent = null, Action<T> beforePrepare = null) where T : Actor
@@ -254,7 +286,9 @@ public static T CreateActor<T>(T prefab, Vector3 position, Quaternion? rotation,
 
 **Returns:** `T`
 
-### `CreateActor<T>(Action<T>)`
+:::
+
+::: details `CreateActor&lt;T&gt;(Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateActor<T>(Action<T> beforePrepare = null) where T : Actor
@@ -268,7 +302,9 @@ public static T CreateActor<T>(Action<T> beforePrepare = null) where T : Actor
 
 **Returns:** `T`
 
-### `CreateActor<T>(Vector3, Quaternion?, Actor, Action<T>)`
+:::
+
+::: details `CreateActor&lt;T&gt;(Vector3, Quaternion?, Actor, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateActor<T>(Vector3 position, Quaternion? rotation, Actor parent = null, Action<T> beforePrepare = null) where T : Actor
@@ -285,7 +321,9 @@ public static T CreateActor<T>(Vector3 position, Quaternion? rotation, Actor par
 
 **Returns:** `T`
 
-### `CreateGem<T>(T, Vector3, int, DewPlayer, Action<T>)`
+:::
+
+::: details `CreateGem&lt;T&gt;(T, Vector3, int, DewPlayer, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateGem<T>(T gem, Vector3 position, int quality, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : Gem
@@ -303,7 +341,9 @@ public static T CreateGem<T>(T gem, Vector3 position, int quality, DewPlayer tem
 
 **Returns:** `T`
 
-### `CreateGem<T>(Vector3, int, DewPlayer, Action<T>)`
+:::
+
+::: details `CreateGem&lt;T&gt;(Vector3, int, DewPlayer, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateGem<T>(Vector3 position, int quality, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : Gem
@@ -320,7 +360,9 @@ public static T CreateGem<T>(Vector3 position, int quality, DewPlayer tempOwner 
 
 **Returns:** `T`
 
-### `CreateSkillTrigger<T>(T, Vector3, int, DewPlayer, Action<T>)`
+:::
+
+::: details `CreateSkillTrigger&lt;T&gt;(T, Vector3, int, DewPlayer, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateSkillTrigger<T>(T trigger, Vector3 position, int level, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : SkillTrigger
@@ -338,7 +380,9 @@ public static T CreateSkillTrigger<T>(T trigger, Vector3 position, int level, De
 
 **Returns:** `T`
 
-### `CreateSkillTrigger<T>(Vector3, int, DewPlayer, Action<T>)`
+:::
+
+::: details `CreateSkillTrigger&lt;T&gt;(Vector3, int, DewPlayer, Action&lt;T&gt;)`
 
 ```csharp
 public static T CreateSkillTrigger<T>(Vector3 position, int level, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : SkillTrigger
@@ -355,7 +399,9 @@ public static T CreateSkillTrigger<T>(Vector3 position, int level, DewPlayer tem
 
 **Returns:** `T`
 
-### `CreateStatusEffect<T>(T, Entity, Actor, CastInfo, Action<T>)`
+:::
+
+::: details `CreateStatusEffect&lt;T&gt;(T, Entity, Actor, CastInfo, Action&lt;T&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -375,7 +421,9 @@ public static T CreateStatusEffect<T>(T prefab, Entity victim, Actor parent, Cas
 
 **Returns:** `T`
 
-### `CreateStatusEffect<T>(Entity, Actor, CastInfo, Action<T>)`
+:::
+
+::: details `CreateStatusEffect&lt;T&gt;(Entity, Actor, CastInfo, Action&lt;T&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -394,7 +442,9 @@ public static T CreateStatusEffect<T>(Entity victim, Actor parent, CastInfo info
 
 **Returns:** `T`
 
-### `Debounce(Object, float, Action, object)`
+:::
+
+::: details `Debounce(Object, float, Action, object)`
 
 ```csharp
 public static void Debounce(Object owner, float unscaledTime, Action callback, object id = null)
@@ -408,7 +458,9 @@ public static void Debounce(Object owner, float unscaledTime, Action callback, o
 | `callback` | `System.Action` |  |
 | `id` | `object` |  |
 
-### `Destroy(GameObject)`
+:::
+
+::: details `Destroy(GameObject)`
 
 Destroy a networked game object. Despawning and destroying will be delayed for network RPCs and cleanups.
 
@@ -421,7 +473,9 @@ public static void Destroy(GameObject gameObject)
 | :--- | :--- | :--- |
 | `gameObject` | `UnityEngine.GameObject` |  |
 
-### `FilterNonOkayValues(ref float, float)`
+:::
+
+::: details `FilterNonOkayValues(ref float, float)`
 
 ```csharp
 public static void FilterNonOkayValues(ref float v, float fallback = 0)
@@ -433,7 +487,9 @@ public static void FilterNonOkayValues(ref float v, float fallback = 0)
 | `v` | `float` |  |
 | `fallback` | `float` |  |
 
-### `FilterNonOkayValues(ref Vector2, Vector2)`
+:::
+
+::: details `FilterNonOkayValues(ref Vector2, Vector2)`
 
 ```csharp
 public static void FilterNonOkayValues(ref Vector2 v, Vector2 fallback = default)
@@ -445,7 +501,9 @@ public static void FilterNonOkayValues(ref Vector2 v, Vector2 fallback = default
 | `v` | `UnityEngine.Vector2` |  |
 | `fallback` | `UnityEngine.Vector2` |  |
 
-### `FilterNonOkayValues(ref Vector3, Vector3)`
+:::
+
+::: details `FilterNonOkayValues(ref Vector3, Vector3)`
 
 ```csharp
 public static void FilterNonOkayValues(ref Vector3 v, Vector3 fallback = default)
@@ -457,7 +515,9 @@ public static void FilterNonOkayValues(ref Vector3 v, Vector3 fallback = default
 | `v` | `UnityEngine.Vector3` |  |
 | `fallback` | `UnityEngine.Vector3` |  |
 
-### `FindActorOfType<T>()`
+:::
+
+::: details `FindActorOfType&lt;T&gt;()`
 
 ```csharp
 public static T FindActorOfType<T>() where T : Actor
@@ -470,7 +530,9 @@ public static T FindActorOfType<T>() where T : Actor
 
 **Returns:** `T`
 
-### `FindAllActorsOfType<T>(out ListReturnHandle<T>)`
+:::
+
+::: details `FindAllActorsOfType&lt;T&gt;(out ListReturnHandle&lt;T&gt;)`
 
 ```csharp
 public static List<T> FindAllActorsOfType<T>(out ListReturnHandle<T> handle) where T : Actor
@@ -484,7 +546,9 @@ public static List<T> FindAllActorsOfType<T>(out ListReturnHandle<T> handle) whe
 
 **Returns:** `System.Collections.Generic.List<T>`
 
-### `FindInterfaceOfType<T>(bool)`
+:::
+
+::: details `FindInterfaceOfType&lt;T&gt;(bool)`
 
 ```csharp
 public static T FindInterfaceOfType<T>(bool includeInactive) where T : class
@@ -498,7 +562,9 @@ public static T FindInterfaceOfType<T>(bool includeInactive) where T : class
 
 **Returns:** `T`
 
-### `FindInterfacesOfType<T>(bool)`
+:::
+
+::: details `FindInterfacesOfType&lt;T&gt;(bool)`
 
 ```csharp
 public static T[] FindInterfacesOfType<T>(bool includeInactive) where T : class
@@ -512,7 +578,9 @@ public static T[] FindInterfacesOfType<T>(bool includeInactive) where T : class
 
 **Returns:** `T[]`
 
-### `FormatBigNumbers(float, float, string)`
+:::
+
+::: details `FormatBigNumbers(float, float, string)`
 
 ```csharp
 public static string FormatBigNumbers(float number, float threshold, string format)
@@ -527,7 +595,9 @@ public static string FormatBigNumbers(float number, float threshold, string form
 
 **Returns:** `string`
 
-### `GetAchievementColor(Type)`
+:::
+
+::: details `GetAchievementColor(Type)`
 
 ```csharp
 public static Color GetAchievementColor(Type achievementType)
@@ -540,7 +610,9 @@ public static Color GetAchievementColor(Type achievementType)
 
 **Returns:** `UnityEngine.Color`
 
-### `GetAchievementColorHex(Type)`
+:::
+
+::: details `GetAchievementColorHex(Type)`
 
 ```csharp
 public static string GetAchievementColorHex(Type achievementType)
@@ -553,7 +625,9 @@ public static string GetAchievementColorHex(Type achievementType)
 
 **Returns:** `string`
 
-### `GetAliveHeroCount()`
+:::
+
+::: details `GetAliveHeroCount()`
 
 ```csharp
 public static int GetAliveHeroCount()
@@ -561,7 +635,9 @@ public static int GetAliveHeroCount()
 
 **Returns:** `int`
 
-### `GetClosestAliveHero(Vector3, bool)`
+:::
+
+::: details `GetClosestAliveHero(Vector3, bool)`
 
 ```csharp
 public static Hero GetClosestAliveHero(Vector3 pivot, bool fallbackToDead = true)
@@ -575,7 +651,9 @@ public static Hero GetClosestAliveHero(Vector3 pivot, bool fallbackToDead = true
 
 **Returns:** `Hero`
 
-### `GetClosestHeroDistance(Vector3, bool)`
+:::
+
+::: details `GetClosestHeroDistance(Vector3, bool)`
 
 ```csharp
 public static float GetClosestHeroDistance(Vector3 pivot, bool fallbackToDead = true)
@@ -589,7 +667,9 @@ public static float GetClosestHeroDistance(Vector3 pivot, bool fallbackToDead = 
 
 **Returns:** `float`
 
-### `GetControlPresetWindow()`
+:::
+
+::: details `GetControlPresetWindow()`
 
 ```csharp
 public static IControlPresetWindow GetControlPresetWindow()
@@ -597,7 +677,9 @@ public static IControlPresetWindow GetControlPresetWindow()
 
 **Returns:** `IControlPresetWindow`
 
-### `GetCoroutiner()`
+:::
+
+::: details `GetCoroutiner()`
 
 ```csharp
 public static Coroutiner GetCoroutiner()
@@ -605,7 +687,9 @@ public static Coroutiner GetCoroutiner()
 
 **Returns:** `Coroutiner`
 
-### `GetCurrencyColor(CurrencyType)`
+:::
+
+::: details `GetCurrencyColor(CurrencyType)`
 
 ```csharp
 public static Color GetCurrencyColor(CurrencyType type)
@@ -618,7 +702,9 @@ public static Color GetCurrencyColor(CurrencyType type)
 
 **Returns:** `UnityEngine.Color`
 
-### `GetCurrencyColorHex(CurrencyType)`
+:::
+
+::: details `GetCurrencyColorHex(CurrencyType)`
 
 ```csharp
 public static string GetCurrencyColorHex(CurrencyType type)
@@ -631,7 +717,9 @@ public static string GetCurrencyColorHex(CurrencyType type)
 
 **Returns:** `string`
 
-### `GetCurrentMultiplayerCompatibilityVersion()`
+:::
+
+::: details `GetCurrentMultiplayerCompatibilityVersion()`
 
 Used to check game compatibility between multiplayer host/clients.This special version is used to allow cross-platform multiplayer (DRM-Free, STOVE, Steam, e.g.)
 
@@ -641,7 +729,9 @@ public static string GetCurrentMultiplayerCompatibilityVersion()
 
 **Returns:** `string`
 
-### `GetData<T>(IDictionary<string, string>, string, string, string)`
+:::
+
+::: details `GetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string)`
 
 ```csharp
 public static T GetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2)
@@ -658,7 +748,9 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0, s
 
 **Returns:** `T`
 
-### `GetData<T>(IDictionary<string, string>, string, string)`
+:::
+
+::: details `GetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string)`
 
 ```csharp
 public static T GetData<T>(this IDictionary<string, string> dict, string key0, string key1)
@@ -674,7 +766,9 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0, s
 
 **Returns:** `T`
 
-### `GetData<T>(IDictionary<string, string>, string)`
+:::
+
+::: details `GetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string)`
 
 ```csharp
 public static T GetData<T>(this IDictionary<string, string> dict, string key0)
@@ -689,7 +783,9 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0)
 
 **Returns:** `T`
 
-### `GetDataKey(string, string, string)`
+:::
+
+::: details `GetDataKey(string, string, string)`
 
 ```csharp
 public static string GetDataKey(string key0, string key1, string key2)
@@ -704,7 +800,9 @@ public static string GetDataKey(string key0, string key1, string key2)
 
 **Returns:** `string`
 
-### `GetDataKey(string, string)`
+:::
+
+::: details `GetDataKey(string, string)`
 
 ```csharp
 public static string GetDataKey(string key0, string key1)
@@ -718,7 +816,9 @@ public static string GetDataKey(string key0, string key1)
 
 **Returns:** `string`
 
-### `GetDataKey(string)`
+:::
+
+::: details `GetDataKey(string)`
 
 ```csharp
 public static string GetDataKey(string key0)
@@ -731,7 +831,9 @@ public static string GetDataKey(string key0)
 
 **Returns:** `string`
 
-### `GetDataOrDefault<T>(IDictionary<string, string>, string, T)`
+:::
+
+::: details `GetDataOrDefault&lt;T&gt;(IDictionary&lt;string, string&gt;, string, T)`
 
 ```csharp
 public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, T defaultValue = default)
@@ -747,7 +849,9 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 
 **Returns:** `T`
 
-### `GetDataOrDefault<T>(IDictionary<string, string>, string, string, T)`
+:::
+
+::: details `GetDataOrDefault&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, T)`
 
 ```csharp
 public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, string key1, T defaultValue = default)
@@ -764,7 +868,9 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 
 **Returns:** `T`
 
-### `GetDataOrDefault<T>(IDictionary<string, string>, string, string, string, T)`
+:::
+
+::: details `GetDataOrDefault&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string, T)`
 
 ```csharp
 public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, T defaultValue = default)
@@ -782,7 +888,9 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 
 **Returns:** `T`
 
-### `GetDefaultObliterationSlots()`
+:::
+
+::: details `GetDefaultObliterationSlots()`
 
 ```csharp
 public static int GetDefaultObliterationSlots()
@@ -790,7 +898,9 @@ public static int GetDefaultObliterationSlots()
 
 **Returns:** `int`
 
-### `GetDejavuCost(Object, int)`
+:::
+
+::: details `GetDejavuCost(Object, int)`
 
 ```csharp
 public static int GetDejavuCost(Object target, int wins = -1)
@@ -804,7 +914,9 @@ public static int GetDejavuCost(Object target, int wins = -1)
 
 **Returns:** `int`
 
-### `GetDejavuMaxWins(Object)`
+:::
+
+::: details `GetDejavuMaxWins(Object)`
 
 ```csharp
 public static int GetDejavuMaxWins(Object target)
@@ -817,7 +929,9 @@ public static int GetDejavuMaxWins(Object target)
 
 **Returns:** `int`
 
-### `GetGoodRewardPosition(Vector3, float)`
+:::
+
+::: details `GetGoodRewardPosition(Vector3, float)`
 
 This applies random offset to pivot and avoids nearby IBanRoomNodesNearby, items and interactables.The position will be traversable by nearest hero.
 
@@ -833,7 +947,9 @@ public static Vector3 GetGoodRewardPosition(Vector3 pivot, float randomOffset = 
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetHex(Color)`
+:::
+
+::: details `GetHex(Color)`
 
 ```csharp
 public static string GetHex(Color color)
@@ -846,7 +962,9 @@ public static string GetHex(Color color)
 
 **Returns:** `string`
 
-### `GetMaxObliterationSlots()`
+:::
+
+::: details `GetMaxObliterationSlots()`
 
 ```csharp
 public static int GetMaxObliterationSlots()
@@ -854,7 +972,9 @@ public static int GetMaxObliterationSlots()
 
 **Returns:** `int`
 
-### `GetMultiplayerCompatibilityVersion(string)`
+:::
+
+::: details `GetMultiplayerCompatibilityVersion(string)`
 
 ```csharp
 public static string GetMultiplayerCompatibilityVersion(string bundleVersion)
@@ -867,7 +987,9 @@ public static string GetMultiplayerCompatibilityVersion(string bundleVersion)
 
 **Returns:** `string`
 
-### `GetNavMeshPath(Vector3, Vector3)`
+:::
+
+::: details `GetNavMeshPath(Vector3, Vector3)`
 
 ```csharp
 public static NavMeshPath GetNavMeshPath(Vector3 start, Vector3 end)
@@ -881,7 +1003,9 @@ public static NavMeshPath GetNavMeshPath(Vector3 start, Vector3 end)
 
 **Returns:** `UnityEngine.AI.NavMeshPath`
 
-### `GetNavMeshPathStatus(Vector3, Vector3)`
+:::
+
+::: details `GetNavMeshPathStatus(Vector3, Vector3)`
 
 ```csharp
 public static NavMeshPathStatus GetNavMeshPathStatus(Vector3 start, Vector3 end)
@@ -895,7 +1019,9 @@ public static NavMeshPathStatus GetNavMeshPathStatus(Vector3 start, Vector3 end)
 
 **Returns:** `UnityEngine.AI.NavMeshPathStatus`
 
-### `GetObliterationMinAllowedHeroes()`
+:::
+
+::: details `GetObliterationMinAllowedHeroes()`
 
 ```csharp
 public static int GetObliterationMinAllowedHeroes()
@@ -903,7 +1029,9 @@ public static int GetObliterationMinAllowedHeroes()
 
 **Returns:** `int`
 
-### `GetObliterationMinAllowedItemsPerRarity()`
+:::
+
+::: details `GetObliterationMinAllowedItemsPerRarity()`
 
 ```csharp
 public static int GetObliterationMinAllowedItemsPerRarity()
@@ -911,7 +1039,9 @@ public static int GetObliterationMinAllowedItemsPerRarity()
 
 **Returns:** `int`
 
-### `GetObliterationSlotPrice(int)`
+:::
+
+::: details `GetObliterationSlotPrice(int)`
 
 ```csharp
 public static int GetObliterationSlotPrice(int slotIndex)
@@ -924,7 +1054,9 @@ public static int GetObliterationSlotPrice(int slotIndex)
 
 **Returns:** `int`
 
-### `GetOriginalName(string)`
+:::
+
+::: details `GetOriginalName(string)`
 
 Clean the given name removing (Clone) or variant suffixes.Useful when trying to figure out id of name-linked resources.
 
@@ -939,7 +1071,9 @@ public static string GetOriginalName(string name)
 
 **Returns:** `string`
 
-### `GetParentDirectory(string)`
+:::
+
+::: details `GetParentDirectory(string)`
 
 ```csharp
 public static string GetParentDirectory(string path)
@@ -952,7 +1086,9 @@ public static string GetParentDirectory(string path)
 
 **Returns:** `string`
 
-### `GetPositionOnGround(Vector3, float)`
+:::
+
+::: details `GetPositionOnGround(Vector3, float)`
 
 ```csharp
 public static Vector3 GetPositionOnGround(Vector3 position, float yDiffRange = 50)
@@ -966,7 +1102,9 @@ public static Vector3 GetPositionOnGround(Vector3 position, float yDiffRange = 5
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetProjectRootPath()`
+:::
+
+::: details `GetProjectRootPath()`
 
 ```csharp
 public static string GetProjectRootPath()
@@ -974,7 +1112,9 @@ public static string GetProjectRootPath()
 
 **Returns:** `string`
 
-### `GetRarityColor(Rarity)`
+:::
+
+::: details `GetRarityColor(Rarity)`
 
 ```csharp
 public static Color GetRarityColor(Rarity rarity)
@@ -987,7 +1127,9 @@ public static Color GetRarityColor(Rarity rarity)
 
 **Returns:** `UnityEngine.Color`
 
-### `GetRarityColor(SkinRarity)`
+:::
+
+::: details `GetRarityColor(SkinRarity)`
 
 ```csharp
 public static Color GetRarityColor(SkinRarity rarity)
@@ -1000,7 +1142,9 @@ public static Color GetRarityColor(SkinRarity rarity)
 
 **Returns:** `UnityEngine.Color`
 
-### `GetRarityColorHex(Rarity)`
+:::
+
+::: details `GetRarityColorHex(Rarity)`
 
 Gets rarity color with prefix #.
 
@@ -1015,7 +1159,9 @@ public static string GetRarityColorHex(Rarity rarity)
 
 **Returns:** `string`
 
-### `GetRarityColorHex(SkinRarity)`
+:::
+
+::: details `GetRarityColorHex(SkinRarity)`
 
 ```csharp
 public static string GetRarityColorHex(SkinRarity rarity)
@@ -1028,7 +1174,9 @@ public static string GetRarityColorHex(SkinRarity rarity)
 
 **Returns:** `string`
 
-### `GetReadableTimespanConcise(TimeSpan)`
+:::
+
+::: details `GetReadableTimespanConcise(TimeSpan)`
 
 ```csharp
 public static string GetReadableTimespanConcise(TimeSpan t)
@@ -1041,7 +1189,9 @@ public static string GetReadableTimespanConcise(TimeSpan t)
 
 **Returns:** `string`
 
-### `GetReadableTimespanDetailed(TimeSpan)`
+:::
+
+::: details `GetReadableTimespanDetailed(TimeSpan)`
 
 ```csharp
 public static string GetReadableTimespanDetailed(TimeSpan t)
@@ -1054,7 +1204,9 @@ public static string GetReadableTimespanDetailed(TimeSpan t)
 
 **Returns:** `string`
 
-### `GetRequiredAchievementOfTarget(string)`
+:::
+
+::: details `GetRequiredAchievementOfTarget(string)`
 
 ```csharp
 public static Type GetRequiredAchievementOfTarget(string targetTypeName)
@@ -1067,7 +1219,9 @@ public static Type GetRequiredAchievementOfTarget(string targetTypeName)
 
 **Returns:** `System.Type`
 
-### `GetRequiredAchievementOfTarget(Type)`
+:::
+
+::: details `GetRequiredAchievementOfTarget(Type)`
 
 ```csharp
 public static Type GetRequiredAchievementOfTarget(Type targetType)
@@ -1080,7 +1234,9 @@ public static Type GetRequiredAchievementOfTarget(Type targetType)
 
 **Returns:** `System.Type`
 
-### `GetRequiredMasteryLevelForStarSlotUnlock(int)`
+:::
+
+::: details `GetRequiredMasteryLevelForStarSlotUnlock(int)`
 
 ```csharp
 public static int GetRequiredMasteryLevelForStarSlotUnlock(int index)
@@ -1093,7 +1249,9 @@ public static int GetRequiredMasteryLevelForStarSlotUnlock(int index)
 
 **Returns:** `int`
 
-### `GetRequiredMasteryPointsToLevelUp(int)`
+:::
+
+::: details `GetRequiredMasteryPointsToLevelUp(int)`
 
 ```csharp
 public static long GetRequiredMasteryPointsToLevelUp(int currentLevel)
@@ -1106,7 +1264,9 @@ public static long GetRequiredMasteryPointsToLevelUp(int currentLevel)
 
 **Returns:** `long`
 
-### `GetRequiredStardustForStarSlotUnlock(int)`
+:::
+
+::: details `GetRequiredStardustForStarSlotUnlock(int)`
 
 ```csharp
 public static int GetRequiredStardustForStarSlotUnlock(int index)
@@ -1119,7 +1279,9 @@ public static int GetRequiredStardustForStarSlotUnlock(int index)
 
 **Returns:** `int`
 
-### `GetRewardedMasteryPoints(float)`
+:::
+
+::: details `GetRewardedMasteryPoints(float)`
 
 ```csharp
 public static long GetRewardedMasteryPoints(float minutes)
@@ -1132,7 +1294,9 @@ public static long GetRewardedMasteryPoints(float minutes)
 
 **Returns:** `long`
 
-### `GetStarCategoryColor(StarType)`
+:::
+
+::: details `GetStarCategoryColor(StarType)`
 
 ```csharp
 public static Color GetStarCategoryColor(StarType type)
@@ -1145,7 +1309,9 @@ public static Color GetStarCategoryColor(StarType type)
 
 **Returns:** `UnityEngine.Color`
 
-### `GetStardustRewardOnLevelUpAmount(int)`
+:::
+
+::: details `GetStardustRewardOnLevelUpAmount(int)`
 
 ```csharp
 public static int GetStardustRewardOnLevelUpAmount(int nextLevel)
@@ -1158,7 +1324,9 @@ public static int GetStardustRewardOnLevelUpAmount(int nextLevel)
 
 **Returns:** `int`
 
-### `GetTypeFromShortName(string)`
+:::
+
+::: details `GetTypeFromShortName(string)`
 
 ```csharp
 public static Type GetTypeFromShortName(string typeName)
@@ -1171,7 +1339,9 @@ public static Type GetTypeFromShortName(string typeName)
 
 **Returns:** `System.Type`
 
-### `GetUIComponentBelowCursor<T>(bool)`
+:::
+
+::: details `GetUIComponentBelowCursor&lt;T&gt;(bool)`
 
 ```csharp
 public static T GetUIComponentBelowCursor<T>(bool includeParent = true) where T : Component
@@ -1185,7 +1355,9 @@ public static T GetUIComponentBelowCursor<T>(bool includeParent = true) where T 
 
 **Returns:** `T`
 
-### `GetUnlockedTargetsOfAchievement(Type)`
+:::
+
+::: details `GetUnlockedTargetsOfAchievement(Type)`
 
 ```csharp
 public static List<Type> GetUnlockedTargetsOfAchievement(Type achievementType)
@@ -1198,7 +1370,9 @@ public static List<Type> GetUnlockedTargetsOfAchievement(Type achievementType)
 
 **Returns:** `System.Collections.Generic.List<T><System.Type>`
 
-### `GetValidAgentDestination_Closest(Vector3, Vector3)`
+:::
+
+::: details `GetValidAgentDestination_Closest(Vector3, Vector3)`
 
 Returns a point that is pathable from start position that is the closest to the end point.
 
@@ -1214,7 +1388,9 @@ public static Vector3 GetValidAgentDestination_Closest(Vector3 start, Vector3 en
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetValidAgentDestination_LinearSweep(Vector3, Vector3)`
+:::
+
+::: details `GetValidAgentDestination_LinearSweep(Vector3, Vector3)`
 
 Returns a point that is pathable from start position, sweeping linearly across two points.
 
@@ -1230,7 +1406,9 @@ public static Vector3 GetValidAgentDestination_LinearSweep(Vector3 start, Vector
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetValidAgentPosition(Vector3, float)`
+:::
+
+::: details `GetValidAgentPosition(Vector3, float)`
 
 ```csharp
 public static Vector3 GetValidAgentPosition(Vector3 pos, float threshold = 10)
@@ -1244,7 +1422,9 @@ public static Vector3 GetValidAgentPosition(Vector3 pos, float threshold = 10)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `Helper_GetInstanceOfActor<T>(ref T)`
+:::
+
+::: details `Helper_GetInstanceOfActor&lt;T&gt;(ref T)`
 
 This is a helper function for instance / softInstance management of actors.
 
@@ -1260,14 +1440,18 @@ public static T Helper_GetInstanceOfActor<T>(ref T softInstance) where T : Actor
 
 **Returns:** `T`
 
-### `InitAllTypeReferences()`
+:::
+
+::: details `InitAllTypeReferences()`
 
 ```csharp
 [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
 public static void InitAllTypeReferences()
 ```
 
-### `InstantiateActor_Imp<T>(T, Vector3, Quaternion?, Actor)`
+:::
+
+::: details `InstantiateActor_Imp&lt;T&gt;(T, Vector3, Quaternion?, Actor)`
 
 ```csharp
 public static T InstantiateActor_Imp<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent) where T : Actor
@@ -1284,7 +1468,9 @@ public static T InstantiateActor_Imp<T>(T prefab, Vector3 position, Quaternion? 
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn<T>(T, Action<T>)`
+:::
+
+::: details `InstantiateAndSpawn&lt;T&gt;(T, Action&lt;T&gt;)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(T prefab, Action<T> beforeSpawn = null) where T : Component
@@ -1299,7 +1485,9 @@ public static T InstantiateAndSpawn<T>(T prefab, Action<T> beforeSpawn = null) w
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn<T>(T, Vector3, Quaternion?, Action<T>)`
+:::
+
+::: details `InstantiateAndSpawn&lt;T&gt;(T, Vector3, Quaternion?, Action&lt;T&gt;)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(T prefab, Vector3 position, Quaternion? rotation, Action<T> beforeSpawn = null) where T : Component
@@ -1316,7 +1504,9 @@ public static T InstantiateAndSpawn<T>(T prefab, Vector3 position, Quaternion? r
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn<T>(Action<T>)`
+:::
+
+::: details `InstantiateAndSpawn&lt;T&gt;(Action&lt;T&gt;)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(Action<T> beforeSpawn = null) where T : Component
@@ -1330,7 +1520,9 @@ public static T InstantiateAndSpawn<T>(Action<T> beforeSpawn = null) where T : C
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn<T>(Vector3, Quaternion?, Action<T>)`
+:::
+
+::: details `InstantiateAndSpawn&lt;T&gt;(Vector3, Quaternion?, Action&lt;T&gt;)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(Vector3 position, Quaternion? rotation, Action<T> beforeSpawn = null) where T : Component
@@ -1346,7 +1538,9 @@ public static T InstantiateAndSpawn<T>(Vector3 position, Quaternion? rotation, A
 
 **Returns:** `T`
 
-### `IntToRoman(int)`
+:::
+
+::: details `IntToRoman(int)`
 
 ```csharp
 public static string IntToRoman(int num)
@@ -1359,7 +1553,9 @@ public static string IntToRoman(int num)
 
 **Returns:** `string`
 
-### `IsAccessoryIncludedInGame(string)`
+:::
+
+::: details `IsAccessoryIncludedInGame(string)`
 
 ```csharp
 public static bool IsAccessoryIncludedInGame(string type)
@@ -1372,7 +1568,9 @@ public static bool IsAccessoryIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsAchievementIncludedInGame(string)`
+:::
+
+::: details `IsAchievementIncludedInGame(string)`
 
 ```csharp
 public static bool IsAchievementIncludedInGame(string typeStr)
@@ -1385,7 +1583,9 @@ public static bool IsAchievementIncludedInGame(string typeStr)
 
 **Returns:** `bool`
 
-### `IsAnyActorBeingDestroyed()`
+:::
+
+::: details `IsAnyActorBeingDestroyed()`
 
 ```csharp
 public static bool IsAnyActorBeingDestroyed()
@@ -1393,7 +1593,9 @@ public static bool IsAnyActorBeingDestroyed()
 
 **Returns:** `bool`
 
-### `IsArtifactIncludedInGame(string)`
+:::
+
+::: details `IsArtifactIncludedInGame(string)`
 
 ```csharp
 public static bool IsArtifactIncludedInGame(string type)
@@ -1406,7 +1608,9 @@ public static bool IsArtifactIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsBeingDestroyed(GameObject)`
+:::
+
+::: details `IsBeingDestroyed(GameObject)`
 
 ```csharp
 public static bool IsBeingDestroyed(GameObject gameObject)
@@ -1419,7 +1623,9 @@ public static bool IsBeingDestroyed(GameObject gameObject)
 
 **Returns:** `bool`
 
-### `IsChristmas()`
+:::
+
+::: details `IsChristmas()`
 
 ```csharp
 public static bool IsChristmas()
@@ -1427,7 +1633,9 @@ public static bool IsChristmas()
 
 **Returns:** `bool`
 
-### `IsCurseIncludedInGame(string)`
+:::
+
+::: details `IsCurseIncludedInGame(string)`
 
 ```csharp
 public static bool IsCurseIncludedInGame(string type)
@@ -1440,7 +1648,9 @@ public static bool IsCurseIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsDejavuFree(string)`
+:::
+
+::: details `IsDejavuFree(string)`
 
 ```csharp
 public static bool IsDejavuFree(string typeName)
@@ -1453,7 +1663,9 @@ public static bool IsDejavuFree(string typeName)
 
 **Returns:** `bool`
 
-### `IsDejavuFree(Object)`
+:::
+
+::: details `IsDejavuFree(Object)`
 
 ```csharp
 public static bool IsDejavuFree(Object target)
@@ -1466,7 +1678,9 @@ public static bool IsDejavuFree(Object target)
 
 **Returns:** `bool`
 
-### `IsEmoteIncludedInGame(string)`
+:::
+
+::: details `IsEmoteIncludedInGame(string)`
 
 ```csharp
 public static bool IsEmoteIncludedInGame(string type)
@@ -1479,7 +1693,9 @@ public static bool IsEmoteIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsExcludedFromPool(string)`
+:::
+
+::: details `IsExcludedFromPool(string)`
 
 ```csharp
 public static bool IsExcludedFromPool(string type)
@@ -1492,7 +1708,9 @@ public static bool IsExcludedFromPool(string type)
 
 **Returns:** `bool`
 
-### `IsGameModifierIncludedInGame(string)`
+:::
+
+::: details `IsGameModifierIncludedInGame(string)`
 
 ```csharp
 public static bool IsGameModifierIncludedInGame(string type)
@@ -1505,7 +1723,9 @@ public static bool IsGameModifierIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsGemIncludedInGame(string)`
+:::
+
+::: details `IsGemIncludedInGame(string)`
 
 ```csharp
 public static bool IsGemIncludedInGame(string type)
@@ -1518,7 +1738,9 @@ public static bool IsGemIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsHeroIncludedInGame(string)`
+:::
+
+::: details `IsHeroIncludedInGame(string)`
 
 ```csharp
 public static bool IsHeroIncludedInGame(string type)
@@ -1531,7 +1753,9 @@ public static bool IsHeroIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsLucidDreamIncludedInGame(string)`
+:::
+
+::: details `IsLucidDreamIncludedInGame(string)`
 
 ```csharp
 public static bool IsLucidDreamIncludedInGame(string type)
@@ -1544,7 +1768,9 @@ public static bool IsLucidDreamIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsMeleeHero(HeroClassType)`
+:::
+
+::: details `IsMeleeHero(HeroClassType)`
 
 ```csharp
 public static bool IsMeleeHero(Hero.HeroClassType type)
@@ -1557,7 +1783,9 @@ public static bool IsMeleeHero(Hero.HeroClassType type)
 
 **Returns:** `bool`
 
-### `IsMonsterIncludedInGame(string)`
+:::
+
+::: details `IsMonsterIncludedInGame(string)`
 
 ```csharp
 public static bool IsMonsterIncludedInGame(string type)
@@ -1570,7 +1798,9 @@ public static bool IsMonsterIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsNametagIncludedInGame(string)`
+:::
+
+::: details `IsNametagIncludedInGame(string)`
 
 ```csharp
 public static bool IsNametagIncludedInGame(string type)
@@ -1583,7 +1813,9 @@ public static bool IsNametagIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsNearChristmas()`
+:::
+
+::: details `IsNearChristmas()`
 
 ```csharp
 public static bool IsNearChristmas()
@@ -1591,7 +1823,9 @@ public static bool IsNearChristmas()
 
 **Returns:** `bool`
 
-### `IsNotPlayableOnTop(Vector3)`
+:::
+
+::: details `IsNotPlayableOnTop(Vector3)`
 
 ```csharp
 public static bool IsNotPlayableOnTop(Vector3 pos)
@@ -1604,7 +1838,9 @@ public static bool IsNotPlayableOnTop(Vector3 pos)
 
 **Returns:** `bool`
 
-### `IsOkay(Displacement)`
+:::
+
+::: details `IsOkay(Displacement)`
 
 Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.
 
@@ -1619,7 +1855,9 @@ public static bool IsOkay(Displacement d)
 
 **Returns:** `bool`
 
-### `IsOkay(double)`
+:::
+
+::: details `IsOkay(double)`
 
 Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.
 
@@ -1634,7 +1872,9 @@ public static bool IsOkay(double d)
 
 **Returns:** `bool`
 
-### `IsOkay(float)`
+:::
+
+::: details `IsOkay(float)`
 
 Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.
 
@@ -1649,7 +1889,9 @@ public static bool IsOkay(float f)
 
 **Returns:** `bool`
 
-### `IsOkay(Vector2)`
+:::
+
+::: details `IsOkay(Vector2)`
 
 Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.
 
@@ -1664,7 +1906,9 @@ public static bool IsOkay(Vector2 v)
 
 **Returns:** `bool`
 
-### `IsOkay(Vector3)`
+:::
+
+::: details `IsOkay(Vector3)`
 
 Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.
 
@@ -1679,7 +1923,9 @@ public static bool IsOkay(Vector3 v)
 
 **Returns:** `bool`
 
-### `IsOkay(Vector4)`
+:::
+
+::: details `IsOkay(Vector4)`
 
 Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.
 
@@ -1694,7 +1940,9 @@ public static bool IsOkay(Vector4 v)
 
 **Returns:** `bool`
 
-### `IsRangedHero(HeroClassType)`
+:::
+
+::: details `IsRangedHero(HeroClassType)`
 
 ```csharp
 public static bool IsRangedHero(Hero.HeroClassType type)
@@ -1707,7 +1955,9 @@ public static bool IsRangedHero(Hero.HeroClassType type)
 
 **Returns:** `bool`
 
-### `IsRoomModifierIncludedInGame(string)`
+:::
+
+::: details `IsRoomModifierIncludedInGame(string)`
 
 ```csharp
 public static bool IsRoomModifierIncludedInGame(string type)
@@ -1720,7 +1970,9 @@ public static bool IsRoomModifierIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsSkillIncludedInGame(string)`
+:::
+
+::: details `IsSkillIncludedInGame(string)`
 
 ```csharp
 public static bool IsSkillIncludedInGame(string type)
@@ -1733,7 +1985,9 @@ public static bool IsSkillIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsSkinIncludedInGame(string)`
+:::
+
+::: details `IsSkinIncludedInGame(string)`
 
 ```csharp
 public static bool IsSkinIncludedInGame(string type)
@@ -1746,7 +2000,9 @@ public static bool IsSkinIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsStarIncludedInGame(string)`
+:::
+
+::: details `IsStarIncludedInGame(string)`
 
 ```csharp
 public static bool IsStarIncludedInGame(string type)
@@ -1759,7 +2015,9 @@ public static bool IsStarIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsTreasureIncludedInGame(string)`
+:::
+
+::: details `IsTreasureIncludedInGame(string)`
 
 ```csharp
 public static bool IsTreasureIncludedInGame(string type)
@@ -1772,7 +2030,9 @@ public static bool IsTreasureIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `IsZoneIncludedInGame(string)`
+:::
+
+::: details `IsZoneIncludedInGame(string)`
 
 ```csharp
 public static bool IsZoneIncludedInGame(string type)
@@ -1785,7 +2045,9 @@ public static bool IsZoneIncludedInGame(string type)
 
 **Returns:** `bool`
 
-### `NicifyVariableName(string)`
+:::
+
+::: details `NicifyVariableName(string)`
 
 Converts a variable name string into a human-readable label.
 Example: "helloThere_fella" becomes "Hello There Fella".
@@ -1801,7 +2063,9 @@ public static string NicifyVariableName(this string input)
 
 **Returns:** `string`
 
-### `OpenURL(string, OpenURLSettings)`
+:::
+
+::: details `OpenURL(string, OpenURLSettings)`
 
 ```csharp
 public static void OpenURL(string url, OpenURLSettings settings = null)
@@ -1813,7 +2077,9 @@ public static void OpenURL(string url, OpenURLSettings settings = null)
 | `url` | `string` |  |
 | `settings` | [`OpenURLSettings`](/api/Global.OpenURLSettings) |  |
 
-### `PrepareAndSpawnActor_Imp<T>(T, Action<T>)`
+:::
+
+::: details `PrepareAndSpawnActor_Imp&lt;T&gt;(T, Action&lt;T&gt;)`
 
 ```csharp
 public static T PrepareAndSpawnActor_Imp<T>(T newActor, Action<T> beforePrepare) where T : Actor
@@ -1828,7 +2094,9 @@ public static T PrepareAndSpawnActor_Imp<T>(T newActor, Action<T> beforePrepare)
 
 **Returns:** `T`
 
-### `PrepareAndSpawnHero_Imp<T>(T, DewPlayer, int, HeroLoadoutData, string, Action<T>)`
+:::
+
+::: details `PrepareAndSpawnHero_Imp&lt;T&gt;(T, DewPlayer, int, HeroLoadoutData, string, Action&lt;T&gt;)`
 
 ```csharp
 public static T PrepareAndSpawnHero_Imp<T>(T newEntity, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforePrepare) where T : Hero
@@ -1847,7 +2115,9 @@ public static T PrepareAndSpawnHero_Imp<T>(T newEntity, DewPlayer owner, int lev
 
 **Returns:** `T`
 
-### `PrepareAndSpawnStatusEffect_Imp<T>(T, Entity, Actor, CastInfo, Action<T>)`
+:::
+
+::: details `PrepareAndSpawnStatusEffect_Imp&lt;T&gt;(T, Entity, Actor, CastInfo, Action&lt;T&gt;)`
 
 ```csharp
 public static T PrepareAndSpawnStatusEffect_Imp<T>(T newSe, Entity victim, Actor parent, CastInfo info, Action<T> beforePrepare) where T : StatusEffect
@@ -1865,7 +2135,9 @@ public static T PrepareAndSpawnStatusEffect_Imp<T>(T newSe, Entity victim, Actor
 
 **Returns:** `T`
 
-### `QuitApplication(bool)`
+:::
+
+::: details `QuitApplication(bool)`
 
 ```csharp
 public static void QuitApplication(bool dontSave = false)
@@ -1876,7 +2148,9 @@ public static void QuitApplication(bool dontSave = false)
 | :--- | :--- | :--- |
 | `dontSave` | `bool` |  |
 
-### `RaycastAllUIElementsBelowCursor(out ListReturnHandle<RaycastResult>)`
+:::
+
+::: details `RaycastAllUIElementsBelowCursor(out ListReturnHandle&lt;RaycastResult&gt;)`
 
 ```csharp
 public static List<RaycastResult> RaycastAllUIElementsBelowCursor(out ListReturnHandle<RaycastResult> handle)
@@ -1889,7 +2163,9 @@ public static List<RaycastResult> RaycastAllUIElementsBelowCursor(out ListReturn
 
 **Returns:** `System.Collections.Generic.List<T><RaycastResult>`
 
-### `RaycastAllUIElementsBelowCursor(List<RaycastResult>)`
+:::
+
+::: details `RaycastAllUIElementsBelowCursor(List&lt;RaycastResult&gt;)`
 
 ```csharp
 public static void RaycastAllUIElementsBelowCursor(List<RaycastResult> results)
@@ -1900,7 +2176,9 @@ public static void RaycastAllUIElementsBelowCursor(List<RaycastResult> results)
 | :--- | :--- | :--- |
 | `results` | `System.Collections.Generic.List<T><RaycastResult>` |  |
 
-### `RaycastAllUIElementsBelowScreenPoint(Vector2, out ListReturnHandle<RaycastResult>)`
+:::
+
+::: details `RaycastAllUIElementsBelowScreenPoint(Vector2, out ListReturnHandle&lt;RaycastResult&gt;)`
 
 ```csharp
 public static List<RaycastResult> RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, out ListReturnHandle<RaycastResult> handle)
@@ -1914,7 +2192,9 @@ public static List<RaycastResult> RaycastAllUIElementsBelowScreenPoint(Vector2 s
 
 **Returns:** `System.Collections.Generic.List<T><RaycastResult>`
 
-### `RaycastAllUIElementsBelowScreenPoint(Vector2, List<RaycastResult>)`
+:::
+
+::: details `RaycastAllUIElementsBelowScreenPoint(Vector2, List&lt;RaycastResult&gt;)`
 
 ```csharp
 public static void RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, List<RaycastResult> results)
@@ -1926,13 +2206,17 @@ public static void RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, Lis
 | `screenPoint` | `UnityEngine.Vector2` |  |
 | `results` | `System.Collections.Generic.List<T><RaycastResult>` |  |
 
-### `RefreshRenderer()`
+:::
+
+::: details `RefreshRenderer()`
 
 ```csharp
 public static void RefreshRenderer()
 ```
 
-### `RemoveData(IDictionary<string, string>, string, string, string)`
+:::
+
+::: details `RemoveData(IDictionary&lt;string, string&gt;, string, string, string)`
 
 ```csharp
 public static bool RemoveData(this IDictionary<string, string> dict, string key0, string key1, string key2)
@@ -1948,7 +2232,9 @@ public static bool RemoveData(this IDictionary<string, string> dict, string key0
 
 **Returns:** `bool`
 
-### `RemoveData(IDictionary<string, string>, string, string)`
+:::
+
+::: details `RemoveData(IDictionary&lt;string, string&gt;, string, string)`
 
 ```csharp
 public static bool RemoveData(this IDictionary<string, string> dict, string key0, string key1)
@@ -1963,7 +2249,9 @@ public static bool RemoveData(this IDictionary<string, string> dict, string key0
 
 **Returns:** `bool`
 
-### `RemoveData(IDictionary<string, string>, string)`
+:::
+
+::: details `RemoveData(IDictionary&lt;string, string&gt;, string)`
 
 ```csharp
 public static bool RemoveData(this IDictionary<string, string> dict, string key0)
@@ -1977,7 +2265,9 @@ public static bool RemoveData(this IDictionary<string, string> dict, string key0
 
 **Returns:** `bool`
 
-### `ResolveLocalizedFormatArgs(string[])`
+:::
+
+::: details `ResolveLocalizedFormatArgs(string[])`
 
 ```csharp
 public static void ResolveLocalizedFormatArgs(string[] localizedFormatArgs)
@@ -1988,7 +2278,9 @@ public static void ResolveLocalizedFormatArgs(string[] localizedFormatArgs)
 | :--- | :--- | :--- |
 | `localizedFormatArgs` | `string[]` |  |
 
-### `SelectBestIndexWithScore<T>(IList<T>, Func<T, int, float>, float, DewRandom)`
+:::
+
+::: details `SelectBestIndexWithScore&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2007,7 +2299,9 @@ public static int SelectBestIndexWithScore<T>(IList<T> list, Func<T, int, float>
 
 **Returns:** `int`
 
-### `SelectBestIndexWithScore<T>(ReadOnlySpan<T>, Func<T, int, float>, float, DewRandom)`
+:::
+
+::: details `SelectBestIndexWithScore&lt;T&gt;(ReadOnlySpan&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2026,7 +2320,9 @@ public static int SelectBestIndexWithScore<T>(ReadOnlySpan<T> list, Func<T, int,
 
 **Returns:** `int`
 
-### `SelectBestWithScore<T>(HashSet<T>, Func<T, float>, float, DewRandom)`
+:::
+
+::: details `SelectBestWithScore&lt;T&gt;(HashSet&lt;T&gt;, Func&lt;T, float&gt;, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2045,7 +2341,9 @@ public static T SelectBestWithScore<T>(HashSet<T> list, Func<T, float> scoreFunc
 
 **Returns:** `T`
 
-### `SelectBestWithScore<T>(IList<T>, Func<T, int, float>, float, DewRandom)`
+:::
+
+::: details `SelectBestWithScore&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2064,7 +2362,9 @@ public static T SelectBestWithScore<T>(IList<T> list, Func<T, int, float> scoreF
 
 **Returns:** `T`
 
-### `SelectBestWithScore<T>(ReadOnlySpan<T>, Func<T, int, float>, float, DewRandom)`
+:::
+
+::: details `SelectBestWithScore&lt;T&gt;(ReadOnlySpan&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2083,7 +2383,9 @@ public static T SelectBestWithScore<T>(ReadOnlySpan<T> list, Func<T, int, float>
 
 **Returns:** `T`
 
-### `SelectRandomAliveHero(bool)`
+:::
+
+::: details `SelectRandomAliveHero(bool)`
 
 ```csharp
 public static Hero SelectRandomAliveHero(bool fallbackToDead = true)
@@ -2096,7 +2398,9 @@ public static Hero SelectRandomAliveHero(bool fallbackToDead = true)
 
 **Returns:** `Hero`
 
-### `SelectRandomWeightedIndexInParams(params float[])`
+:::
+
+::: details `SelectRandomWeightedIndexInParams(params float[])`
 
 ```csharp
 public static int SelectRandomWeightedIndexInParams(params float[] weights)
@@ -2109,7 +2413,9 @@ public static int SelectRandomWeightedIndexInParams(params float[] weights)
 
 **Returns:** `int`
 
-### `SelectRandomWeightedInList<T>(IList<T>, Func<T, float>, DewRandom)`
+:::
+
+::: details `SelectRandomWeightedInList&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, float&gt;, DewRandom)`
 
 ```csharp
 public static T SelectRandomWeightedInList<T>(IList<T> list, Func<T, float> weightGetter, DewRandom random = null)
@@ -2125,7 +2431,9 @@ public static T SelectRandomWeightedInList<T>(IList<T> list, Func<T, float> weig
 
 **Returns:** `T`
 
-### `SelectRandomWeightedInList<T>(ReadOnlySpan<T>, Func<T, float>)`
+:::
+
+::: details `SelectRandomWeightedInList&lt;T&gt;(ReadOnlySpan&lt;T&gt;, Func&lt;T, float&gt;)`
 
 ```csharp
 public static T SelectRandomWeightedInList<T>(ReadOnlySpan<T> list, Func<T, float> weightGetter)
@@ -2140,7 +2448,9 @@ public static T SelectRandomWeightedInList<T>(ReadOnlySpan<T> list, Func<T, floa
 
 **Returns:** `T`
 
-### `SelectRandomWeightedInParams<T>(params (float, T)[])`
+:::
+
+::: details `SelectRandomWeightedInParams&lt;T&gt;(params (float, T)[])`
 
 ```csharp
 public static T SelectRandomWeightedInParams<T>(params (float, T)[] elements)
@@ -2154,7 +2464,9 @@ public static T SelectRandomWeightedInParams<T>(params (float, T)[] elements)
 
 **Returns:** `T`
 
-### `SelectRandomWeightedInReadOnlyList<T>(IReadOnlyList<T>, Func<T, float>)`
+:::
+
+::: details `SelectRandomWeightedInReadOnlyList&lt;T&gt;(IReadOnlyList&lt;T&gt;, Func&lt;T, float&gt;)`
 
 Without the postfix, you won't be able to feed in Lists because of ambiguity.
 
@@ -2171,7 +2483,9 @@ public static T SelectRandomWeightedInReadOnlyList<T>(IReadOnlyList<T> list, Fun
 
 **Returns:** `T`
 
-### `SetData<T>(IDictionary<string, string>, string, T)`
+:::
+
+::: details `SetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, T)`
 
 ```csharp
 public static void SetData<T>(this IDictionary<string, string> dict, string key0, T value)
@@ -2185,7 +2499,9 @@ public static void SetData<T>(this IDictionary<string, string> dict, string key0
 | `value` | `T` |  |
 | `` | `T` |  |
 
-### `SetData<T>(IDictionary<string, string>, string, string, T)`
+:::
+
+::: details `SetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, T)`
 
 ```csharp
 public static void SetData<T>(this IDictionary<string, string> dict, string key0, string key1, T value)
@@ -2200,7 +2516,9 @@ public static void SetData<T>(this IDictionary<string, string> dict, string key0
 | `value` | `T` |  |
 | `` | `T` |  |
 
-### `SetData<T>(IDictionary<string, string>, string, string, string, T)`
+:::
+
+::: details `SetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string, T)`
 
 ```csharp
 public static void SetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, T value)
@@ -2216,7 +2534,9 @@ public static void SetData<T>(this IDictionary<string, string> dict, string key0
 | `value` | `T` |  |
 | `` | `T` |  |
 
-### `SetUnscaledTimeUpdate(GameObject)`
+:::
+
+::: details `SetUnscaledTimeUpdate(GameObject)`
 
 ```csharp
 public static void SetUnscaledTimeUpdate(GameObject gobj)
@@ -2227,7 +2547,9 @@ public static void SetUnscaledTimeUpdate(GameObject gobj)
 | :--- | :--- | :--- |
 | `gobj` | `UnityEngine.GameObject` |  |
 
-### `ShowJsonWithEditor(string)`
+:::
+
+::: details `ShowJsonWithEditor(string)`
 
 ```csharp
 public static void ShowJsonWithEditor(string json)
@@ -2238,7 +2560,9 @@ public static void ShowJsonWithEditor(string json)
 | :--- | :--- | :--- |
 | `json` | `string` |  |
 
-### `SpawnEntity<T>(T, Vector3, Quaternion?, Actor, DewPlayer, int, Action<T>)`
+:::
+
+::: details `SpawnEntity&lt;T&gt;(T, Vector3, Quaternion?, Actor, DewPlayer, int, Action&lt;T&gt;)`
 
 ```csharp
 public static T SpawnEntity<T>(T entity, Vector3 position, Quaternion? rotation, Actor parent, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -2258,7 +2582,9 @@ public static T SpawnEntity<T>(T entity, Vector3 position, Quaternion? rotation,
 
 **Returns:** `T`
 
-### `SpawnEntity<T>(Vector3, Quaternion?, Actor, DewPlayer, int, Action<T>)`
+:::
+
+::: details `SpawnEntity&lt;T&gt;(Vector3, Quaternion?, Actor, DewPlayer, int, Action&lt;T&gt;)`
 
 ```csharp
 public static T SpawnEntity<T>(Vector3 position, Quaternion? rotation, Actor parent, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -2277,7 +2603,9 @@ public static T SpawnEntity<T>(Vector3 position, Quaternion? rotation, Actor par
 
 **Returns:** `T`
 
-### `SpawnHero<T>(T, Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action<T>)`
+:::
+
+::: details `SpawnHero&lt;T&gt;(T, Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action&lt;T&gt;)`
 
 ```csharp
 public static T SpawnHero<T>(T hero, Vector3 position, Quaternion? rotation, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforeSpawn = null) where T : Hero
@@ -2298,7 +2626,9 @@ public static T SpawnHero<T>(T hero, Vector3 position, Quaternion? rotation, Dew
 
 **Returns:** `T`
 
-### `SpawnHero<T>(Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action<T>)`
+:::
+
+::: details `SpawnHero&lt;T&gt;(Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action&lt;T&gt;)`
 
 ```csharp
 public static T SpawnHero<T>(Vector3 position, Quaternion? rotation, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforeSpawn = null) where T : Hero
@@ -2318,7 +2648,9 @@ public static T SpawnHero<T>(Vector3 position, Quaternion? rotation, DewPlayer o
 
 **Returns:** `T`
 
-### `TryGetData<T>(IDictionary<string, string>, string, out T)`
+:::
+
+::: details `TryGetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, out T)`
 
 ```csharp
 public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, out T value)
@@ -2334,7 +2666,9 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 
 **Returns:** `bool`
 
-### `TryGetData<T>(IDictionary<string, string>, string, string, out T)`
+:::
+
+::: details `TryGetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, out T)`
 
 ```csharp
 public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, string key1, out T value)
@@ -2351,7 +2685,9 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 
 **Returns:** `bool`
 
-### `TryGetData<T>(IDictionary<string, string>, string, string, string, out T)`
+:::
+
+::: details `TryGetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string, out T)`
 
 ```csharp
 public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, out T value)
@@ -2369,7 +2705,9 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 
 **Returns:** `bool`
 
-### `TryGetTypeFromShortName(string, out Type)`
+:::
+
+::: details `TryGetTypeFromShortName(string, out Type)`
 
 ```csharp
 public static bool TryGetTypeFromShortName(string typeName, out Type type)
@@ -2383,7 +2721,9 @@ public static bool TryGetTypeFromShortName(string typeName, out Type type)
 
 **Returns:** `bool`
 
-### `WaitForAggroedEnemiesRoutine()`
+:::
+
+::: details `WaitForAggroedEnemiesRoutine()`
 
 Wait until no enemies aggroed to any player exists.
 
@@ -2393,7 +2733,9 @@ public static IEnumerator WaitForAggroedEnemiesRoutine()
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `WaitForClientsReadyRoutine(List<DewPlayer>)`
+:::
+
+::: details `WaitForClientsReadyRoutine(List&lt;DewPlayer&gt;)`
 
 Wait until all connections are ready.
 
@@ -2407,3 +2749,5 @@ public static IEnumerator WaitForClientsReadyRoutine(List<DewPlayer> players = n
 | `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 
 **Returns:** `System.Collections.IEnumerator`
+
+:::

@@ -8,9 +8,13 @@
 public class PerFeatureVisibility_Booth : MonoBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`destroyIfBooth`** | `public bool destroyIfBooth` |  |
 | **`destroyIfNotBooth`** | `public bool destroyIfNotBooth` |  |
+
+:::

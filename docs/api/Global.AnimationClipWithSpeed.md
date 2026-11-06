@@ -10,10 +10,14 @@
 public struct AnimationClipWithSpeed
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`clip`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public AnimationClip clip` |  |
 | **`Default`** | `public static AnimationClipWithSpeed Default` |  |
 | **`speed`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public float speed` |  |
+
+:::

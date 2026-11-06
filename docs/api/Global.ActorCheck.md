@@ -8,9 +8,9 @@
 public static class ActorCheck
 ```
 
-## Methods
+## Methods (1)
 
-### `IsNullOrInactive(Actor)`
+::: details `IsNullOrInactive(Actor)`
 
 ```csharp
 public static bool IsNullOrInactive(this Actor a)
@@ -22,3 +22,5 @@ public static bool IsNullOrInactive(this Actor a)
 | `a` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `bool`
+
+:::

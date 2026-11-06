@@ -9,7 +9,9 @@
 public class TimescaleManager : NetworkedManagerBase<TimescaleManager>, ILogicUpdate
 ```
 
-## Properties
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class TimescaleManager : NetworkedManagerBase<TimescaleManager>, ILogicUp
 | **`effectTimescale`** | `public float effectTimescale { get; }` | Timescale multiplier of DewEffect (FxStopTime and such) induced changes. |
 | **`shouldTimeBeSlowedBySpecialMenu`** | `public bool shouldTimeBeSlowedBySpecialMenu { get; }` |  |
 
-## Methods
+:::
 
-### `ChangeTimescale(float, float)`
+## Methods (5)
+
+::: details `ChangeTimescale(float, float)`
 
 Lowest of all changes will apply.
 
@@ -33,25 +37,33 @@ public void ChangeTimescale(float timescale, float duration)
 | `timescale` | `float` |  |
 | `duration` | `float` |  |
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `TimescaleChanged(float, float)`
+:::
+
+::: details `TimescaleChanged(float, float)`
 
 ```csharp
 public void TimescaleChanged(float oldVal, float newVal)
@@ -62,3 +74,5 @@ public void TimescaleChanged(float oldVal, float newVal)
 | :--- | :--- | :--- |
 | `oldVal` | `float` |  |
 | `newVal` | `float` |  |
+
+:::

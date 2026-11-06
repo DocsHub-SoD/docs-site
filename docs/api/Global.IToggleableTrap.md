@@ -8,22 +8,30 @@
 public interface IToggleableTrap : IBanRoomNodesNearby, IBanCampsNearby
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isOn`** | `bool isOn { get; }` |  |
 
-## Methods
+:::
 
-### `StartTrap()`
+## Methods (2)
+
+::: details `StartTrap()`
 
 ```csharp
 void StartTrap()
 ```
 
-### `StopTrap()`
+:::
+
+::: details `StopTrap()`
 
 ```csharp
 void StopTrap()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public class DewCollider : MonoBehaviour
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,9 +25,11 @@ public class DewCollider : MonoBehaviour
 | **`shape`** | `[EnumToggleButtons] public DewCollider.ColliderShape shape` |  |
 | **`size`** | `[ShowIf("@shape == DewCollider.ColliderShape.Box", true)] public Vector2 size` |  |
 
-## Methods
+:::
 
-### `GeneratePointsInCircle(int, float, float, Vector2[])`
+## Methods (16)
+
+::: details `GeneratePointsInCircle(int, float, float, Vector2[])`
 
 ```csharp
 public static void GeneratePointsInCircle(int count, float radius, float angle, Vector2[] points)
@@ -39,7 +43,9 @@ public static void GeneratePointsInCircle(int count, float radius, float angle, 
 | `angle` | `float` |  |
 | `points` | `UnityEngine.Vector2[]` |  |
 
-### `GeneratePointsInCircle(int, float, float)`
+:::
+
+::: details `GeneratePointsInCircle(int, float, float)`
 
 ```csharp
 public static Vector2[] GeneratePointsInCircle(int count, float radius, float angle)
@@ -54,7 +60,9 @@ public static Vector2[] GeneratePointsInCircle(int count, float radius, float an
 
 **Returns:** `UnityEngine.Vector2[]`
 
-### `GeneratePolygonPoints_Arc(float, float, int)`
+:::
+
+::: details `GeneratePolygonPoints_Arc(float, float, int)`
 
 ```csharp
 public void GeneratePolygonPoints_Arc(float arcRadius, float arcAngle, int accuracy = 20)
@@ -67,7 +75,9 @@ public void GeneratePolygonPoints_Arc(float arcRadius, float arcAngle, int accur
 | `arcAngle` | `float` |  |
 | `accuracy` | `int` |  |
 
-### `GeneratePolygonPoints_ArcDonut(float, float, float, int)`
+:::
+
+::: details `GeneratePolygonPoints_ArcDonut(float, float, float, int)`
 
 ```csharp
 public void GeneratePolygonPoints_ArcDonut(float innerRadius, float outerRadius, float arcAngle = 360, int accuracy = 20)
@@ -81,7 +91,9 @@ public void GeneratePolygonPoints_ArcDonut(float innerRadius, float outerRadius,
 | `arcAngle` | `float` |  |
 | `accuracy` | `int` |  |
 
-### `GeneratePolygonPoints_Circle(float, int)`
+:::
+
+::: details `GeneratePolygonPoints_Circle(float, int)`
 
 ```csharp
 public void GeneratePolygonPoints_Circle(float circleRadius, int accuracy = 20)
@@ -93,7 +105,9 @@ public void GeneratePolygonPoints_Circle(float circleRadius, int accuracy = 20)
 | `circleRadius` | `float` |  |
 | `accuracy` | `int` |  |
 
-### `GeneratePolygonPoints_Donut(float, float, int)`
+:::
+
+::: details `GeneratePolygonPoints_Donut(float, float, int)`
 
 ```csharp
 public void GeneratePolygonPoints_Donut(float innerRadius, float outerRadius, int accuracy = 20)
@@ -106,7 +120,9 @@ public void GeneratePolygonPoints_Donut(float innerRadius, float outerRadius, in
 | `outerRadius` | `float` |  |
 | `accuracy` | `int` |  |
 
-### `GetEntities(out ListReturnHandle<Entity>, CollisionCheckSettings)`
+:::
+
+::: details `GetEntities(out ListReturnHandle&lt;Entity&gt;, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, CollisionCheckSettings settings = default)
@@ -120,7 +136,9 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, CollisionCh
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `GetEntities(out ListReturnHandle<Entity>, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
+:::
+
+::: details `GetEntities(out ListReturnHandle&lt;Entity&gt;, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)
@@ -136,7 +154,9 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IBinaryEnti
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `GetEntities(out ListReturnHandle<Entity>, IEntityValidator, CollisionCheckSettings)`
+:::
+
+::: details `GetEntities(out ListReturnHandle&lt;Entity&gt;, IEntityValidator, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IEntityValidator validator, CollisionCheckSettings settings = default)
@@ -151,7 +171,9 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IEntityVali
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `GetEntities(out ListReturnHandle<Entity>, Func<Entity, bool>, CollisionCheckSettings)`
+:::
+
+::: details `GetEntities(out ListReturnHandle&lt;Entity&gt;, Func&lt;Entity, bool&gt;, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, Func<Entity, bool> validator, CollisionCheckSettings settings = default)
@@ -166,7 +188,9 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, Func<Entity
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapPoint(Vector2)`
+:::
+
+::: details `OverlapPoint(Vector2)`
 
 ```csharp
 public bool OverlapPoint(Vector2 point)
@@ -179,7 +203,9 @@ public bool OverlapPoint(Vector2 point)
 
 **Returns:** `bool`
 
-### `SweepEntitiesFromOrigin(int, IBinaryEntityValidator, Entity, bool)`
+:::
+
+::: details `SweepEntitiesFromOrigin(int, IBinaryEntityValidator, Entity, bool)`
 
 ```csharp
 public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IBinaryEntityValidator validator, Entity self, bool includeUncollidable = false)
@@ -195,7 +221,9 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IBinary
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
-### `SweepEntitiesFromOrigin(int, IEntityValidator, bool)`
+:::
+
+::: details `SweepEntitiesFromOrigin(int, IEntityValidator, bool)`
 
 ```csharp
 public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IEntityValidator validator, bool includeUncollidable = false)
@@ -210,7 +238,9 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IEntity
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
-### `SweepEntitiesFromOrigin(int, bool)`
+:::
+
+::: details `SweepEntitiesFromOrigin(int, bool)`
 
 ```csharp
 public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, bool includeUncollidable = false)
@@ -224,7 +254,9 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, bool in
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
-### `SweepEntitiesFromOrigin(int, Func<Entity, bool>, bool)`
+:::
+
+::: details `SweepEntitiesFromOrigin(int, Func&lt;Entity, bool&gt;, bool)`
 
 ```csharp
 public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, Func<Entity, bool> validator, bool includeUncollidable = false)
@@ -239,8 +271,12 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, Func<En
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
-### `UpdateProxyCollider()`
+:::
+
+::: details `UpdateProxyCollider()`
 
 ```csharp
 public void UpdateProxyCollider()
 ```
+
+:::

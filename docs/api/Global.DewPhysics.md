@@ -8,9 +8,9 @@
 public static class DewPhysics
 ```
 
-## Methods
+## Methods (12)
 
-### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, CollisionCheckSettings)`
+::: details `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, CollisionCheckSettings settings = default)
@@ -26,7 +26,9 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
+:::
+
+::: details `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)
@@ -44,7 +46,9 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, IEntityValidator, CollisionCheckSettings)`
+:::
+
+::: details `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, IEntityValidator, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, IEntityValidator validator, CollisionCheckSettings settings = default)
@@ -61,7 +65,9 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, Func<Entity, bool>, CollisionCheckSettings)`
+:::
+
+::: details `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Func&lt;Entity, bool&gt;, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, Func<Entity, bool> validator, CollisionCheckSettings settings = default)
@@ -78,7 +84,9 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, CollisionCheckSettings)`
+:::
+
+::: details `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, CollisionCheckSettings settings = default)
@@ -96,7 +104,9 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
+:::
+
+::: details `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)
@@ -116,7 +126,9 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, IEntityValidator, CollisionCheckSettings)`
+:::
+
+::: details `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, IEntityValidator, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, IEntityValidator validator, CollisionCheckSettings settings = default)
@@ -135,7 +147,9 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, Func<Entity, bool>, CollisionCheckSettings)`
+:::
+
+::: details `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, Func&lt;Entity, bool&gt;, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, Func<Entity, bool> validator, CollisionCheckSettings settings = default)
@@ -154,7 +168,9 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 
 **Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `TryGetCollidableWithProjectile(Collider2D, out ICollidableWithProjectile)`
+:::
+
+::: details `TryGetCollidableWithProjectile(Collider2D, out ICollidableWithProjectile)`
 
 ```csharp
 public static bool TryGetCollidableWithProjectile(Collider2D collider, out ICollidableWithProjectile collidable)
@@ -168,7 +184,9 @@ public static bool TryGetCollidableWithProjectile(Collider2D collider, out IColl
 
 **Returns:** `bool`
 
-### `TryGetEntity(Collider2D, out Entity)`
+:::
+
+::: details `TryGetEntity(Collider2D, out Entity)`
 
 ```csharp
 public static bool TryGetEntity(Collider2D collider, out Entity entity)
@@ -182,7 +200,9 @@ public static bool TryGetEntity(Collider2D collider, out Entity entity)
 
 **Returns:** `bool`
 
-### `TryGetInteractable(Collider2D, out IInteractable)`
+:::
+
+::: details `TryGetInteractable(Collider2D, out IInteractable)`
 
 ```csharp
 public static bool TryGetInteractable(Collider2D collider, out IInteractable interactable)
@@ -196,7 +216,9 @@ public static bool TryGetInteractable(Collider2D collider, out IInteractable int
 
 **Returns:** `bool`
 
-### `TryGetProxy(Collider2D, out ProxyCollider)`
+:::
+
+::: details `TryGetProxy(Collider2D, out ProxyCollider)`
 
 ```csharp
 public static bool TryGetProxy(Collider2D collider, out ProxyCollider proxy)
@@ -209,3 +231,5 @@ public static bool TryGetProxy(Collider2D collider, out ProxyCollider proxy)
 | `proxy` | [`ProxyCollider`](/api/Global.ProxyCollider) |  |
 
 **Returns:** `bool`
+
+:::

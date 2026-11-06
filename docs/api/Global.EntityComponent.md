@@ -10,16 +10,22 @@
 public abstract class EntityComponent : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`entity`** | `public Entity entity { get; }` |  |
 
-## Methods
+:::
 
-### `OnDisable()`
+## Methods (1)
+
+::: details `OnDisable()`
 
 ```csharp
 protected virtual void OnDisable()
 ```
+
+:::

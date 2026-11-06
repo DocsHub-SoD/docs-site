@@ -8,7 +8,9 @@
 public class BackHandler
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,10 +18,14 @@ public class BackHandler
 | **`owner`** | `public MonoBehaviour owner` |  |
 | **`priority`** | `public int priority` |  |
 
-## Methods
+:::
 
-### `Remove()`
+## Methods (1)
+
+::: details `Remove()`
 
 ```csharp
 public void Remove()
 ```
+
+:::

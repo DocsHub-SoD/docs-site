@@ -9,7 +9,9 @@
 public abstract class BasicEffect
 ```
 
-## Properties
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public abstract class BasicEffect
 | **`mask`** | `public abstract BasicEffectMask mask { get; }` |  |
 | **`parent`** | `public StatusEffect parent { get; }` |  |
 | **`victim`** | `public Entity victim { get; }` |  |
+
+:::

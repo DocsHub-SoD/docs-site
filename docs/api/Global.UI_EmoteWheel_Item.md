@@ -9,16 +9,20 @@
 public class UI_EmoteWheel_Item : UI_StationaryEmote
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`highlightObject`** | `public GameObject highlightObject` |  |
 | **`nonHighlightObject`** | `public GameObject nonHighlightObject` |  |
 
-## Methods
+:::
 
-### `SetHighlight(bool)`
+## Methods (2)
+
+::: details `SetHighlight(bool)`
 
 ```csharp
 public void SetHighlight(bool value)
@@ -29,7 +33,9 @@ public void SetHighlight(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `Setup(string)`
+:::
+
+::: details `Setup(string)`
 
 ```csharp
 public override void Setup(string emoteName)
@@ -39,3 +45,5 @@ public override void Setup(string emoteName)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `emoteName` | `string` |  |
+
+:::

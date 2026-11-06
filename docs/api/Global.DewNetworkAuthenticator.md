@@ -8,9 +8,9 @@
 public class DewNetworkAuthenticator : NetworkAuthenticator
 ```
 
-## Methods
+## Methods (7)
 
-### `OnAuthRequestMessage(NetworkConnectionToClient, DewAuthRequestMessage)`
+::: details `OnAuthRequestMessage(NetworkConnectionToClient, DewAuthRequestMessage)`
 
 ```csharp
 public void OnAuthRequestMessage(NetworkConnectionToClient conn, DewAuthRequestMessage msg)
@@ -22,7 +22,9 @@ public void OnAuthRequestMessage(NetworkConnectionToClient conn, DewAuthRequestM
 | `conn` | `Mirror.NetworkConnectionToClient` |  |
 | `msg` | [`DewAuthRequestMessage`](/api/Global.DewAuthRequestMessage) |  |
 
-### `OnAuthResponseMessage(DewAuthResponseMessage)`
+:::
+
+::: details `OnAuthResponseMessage(DewAuthResponseMessage)`
 
 ```csharp
 public void OnAuthResponseMessage(DewAuthResponseMessage msg)
@@ -33,32 +35,44 @@ public void OnAuthResponseMessage(DewAuthResponseMessage msg)
 | :--- | :--- | :--- |
 | `msg` | [`DewAuthResponseMessage`](/api/Global.DewAuthResponseMessage) |  |
 
-### `OnClientAuthenticate()`
+:::
+
+::: details `OnClientAuthenticate()`
 
 ```csharp
 public override void OnClientAuthenticate()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopClient()`
+:::
+
+::: details `OnStopClient()`
 
 ```csharp
 public override void OnStopClient()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public struct ScalingValue
 ```
 
-## Fields
+## Fields (12)
+
+::: details Click to expand Fields (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,15 +28,21 @@ public struct ScalingValue
 | **`scalingMultiplier`** | `public float scalingMultiplier` |  |
 | **`SkillDefaultPerLevelMultiplier`** | `public const float SkillDefaultPerLevelMultiplier = 1.25` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`valueString`** | `[JsonProperty] public string valueString { get; set; }` |  |
 
-## Methods
+:::
 
-### `EditorParse(string, ref float, ref float, ref float, ref float, ref float, ref float, ref float)`
+## Methods (10)
+
+::: details `EditorParse(string, ref float, ref float, ref float, ref float, ref float, ref float, ref float)`
 
 ```csharp
 public static void EditorParse(string input, ref float baseVal, ref float ad, ref float ap, ref float lvl, ref float arm, ref float ahp, ref float critp)
@@ -52,7 +60,9 @@ public static void EditorParse(string input, ref float baseVal, ref float ad, re
 | `ahp` | `float` |  |
 | `critp` | `float` |  |
 
-### `EditorToString(float, float, float, float, float, float, float)`
+:::
+
+::: details `EditorToString(float, float, float, float, float, float, float)`
 
 ```csharp
 public static string EditorToString(float baseVal, float ad, float ap, float lvl, float arm, float ahp, float critp)
@@ -71,7 +81,9 @@ public static string EditorToString(float baseVal, float ad, float ap, float lvl
 
 **Returns:** `string`
 
-### `GetAddedScalingMultiplierPerLevel()`
+:::
+
+::: details `GetAddedScalingMultiplierPerLevel()`
 
 ```csharp
 public float GetAddedScalingMultiplierPerLevel()
@@ -79,7 +91,9 @@ public float GetAddedScalingMultiplierPerLevel()
 
 **Returns:** `float`
 
-### `GetScalingMultiplier(int)`
+:::
+
+::: details `GetScalingMultiplier(int)`
 
 ```csharp
 public float GetScalingMultiplier(int level)
@@ -92,7 +106,9 @@ public float GetScalingMultiplier(int level)
 
 **Returns:** `float`
 
-### `GetValue(int, Entity)`
+:::
+
+::: details `GetValue(int, Entity)`
 
 ```csharp
 public float GetValue(int level, Entity self)
@@ -106,7 +122,9 @@ public float GetValue(int level, Entity self)
 
 **Returns:** `float`
 
-### `GetValue(int, float, float, float, float, float)`
+:::
+
+::: details `GetValue(int, float, float, float, float, float)`
 
 ```csharp
 public float GetValue(int level, float attackDamage, float abilityPower, float armor, float addedHp, float critChance)
@@ -124,7 +142,9 @@ public float GetValue(int level, float attackDamage, float abilityPower, float a
 
 **Returns:** `float`
 
-### `Lerp(ScalingValue, ScalingValue, float)`
+:::
+
+::: details `Lerp(ScalingValue, ScalingValue, float)`
 
 ```csharp
 public static ScalingValue Lerp(ScalingValue a, ScalingValue b, float t)
@@ -139,22 +159,30 @@ public static ScalingValue Lerp(ScalingValue a, ScalingValue b, float t)
 
 **Returns:** `ScalingValue`
 
-### `OnAfterDeserialize()`
+:::
+
+::: details `OnAfterDeserialize()`
 
 ```csharp
 public void OnAfterDeserialize()
 ```
 
-### `OnBeforeSerialize()`
+:::
+
+::: details `OnBeforeSerialize()`
 
 ```csharp
 public void OnBeforeSerialize()
 ```
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

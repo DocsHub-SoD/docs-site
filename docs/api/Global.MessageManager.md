@@ -9,7 +9,9 @@
 public class MessageManager : ManagerBase<MessageManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,15 +19,21 @@ public class MessageManager : ManagerBase<MessageManager>, ILogicUpdate
 | **`canvasGroup`** | `public CanvasGroup canvasGroup` |  |
 | **`contentText`** | `public TextMeshProUGUI contentText` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isShowingMessage`** | `public bool isShowingMessage { get; }` |  |
 
-## Methods
+:::
 
-### `CloseMessage(ButtonType)`
+## Methods (9)
+
+::: details `CloseMessage(ButtonType)`
 
 ```csharp
 public void CloseMessage(DewMessageSettings.ButtonType button)
@@ -36,37 +44,49 @@ public void CloseMessage(DewMessageSettings.ButtonType button)
 | :--- | :--- | :--- |
 | `button` | [`DewMessageSettings.ButtonType`](/api/Global.DewMessageSettings) |  |
 
-### `CloseMessageCancel()`
+:::
+
+::: details `CloseMessageCancel()`
 
 ```csharp
 public void CloseMessageCancel()
 ```
 
-### `CloseMessageNo()`
+:::
+
+::: details `CloseMessageNo()`
 
 ```csharp
 public void CloseMessageNo()
 ```
 
-### `CloseMessageOk()`
+:::
+
+::: details `CloseMessageOk()`
 
 ```csharp
 public void CloseMessageOk()
 ```
 
-### `CloseMessageYes()`
+:::
+
+::: details `CloseMessageYes()`
 
 ```csharp
 public void CloseMessageYes()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -77,7 +97,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `ShowMessage(DewMessageSettings)`
+:::
+
+::: details `ShowMessage(DewMessageSettings)`
 
 ```csharp
 public void ShowMessage(DewMessageSettings msg)
@@ -88,7 +110,9 @@ public void ShowMessage(DewMessageSettings msg)
 | :--- | :--- | :--- |
 | `msg` | [`DewMessageSettings`](/api/Global.DewMessageSettings) |  |
 
-### `ShowMessageLocalized(string)`
+:::
+
+::: details `ShowMessageLocalized(string)`
 
 ```csharp
 public void ShowMessageLocalized(string id)
@@ -98,3 +122,5 @@ public void ShowMessageLocalized(string id)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` |  |
+
+:::

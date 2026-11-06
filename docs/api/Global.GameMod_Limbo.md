@@ -9,7 +9,9 @@
 public class GameMod_Limbo : GameModifierBase, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool
 ```
 
-## Fields
+## Fields (14)
+
+::: details Click to expand Fields (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,9 +30,11 @@ public class GameMod_Limbo : GameModifierBase, ILogicUpdate, ICleanup, ICustomDe
 | **`d5BossMovSpd`** | `public float d5BossMovSpd` |  |
 | **`depth`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public int depth` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (17)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -41,7 +45,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `GetCurrentUnlockedEvilLucidDreams()`
+:::
+
+::: details `GetCurrentUnlockedEvilLucidDreams()`
 
 ```csharp
 public static int GetCurrentUnlockedEvilLucidDreams()
@@ -49,7 +55,9 @@ public static int GetCurrentUnlockedEvilLucidDreams()
 
 **Returns:** `int`
 
-### `GetDepthLocalized(int)`
+:::
+
+::: details `GetDepthLocalized(int)`
 
 ```csharp
 public static string GetDepthLocalized(int depth)
@@ -62,7 +70,9 @@ public static string GetDepthLocalized(int depth)
 
 **Returns:** `string`
 
-### `GetInsufficientRequirementMessage()`
+:::
+
+::: details `GetInsufficientRequirementMessage()`
 
 ```csharp
 public static string GetInsufficientRequirementMessage()
@@ -70,7 +80,9 @@ public static string GetInsufficientRequirementMessage()
 
 **Returns:** `string`
 
-### `GetMaxDepths()`
+:::
+
+::: details `GetMaxDepths()`
 
 ```csharp
 public static int GetMaxDepths()
@@ -78,7 +90,9 @@ public static int GetMaxDepths()
 
 **Returns:** `int`
 
-### `GetRequiredUnlockedEvilLucidDreams()`
+:::
+
+::: details `GetRequiredUnlockedEvilLucidDreams()`
 
 ```csharp
 public static int GetRequiredUnlockedEvilLucidDreams()
@@ -86,7 +100,9 @@ public static int GetRequiredUnlockedEvilLucidDreams()
 
 **Returns:** `int`
 
-### `IsLimboUnlocked()`
+:::
+
+::: details `IsLimboUnlocked()`
 
 ```csharp
 public static bool IsLimboUnlocked()
@@ -94,7 +110,9 @@ public static bool IsLimboUnlocked()
 
 **Returns:** `bool`
 
-### `Lobby_GetDepth()`
+:::
+
+::: details `Lobby_GetDepth()`
 
 ```csharp
 public static int Lobby_GetDepth()
@@ -102,7 +120,9 @@ public static int Lobby_GetDepth()
 
 **Returns:** `int`
 
-### `Lobby_GetDepth(LobbyInstance)`
+:::
+
+::: details `Lobby_GetDepth(LobbyInstance)`
 
 ```csharp
 public static int Lobby_GetDepth(LobbyInstance lobby)
@@ -115,7 +135,9 @@ public static int Lobby_GetDepth(LobbyInstance lobby)
 
 **Returns:** `int`
 
-### `Lobby_GetLimboDepthState(int)`
+:::
+
+::: details `Lobby_GetLimboDepthState(int)`
 
 ```csharp
 public static LimboDepthState Lobby_GetLimboDepthState(int depth)
@@ -128,7 +150,9 @@ public static LimboDepthState Lobby_GetLimboDepthState(int depth)
 
 **Returns:** `LimboDepthState`
 
-### `Lobby_GetLimboDepthUnavailableReason(int)`
+:::
+
+::: details `Lobby_GetLimboDepthUnavailableReason(int)`
 
 ```csharp
 public static string Lobby_GetLimboDepthUnavailableReason(int depth)
@@ -141,7 +165,9 @@ public static string Lobby_GetLimboDepthUnavailableReason(int depth)
 
 **Returns:** `string`
 
-### `Lobby_SetDepth(int)`
+:::
+
+::: details `Lobby_SetDepth(int)`
 
 ```csharp
 public static void Lobby_SetDepth(int depth)
@@ -152,32 +178,44 @@ public static void Lobby_SetDepth(int depth)
 | :--- | :--- | :--- |
 | `depth` | `int` |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
 
-### `OnStartClientLobby()`
+:::
+
+::: details `OnStartClientLobby()`
 
 ```csharp
 public override void OnStartClientLobby()
 ```
 
-### `OnStartServerLobby()`
+:::
+
+::: details `OnStartServerLobby()`
 
 ```csharp
 public override void OnStartServerLobby()
 ```
+
+:::

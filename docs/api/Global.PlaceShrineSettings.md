@@ -8,7 +8,9 @@
 public class PlaceShrineSettings
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class PlaceShrineSettings
 | **`lockedUntilCleared`** | `public bool lockedUntilCleared` |  |
 | **`removeModifierOnUse`** | `public bool removeModifierOnUse` |  |
 | **`spawnOnLastSection`** | `public bool spawnOnLastSection` |  |
+
+:::

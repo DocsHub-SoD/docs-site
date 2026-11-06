@@ -8,16 +8,22 @@
 public class AbilityInstance.WatchedCondition
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isWatched`** | `public bool isWatched { get; }` |  |
 
-## Methods
+:::
 
-### `StopWatching()`
+## Methods (1)
+
+::: details `StopWatching()`
 
 ```csharp
 public void StopWatching()
 ```
+
+:::

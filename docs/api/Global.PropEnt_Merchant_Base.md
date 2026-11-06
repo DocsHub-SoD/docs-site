@@ -9,7 +9,9 @@
 public abstract class PropEnt_Merchant_Base : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,7 +27,11 @@ public abstract class PropEnt_Merchant_Base : PropEntity, ILogicUpdate, ICleanup
 | **`onMerchandisePopulated`** | `public SafeAction<DewPlayer> onMerchandisePopulated` | Called on server after merchandise has been populated for certain player. |
 | **`props`** | `public GameObject[] props` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -33,9 +39,11 @@ public abstract class PropEnt_Merchant_Base : PropEntity, ILogicUpdate, ICleanup
 | **`focusDistance`** | `public float focusDistance { get; }` |  |
 | **`interactPivot`** | `public virtual Transform interactPivot { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (16)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -46,13 +54,17 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CanInteract(Entity)`
+:::
+
+::: details `CanInteract(Entity)`
 
 ```csharp
 public virtual bool CanInteract(Entity entity)
@@ -65,7 +77,9 @@ public virtual bool CanInteract(Entity entity)
 
 **Returns:** `bool`
 
-### `CanRefresh(DewPlayer)`
+:::
+
+::: details `CanRefresh(DewPlayer)`
 
 Checked everywhere.
 
@@ -80,7 +94,9 @@ public virtual bool CanRefresh(DewPlayer player)
 
 **Returns:** `bool`
 
-### `CmdPurchase(int, NetworkConnectionToClient)`
+:::
+
+::: details `CmdPurchase(int, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdPurchase(int index, NetworkConnectionToClient sender = null)
@@ -92,7 +108,9 @@ public void CmdPurchase(int index, NetworkConnectionToClient sender = null)
 | `index` | `int` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdRefresh(NetworkConnectionToClient)`
+:::
+
+::: details `CmdRefresh(NetworkConnectionToClient)`
 
 ```csharp
 public void CmdRefresh(NetworkConnectionToClient sender = null)
@@ -103,7 +121,9 @@ public void CmdRefresh(NetworkConnectionToClient sender = null)
 | :--- | :--- | :--- |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdSell(NetworkBehaviour, NetworkConnectionToClient)`
+:::
+
+::: details `CmdSell(NetworkBehaviour, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdSell(NetworkBehaviour target, NetworkConnectionToClient sender = null)
@@ -115,7 +135,9 @@ public void CmdSell(NetworkBehaviour target, NetworkConnectionToClient sender = 
 | `target` | `Mirror.NetworkBehaviour` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `GetRefreshCost(DewPlayer)`
+:::
+
+::: details `GetRefreshCost(DewPlayer)`
 
 Available everywhere.
 
@@ -130,19 +152,25 @@ public virtual Cost GetRefreshCost(DewPlayer player)
 
 **Returns:** `Cost`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnInteract(Entity, bool)`
+:::
+
+::: details `OnInteract(Entity, bool)`
 
 ```csharp
 public virtual void OnInteract(Entity entity, bool alt)
@@ -154,7 +182,9 @@ public virtual void OnInteract(Entity entity, bool alt)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
-### `OnPopulateMerchandises(DewPlayer)`
+:::
+
+::: details `OnPopulateMerchandises(DewPlayer)`
 
 ```csharp
 protected abstract void OnPopulateMerchandises(DewPlayer player)
@@ -165,7 +195,9 @@ protected abstract void OnPopulateMerchandises(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `OnRefresh(DewPlayer)`
+:::
+
+::: details `OnRefresh(DewPlayer)`
 
 ```csharp
 protected virtual void OnRefresh(DewPlayer player)
@@ -176,7 +208,9 @@ protected virtual void OnRefresh(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `OnSell(DewPlayer, NetworkBehaviour)`
+:::
+
+::: details `OnSell(DewPlayer, NetworkBehaviour)`
 
 ```csharp
 protected void OnSell(DewPlayer activator, NetworkBehaviour target)
@@ -188,7 +222,9 @@ protected void OnSell(DewPlayer activator, NetworkBehaviour target)
 | `activator` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `target` | `Mirror.NetworkBehaviour` |  |
 
-### `PopulatePlayerMerchandises(DewPlayer)`
+:::
+
+::: details `PopulatePlayerMerchandises(DewPlayer)`
 
 ```csharp
 public void PopulatePlayerMerchandises(DewPlayer player)
@@ -199,7 +235,9 @@ public void PopulatePlayerMerchandises(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `SpawnMerchandise(MerchandiseData, DewPlayer, Cost)`
+:::
+
+::: details `SpawnMerchandise(MerchandiseData, DewPlayer, Cost)`
 
 ```csharp
 protected void SpawnMerchandise(MerchandiseData data, DewPlayer player, Cost finalPrice)
@@ -211,3 +249,5 @@ protected void SpawnMerchandise(MerchandiseData data, DewPlayer player, Cost fin
 | `data` | [`MerchandiseData`](/api/Global.MerchandiseData) |  |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `finalPrice` | [`Cost`](/api/Global.Cost) |  |
+
+:::

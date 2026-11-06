@@ -8,7 +8,9 @@
 public class EntityColorModifier
 ```
 
-## Properties
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,12 +20,16 @@ public class EntityColorModifier
 | **`emission`** | `public Color emission { get; set; }` |  |
 | **`opacity`** | `public float opacity { get; set; }` |  |
 
-## Methods
+:::
 
-### `Stop()`
+## Methods (1)
+
+::: details `Stop()`
 
 Remove this color modifier from its parent.
 
 ```csharp
 public void Stop()
 ```
+
+:::

@@ -9,10 +9,14 @@
 public struct ChaosReward
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`quantity`** | `public float quantity` |  |
 | **`rarity`** | `[HideInInspector] public Rarity rarity` |  |
 | **`type`** | `public ChaosRewardType type` |  |
+
+:::

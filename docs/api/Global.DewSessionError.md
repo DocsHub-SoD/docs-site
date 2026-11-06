@@ -8,15 +8,19 @@
 public class DewSessionError
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`args`** | `public object[] args` |  |
 
-## Methods
+:::
 
-### `Error()`
+## Methods (5)
+
+::: details `Error()`
 
 ```csharp
 public static DewSessionError Error()
@@ -24,7 +28,9 @@ public static DewSessionError Error()
 
 **Returns:** `DewSessionError`
 
-### `Error(Exception)`
+:::
+
+::: details `Error(Exception)`
 
 ```csharp
 public static DewSessionError Error(Exception e)
@@ -37,7 +43,9 @@ public static DewSessionError Error(Exception e)
 
 **Returns:** `DewSessionError`
 
-### `Show(bool, bool)`
+:::
+
+::: details `Show(bool, bool)`
 
 Output this error message on screen.
 
@@ -51,7 +59,9 @@ public void Show(bool isFatal, bool isGame)
 | `isFatal` | `bool` |  |
 | `isGame` | `bool` |  |
 
-### `ShowError(bool, bool)`
+:::
+
+::: details `ShowError(bool, bool)`
 
 Show a generic, unknown error
 
@@ -65,7 +75,9 @@ public static void ShowError(bool isFatal = false, bool isGame = true)
 | `isFatal` | `bool` |  |
 | `isGame` | `bool` |  |
 
-### `ShowError(Exception, bool, bool)`
+:::
+
+::: details `ShowError(Exception, bool, bool)`
 
 Fatal error will close the application after it's closed.
 
@@ -79,3 +91,5 @@ public static void ShowError(Exception e, bool isFatal = false, bool isGame = tr
 | `e` | `System.Exception` |  |
 | `isFatal` | `bool` |  |
 | `isGame` | `bool` |  |
+
+:::

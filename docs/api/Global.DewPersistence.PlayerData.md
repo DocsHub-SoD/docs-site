@@ -8,7 +8,9 @@
 public class DewPersistence.PlayerData
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,3 +25,5 @@ public class DewPersistence.PlayerData
 | **`playerPrevNetId`** | `public uint playerPrevNetId` |  |
 | **`skills`** | `public List<DewPersistence.SkillData> skills` |  |
 | **`statusEffects`** | `public List<DewPersistence.GeneralData> statusEffects` |  |
+
+:::

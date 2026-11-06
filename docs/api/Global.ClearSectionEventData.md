@@ -8,7 +8,9 @@
 public struct ClearSectionEventData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct ClearSectionEventData
 | **`lastMonsterPosition`** | `public Vector3 lastMonsterPosition` |  |
 | **`room`** | `public Room room` |  |
 | **`sectionIndex`** | `public int sectionIndex` |  |
+
+:::

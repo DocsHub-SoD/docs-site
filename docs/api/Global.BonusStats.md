@@ -9,7 +9,9 @@
 public struct BonusStats
 ```
 
-## Fields
+## Fields (32)
+
+::: details Click to expand Fields (32)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -46,9 +48,11 @@ public struct BonusStats
 | **`tenacityFlat`** | `public float tenacityFlat` |  |
 | **`tenacityPercentage`** | `public float tenacityPercentage` |  |
 
-## Methods
+:::
 
-### `Equals(BonusStats)`
+## Methods (3)
+
+::: details `Equals(BonusStats)`
 
 ```csharp
 public bool Equals(BonusStats other)
@@ -61,7 +65,9 @@ public bool Equals(BonusStats other)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -74,10 +80,14 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
 ```
 
 **Returns:** `int`
+
+:::

@@ -8,9 +8,13 @@
 public class JsonOverrideItem
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`overrides`** | `public Dictionary<string, string> overrides` |  |
 | **`target`** | `public string target` |  |
+
+:::

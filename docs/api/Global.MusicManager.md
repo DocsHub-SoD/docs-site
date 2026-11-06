@@ -9,28 +9,38 @@
 public class MusicManager : ManagerBase<MusicManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`fadeOutTime`** | `public float fadeOutTime` |  |
 | **`volumeMultiplier`** | `public float volumeMultiplier` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (6)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -41,13 +51,17 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `Pause()`
+:::
+
+::: details `Pause()`
 
 ```csharp
 public void Pause()
 ```
 
-### `Play(DewMusicItem)`
+:::
+
+::: details `Play(DewMusicItem)`
 
 ```csharp
 public void Play(DewMusicItem music)
@@ -58,14 +72,20 @@ public void Play(DewMusicItem music)
 | :--- | :--- | :--- |
 | `music` | [`DewMusicItem`](/api/Global.DewMusicItem) |  |
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
 
-### `UnPause()`
+:::
+
+::: details `UnPause()`
 
 ```csharp
 public void UnPause()
 ```
+
+:::

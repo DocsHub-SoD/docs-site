@@ -8,7 +8,9 @@
 public class ShakeInstance
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public class ShakeInstance
 | **`position`** | `public Vector3 position` |  |
 | **`startTime`** | `public float startTime` |  |
 | **`sustainTime`** | `public float sustainTime` |  |
+
+:::

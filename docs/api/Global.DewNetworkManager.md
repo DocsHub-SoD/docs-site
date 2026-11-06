@@ -8,7 +8,9 @@
 public class DewNetworkManager : NetworkManager
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,7 +20,11 @@ public class DewNetworkManager : NetworkManager
 | **`ClientEvent_OnSessionEnd`** | `public SafeAction ClientEvent_OnSessionEnd` | Called when current session is terminated, regardless of cause. (Kick, concluded game, restart, etc.) |
 | **`startSettings`** | `public static DewNetworkStartSettings startSettings` |  |
 
-## Properties
+:::
+
+## Properties (6)
+
+::: details Click to expand Properties (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,15 +35,19 @@ public class DewNetworkManager : NetworkManager
 | **`isEndingSession`** | `public bool isEndingSession { get; }` | Available on server. |
 | **`softInstance`** | `public static DewNetworkManager softInstance { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (17)
+
+::: details `Awake()`
 
 ```csharp
 public override void Awake()
 ```
 
-### `EndSession()`
+:::
+
+::: details `EndSession()`
 
 End this session. When called on server this ends everyone's game completely. When on client, it locally exits out of the game.You can use this to exit out of game/lobby or whatever scenario where network is involved.When ending a game on server, it is recommended to register game results beforehand.
 
@@ -45,7 +55,9 @@ End this session. When called on server this ends everyone's game completely. Wh
 public void EndSession()
 ```
 
-### `LoadSceneAsync(string, List<DewPlayer>, Action)`
+:::
+
+::: details `LoadSceneAsync(string, List&lt;DewPlayer&gt;, Action)`
 
 ```csharp
 public IEnumerator LoadSceneAsync(string sceneName, List<DewPlayer> players = null, Action onBeforeSpawnObjects = null)
@@ -60,25 +72,33 @@ public IEnumerator LoadSceneAsync(string sceneName, List<DewPlayer> players = nu
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `OnClientConnect()`
+:::
+
+::: details `OnClientConnect()`
 
 ```csharp
 public override void OnClientConnect()
 ```
 
-### `OnClientDisconnect()`
+:::
+
+::: details `OnClientDisconnect()`
 
 ```csharp
 public override void OnClientDisconnect()
 ```
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 public override void OnDestroy()
 ```
 
-### `OnServerAddPlayer(NetworkConnectionToClient)`
+:::
+
+::: details `OnServerAddPlayer(NetworkConnectionToClient)`
 
 ```csharp
 public override void OnServerAddPlayer(NetworkConnectionToClient conn)
@@ -89,7 +109,9 @@ public override void OnServerAddPlayer(NetworkConnectionToClient conn)
 | :--- | :--- | :--- |
 | `conn` | `Mirror.NetworkConnectionToClient` |  |
 
-### `OnServerConnect(NetworkConnectionToClient)`
+:::
+
+::: details `OnServerConnect(NetworkConnectionToClient)`
 
 ```csharp
 public override void OnServerConnect(NetworkConnectionToClient conn)
@@ -100,7 +122,9 @@ public override void OnServerConnect(NetworkConnectionToClient conn)
 | :--- | :--- | :--- |
 | `conn` | `Mirror.NetworkConnectionToClient` |  |
 
-### `OnServerDisconnect(NetworkConnectionToClient)`
+:::
+
+::: details `OnServerDisconnect(NetworkConnectionToClient)`
 
 ```csharp
 public override void OnServerDisconnect(NetworkConnectionToClient conn)
@@ -111,19 +135,25 @@ public override void OnServerDisconnect(NetworkConnectionToClient conn)
 | :--- | :--- | :--- |
 | `conn` | `Mirror.NetworkConnectionToClient` |  |
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartHost()`
+:::
+
+::: details `OnStartHost()`
 
 ```csharp
 public override void OnStartHost()
 ```
 
-### `RestartSession()`
+:::
+
+::: details `RestartSession()`
 
 Restart this session. This can only be called on server.All players in the session will restart the game and be placed in the same lobby they were in.All game related states are started from scratch and only lobbies are reused.
 
@@ -131,7 +161,9 @@ Restart this session. This can only be called on server.All players in the sessi
 public void RestartSession()
 ```
 
-### `SetLoadingStatus(bool, List<DewPlayer>)`
+:::
+
+::: details `SetLoadingStatus(bool, List&lt;DewPlayer&gt;)`
 
 ```csharp
 public void SetLoadingStatus(bool isLoading, List<DewPlayer> players = null)
@@ -143,7 +175,9 @@ public void SetLoadingStatus(bool isLoading, List<DewPlayer> players = null)
 | `isLoading` | `bool` |  |
 | `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 
-### `SetWhiteLoadingStatus(bool, List<DewPlayer>)`
+:::
+
+::: details `SetWhiteLoadingStatus(bool, List&lt;DewPlayer&gt;)`
 
 ```csharp
 public void SetWhiteLoadingStatus(bool isLoading, List<DewPlayer> players = null)
@@ -155,7 +189,9 @@ public void SetWhiteLoadingStatus(bool isLoading, List<DewPlayer> players = null
 | `isLoading` | `bool` |  |
 | `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 
-### `SpawnPlayerObject(NetworkConnectionToClient)`
+:::
+
+::: details `SpawnPlayerObject(NetworkConnectionToClient)`
 
 ```csharp
 public void SpawnPlayerObject(NetworkConnectionToClient conn)
@@ -166,16 +202,22 @@ public void SpawnPlayerObject(NetworkConnectionToClient conn)
 | :--- | :--- | :--- |
 | `conn` | `Mirror.NetworkConnectionToClient` |  |
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 public override void Start()
 ```
 
-### `StartSession()`
+:::
+
+::: details `StartSession()`
 
 ```csharp
 protected virtual UniTaskVoid StartSession()
 ```
 
 **Returns:** `Cysharp.Threading.Tasks.UniTaskVoid`
+
+:::

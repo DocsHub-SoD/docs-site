@@ -11,7 +11,9 @@
 public class FxAttachToEntity : LogicBehaviour, ILogicUpdate, IAttachableToEntity
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,21 +23,29 @@ public class FxAttachToEntity : LogicBehaviour, ILogicUpdate, IAttachableToEntit
 | **`scale`** | `public FxAttachToEntity.ScaleType scale` |  |
 | **`useFlatRotation`** | `[ToggleLeft] [HideIf("@rotation == RotationType.DoNothing", true)] public bool useFlatRotation` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`targetEntity`** | `public Entity targetEntity { get; }` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (4)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnAttachToEntity(Entity)`
+:::
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -46,14 +56,20 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
+
+:::

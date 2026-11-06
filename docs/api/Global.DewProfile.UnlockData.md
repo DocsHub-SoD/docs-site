@@ -8,7 +8,9 @@
 public class DewProfile.UnlockData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,8 +18,14 @@ public class DewProfile.UnlockData
 | **`isNewHeroOrHeroSkill`** | `public bool isNewHeroOrHeroSkill` |  |
 | **`status`** | `public UnlockStatus status` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isAvailableInGame`** | `public bool isAvailableInGame { get; }` |  |
+
+:::

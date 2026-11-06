@@ -11,7 +11,9 @@
 public class DewAudioClip : ScriptableObject, ILinkedByGuid
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,15 +25,21 @@ public class DewAudioClip : ScriptableObject, ILinkedByGuid
 | **`timeOffset`** | `public float timeOffset` |  |
 | **`volume`** | `public float volume` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`resourceId`** | `public string resourceId { get; set; }` |  |
 
-## Methods
+:::
 
-### `GetAudioClip()`
+## Methods (2)
+
+::: details `GetAudioClip()`
 
 Get a random audio clip from the pre-configured array of clips.
 
@@ -41,7 +49,9 @@ public AudioClip GetAudioClip()
 
 **Returns:** `UnityEngine.AudioClip`
 
-### `GetPitch()`
+:::
+
+::: details `GetPitch()`
 
 Get an appropriate pitch value depending on how its configured.
 
@@ -50,3 +60,5 @@ public float GetPitch()
 ```
 
 **Returns:** `float`
+
+:::

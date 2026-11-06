@@ -8,9 +8,9 @@
 public static class DewPersistence
 ```
 
-## Methods
+## Methods (16)
 
-### `ApplyAchievementData(AchievementsData)`
+::: details `ApplyAchievementData(AchievementsData)`
 
 ```csharp
 public static void ApplyAchievementData(DewPersistence.AchievementsData data)
@@ -21,7 +21,9 @@ public static void ApplyAchievementData(DewPersistence.AchievementsData data)
 | :--- | :--- | :--- |
 | `data` | [`DewPersistence.AchievementsData`](/api/Global.DewPersistence) |  |
 
-### `ApplyGameData(GameData, Action, JsonSerializerSettings)`
+:::
+
+::: details `ApplyGameData(GameData, Action, JsonSerializerSettings)`
 
 ```csharp
 public static void ApplyGameData(DewPersistence.GameData data, Action onFinish = null, JsonSerializerSettings settings = null)
@@ -34,7 +36,9 @@ public static void ApplyGameData(DewPersistence.GameData data, Action onFinish =
 | `onFinish` | `System.Action` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
-### `ApplyPlayerData(DewPlayer, PlayerData, List<(uint, Action)>, JsonSerializerSettings)`
+:::
+
+::: details `ApplyPlayerData(DewPlayer, PlayerData, List&lt;(uint, Action)&gt;, JsonSerializerSettings)`
 
 ```csharp
 public static void ApplyPlayerData(DewPlayer player, DewPersistence.PlayerData data, List<(uint, Action)> batchActions = null, JsonSerializerSettings settings = null)
@@ -48,7 +52,9 @@ public static void ApplyPlayerData(DewPlayer player, DewPersistence.PlayerData d
 | `batchActions` | `System.Collections.Generic.List<T><(uint,System.Action)>` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
-### `ApplyRoomDataAfterSpawnObjects(RoomData, JsonSerializerSettings)`
+:::
+
+::: details `ApplyRoomDataAfterSpawnObjects(RoomData, JsonSerializerSettings)`
 
 ```csharp
 public static void ApplyRoomDataAfterSpawnObjects(DewPersistence.RoomData data, JsonSerializerSettings settings = null)
@@ -60,7 +66,9 @@ public static void ApplyRoomDataAfterSpawnObjects(DewPersistence.RoomData data, 
 | `data` | [`DewPersistence.RoomData`](/api/Global.DewPersistence) |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
-### `ApplyRoomDataBeforeSpawnObjects(RoomData, JsonSerializerSettings)`
+:::
+
+::: details `ApplyRoomDataBeforeSpawnObjects(RoomData, JsonSerializerSettings)`
 
 ```csharp
 public static void ApplyRoomDataBeforeSpawnObjects(DewPersistence.RoomData data, JsonSerializerSettings settings = null)
@@ -72,7 +80,9 @@ public static void ApplyRoomDataBeforeSpawnObjects(DewPersistence.RoomData data,
 | `data` | [`DewPersistence.RoomData`](/api/Global.DewPersistence) |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
-### `CreateActor<T>(GeneralData, List<(uint, Action)>, JsonSerializerSettings)`
+:::
+
+::: details `CreateActor&lt;T&gt;(GeneralData, List&lt;(uint, Action)&gt;, JsonSerializerSettings)`
 
 ```csharp
 public static T CreateActor<T>(DewPersistence.GeneralData data, List<(uint, Action)> batchActions = null, JsonSerializerSettings settings = null) where T : Actor
@@ -88,7 +98,9 @@ public static T CreateActor<T>(DewPersistence.GeneralData data, List<(uint, Acti
 
 **Returns:** `T`
 
-### `DeserializeOnGameObject(GameObject, Dictionary<string, string>, JsonSerializerSettings, SaveVarFlags, SaveVarFlags)`
+:::
+
+::: details `DeserializeOnGameObject(GameObject, Dictionary&lt;string, string&gt;, JsonSerializerSettings, SaveVarFlags, SaveVarFlags)`
 
 ```csharp
 public static void DeserializeOnGameObject(GameObject gobj, Dictionary<string, string> data, JsonSerializerSettings settings, SaveVarFlags required = SaveVarFlags.Default, SaveVarFlags excluded = SaveVarFlags.Default)
@@ -103,7 +115,9 @@ public static void DeserializeOnGameObject(GameObject gobj, Dictionary<string, s
 | `required` | [`SaveVarFlags`](/api/Global.SaveVarFlags) |  |
 | `excluded` | [`SaveVarFlags`](/api/Global.SaveVarFlags) |  |
 
-### `FromJson(string, Type, JsonSerializerSettings)`
+:::
+
+::: details `FromJson(string, Type, JsonSerializerSettings)`
 
 ```csharp
 public static object FromJson(string json, Type type, JsonSerializerSettings settings = null)
@@ -118,7 +132,9 @@ public static object FromJson(string json, Type type, JsonSerializerSettings set
 
 **Returns:** `object`
 
-### `FromJson<T>(string, JsonSerializerSettings)`
+:::
+
+::: details `FromJson&lt;T&gt;(string, JsonSerializerSettings)`
 
 ```csharp
 public static T FromJson<T>(string json, JsonSerializerSettings settings = null)
@@ -133,7 +149,9 @@ public static T FromJson<T>(string json, JsonSerializerSettings settings = null)
 
 **Returns:** `T`
 
-### `GetNewSettings()`
+:::
+
+::: details `GetNewSettings()`
 
 ```csharp
 public static JsonSerializerSettings GetNewSettings()
@@ -141,7 +159,9 @@ public static JsonSerializerSettings GetNewSettings()
 
 **Returns:** `Newtonsoft.Json.JsonSerializerSettings`
 
-### `SerializeAchievementData()`
+:::
+
+::: details `SerializeAchievementData()`
 
 ```csharp
 public static DewPersistence.AchievementsData SerializeAchievementData()
@@ -149,7 +169,9 @@ public static DewPersistence.AchievementsData SerializeAchievementData()
 
 **Returns:** `DewPersistence.AchievementsData`
 
-### `SerializeGameData(LoadNodeSettings)`
+:::
+
+::: details `SerializeGameData(LoadNodeSettings)`
 
 ```csharp
 public static DewPersistence.GameData SerializeGameData(LoadNodeSettings settings)
@@ -162,7 +184,9 @@ public static DewPersistence.GameData SerializeGameData(LoadNodeSettings setting
 
 **Returns:** `DewPersistence.GameData`
 
-### `SerializeGameObject(GameObject)`
+:::
+
+::: details `SerializeGameObject(GameObject)`
 
 ```csharp
 public static Dictionary<string, string> SerializeGameObject(GameObject gobj)
@@ -175,7 +199,9 @@ public static Dictionary<string, string> SerializeGameObject(GameObject gobj)
 
 **Returns:** `System.Collections.Generic.Dictionary<TKey, TValue><string,string>`
 
-### `SerializePlayerData(DewPlayer)`
+:::
+
+::: details `SerializePlayerData(DewPlayer)`
 
 ```csharp
 public static DewPersistence.PlayerData SerializePlayerData(DewPlayer player)
@@ -188,7 +214,9 @@ public static DewPersistence.PlayerData SerializePlayerData(DewPlayer player)
 
 **Returns:** `DewPersistence.PlayerData`
 
-### `SerializeRoomData()`
+:::
+
+::: details `SerializeRoomData()`
 
 ```csharp
 public static DewPersistence.RoomData SerializeRoomData()
@@ -196,7 +224,9 @@ public static DewPersistence.RoomData SerializeRoomData()
 
 **Returns:** `DewPersistence.RoomData`
 
-### `ToJson(object, JsonSerializerSettings)`
+:::
+
+::: details `ToJson(object, JsonSerializerSettings)`
 
 ```csharp
 public static string ToJson(object obj, JsonSerializerSettings settings = null)
@@ -209,3 +239,5 @@ public static string ToJson(object obj, JsonSerializerSettings settings = null)
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
 **Returns:** `string`
+
+:::

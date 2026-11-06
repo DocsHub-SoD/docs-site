@@ -10,28 +10,38 @@
 public class EntityAnimation : EntityComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`abilityAnimStatus`** | `public EntityAnimation.AbilityAnimationStatus abilityAnimStatus` |  |
 | **`animator`** | `[NonSerialized] public Animator animator` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`model`** | `public EntityModel model { get; }` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (11)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -42,7 +52,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `PlayAbilityAnimation(DewAnimationClip, float, float)`
+:::
+
+::: details `PlayAbilityAnimation(DewAnimationClip, float, float)`
 
 ```csharp
 public void PlayAbilityAnimation(DewAnimationClip clip, float speed, float clipSelectValue)
@@ -55,7 +67,9 @@ public void PlayAbilityAnimation(DewAnimationClip clip, float speed, float clipS
 | `speed` | `float` |  |
 | `clipSelectValue` | `float` |  |
 
-### `PlayAbilityAnimation(DewAnimationClip, float)`
+:::
+
+::: details `PlayAbilityAnimation(DewAnimationClip, float)`
 
 ```csharp
 public void PlayAbilityAnimation(DewAnimationClip clip, float speed = 1)
@@ -67,13 +81,17 @@ public void PlayAbilityAnimation(DewAnimationClip clip, float speed = 1)
 | `clip` | [`DewAnimationClip`](/api/Global.DewAnimationClip) |  |
 | `speed` | `float` |  |
 
-### `PlayStaggerAnimation()`
+:::
+
+::: details `PlayStaggerAnimation()`
 
 ```csharp
 public void PlayStaggerAnimation()
 ```
 
-### `ReplaceAnimation(ReplaceableAnimationType, AnimationClip)`
+:::
+
+::: details `ReplaceAnimation(ReplaceableAnimationType, AnimationClip)`
 
 ```csharp
 public void ReplaceAnimation(EntityAnimation.ReplaceableAnimationType type, AnimationClip clip)
@@ -85,7 +103,9 @@ public void ReplaceAnimation(EntityAnimation.ReplaceableAnimationType type, Anim
 | `type` | [`EntityAnimation.ReplaceableAnimationType`](/api/Global.EntityAnimation) |  |
 | `clip` | `UnityEngine.AnimationClip` |  |
 
-### `ReplaceAnimationLocal(ReplaceableAnimationType, AnimationClipWithSpeed)`
+:::
+
+::: details `ReplaceAnimationLocal(ReplaceableAnimationType, AnimationClipWithSpeed)`
 
 ```csharp
 public void ReplaceAnimationLocal(EntityAnimation.ReplaceableAnimationType type, AnimationClipWithSpeed newData)
@@ -97,7 +117,9 @@ public void ReplaceAnimationLocal(EntityAnimation.ReplaceableAnimationType type,
 | `type` | [`EntityAnimation.ReplaceableAnimationType`](/api/Global.EntityAnimation) |  |
 | `newData` | [`AnimationClipWithSpeed`](/api/Global.AnimationClipWithSpeed) |  |
 
-### `ReplaceAnimationLocal(ReplaceableAnimationType, AnimationClip)`
+:::
+
+::: details `ReplaceAnimationLocal(ReplaceableAnimationType, AnimationClip)`
 
 ```csharp
 public void ReplaceAnimationLocal(EntityAnimation.ReplaceableAnimationType type, AnimationClip newClip)
@@ -109,19 +131,25 @@ public void ReplaceAnimationLocal(EntityAnimation.ReplaceableAnimationType type,
 | `type` | [`EntityAnimation.ReplaceableAnimationType`](/api/Global.EntityAnimation) |  |
 | `newClip` | `UnityEngine.AnimationClip` |  |
 
-### `SetupModel()`
+:::
+
+::: details `SetupModel()`
 
 ```csharp
 public void SetupModel()
 ```
 
-### `StopAbilityAnimation()`
+:::
+
+::: details `StopAbilityAnimation()`
 
 ```csharp
 public void StopAbilityAnimation()
 ```
 
-### `StopAbilityAnimation(DewAnimationClip)`
+:::
+
+::: details `StopAbilityAnimation(DewAnimationClip)`
 
 Stop ability animation if currently playing animation is given clip.
 
@@ -133,3 +161,5 @@ public void StopAbilityAnimation(DewAnimationClip clip)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `clip` | [`DewAnimationClip`](/api/Global.DewAnimationClip) |  |
+
+:::

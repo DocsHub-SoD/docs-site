@@ -10,16 +10,22 @@
 public class PersistentStatBonusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`bonus`** | `[SaveVar(SaveVarFlags.Default)] public StatBonus bonus` |  |
 
-## Methods
+:::
 
-### `OnCreate()`
+## Methods (1)
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
+
+:::

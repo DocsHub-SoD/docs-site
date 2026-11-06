@@ -8,9 +8,9 @@
 public class UI_Window_DragArea : MonoBehaviour
 ```
 
-## Methods
+## Methods (2)
 
-### `OnPointerDown(PointerEventData)`
+::: details `OnPointerDown(PointerEventData)`
 
 ```csharp
 public void OnPointerDown(PointerEventData eventData)
@@ -21,7 +21,9 @@ public void OnPointerDown(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnPointerUp(PointerEventData)`
+:::
+
+::: details `OnPointerUp(PointerEventData)`
 
 ```csharp
 public void OnPointerUp(PointerEventData eventData)
@@ -31,3 +33,5 @@ public void OnPointerUp(PointerEventData eventData)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
+
+:::

@@ -8,9 +8,13 @@
 public struct DewAuthResponseMessage
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`errorType`** | `public DewExceptionType errorType` |  |
 | **`isError`** | `public bool isError` |  |
+
+:::

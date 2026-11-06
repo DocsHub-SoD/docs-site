@@ -8,18 +8,24 @@
 public interface ICleanup
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`canDestroy`** | `bool canDestroy { get; }` | If anyICleanupreports false, destroy call will be delayed. |
 
-## Methods
+:::
 
-### `OnCleanup()`
+## Methods (1)
+
+::: details `OnCleanup()`
 
 Called on server to ready itself before getting destroyed.
 
 ```csharp
 void OnCleanup()
 ```
+
+:::

@@ -8,9 +8,9 @@
 public class CustomAIBehaviors
 ```
 
-## Methods
+## Methods (2)
 
-### `Add(CustomAIUpdate, int)`
+::: details `Add(CustomAIUpdate, int)`
 
 Updates with lower priority value will be executed first. Return true on update if you want to stop execution of further AI updates.
 
@@ -24,7 +24,9 @@ public void Add(CustomAIUpdate onUpdate, int priority = 0)
 | `onUpdate` | [`CustomAIUpdate`](/api/Global.CustomAIUpdate) |  |
 | `priority` | `int` |  |
 
-### `Remove(CustomAIUpdate)`
+:::
+
+::: details `Remove(CustomAIUpdate)`
 
 ```csharp
 public void Remove(CustomAIUpdate onUpdate)
@@ -34,3 +36,5 @@ public void Remove(CustomAIUpdate onUpdate)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `onUpdate` | [`CustomAIUpdate`](/api/Global.CustomAIUpdate) |  |
+
+:::

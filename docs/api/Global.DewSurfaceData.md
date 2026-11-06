@@ -8,7 +8,9 @@
 public class DewSurfaceData : MonoBehaviour
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,8 +21,14 @@ public class DewSurfaceData : MonoBehaviour
 | **`onlyWhenWalking`** | `[ShowIf("fxPeriodicEffect", true)] public bool onlyWhenWalking` |  |
 | **`periodicEffectInterval`** | `[ShowIf("fxPeriodicEffect", true)] public Vector2 periodicEffectInterval` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`defaultSurface`** | `public static DewSurfaceData defaultSurface { get; }` |  |
+
+:::

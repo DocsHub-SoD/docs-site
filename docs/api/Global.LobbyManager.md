@@ -9,14 +9,20 @@
 public class LobbyManager : ManagerBase<LobbyManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onCurrentLobbyChanged`** | `public Action onCurrentLobbyChanged` |  |
 | **`onLobbyListUpdated`** | `public Action onLobbyListUpdated` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,9 +30,11 @@ public class LobbyManager : ManagerBase<LobbyManager>, ILogicUpdate
 | **`service`** | `public LobbyServiceProvider service { get; }` |  |
 | **`shouldRegisterUpdates`** | `public override bool shouldRegisterUpdates { get; }` |  |
 
-## Methods
+:::
 
-### `GetDefaultLobbyName()`
+## Methods (3)
+
+::: details `GetDefaultLobbyName()`
 
 ```csharp
 public static string GetDefaultLobbyName()
@@ -34,13 +42,17 @@ public static string GetDefaultLobbyName()
 
 **Returns:** `string`
 
-### `SwitchService()`
+:::
+
+::: details `SwitchService()`
 
 ```csharp
 public void SwitchService()
 ```
 
-### `SwitchService(LobbyServiceProvider)`
+:::
+
+::: details `SwitchService(LobbyServiceProvider)`
 
 ```csharp
 public void SwitchService(LobbyServiceProvider newProvider)
@@ -50,3 +62,5 @@ public void SwitchService(LobbyServiceProvider newProvider)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `newProvider` | [`LobbyServiceProvider`](/api/Global.LobbyServiceProvider) |  |
+
+:::

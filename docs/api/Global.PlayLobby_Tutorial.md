@@ -8,7 +8,9 @@
 public class PlayLobby_Tutorial : MonoBehaviour
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,9 +25,11 @@ public class PlayLobby_Tutorial : MonoBehaviour
 | **`skillConstellationsGroup`** | `public RectTransform skillConstellationsGroup` |  |
 | **`startButton`** | `public RectTransform startButton` |  |
 
-## Methods
+:::
 
-### `SelectFlexibleStars(bool)`
+## Methods (1)
+
+::: details `SelectFlexibleStars(bool)`
 
 ```csharp
 public void SelectFlexibleStars(bool isSelected)
@@ -35,3 +39,5 @@ public void SelectFlexibleStars(bool isSelected)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `isSelected` | `bool` |  |
+
+:::

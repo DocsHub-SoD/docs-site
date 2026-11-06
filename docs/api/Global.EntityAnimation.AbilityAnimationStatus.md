@@ -8,7 +8,9 @@
 public struct EntityAnimation.AbilityAnimationStatus
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,9 +23,15 @@ public struct EntityAnimation.AbilityAnimationStatus
 | **`rawClipDuration`** | `public float rawClipDuration` |  |
 | **`trimRange`** | `public Vector2 trimRange` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`normalizedTime`** | `public float normalizedTime { get; }` |  |
 | **`normalizedTimeParameter`** | `public float normalizedTimeParameter { get; }` |  |
+
+:::

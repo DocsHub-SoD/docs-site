@@ -8,9 +8,9 @@
 public static class CastMethodDataSerialization
 ```
 
-## Methods
+## Methods (2)
 
-### `ReadWriteCastMethodData(NetworkReader)`
+::: details `ReadWriteCastMethodData(NetworkReader)`
 
 ```csharp
 public static CastMethodData ReadWriteCastMethodData(this NetworkReader reader)
@@ -23,7 +23,9 @@ public static CastMethodData ReadWriteCastMethodData(this NetworkReader reader)
 
 **Returns:** `CastMethodData`
 
-### `WriteCastMethodData(NetworkWriter, CastMethodData)`
+:::
+
+::: details `WriteCastMethodData(NetworkWriter, CastMethodData)`
 
 ```csharp
 public static void WriteCastMethodData(this NetworkWriter writer, CastMethodData value)
@@ -34,3 +36,5 @@ public static void WriteCastMethodData(this NetworkWriter writer, CastMethodData
 | :--- | :--- | :--- |
 | `writer` | `Mirror.NetworkWriter` |  |
 | `value` | [`CastMethodData`](/api/Global.CastMethodData) |  |
+
+:::

@@ -9,45 +9,59 @@
 public class DevGameManager : GameManager, ILogicUpdate
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`startZonePrefab`** | `public Zone startZonePrefab` |  |
 
-## Methods
+:::
 
-### `HostGame()`
+## Methods (7)
+
+::: details `HostGame()`
 
 ```csharp
 public void HostGame()
 ```
 
-### `OnLateStart()`
+:::
+
+::: details `OnLateStart()`
 
 ```csharp
 public override void OnLateStart()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStopClient()`
+:::
+
+::: details `OnStopClient()`
 
 ```csharp
 public override void OnStopClient()
 ```
 
-### `SpawnHero(Type, int, HeroLoadoutData, NetworkConnectionToClient)`
+:::
+
+::: details `SpawnHero(Type, int, HeroLoadoutData, NetworkConnectionToClient)`
 
 ```csharp
 public void SpawnHero(Type heroType, int level, HeroLoadoutData loadout, NetworkConnectionToClient sender = null)
@@ -61,8 +75,12 @@ public void SpawnHero(Type heroType, int level, HeroLoadoutData loadout, Network
 | `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `StartLocalGame()`
+:::
+
+::: details `StartLocalGame()`
 
 ```csharp
 public void StartLocalGame()
 ```
+
+:::

@@ -9,9 +9,9 @@
 public class CameraModifierBase
 ```
 
-## Methods
+## Methods (2)
 
-### `Apply()`
+::: details `Apply()`
 
 ```csharp
 public CameraModifierBase Apply()
@@ -19,8 +19,12 @@ public CameraModifierBase Apply()
 
 **Returns:** `CameraModifierBase`
 
-### `Remove()`
+:::
+
+::: details `Remove()`
 
 ```csharp
 public void Remove()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public class FxEntityTransform : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class FxEntityTransform : FxInterpolatedEffectBase, IEffectComponent, IEf
 | **`scaleMultiplier`** | `public Vector3 scaleMultiplier` |  |
 | **`worldOffset`** | `public Vector3 worldOffset` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (2)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -31,7 +35,9 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -41,3 +47,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

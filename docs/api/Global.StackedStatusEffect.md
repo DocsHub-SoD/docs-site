@@ -9,7 +9,9 @@
 public abstract class StackedStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,16 +23,22 @@ public abstract class StackedStatusEffect : StatusEffect, ILogicUpdate, ICleanup
 | **`maxStack`** | `[BoxGroup("Stack Settings", true, false, 0)] public int maxStack` |  |
 | **`resetTimerOnStackChange`** | `[BoxGroup("Stack Settings", true, false, 0)] [ToggleGroup("Stack Settings/autoDecay", "Auto Decay")] [ToggleLeft] public bool resetTimerOnStackChange` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`remainingDecayTime`** | `public float remainingDecayTime { get; }` |  |
 | **`stack`** | `public int stack { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (8)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -41,7 +49,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AddStack(int)`
+:::
+
+::: details `AddStack(int)`
 
 ```csharp
 public void AddStack(int value = 1)
@@ -52,19 +62,25 @@ public void AddStack(int value = 1)
 | :--- | :--- | :--- |
 | `value` | `int` |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnStackChange(int, int)`
+:::
+
+::: details `OnStackChange(int, int)`
 
 Called everywhere when stack count changes.
 
@@ -78,7 +94,9 @@ protected virtual void OnStackChange(int oldStack, int newStack)
 | `oldStack` | `int` |  |
 | `newStack` | `int` |  |
 
-### `RemoveStack(int)`
+:::
+
+::: details `RemoveStack(int)`
 
 ```csharp
 public void RemoveStack(int value = 1)
@@ -89,13 +107,17 @@ public void RemoveStack(int value = 1)
 | :--- | :--- | :--- |
 | `value` | `int` |  |
 
-### `ResetDecayTimer()`
+:::
+
+::: details `ResetDecayTimer()`
 
 ```csharp
 public void ResetDecayTimer()
 ```
 
-### `SetStack(int)`
+:::
+
+::: details `SetStack(int)`
 
 ```csharp
 public void SetStack(int stack)
@@ -105,3 +127,5 @@ public void SetStack(int stack)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `stack` | `int` |  |
+
+:::

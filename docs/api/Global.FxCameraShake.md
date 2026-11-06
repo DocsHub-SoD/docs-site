@@ -8,7 +8,9 @@
 public class FxCameraShake : MonoBehaviour, IEffectComponent, IEffectWithOwnerContext
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,21 +25,29 @@ public class FxCameraShake : MonoBehaviour, IEffectComponent, IEffectWithOwnerCo
 | **`signalSource`** | `public SignalSourceAsset signalSource` |  |
 | **`sustainTime`** | `public float sustainTime` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `Play()`
+## Methods (3)
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `SetOwnerContext(EffectOwnerContext)`
+:::
+
+::: details `SetOwnerContext(EffectOwnerContext)`
 
 ```csharp
 public void SetOwnerContext(EffectOwnerContext context)
@@ -48,8 +58,12 @@ public void SetOwnerContext(EffectOwnerContext context)
 | :--- | :--- | :--- |
 | `context` | [`EffectOwnerContext`](/api/Global.EffectOwnerContext) |  |
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public class WorldMessageSetting
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class WorldMessageSetting
 | **`rawText`** | `public string rawText` |  |
 | **`worldPos`** | `public Vector3 worldPos` |  |
 | **`worldPosGetter`** | `[NonSerialized] public Func<Vector3> worldPosGetter` |  |
+
+:::

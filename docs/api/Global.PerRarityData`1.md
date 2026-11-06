@@ -9,7 +9,9 @@
 public struct PerRarityData<T>
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,9 +23,11 @@ public struct PerRarityData<T>
 | **`rare`** | `public T rare` |  |
 | **`unique`** | `public T unique` |  |
 
-## Methods
+:::
 
-### `Get(Rarity)`
+## Methods (2)
+
+::: details `Get(Rarity)`
 
 ```csharp
 public T Get(Rarity rarity)
@@ -36,7 +40,9 @@ public T Get(Rarity rarity)
 
 **Returns:** `T`
 
-### `Set(Rarity, T)`
+:::
+
+::: details `Set(Rarity, T)`
 
 ```csharp
 public void Set(Rarity rarity, T value)
@@ -47,3 +53,5 @@ public void Set(Rarity rarity, T value)
 | :--- | :--- | :--- |
 | `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 | `value` | `T` |  |
+
+:::

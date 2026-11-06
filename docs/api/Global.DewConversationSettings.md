@@ -8,7 +8,9 @@
 public class DewConversationSettings
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,10 +23,16 @@ public class DewConversationSettings
 | **`variables`** | `public Dictionary<string, string> variables` |  |
 | **`visibility`** | `public ConversationVisibility visibility` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isLocalAuthority`** | `public bool isLocalAuthority { get; }` | Is local player authorized to advance the conversation? |
 | **`isVisibleToLocal`** | `public bool isVisibleToLocal { get; }` | Can local player see this conversation? |
 | **`seed`** | `public int seed { get; }` | Used for solving randomness consistently across clients. |
+
+:::

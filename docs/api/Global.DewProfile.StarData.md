@@ -8,15 +8,19 @@
 public class DewProfile.StarData
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`level`** | `public int level` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (2)
+
+::: details `Clone()`
 
 ```csharp
 public DewProfile.StarData Clone()
@@ -24,7 +28,9 @@ public DewProfile.StarData Clone()
 
 **Returns:** `DewProfile.StarData`
 
-### `IsUnchanged(StarData)`
+:::
+
+::: details `IsUnchanged(StarData)`
 
 ```csharp
 public bool IsUnchanged(DewProfile.StarData other)
@@ -36,3 +42,5 @@ public bool IsUnchanged(DewProfile.StarData other)
 | `other` | [`DewProfile.StarData`](/api/Global.DewProfile) |  |
 
 **Returns:** `bool`
+
+:::

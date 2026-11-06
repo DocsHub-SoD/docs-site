@@ -8,15 +8,17 @@
 public interface IControlPresetWindow
 ```
 
-## Methods
+## Methods (3)
 
-### `Hide()`
+::: details `Hide()`
 
 ```csharp
 void Hide()
 ```
 
-### `IsShown()`
+:::
+
+::: details `IsShown()`
 
 ```csharp
 bool IsShown()
@@ -24,7 +26,9 @@ bool IsShown()
 
 **Returns:** `bool`
 
-### `Show(bool)`
+:::
+
+::: details `Show(bool)`
 
 ```csharp
 void Show(bool showCancel)
@@ -34,3 +38,5 @@ void Show(bool showCancel)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `showCancel` | `bool` |  |
+
+:::

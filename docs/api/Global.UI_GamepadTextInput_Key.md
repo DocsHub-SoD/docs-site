@@ -9,16 +9,20 @@
 public class UI_GamepadTextInput_Key : UI_GamepadFocusable, IGamepadFocusable, IGamepadFocusListener, IGamepadFocusableOverrideInput
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`key`** | `public string key` |  |
 | **`keyText`** | `public TextMeshProUGUI keyText` |  |
 
-## Methods
+:::
 
-### `OnGamepadDpadDown()`
+## Methods (5)
+
+::: details `OnGamepadDpadDown()`
 
 ```csharp
 public bool OnGamepadDpadDown()
@@ -26,7 +30,9 @@ public bool OnGamepadDpadDown()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadLeft()`
+:::
+
+::: details `OnGamepadDpadLeft()`
 
 ```csharp
 public bool OnGamepadDpadLeft()
@@ -34,7 +40,9 @@ public bool OnGamepadDpadLeft()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadRight()`
+:::
+
+::: details `OnGamepadDpadRight()`
 
 ```csharp
 public bool OnGamepadDpadRight()
@@ -42,7 +50,9 @@ public bool OnGamepadDpadRight()
 
 **Returns:** `bool`
 
-### `OnGamepadDpadUp()`
+:::
+
+::: details `OnGamepadDpadUp()`
 
 ```csharp
 public bool OnGamepadDpadUp()
@@ -50,7 +60,9 @@ public bool OnGamepadDpadUp()
 
 **Returns:** `bool`
 
-### `OnPointerClick(PointerEventData)`
+:::
+
+::: details `OnPointerClick(PointerEventData)`
 
 ```csharp
 public void OnPointerClick(PointerEventData eventData)
@@ -60,3 +72,5 @@ public void OnPointerClick(PointerEventData eventData)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
+
+:::

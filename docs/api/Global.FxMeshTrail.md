@@ -9,7 +9,9 @@
 public class FxMeshTrail : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public class FxMeshTrail : FxInterpolatedEffectBase, IEffectComponent, IEffectWi
 | **`trailInterval`** | `public float trailInterval` |  |
 | **`worldVelocity`** | `public Vector3 worldVelocity` |  |
 
-## Methods
+:::
 
-### `OnAttachToEntity(Entity)`
+## Methods (2)
+
+::: details `OnAttachToEntity(Entity)`
 
 ```csharp
 public void OnAttachToEntity(Entity target)
@@ -33,7 +37,9 @@ public void OnAttachToEntity(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -43,3 +49,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

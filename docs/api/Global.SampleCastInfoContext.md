@@ -8,7 +8,9 @@
 public struct SampleCastInfoContext
 ```
 
-## Fields
+## Fields (12)
+
+::: details Click to expand Fields (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,3 +26,5 @@ public struct SampleCastInfoContext
 | **`targetValidator`** | `public AbilityTargetValidator targetValidator` |  |
 | **`trigger`** | `public AbilityTrigger trigger` |  |
 | **`updateCallback`** | `[NonSerialized] public Action<CastInfo> updateCallback` |  |
+
+:::

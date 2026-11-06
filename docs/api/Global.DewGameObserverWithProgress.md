@@ -9,15 +9,19 @@
 public class DewGameObserverWithProgress : DewPersistentGameObserver
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`hero`** | `public Hero hero { get; }` |  |
 
-## Methods
+:::
 
-### `AchCompleteWhen(Func<bool>, float)`
+## Methods (5)
+
+::: details `AchCompleteWhen(Func&lt;bool&gt;, float)`
 
 ```csharp
 protected void AchCompleteWhen(Func<bool> condition, float checkInterval = 2)
@@ -29,13 +33,17 @@ protected void AchCompleteWhen(Func<bool> condition, float checkInterval = 2)
 | `condition` | `System.Func<TResult><bool>` |  |
 | `checkInterval` | `float` |  |
 
-### `Complete()`
+:::
+
+::: details `Complete()`
 
 ```csharp
 public void Complete()
 ```
 
-### `GetCurrentProgress()`
+:::
+
+::: details `GetCurrentProgress()`
 
 Get current progress of this observer.
 
@@ -45,7 +53,9 @@ public virtual int GetCurrentProgress()
 
 **Returns:** `int`
 
-### `GetMaxProgress()`
+:::
+
+::: details `GetMaxProgress()`
 
 Get max progress of this observer. Defaults to 1. Must return consistent value.
 
@@ -55,8 +65,12 @@ public virtual int GetMaxProgress()
 
 **Returns:** `int`
 
-### `OnComplete()`
+:::
+
+::: details `OnComplete()`
 
 ```csharp
 public virtual void OnComplete()
 ```
+
+:::

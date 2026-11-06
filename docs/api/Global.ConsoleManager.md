@@ -9,7 +9,9 @@
 public class ConsoleManager : NetworkedManagerBase<ConsoleManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,28 +21,38 @@ public class ConsoleManager : NetworkedManagerBase<ConsoleManager>, ILogicUpdate
 | **`glDrawMaterial`** | `public Material glDrawMaterial` |  |
 | **`localSelectedEntity`** | `public Entity localSelectedEntity` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isCheatEnabled`** | `public bool isCheatEnabled { get; }` |  |
 | **`isConsoleWindowOpen`** | `public bool isConsoleWindowOpen { get; }` |  |
 
-## Methods
+:::
 
-### `DisableCheats()`
+## Methods (11)
+
+::: details `DisableCheats()`
 
 ```csharp
 public void DisableCheats()
 ```
 
-### `EnableCheats()`
+:::
+
+::: details `EnableCheats()`
 
 ```csharp
 public void EnableCheats()
 ```
 
-### `ExecuteAutoExec(AutoExecKey)`
+:::
+
+::: details `ExecuteAutoExec(AutoExecKey)`
 
 ```csharp
 public void ExecuteAutoExec(ConsoleManager.AutoExecKey key)
@@ -51,7 +63,9 @@ public void ExecuteAutoExec(ConsoleManager.AutoExecKey key)
 | :--- | :--- | :--- |
 | `key` | [`ConsoleManager.AutoExecKey`](/api/Global.ConsoleManager) |  |
 
-### `ExecuteServerCommand(char[], Entity, Vector3, NetworkConnectionToClient)`
+:::
+
+::: details `ExecuteServerCommand(char[], Entity, Vector3, NetworkConnectionToClient)`
 
 ```csharp
 public void ExecuteServerCommand(char[] charCommand, Entity selected, Vector3 cursorWorldPos, NetworkConnectionToClient sender = null)
@@ -65,13 +79,17 @@ public void ExecuteServerCommand(char[] charCommand, Entity selected, Vector3 cu
 | `cursorWorldPos` | `UnityEngine.Vector3` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -82,13 +100,17 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnGameAreaPointerDown(PointerEventData)`
+:::
+
+::: details `OnGameAreaPointerDown(PointerEventData)`
 
 ```csharp
 public void OnGameAreaPointerDown(PointerEventData eventData)
@@ -99,22 +121,30 @@ public void OnGameAreaPointerDown(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `OnLateStart()`
+:::
+
+::: details `OnLateStart()`
 
 ```csharp
 public override void OnLateStart()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `ShouldSkipAutoExec()`
+:::
+
+::: details `ShouldSkipAutoExec()`
 
 ```csharp
 public bool ShouldSkipAutoExec()
 ```
 
 **Returns:** `bool`
+
+:::

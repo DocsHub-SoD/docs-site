@@ -8,22 +8,30 @@
 public interface IEffectComponent
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `Play()`
+## Methods (2)
+
+::: details `Play()`
 
 ```csharp
 void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 void Stop()
 ```
+
+:::

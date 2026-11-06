@@ -9,7 +9,9 @@
 public class FxParticleSystem : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class FxParticleSystem : MonoBehaviour
 | **`dontPauseAttachedWhenRendererDisabled`** | `[ToggleLeft] public bool dontPauseAttachedWhenRendererDisabled` |  |
 | **`dontPauseAttachedWhenTeleport`** | `[Header("Attached Effects")] [ToggleLeft] public bool dontPauseAttachedWhenTeleport` |  |
 | **`hideAttachedWhenRendererDisabled`** | `[ToggleLeft] public bool hideAttachedWhenRendererDisabled` |  |
+
+:::

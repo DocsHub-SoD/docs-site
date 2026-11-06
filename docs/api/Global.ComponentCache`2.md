@@ -8,15 +8,17 @@
 public class ComponentCache<TKey, TValue> where TKey : Object where TValue : class
 ```
 
-## Methods
+## Methods (2)
 
-### `Clear()`
+::: details `Clear()`
 
 ```csharp
 public void Clear()
 ```
 
-### `GetOrAdd(TKey, Func<TValue>)`
+:::
+
+::: details `GetOrAdd(TKey, Func&lt;TValue&gt;)`
 
 ```csharp
 public TValue GetOrAdd(TKey key, Func<TValue> valueFactory)
@@ -29,3 +31,5 @@ public TValue GetOrAdd(TKey key, Func<TValue> valueFactory)
 | `valueFactory` | `System.Func<TResult><TValue>` |  |
 
 **Returns:** `TValue`
+
+:::

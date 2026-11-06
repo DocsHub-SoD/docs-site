@@ -10,7 +10,9 @@
 public class EntityStatus : EntityComponent, ILogicUpdate, ICleanup
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,7 +27,11 @@ public class EntityStatus : EntityComponent, ILogicUpdate, ICleanup
 | **`scalingStats`** | `[BoxGroup("Stat Settings", true, false, 0)] public BonusStats scalingStats` |  |
 | **`statusEffects`** | `public readonly List<StatusEffect> statusEffects` | List of status effects this entity has. |
 
-## Properties
+:::
+
+## Properties (66)
+
+::: details Click to expand Properties (66)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -96,9 +102,11 @@ public class EntityStatus : EntityComponent, ILogicUpdate, ICleanup
 | **`totalSlow`** | `public float totalSlow { get; }` |  |
 | **`totalSpeed`** | `public float totalSpeed { get; }` |  |
 
-## Methods
+:::
 
-### `AddStatBonus(StatBonus)`
+## Methods (28)
+
+::: details `AddStatBonus(StatBonus)`
 
 Add the given bonus stats to this entity.
 
@@ -113,7 +121,9 @@ public StatBonus AddStatBonus(StatBonus bonus)
 
 **Returns:** `StatBonus`
 
-### `CalculateTotalBonusStat(float, float, float)`
+:::
+
+::: details `CalculateTotalBonusStat(float, float, float)`
 
 ```csharp
 public float CalculateTotalBonusStat(float current, float bonusFlat, float bonusPercentage)
@@ -128,7 +138,9 @@ public float CalculateTotalBonusStat(float current, float bonusFlat, float bonus
 
 **Returns:** `float`
 
-### `DisableSectionTriggering()`
+:::
+
+::: details `DisableSectionTriggering()`
 
 This entity will not trigger section colliders. Note EnableSectionTriggering() must be done after calling this function.
 
@@ -136,7 +148,9 @@ This entity will not trigger section colliders. Note EnableSectionTriggering() m
 public void DisableSectionTriggering()
 ```
 
-### `EnableSectionTriggering()`
+:::
+
+::: details `EnableSectionTriggering()`
 
 This entity will trigger section colliders. Note this has to be done AFTER calling DisableSectionTriggering().
 
@@ -144,7 +158,9 @@ This entity will trigger section colliders. Note this has to be done AFTER calli
 public void EnableSectionTriggering()
 ```
 
-### `FindStatusEffect(Type, Func<StatusEffect, bool>)`
+:::
+
+::: details `FindStatusEffect(Type, Func&lt;StatusEffect, bool&gt;)`
 
 Find a status effect of given type with predicate.
 
@@ -160,7 +176,9 @@ public StatusEffect FindStatusEffect(Type type, Func<StatusEffect, bool> predica
 
 **Returns:** `StatusEffect`
 
-### `FindStatusEffect<T>(Func<T, bool>)`
+:::
+
+::: details `FindStatusEffect&lt;T&gt;(Func&lt;T, bool&gt;)`
 
 Find a status effect of given type with predicate.
 
@@ -176,7 +194,9 @@ public T FindStatusEffect<T>(Func<T, bool> predicate) where T : StatusEffect
 
 **Returns:** `T`
 
-### `GetBonusAbilityPower()`
+:::
+
+::: details `GetBonusAbilityPower()`
 
 ```csharp
 public float GetBonusAbilityPower()
@@ -184,7 +204,9 @@ public float GetBonusAbilityPower()
 
 **Returns:** `float`
 
-### `GetBonusArmor()`
+:::
+
+::: details `GetBonusArmor()`
 
 ```csharp
 public float GetBonusArmor()
@@ -192,7 +214,9 @@ public float GetBonusArmor()
 
 **Returns:** `float`
 
-### `GetBonusAttackDamage()`
+:::
+
+::: details `GetBonusAttackDamage()`
 
 ```csharp
 public float GetBonusAttackDamage()
@@ -200,7 +224,9 @@ public float GetBonusAttackDamage()
 
 **Returns:** `float`
 
-### `GetBonusHealth()`
+:::
+
+::: details `GetBonusHealth()`
 
 ```csharp
 public float GetBonusHealth()
@@ -208,7 +234,9 @@ public float GetBonusHealth()
 
 **Returns:** `float`
 
-### `GetElementalAmp(ElementalType)`
+:::
+
+::: details `GetElementalAmp(ElementalType)`
 
 ```csharp
 public float GetElementalAmp(ElementalType type)
@@ -221,7 +249,9 @@ public float GetElementalAmp(ElementalType type)
 
 **Returns:** `float`
 
-### `GetElementalStack(ElementalType)`
+:::
+
+::: details `GetElementalStack(ElementalType)`
 
 ```csharp
 public int GetElementalStack(ElementalType type)
@@ -234,7 +264,9 @@ public int GetElementalStack(ElementalType type)
 
 **Returns:** `int`
 
-### `GetStatusEffect(Type)`
+:::
+
+::: details `GetStatusEffect(Type)`
 
 Get a status effect of given type.
 
@@ -249,7 +281,9 @@ public StatusEffect GetStatusEffect(Type type)
 
 **Returns:** `StatusEffect`
 
-### `GetStatusEffect<T>()`
+:::
+
+::: details `GetStatusEffect&lt;T&gt;()`
 
 Get a status effect of given type.
 
@@ -264,7 +298,9 @@ public T GetStatusEffect<T>() where T : StatusEffect
 
 **Returns:** `T`
 
-### `GetStatusEffects(Type)`
+:::
+
+::: details `GetStatusEffects(Type)`
 
 Enumerate all status effects of given type.
 
@@ -279,7 +315,9 @@ public IEnumerable<StatusEffect> GetStatusEffects(Type type)
 
 **Returns:** `System.Collections.Generic.IEnumerable<T><StatusEffect>`
 
-### `GetStatusEffects<T>()`
+:::
+
+::: details `GetStatusEffects&lt;T&gt;()`
 
 Enumerate all status effects of given type.
 
@@ -294,7 +332,9 @@ public IEnumerable<T> GetStatusEffects<T>() where T : StatusEffect
 
 **Returns:** `System.Collections.Generic.IEnumerable<T>`
 
-### `HasElemental(ElementalType)`
+:::
+
+::: details `HasElemental(ElementalType)`
 
 ```csharp
 public bool HasElemental(ElementalType type)
@@ -307,7 +347,9 @@ public bool HasElemental(ElementalType type)
 
 **Returns:** `bool`
 
-### `HasStatusEffect(Type)`
+:::
+
+::: details `HasStatusEffect(Type)`
 
 Does this entity has a status effect of a certain type?
 
@@ -322,7 +364,9 @@ public bool HasStatusEffect(Type statusEffectType)
 
 **Returns:** `bool`
 
-### `HasStatusEffect<T>()`
+:::
+
+::: details `HasStatusEffect&lt;T&gt;()`
 
 Does this entity has a status effect of a certain type?
 
@@ -337,13 +381,17 @@ public bool HasStatusEffect<T>() where T : StatusEffect
 
 **Returns:** `bool`
 
-### `HideHealth()`
+:::
+
+::: details `HideHealth()`
 
 ```csharp
 public void HideHealth()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -354,7 +402,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `RemoveStatBonus(StatBonus)`
+:::
+
+::: details `RemoveStatBonus(StatBonus)`
 
 Remove the given bonus stats from this entity. Throws if the provided bonus did not exist on this entity.
 
@@ -367,7 +417,9 @@ public void RemoveStatBonus(StatBonus bonus)
 | :--- | :--- | :--- |
 | `bonus` | [`StatBonus`](/api/Global.StatBonus) |  |
 
-### `SetHealth(float)`
+:::
+
+::: details `SetHealth(float)`
 
 ```csharp
 public void SetHealth(float amount)
@@ -378,7 +430,9 @@ public void SetHealth(float amount)
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
 
-### `SetMana(float)`
+:::
+
+::: details `SetMana(float)`
 
 ```csharp
 public void SetMana(float amount)
@@ -389,13 +443,17 @@ public void SetMana(float amount)
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
 
-### `ShowHealth()`
+:::
+
+::: details `ShowHealth()`
 
 ```csharp
 public void ShowHealth()
 ```
 
-### `TryGetStatusEffect(Type, out StatusEffect)`
+:::
+
+::: details `TryGetStatusEffect(Type, out StatusEffect)`
 
 Try to get an existing status effect instance on this entity.
 
@@ -411,7 +469,9 @@ public bool TryGetStatusEffect(Type type, out StatusEffect effect)
 
 **Returns:** `bool`
 
-### `TryGetStatusEffect<T>(out T)`
+:::
+
+::: details `TryGetStatusEffect&lt;T&gt;(out T)`
 
 Try to get an existing status effect instance on this entity.
 
@@ -427,10 +487,14 @@ public bool TryGetStatusEffect<T>(out T effect) where T : StatusEffect
 
 **Returns:** `bool`
 
-### `UpdateStats()`
+:::
+
+::: details `UpdateStats()`
 
 Recalculate entity stats + stat processors + basic effects + bonus stats immediately.
 
 ```csharp
 public void UpdateStats()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public class ProxyCollider : MonoBehaviour
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class ProxyCollider : MonoBehaviour
 | **`collider`** | `public Collider2D collider` |  |
 | **`entity`** | `public Entity entity` |  |
 | **`interactable`** | `public IInteractable interactable` |  |
+
+:::

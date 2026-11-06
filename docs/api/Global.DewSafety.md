@@ -8,9 +8,9 @@
 public static class DewSafety
 ```
 
-## Methods
+## Methods (2)
 
-### `FilterProfanity(string)`
+::: details `FilterProfanity(string)`
 
 ```csharp
 public static string FilterProfanity(string text)
@@ -23,7 +23,9 @@ public static string FilterProfanity(string text)
 
 **Returns:** `string`
 
-### `FilterProfanityIfEnabled(string)`
+:::
+
+::: details `FilterProfanityIfEnabled(string)`
 
 ```csharp
 public static string FilterProfanityIfEnabled(string text)
@@ -35,3 +37,5 @@ public static string FilterProfanityIfEnabled(string text)
 | `text` | `string` |  |
 
 **Returns:** `string`
+
+:::

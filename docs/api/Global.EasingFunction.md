@@ -8,9 +8,9 @@
 public static class EasingFunction
 ```
 
-## Methods
+## Methods (68)
 
-### `EaseInBack(float, float, float)`
+::: details `EaseInBack(float, float, float)`
 
 ```csharp
 public static float EaseInBack(float start, float end, float value)
@@ -25,7 +25,9 @@ public static float EaseInBack(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInBackD(float, float, float)`
+:::
+
+::: details `EaseInBackD(float, float, float)`
 
 ```csharp
 public static float EaseInBackD(float start, float end, float value)
@@ -40,7 +42,9 @@ public static float EaseInBackD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInBounce(float, float, float)`
+:::
+
+::: details `EaseInBounce(float, float, float)`
 
 ```csharp
 public static float EaseInBounce(float start, float end, float value)
@@ -55,7 +59,9 @@ public static float EaseInBounce(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInBounceD(float, float, float)`
+:::
+
+::: details `EaseInBounceD(float, float, float)`
 
 ```csharp
 public static float EaseInBounceD(float start, float end, float value)
@@ -70,7 +76,9 @@ public static float EaseInBounceD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInCirc(float, float, float)`
+:::
+
+::: details `EaseInCirc(float, float, float)`
 
 ```csharp
 public static float EaseInCirc(float start, float end, float value)
@@ -85,7 +93,9 @@ public static float EaseInCirc(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInCircD(float, float, float)`
+:::
+
+::: details `EaseInCircD(float, float, float)`
 
 ```csharp
 public static float EaseInCircD(float start, float end, float value)
@@ -100,7 +110,9 @@ public static float EaseInCircD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInCubic(float, float, float)`
+:::
+
+::: details `EaseInCubic(float, float, float)`
 
 ```csharp
 public static float EaseInCubic(float start, float end, float value)
@@ -115,7 +127,9 @@ public static float EaseInCubic(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInCubicD(float, float, float)`
+:::
+
+::: details `EaseInCubicD(float, float, float)`
 
 ```csharp
 public static float EaseInCubicD(float start, float end, float value)
@@ -130,7 +144,9 @@ public static float EaseInCubicD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInElastic(float, float, float)`
+:::
+
+::: details `EaseInElastic(float, float, float)`
 
 ```csharp
 public static float EaseInElastic(float start, float end, float value)
@@ -145,7 +161,9 @@ public static float EaseInElastic(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInElasticD(float, float, float)`
+:::
+
+::: details `EaseInElasticD(float, float, float)`
 
 ```csharp
 public static float EaseInElasticD(float start, float end, float value)
@@ -160,7 +178,9 @@ public static float EaseInElasticD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInExpo(float, float, float)`
+:::
+
+::: details `EaseInExpo(float, float, float)`
 
 ```csharp
 public static float EaseInExpo(float start, float end, float value)
@@ -175,7 +195,9 @@ public static float EaseInExpo(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInExpoD(float, float, float)`
+:::
+
+::: details `EaseInExpoD(float, float, float)`
 
 ```csharp
 public static float EaseInExpoD(float start, float end, float value)
@@ -190,7 +212,9 @@ public static float EaseInExpoD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutBack(float, float, float)`
+:::
+
+::: details `EaseInOutBack(float, float, float)`
 
 ```csharp
 public static float EaseInOutBack(float start, float end, float value)
@@ -205,7 +229,9 @@ public static float EaseInOutBack(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutBackD(float, float, float)`
+:::
+
+::: details `EaseInOutBackD(float, float, float)`
 
 ```csharp
 public static float EaseInOutBackD(float start, float end, float value)
@@ -220,7 +246,9 @@ public static float EaseInOutBackD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutBounce(float, float, float)`
+:::
+
+::: details `EaseInOutBounce(float, float, float)`
 
 ```csharp
 public static float EaseInOutBounce(float start, float end, float value)
@@ -235,7 +263,9 @@ public static float EaseInOutBounce(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutBounceD(float, float, float)`
+:::
+
+::: details `EaseInOutBounceD(float, float, float)`
 
 ```csharp
 public static float EaseInOutBounceD(float start, float end, float value)
@@ -250,7 +280,9 @@ public static float EaseInOutBounceD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutCirc(float, float, float)`
+:::
+
+::: details `EaseInOutCirc(float, float, float)`
 
 ```csharp
 public static float EaseInOutCirc(float start, float end, float value)
@@ -265,7 +297,9 @@ public static float EaseInOutCirc(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutCircD(float, float, float)`
+:::
+
+::: details `EaseInOutCircD(float, float, float)`
 
 ```csharp
 public static float EaseInOutCircD(float start, float end, float value)
@@ -280,7 +314,9 @@ public static float EaseInOutCircD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutCubic(float, float, float)`
+:::
+
+::: details `EaseInOutCubic(float, float, float)`
 
 ```csharp
 public static float EaseInOutCubic(float start, float end, float value)
@@ -295,7 +331,9 @@ public static float EaseInOutCubic(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutCubicD(float, float, float)`
+:::
+
+::: details `EaseInOutCubicD(float, float, float)`
 
 ```csharp
 public static float EaseInOutCubicD(float start, float end, float value)
@@ -310,7 +348,9 @@ public static float EaseInOutCubicD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutElastic(float, float, float)`
+:::
+
+::: details `EaseInOutElastic(float, float, float)`
 
 ```csharp
 public static float EaseInOutElastic(float start, float end, float value)
@@ -325,7 +365,9 @@ public static float EaseInOutElastic(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutElasticD(float, float, float)`
+:::
+
+::: details `EaseInOutElasticD(float, float, float)`
 
 ```csharp
 public static float EaseInOutElasticD(float start, float end, float value)
@@ -340,7 +382,9 @@ public static float EaseInOutElasticD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutExpo(float, float, float)`
+:::
+
+::: details `EaseInOutExpo(float, float, float)`
 
 ```csharp
 public static float EaseInOutExpo(float start, float end, float value)
@@ -355,7 +399,9 @@ public static float EaseInOutExpo(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutExpoD(float, float, float)`
+:::
+
+::: details `EaseInOutExpoD(float, float, float)`
 
 ```csharp
 public static float EaseInOutExpoD(float start, float end, float value)
@@ -370,7 +416,9 @@ public static float EaseInOutExpoD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutQuad(float, float, float)`
+:::
+
+::: details `EaseInOutQuad(float, float, float)`
 
 ```csharp
 public static float EaseInOutQuad(float start, float end, float value)
@@ -385,7 +433,9 @@ public static float EaseInOutQuad(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutQuadD(float, float, float)`
+:::
+
+::: details `EaseInOutQuadD(float, float, float)`
 
 ```csharp
 public static float EaseInOutQuadD(float start, float end, float value)
@@ -400,7 +450,9 @@ public static float EaseInOutQuadD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutQuart(float, float, float)`
+:::
+
+::: details `EaseInOutQuart(float, float, float)`
 
 ```csharp
 public static float EaseInOutQuart(float start, float end, float value)
@@ -415,7 +467,9 @@ public static float EaseInOutQuart(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutQuartD(float, float, float)`
+:::
+
+::: details `EaseInOutQuartD(float, float, float)`
 
 ```csharp
 public static float EaseInOutQuartD(float start, float end, float value)
@@ -430,7 +484,9 @@ public static float EaseInOutQuartD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutQuint(float, float, float)`
+:::
+
+::: details `EaseInOutQuint(float, float, float)`
 
 ```csharp
 public static float EaseInOutQuint(float start, float end, float value)
@@ -445,7 +501,9 @@ public static float EaseInOutQuint(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutQuintD(float, float, float)`
+:::
+
+::: details `EaseInOutQuintD(float, float, float)`
 
 ```csharp
 public static float EaseInOutQuintD(float start, float end, float value)
@@ -460,7 +518,9 @@ public static float EaseInOutQuintD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutSine(float, float, float)`
+:::
+
+::: details `EaseInOutSine(float, float, float)`
 
 ```csharp
 public static float EaseInOutSine(float start, float end, float value)
@@ -475,7 +535,9 @@ public static float EaseInOutSine(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInOutSineD(float, float, float)`
+:::
+
+::: details `EaseInOutSineD(float, float, float)`
 
 ```csharp
 public static float EaseInOutSineD(float start, float end, float value)
@@ -490,7 +552,9 @@ public static float EaseInOutSineD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInQuad(float, float, float)`
+:::
+
+::: details `EaseInQuad(float, float, float)`
 
 ```csharp
 public static float EaseInQuad(float start, float end, float value)
@@ -505,7 +569,9 @@ public static float EaseInQuad(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInQuadD(float, float, float)`
+:::
+
+::: details `EaseInQuadD(float, float, float)`
 
 ```csharp
 public static float EaseInQuadD(float start, float end, float value)
@@ -520,7 +586,9 @@ public static float EaseInQuadD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInQuart(float, float, float)`
+:::
+
+::: details `EaseInQuart(float, float, float)`
 
 ```csharp
 public static float EaseInQuart(float start, float end, float value)
@@ -535,7 +603,9 @@ public static float EaseInQuart(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInQuartD(float, float, float)`
+:::
+
+::: details `EaseInQuartD(float, float, float)`
 
 ```csharp
 public static float EaseInQuartD(float start, float end, float value)
@@ -550,7 +620,9 @@ public static float EaseInQuartD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInQuint(float, float, float)`
+:::
+
+::: details `EaseInQuint(float, float, float)`
 
 ```csharp
 public static float EaseInQuint(float start, float end, float value)
@@ -565,7 +637,9 @@ public static float EaseInQuint(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInQuintD(float, float, float)`
+:::
+
+::: details `EaseInQuintD(float, float, float)`
 
 ```csharp
 public static float EaseInQuintD(float start, float end, float value)
@@ -580,7 +654,9 @@ public static float EaseInQuintD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInSine(float, float, float)`
+:::
+
+::: details `EaseInSine(float, float, float)`
 
 ```csharp
 public static float EaseInSine(float start, float end, float value)
@@ -595,7 +671,9 @@ public static float EaseInSine(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseInSineD(float, float, float)`
+:::
+
+::: details `EaseInSineD(float, float, float)`
 
 ```csharp
 public static float EaseInSineD(float start, float end, float value)
@@ -610,7 +688,9 @@ public static float EaseInSineD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutBack(float, float, float)`
+:::
+
+::: details `EaseOutBack(float, float, float)`
 
 ```csharp
 public static float EaseOutBack(float start, float end, float value)
@@ -625,7 +705,9 @@ public static float EaseOutBack(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutBackD(float, float, float)`
+:::
+
+::: details `EaseOutBackD(float, float, float)`
 
 ```csharp
 public static float EaseOutBackD(float start, float end, float value)
@@ -640,7 +722,9 @@ public static float EaseOutBackD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutBounce(float, float, float)`
+:::
+
+::: details `EaseOutBounce(float, float, float)`
 
 ```csharp
 public static float EaseOutBounce(float start, float end, float value)
@@ -655,7 +739,9 @@ public static float EaseOutBounce(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutBounceD(float, float, float)`
+:::
+
+::: details `EaseOutBounceD(float, float, float)`
 
 ```csharp
 public static float EaseOutBounceD(float start, float end, float value)
@@ -670,7 +756,9 @@ public static float EaseOutBounceD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutCirc(float, float, float)`
+:::
+
+::: details `EaseOutCirc(float, float, float)`
 
 ```csharp
 public static float EaseOutCirc(float start, float end, float value)
@@ -685,7 +773,9 @@ public static float EaseOutCirc(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutCircD(float, float, float)`
+:::
+
+::: details `EaseOutCircD(float, float, float)`
 
 ```csharp
 public static float EaseOutCircD(float start, float end, float value)
@@ -700,7 +790,9 @@ public static float EaseOutCircD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutCubic(float, float, float)`
+:::
+
+::: details `EaseOutCubic(float, float, float)`
 
 ```csharp
 public static float EaseOutCubic(float start, float end, float value)
@@ -715,7 +807,9 @@ public static float EaseOutCubic(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutCubicD(float, float, float)`
+:::
+
+::: details `EaseOutCubicD(float, float, float)`
 
 ```csharp
 public static float EaseOutCubicD(float start, float end, float value)
@@ -730,7 +824,9 @@ public static float EaseOutCubicD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutElastic(float, float, float)`
+:::
+
+::: details `EaseOutElastic(float, float, float)`
 
 ```csharp
 public static float EaseOutElastic(float start, float end, float value)
@@ -745,7 +841,9 @@ public static float EaseOutElastic(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutElasticD(float, float, float)`
+:::
+
+::: details `EaseOutElasticD(float, float, float)`
 
 ```csharp
 public static float EaseOutElasticD(float start, float end, float value)
@@ -760,7 +858,9 @@ public static float EaseOutElasticD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutExpo(float, float, float)`
+:::
+
+::: details `EaseOutExpo(float, float, float)`
 
 ```csharp
 public static float EaseOutExpo(float start, float end, float value)
@@ -775,7 +875,9 @@ public static float EaseOutExpo(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutExpoD(float, float, float)`
+:::
+
+::: details `EaseOutExpoD(float, float, float)`
 
 ```csharp
 public static float EaseOutExpoD(float start, float end, float value)
@@ -790,7 +892,9 @@ public static float EaseOutExpoD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutQuad(float, float, float)`
+:::
+
+::: details `EaseOutQuad(float, float, float)`
 
 ```csharp
 public static float EaseOutQuad(float start, float end, float value)
@@ -805,7 +909,9 @@ public static float EaseOutQuad(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutQuadD(float, float, float)`
+:::
+
+::: details `EaseOutQuadD(float, float, float)`
 
 ```csharp
 public static float EaseOutQuadD(float start, float end, float value)
@@ -820,7 +926,9 @@ public static float EaseOutQuadD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutQuart(float, float, float)`
+:::
+
+::: details `EaseOutQuart(float, float, float)`
 
 ```csharp
 public static float EaseOutQuart(float start, float end, float value)
@@ -835,7 +943,9 @@ public static float EaseOutQuart(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutQuartD(float, float, float)`
+:::
+
+::: details `EaseOutQuartD(float, float, float)`
 
 ```csharp
 public static float EaseOutQuartD(float start, float end, float value)
@@ -850,7 +960,9 @@ public static float EaseOutQuartD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutQuint(float, float, float)`
+:::
+
+::: details `EaseOutQuint(float, float, float)`
 
 ```csharp
 public static float EaseOutQuint(float start, float end, float value)
@@ -865,7 +977,9 @@ public static float EaseOutQuint(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutQuintD(float, float, float)`
+:::
+
+::: details `EaseOutQuintD(float, float, float)`
 
 ```csharp
 public static float EaseOutQuintD(float start, float end, float value)
@@ -880,7 +994,9 @@ public static float EaseOutQuintD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutSine(float, float, float)`
+:::
+
+::: details `EaseOutSine(float, float, float)`
 
 ```csharp
 public static float EaseOutSine(float start, float end, float value)
@@ -895,7 +1011,9 @@ public static float EaseOutSine(float start, float end, float value)
 
 **Returns:** `float`
 
-### `EaseOutSineD(float, float, float)`
+:::
+
+::: details `EaseOutSineD(float, float, float)`
 
 ```csharp
 public static float EaseOutSineD(float start, float end, float value)
@@ -910,7 +1028,9 @@ public static float EaseOutSineD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `Get(DewEase, float)`
+:::
+
+::: details `Get(DewEase, float)`
 
 ```csharp
 public static float Get(this DewEase ease, float x)
@@ -924,7 +1044,9 @@ public static float Get(this DewEase ease, float x)
 
 **Returns:** `float`
 
-### `GetDelta(DewEase, float)`
+:::
+
+::: details `GetDelta(DewEase, float)`
 
 ```csharp
 public static float GetDelta(this DewEase ease, float x)
@@ -938,7 +1060,9 @@ public static float GetDelta(this DewEase ease, float x)
 
 **Returns:** `float`
 
-### `GetEasingFunction(DewEase)`
+:::
+
+::: details `GetEasingFunction(DewEase)`
 
 Returns the function associated to the easingFunction enum. This value returned should be cached as it allocates memory
 to return.
@@ -954,7 +1078,9 @@ public static EaseFunction GetEasingFunction(DewEase easingFunction)
 
 **Returns:** `EaseFunction: The easing function`
 
-### `GetEasingFunctionDerivative(DewEase)`
+:::
+
+::: details `GetEasingFunctionDerivative(DewEase)`
 
 Gets the derivative function of the appropriate easing function. If you use an easing function for position then this
 function can get you the speed at a given time (normalized).
@@ -970,7 +1096,9 @@ public static EaseFunction GetEasingFunctionDerivative(DewEase easingFunction)
 
 **Returns:** `EaseFunction: The derivative function`
 
-### `Linear(float, float, float)`
+:::
+
+::: details `Linear(float, float, float)`
 
 ```csharp
 public static float Linear(float start, float end, float value)
@@ -985,7 +1113,9 @@ public static float Linear(float start, float end, float value)
 
 **Returns:** `float`
 
-### `LinearD(float, float, float)`
+:::
+
+::: details `LinearD(float, float, float)`
 
 ```csharp
 public static float LinearD(float start, float end, float value)
@@ -1000,7 +1130,9 @@ public static float LinearD(float start, float end, float value)
 
 **Returns:** `float`
 
-### `Spring(float, float, float)`
+:::
+
+::: details `Spring(float, float, float)`
 
 ```csharp
 public static float Spring(float start, float end, float value)
@@ -1015,7 +1147,9 @@ public static float Spring(float start, float end, float value)
 
 **Returns:** `float`
 
-### `SpringD(float, float, float)`
+:::
+
+::: details `SpringD(float, float, float)`
 
 ```csharp
 public static float SpringD(float start, float end, float value)
@@ -1029,3 +1163,5 @@ public static float SpringD(float start, float end, float value)
 | `value` | `float` |  |
 
 **Returns:** `float`
+
+:::

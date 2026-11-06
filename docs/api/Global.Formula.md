@@ -10,21 +10,27 @@
 public struct Formula
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`formula`** | `[HideLabel] [SuffixLabel("f(x)", true)] [ValidateInput("IsValid", "Expression Error", InfoMessageType.Error)] [FormerlySerializedAs("forumla")] public string formula` |  |
 
-## Methods
+:::
 
-### `Bake()`
+## Methods (2)
+
+::: details `Bake()`
 
 ```csharp
 public void Bake()
 ```
 
-### `Evaluate(float)`
+:::
+
+::: details `Evaluate(float)`
 
 ```csharp
 public float Evaluate(float x)
@@ -36,3 +42,5 @@ public float Evaluate(float x)
 | `x` | `float` |  |
 
 **Returns:** `float`
+
+:::

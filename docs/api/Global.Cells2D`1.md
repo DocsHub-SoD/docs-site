@@ -9,7 +9,9 @@
 public class Cells2D<T>
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +24,11 @@ public class Cells2D<T>
 | **`min`** | `public Vector2 min` |  |
 | **`size`** | `public Vector2 size` |  |
 
-## Methods
+:::
 
-### `FloodFill((int, int), Func<(int, int), bool>)`
+## Methods (8)
+
+::: details `FloodFill((int, int), Func&lt;(int, int), bool&gt;)`
 
 ```csharp
 public void FloodFill((int, int) start, Func<(int, int), bool> func)
@@ -36,7 +40,9 @@ public void FloodFill((int, int) start, Func<(int, int), bool> func)
 | `start` | `(int,int)` |  |
 | `func` | `System.Func<T, TResult><(int,int),bool>` |  |
 
-### `Get((int, int))`
+:::
+
+::: details `Get((int, int))`
 
 ```csharp
 public T Get((int, int) indices)
@@ -49,7 +55,9 @@ public T Get((int, int) indices)
 
 **Returns:** `T`
 
-### `GetClosestCell(Vector2)`
+:::
+
+::: details `GetClosestCell(Vector2)`
 
 ```csharp
 public (int, int) GetClosestCell(Vector2 worldPos)
@@ -62,7 +70,9 @@ public (int, int) GetClosestCell(Vector2 worldPos)
 
 **Returns:** `(int,int)`
 
-### `GetCropped(int, int, int, int)`
+:::
+
+::: details `GetCropped(int, int, int, int)`
 
 ```csharp
 public Cells2D<T> GetCropped(int startX, int endX, int startY, int endY)
@@ -78,7 +88,9 @@ public Cells2D<T> GetCropped(int startX, int endX, int startY, int endY)
 
 **Returns:** `Cells2D<T>`
 
-### `GetNormalizedPos(Vector2)`
+:::
+
+::: details `GetNormalizedPos(Vector2)`
 
 ```csharp
 public Vector2 GetNormalizedPos(Vector2 worldPos)
@@ -91,7 +103,9 @@ public Vector2 GetNormalizedPos(Vector2 worldPos)
 
 **Returns:** `UnityEngine.Vector2`
 
-### `GetWorldPos((int, int))`
+:::
+
+::: details `GetWorldPos((int, int))`
 
 ```csharp
 public Vector2 GetWorldPos((int, int) indices)
@@ -104,7 +118,9 @@ public Vector2 GetWorldPos((int, int) indices)
 
 **Returns:** `UnityEngine.Vector2`
 
-### `IsInBounds((int, int))`
+:::
+
+::: details `IsInBounds((int, int))`
 
 ```csharp
 public bool IsInBounds((int, int) indices)
@@ -117,7 +133,9 @@ public bool IsInBounds((int, int) indices)
 
 **Returns:** `bool`
 
-### `Set((int, int), T)`
+:::
+
+::: details `Set((int, int), T)`
 
 ```csharp
 public void Set((int, int) indices, T value)
@@ -128,3 +146,5 @@ public void Set((int, int) indices, T value)
 | :--- | :--- | :--- |
 | `indices` | `(int,int)` |  |
 | `value` | `T` |  |
+
+:::

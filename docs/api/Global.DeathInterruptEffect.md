@@ -9,15 +9,23 @@
 public class DeathInterruptEffect : BasicEffect
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`onInterrupt`** | `public Action<EventInfoKill> onInterrupt` |  |
 | **`priority`** | `public int priority` | DeathInterrupts with lower priority will be fired/checked earlier. |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
+
+:::

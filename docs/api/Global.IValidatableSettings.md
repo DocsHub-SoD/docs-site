@@ -8,10 +8,12 @@
 public interface IValidatableSettings
 ```
 
-## Methods
+## Methods (1)
 
-### `Validate()`
+::: details `Validate()`
 
 ```csharp
 void Validate()
 ```
+
+:::

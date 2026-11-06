@@ -8,9 +8,13 @@
 public struct DewEffect.StopEffectMessage
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`parent`** | `public NetworkIdentity parent` |  |
 | **`path`** | `public string path` |  |
+
+:::

@@ -8,15 +8,19 @@
 public class AbilityTargetValidatorWrapper : IEntityValidator
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`self`** | `public Entity self` |  |
 
-## Methods
+:::
 
-### `Evaluate(Entity)`
+## Methods (1)
+
+::: details `Evaluate(Entity)`
 
 ```csharp
 public bool Evaluate(Entity entity)
@@ -28,3 +32,5 @@ public bool Evaluate(Entity entity)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
+
+:::

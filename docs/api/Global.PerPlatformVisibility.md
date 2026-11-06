@@ -8,7 +8,9 @@
 public class PerPlatformVisibility : MonoBehaviour
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class PerPlatformVisibility : MonoBehaviour
 | **`editor`** | `[LabelText("Always Show In Editor")] public bool editor` |  |
 | **`steam`** | `public bool steam` |  |
 | **`stove`** | `public bool stove` |  |
+
+:::

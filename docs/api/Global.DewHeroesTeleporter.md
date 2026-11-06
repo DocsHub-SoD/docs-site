@@ -8,23 +8,33 @@
 public class DewHeroesTeleporter : MonoBehaviour, IPlayerPathablePoint
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`destination`** | `[InfoBox("Heroes will be teleported to the destination spread in local x-axis", InfoMessageType.Info, null)] public Transform destination` |  |
 | **`spacing`** | `public float spacing` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`pathablePosition`** | `public Vector3 pathablePosition { get; }` |  |
 
-## Methods
+:::
 
-### `TeleportAllHeroes()`
+## Methods (1)
+
+::: details `TeleportAllHeroes()`
 
 ```csharp
 public void TeleportAllHeroes()
 ```
+
+:::

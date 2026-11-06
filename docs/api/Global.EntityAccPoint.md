@@ -8,8 +8,12 @@
 public class EntityAccPoint : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`type`** | `public AccType type` |  |
+
+:::

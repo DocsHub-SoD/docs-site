@@ -8,8 +8,12 @@
 public struct DewNetworkManager.ChangeSceneMessage
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`name`** | `public string name` |  |
+
+:::

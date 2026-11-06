@@ -8,9 +8,13 @@
 public interface IPingableShopItem
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`merchandiseIndex`** | `int merchandiseIndex { get; }` |  |
 | **`shop`** | `Object shop { get; }` |  |
+
+:::

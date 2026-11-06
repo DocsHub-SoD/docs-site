@@ -8,12 +8,14 @@
 public interface IPingableCustom
 ```
 
-## Methods
+## Methods (1)
 
-### `OnPing()`
+::: details `OnPing()`
 
 ```csharp
 bool OnPing()
 ```
 
 **Returns:** `bool`
+
+:::

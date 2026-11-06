@@ -8,7 +8,9 @@
 public class AddedModifierData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class AddedModifierData
 | **`isForceRevealed`** | `public bool isForceRevealed` |  |
 | **`revertOnStepEnd`** | `public bool revertOnStepEnd` |  |
 | **`type`** | `public string type` |  |
+
+:::

@@ -8,7 +8,9 @@
 public class SpawnMonsterSettings
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,12 +31,16 @@ public class SpawnMonsterSettings
 | **`spawnPosGetter`** | `public Func<Vector3> spawnPosGetter` |  |
 | **`spawnRotGetter`** | `public Func<Quaternion> spawnRotGetter` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (1)
+
+::: details `Clone()`
 
 ```csharp
 public SpawnMonsterSettings Clone()
 ```
 
 **Returns:** `SpawnMonsterSettings`
+
+:::

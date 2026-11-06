@@ -8,7 +8,9 @@
 public class Channel
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,16 +22,22 @@ public class Channel
 | **`onTick`** | `public Action<float> onTick` | Called every logic update tick while channel is alive. |
 | **`uncancellableTime`** | `public float uncancellableTime` | If this channel is cancellable, it won't be cancellable during this period to prevent accidental cancel. |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`elapsedTime`** | `public float elapsedTime { get; }` |  |
 | **`isAlive`** | `public bool isAlive { get; }` |  |
 
-## Methods
+:::
 
-### `AddOnCancel(Action)`
+## Methods (8)
+
+::: details `AddOnCancel(Action)`
 
 ```csharp
 public Channel AddOnCancel(Action callback)
@@ -42,7 +50,9 @@ public Channel AddOnCancel(Action callback)
 
 **Returns:** `Channel`
 
-### `AddOnComplete(Action)`
+:::
+
+::: details `AddOnComplete(Action)`
 
 ```csharp
 public Channel AddOnComplete(Action callback)
@@ -55,7 +65,9 @@ public Channel AddOnComplete(Action callback)
 
 **Returns:** `Channel`
 
-### `AddOnTick(Action<float>)`
+:::
+
+::: details `AddOnTick(Action&lt;float&gt;)`
 
 ```csharp
 public Channel AddOnTick(Action<float> callback)
@@ -68,7 +80,9 @@ public Channel AddOnTick(Action<float> callback)
 
 **Returns:** `Channel`
 
-### `AddValidation(IBinaryEntityValidator, Entity)`
+:::
+
+::: details `AddValidation(IBinaryEntityValidator, Entity)`
 
 Adds an binary entity validation for this channel. This channel will fail if any of the added validators evaluates to false.
 
@@ -84,7 +98,9 @@ public Channel AddValidation(IBinaryEntityValidator validator, Entity entity)
 
 **Returns:** `Channel`
 
-### `AddValidation(IEntityValidator)`
+:::
+
+::: details `AddValidation(IEntityValidator)`
 
 Adds an entity validation for this channel. This channel will fail if any of the added validators evaluates to false.
 
@@ -99,7 +115,9 @@ public Channel AddValidation(IEntityValidator validator)
 
 **Returns:** `Channel`
 
-### `Cancel()`
+:::
+
+::: details `Cancel()`
 
 Cancel this channel next channel update.
 
@@ -109,7 +127,9 @@ public Channel Cancel()
 
 **Returns:** `Channel`
 
-### `Complete()`
+:::
+
+::: details `Complete()`
 
 Complete this channel next channel update.
 
@@ -119,7 +139,9 @@ public Channel Complete()
 
 **Returns:** `Channel`
 
-### `Dispatch(Entity)`
+:::
+
+::: details `Dispatch(Entity)`
 
 Dispatch this channel.
 
@@ -133,3 +155,5 @@ public Channel Dispatch(Entity e)
 | `e` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `Channel`
+
+:::

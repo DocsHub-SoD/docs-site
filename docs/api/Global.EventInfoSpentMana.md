@@ -8,10 +8,14 @@
 public struct EventInfoSpentMana
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`actor`** | `public Actor actor` | The actor who invoked this event in an actor chain. |
 | **`amount`** | `public float amount` |  |
 | **`entity`** | `public Entity entity` |  |
+
+:::

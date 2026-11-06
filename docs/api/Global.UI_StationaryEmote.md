@@ -9,7 +9,9 @@
 public class UI_StationaryEmote : MonoBehaviour
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class UI_StationaryEmote : MonoBehaviour
 | **`currentEmotePrefab`** | `[NonSerialized] public AssetRef<Emote> currentEmotePrefab` |  |
 | **`customParent`** | `public RectTransform customParent` |  |
 
-## Methods
+:::
 
-### `Setup(string)`
+## Methods (1)
+
+::: details `Setup(string)`
 
 ```csharp
 public virtual void Setup(string emoteName)
@@ -30,3 +34,5 @@ public virtual void Setup(string emoteName)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `emoteName` | `string` |  |
+
+:::

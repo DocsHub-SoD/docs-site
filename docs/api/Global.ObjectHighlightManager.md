@@ -9,7 +9,9 @@
 public class ObjectHighlightManager : ManagerBase<ObjectHighlightManager>, ILogicUpdate, ICinematicCameraHelperStateReceiver
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,15 +24,19 @@ public class ObjectHighlightManager : ManagerBase<ObjectHighlightManager>, ILogi
 | **`neutral`** | `public ObjectHighlightManager.OutlineStyle neutral` |  |
 | **`own`** | `public ObjectHighlightManager.OutlineStyle own` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (3)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetProfile()`
+:::
+
+::: details `GetProfile()`
 
 ```csharp
 public static HighlightProfile GetProfile()
@@ -38,7 +44,9 @@ public static HighlightProfile GetProfile()
 
 **Returns:** `HighlightPlus.HighlightProfile`
 
-### `OnCinematicCameraHelperChanged(bool)`
+:::
+
+::: details `OnCinematicCameraHelperChanged(bool)`
 
 ```csharp
 public void OnCinematicCameraHelperChanged(bool on)
@@ -48,3 +56,5 @@ public void OnCinematicCameraHelperChanged(bool on)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `on` | `bool` |  |
+
+:::

@@ -8,15 +8,19 @@
 public static class DewPool
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`_clearAction`** | `public static Dictionary<Type, Action<object>> _clearAction` |  |
 
-## Methods
+:::
 
-### `ClearEventsAndProcessors(Component)`
+## Methods (4)
+
+::: details `ClearEventsAndProcessors(Component)`
 
 ```csharp
 public static void ClearEventsAndProcessors(Component obj)
@@ -27,7 +31,9 @@ public static void ClearEventsAndProcessors(Component obj)
 | :--- | :--- | :--- |
 | `obj` | `UnityEngine.Component` |  |
 
-### `GetArray<T>(out ArrayReturnHandle<T>, int)`
+:::
+
+::: details `GetArray&lt;T&gt;(out ArrayReturnHandle&lt;T&gt;, int)`
 
 ```csharp
 public static T[] GetArray<T>(out ArrayReturnHandle<T> handle, int minSize = 128)
@@ -42,7 +48,9 @@ public static T[] GetArray<T>(out ArrayReturnHandle<T> handle, int minSize = 128
 
 **Returns:** `T[]`
 
-### `GetDictionary<TKey, TValue>(out DictionaryReturnHandle<TKey, TValue>)`
+:::
+
+::: details `GetDictionary&lt;TKey, TValue&gt;(out DictionaryReturnHandle&lt;TKey, TValue&gt;)`
 
 Get an empty dictionary of TKey, TValue.You do not need to clear the dictionary before returning.
 
@@ -59,7 +67,9 @@ public static Dictionary<TKey, TValue> GetDictionary<TKey, TValue>(out Dictionar
 
 **Returns:** `System.Collections.Generic.Dictionary<TKey, TValue>`
 
-### `GetList<T>(out ListReturnHandle<T>)`
+:::
+
+::: details `GetList&lt;T&gt;(out ListReturnHandle&lt;T&gt;)`
 
 Get an empty list of T.You do not need to clear the list before returning.
 
@@ -74,3 +84,5 @@ public static List<T> GetList<T>(out ListReturnHandle<T> handle)
 | `` | `T` |  |
 
 **Returns:** `System.Collections.Generic.List<T>`
+
+:::

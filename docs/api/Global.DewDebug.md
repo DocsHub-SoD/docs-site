@@ -8,9 +8,9 @@
 public static class DewDebug
 ```
 
-## Methods
+## Methods (1)
 
-### `DrawRect(Rect, Color, float)`
+::: details `DrawRect(Rect, Color, float)`
 
 ```csharp
 public static void DrawRect(Rect rect, Color color, float duration)
@@ -22,3 +22,5 @@ public static void DrawRect(Rect rect, Color color, float duration)
 | `rect` | `UnityEngine.Rect` |  |
 | `color` | `UnityEngine.Color` |  |
 | `duration` | `float` |  |
+
+:::

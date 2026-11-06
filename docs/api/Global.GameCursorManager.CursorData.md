@@ -9,9 +9,13 @@
 public class GameCursorManager.CursorData
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`hotspot`** | `public Vector2 hotspot` |  |
 | **`texture`** | `public Texture2D texture` |  |
+
+:::

@@ -8,10 +8,14 @@
 public struct ConsoleBindItem
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`command`** | `public string command` |  |
 | **`key`** | `public KeyCode key` |  |
 | **`type`** | `public ConsoleBindItemType type` |  |
+
+:::

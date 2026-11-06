@@ -8,9 +8,9 @@
 public class ReactionChainComparer
 ```
 
-## Methods
+## Methods (2)
 
-### `Equals(ReactionChain, ReactionChain)`
+::: details `Equals(ReactionChain, ReactionChain)`
 
 ```csharp
 public bool Equals(ReactionChain x, ReactionChain y)
@@ -24,7 +24,9 @@ public bool Equals(ReactionChain x, ReactionChain y)
 
 **Returns:** `bool`
 
-### `GetHashCode(ReactionChain)`
+:::
+
+::: details `GetHashCode(ReactionChain)`
 
 ```csharp
 public int GetHashCode(ReactionChain obj)
@@ -36,3 +38,5 @@ public int GetHashCode(ReactionChain obj)
 | `obj` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 **Returns:** `int`
+
+:::

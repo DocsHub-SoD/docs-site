@@ -9,22 +9,30 @@
 public class PropEnt_Stone_DreamDust : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`amountByZoneIndex`** | `public Formula amountByZoneIndex` |  |
 | **`rotSpeed`** | `public float rotSpeed` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isRegularReward`** | `public override bool isRegularReward { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (5)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -35,7 +43,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `GetAmount()`
+:::
+
+::: details `GetAmount()`
 
 ```csharp
 public int GetAmount()
@@ -43,13 +53,17 @@ public int GetAmount()
 
 **Returns:** `int`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDeath(EventInfoKill)`
+:::
+
+::: details `OnDeath(EventInfoKill)`
 
 ```csharp
 protected override void OnDeath(EventInfoKill info)
@@ -60,8 +74,12 @@ protected override void OnDeath(EventInfoKill info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public class Room_Trap_ProximityActivator : Room_Trap_ActivatorBase, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,15 +20,19 @@ public class Room_Trap_ProximityActivator : Room_Trap_ActivatorBase, ILogicUpdat
 | **`isActivatedByMonster`** | `public bool isActivatedByMonster` |  |
 | **`range`** | `public DewCollider range` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (2)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -36,3 +42,5 @@ public override void LogicUpdate(float dt)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
+
+:::

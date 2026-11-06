@@ -9,7 +9,9 @@
 public abstract class Room_Trap_ActivatorBase : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,10 +20,14 @@ public abstract class Room_Trap_ActivatorBase : DewNetworkBehaviour, ILogicUpdat
 | **`fxActivateEffect`** | `public GameObject fxActivateEffect` |  |
 | **`toggleTraps`** | `public bool toggleTraps` |  |
 
-## Methods
+:::
 
-### `Activate()`
+## Methods (1)
+
+::: details `Activate()`
 
 ```csharp
 public void Activate()
 ```
+
+:::

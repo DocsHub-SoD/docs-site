@@ -9,7 +9,9 @@
 public class ChannelData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class ChannelData
 | **`selfValidator`** | `[HideLabel] public AbilitySelfValidator selfValidator` |  |
 | **`uncancellableTime`** | `[ShowIf("@duration > 0f && ((byte)(blockedActions & Channel.BlockedAction.Cancelable)) != (byte)0", true)] public float uncancellableTime` |  |
 
-## Methods
+:::
 
-### `Get()`
+## Methods (1)
+
+::: details `Get()`
 
 Create a channel using this data.
 
@@ -29,3 +33,5 @@ public Channel Get()
 ```
 
 **Returns:** `Channel`
+
+:::

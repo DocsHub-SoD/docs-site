@@ -8,9 +8,9 @@
 public static class QuaternionUtil
 ```
 
-## Methods
+## Methods (4)
 
-### `AngVelToDeriv(Quaternion, Vector3)`
+::: details `AngVelToDeriv(Quaternion, Vector3)`
 
 ```csharp
 public static Quaternion AngVelToDeriv(Quaternion Current, Vector3 AngVel)
@@ -24,7 +24,9 @@ public static Quaternion AngVelToDeriv(Quaternion Current, Vector3 AngVel)
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `DerivToAngVel(Quaternion, Quaternion)`
+:::
+
+::: details `DerivToAngVel(Quaternion, Quaternion)`
 
 ```csharp
 public static Vector3 DerivToAngVel(Quaternion Current, Quaternion Deriv)
@@ -38,7 +40,9 @@ public static Vector3 DerivToAngVel(Quaternion Current, Quaternion Deriv)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `IntegrateRotation(Quaternion, Vector3, float)`
+:::
+
+::: details `IntegrateRotation(Quaternion, Vector3, float)`
 
 ```csharp
 public static Quaternion IntegrateRotation(Quaternion Rotation, Vector3 AngularVelocity, float DeltaTime)
@@ -53,7 +57,9 @@ public static Quaternion IntegrateRotation(Quaternion Rotation, Vector3 AngularV
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `SmoothDamp(Quaternion, Quaternion, ref Quaternion, float)`
+:::
+
+::: details `SmoothDamp(Quaternion, Quaternion, ref Quaternion, float)`
 
 ```csharp
 public static Quaternion SmoothDamp(Quaternion rot, Quaternion target, ref Quaternion deriv, float time)
@@ -68,3 +74,5 @@ public static Quaternion SmoothDamp(Quaternion rot, Quaternion target, ref Quate
 | `time` | `float` |  |
 
 **Returns:** `UnityEngine.Quaternion`
+
+:::

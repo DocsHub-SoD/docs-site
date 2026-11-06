@@ -9,16 +9,20 @@
 public class EffectAutoDestroy : MonoBehaviour
 ```
 
-## Methods
+## Methods (2)
 
-### `Awake()`
+::: details `Awake()`
 
 ```csharp
 protected virtual void Awake()
 ```
 
-### `Update()`
+:::
+
+::: details `Update()`
 
 ```csharp
 protected virtual void Update()
 ```
+
+:::

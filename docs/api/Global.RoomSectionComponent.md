@@ -11,16 +11,22 @@
 public class RoomSectionComponent : LogicBehaviour, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`section`** | `public RoomSection section { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (1)
+
+::: details `Awake()`
 
 ```csharp
 protected virtual void Awake()
 ```
+
+:::

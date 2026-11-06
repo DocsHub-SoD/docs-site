@@ -9,40 +9,54 @@
 public class UI_ShowAndHideObject : MonoBehaviour
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`cg`** | `public CanvasGroup cg { get; }` |  |
 
-## Methods
+:::
 
-### `Hide()`
+## Methods (5)
+
+::: details `Hide()`
 
 ```csharp
 public void Hide()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected virtual void OnEnable()
 ```
 
-### `OnHide()`
+:::
+
+::: details `OnHide()`
 
 ```csharp
 protected virtual void OnHide()
 ```
 
-### `OnShow()`
+:::
+
+::: details `OnShow()`
 
 ```csharp
 protected virtual void OnShow()
 ```
 
-### `Show()`
+:::
+
+::: details `Show()`
 
 ```csharp
 public void Show()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public class CameraManager : ManagerBase<CameraManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (33)
+
+::: details Click to expand Fields (33)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -47,7 +49,11 @@ public class CameraManager : ManagerBase<CameraManager>, ILogicUpdate
 | **`zoomSmoothTime`** | `public float zoomSmoothTime` |  |
 | **`zoomSteps`** | `public int zoomSteps` |  |
 
-## Properties
+:::
+
+## Properties (6)
+
+::: details Click to expand Properties (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -58,27 +64,35 @@ public class CameraManager : ManagerBase<CameraManager>, ILogicUpdate
 | **`isPlayingCutscene`** | `public bool isPlayingCutscene { get; }` | Is cutscene being played locally? |
 | **`isSpectating`** | `public bool isSpectating { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (19)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `DoCutsceneFadeIn()`
+:::
+
+::: details `DoCutsceneFadeIn()`
 
 ```csharp
 public void DoCutsceneFadeIn()
 ```
 
-### `DoCutsceneFadeOut()`
+:::
+
+::: details `DoCutsceneFadeOut()`
 
 ```csharp
 public void DoCutsceneFadeOut()
 ```
 
-### `DoGenericFadeIn(bool)`
+:::
+
+::: details `DoGenericFadeIn(bool)`
 
 ```csharp
 public void DoGenericFadeIn(bool immediately = false)
@@ -89,7 +103,9 @@ public void DoGenericFadeIn(bool immediately = false)
 | :--- | :--- | :--- |
 | `immediately` | `bool` |  |
 
-### `DoGenericFadeOut(bool)`
+:::
+
+::: details `DoGenericFadeOut(bool)`
 
 ```csharp
 public void DoGenericFadeOut(bool immediately = false)
@@ -100,25 +116,33 @@ public void DoGenericFadeOut(bool immediately = false)
 | :--- | :--- | :--- |
 | `immediately` | `bool` |  |
 
-### `DoLetterBoxFadeIn()`
+:::
+
+::: details `DoLetterBoxFadeIn()`
 
 ```csharp
 public void DoLetterBoxFadeIn()
 ```
 
-### `DoLetterBoxFadeOut()`
+:::
+
+::: details `DoLetterBoxFadeOut()`
 
 ```csharp
 public void DoLetterBoxFadeOut()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -129,13 +153,17 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `ResetLetterBoxPositions()`
+:::
+
+::: details `ResetLetterBoxPositions()`
 
 ```csharp
 public void ResetLetterBoxPositions()
 ```
 
-### `SetActiveEntityVCam(bool)`
+:::
+
+::: details `SetActiveEntityVCam(bool)`
 
 ```csharp
 public void SetActiveEntityVCam(bool value)
@@ -146,7 +174,9 @@ public void SetActiveEntityVCam(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `SetCameraPosition(Vector3)`
+:::
+
+::: details `SetCameraPosition(Vector3)`
 
 ```csharp
 public void SetCameraPosition(Vector3 pos)
@@ -157,7 +187,9 @@ public void SetCameraPosition(Vector3 pos)
 | :--- | :--- | :--- |
 | `pos` | `UnityEngine.Vector3` |  |
 
-### `SetFocusedEntity(Entity)`
+:::
+
+::: details `SetFocusedEntity(Entity)`
 
 ```csharp
 public void SetFocusedEntity(Entity newValue)
@@ -168,7 +200,9 @@ public void SetFocusedEntity(Entity newValue)
 | :--- | :--- | :--- |
 | `newValue` | [`Entity`](/api/Global.Entity) |  |
 
-### `SetZoomLevel(int)`
+:::
+
+::: details `SetZoomLevel(int)`
 
 ```csharp
 public void SetZoomLevel(int level)
@@ -179,32 +213,44 @@ public void SetZoomLevel(int level)
 | :--- | :--- | :--- |
 | `level` | `int` |  |
 
-### `SkipCurrentCutscene()`
+:::
+
+::: details `SkipCurrentCutscene()`
 
 ```csharp
 public void SkipCurrentCutscene()
 ```
 
-### `SnapCameraToFocusedEntity()`
+:::
+
+::: details `SnapCameraToFocusedEntity()`
 
 ```csharp
 public void SnapCameraToFocusedEntity()
 ```
 
-### `SpectateImmediatelyIfDead()`
+:::
+
+::: details `SpectateImmediatelyIfDead()`
 
 ```csharp
 public void SpectateImmediatelyIfDead()
 ```
 
-### `ZoomIn()`
+:::
+
+::: details `ZoomIn()`
 
 ```csharp
 public void ZoomIn()
 ```
 
-### `ZoomOut()`
+:::
+
+::: details `ZoomOut()`
 
 ```csharp
 public void ZoomOut()
 ```
+
+:::

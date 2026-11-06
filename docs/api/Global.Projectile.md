@@ -9,7 +9,9 @@
 public abstract class Projectile : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (23)
+
+::: details Click to expand Fields (23)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -37,7 +39,11 @@ public abstract class Projectile : AbilityInstance, ILogicUpdate, ICleanup, ICus
 | **`startInFrontDistance`** | `[LabelText("Front Distance")] [BoxGroup("Projectile Settings", true, false, 0)] public float startInFrontDistance` |  |
 | **`verticalOffsetOverTrajectory`** | `[LabelText("Vertical Offset")] [BoxGroup("Projectile Settings", true, false, 0)] public AnimationCurve verticalOffsetOverTrajectory` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -46,9 +52,11 @@ public abstract class Projectile : AbilityInstance, ILogicUpdate, ICleanup, ICus
 | **`targetEntity`** | `protected Entity targetEntity { get; }` |  |
 | **`targetPosition`** | `protected Vector3 targetPosition { get; set; }` | It is recommended to edit this only in OnPrepare. |
 
-## Methods
+:::
 
-### `AddEffect(AddEffectTarget, GameObject)`
+## Methods (19)
+
+::: details `AddEffect(AddEffectTarget, GameObject)`
 
 Locally add an effect.Given effect will be instantiated and set/added to this projectile.
 
@@ -62,7 +70,9 @@ public void AddEffect(Projectile.AddEffectTarget target, GameObject eff)
 | `target` | [`Projectile.AddEffectTarget`](/api/Global.Projectile) |  |
 | `eff` | `UnityEngine.GameObject` |  |
 
-### `CalculateOffsetOverTrajectoryInWorldSpace(float, Quaternion)`
+:::
+
+::: details `CalculateOffsetOverTrajectoryInWorldSpace(float, Quaternion)`
 
 ```csharp
 protected Vector3 CalculateOffsetOverTrajectoryInWorldSpace(float normalizedPosition, Quaternion rotation)
@@ -76,7 +86,9 @@ protected Vector3 CalculateOffsetOverTrajectoryInWorldSpace(float normalizedPosi
 
 **Returns:** `UnityEngine.Vector3`
 
-### `CheckForCompletion()`
+:::
+
+::: details `CheckForCompletion()`
 
 ```csharp
 protected virtual bool CheckForCompletion()
@@ -84,7 +96,9 @@ protected virtual bool CheckForCompletion()
 
 **Returns:** `bool`
 
-### `Dissipate()`
+:::
+
+::: details `Dissipate()`
 
 Dissipate this projectile.
 
@@ -92,13 +106,17 @@ Dissipate this projectile.
 public void Dissipate()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetTargetWorldPosition()`
+:::
+
+::: details `GetTargetWorldPosition()`
 
 ```csharp
 protected virtual Vector3 GetTargetWorldPosition()
@@ -106,7 +124,9 @@ protected virtual Vector3 GetTargetWorldPosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -117,7 +137,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnComplete()`
+:::
+
+::: details `OnComplete()`
 
 Called on server when this Projectile fully completes its path without being despawned by itself/dissipated.Default behaviour instantiates a neweffectOnCompleteeffect using the position and rotation of this projectile on every clients, and stopseffectOnFlyeffect.It will also kill this projectile ifkillOnCompleteis set.Note: On targeted projectiles, normallyOnEntitywill be fired beforeOnComplete. It might fire differently if for example the projectile is detached or the target became an invalid target.
 
@@ -125,25 +147,33 @@ Called on server when this Projectile fully completes its path without being des
 protected virtual void OnComplete()
 ```
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnDissipate()`
+:::
+
+::: details `OnDissipate()`
 
 Called on server when this Projectile is dissipated by an outer source. e.g. Projectile Absorbing WallDefault behaviour instantiates a neweffectOnDissipateeffect using the position and rotation of this projectile on every clients
 
@@ -151,7 +181,9 @@ Called on server when this Projectile is dissipated by an outer source. e.g. Pro
 protected virtual void OnDissipate()
 ```
 
-### `OnEntity(EntityHit)`
+:::
+
+::: details `OnEntity(EntityHit)`
 
 Called on server when this Projectile in server detects a collision with an Entity.Default behaviour instantiates a neweffectOnEntityeffect at the hit point with the rotation of this projectile attached to the entity on every clients.
 
@@ -164,19 +196,25 @@ protected virtual void OnEntity(Projectile.EntityHit hit)
 | :--- | :--- | :--- |
 | `hit` | [`Projectile.EntityHit`](/api/Global.Projectile) |  |
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 ```csharp
 protected override void OnPrepare()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `PositionSolver(float)`
+:::
+
+::: details `PositionSolver(float)`
 
 ```csharp
 protected abstract Vector3 PositionSolver(float dt)
@@ -189,7 +227,9 @@ protected abstract Vector3 PositionSolver(float dt)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `RotationSolver(float)`
+:::
+
+::: details `RotationSolver(float)`
 
 ```csharp
 protected virtual Quaternion RotationSolver(float dt)
@@ -202,7 +242,9 @@ protected virtual Quaternion RotationSolver(float dt)
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `SetCustomStartPosition(Vector3)`
+:::
+
+::: details `SetCustomStartPosition(Vector3)`
 
 Set custom start position for projectiles with 'Custom' start position mode. Call this in OnPrepare.
 
@@ -215,10 +257,14 @@ public void SetCustomStartPosition(Vector3 pos)
 | :--- | :--- | :--- |
 | `pos` | `UnityEngine.Vector3` |  |
 
-### `StopFlying()`
+:::
+
+::: details `StopFlying()`
 
 Stop this projectile and itseffectOnFlyeffect. This will also make this projectile instantly stop checking collisions. Note that this does not callOnCompletenorOnDissipate.
 
 ```csharp
 protected void StopFlying()
 ```
+
+:::

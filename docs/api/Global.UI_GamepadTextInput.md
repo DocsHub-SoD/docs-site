@@ -9,7 +9,9 @@
 public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>
 ```
 
-## Fields
+## Fields (14)
+
+::: details Click to expand Fields (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,40 +30,54 @@ public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>
 | **`rightShiftPrefab`** | `public UI_GamepadTextInput_Key rightShiftPrefab` |  |
 | **`rowTransforms`** | `public Transform[] rowTransforms` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isAzerty`** | `public bool isAzerty { get; }` |  |
 | **`isShiftPressed`** | `public bool isShiftPressed { get; }` |  |
 
-## Methods
+:::
 
-### `Cancel()`
+## Methods (11)
+
+::: details `Cancel()`
 
 ```csharp
 public void Cancel()
 ```
 
-### `Clear()`
+:::
+
+::: details `Clear()`
 
 ```csharp
 public void Clear()
 ```
 
-### `Confirm()`
+:::
+
+::: details `Confirm()`
 
 ```csharp
 public void Confirm()
 ```
 
-### `EraseOne()`
+:::
+
+::: details `EraseOne()`
 
 ```csharp
 public void EraseOne()
 ```
 
-### `GetShiftSubstitute(string)`
+:::
+
+::: details `GetShiftSubstitute(string)`
 
 ```csharp
 public string GetShiftSubstitute(string key)
@@ -74,7 +90,9 @@ public string GetShiftSubstitute(string key)
 
 **Returns:** `string`
 
-### `PressCharacter(string)`
+:::
+
+::: details `PressCharacter(string)`
 
 ```csharp
 public void PressCharacter(string key)
@@ -85,7 +103,9 @@ public void PressCharacter(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-### `SetAzertyMode(bool)`
+:::
+
+::: details `SetAzertyMode(bool)`
 
 ```csharp
 public void SetAzertyMode(bool value)
@@ -96,7 +116,9 @@ public void SetAzertyMode(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `SetShift(bool)`
+:::
+
+::: details `SetShift(bool)`
 
 ```csharp
 public void SetShift(bool value)
@@ -107,7 +129,9 @@ public void SetShift(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `StartInput(string, string, bool, bool, int, Action<string>, Action)`
+:::
+
+::: details `StartInput(string, string, bool, bool, int, Action&lt;string&gt;, Action)`
 
 ```csharp
 public void StartInput(string previousText, string placeholderText, bool isMultiline, bool isPassword, int maxCharacters, Action<string> onConfirm, Action onCancel)
@@ -124,7 +148,9 @@ public void StartInput(string previousText, string placeholderText, bool isMulti
 | `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |
 
-### `StartInput(TMP_InputField, Action<string>, Action)`
+:::
+
+::: details `StartInput(TMP_InputField, Action&lt;string&gt;, Action)`
 
 ```csharp
 public void StartInput(TMP_InputField target, Action<string> onConfirm = null, Action onCancel = null)
@@ -137,8 +163,12 @@ public void StartInput(TMP_InputField target, Action<string> onConfirm = null, A
 | `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |
 
-### `ToggleShift()`
+:::
+
+::: details `ToggleShift()`
 
 ```csharp
 public void ToggleShift()
 ```
+
+:::

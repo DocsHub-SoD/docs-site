@@ -9,7 +9,9 @@
 public abstract class EditSkillShrine : Shrine, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IProp, IBanRoomNodesNearby
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +24,11 @@ public abstract class EditSkillShrine : Shrine, ILogicUpdate, ICleanup, ICustomD
 | **`GenericSkillIndicatorColor`** | `public static readonly Color GenericSkillIndicatorColor` |  |
 | **`shouldExitEditModeAfterAction`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] [ToggleLeft] public bool shouldExitEditModeAfterAction` |  |
 
-## Methods
+:::
 
-### `CmdActivateEditSkillAction(HeroSkillLocation?, GemLocation?, NetworkConnectionToClient)`
+## Methods (15)
+
+::: details `CmdActivateEditSkillAction(HeroSkillLocation?, GemLocation?, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdActivateEditSkillAction(HeroSkillLocation? skillLoc, GemLocation? gemLoc, NetworkConnectionToClient sender = null)
@@ -37,7 +41,9 @@ public void CmdActivateEditSkillAction(HeroSkillLocation? skillLoc, GemLocation?
 | `gemLoc` | [`GemLocation?`](/api/Global.GemLocation) |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `EnterEditSkill(DewPlayer, string)`
+:::
+
+::: details `EnterEditSkill(DewPlayer, string)`
 
 Make the player enter edit skill mode of this shrine.
 
@@ -51,7 +57,9 @@ public void EnterEditSkill(DewPlayer player, string customData = null)
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `customData` | `string` |  |
 
-### `EnterEditSkill(Entity, string)`
+:::
+
+::: details `EnterEditSkill(Entity, string)`
 
 Make the player enter edit skill mode of this shrine.
 
@@ -65,7 +73,9 @@ public void EnterEditSkill(Entity entity, string customData = null)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `customData` | `string` |  |
 
-### `GetCost(Entity)`
+:::
+
+::: details `GetCost(Entity)`
 
 ```csharp
 public override Cost? GetCost(Entity activator)
@@ -78,7 +88,9 @@ public override Cost? GetCost(Entity activator)
 
 **Returns:** `Cost?`
 
-### `GetCustomData(DewPlayer)`
+:::
+
+::: details `GetCustomData(DewPlayer)`
 
 Get the custom data for the player, provided with the EnterEditSkill call.Available everywhere.
 
@@ -93,7 +105,9 @@ public string GetCustomData(DewPlayer player)
 
 **Returns:** `string`
 
-### `GetEditSkillBackdropColor()`
+:::
+
+::: details `GetEditSkillBackdropColor()`
 
 The color of the backdrop behind skill buttons in this edit skill mode. Disabled by default.
 
@@ -103,7 +117,9 @@ public virtual Color GetEditSkillBackdropColor()
 
 **Returns:** `UnityEngine.Color`
 
-### `GetEditSkillIndicatorColor()`
+:::
+
+::: details `GetEditSkillIndicatorColor()`
 
 The color of the editskill indicator text.
 
@@ -113,7 +129,9 @@ public virtual Color GetEditSkillIndicatorColor()
 
 **Returns:** `UnityEngine.Color`
 
-### `GetEditSkillIndicatorRawText()`
+:::
+
+::: details `GetEditSkillIndicatorRawText()`
 
 Text to show on editskill indicator of this shrine's action.
 
@@ -123,7 +141,9 @@ public virtual string GetEditSkillIndicatorRawText()
 
 **Returns:** `string`
 
-### `GetTargetInfo(DewPlayer, GemLocation, Gem)`
+:::
+
+::: details `GetTargetInfo(DewPlayer, GemLocation, Gem)`
 
 Checked everywhere.
 
@@ -140,7 +160,9 @@ public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, GemLocation l
 
 **Returns:** `EditSkillTargetInfo`
 
-### `GetTargetInfo(DewPlayer, HeroSkillLocation, SkillTrigger)`
+:::
+
+::: details `GetTargetInfo(DewPlayer, HeroSkillLocation, SkillTrigger)`
 
 Checked everywhere.
 
@@ -157,7 +179,9 @@ public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, HeroSkillLoca
 
 **Returns:** `EditSkillTargetInfo`
 
-### `GetTargetTypes(DewPlayer)`
+:::
+
+::: details `GetTargetTypes(DewPlayer)`
 
 ```csharp
 public virtual EditSkillTargetType GetTargetTypes(DewPlayer player)
@@ -170,7 +194,9 @@ public virtual EditSkillTargetType GetTargetTypes(DewPlayer player)
 
 **Returns:** `EditSkillTargetType`
 
-### `OnActivateEditSkill(DewPlayer, GemLocation, Gem)`
+:::
+
+::: details `OnActivateEditSkill(DewPlayer, GemLocation, Gem)`
 
 Called on server. Return true to denote success, which will show the activation effect, spend the cost, and deduct use count.Note this will be called only if all validations has been passed.
 
@@ -187,7 +213,9 @@ protected virtual bool OnActivateEditSkill(DewPlayer player, GemLocation loc, Ge
 
 **Returns:** `bool`
 
-### `OnActivateEditSkill(DewPlayer, HeroSkillLocation, SkillTrigger)`
+:::
+
+::: details `OnActivateEditSkill(DewPlayer, HeroSkillLocation, SkillTrigger)`
 
 Called on server. Return true to denote success, which will show the activation effect, spend the cost, and deduct use count.Note this will be called only if all validations has been passed.
 
@@ -204,7 +232,9 @@ protected virtual bool OnActivateEditSkill(DewPlayer player, HeroSkillLocation l
 
 **Returns:** `bool`
 
-### `OnUse(Entity)`
+:::
+
+::: details `OnUse(Entity)`
 
 ```csharp
 protected override bool OnUse(Entity entity)
@@ -217,7 +247,9 @@ protected override bool OnUse(Entity entity)
 
 **Returns:** `bool`
 
-### `ShouldExitEditModeAfterAction()`
+:::
+
+::: details `ShouldExitEditModeAfterAction()`
 
 Checked on local client. You can override this to dynamically adjust behavior for each player.
 
@@ -226,3 +258,5 @@ public virtual bool ShouldExitEditModeAfterAction()
 ```
 
 **Returns:** `bool`
+
+:::

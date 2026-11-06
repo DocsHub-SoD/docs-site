@@ -8,9 +8,13 @@
 public struct CollidableHit
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`point`** | `public Vector3 point` |  |
 | **`projectile`** | `public Projectile projectile` |  |
+
+:::

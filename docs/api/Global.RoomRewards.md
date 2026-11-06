@@ -11,7 +11,9 @@
 public class RoomRewards : RoomComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,15 +22,21 @@ public class RoomRewards : RoomComponent, ILogicUpdate
 | **`giveHighRarityReward`** | `[NonSerialized] public bool giveHighRarityReward` | Available on server. |
 | **`skillBonusLevel`** | `[NonSerialized] public int skillBonusLevel` | Available on server. |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isRegularRewardDisabled`** | `public bool isRegularRewardDisabled { get; }` |  |
 
-## Methods
+:::
 
-### `DisableRegularRewards()`
+## Methods (4)
+
+::: details `DisableRegularRewards()`
 
 Disable all shrines and props that would normally spawn as a reward, except the ones from room modifiers.(O) Default skill and essence shrines(O) Natural spawning golds and dream dusts(X) RoomMod_GoldEverywhere golds(X) Shrines from RoomModifierBase.PlaceShrine()
 
@@ -36,7 +44,9 @@ Disable all shrines and props that would normally spawn as a reward, except the 
 public void DisableRegularRewards()
 ```
 
-### `DropChaosReward(Vector3, bool)`
+:::
+
+::: details `DropChaosReward(Vector3, bool)`
 
 ```csharp
 public void DropChaosReward(Vector3 pos, bool isHighQuality)
@@ -48,14 +58,20 @@ public void DropChaosReward(Vector3 pos, bool isHighQuality)
 | `pos` | `UnityEngine.Vector3` |  |
 | `isHighQuality` | `bool` |  |
 
-### `OnRoomStartServer()`
+:::
+
+::: details `OnRoomStartServer()`
 
 ```csharp
 public override void OnRoomStartServer()
 ```
 
-### `SpawnCombatCoreShrines()`
+:::
+
+::: details `SpawnCombatCoreShrines()`
 
 ```csharp
 public void SpawnCombatCoreShrines()
 ```
+
+:::

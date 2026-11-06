@@ -11,7 +11,9 @@
 public class DewDifficultySettings : ScriptableObject
 ```
 
-## Fields
+## Fields (29)
+
+::: details Click to expand Fields (29)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -45,9 +47,11 @@ public class DewDifficultySettings : ScriptableObject
 | **`scoreMultiplier`** | `public float scoreMultiplier` |  |
 | **`specialSkillChanceMultiplier`** | `public float specialSkillChanceMultiplier` |  |
 
-## Methods
+:::
 
-### `GetScaledZoneIndexForDamage(float)`
+## Methods (2)
+
+::: details `GetScaledZoneIndexForDamage(float)`
 
 ```csharp
 public float GetScaledZoneIndexForDamage(float zi = NaN)
@@ -60,7 +64,9 @@ public float GetScaledZoneIndexForDamage(float zi = NaN)
 
 **Returns:** `float`
 
-### `GetScaledZoneIndexForHealth(float)`
+:::
+
+::: details `GetScaledZoneIndexForHealth(float)`
 
 ```csharp
 public float GetScaledZoneIndexForHealth(float zi = NaN)
@@ -72,3 +78,5 @@ public float GetScaledZoneIndexForHealth(float zi = NaN)
 | `zi` | `float` |  |
 
 **Returns:** `float`
+
+:::

@@ -8,7 +8,9 @@
 public class ArcTelegraphController : MonoBehaviour, IEffectComponent, IEffectWithSpeed
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,16 +23,22 @@ public class ArcTelegraphController : MonoBehaviour, IEffectComponent, IEffectWi
 | **`outerRadius`** | `public float outerRadius` |  |
 | **`whiteBorder`** | `[FoldoutGroup("References", false, 0)] public MeshRenderer whiteBorder` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 | **`value`** | `public float value { get; set; }` |  |
 
-## Methods
+:::
 
-### `ApplySpeedMultiplier(float)`
+## Methods (3)
+
+::: details `ApplySpeedMultiplier(float)`
 
 ```csharp
 public void ApplySpeedMultiplier(float speed)
@@ -41,14 +49,20 @@ public void ApplySpeedMultiplier(float speed)
 | :--- | :--- | :--- |
 | `speed` | `float` |  |
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

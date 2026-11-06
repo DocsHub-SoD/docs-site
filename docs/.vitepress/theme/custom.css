@@ -39,3 +39,39 @@
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* Custom styling for API Spoilers / Details containers */
+.details.custom-block {
+  margin: 0.45rem 0;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.details.custom-block:hover {
+  border-color: var(--vp-c-border);
+}
+
+.details.custom-block[open] {
+  padding-bottom: 0.75rem;
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.details.custom-block summary {
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  padding: 0.2rem 0;
+  color: var(--vp-c-text-1);
+}
+
+.details.custom-block summary code {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-mute);
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+

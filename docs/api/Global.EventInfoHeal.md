@@ -8,7 +8,9 @@
 public struct EventInfoHeal
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,3 +22,5 @@ public struct EventInfoHeal
 | **`heal`** | `public FinalHealData heal` |  |
 | **`isCrit`** | `public bool isCrit` |  |
 | **`target`** | `public Entity target` |  |
+
+:::

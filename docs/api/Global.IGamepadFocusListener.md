@@ -8,9 +8,9 @@
 public interface IGamepadFocusListener
 ```
 
-## Methods
+## Methods (2)
 
-### `IsValid()`
+::: details `IsValid()`
 
 ```csharp
 bool IsValid()
@@ -18,7 +18,9 @@ bool IsValid()
 
 **Returns:** `bool`
 
-### `OnFocusStateChanged(bool)`
+:::
+
+::: details `OnFocusStateChanged(bool)`
 
 ```csharp
 void OnFocusStateChanged(bool state)
@@ -28,3 +30,5 @@ void OnFocusStateChanged(bool state)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `state` | `bool` |  |
+
+:::

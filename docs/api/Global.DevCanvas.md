@@ -9,17 +9,23 @@
 public class DevCanvas : SingletonBehaviour<DevCanvas>, ISettingsChangedCallback
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`consoleObject`** | `public GameObject consoleObject` |  |
 | **`state`** | `[NonSerialized] public DevCanvas.DevCanvasState state` |  |
 
-## Methods
+:::
 
-### `OnSettingsChanged()`
+## Methods (1)
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
+
+:::

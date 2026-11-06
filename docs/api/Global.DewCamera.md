@@ -10,23 +10,33 @@
 public class DewCamera : ManagerBase<DewCamera>, ILogicUpdate
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`mainCamera`** | `public Camera mainCamera` |  |
 | **`uiCamera`** | `public Camera uiCamera` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldRegisterUpdates`** | `public override bool shouldRegisterUpdates { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (1)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
+
+:::

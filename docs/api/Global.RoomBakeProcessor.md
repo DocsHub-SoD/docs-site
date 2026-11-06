@@ -8,16 +8,20 @@
 public class RoomBakeProcessor : MonoBehaviour
 ```
 
-## Methods
+## Methods (2)
 
-### `AfterNavMeshBake()`
+::: details `AfterNavMeshBake()`
 
 ```csharp
 public virtual void AfterNavMeshBake()
 ```
 
-### `BeforeNavMeshBake()`
+:::
+
+::: details `BeforeNavMeshBake()`
 
 ```csharp
 public virtual void BeforeNavMeshBake()
 ```
+
+:::

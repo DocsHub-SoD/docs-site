@@ -9,7 +9,9 @@
 public abstract class FxInterpolatedEffectBase : MonoBehaviour, IEffectComponent, IEffectWithSpeed
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,7 +21,11 @@ public abstract class FxInterpolatedEffectBase : MonoBehaviour, IEffectComponent
 | **`startTime`** | `[BoxGroup("Interpolated Effect", true, false, 0)] public float startTime` |  |
 | **`sustainTime`** | `[ShowIf("@!isLoop", true)] [BoxGroup("Interpolated Effect", true, false, 0)] public float sustainTime` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,9 +34,11 @@ public abstract class FxInterpolatedEffectBase : MonoBehaviour, IEffectComponent
 | **`isEmitting`** | `public bool isEmitting { get; }` |  |
 | **`isPlaying`** | `public bool isPlaying { get; }` |  |
 
-## Methods
+:::
 
-### `ApplySpeedMultiplier(float)`
+## Methods (8)
+
+::: details `ApplySpeedMultiplier(float)`
 
 ```csharp
 public void ApplySpeedMultiplier(float speed)
@@ -41,13 +49,17 @@ public void ApplySpeedMultiplier(float speed)
 | :--- | :--- | :--- |
 | `speed` | `float` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected void Awake()
 ```
 
-### `OnInit()`
+:::
+
+::: details `OnInit()`
 
 Guaranteed to be called once when this effect starts, before this effect sets a value.
 
@@ -55,31 +67,41 @@ Guaranteed to be called once when this effect starts, before this effect sets a 
 protected virtual void OnInit()
 ```
 
-### `Play()`
+:::
+
+::: details `Play()`
 
 ```csharp
 public virtual void Play()
 ```
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 protected virtual void Start()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public virtual void Stop()
 ```
 
-### `Update()`
+:::
+
+::: details `Update()`
 
 ```csharp
 protected virtual void Update()
 ```
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected abstract void ValueSetter(float value)
@@ -89,3 +111,5 @@ protected abstract void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

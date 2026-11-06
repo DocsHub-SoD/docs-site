@@ -8,7 +8,9 @@
 public class DewConversationExecutionContext
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class DewConversationExecutionContext
 | **`currentLineIndex`** | `public int currentLineIndex` |  |
 | **`userInput`** | `public int userInput` |  |
 | **`waitingForUserInput`** | `public bool waitingForUserInput` |  |
+
+:::

@@ -8,34 +8,44 @@
 public class DewInGameTutorialItem
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isActive`** | `public bool isActive { get; }` |  |
 | **`mgr`** | `public InGameTutorialManager mgr { get; set; }` |  |
 
-## Methods
+:::
 
-### `OnStart()`
+## Methods (9)
+
+::: details `OnStart()`
 
 ```csharp
 public virtual void OnStart()
 ```
 
-### `OnStop()`
+:::
+
+::: details `OnStop()`
 
 ```csharp
 public virtual void OnStop()
 ```
 
-### `TutComplete()`
+:::
+
+::: details `TutComplete()`
 
 ```csharp
 protected void TutComplete()
 ```
 
-### `TutCreateArrow()`
+:::
+
+::: details `TutCreateArrow()`
 
 ```csharp
 protected TutorialArrow TutCreateArrow()
@@ -43,7 +53,9 @@ protected TutorialArrow TutCreateArrow()
 
 **Returns:** `TutorialArrow`
 
-### `TutDelayedExecution(Action, float)`
+:::
+
+::: details `TutDelayedExecution(Action, float)`
 
 ```csharp
 protected void TutDelayedExecution(Action func, float seconds)
@@ -55,7 +67,9 @@ protected void TutDelayedExecution(Action func, float seconds)
 | `func` | `System.Action` |  |
 | `seconds` | `float` |  |
 
-### `TutGetCoroutiner()`
+:::
+
+::: details `TutGetCoroutiner()`
 
 ```csharp
 protected Coroutiner TutGetCoroutiner()
@@ -63,7 +77,9 @@ protected Coroutiner TutGetCoroutiner()
 
 **Returns:** `Coroutiner`
 
-### `TutOnFrameUpdate(Action)`
+:::
+
+::: details `TutOnFrameUpdate(Action)`
 
 ```csharp
 protected void TutOnFrameUpdate(Action func)
@@ -74,7 +90,9 @@ protected void TutOnFrameUpdate(Action func)
 | :--- | :--- | :--- |
 | `func` | `System.Action` |  |
 
-### `TutOnLogicUpdate(Action)`
+:::
+
+::: details `TutOnLogicUpdate(Action)`
 
 ```csharp
 protected void TutOnLogicUpdate(Action func)
@@ -85,7 +103,9 @@ protected void TutOnLogicUpdate(Action func)
 | :--- | :--- | :--- |
 | `func` | `System.Action` |  |
 
-### `TutOnOutOfCombat(Action)`
+:::
+
+::: details `TutOnOutOfCombat(Action)`
 
 ```csharp
 protected void TutOnOutOfCombat(Action func)
@@ -95,3 +115,5 @@ protected void TutOnOutOfCombat(Action func)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `func` | `System.Action` |  |
+
+:::

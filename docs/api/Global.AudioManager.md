@@ -9,7 +9,9 @@
 public class AudioManager : ManagerBase<AudioManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (12)
+
+::: details Click to expand Fields (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -26,27 +28,37 @@ public class AudioManager : ManagerBase<AudioManager>, ILogicUpdate
 | **`sfx`** | `public AudioMixerGroup sfx` |  |
 | **`ui`** | `public AudioMixerGroup ui` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldRegisterUpdates`** | `public override bool shouldRegisterUpdates { get; }` |  |
 
-## Methods
+:::
 
-### `FadeInMasterVolume()`
+## Methods (7)
+
+::: details `FadeInMasterVolume()`
 
 ```csharp
 public void FadeInMasterVolume()
 ```
 
-### `FadeOutMasterVolume()`
+:::
+
+::: details `FadeOutMasterVolume()`
 
 ```csharp
 public void FadeOutMasterVolume()
 ```
 
-### `NeedsSetupEverytime(AudioType)`
+:::
+
+::: details `NeedsSetupEverytime(AudioType)`
 
 Does the type needs to be setup everytime before being played?
 
@@ -61,7 +73,9 @@ public static bool NeedsSetupEverytime(AudioType type)
 
 **Returns:** `bool`
 
-### `PlayUISound(AudioClip)`
+:::
+
+::: details `PlayUISound(AudioClip)`
 
 ```csharp
 public void PlayUISound(AudioClip clip)
@@ -72,7 +86,9 @@ public void PlayUISound(AudioClip clip)
 | :--- | :--- | :--- |
 | `clip` | `UnityEngine.AudioClip` |  |
 
-### `SetMasterVolumeMultiplier(float)`
+:::
+
+::: details `SetMasterVolumeMultiplier(float)`
 
 ```csharp
 public void SetMasterVolumeMultiplier(float multiplier)
@@ -83,7 +99,9 @@ public void SetMasterVolumeMultiplier(float multiplier)
 | :--- | :--- | :--- |
 | `multiplier` | `float` |  |
 
-### `SetupAudioSource(AudioSource, AudioType, AudioSpaceType, DewAudioRollOffType, bool)`
+:::
+
+::: details `SetupAudioSource(AudioSource, AudioType, AudioSpaceType, DewAudioRollOffType, bool)`
 
 ```csharp
 public void SetupAudioSource(AudioSource source, AudioType type, AudioSpaceType space, DewAudioRollOffType rolloff, bool forceCriticalPriority)
@@ -98,8 +116,12 @@ public void SetupAudioSource(AudioSource source, AudioType type, AudioSpaceType 
 | `rolloff` | [`DewAudioRollOffType`](/api/Global.DewAudioRollOffType) |  |
 | `forceCriticalPriority` | `bool` |  |
 
-### `UpdateMixerAttenuations()`
+:::
+
+::: details `UpdateMixerAttenuations()`
 
 ```csharp
 public void UpdateMixerAttenuations()
 ```
+
+:::

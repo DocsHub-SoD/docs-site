@@ -9,8 +9,12 @@
 public class ModConfig.DescriptionAttribute : Attribute
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`text`** | `public readonly string text` |  |
+
+:::

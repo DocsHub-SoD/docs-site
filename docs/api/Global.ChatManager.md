@@ -9,7 +9,9 @@
 public class ChatManager : NetworkedManagerBase<ChatManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -22,9 +24,11 @@ public class ChatManager : NetworkedManagerBase<ChatManager>, ILogicUpdate
 | **`ClientEvent_OnMessageReceived`** | `public SafeAction<ChatManager.Message> ClientEvent_OnMessageReceived` |  |
 | **`Emote_CooldownTime`** | `public const float Emote_CooldownTime = 1.4` |  |
 
-## Methods
+:::
 
-### `BroadcastAdvText(string)`
+## Methods (25)
+
+::: details `BroadcastAdvText(string)`
 
 ```csharp
 public void BroadcastAdvText(string advText)
@@ -35,7 +39,9 @@ public void BroadcastAdvText(string advText)
 | :--- | :--- | :--- |
 | `advText` | `string` |  |
 
-### `BroadcastMessage(Message)`
+:::
+
+::: details `BroadcastMessage(Message)`
 
 ```csharp
 public void BroadcastMessage(ChatManager.Message message)
@@ -46,7 +52,9 @@ public void BroadcastMessage(ChatManager.Message message)
 | :--- | :--- | :--- |
 | `message` | [`ChatManager.Message`](/api/Global.ChatManager) |  |
 
-### `CmdSendAchievementMessage(string, NetworkConnectionToClient)`
+:::
+
+::: details `CmdSendAchievementMessage(string, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdSendAchievementMessage(string achKey, NetworkConnectionToClient sender = null)
@@ -58,7 +66,9 @@ public void CmdSendAchievementMessage(string achKey, NetworkConnectionToClient s
 | `achKey` | `string` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdSendChatMessage(string, NetworkConnectionToClient)`
+:::
+
+::: details `CmdSendChatMessage(string, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdSendChatMessage(string content, NetworkConnectionToClient sender = null)
@@ -70,7 +80,9 @@ public void CmdSendChatMessage(string content, NetworkConnectionToClient sender 
 | `content` | `string` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdSendEmote(string, NetworkConnectionToClient)`
+:::
+
+::: details `CmdSendEmote(string, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdSendEmote(string emoteName, NetworkConnectionToClient sender = null)
@@ -82,7 +94,9 @@ public void CmdSendEmote(string emoteName, NetworkConnectionToClient sender = nu
 | `emoteName` | `string` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `CmdSendPingMessage(string, NetworkConnectionToClient)`
+:::
+
+::: details `CmdSendPingMessage(string, NetworkConnectionToClient)`
 
 ```csharp
 public void CmdSendPingMessage(string advMessage, NetworkConnectionToClient sender = null)
@@ -94,7 +108,9 @@ public void CmdSendPingMessage(string advMessage, NetworkConnectionToClient send
 | `advMessage` | `string` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
-### `GetColoredDescribedPlayerName(DewPlayer)`
+:::
+
+::: details `GetColoredDescribedPlayerName(DewPlayer)`
 
 ```csharp
 public static string GetColoredDescribedPlayerName(DewPlayer player)
@@ -107,7 +123,9 @@ public static string GetColoredDescribedPlayerName(DewPlayer player)
 
 **Returns:** `string`
 
-### `GetColoredGemName(string, int)`
+:::
+
+::: details `GetColoredGemName(string, int)`
 
 ```csharp
 public static string GetColoredGemName(string typeName, int quality)
@@ -121,7 +139,9 @@ public static string GetColoredGemName(string typeName, int quality)
 
 **Returns:** `string`
 
-### `GetColoredSkillName(string, int)`
+:::
+
+::: details `GetColoredSkillName(string, int)`
 
 ```csharp
 public static string GetColoredSkillName(string typeName, int level)
@@ -135,7 +155,9 @@ public static string GetColoredSkillName(string typeName, int level)
 
 **Returns:** `string`
 
-### `GetDescribedPlayerName(DewPlayer)`
+:::
+
+::: details `GetDescribedPlayerName(DewPlayer)`
 
 ```csharp
 public static string GetDescribedPlayerName(DewPlayer player)
@@ -148,7 +170,9 @@ public static string GetDescribedPlayerName(DewPlayer player)
 
 **Returns:** `string`
 
-### `GetFormattedChatContent(string, string)`
+:::
+
+::: details `GetFormattedChatContent(string, string)`
 
 ```csharp
 public static string GetFormattedChatContent(string playerName, string content)
@@ -162,7 +186,9 @@ public static string GetFormattedChatContent(string playerName, string content)
 
 **Returns:** `string`
 
-### `GetPlayerColorHex(DewPlayer)`
+:::
+
+::: details `GetPlayerColorHex(DewPlayer)`
 
 ```csharp
 public static string GetPlayerColorHex(DewPlayer player = null)
@@ -175,7 +201,9 @@ public static string GetPlayerColorHex(DewPlayer player = null)
 
 **Returns:** `string`
 
-### `IncrementRateAndCheck(NetworkConnectionToClient)`
+:::
+
+::: details `IncrementRateAndCheck(NetworkConnectionToClient)`
 
 Increment chat rate of given player. Returns true if succeeds.Returns false if the player have exceeded the rate limit.
 
@@ -190,7 +218,9 @@ public bool IncrementRateAndCheck(NetworkConnectionToClient connection)
 
 **Returns:** `bool`
 
-### `IsChatLocked(NetworkConnectionToClient)`
+:::
+
+::: details `IsChatLocked(NetworkConnectionToClient)`
 
 Is chat disabled for given player? Chat will be disabled temporarily if a player sends chat messages too fast.
 
@@ -205,7 +235,9 @@ public bool IsChatLocked(NetworkConnectionToClient connection)
 
 **Returns:** `bool`
 
-### `IsPlayerMuted(DewPlayer)`
+:::
+
+::: details `IsPlayerMuted(DewPlayer)`
 
 ```csharp
 public bool IsPlayerMuted(DewPlayer player)
@@ -218,7 +250,9 @@ public bool IsPlayerMuted(DewPlayer player)
 
 **Returns:** `bool`
 
-### `IsPlayerMutedByNetId(uint)`
+:::
+
+::: details `IsPlayerMutedByNetId(uint)`
 
 ```csharp
 public bool IsPlayerMutedByNetId(uint playerNetId)
@@ -231,7 +265,9 @@ public bool IsPlayerMutedByNetId(uint playerNetId)
 
 **Returns:** `bool`
 
-### `IsPlayerMutedBySteamId(ulong)`
+:::
+
+::: details `IsPlayerMutedBySteamId(ulong)`
 
 ```csharp
 public bool IsPlayerMutedBySteamId(ulong playerSteamId)
@@ -244,7 +280,9 @@ public bool IsPlayerMutedBySteamId(ulong playerSteamId)
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -255,7 +293,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MutePlayer(DewPlayer)`
+:::
+
+::: details `MutePlayer(DewPlayer)`
 
 ```csharp
 public void MutePlayer(DewPlayer player)
@@ -266,13 +306,17 @@ public void MutePlayer(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `RpcShowEmote(string, DewPlayer)`
+:::
+
+::: details `RpcShowEmote(string, DewPlayer)`
 
 ```csharp
 public void RpcShowEmote(string emoteName, DewPlayer sender)
@@ -284,7 +328,9 @@ public void RpcShowEmote(string emoteName, DewPlayer sender)
 | `emoteName` | `string` |  |
 | `sender` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `SendChatLockedNotice(NetworkConnectionToClient)`
+:::
+
+::: details `SendChatLockedNotice(NetworkConnectionToClient)`
 
 ```csharp
 public void SendChatLockedNotice(NetworkConnectionToClient target)
@@ -295,7 +341,9 @@ public void SendChatLockedNotice(NetworkConnectionToClient target)
 | :--- | :--- | :--- |
 | `target` | `Mirror.NetworkConnectionToClient` |  |
 
-### `SendChatMessage(NetworkConnection, Message)`
+:::
+
+::: details `SendChatMessage(NetworkConnection, Message)`
 
 ```csharp
 public void SendChatMessage(NetworkConnection target, ChatManager.Message message)
@@ -307,7 +355,9 @@ public void SendChatMessage(NetworkConnection target, ChatManager.Message messag
 | `target` | `Mirror.NetworkConnection` |  |
 | `message` | [`ChatManager.Message`](/api/Global.ChatManager) |  |
 
-### `ShowMessageLocally(Message)`
+:::
+
+::: details `ShowMessageLocally(Message)`
 
 ```csharp
 public void ShowMessageLocally(ChatManager.Message message)
@@ -318,7 +368,9 @@ public void ShowMessageLocally(ChatManager.Message message)
 | :--- | :--- | :--- |
 | `message` | [`ChatManager.Message`](/api/Global.ChatManager) |  |
 
-### `UnmutePlayer(DewPlayer)`
+:::
+
+::: details `UnmutePlayer(DewPlayer)`
 
 ```csharp
 public void UnmutePlayer(DewPlayer player)
@@ -328,3 +380,5 @@ public void UnmutePlayer(DewPlayer player)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+
+:::

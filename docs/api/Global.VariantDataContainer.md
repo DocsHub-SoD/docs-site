@@ -8,9 +8,9 @@
 public class VariantDataContainer
 ```
 
-## Methods
+## Methods (4)
 
-### `Get<T>()`
+::: details `Get&lt;T&gt;()`
 
 ```csharp
 public T Get<T>()
@@ -23,7 +23,9 @@ public T Get<T>()
 
 **Returns:** `T`
 
-### `Has<T>()`
+:::
+
+::: details `Has&lt;T&gt;()`
 
 ```csharp
 public bool Has<T>()
@@ -36,7 +38,9 @@ public bool Has<T>()
 
 **Returns:** `bool`
 
-### `Set<T>(T)`
+:::
+
+::: details `Set&lt;T&gt;(T)`
 
 ```csharp
 public void Set<T>(T data)
@@ -48,7 +52,9 @@ public void Set<T>(T data)
 | `data` | `T` |  |
 | `` | `T` |  |
 
-### `TryGet<T>(out T)`
+:::
+
+::: details `TryGet&lt;T&gt;(out T)`
 
 ```csharp
 public bool TryGet<T>(out T data)
@@ -61,3 +67,5 @@ public bool TryGet<T>(out T data)
 | `` | `T` |  |
 
 **Returns:** `bool`
+
+:::

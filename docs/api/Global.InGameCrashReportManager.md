@@ -9,8 +9,12 @@
 public class InGameCrashReportManager : ManagerBase<InGameCrashReportManager>, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldRegisterUpdates`** | `public override bool shouldRegisterUpdates { get; }` |  |
+
+:::

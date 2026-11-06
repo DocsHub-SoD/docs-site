@@ -8,9 +8,13 @@
 public struct GetFocusTargetCacheData
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`candidateFocusables`** | `public readonly List<(IGamepadFocusable, Rect)> candidateFocusables { get; }` |  |
 | **`candidateGroups`** | `public readonly List<(UI_GamepadFocusableGroup, Rect)> candidateGroups { get; }` |  |
+
+:::

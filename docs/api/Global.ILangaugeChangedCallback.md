@@ -8,10 +8,12 @@
 public interface ILangaugeChangedCallback
 ```
 
-## Methods
+## Methods (1)
 
-### `OnLanguageChanged()`
+::: details `OnLanguageChanged()`
 
 ```csharp
 void OnLanguageChanged()
 ```
+
+:::

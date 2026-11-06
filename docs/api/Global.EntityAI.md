@@ -11,7 +11,9 @@
 public class EntityAI : EntityComponent, ILogicUpdate
 ```
 
-## Fields
+## Fields (24)
+
+::: details Click to expand Fields (24)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -40,7 +42,11 @@ public class EntityAI : EntityComponent, ILogicUpdate
 | **`WanderIntervalMin`** | `public const float WanderIntervalMin = 4` |  |
 | **`WanderSpeedMultiplier`** | `public const float WanderSpeedMultiplier = 0.6` |  |
 
-## Properties
+:::
+
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -50,9 +56,11 @@ public class EntityAI : EntityComponent, ILogicUpdate
 | **`estimatedVelocityUnclamped`** | `public Vector3 estimatedVelocityUnclamped { get; }` | Available only on server. |
 | **`isAITicking`** | `public bool isAITicking { get; set; }` |  |
 
-## Methods
+:::
 
-### `Aggro(Entity, bool)`
+## Methods (17)
+
+::: details `Aggro(Entity, bool)`
 
 ```csharp
 public void Aggro(Entity target, bool doPropagation = false)
@@ -64,13 +72,17 @@ public void Aggro(Entity target, bool doPropagation = false)
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `doPropagation` | `bool` |  |
 
-### `CallAIUpdateImmediately()`
+:::
+
+::: details `CallAIUpdateImmediately()`
 
 ```csharp
 public void CallAIUpdateImmediately()
 ```
 
-### `Helper_CanBeCast(AbilityTrigger)`
+:::
+
+::: details `Helper_CanBeCast(AbilityTrigger)`
 
 ```csharp
 public bool Helper_CanBeCast(AbilityTrigger abil)
@@ -83,7 +95,9 @@ public bool Helper_CanBeCast(AbilityTrigger abil)
 
 **Returns:** `bool`
 
-### `Helper_CanBeCast<T>()`
+:::
+
+::: details `Helper_CanBeCast&lt;T&gt;()`
 
 ```csharp
 public bool Helper_CanBeCast<T>() where T : AbilityTrigger
@@ -96,7 +110,9 @@ public bool Helper_CanBeCast<T>() where T : AbilityTrigger
 
 **Returns:** `bool`
 
-### `Helper_CastAbility<T>(CastInfo)`
+:::
+
+::: details `Helper_CastAbility&lt;T&gt;(CastInfo)`
 
 ```csharp
 public void Helper_CastAbility<T>(CastInfo info) where T : AbilityTrigger
@@ -108,7 +124,9 @@ public void Helper_CastAbility<T>(CastInfo info) where T : AbilityTrigger
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `` | `T` |  |
 
-### `Helper_CastAbilityAuto(AbilityTrigger)`
+:::
+
+::: details `Helper_CastAbilityAuto(AbilityTrigger)`
 
 Casts this ability with automatically populated CastInfo.This will select a target and then use ability trigger's prediction data.
 
@@ -123,7 +141,9 @@ public bool Helper_CastAbilityAuto(AbilityTrigger abil)
 
 **Returns:** `bool`
 
-### `Helper_CastAbilityAuto<T>()`
+:::
+
+::: details `Helper_CastAbilityAuto&lt;T&gt;()`
 
 Casts this ability with automatically populated CastInfo.This will select a target and then use ability trigger's prediction data.
 
@@ -136,7 +156,9 @@ public void Helper_CastAbilityAuto<T>() where T : AbilityTrigger
 | :--- | :--- | :--- |
 | `` | `T` |  |
 
-### `Helper_ChaseTarget()`
+:::
+
+::: details `Helper_ChaseTarget()`
 
 Chase targeted enemy. Note this will not interrupt ongoing chase if it's already chasing the same target.
 
@@ -144,7 +166,9 @@ Chase targeted enemy. Note this will not interrupt ongoing chase if it's already
 public void Helper_ChaseTarget()
 ```
 
-### `Helper_GetAbility<T>()`
+:::
+
+::: details `Helper_GetAbility&lt;T&gt;()`
 
 Get ability of given type. Supports normal abilities and attack trigger.
 
@@ -159,7 +183,9 @@ public T Helper_GetAbility<T>() where T : AbilityTrigger
 
 **Returns:** `T`
 
-### `Helper_IsTargetInRange(AbilityTrigger)`
+:::
+
+::: details `Helper_IsTargetInRange(AbilityTrigger)`
 
 ```csharp
 public bool Helper_IsTargetInRange(AbilityTrigger abil)
@@ -172,7 +198,9 @@ public bool Helper_IsTargetInRange(AbilityTrigger abil)
 
 **Returns:** `bool`
 
-### `Helper_IsTargetInRange<T>()`
+:::
+
+::: details `Helper_IsTargetInRange&lt;T&gt;()`
 
 ```csharp
 public bool Helper_IsTargetInRange<T>() where T : AbilityTrigger
@@ -185,7 +213,9 @@ public bool Helper_IsTargetInRange<T>() where T : AbilityTrigger
 
 **Returns:** `bool`
 
-### `Helper_IsTargetInRangeOfAttack()`
+:::
+
+::: details `Helper_IsTargetInRangeOfAttack()`
 
 ```csharp
 public bool Helper_IsTargetInRangeOfAttack()
@@ -193,7 +223,9 @@ public bool Helper_IsTargetInRangeOfAttack()
 
 **Returns:** `bool`
 
-### `Helper_TryGetCastInfoAuto(AbilityTrigger, out CastInfo)`
+:::
+
+::: details `Helper_TryGetCastInfoAuto(AbilityTrigger, out CastInfo)`
 
 ```csharp
 public bool Helper_TryGetCastInfoAuto(AbilityTrigger abil, out CastInfo info)
@@ -207,7 +239,9 @@ public bool Helper_TryGetCastInfoAuto(AbilityTrigger abil, out CastInfo info)
 
 **Returns:** `bool`
 
-### `Helper_TryGetCastInfoAuto<T>(out CastInfo)`
+:::
+
+::: details `Helper_TryGetCastInfoAuto&lt;T&gt;(out CastInfo)`
 
 ```csharp
 public bool Helper_TryGetCastInfoAuto<T>(out CastInfo info) where T : AbilityTrigger
@@ -221,7 +255,9 @@ public bool Helper_TryGetCastInfoAuto<T>(out CastInfo info) where T : AbilityTri
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -232,14 +268,20 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
+
+:::

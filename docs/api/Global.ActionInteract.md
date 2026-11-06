@@ -9,7 +9,9 @@
 public class ActionInteract : ActionBase
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class ActionInteract : ActionBase
 | **`isAlt`** | `public bool isAlt` |  |
 | **`noActivation`** | `public bool noActivation` |  |
 
-## Methods
+:::
 
-### `GetMoveDestination()`
+## Methods (4)
+
+::: details `GetMoveDestination()`
 
 ```csharp
 public override Vector3? GetMoveDestination()
@@ -27,7 +31,9 @@ public override Vector3? GetMoveDestination()
 
 **Returns:** `UnityEngine.Vector3?`
 
-### `GetMoveDestinationRequiredDistance()`
+:::
+
+::: details `GetMoveDestinationRequiredDistance()`
 
 ```csharp
 public override float GetMoveDestinationRequiredDistance()
@@ -35,7 +41,9 @@ public override float GetMoveDestinationRequiredDistance()
 
 **Returns:** `float`
 
-### `Tick()`
+:::
+
+::: details `Tick()`
 
 ```csharp
 public override bool Tick()
@@ -43,10 +51,14 @@ public override bool Tick()
 
 **Returns:** `bool`
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
 ```
 
 **Returns:** `string`
+
+:::

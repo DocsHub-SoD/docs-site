@@ -8,8 +8,12 @@
 public interface ICastMethodDataNone
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`radius`** | `float radius { get; }` | Effective range of the ability around the caster. |
+
+:::

@@ -8,13 +8,19 @@
 public class ChargingChannel
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`castMethod`** | `public CastMethodData castMethod` | You must call UpdateCastMethod after making change to this. |
 
-## Properties
+:::
+
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,15 +30,19 @@ public class ChargingChannel
 | **`isActive`** | `public bool isActive { get; }` |  |
 | **`normalizedTime`** | `public float normalizedTime { get; }` |  |
 
-## Methods
+:::
 
-### `Cancel()`
+## Methods (8)
+
+::: details `Cancel()`
 
 ```csharp
 public void Cancel()
 ```
 
-### `Dispatch(Entity, AbilityTrigger)`
+:::
+
+::: details `Dispatch(Entity, AbilityTrigger)`
 
 ```csharp
 public ChargingChannel Dispatch(Entity entity, AbilityTrigger trigger)
@@ -46,7 +56,9 @@ public ChargingChannel Dispatch(Entity entity, AbilityTrigger trigger)
 
 **Returns:** `ChargingChannel`
 
-### `OnCancel(Action<ChargingChannel>)`
+:::
+
+::: details `OnCancel(Action&lt;ChargingChannel&gt;)`
 
 ```csharp
 public ChargingChannel OnCancel(Action<ChargingChannel> callback)
@@ -59,7 +71,9 @@ public ChargingChannel OnCancel(Action<ChargingChannel> callback)
 
 **Returns:** `ChargingChannel`
 
-### `OnCast(Action<ChargingChannel>)`
+:::
+
+::: details `OnCast(Action&lt;ChargingChannel&gt;)`
 
 ```csharp
 public ChargingChannel OnCast(Action<ChargingChannel> callback)
@@ -72,7 +86,9 @@ public ChargingChannel OnCast(Action<ChargingChannel> callback)
 
 **Returns:** `ChargingChannel`
 
-### `OnChargeFull(Action<ChargingChannel>)`
+:::
+
+::: details `OnChargeFull(Action&lt;ChargingChannel&gt;)`
 
 ```csharp
 public ChargingChannel OnChargeFull(Action<ChargingChannel> callback)
@@ -85,7 +101,9 @@ public ChargingChannel OnChargeFull(Action<ChargingChannel> callback)
 
 **Returns:** `ChargingChannel`
 
-### `OnComplete(Action<ChargingChannel>)`
+:::
+
+::: details `OnComplete(Action&lt;ChargingChannel&gt;)`
 
 ```csharp
 public ChargingChannel OnComplete(Action<ChargingChannel> callback)
@@ -98,7 +116,9 @@ public ChargingChannel OnComplete(Action<ChargingChannel> callback)
 
 **Returns:** `ChargingChannel`
 
-### `SetInitialInfo(CastInfo)`
+:::
+
+::: details `SetInitialInfo(CastInfo)`
 
 ```csharp
 public ChargingChannel SetInitialInfo(CastInfo info)
@@ -111,7 +131,9 @@ public ChargingChannel SetInitialInfo(CastInfo info)
 
 **Returns:** `ChargingChannel`
 
-### `UpdateCastMethod()`
+:::
+
+::: details `UpdateCastMethod()`
 
 Send updated cast method to client to reflect the changes.
 
@@ -120,3 +142,5 @@ public ChargingChannel UpdateCastMethod()
 ```
 
 **Returns:** `ChargingChannel`
+
+:::

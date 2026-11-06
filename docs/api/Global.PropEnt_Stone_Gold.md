@@ -9,21 +9,29 @@
 public class PropEnt_Stone_Gold : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`amountByZoneIndex`** | `public Formula amountByZoneIndex` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isRegularReward`** | `public override bool isRegularReward { get; }` |  |
 
-## Methods
+:::
 
-### `GetAmount()`
+## Methods (2)
+
+::: details `GetAmount()`
 
 ```csharp
 public int GetAmount()
@@ -31,7 +39,9 @@ public int GetAmount()
 
 **Returns:** `int`
 
-### `OnDeath(EventInfoKill)`
+:::
+
+::: details `OnDeath(EventInfoKill)`
 
 ```csharp
 protected override void OnDeath(EventInfoKill info)
@@ -41,3 +51,5 @@ protected override void OnDeath(EventInfoKill info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
+
+:::

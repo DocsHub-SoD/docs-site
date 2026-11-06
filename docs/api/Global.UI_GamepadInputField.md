@@ -9,9 +9,9 @@
 public class UI_GamepadInputField : UI_GamepadFocusable, IGamepadFocusable, IGamepadFocusListener
 ```
 
-## Methods
+## Methods (4)
 
-### `CanBeFocused()`
+::: details `CanBeFocused()`
 
 ```csharp
 public override bool CanBeFocused()
@@ -19,13 +19,17 @@ public override bool CanBeFocused()
 
 **Returns:** `bool`
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `OnPointerClick(PointerEventData)`
+:::
+
+::: details `OnPointerClick(PointerEventData)`
 
 ```csharp
 public void OnPointerClick(PointerEventData eventData)
@@ -36,7 +40,9 @@ public void OnPointerClick(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `StartInput(Action<string>, Action)`
+:::
+
+::: details `StartInput(Action&lt;string&gt;, Action)`
 
 ```csharp
 public void StartInput(Action<string> onConfirm = null, Action onCancel = null)
@@ -47,3 +53,5 @@ public void StartInput(Action<string> onConfirm = null, Action onCancel = null)
 | :--- | :--- | :--- |
 | `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |
+
+:::

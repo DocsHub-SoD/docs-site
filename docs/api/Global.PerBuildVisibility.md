@@ -8,7 +8,9 @@
 public class PerBuildVisibility : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class PerBuildVisibility : MonoBehaviour
 | **`editor`** | `[LabelText("Always Show In Editor")] public bool editor` |  |
 | **`indev`** | `[Title("Show In...", null, TitleAlignments.Left, true, true)] public bool indev` |  |
 | **`release`** | `public bool release` |  |
+
+:::

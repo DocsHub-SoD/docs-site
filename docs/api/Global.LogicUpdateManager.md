@@ -9,7 +9,9 @@
 public class LogicUpdateManager : ManagerBase<LogicUpdateManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,21 +19,29 @@ public class LogicUpdateManager : ManagerBase<LogicUpdateManager>, ILogicUpdate
 | **`logicDeltaTime`** | `public static float logicDeltaTime` |  |
 | **`MinLogicUpdateInterval`** | `public const float MinLogicUpdateInterval = 0.033333335` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldRegisterUpdates`** | `public override bool shouldRegisterUpdates { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (3)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `Register(ILogicUpdate)`
+:::
+
+::: details `Register(ILogicUpdate)`
 
 ```csharp
 public static void Register(ILogicUpdate lobj)
@@ -42,7 +52,9 @@ public static void Register(ILogicUpdate lobj)
 | :--- | :--- | :--- |
 | `lobj` | [`ILogicUpdate`](/api/Global.ILogicUpdate) |  |
 
-### `Unregister(ILogicUpdate)`
+:::
+
+::: details `Unregister(ILogicUpdate)`
 
 ```csharp
 public static void Unregister(ILogicUpdate lobj)
@@ -52,3 +64,5 @@ public static void Unregister(ILogicUpdate lobj)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `lobj` | [`ILogicUpdate`](/api/Global.ILogicUpdate) |  |
+
+:::

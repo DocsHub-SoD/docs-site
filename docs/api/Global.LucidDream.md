@@ -9,7 +9,9 @@
 public class LucidDream : GameEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,19 +21,27 @@ public class LucidDream : GameEffect, ILogicUpdate, ICleanup, ICustomDestroyRout
 | **`icon`** | `[BoxGroup("Lucid Dream Settings", true, false, 0)] public Sprite icon` |  |
 | **`type`** | `[BoxGroup("Lucid Dream Settings", true, false, 0)] public LucidDreamType type` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`color`** | `public Color color { get; }` |  |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 
-## Methods
+:::
 
-### `GetCustomInGameTooltip()`
+## Methods (1)
+
+::: details `GetCustomInGameTooltip()`
 
 ```csharp
 public virtual string GetCustomInGameTooltip()
 ```
 
 **Returns:** `string`
+
+:::

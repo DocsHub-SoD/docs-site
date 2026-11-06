@@ -8,7 +8,9 @@
 public struct EditSkillTargetInfo
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public struct EditSkillTargetInfo
 | **`nextLevel`** | `public int? nextLevel` | Next level to show by comparison. |
 | **`rejectReasonRawText`** | `public string rejectReasonRawText` | If not null, the action will be rejected and center message will be shown. You don't need to set this for the cost affordability. |
 | **`tooltipRawText`** | `public string tooltipRawText` | Text to show on tooltip as a description of this action. |
+
+:::

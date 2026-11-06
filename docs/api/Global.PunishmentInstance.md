@@ -9,8 +9,12 @@
 public class PunishmentInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`chanceWeight`** | `public float chanceWeight` |  |
+
+:::

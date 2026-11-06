@@ -9,7 +9,9 @@
 public class InGameTutorialManager : ManagerBase<InGameTutorialManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (14)
+
+::: details Click to expand Fields (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -28,15 +30,21 @@ public class InGameTutorialManager : ManagerBase<InGameTutorialManager>, ILogicU
 | **`refSkillNotification`** | `public Transform refSkillNotification` |  |
 | **`uiParent`** | `public Transform uiParent` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isTutorialActive`** | `public bool isTutorialActive { get; }` |  |
 
-## Methods
+:::
 
-### `CreateArrow()`
+## Methods (6)
+
+::: details `CreateArrow()`
 
 ```csharp
 public TutorialArrow CreateArrow()
@@ -44,13 +52,17 @@ public TutorialArrow CreateArrow()
 
 **Returns:** `TutorialArrow`
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetRefSkill(HeroSkillLocation)`
+:::
+
+::: details `GetRefSkill(HeroSkillLocation)`
 
 ```csharp
 public Transform GetRefSkill(HeroSkillLocation type)
@@ -63,7 +75,9 @@ public Transform GetRefSkill(HeroSkillLocation type)
 
 **Returns:** `UnityEngine.Transform`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -74,14 +88,20 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `StartTutorials()`
+:::
+
+::: details `StartTutorials()`
 
 ```csharp
 public void StartTutorials()
 ```
 
-### `StopTutorials()`
+:::
+
+::: details `StopTutorials()`
 
 ```csharp
 public void StopTutorials()
 ```
+
+:::

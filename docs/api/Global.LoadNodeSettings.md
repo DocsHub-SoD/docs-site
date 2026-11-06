@@ -8,7 +8,9 @@
 public class LoadNodeSettings
 ```
 
-## Fields
+## Fields (12)
+
+::: details Click to expand Fields (12)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,12 +27,16 @@ public class LoadNodeSettings
 | **`newZoneNoAdvance`** | `public bool newZoneNoAdvance` | This is only used in development / testing context. Replaces the current zone, instead of advancing zone index. |
 | **`to`** | `public int to` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (1)
+
+::: details `Clone()`
 
 ```csharp
 public LoadNodeSettings Clone()
 ```
 
 **Returns:** `LoadNodeSettings`
+
+:::

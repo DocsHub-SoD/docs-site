@@ -9,10 +9,12 @@
 public class PropEnt_Merchant_Unmanned : PropEnt_Merchant_Jonas, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable
 ```
 
-## Methods
+## Methods (1)
 
-### `OnCreate()`
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
+
+:::

@@ -9,8 +9,12 @@
 public class SlowEffect : BasicEffectWithStrength
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`mask`** | `public override BasicEffectMask mask { get; }` |  |
+
+:::

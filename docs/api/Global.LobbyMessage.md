@@ -8,9 +8,13 @@
 public struct LobbyMessage
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`payload`** | `public string payload` |  |
 | **`type`** | `public LobbyMessageType type` |  |
+
+:::

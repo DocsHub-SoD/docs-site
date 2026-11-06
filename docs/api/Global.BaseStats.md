@@ -9,7 +9,9 @@
 public struct BaseStats
 ```
 
-## Fields
+## Fields (16)
+
+::: details Click to expand Fields (16)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,3 +31,5 @@ public struct BaseStats
 | **`maxHealth`** | `public float maxHealth` |  |
 | **`maxMana`** | `public float maxMana` |  |
 | **`tenacity`** | `public float tenacity` |  |
+
+:::

@@ -8,8 +8,12 @@
 public class Room_PlayerPathablePoint : MonoBehaviour, IPlayerPathablePoint
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`pathablePosition`** | `public Vector3 pathablePosition { get; }` |  |
+
+:::

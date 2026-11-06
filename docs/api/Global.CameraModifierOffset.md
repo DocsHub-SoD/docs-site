@@ -9,18 +9,24 @@
 public class CameraModifierOffset : CameraModifierBase
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`offset`** | `public Vector3 offset` |  |
 
-## Methods
+:::
 
-### `Apply()`
+## Methods (1)
+
+::: details `Apply()`
 
 ```csharp
 public CameraModifierOffset Apply()
 ```
 
 **Returns:** `CameraModifierOffset`
+
+:::

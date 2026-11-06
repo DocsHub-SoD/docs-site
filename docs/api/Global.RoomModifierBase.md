@@ -9,7 +9,9 @@
 public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool
 ```
 
-## Fields
+## Fields (24)
+
+::: details Click to expand Fields (24)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -38,7 +40,11 @@ public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRou
 | **`visibilityOnWorld`** | `public NodeModifierVisibility visibilityOnWorld` |  |
 | **`zoneIndexRange`** | `[ShowIf("@chance > 0.000001f", true)] public Vector2Int zoneIndexRange` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -46,9 +52,11 @@ public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRou
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 | **`modData`** | `public ModifierData modData { get; }` |  |
 
-## Methods
+:::
 
-### `CanSpawnAtNode(int)`
+## Methods (11)
+
+::: details `CanSpawnAtNode(int)`
 
 Checked on server, on the modifier prefab, when generating the world.It will be called in the middle of generating the world, but essential things like basic node positions and distances will be provided.
 
@@ -63,7 +71,9 @@ public virtual bool CanSpawnAtNode(int nodeIndex)
 
 **Returns:** `bool`
 
-### `GetScaledChance()`
+:::
+
+::: details `GetScaledChance()`
 
 ```csharp
 public float GetScaledChance()
@@ -71,7 +81,9 @@ public float GetScaledChance()
 
 **Returns:** `float`
 
-### `IsAvailableInGame()`
+:::
+
+::: details `IsAvailableInGame()`
 
 Is this modifier available in game? If false, this modifier will not be applied to nodes.Checked on server everytime when generating world.NOTE that in-game constellation registration happens AFTER first world generation!!!!
 
@@ -81,7 +93,9 @@ public virtual bool IsAvailableInGame()
 
 **Returns:** `bool`
 
-### `ModifyEntities(Action<Entity>, Action<Entity>)`
+:::
+
+::: details `ModifyEntities(Action&lt;Entity&gt;, Action&lt;Entity&gt;)`
 
 Modify all entities.onStart is called on all existing entities and entities spawned in the future.onStop is called on all existing entities when modifier stops.
 
@@ -95,25 +109,33 @@ public void ModifyEntities(Action<Entity> onStart, Action<Entity> onStop)
 | `onStart` | [`System.Action<T><Entity>`](/api/Global.Entity) |  |
 | `onStop` | [`System.Action<T><Entity>`](/api/Global.Entity) |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `PlaceDecorations(DecorationSettings, IReadOnlyList<(int, int)>)`
+:::
+
+::: details `PlaceDecorations(DecorationSettings, IReadOnlyList&lt;(int, int)&gt;)`
 
 ```csharp
 public static List<GameObject> PlaceDecorations(DecorationSettings s, IReadOnlyList<(int, int)> indices)
@@ -127,7 +149,9 @@ public static List<GameObject> PlaceDecorations(DecorationSettings s, IReadOnlyL
 
 **Returns:** `System.Collections.Generic.List<T><UnityEngine.GameObject>`
 
-### `PlaceShrine<T>(PlaceShrineSettings)`
+:::
+
+::: details `PlaceShrine&lt;T&gt;(PlaceShrineSettings)`
 
 Places a shrine on random position.This function properly handles revisits.Warning: does not support multiple shrines of same type
 
@@ -141,7 +165,9 @@ public void PlaceShrine<T>(PlaceShrineSettings settings) where T : Shrine
 | `settings` | [`PlaceShrineSettings`](/api/Global.PlaceShrineSettings) |  |
 | `` | `T` |  |
 
-### `RemoveModifier()`
+:::
+
+::: details `RemoveModifier()`
 
 Remove and destroy this modifier.
 
@@ -149,10 +175,14 @@ Remove and destroy this modifier.
 public void RemoveModifier()
 ```
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 ```csharp
 public override bool ShouldBeSavedWithRoom()
 ```
 
 **Returns:** `bool`
+
+:::

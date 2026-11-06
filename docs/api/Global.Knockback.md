@@ -9,7 +9,9 @@
 public class Knockback
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class Knockback
 | **`duration`** | `public float duration` |  |
 | **`ignoreTenacity`** | `public bool ignoreTenacity` |  |
 
-## Methods
+:::
 
-### `ApplyWithDirection(Quaternion, Entity)`
+## Methods (3)
+
+::: details `ApplyWithDirection(Quaternion, Entity)`
 
 ```csharp
 public void ApplyWithDirection(Quaternion rot, Entity to)
@@ -31,7 +35,9 @@ public void ApplyWithDirection(Quaternion rot, Entity to)
 | `rot` | `UnityEngine.Quaternion` |  |
 | `to` | [`Entity`](/api/Global.Entity) |  |
 
-### `ApplyWithDirection(Vector3, Entity)`
+:::
+
+::: details `ApplyWithDirection(Vector3, Entity)`
 
 ```csharp
 public void ApplyWithDirection(Vector3 dir, Entity to)
@@ -43,7 +49,9 @@ public void ApplyWithDirection(Vector3 dir, Entity to)
 | `dir` | `UnityEngine.Vector3` |  |
 | `to` | [`Entity`](/api/Global.Entity) |  |
 
-### `ApplyWithOrigin(Vector3, Entity)`
+:::
+
+::: details `ApplyWithOrigin(Vector3, Entity)`
 
 ```csharp
 public void ApplyWithOrigin(Vector3 origin, Entity to)
@@ -54,3 +62,5 @@ public void ApplyWithOrigin(Vector3 origin, Entity to)
 | :--- | :--- | :--- |
 | `origin` | `UnityEngine.Vector3` |  |
 | `to` | [`Entity`](/api/Global.Entity) |  |
+
+:::

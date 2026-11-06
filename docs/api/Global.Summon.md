@@ -9,7 +9,9 @@
 public class Summon : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,7 +21,11 @@ public class Summon : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`tvDefaultHarmfulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets` |  |
 | **`tvDefaultUsefulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets` |  |
 
-## Properties
+:::
+
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -32,9 +38,11 @@ public class Summon : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`statEntity`** | `public Entity statEntity { get; }` |  |
 | **`summonHealth`** | `public float summonHealth { get; }` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (21)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -45,7 +53,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AddDuration(float, bool)`
+:::
+
+::: details `AddDuration(float, bool)`
 
 ```csharp
 public void AddDuration(float duration, bool clampToMaxDuration = true)
@@ -57,7 +67,9 @@ public void AddDuration(float duration, bool clampToMaxDuration = true)
 | `duration` | `float` |  |
 | `clampToMaxDuration` | `bool` |  |
 
-### `AIUpdate(ref EntityAIContext)`
+:::
+
+::: details `AIUpdate(ref EntityAIContext)`
 
 ```csharp
 protected override void AIUpdate(ref EntityAIContext context)
@@ -68,7 +80,9 @@ protected override void AIUpdate(ref EntityAIContext context)
 | :--- | :--- | :--- |
 | `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
-### `CanAggroTo(Entity)`
+:::
+
+::: details `CanAggroTo(Entity)`
 
 ```csharp
 public override bool CanAggroTo(Entity target)
@@ -81,7 +95,9 @@ public override bool CanAggroTo(Entity target)
 
 **Returns:** `bool`
 
-### `CreateDamage(SourceType, ScalingValue, float)`
+:::
+
+::: details `CreateDamage(SourceType, ScalingValue, float)`
 
 ```csharp
 public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, float procCoefficient = 1)
@@ -96,7 +112,9 @@ public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, f
 
 **Returns:** `DamageData`
 
-### `Damage(ScalingValue, float)`
+:::
+
+::: details `Damage(ScalingValue, float)`
 
 ```csharp
 public DamageData Damage(ScalingValue value, float procCoefficient = 1)
@@ -110,7 +128,9 @@ public DamageData Damage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `DefaultDamage(ScalingValue, float)`
+:::
+
+::: details `DefaultDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
@@ -124,7 +144,9 @@ public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `GetStaggerSettings()`
+:::
+
+::: details `GetStaggerSettings()`
 
 ```csharp
 protected override Entity.StaggerSettings GetStaggerSettings()
@@ -132,7 +154,9 @@ protected override Entity.StaggerSettings GetStaggerSettings()
 
 **Returns:** `Entity.StaggerSettings`
 
-### `GetValue(ScalingValue)`
+:::
+
+::: details `GetValue(ScalingValue)`
 
 ```csharp
 public float GetValue(ScalingValue val)
@@ -145,7 +169,9 @@ public float GetValue(ScalingValue val)
 
 **Returns:** `float`
 
-### `Heal(ScalingValue)`
+:::
+
+::: details `Heal(ScalingValue)`
 
 ```csharp
 public HealData Heal(ScalingValue amount)
@@ -158,7 +184,9 @@ public HealData Heal(ScalingValue amount)
 
 **Returns:** `HealData`
 
-### `MagicDamage(ScalingValue, float)`
+:::
+
+::: details `MagicDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
@@ -172,19 +200,25 @@ public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 Called on server right before this instance to be spawned.Configure this instance's initial state here.By default this sets skillLevel to parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.
 
@@ -192,13 +226,17 @@ Called on server right before this instance to be spawned.Configure this instanc
 protected override void OnPrepare()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `PhysicalDamage(ScalingValue, float)`
+:::
+
+::: details `PhysicalDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
@@ -212,7 +250,9 @@ public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `PhysicalMagicDamage(ScalingValue, float)`
+:::
+
+::: details `PhysicalMagicDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient = 1)
@@ -226,7 +266,9 @@ public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient 
 
 **Returns:** `DamageData`
 
-### `PureDamage(ScalingValue, float)`
+:::
+
+::: details `PureDamage(ScalingValue, float)`
 
 ```csharp
 public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
@@ -240,7 +282,9 @@ public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `ReduceDuration(float, bool)`
+:::
+
+::: details `ReduceDuration(float, bool)`
 
 ```csharp
 public void ReduceDuration(float duration, bool clampToMaxDuration = true)
@@ -252,7 +296,9 @@ public void ReduceDuration(float duration, bool clampToMaxDuration = true)
 | `duration` | `float` |  |
 | `clampToMaxDuration` | `bool` |  |
 
-### `SummonCommand_AttackTarget(Entity)`
+:::
+
+::: details `SummonCommand_AttackTarget(Entity)`
 
 ```csharp
 public void SummonCommand_AttackTarget(Entity target)
@@ -263,7 +309,9 @@ public void SummonCommand_AttackTarget(Entity target)
 | :--- | :--- | :--- |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `SummonCommand_MoveToDestination(Vector3)`
+:::
+
+::: details `SummonCommand_MoveToDestination(Vector3)`
 
 ```csharp
 public void SummonCommand_MoveToDestination(Vector3 destination)
@@ -273,3 +321,5 @@ public void SummonCommand_MoveToDestination(Vector3 destination)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `destination` | `UnityEngine.Vector3` |  |
+
+:::

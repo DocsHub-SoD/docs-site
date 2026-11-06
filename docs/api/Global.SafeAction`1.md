@@ -8,15 +8,19 @@
 public class SafeAction<T>
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`Count`** | `public int Count { get; }` |  |
 
-## Methods
+:::
 
-### `Add(Action<T>)`
+## Methods (4)
+
+::: details `Add(Action&lt;T&gt;)`
 
 ```csharp
 public SafeAction<T> Add(Action<T> handler)
@@ -29,7 +33,9 @@ public SafeAction<T> Add(Action<T> handler)
 
 **Returns:** `SafeAction<T>`
 
-### `Contains(Action<T>)`
+:::
+
+::: details `Contains(Action&lt;T&gt;)`
 
 ```csharp
 public bool Contains(Action<T> handler)
@@ -42,7 +48,9 @@ public bool Contains(Action<T> handler)
 
 **Returns:** `bool`
 
-### `Invoke(T)`
+:::
+
+::: details `Invoke(T)`
 
 ```csharp
 public void Invoke(T arg)
@@ -53,7 +61,9 @@ public void Invoke(T arg)
 | :--- | :--- | :--- |
 | `arg` | `T` |  |
 
-### `Remove(Action<T>)`
+:::
+
+::: details `Remove(Action&lt;T&gt;)`
 
 ```csharp
 public SafeAction<T> Remove(Action<T> handler)
@@ -65,3 +75,5 @@ public SafeAction<T> Remove(Action<T> handler)
 | `handler` | `System.Action<T>` |  |
 
 **Returns:** `SafeAction<T>`
+
+:::

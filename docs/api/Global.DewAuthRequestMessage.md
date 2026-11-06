@@ -8,7 +8,9 @@
 public struct DewAuthRequestMessage
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct DewAuthRequestMessage
 | **`profileGuid`** | `public string profileGuid` |  |
 | **`profileName`** | `public string profileName` |  |
 | **`userId`** | `public string userId` |  |
+
+:::

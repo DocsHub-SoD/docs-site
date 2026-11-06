@@ -8,8 +8,12 @@
 public class PlayLobby_CharacterCamera : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`basisCharacter`** | `public PlayLobby_Character basisCharacter` |  |
+
+:::

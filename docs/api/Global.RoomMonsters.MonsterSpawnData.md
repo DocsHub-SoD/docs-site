@@ -8,10 +8,14 @@
 public class RoomMonsters.MonsterSpawnData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`lastDeathPosition`** | `public Vector3 lastDeathPosition` |  |
 | **`lastKiller`** | `public Entity lastKiller` |  |
 | **`remainingPopulation`** | `public float remainingPopulation` |  |
+
+:::

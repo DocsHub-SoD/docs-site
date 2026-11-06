@@ -8,22 +8,30 @@
 public class Intro_SceneController : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`director`** | `public PlayableDirector director` |  |
 
-## Methods
+:::
 
-### `GoToTitle()`
+## Methods (2)
+
+::: details `GoToTitle()`
 
 ```csharp
 public void GoToTitle()
 ```
 
-### `Skip()`
+:::
+
+::: details `Skip()`
 
 ```csharp
 public void Skip()
 ```
+
+:::

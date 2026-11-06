@@ -8,7 +8,9 @@
 public class ObjectPoolItem
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public class ObjectPoolItem
 | **`lastDestroyUnscaledTime`** | `public float lastDestroyUnscaledTime` |  |
 | **`lastInstantiateUnscaledTime`** | `public float lastInstantiateUnscaledTime` |  |
 | **`lastReuseUnscaledTime`** | `public float lastReuseUnscaledTime` |  |
+
+:::

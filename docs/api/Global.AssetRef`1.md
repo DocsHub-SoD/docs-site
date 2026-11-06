@@ -9,7 +9,9 @@
 public struct AssetRef<T> where T : Object
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,22 +21,30 @@ public struct AssetRef<T> where T : Object
 | **`typeAssemblyQualifiedName`** | `public string typeAssemblyQualifiedName` |  |
 | **`typeName`** | `public string typeName` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`asset`** | `[JsonIgnore] public T asset { get; set; }` |  |
 | **`lightAsset`** | `[JsonIgnore] public T lightAsset { get; }` |  |
 
-## Methods
+:::
 
-### `ClearCache()`
+## Methods (5)
+
+::: details `ClearCache()`
 
 ```csharp
 public void ClearCache()
 ```
 
-### `Equals(AssetRef<T>)`
+:::
+
+::: details `Equals(AssetRef&lt;T&gt;)`
 
 ```csharp
 public bool Equals(AssetRef<T> other)
@@ -47,7 +57,9 @@ public bool Equals(AssetRef<T> other)
 
 **Returns:** `bool`
 
-### `Equals(object)`
+:::
+
+::: details `Equals(object)`
 
 ```csharp
 public override bool Equals(object obj)
@@ -60,7 +72,9 @@ public override bool Equals(object obj)
 
 **Returns:** `bool`
 
-### `GetHashCode()`
+:::
+
+::: details `GetHashCode()`
 
 ```csharp
 public override int GetHashCode()
@@ -68,7 +82,9 @@ public override int GetHashCode()
 
 **Returns:** `int`
 
-### `GetType()`
+:::
+
+::: details `GetType()`
 
 ```csharp
 [Obsolete("Using GetType() on AssetRefs is typically a mistake", true)]
@@ -76,3 +92,5 @@ public Type GetType()
 ```
 
 **Returns:** `System.Type`
+
+:::

@@ -8,10 +8,14 @@
 public interface ICastMethodDataPoint
 ```
 
-## Properties
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isClamping`** | `bool isClamping { get; }` |  |
 | **`radius`** | `float radius { get; }` |  |
 | **`range`** | `float range { get; }` |  |
+
+:::

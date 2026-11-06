@@ -12,7 +12,9 @@
 public class EntityVisual : EntityComponent, ILogicUpdate, ICleanup
 ```
 
-## Fields
+## Fields (31)
+
+::: details Click to expand Fields (31)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -48,7 +50,11 @@ public class EntityVisual : EntityComponent, ILogicUpdate, ICleanup
 | **`spawnZScale`** | `[ShowIf("@doScaling && useSeparateAxis", true)] public AnimationCurve spawnZScale` |  |
 | **`useSeparateAxis`** | `[ShowIf("doScaling", true)] public bool useSeparateAxis` |  |
 
-## Properties
+:::
+
+## Properties (13)
+
+::: details Click to expand Properties (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -66,9 +72,11 @@ public class EntityVisual : EntityComponent, ILogicUpdate, ICleanup
 | **`isSpawning`** | `public bool isSpawning { get; }` |  |
 | **`materials`** | `public IReadOnlyList<Material> materials { get; }` | List of this entity's materials. (Instantiated) |
 
-## Methods
+:::
 
-### `AddSharedMaterialLocal(Material)`
+## Methods (53)
+
+::: details `AddSharedMaterialLocal(Material)`
 
 Locally add a material to all mesh renderers of this entity.
 
@@ -81,13 +89,17 @@ public void AddSharedMaterialLocal(Material material)
 | :--- | :--- | :--- |
 | `material` | `UnityEngine.Material` |  |
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `DisableRenderers()`
+:::
+
+::: details `DisableRenderers()`
 
 Make this entity invisible by turning off all renderers everywhere.
 
@@ -95,7 +107,9 @@ Make this entity invisible by turning off all renderers everywhere.
 public void DisableRenderers()
 ```
 
-### `DisableRenderersLocal()`
+:::
+
+::: details `DisableRenderersLocal()`
 
 Locally make this entity invisible by turning off all renderers.
 
@@ -103,7 +117,9 @@ Locally make this entity invisible by turning off all renderers.
 public void DisableRenderersLocal()
 ```
 
-### `EnableRenderers()`
+:::
+
+::: details `EnableRenderers()`
 
 Undo this entity'sDisableRenderers()and make it visible again everywhere.
 
@@ -111,7 +127,9 @@ Undo this entity'sDisableRenderers()and make it visible again everywhere.
 public void EnableRenderers()
 ```
 
-### `EnableRenderersLocal()`
+:::
+
+::: details `EnableRenderersLocal()`
 
 Locally undo this entity'sDisableRenderers()and make it visible again.
 
@@ -119,19 +137,25 @@ Locally undo this entity'sDisableRenderers()and make it visible again.
 public void EnableRenderersLocal()
 ```
 
-### `FixClothes()`
+:::
+
+::: details `FixClothes()`
 
 ```csharp
 public void FixClothes()
 ```
 
-### `FixTails()`
+:::
+
+::: details `FixTails()`
 
 ```csharp
 public void FixTails()
 ```
 
-### `FixTailsAndClothes()`
+:::
+
+::: details `FixTailsAndClothes()`
 
 Reset tails and clothes.
 
@@ -139,13 +163,17 @@ Reset tails and clothes.
 public void FixTailsAndClothes()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetAbovePosition()`
+:::
+
+::: details `GetAbovePosition()`
 
 ```csharp
 public Vector3 GetAbovePosition()
@@ -153,7 +181,9 @@ public Vector3 GetAbovePosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetBasePosition()`
+:::
+
+::: details `GetBasePosition()`
 
 ```csharp
 public Vector3 GetBasePosition()
@@ -161,7 +191,9 @@ public Vector3 GetBasePosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetBodyBounds()`
+:::
+
+::: details `GetBodyBounds()`
 
 Get bounds of renderers specified as "body" of this entity.
 
@@ -171,7 +203,9 @@ public Bounds GetBodyBounds()
 
 **Returns:** `UnityEngine.Bounds`
 
-### `GetBonePosition(HumanBodyBones)`
+:::
+
+::: details `GetBonePosition(HumanBodyBones)`
 
 This will return center position if the bone couldn't be found.
 
@@ -186,7 +220,9 @@ public Vector3 GetBonePosition(HumanBodyBones bone)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetBoneRotation(HumanBodyBones)`
+:::
+
+::: details `GetBoneRotation(HumanBodyBones)`
 
 This will return entity's rotation if the bone couldn't be found.
 
@@ -201,7 +237,9 @@ public Quaternion GetBoneRotation(HumanBodyBones bone)
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `GetCenterPosition()`
+:::
+
+::: details `GetCenterPosition()`
 
 ```csharp
 public Vector3 GetCenterPosition()
@@ -209,7 +247,9 @@ public Vector3 GetCenterPosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetMuzzlePosition()`
+:::
+
+::: details `GetMuzzlePosition()`
 
 ```csharp
 public Vector3 GetMuzzlePosition()
@@ -217,7 +257,9 @@ public Vector3 GetMuzzlePosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetMuzzleRotation()`
+:::
+
+::: details `GetMuzzleRotation()`
 
 ```csharp
 public Quaternion GetMuzzleRotation()
@@ -225,7 +267,9 @@ public Quaternion GetMuzzleRotation()
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `GetNewColorModifier()`
+:::
+
+::: details `GetNewColorModifier()`
 
 Gets a new color modifier for this entity. The color is applied locally.
 
@@ -235,7 +279,9 @@ public EntityColorModifier GetNewColorModifier()
 
 **Returns:** `EntityColorModifier`
 
-### `GetNewShellModifier()`
+:::
+
+::: details `GetNewShellModifier()`
 
 Gets a new color modifier for this entity. The color is applied locally.
 
@@ -245,7 +291,9 @@ public EntityShellModifier GetNewShellModifier()
 
 **Returns:** `EntityShellModifier`
 
-### `GetNewTransformModifier()`
+:::
+
+::: details `GetNewTransformModifier()`
 
 Gets a new transform modifier for this entity. The transform is applied locally to its model.
 
@@ -255,7 +303,9 @@ public EntityTransformModifier GetNewTransformModifier()
 
 **Returns:** `EntityTransformModifier`
 
-### `GetRenderBounds()`
+:::
+
+::: details `GetRenderBounds()`
 
 Get bounds of all solid renderers.
 
@@ -265,7 +315,9 @@ public Bounds GetRenderBounds()
 
 **Returns:** `UnityEngine.Bounds`
 
-### `GetWeaponPosition()`
+:::
+
+::: details `GetWeaponPosition()`
 
 ```csharp
 public Vector3 GetWeaponPosition()
@@ -273,7 +325,9 @@ public Vector3 GetWeaponPosition()
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetWeaponRotation()`
+:::
+
+::: details `GetWeaponRotation()`
 
 ```csharp
 public Quaternion GetWeaponRotation()
@@ -281,19 +335,25 @@ public Quaternion GetWeaponRotation()
 
 **Returns:** `UnityEngine.Quaternion`
 
-### `HideGroundMarker()`
+:::
+
+::: details `HideGroundMarker()`
 
 ```csharp
 public void HideGroundMarker()
 ```
 
-### `HideGroundMarkerLocal()`
+:::
+
+::: details `HideGroundMarkerLocal()`
 
 ```csharp
 public void HideGroundMarkerLocal()
 ```
 
-### `KnockUp(KnockUpStrength, bool)`
+:::
+
+::: details `KnockUp(KnockUpStrength, bool)`
 
 Knock up this entity everywhere.
 
@@ -307,7 +367,9 @@ public void KnockUp(KnockUpStrength strength, bool isFriendly)
 | `strength` | [`KnockUpStrength`](/api/Global.KnockUpStrength) |  |
 | `isFriendly` | `bool` |  |
 
-### `KnockUp(float, bool)`
+:::
+
+::: details `KnockUp(float, bool)`
 
 Knock up this entity everywhere. Strength: 0.8(Small), 1.1(Normal), 1.5(Big)
 
@@ -321,19 +383,25 @@ public void KnockUp(float strength, bool isFriendly)
 | `strength` | `float` |  |
 | `isFriendly` | `bool` |  |
 
-### `LoadModelDefault()`
+:::
+
+::: details `LoadModelDefault()`
 
 ```csharp
 public void LoadModelDefault()
 ```
 
-### `LoadModelDefaultLocal()`
+:::
+
+::: details `LoadModelDefaultLocal()`
 
 ```csharp
 public void LoadModelDefaultLocal()
 ```
 
-### `LoadModelLocal(EntityModel)`
+:::
+
+::: details `LoadModelLocal(EntityModel)`
 
 Locally change model of this entity. You can provide either a model in a prefab, or the default one in the spawned entity.The provided model must be fresh; it must never be the already initialized instance of EntityModel.
 
@@ -346,7 +414,9 @@ public void LoadModelLocal(EntityModel m)
 | :--- | :--- | :--- |
 | `m` | [`EntityModel`](/api/Global.EntityModel) |  |
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -357,49 +427,65 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStop()`
+:::
+
+::: details `OnStop()`
 
 ```csharp
 public override void OnStop()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `RemoveMaterialLocal(Material)`
+:::
+
+::: details `RemoveMaterialLocal(Material)`
 
 Locally remove a material from all mesh renderers of this entity.
 
@@ -412,7 +498,9 @@ public void RemoveMaterialLocal(Material material)
 | :--- | :--- | :--- |
 | `material` | `UnityEngine.Material` |  |
 
-### `SetShaderProperty(string, float)`
+:::
+
+::: details `SetShaderProperty(string, float)`
 
 ```csharp
 public void SetShaderProperty(string key, float value)
@@ -424,7 +512,9 @@ public void SetShaderProperty(string key, float value)
 | `key` | `string` |  |
 | `value` | `float` |  |
 
-### `SetShaderProperty(string, Color)`
+:::
+
+::: details `SetShaderProperty(string, Color)`
 
 ```csharp
 public void SetShaderProperty(string key, Color value)
@@ -436,7 +526,9 @@ public void SetShaderProperty(string key, Color value)
 | `key` | `string` |  |
 | `value` | `UnityEngine.Color` |  |
 
-### `SetShaderPropertyLocal(int, float)`
+:::
+
+::: details `SetShaderPropertyLocal(int, float)`
 
 ```csharp
 public void SetShaderPropertyLocal(int propertyId, float value)
@@ -448,7 +540,9 @@ public void SetShaderPropertyLocal(int propertyId, float value)
 | `propertyId` | `int` |  |
 | `value` | `float` |  |
 
-### `SetShaderPropertyLocal(int, Color)`
+:::
+
+::: details `SetShaderPropertyLocal(int, Color)`
 
 ```csharp
 public void SetShaderPropertyLocal(int propertyId, Color value)
@@ -460,7 +554,9 @@ public void SetShaderPropertyLocal(int propertyId, Color value)
 | `propertyId` | `int` |  |
 | `value` | `UnityEngine.Color` |  |
 
-### `SetShaderPropertyLocal(string, float)`
+:::
+
+::: details `SetShaderPropertyLocal(string, float)`
 
 ```csharp
 public void SetShaderPropertyLocal(string key, float value)
@@ -472,7 +568,9 @@ public void SetShaderPropertyLocal(string key, float value)
 | `key` | `string` |  |
 | `value` | `float` |  |
 
-### `SetShaderPropertyLocal(string, Color)`
+:::
+
+::: details `SetShaderPropertyLocal(string, Color)`
 
 ```csharp
 public void SetShaderPropertyLocal(string key, Color value)
@@ -484,7 +582,9 @@ public void SetShaderPropertyLocal(string key, Color value)
 | `key` | `string` |  |
 | `value` | `UnityEngine.Color` |  |
 
-### `SetYOffset(float)`
+:::
+
+::: details `SetYOffset(float)`
 
 ```csharp
 public void SetYOffset(float offset)
@@ -495,7 +595,9 @@ public void SetYOffset(float offset)
 | :--- | :--- | :--- |
 | `offset` | `float` |  |
 
-### `SetYOffsetLocal(float)`
+:::
+
+::: details `SetYOffsetLocal(float)`
 
 ```csharp
 public void SetYOffsetLocal(float offset)
@@ -506,7 +608,9 @@ public void SetYOffsetLocal(float offset)
 | :--- | :--- | :--- |
 | `offset` | `float` |  |
 
-### `SetYVelocity(float)`
+:::
+
+::: details `SetYVelocity(float)`
 
 ```csharp
 public void SetYVelocity(float velocity)
@@ -517,7 +621,9 @@ public void SetYVelocity(float velocity)
 | :--- | :--- | :--- |
 | `velocity` | `float` |  |
 
-### `SetYVelocityLocal(float)`
+:::
+
+::: details `SetYVelocityLocal(float)`
 
 ```csharp
 public void SetYVelocityLocal(float velocity)
@@ -528,22 +634,30 @@ public void SetYVelocityLocal(float velocity)
 | :--- | :--- | :--- |
 | `velocity` | `float` |  |
 
-### `ShowGroundMarker()`
+:::
+
+::: details `ShowGroundMarker()`
 
 ```csharp
 public void ShowGroundMarker()
 ```
 
-### `ShowGroundMarkerLocal()`
+:::
+
+::: details `ShowGroundMarkerLocal()`
 
 ```csharp
 public void ShowGroundMarkerLocal()
 ```
 
-### `SkipSpawning()`
+:::
+
+::: details `SkipSpawning()`
 
 Cancels ongoing spawn animation of this entity.
 
 ```csharp
 public void SkipSpawning()
 ```
+
+:::

@@ -9,8 +9,12 @@
 public class DisableOcclusionTransparency : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static DisableOcclusionTransparency instance` |  |
+
+:::

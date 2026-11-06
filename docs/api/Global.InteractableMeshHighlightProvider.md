@@ -9,10 +9,12 @@
 public class InteractableMeshHighlightProvider : MeshHighlightProvider, ILogicUpdate
 ```
 
-## Methods
+## Methods (1)
 
-### `Start()`
+::: details `Start()`
 
 ```csharp
 protected override void Start()
 ```
+
+:::

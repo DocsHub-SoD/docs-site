@@ -8,16 +8,24 @@
 public class UI_Window : MonoBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`backdropPrefab`** | `public GameObject backdropPrefab` |  |
 | **`dragArea`** | `public UI_Window_DragArea dragArea` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`enableBackdrop`** | `public bool enableBackdrop { get; set; }` |  |
 | **`isDraggable`** | `public bool isDraggable { get; set; }` |  |
+
+:::

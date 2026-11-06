@@ -8,7 +8,9 @@
 public interface ICustomInteractable
 ```
 
-## Properties
+## Properties (8)
+
+::: details Click to expand Properties (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,3 +22,5 @@ public interface ICustomInteractable
 | **`interactAltActionRawText`** | `string interactAltActionRawText { get; }` |  |
 | **`nameRawText`** | `string nameRawText { get; }` |  |
 | **`worldOffset`** | `Vector3 worldOffset { get; }` |  |
+
+:::

@@ -10,15 +10,19 @@
 public class PlayGameManager : GameManager, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public static PlayGameManager instance { get; }` |  |
 
-## Methods
+:::
 
-### `DoDejavuSpawn(DewPlayer)`
+## Methods (7)
+
+::: details `DoDejavuSpawn(DewPlayer)`
 
 ```csharp
 public void DoDejavuSpawn(DewPlayer h)
@@ -29,7 +33,9 @@ public void DoDejavuSpawn(DewPlayer h)
 | :--- | :--- | :--- |
 | `h` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `GetDifficulty()`
+:::
+
+::: details `GetDifficulty()`
 
 ```csharp
 protected override DewDifficultySettings GetDifficulty()
@@ -37,7 +43,9 @@ protected override DewDifficultySettings GetDifficulty()
 
 **Returns:** `DewDifficultySettings`
 
-### `IsContinueSaveSupported()`
+:::
+
+::: details `IsContinueSaveSupported()`
 
 ```csharp
 public override bool IsContinueSaveSupported()
@@ -45,25 +53,33 @@ public override bool IsContinueSaveSupported()
 
 **Returns:** `bool`
 
-### `LoadNextZone()`
+:::
+
+::: details `LoadNextZone()`
 
 ```csharp
 public override void LoadNextZone()
 ```
 
-### `OnLateStartServer()`
+:::
+
+::: details `OnLateStartServer()`
 
 ```csharp
 public override void OnLateStartServer()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `SpawnHero(DewPlayer, Hero, HeroLoadoutData, string, List<string>)`
+:::
+
+::: details `SpawnHero(DewPlayer, Hero, HeroLoadoutData, string, List&lt;string&gt;)`
 
 ```csharp
 public void SpawnHero(DewPlayer player, Hero hero, HeroLoadoutData loadout, string skin, List<string> accs)
@@ -77,3 +93,5 @@ public void SpawnHero(DewPlayer player, Hero hero, HeroLoadoutData loadout, stri
 | `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `skin` | `string` |  |
 | `accs` | `System.Collections.Generic.List<T><string>` |  |
+
+:::

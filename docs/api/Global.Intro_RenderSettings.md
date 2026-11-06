@@ -9,7 +9,9 @@
 public class Intro_RenderSettings : MonoBehaviour
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class Intro_RenderSettings : MonoBehaviour
 | **`fogEnd`** | `public float fogEnd` |  |
 | **`fogStart`** | `public float fogStart` |  |
 | **`skybox`** | `public Material skybox` |  |
+
+:::

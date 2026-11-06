@@ -9,7 +9,9 @@
 public class StatBonus
 ```
 
-## Properties
+## Properties (31)
+
+::: details Click to expand Properties (31)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -45,9 +47,11 @@ public class StatBonus
 | **`tenacityFlat`** | `public float tenacityFlat { get; set; }` |  |
 | **`tenacityPercentage`** | `public float tenacityPercentage { get; set; }` |  |
 
-## Methods
+:::
 
-### `Add(StatBonus)`
+## Methods (3)
+
+::: details `Add(StatBonus)`
 
 ```csharp
 public void Add(StatBonus bonus)
@@ -58,7 +62,9 @@ public void Add(StatBonus bonus)
 | :--- | :--- | :--- |
 | `bonus` | [`StatBonus`](/api/Global.StatBonus) |  |
 
-### `Clone()`
+:::
+
+::: details `Clone()`
 
 ```csharp
 public StatBonus Clone()
@@ -66,7 +72,9 @@ public StatBonus Clone()
 
 **Returns:** `StatBonus`
 
-### `Multiply(float)`
+:::
+
+::: details `Multiply(float)`
 
 Multiplies all stat bonuses by the given multiplier. Useful for scaling bonuses based on level, rarity, or other factors.
 
@@ -78,3 +86,5 @@ public void Multiply(float multiplier)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `multiplier` | `float` | The value to multiply all stat bonuses by |
+
+:::

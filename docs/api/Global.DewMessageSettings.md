@@ -8,7 +8,9 @@
 public class DewMessageSettings
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public class DewMessageSettings
 | **`owner`** | `public Object owner` | If set, the message will disappear when owner is destroyed. |
 | **`rawContent`** | `public string rawContent` |  |
 | **`validator`** | `public Func<bool> validator` | If this returns false, the message will be closed. |
+
+:::

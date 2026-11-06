@@ -8,8 +8,12 @@
 public struct EventInfoStopMove
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`entity`** | `public Entity entity` |  |
+
+:::

@@ -8,7 +8,9 @@
 public struct CollisionCheckSettings
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public struct CollisionCheckSettings
 | **`pivot`** | `public static Vector3 pivot` |  |
 | **`Random`** | `public static readonly Comparer<Entity> Random` |  |
 | **`sortComparer`** | `public IComparer<Entity> sortComparer` |  |
+
+:::

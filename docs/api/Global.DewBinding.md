@@ -9,7 +9,9 @@
 public class DewBinding
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,9 +26,11 @@ public class DewBinding
 | **`mouse`** | `[Obsolete] public MouseButton mouse` |  |
 | **`pcBinds`** | `public List<PCBind> pcBinds` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (12)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -34,7 +38,9 @@ public object Clone()
 
 **Returns:** `object`
 
-### `CloneWith(GamepadButtonEx)`
+:::
+
+::: details `CloneWith(GamepadButtonEx)`
 
 ```csharp
 public DewBinding CloneWith(GamepadButtonEx added)
@@ -47,7 +53,9 @@ public DewBinding CloneWith(GamepadButtonEx added)
 
 **Returns:** `DewBinding`
 
-### `CloneWith(MouseButton)`
+:::
+
+::: details `CloneWith(MouseButton)`
 
 ```csharp
 public DewBinding CloneWith(MouseButton added)
@@ -60,7 +68,9 @@ public DewBinding CloneWith(MouseButton added)
 
 **Returns:** `DewBinding`
 
-### `CloneWith(Key)`
+:::
+
+::: details `CloneWith(Key)`
 
 ```csharp
 public DewBinding CloneWith(Key added)
@@ -73,7 +83,9 @@ public DewBinding CloneWith(Key added)
 
 **Returns:** `DewBinding`
 
-### `GamepadOnly(params object[])`
+:::
+
+::: details `GamepadOnly(params object[])`
 
 ```csharp
 public static DewBinding GamepadOnly(params object[] keys)
@@ -86,7 +98,9 @@ public static DewBinding GamepadOnly(params object[] keys)
 
 **Returns:** `DewBinding`
 
-### `GetBindingTypes()`
+:::
+
+::: details `GetBindingTypes()`
 
 ```csharp
 public BindingType GetBindingTypes()
@@ -94,7 +108,9 @@ public BindingType GetBindingTypes()
 
 **Returns:** `BindingType`
 
-### `HasAssignedForCurrentMode()`
+:::
+
+::: details `HasAssignedForCurrentMode()`
 
 ```csharp
 public bool HasAssignedForCurrentMode()
@@ -102,7 +118,9 @@ public bool HasAssignedForCurrentMode()
 
 **Returns:** `bool`
 
-### `HasGamepadAssigned()`
+:::
+
+::: details `HasGamepadAssigned()`
 
 ```csharp
 public bool HasGamepadAssigned()
@@ -110,7 +128,9 @@ public bool HasGamepadAssigned()
 
 **Returns:** `bool`
 
-### `HasPCAssigned()`
+:::
+
+::: details `HasPCAssigned()`
 
 ```csharp
 public bool HasPCAssigned()
@@ -118,7 +138,9 @@ public bool HasPCAssigned()
 
 **Returns:** `bool`
 
-### `KeyboardAndMouseOnly(params object[])`
+:::
+
+::: details `KeyboardAndMouseOnly(params object[])`
 
 ```csharp
 public static DewBinding KeyboardAndMouseOnly(params object[] keys)
@@ -131,7 +153,9 @@ public static DewBinding KeyboardAndMouseOnly(params object[] keys)
 
 **Returns:** `DewBinding`
 
-### `KeyboardOnly(params object[])`
+:::
+
+::: details `KeyboardOnly(params object[])`
 
 ```csharp
 public static DewBinding KeyboardOnly(params object[] keys)
@@ -144,7 +168,9 @@ public static DewBinding KeyboardOnly(params object[] keys)
 
 **Returns:** `DewBinding`
 
-### `PCAndGamepad(params object[])`
+:::
+
+::: details `PCAndGamepad(params object[])`
 
 ```csharp
 public static DewBinding PCAndGamepad(params object[] keys)
@@ -156,3 +182,5 @@ public static DewBinding PCAndGamepad(params object[] keys)
 | `keys` | `object[]` |  |
 
 **Returns:** `DewBinding`
+
+:::

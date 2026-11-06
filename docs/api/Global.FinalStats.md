@@ -9,7 +9,9 @@
 public struct FinalStats
 ```
 
-## Fields
+## Fields (17)
+
+::: details Click to expand Fields (17)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,3 +32,5 @@ public struct FinalStats
 | **`maxMana`** | `public float maxMana` |  |
 | **`movementSpeedMultiplier`** | `public float movementSpeedMultiplier` |  |
 | **`tenacity`** | `public float tenacity` |  |
+
+:::

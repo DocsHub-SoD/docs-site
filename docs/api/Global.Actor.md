@@ -11,7 +11,9 @@
 public class Actor : DewNetworkBehaviour, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (28)
+
+::: details Click to expand Fields (28)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -44,7 +46,11 @@ public class Actor : DewNetworkBehaviour, ILogicUpdate, ICleanup, ICustomDestroy
 | **`ScaleDurationByTenacityEffects`** | `public static Type[] ScaleDurationByTenacityEffects` |  |
 | **`spawnedChildVarDefProcessor`** | `public DataProcessorGroup<VariantDef, Actor, Type> spawnedChildVarDefProcessor` |  |
 
-## Properties
+:::
+
+## Properties (15)
+
+::: details Click to expand Properties (15)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -64,9 +70,11 @@ public class Actor : DewNetworkBehaviour, ILogicUpdate, ICleanup, ICustomDestroy
 | **`position`** | `[SaveVar(SaveVarFlags.Default)] public Vector3 position { get; set; }` | Position of this actor. Same astransform.position. |
 | **`rotation`** | `[SaveVar(SaveVarFlags.Default)] public Quaternion rotation { get; set; }` | Rotation of this actor. Same astransform.rotation. |
 
-## Methods
+:::
 
-### `ActiveFrameUpdate()`
+## Methods (92)
+
+::: details `ActiveFrameUpdate()`
 
 Called everywhere every frame while this actor is active.
 
@@ -74,7 +82,9 @@ Called everywhere every frame while this actor is active.
 protected virtual void ActiveFrameUpdate()
 ```
 
-### `ActiveLogicUpdate(float)`
+:::
+
+::: details `ActiveLogicUpdate(float)`
 
 Called everywhere every logic tick while this actor is active.
 
@@ -87,7 +97,9 @@ protected virtual void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AddData<T>(T)`
+:::
+
+::: details `AddData&lt;T&gt;(T)`
 
 ```csharp
 public void AddData<T>(T data)
@@ -99,7 +111,9 @@ public void AddData<T>(T data)
 | `data` | `T` |  |
 | `` | `T` |  |
 
-### `ApplyCooldownReduction(AbilityTrigger, CooldownReductionSettings)`
+:::
+
+::: details `ApplyCooldownReduction(AbilityTrigger, CooldownReductionSettings)`
 
 Apply cooldown reduction to all configs that can receive cooldown reduction.
 
@@ -113,7 +127,9 @@ public void ApplyCooldownReduction(AbilityTrigger trigger, CooldownReductionSett
 | `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `settings` | [`CooldownReductionSettings`](/api/Global.CooldownReductionSettings) |  |
 
-### `ApplyCooldownReduction(AbilityTrigger, float, bool, bool)`
+:::
+
+::: details `ApplyCooldownReduction(AbilityTrigger, float, bool, bool)`
 
 Apply cooldown reduction to all configs that can receive cooldown reduction.
 
@@ -129,7 +145,9 @@ public void ApplyCooldownReduction(AbilityTrigger trigger, float amount, bool sc
 | `scaled` | `bool` |  |
 | `ignoreCanReceiveCooldown` | `bool` |  |
 
-### `ApplyCooldownReductionByRatio(AbilityTrigger, CooldownReductionByRatioSettings)`
+:::
+
+::: details `ApplyCooldownReductionByRatio(AbilityTrigger, CooldownReductionByRatioSettings)`
 
 Apply cooldown reduction to all configs that can receive cooldown reduction by ratio of max cooldown.
 
@@ -143,7 +161,9 @@ public void ApplyCooldownReductionByRatio(AbilityTrigger trigger, CooldownReduct
 | `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `settings` | [`CooldownReductionByRatioSettings`](/api/Global.CooldownReductionByRatioSettings) |  |
 
-### `ApplyCooldownReductionByRatio(AbilityTrigger, float, bool)`
+:::
+
+::: details `ApplyCooldownReductionByRatio(AbilityTrigger, float, bool)`
 
 Apply cooldown reduction to all configs that can receive cooldown reduction by ratio of max cooldown.
 
@@ -158,7 +178,9 @@ public void ApplyCooldownReductionByRatio(AbilityTrigger trigger, float ratio, b
 | `ratio` | `float` |  |
 | `ignoreCanReceiveCooldown` | `bool` |  |
 
-### `ApplyElemental(ElementalType, Entity, int)`
+:::
+
+::: details `ApplyElemental(ElementalType, Entity, int)`
 
 ```csharp
 public ElementalStatusEffect ApplyElemental(ElementalType type, Entity to, int appliedStacks = 1)
@@ -173,13 +195,17 @@ public ElementalStatusEffect ApplyElemental(ElementalType type, Entity to, int a
 
 **Returns:** `ElementalStatusEffect`
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `ClearExcludeFromRoomSave()`
+:::
+
+::: details `ClearExcludeFromRoomSave()`
 
 Clear flag that excludes this actor from room save.Note this won't make non-saving by default actors to be saved.
 
@@ -187,7 +213,9 @@ Clear flag that excludes this actor from room save.Note this won't make non-savi
 public void ClearExcludeFromRoomSave()
 ```
 
-### `CreateAbilityInstance(Type, Vector3, Quaternion?, CastInfo, Action<AbilityInstance>)`
+:::
+
+::: details `CreateAbilityInstance(Type, Vector3, Quaternion?, CastInfo, Action&lt;AbilityInstance&gt;)`
 
 ```csharp
 public AbilityInstance CreateAbilityInstance(Type type, Vector3 position, Quaternion? rotation, CastInfo info, Action<AbilityInstance> beforePrepare = null)
@@ -204,7 +232,9 @@ public AbilityInstance CreateAbilityInstance(Type type, Vector3 position, Quater
 
 **Returns:** `AbilityInstance`
 
-### `CreateAbilityInstance<T>(T, Vector3, Quaternion?, CastInfo, Action<T>)`
+:::
+
+::: details `CreateAbilityInstance&lt;T&gt;(T, Vector3, Quaternion?, CastInfo, Action&lt;T&gt;)`
 
 ```csharp
 public T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -222,7 +252,9 @@ public T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotati
 
 **Returns:** `T`
 
-### `CreateAbilityInstance<T>(Vector3, Quaternion?, CastInfo, Action<T>)`
+:::
+
+::: details `CreateAbilityInstance&lt;T&gt;(Vector3, Quaternion?, CastInfo, Action&lt;T&gt;)`
 
 ```csharp
 public T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -239,7 +271,9 @@ public T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, CastIn
 
 **Returns:** `T`
 
-### `CreateActor<T>(T, Vector3, Quaternion?, Action<T>)`
+:::
+
+::: details `CreateActor&lt;T&gt;(T, Vector3, Quaternion?, Action&lt;T&gt;)`
 
 ```csharp
 public T CreateActor<T>(T prefab, Vector3 pos, Quaternion? rot, Action<T> beforePrepare = null) where T : Actor
@@ -256,7 +290,9 @@ public T CreateActor<T>(T prefab, Vector3 pos, Quaternion? rot, Action<T> before
 
 **Returns:** `T`
 
-### `CreateActor<T>(Vector3, Quaternion?, Action<T>)`
+:::
+
+::: details `CreateActor&lt;T&gt;(Vector3, Quaternion?, Action&lt;T&gt;)`
 
 ```csharp
 public T CreateActor<T>(Vector3 pos, Quaternion? rot, Action<T> beforePrepare = null) where T : Actor
@@ -272,7 +308,9 @@ public T CreateActor<T>(Vector3 pos, Quaternion? rot, Action<T> beforePrepare = 
 
 **Returns:** `T`
 
-### `CreateBasicEffect(Entity, BasicEffect, float, string, DuplicateEffectBehavior)`
+:::
+
+::: details `CreateBasicEffect(Entity, BasicEffect, float, string, DuplicateEffectBehavior)`
 
 Create a generic container status effect for applying basic effect to an entity.Give an id of null to prevent this behavior.The created status effect will be cleansable and killed by unstoppable if it contains a harmful effect.
 
@@ -291,7 +329,9 @@ public Se_GenericEffectContainer CreateBasicEffect(Entity victim, BasicEffect ef
 
 **Returns:** `Se_GenericEffectContainer`
 
-### `CreateDamage(SourceType, float, float)`
+:::
+
+::: details `CreateDamage(SourceType, float, float)`
 
 ```csharp
 public DamageData CreateDamage(DamageData.SourceType type, float amount, float procCoefficient = 1)
@@ -306,7 +346,9 @@ public DamageData CreateDamage(DamageData.SourceType type, float amount, float p
 
 **Returns:** `DamageData`
 
-### `CreateStatusEffect(Type, Entity, CastInfo, Action<StatusEffect>)`
+:::
+
+::: details `CreateStatusEffect(Type, Entity, CastInfo, Action&lt;StatusEffect&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -324,7 +366,9 @@ public StatusEffect CreateStatusEffect(Type type, Entity victim, CastInfo info, 
 
 **Returns:** `StatusEffect`
 
-### `CreateStatusEffect<T>(T, Entity, CastInfo, Action<T>)`
+:::
+
+::: details `CreateStatusEffect&lt;T&gt;(T, Entity, CastInfo, Action&lt;T&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -343,7 +387,9 @@ public T CreateStatusEffect<T>(T prefab, Entity victim, CastInfo info, Action<T>
 
 **Returns:** `T`
 
-### `CreateStatusEffect<T>(Entity, CastInfo, Action<T>)`
+:::
+
+::: details `CreateStatusEffect&lt;T&gt;(Entity, CastInfo, Action&lt;T&gt;)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -361,25 +407,33 @@ public T CreateStatusEffect<T>(Entity victim, CastInfo info, Action<T> beforePre
 
 **Returns:** `T`
 
-### `CustomDestroyRoutine()`
+:::
+
+::: details `CustomDestroyRoutine()`
 
 ```csharp
 public void CustomDestroyRoutine()
 ```
 
-### `CustomRpc_ClearClientMessageHandlers()`
+:::
+
+::: details `CustomRpc_ClearClientMessageHandlers()`
 
 ```csharp
 public void CustomRpc_ClearClientMessageHandlers()
 ```
 
-### `CustomRpc_ClearServerMessageHandlers()`
+:::
+
+::: details `CustomRpc_ClearServerMessageHandlers()`
 
 ```csharp
 public void CustomRpc_ClearServerMessageHandlers()
 ```
 
-### `CustomRpc_RegisterClientMessageHandler<T>(Action<T>)`
+:::
+
+::: details `CustomRpc_RegisterClientMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
 
 Register a client RPC handler. (server to clients) Registering multiple handlers for same type will result in all handlers passed being called.
 
@@ -393,7 +447,9 @@ public void CustomRpc_RegisterClientMessageHandler<T>(Action<T> handler)
 | `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `CustomRpc_RegisterServerMessageHandler<T>(Action<T>)`
+:::
+
+::: details `CustomRpc_RegisterServerMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
 
 Register a server RPC handler. (client to server) Registering multiple handlers for same type will result in all handlers passed being called.
 
@@ -407,7 +463,9 @@ public void CustomRpc_RegisterServerMessageHandler<T>(Action<T> handler)
 | `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `CustomRpc_RegisterServerMessageHandler<T>(string, Action<T, DewPlayer>)`
+:::
+
+::: details `CustomRpc_RegisterServerMessageHandler&lt;T&gt;(string, Action&lt;T, DewPlayer&gt;)`
 
 Register a server RPC handler. (client to server) Registering multiple handlers for same type will result in all handlers passed being called.This variant allows you to receive the caller client as a parameter.
 
@@ -422,7 +480,9 @@ public void CustomRpc_RegisterServerMessageHandler<T>(string type, Action<T, Dew
 | `handler` | [`System.Action<T1, T2><T,DewPlayer>`](/api/Global.DewPlayer) |  |
 | `` | `T` |  |
 
-### `CustomRpc_SendMessageToAllClients<T>(T)`
+:::
+
+::: details `CustomRpc_SendMessageToAllClients&lt;T&gt;(T)`
 
 Make a remote procedure call: Server =&gt; All Clients
 
@@ -436,7 +496,9 @@ public void CustomRpc_SendMessageToAllClients<T>(T msg)
 | `msg` | `T` |  |
 | `` | `T` |  |
 
-### `CustomRpc_SendMessageToClient<T>(DewPlayer, T)`
+:::
+
+::: details `CustomRpc_SendMessageToClient&lt;T&gt;(DewPlayer, T)`
 
 Make a remote procedure call: Server =&gt; Specific Client
 
@@ -451,7 +513,9 @@ public void CustomRpc_SendMessageToClient<T>(DewPlayer target, T msg)
 | `msg` | `T` |  |
 | `` | `T` |  |
 
-### `CustomRpc_SendMessageToServer<T>(T)`
+:::
+
+::: details `CustomRpc_SendMessageToServer&lt;T&gt;(T)`
 
 Make a remote procedure call: Client =&gt; ServerHosts can also make use of this RPC.
 
@@ -465,7 +529,9 @@ public void CustomRpc_SendMessageToServer<T>(T msg)
 | `msg` | `T` |  |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterClientMessageHandler<T>()`
+:::
+
+::: details `CustomRpc_UnregisterClientMessageHandler&lt;T&gt;()`
 
 ```csharp
 public void CustomRpc_UnregisterClientMessageHandler<T>()
@@ -476,7 +542,9 @@ public void CustomRpc_UnregisterClientMessageHandler<T>()
 | :--- | :--- | :--- |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterClientMessageHandler<T>(Action<T>)`
+:::
+
+::: details `CustomRpc_UnregisterClientMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
 
 ```csharp
 public void CustomRpc_UnregisterClientMessageHandler<T>(Action<T> handler)
@@ -488,7 +556,9 @@ public void CustomRpc_UnregisterClientMessageHandler<T>(Action<T> handler)
 | `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterServerMessageHandler<T>()`
+:::
+
+::: details `CustomRpc_UnregisterServerMessageHandler&lt;T&gt;()`
 
 ```csharp
 public void CustomRpc_UnregisterServerMessageHandler<T>()
@@ -499,7 +569,9 @@ public void CustomRpc_UnregisterServerMessageHandler<T>()
 | :--- | :--- | :--- |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer>)`
+:::
+
+::: details `CustomRpc_UnregisterServerMessageHandler&lt;T&gt;(Action&lt;T, DewPlayer&gt;)`
 
 ```csharp
 public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer> handler)
@@ -511,7 +583,9 @@ public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer> han
 | `handler` | [`System.Action<T1, T2><T,DewPlayer>`](/api/Global.DewPlayer) |  |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterServerMessageHandler<T>(Action<T>)`
+:::
+
+::: details `CustomRpc_UnregisterServerMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
 
 ```csharp
 public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T> handler)
@@ -523,7 +597,9 @@ public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T> handler)
 | `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `DealDamage(DamageData, Entity, ReactionChain)`
+:::
+
+::: details `DealDamage(DamageData, Entity, ReactionChain)`
 
 Deal custom damage to the target entity.
 
@@ -538,7 +614,9 @@ public void DealDamage(DamageData damage, Entity target, ReactionChain chain = d
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `DefaultDamage(float, float)`
+:::
+
+::: details `DefaultDamage(float, float)`
 
 ```csharp
 public DamageData DefaultDamage(float amount, float procCoefficient = 1)
@@ -552,7 +630,9 @@ public DamageData DefaultDamage(float amount, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `Destroy()`
+:::
+
+::: details `Destroy()`
 
 Destroy this actor.It will do its own cleanups on server and then despawn.This is irreversible.
 
@@ -560,13 +640,17 @@ Destroy this actor.It will do its own cleanups on server and then despawn.This i
 public void Destroy()
 ```
 
-### `DestroyIfActive()`
+:::
+
+::: details `DestroyIfActive()`
 
 ```csharp
 public void DestroyIfActive()
 ```
 
-### `DoBasicAttackHit(Entity, bool, bool, float, float)`
+:::
+
+::: details `DoBasicAttackHit(Entity, bool, bool, float, float)`
 
 Make the parent entity do basic attack and deal damage to the target entity.By design this should be only used by basic attacks.This triggers Attack Effects if the hit was successful.
 
@@ -583,7 +667,9 @@ public void DoBasicAttackHit(Entity target, bool isCriticalHit, bool isMain, flo
 | `damage` | `float` |  |
 | `attackEffect` | `float` |  |
 
-### `DoHeal(HealData, Entity, ReactionChain)`
+:::
+
+::: details `DoHeal(HealData, Entity, ReactionChain)`
 
 Heal an entity by some amount.
 
@@ -598,7 +684,9 @@ public void DoHeal(HealData heal, Entity target, ReactionChain chain = default)
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `DoManaHeal(HealData, Entity, ReactionChain)`
+:::
+
+::: details `DoManaHeal(HealData, Entity, ReactionChain)`
 
 Grant an entity some mana.
 
@@ -613,7 +701,9 @@ public void DoManaHeal(HealData heal, Entity target, ReactionChain chain = defau
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `ExcludeFromRoomSave()`
+:::
+
+::: details `ExcludeFromRoomSave()`
 
 Mark this actor as excluded from room save.
 
@@ -621,7 +711,9 @@ Mark this actor as excluded from room save.
 public void ExcludeFromRoomSave()
 ```
 
-### `FindData<T>(Predicate<T>)`
+:::
+
+::: details `FindData&lt;T&gt;(Predicate&lt;T&gt;)`
 
 ```csharp
 public T FindData<T>(Predicate<T> predicate)
@@ -635,7 +727,9 @@ public T FindData<T>(Predicate<T> predicate)
 
 **Returns:** `T`
 
-### `FindFirstAncestorOfType<T>()`
+:::
+
+::: details `FindFirstAncestorOfType&lt;T&gt;()`
 
 Find first actor that matches the given type in this actor's ancestor tree.
 
@@ -650,7 +744,9 @@ public T FindFirstAncestorOfType<T>() where T : Actor
 
 **Returns:** `T`
 
-### `FindFirstOfType<T>()`
+:::
+
+::: details `FindFirstOfType&lt;T&gt;()`
 
 Find first actor that matches the given type in this actor's ancestor tree including itself.
 
@@ -665,13 +761,17 @@ public T FindFirstOfType<T>() where T : Actor
 
 **Returns:** `T`
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetActorReadableName()`
+:::
+
+::: details `GetActorReadableName()`
 
 ```csharp
 public virtual string GetActorReadableName()
@@ -679,7 +779,9 @@ public virtual string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetData<T>()`
+:::
+
+::: details `GetData&lt;T&gt;()`
 
 ```csharp
 public T GetData<T>()
@@ -692,7 +794,9 @@ public T GetData<T>()
 
 **Returns:** `T`
 
-### `GetNetworkAuthorityConnection()`
+:::
+
+::: details `GetNetworkAuthorityConnection()`
 
 ```csharp
 protected virtual NetworkConnectionToClient GetNetworkAuthorityConnection()
@@ -700,7 +804,9 @@ protected virtual NetworkConnectionToClient GetNetworkAuthorityConnection()
 
 **Returns:** `Mirror.NetworkConnectionToClient`
 
-### `GetOriginalName()`
+:::
+
+::: details `GetOriginalName()`
 
 Get the original name of this actor, excluding (Clone) or variant suffixes.Useful when trying to figure out id of name-linked resources.
 
@@ -710,7 +816,9 @@ public string GetOriginalName()
 
 **Returns:** `string`
 
-### `GiveShield(Entity, float, float, bool, ReactionChain)`
+:::
+
+::: details `GiveShield(Entity, float, float, bool, ReactionChain)`
 
 ```csharp
 public Se_GenericShield_OneShot GiveShield(Entity victim, float amount, float duration, bool isDecay = false, ReactionChain chain = default)
@@ -727,7 +835,9 @@ public Se_GenericShield_OneShot GiveShield(Entity victim, float amount, float du
 
 **Returns:** `Se_GenericShield_OneShot`
 
-### `HasData<T>()`
+:::
+
+::: details `HasData&lt;T&gt;()`
 
 ```csharp
 public bool HasData<T>()
@@ -740,7 +850,9 @@ public bool HasData<T>()
 
 **Returns:** `bool`
 
-### `Heal(float)`
+:::
+
+::: details `Heal(float)`
 
 ```csharp
 public HealData Heal(float amount)
@@ -753,7 +865,9 @@ public HealData Heal(float amount)
 
 **Returns:** `HealData`
 
-### `HideOnScreenTimerLocally(OnScreenTimerHandle)`
+:::
+
+::: details `HideOnScreenTimerLocally(OnScreenTimerHandle)`
 
 ```csharp
 public void HideOnScreenTimerLocally(OnScreenTimerHandle handle)
@@ -764,7 +878,9 @@ public void HideOnScreenTimerLocally(OnScreenTimerHandle handle)
 | :--- | :--- | :--- |
 | `handle` | [`OnScreenTimerHandle`](/api/Global.OnScreenTimerHandle) |  |
 
-### `IsDescendantOf(Actor)`
+:::
+
+::: details `IsDescendantOf(Actor)`
 
 Is this actor a descendant of the given actor?Is the given actor this actor's ancestor (parent/grand-parent/grand-grand-parent...)?
 
@@ -779,7 +895,9 @@ public bool IsDescendantOf(Actor actor)
 
 **Returns:** `bool`
 
-### `IsDescendantOf<T>()`
+:::
+
+::: details `IsDescendantOf&lt;T&gt;()`
 
 Is this actor a descendant of the given actor?Is the given actor this actor's ancestor (parent/grand-parent/grand-grand-parent...)?
 
@@ -794,7 +912,9 @@ public bool IsDescendantOf<T>() where T : Actor
 
 **Returns:** `bool`
 
-### `IsExcludedFromRoomSave()`
+:::
+
+::: details `IsExcludedFromRoomSave()`
 
 Is this actor marked as excluded from room saves?
 
@@ -804,7 +924,9 @@ public bool IsExcludedFromRoomSave()
 
 **Returns:** `bool`
 
-### `LockDestroy()`
+:::
+
+::: details `LockDestroy()`
 
 Prevent this actor from being destroyed. You MUST call UnlockDestroy() after LockDestroy() call.
 
@@ -812,7 +934,9 @@ Prevent this actor from being destroyed. You MUST call UnlockDestroy() after Loc
 public void LockDestroy()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -823,7 +947,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MagicDamage(float, float)`
+:::
+
+::: details `MagicDamage(float, float)`
 
 ```csharp
 public DamageData MagicDamage(float amount, float procCoefficient = 1)
@@ -837,7 +963,9 @@ public DamageData MagicDamage(float amount, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 Called everywhere when this actor is created.
 
@@ -845,13 +973,17 @@ Called everywhere when this actor is created.
 protected virtual void OnCreate()
 ```
 
-### `OnCreate_ActorData()`
+:::
+
+::: details `OnCreate_ActorData()`
 
 ```csharp
 public void OnCreate_ActorData()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 Called everywhere when this actor is being destroyed.
 This is different from similarly-named Unity event OnDestroy, as it is called before GameObject itself gets destroyed.
@@ -860,19 +992,25 @@ This is different from similarly-named Unity event OnDestroy, as it is called be
 protected virtual void OnDestroyActor()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected virtual void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected virtual void OnEnable()
 ```
 
-### `OnPrepare()`
+:::
+
+::: details `OnPrepare()`
 
 Called on server right before actor is spawned.
 Configure this actor's initial state here.
@@ -881,37 +1019,49 @@ Configure this actor's initial state here.
 protected virtual void OnPrepare()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStopClient()`
+:::
+
+::: details `OnStopClient()`
 
 ```csharp
 public override void OnStopClient()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `PhysicalDamage(float, float)`
+:::
+
+::: details `PhysicalDamage(float, float)`
 
 ```csharp
 public DamageData PhysicalDamage(float amount, float procCoefficient = 1)
@@ -925,7 +1075,9 @@ public DamageData PhysicalDamage(float amount, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `ProcessShieldAmount(float, Entity)`
+:::
+
+::: details `ProcessShieldAmount(float, Entity)`
 
 ```csharp
 public float ProcessShieldAmount(float amount, Entity target)
@@ -939,7 +1091,9 @@ public float ProcessShieldAmount(float amount, Entity target)
 
 **Returns:** `float`
 
-### `ProcessSpawnedChildVarDefProcessor(ref VariantDef, Type)`
+:::
+
+::: details `ProcessSpawnedChildVarDefProcessor(ref VariantDef, Type)`
 
 ```csharp
 public void ProcessSpawnedChildVarDefProcessor(ref VariantDef data, Type childType)
@@ -951,7 +1105,9 @@ public void ProcessSpawnedChildVarDefProcessor(ref VariantDef data, Type childTy
 | `data` | [`VariantDef`](/api/Global.VariantDef) |  |
 | `childType` | `System.Type` |  |
 
-### `PureDamage(float, float)`
+:::
+
+::: details `PureDamage(float, float)`
 
 ```csharp
 public DamageData PureDamage(float amount, float procCoefficient = 1)
@@ -965,7 +1121,9 @@ public DamageData PureDamage(float amount, float procCoefficient = 1)
 
 **Returns:** `DamageData`
 
-### `RefundMana(float, Entity)`
+:::
+
+::: details `RefundMana(float, Entity)`
 
 Refund a certain amount of mana to an entity.This will not be processed, will not proc any callbacks nor display a mana heal number text.This shouldn't be used anywhere other than for canceled channels.
 
@@ -979,7 +1137,9 @@ public void RefundMana(float amount, Entity target)
 | `amount` | `float` |  |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `RemoveData(object)`
+:::
+
+::: details `RemoveData(object)`
 
 ```csharp
 public bool RemoveData(object obj)
@@ -992,7 +1152,9 @@ public bool RemoveData(object obj)
 
 **Returns:** `bool`
 
-### `RemoveData<T>()`
+:::
+
+::: details `RemoveData&lt;T&gt;()`
 
 ```csharp
 public bool RemoveData<T>()
@@ -1005,7 +1167,9 @@ public bool RemoveData<T>()
 
 **Returns:** `bool`
 
-### `ResetCooldown(AbilityTrigger, bool)`
+:::
+
+::: details `ResetCooldown(AbilityTrigger, bool)`
 
 ```csharp
 public void ResetCooldown(AbilityTrigger trigger, bool ignoreCanReceiveCooldown = false)
@@ -1017,7 +1181,9 @@ public void ResetCooldown(AbilityTrigger trigger, bool ignoreCanReceiveCooldown 
 | `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `ignoreCanReceiveCooldown` | `bool` |  |
 
-### `ShouldBeSavedWithRoom()`
+:::
+
+::: details `ShouldBeSavedWithRoom()`
 
 Should this actor be saved and loaded back in when revisiting nodes?This is checked on server on all active actors when changing rooms.
 
@@ -1027,7 +1193,9 @@ public virtual bool ShouldBeSavedWithRoom()
 
 **Returns:** `bool`
 
-### `ShowOnScreenTimerLocally(OnScreenTimerHandle)`
+:::
+
+::: details `ShowOnScreenTimerLocally(OnScreenTimerHandle)`
 
 Show an on-screen timer with custom fill amount to local player.Null rawText will be automatically populated.
 
@@ -1042,7 +1210,9 @@ public OnScreenTimerHandle ShowOnScreenTimerLocally(OnScreenTimerHandle handle)
 
 **Returns:** `OnScreenTimerHandle`
 
-### `SpawnEntity<T>(T, Vector3, Quaternion?, DewPlayer, int, Action<T>)`
+:::
+
+::: details `SpawnEntity&lt;T&gt;(T, Vector3, Quaternion?, DewPlayer, int, Action&lt;T&gt;)`
 
 ```csharp
 public T SpawnEntity<T>(T entity, Vector3 pos, Quaternion? rot, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -1061,7 +1231,9 @@ public T SpawnEntity<T>(T entity, Vector3 pos, Quaternion? rot, DewPlayer owner,
 
 **Returns:** `T`
 
-### `SpawnEntity<T>(Vector3, Quaternion?, DewPlayer, int, Action<T>)`
+:::
+
+::: details `SpawnEntity&lt;T&gt;(Vector3, Quaternion?, DewPlayer, int, Action&lt;T&gt;)`
 
 ```csharp
 public T SpawnEntity<T>(Vector3 pos, Quaternion? rot, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -1079,7 +1251,9 @@ public T SpawnEntity<T>(Vector3 pos, Quaternion? rot, DewPlayer owner, int level
 
 **Returns:** `T`
 
-### `SpawnSummon<T>(Vector3, Quaternion?, Action<T>)`
+:::
+
+::: details `SpawnSummon&lt;T&gt;(Vector3, Quaternion?, Action&lt;T&gt;)`
 
 ```csharp
 public T SpawnSummon<T>(Vector3 position, Quaternion? rotation, Action<T> beforePrepare = null) where T : Summon
@@ -1095,7 +1269,9 @@ public T SpawnSummon<T>(Vector3 position, Quaternion? rotation, Action<T> before
 
 **Returns:** `T`
 
-### `SpendMana(float, Entity)`
+:::
+
+::: details `SpendMana(float, Entity)`
 
 Spend mana of the entity.
 
@@ -1109,7 +1285,9 @@ public void SpendMana(float amount, Entity target)
 | `amount` | `float` |  |
 | `target` | [`Entity`](/api/Global.Entity) |  |
 
-### `Teleport(Entity, Vector3)`
+:::
+
+::: details `Teleport(Entity, Vector3)`
 
 Teleport an entity to the targeted position.You should only feed in a valid position by usingDew.GetValidAgentPosition()beforehand.
 
@@ -1123,7 +1301,9 @@ public void Teleport(Entity entity, Vector3 position)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `ToString()`
+:::
+
+::: details `ToString()`
 
 ```csharp
 public override string ToString()
@@ -1131,7 +1311,9 @@ public override string ToString()
 
 **Returns:** `string`
 
-### `TrackKills(float, Action<EventInfoKill>)`
+:::
+
+::: details `TrackKills(float, Action&lt;EventInfoKill&gt;)`
 
 Report any kills with contribution of this actor's damage with given grace period.You must Stop() the tracker to properly dispose it.
 
@@ -1147,7 +1329,9 @@ public KillTracker TrackKills(float gracePeriod, Action<EventInfoKill> callback)
 
 **Returns:** `KillTracker`
 
-### `TriggerAttackEffects(Entity, float, AttackEffectType, ReactionChain)`
+:::
+
+::: details `TriggerAttackEffects(Entity, float, AttackEffectType, ReactionChain)`
 
 ```csharp
 public void TriggerAttackEffects(Entity target, float strength, AttackEffectType type, ReactionChain chain = default)
@@ -1161,7 +1345,9 @@ public void TriggerAttackEffects(Entity target, float strength, AttackEffectType
 | `type` | [`AttackEffectType`](/api/Global.AttackEffectType) |  |
 | `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `TryFindData<T>(Predicate<T>, out T)`
+:::
+
+::: details `TryFindData&lt;T&gt;(Predicate&lt;T&gt;, out T)`
 
 ```csharp
 public bool TryFindData<T>(Predicate<T> predicate, out T result)
@@ -1176,7 +1362,9 @@ public bool TryFindData<T>(Predicate<T> predicate, out T result)
 
 **Returns:** `bool`
 
-### `TryGetData<T>(out T)`
+:::
+
+::: details `TryGetData&lt;T&gt;(out T)`
 
 ```csharp
 public bool TryGetData<T>(out T data)
@@ -1190,8 +1378,12 @@ public bool TryGetData<T>(out T data)
 
 **Returns:** `bool`
 
-### `UnlockDestroy()`
+:::
+
+::: details `UnlockDestroy()`
 
 ```csharp
 public void UnlockDestroy()
 ```
+
+:::

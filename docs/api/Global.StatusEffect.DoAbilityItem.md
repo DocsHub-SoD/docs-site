@@ -8,10 +8,14 @@
 public class StatusEffect.DoAbilityItem
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`callback`** | `public Func<AbilityTrigger, Action> callback` |  |
 | **`condition`** | `public Func<AbilityTrigger, bool> condition` |  |
 | **`stopAction`** | `public SafeAction stopAction` |  |
+
+:::

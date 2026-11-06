@@ -8,7 +8,9 @@
 public class EntityModel : MonoBehaviour
 ```
 
-## Fields
+## Fields (26)
+
+::: details Click to expand Fields (26)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -39,7 +41,11 @@ public class EntityModel : MonoBehaviour
 | **`walkAnimationSpeed`** | `public float walkAnimationSpeed` |  |
 | **`weapon`** | `public Transform weapon` |  |
 
-## Properties
+:::
+
+## Properties (3)
+
+::: details Click to expand Properties (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -47,9 +53,11 @@ public class EntityModel : MonoBehaviour
 | **`support4Directions`** | `public bool support4Directions { get; }` |  |
 | **`support8Directions`** | `public bool support8Directions { get; }` |  |
 
-## Methods
+:::
 
-### `ContainsCustomMappingKey(string)`
+## Methods (4)
+
+::: details `ContainsCustomMappingKey(string)`
 
 ```csharp
 public bool ContainsCustomMappingKey(string key)
@@ -62,7 +70,9 @@ public bool ContainsCustomMappingKey(string key)
 
 **Returns:** `bool`
 
-### `GetCustomMapping<T>(string)`
+:::
+
+::: details `GetCustomMapping&lt;T&gt;(string)`
 
 ```csharp
 public T GetCustomMapping<T>(string key) where T : class
@@ -76,7 +86,9 @@ public T GetCustomMapping<T>(string key) where T : class
 
 **Returns:** `T`
 
-### `GetCustomMappingArray<T>(string)`
+:::
+
+::: details `GetCustomMappingArray&lt;T&gt;(string)`
 
 ```csharp
 public T[] GetCustomMappingArray<T>(string key) where T : class
@@ -90,7 +102,9 @@ public T[] GetCustomMappingArray<T>(string key) where T : class
 
 **Returns:** `T[]`
 
-### `TryGetCustomMapping<T>(string, out T)`
+:::
+
+::: details `TryGetCustomMapping&lt;T&gt;(string, out T)`
 
 ```csharp
 public bool TryGetCustomMapping<T>(string key, out T target) where T : class
@@ -104,3 +118,5 @@ public bool TryGetCustomMapping<T>(string key, out T target) where T : class
 | `` | `T` |  |
 
 **Returns:** `bool`
+
+:::

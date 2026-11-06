@@ -9,7 +9,9 @@
 public abstract class StandardProjectile : Projectile, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,7 +23,11 @@ public abstract class StandardProjectile : Projectile, ILogicUpdate, ICleanup, I
 | **`randomCurveMagnitude`** | `[BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Random Magnitude")] [ShowIf("enableRandomCurve", true)] public float randomCurveMagnitude` |  |
 | **`use3DVelocity`** | `[Title("Standard Projectile", null, TitleAlignments.Left, true, true)] [LabelText("Use 3D Velocity")] [BoxGroup("Projectile Settings", true, false, 0)] public bool use3DVelocity` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,15 +36,19 @@ public abstract class StandardProjectile : Projectile, ILogicUpdate, ICleanup, I
 | **`normalizedPosition`** | `public float normalizedPosition { get; }` | Represents progress of this projectile's trajectory. This value starts from 0 to 1 and never decreases. |
 | **`targetSpeed`** | `public float targetSpeed { get; set; }` |  |
 
-## Methods
+:::
 
-### `ActiveFrameUpdate()`
+## Methods (5)
+
+::: details `ActiveFrameUpdate()`
 
 ```csharp
 protected override void ActiveFrameUpdate()
 ```
 
-### `CheckForCompletion()`
+:::
+
+::: details `CheckForCompletion()`
 
 ```csharp
 protected override bool CheckForCompletion()
@@ -46,19 +56,25 @@ protected override bool CheckForCompletion()
 
 **Returns:** `bool`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `PositionSolver(float)`
+:::
+
+::: details `PositionSolver(float)`
 
 ```csharp
 protected override Vector3 PositionSolver(float dt)
@@ -70,3 +86,5 @@ protected override Vector3 PositionSolver(float dt)
 | `dt` | `float` |  |
 
 **Returns:** `UnityEngine.Vector3`
+
+:::

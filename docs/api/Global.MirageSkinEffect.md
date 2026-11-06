@@ -9,7 +9,9 @@
 public class MirageSkinEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IOtherPlayersTonedDownDisable
 ```
 
-## Fields
+## Fields (13)
+
+::: details Click to expand Fields (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -27,9 +29,11 @@ public class MirageSkinEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDes
 | **`specialAttackInterval`** | `[BoxGroup("Mirage Skin Settings", true, false, 0)] [ShowIf("enableSpecialAttack", true)] public Vector2 specialAttackInterval` |  |
 | **`tier`** | `[BoxGroup("Mirage Skin Settings", true, false, 0)] public int tier` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (5)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -40,13 +44,17 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDealDamage(EventInfoDamage)`
+:::
+
+::: details `OnDealDamage(EventInfoDamage)`
 
 ```csharp
 public virtual void OnDealDamage(EventInfoDamage obj)
@@ -57,14 +65,20 @@ public virtual void OnDealDamage(EventInfoDamage obj)
 | :--- | :--- | :--- |
 | `obj` | [`EventInfoDamage`](/api/Global.EventInfoDamage) |  |
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnSpecialAttack()`
+:::
+
+::: details `OnSpecialAttack()`
 
 ```csharp
 public virtual void OnSpecialAttack()
 ```
+
+:::

@@ -9,7 +9,9 @@
 public class SkillVisualOverrideItem
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,9 +23,11 @@ public class SkillVisualOverrideItem
 | **`targets`** | `public string[] targets` |  |
 | **`valueMultiplier`** | `[ShowIf("changeValue", true)] public float valueMultiplier` |  |
 
-## Methods
+:::
 
-### `Apply(GameObject)`
+## Methods (1)
+
+::: details `Apply(GameObject)`
 
 ```csharp
 public void Apply(GameObject gobj)
@@ -33,3 +37,5 @@ public void Apply(GameObject gobj)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `gobj` | `UnityEngine.GameObject` |  |
+
+:::

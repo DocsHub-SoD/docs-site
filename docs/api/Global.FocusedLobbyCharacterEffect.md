@@ -8,9 +8,9 @@
 public class FocusedLobbyCharacterEffect : MonoBehaviour, ILobbyCharacterModelOnFocus
 ```
 
-## Methods
+## Methods (1)
 
-### `OnLobbyCharacterFocus(bool)`
+::: details `OnLobbyCharacterFocus(bool)`
 
 ```csharp
 public void OnLobbyCharacterFocus(bool value)
@@ -20,3 +20,5 @@ public void OnLobbyCharacterFocus(bool value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
+
+:::

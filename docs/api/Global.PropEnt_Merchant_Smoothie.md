@@ -9,28 +9,38 @@
 public class PropEnt_Merchant_Smoothie : PropEnt_Merchant_Base, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable, IEnableWandering
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`souvenirsCount`** | `public int souvenirsCount` |  |
 | **`treasuresCount`** | `public int treasuresCount` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`shouldWanderAround`** | `public bool shouldWanderAround { get; }` |  |
 
-## Methods
+:::
 
-### `OnCreate()`
+## Methods (4)
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnInteract(Entity, bool)`
+:::
+
+::: details `OnInteract(Entity, bool)`
 
 ```csharp
 public override void OnInteract(Entity entity, bool alt)
@@ -42,7 +52,9 @@ public override void OnInteract(Entity entity, bool alt)
 | `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
-### `OnPopulateMerchandises(DewPlayer)`
+:::
+
+::: details `OnPopulateMerchandises(DewPlayer)`
 
 ```csharp
 protected override void OnPopulateMerchandises(DewPlayer player)
@@ -53,7 +65,9 @@ protected override void OnPopulateMerchandises(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `OnRefresh(DewPlayer)`
+:::
+
+::: details `OnRefresh(DewPlayer)`
 
 ```csharp
 protected override void OnRefresh(DewPlayer player)
@@ -63,3 +77,5 @@ protected override void OnRefresh(DewPlayer player)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+
+:::

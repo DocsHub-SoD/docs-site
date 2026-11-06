@@ -8,7 +8,9 @@
 public class DewProfileStats.HeroData
 ```
 
-## Fields
+## Fields (41)
+
+::: details Click to expand Fields (41)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -54,9 +56,11 @@ public class DewProfileStats.HeroData
 | **`visitedWorlds`** | `public long visitedWorlds` |  |
 | **`wins`** | `public long wins` |  |
 
-## Methods
+:::
 
-### `AddMasteryPoints(long)`
+## Methods (3)
+
+::: details `AddMasteryPoints(long)`
 
 ```csharp
 public void AddMasteryPoints(long points)
@@ -67,7 +71,9 @@ public void AddMasteryPoints(long points)
 | :--- | :--- | :--- |
 | `points` | `long` |  |
 
-### `Clone()`
+:::
+
+::: details `Clone()`
 
 ```csharp
 public DewProfileStats.HeroData Clone()
@@ -75,7 +81,9 @@ public DewProfileStats.HeroData Clone()
 
 **Returns:** `DewProfileStats.HeroData`
 
-### `RemoveMasteryPoints(long)`
+:::
+
+::: details `RemoveMasteryPoints(long)`
 
 ```csharp
 public void RemoveMasteryPoints(long points)
@@ -85,3 +93,5 @@ public void RemoveMasteryPoints(long points)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `points` | `long` |  |
+
+:::

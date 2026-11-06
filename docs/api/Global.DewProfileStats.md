@@ -8,7 +8,9 @@
 public class DewProfileStats
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,9 +22,11 @@ public class DewProfileStats
 | **`total`** | `public DewProfileStats.HeroData total` |  |
 | **`zones`** | `public Dictionary<string, DewProfileStats.ZoneData> zones` |  |
 
-## Methods
+:::
 
-### `AddMasteryPoints(string, long)`
+## Methods (8)
+
+::: details `AddMasteryPoints(string, long)`
 
 ```csharp
 public void AddMasteryPoints(string heroType, long points)
@@ -34,7 +38,9 @@ public void AddMasteryPoints(string heroType, long points)
 | `heroType` | `string` |  |
 | `points` | `long` |  |
 
-### `ApplyRecoveryDelta(DewProfileStats)`
+:::
+
+::: details `ApplyRecoveryDelta(DewProfileStats)`
 
 ```csharp
 public void ApplyRecoveryDelta(DewProfileStats delta)
@@ -45,7 +51,9 @@ public void ApplyRecoveryDelta(DewProfileStats delta)
 | :--- | :--- | :--- |
 | `delta` | [`DewProfileStats`](/api/Global.DewProfileStats) |  |
 
-### `GetItemData(Type)`
+:::
+
+::: details `GetItemData(Type)`
 
 ```csharp
 public DewProfileStats.ItemData GetItemData(Type type)
@@ -58,7 +66,9 @@ public DewProfileStats.ItemData GetItemData(Type type)
 
 **Returns:** `DewProfileStats.ItemData`
 
-### `GetRecoveryDelta(DewProfileStats, DewProfileStats)`
+:::
+
+::: details `GetRecoveryDelta(DewProfileStats, DewProfileStats)`
 
 ```csharp
 public static DewProfileStats GetRecoveryDelta(DewProfileStats beforeLoss, DewProfileStats afterLoss)
@@ -72,7 +82,9 @@ public static DewProfileStats GetRecoveryDelta(DewProfileStats beforeLoss, DewPr
 
 **Returns:** `DewProfileStats`
 
-### `RemoveMasteryPoints(string, long)`
+:::
+
+::: details `RemoveMasteryPoints(string, long)`
 
 ```csharp
 public void RemoveMasteryPoints(string heroType, long points)
@@ -84,7 +96,9 @@ public void RemoveMasteryPoints(string heroType, long points)
 | `heroType` | `string` |  |
 | `points` | `long` |  |
 
-### `TryGetItemData(Type, out ItemData)`
+:::
+
+::: details `TryGetItemData(Type, out ItemData)`
 
 ```csharp
 public bool TryGetItemData(Type type, out DewProfileStats.ItemData data)
@@ -98,7 +112,9 @@ public bool TryGetItemData(Type type, out DewProfileStats.ItemData data)
 
 **Returns:** `bool`
 
-### `UpdateTotalData(long)`
+:::
+
+::: details `UpdateTotalData(long)`
 
 ```csharp
 public void UpdateTotalData(long minPlayTime = 0)
@@ -109,8 +125,12 @@ public void UpdateTotalData(long minPlayTime = 0)
 | :--- | :--- | :--- |
 | `minPlayTime` | `long` |  |
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 ```csharp
 public void Validate()
 ```
+
+:::

@@ -10,7 +10,9 @@
 public class UI_GamepadFocusable : MonoBehaviour, IGamepadFocusable, IGamepadFocusListener
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,15 +21,21 @@ public class UI_GamepadFocusable : MonoBehaviour, IGamepadFocusable, IGamepadFoc
 | **`focusOnEnable`** | `public bool focusOnEnable` |  |
 | **`ignoreSelectableInteractivity`** | `public bool ignoreSelectableInteractivity` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isFocused`** | `public bool isFocused { get; }` |  |
 
-## Methods
+:::
 
-### `CanBeFocused()`
+## Methods (6)
+
+::: details `CanBeFocused()`
 
 ```csharp
 public virtual bool CanBeFocused()
@@ -35,7 +43,9 @@ public virtual bool CanBeFocused()
 
 **Returns:** `bool`
 
-### `CanHoldConfirmToRepeat()`
+:::
+
+::: details `CanHoldConfirmToRepeat()`
 
 ```csharp
 public bool CanHoldConfirmToRepeat()
@@ -43,7 +53,9 @@ public bool CanHoldConfirmToRepeat()
 
 **Returns:** `bool`
 
-### `GetSelectionDisplayType()`
+:::
+
+::: details `GetSelectionDisplayType()`
 
 ```csharp
 public SelectionDisplayType GetSelectionDisplayType()
@@ -51,19 +63,25 @@ public SelectionDisplayType GetSelectionDisplayType()
 
 **Returns:** `SelectionDisplayType`
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected virtual void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected virtual void OnEnable()
 ```
 
-### `OnFocusStateChanged(bool)`
+:::
+
+::: details `OnFocusStateChanged(bool)`
 
 ```csharp
 public virtual void OnFocusStateChanged(bool state)
@@ -73,3 +91,5 @@ public virtual void OnFocusStateChanged(bool state)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `state` | `bool` |  |
+
+:::

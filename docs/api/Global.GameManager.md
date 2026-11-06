@@ -9,7 +9,9 @@
 public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (11)
+
+::: details Click to expand Fields (11)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -25,7 +27,11 @@ public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 | **`playerRejoinData`** | `[SaveVar(SaveVarFlags.Default)] public Dictionary<string, DewPersistence.PlayerData> playerRejoinData` |  |
 | **`predictionStrengthOverride`** | `public Func<float> predictionStrengthOverride` |  |
 
-## Properties
+:::
+
+## Properties (14)
+
+::: details Click to expand Properties (14)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -44,15 +50,19 @@ public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 | **`runId`** | `[SaveVar(SaveVarFlags.Default)] public string runId { get; set; }` | Globally unique identifier of this run. This is consistent across all clients. |
 | **`spawnedPopulation`** | `public float spawnedPopulation { get; }` | Total population excluding env spawns. =&gt; Spawns from combat areas. |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (65)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CallOnReady(Action)`
+:::
+
+::: details `CallOnReady(Action)`
 
 Call provided function if the game is ready. (Client is ready, Server is not loading scene, has local hero, map is loaded, screen is shown)If not ready, the function call will be delayed until it is.Available on server and clients.
 
@@ -65,13 +75,17 @@ public static void CallOnReady(Action action)
 | :--- | :--- | :--- |
 | `action` | `System.Action` |  |
 
-### `CollectAllPlayersRejoinData()`
+:::
+
+::: details `CollectAllPlayersRejoinData()`
 
 ```csharp
 public void CollectAllPlayersRejoinData()
 ```
 
-### `CollectPlayerRejoinData(DewPlayer)`
+:::
+
+::: details `CollectPlayerRejoinData(DewPlayer)`
 
 ```csharp
 public void CollectPlayerRejoinData(DewPlayer p)
@@ -82,19 +96,25 @@ public void CollectPlayerRejoinData(DewPlayer p)
 | :--- | :--- | :--- |
 | `p` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `ConcludePureWhiteDream()`
+:::
+
+::: details `ConcludePureWhiteDream()`
 
 ```csharp
 public void ConcludePureWhiteDream()
 ```
 
-### `ConcludeUnknownFate()`
+:::
+
+::: details `ConcludeUnknownFate()`
 
 ```csharp
 public void ConcludeUnknownFate()
 ```
 
-### `GetAdjustedDroppedExperienceAmount(float)`
+:::
+
+::: details `GetAdjustedDroppedExperienceAmount(float)`
 
 ```csharp
 public float GetAdjustedDroppedExperienceAmount(float original)
@@ -107,7 +127,9 @@ public float GetAdjustedDroppedExperienceAmount(float original)
 
 **Returns:** `float`
 
-### `GetAdjustedGoldAmount_Cost_Service(float)`
+:::
+
+::: details `GetAdjustedGoldAmount_Cost_Service(float)`
 
 ```csharp
 public float GetAdjustedGoldAmount_Cost_Service(float baseAmount)
@@ -120,7 +142,9 @@ public float GetAdjustedGoldAmount_Cost_Service(float baseAmount)
 
 **Returns:** `float`
 
-### `GetAdjustedGoldAmount_Cost(float)`
+:::
+
+::: details `GetAdjustedGoldAmount_Cost(float)`
 
 ```csharp
 public float GetAdjustedGoldAmount_Cost(float amount)
@@ -133,7 +157,9 @@ public float GetAdjustedGoldAmount_Cost(float amount)
 
 **Returns:** `float`
 
-### `GetAdjustedGoldAmount_Income(float)`
+:::
+
+::: details `GetAdjustedGoldAmount_Income(float)`
 
 ```csharp
 public float GetAdjustedGoldAmount_Income(float amount)
@@ -146,7 +172,9 @@ public float GetAdjustedGoldAmount_Income(float amount)
 
 **Returns:** `float`
 
-### `GetAdjustedGoldAmount(float)`
+:::
+
+::: details `GetAdjustedGoldAmount(float)`
 
 ```csharp
 public float GetAdjustedGoldAmount(float amount)
@@ -159,7 +187,9 @@ public float GetAdjustedGoldAmount(float amount)
 
 **Returns:** `float`
 
-### `GetAdjustedMonsterSpawnPopulation(float, bool, bool)`
+:::
+
+::: details `GetAdjustedMonsterSpawnPopulation(float, bool, bool)`
 
 ```csharp
 public float GetAdjustedMonsterSpawnPopulation(float original, bool ignoreTurnMultiplier = false, bool ignoreCoopMultiplier = false)
@@ -174,7 +204,9 @@ public float GetAdjustedMonsterSpawnPopulation(float original, bool ignoreTurnMu
 
 **Returns:** `float`
 
-### `GetAdjustedMonsterWaves(int, DewRandom)`
+:::
+
+::: details `GetAdjustedMonsterWaves(int, DewRandom)`
 
 ```csharp
 public int GetAdjustedMonsterWaves(int original, DewRandom random = null)
@@ -188,7 +220,9 @@ public int GetAdjustedMonsterWaves(int original, DewRandom random = null)
 
 **Returns:** `int`
 
-### `GetAdjustedMonsterWavesMultiplier()`
+:::
+
+::: details `GetAdjustedMonsterWavesMultiplier()`
 
 ```csharp
 public float GetAdjustedMonsterWavesMultiplier()
@@ -196,7 +230,9 @@ public float GetAdjustedMonsterWavesMultiplier()
 
 **Returns:** `float`
 
-### `GetBossMonsterDamageMultiplierByScaling(float)`
+:::
+
+::: details `GetBossMonsterDamageMultiplierByScaling(float)`
 
 ```csharp
 public float GetBossMonsterDamageMultiplierByScaling(float customZoneIndex = NaN)
@@ -209,7 +245,9 @@ public float GetBossMonsterDamageMultiplierByScaling(float customZoneIndex = NaN
 
 **Returns:** `float`
 
-### `GetBossMonsterHealthMultiplierByScaling(float)`
+:::
+
+::: details `GetBossMonsterHealthMultiplierByScaling(float)`
 
 ```csharp
 public float GetBossMonsterHealthMultiplierByScaling(float customZoneIndex = NaN)
@@ -222,7 +260,9 @@ public float GetBossMonsterHealthMultiplierByScaling(float customZoneIndex = NaN
 
 **Returns:** `float`
 
-### `GetCleanseGemMinQuality()`
+:::
+
+::: details `GetCleanseGemMinQuality()`
 
 ```csharp
 public int GetCleanseGemMinQuality()
@@ -230,7 +270,9 @@ public int GetCleanseGemMinQuality()
 
 **Returns:** `int`
 
-### `GetCleanseGoldCost(Gem)`
+:::
+
+::: details `GetCleanseGoldCost(Gem)`
 
 ```csharp
 public int GetCleanseGoldCost(Gem gem)
@@ -243,7 +285,9 @@ public int GetCleanseGoldCost(Gem gem)
 
 **Returns:** `int`
 
-### `GetCleanseGoldCost(SkillTrigger)`
+:::
+
+::: details `GetCleanseGoldCost(SkillTrigger)`
 
 ```csharp
 public int GetCleanseGoldCost(SkillTrigger skill)
@@ -256,7 +300,9 @@ public int GetCleanseGoldCost(SkillTrigger skill)
 
 **Returns:** `int`
 
-### `GetCleanseReturnedDreamDust(DewPlayer, Gem)`
+:::
+
+::: details `GetCleanseReturnedDreamDust(DewPlayer, Gem)`
 
 ```csharp
 public int GetCleanseReturnedDreamDust(DewPlayer player, Gem gem)
@@ -270,7 +316,9 @@ public int GetCleanseReturnedDreamDust(DewPlayer player, Gem gem)
 
 **Returns:** `int`
 
-### `GetCleanseReturnedDreamDust(DewPlayer, SkillTrigger)`
+:::
+
+::: details `GetCleanseReturnedDreamDust(DewPlayer, SkillTrigger)`
 
 ```csharp
 public int GetCleanseReturnedDreamDust(DewPlayer player, SkillTrigger skill)
@@ -284,7 +332,9 @@ public int GetCleanseReturnedDreamDust(DewPlayer player, SkillTrigger skill)
 
 **Returns:** `int`
 
-### `GetCleanseSkillMinLevel()`
+:::
+
+::: details `GetCleanseSkillMinLevel()`
 
 ```csharp
 public int GetCleanseSkillMinLevel()
@@ -292,7 +342,9 @@ public int GetCleanseSkillMinLevel()
 
 **Returns:** `int`
 
-### `GetDifficulty()`
+:::
+
+::: details `GetDifficulty()`
 
 ```csharp
 protected virtual DewDifficultySettings GetDifficulty()
@@ -300,7 +352,9 @@ protected virtual DewDifficultySettings GetDifficulty()
 
 **Returns:** `DewDifficultySettings`
 
-### `GetExpDropFromEntity(Entity)`
+:::
+
+::: details `GetExpDropFromEntity(Entity)`
 
 ```csharp
 public float GetExpDropFromEntity(Entity ent)
@@ -313,7 +367,9 @@ public float GetExpDropFromEntity(Entity ent)
 
 **Returns:** `float`
 
-### `GetGainedSkillHastePerSkillLevel(SkillTrigger)`
+:::
+
+::: details `GetGainedSkillHastePerSkillLevel(SkillTrigger)`
 
 ```csharp
 public float GetGainedSkillHastePerSkillLevel(SkillTrigger skillTrigger)
@@ -326,7 +382,9 @@ public float GetGainedSkillHastePerSkillLevel(SkillTrigger skillTrigger)
 
 **Returns:** `float`
 
-### `GetGemUpgradeAddedQuality()`
+:::
+
+::: details `GetGemUpgradeAddedQuality()`
 
 ```csharp
 public int GetGemUpgradeAddedQuality()
@@ -334,7 +392,9 @@ public int GetGemUpgradeAddedQuality()
 
 **Returns:** `int`
 
-### `GetGemUpgradeDreamDustCost(Gem)`
+:::
+
+::: details `GetGemUpgradeDreamDustCost(Gem)`
 
 ```csharp
 public int GetGemUpgradeDreamDustCost(Gem gem)
@@ -347,7 +407,9 @@ public int GetGemUpgradeDreamDustCost(Gem gem)
 
 **Returns:** `int`
 
-### `GetGemUpgradeDreamDustCost(int)`
+:::
+
+::: details `GetGemUpgradeDreamDustCost(int)`
 
 ```csharp
 public int GetGemUpgradeDreamDustCost(int quality)
@@ -360,7 +422,9 @@ public int GetGemUpgradeDreamDustCost(int quality)
 
 **Returns:** `int`
 
-### `GetKillGoldAmount(Entity)`
+:::
+
+::: details `GetKillGoldAmount(Entity)`
 
 ```csharp
 public int GetKillGoldAmount(Entity ent)
@@ -373,7 +437,9 @@ public int GetKillGoldAmount(Entity ent)
 
 **Returns:** `int`
 
-### `GetLucidDreams()`
+:::
+
+::: details `GetLucidDreams()`
 
 ```csharp
 public virtual IList<string> GetLucidDreams()
@@ -381,7 +447,9 @@ public virtual IList<string> GetLucidDreams()
 
 **Returns:** `System.Collections.Generic.IList<T><string>`
 
-### `GetMiniBossMonsterDamageMultiplierByScaling(float)`
+:::
+
+::: details `GetMiniBossMonsterDamageMultiplierByScaling(float)`
 
 ```csharp
 public float GetMiniBossMonsterDamageMultiplierByScaling(float customZoneIndex = NaN)
@@ -394,7 +462,9 @@ public float GetMiniBossMonsterDamageMultiplierByScaling(float customZoneIndex =
 
 **Returns:** `float`
 
-### `GetMiniBossMonsterHealthMultiplierByScaling(float)`
+:::
+
+::: details `GetMiniBossMonsterHealthMultiplierByScaling(float)`
 
 ```csharp
 public float GetMiniBossMonsterHealthMultiplierByScaling(float customZoneIndex = NaN)
@@ -407,7 +477,9 @@ public float GetMiniBossMonsterHealthMultiplierByScaling(float customZoneIndex =
 
 **Returns:** `float`
 
-### `GetMonsterBonusHealthPercentageByMultiplayer(Monster)`
+:::
+
+::: details `GetMonsterBonusHealthPercentageByMultiplayer(Monster)`
 
 ```csharp
 public float GetMonsterBonusHealthPercentageByMultiplayer(Monster m)
@@ -420,7 +492,9 @@ public float GetMonsterBonusHealthPercentageByMultiplayer(Monster m)
 
 **Returns:** `float`
 
-### `GetMonsterBonusPowerPercentage(Monster)`
+:::
+
+::: details `GetMonsterBonusPowerPercentage(Monster)`
 
 ```csharp
 public float GetMonsterBonusPowerPercentage(Monster m)
@@ -433,7 +507,9 @@ public float GetMonsterBonusPowerPercentage(Monster m)
 
 **Returns:** `float`
 
-### `GetMultiplayerDifficultyFactor(bool)`
+:::
+
+::: details `GetMultiplayerDifficultyFactor(bool)`
 
 Get amount of extra players. Solo: 0, Two: 1, ...If reduceWhenDead is set, dead player will contribute 55% percent instead of 100% to the factor.
 
@@ -448,7 +524,9 @@ public float GetMultiplayerDifficultyFactor(bool reduceWhenDead)
 
 **Returns:** `float`
 
-### `GetMultiplier_Imp(double, double, double, double, double, int)`
+:::
+
+::: details `GetMultiplier_Imp(double, double, double, double, double, int)`
 
 ```csharp
 public static float GetMultiplier_Imp(double x, double a, double b, double c, double d, int linearStart)
@@ -466,7 +544,9 @@ public static float GetMultiplier_Imp(double x, double a, double b, double c, do
 
 **Returns:** `float`
 
-### `GetPredictionStrength()`
+:::
+
+::: details `GetPredictionStrength()`
 
 ```csharp
 public float GetPredictionStrength()
@@ -474,7 +554,9 @@ public float GetPredictionStrength()
 
 **Returns:** `float`
 
-### `GetRegularMonsterDamageMultiplierByScaling(float)`
+:::
+
+::: details `GetRegularMonsterDamageMultiplierByScaling(float)`
 
 ```csharp
 public float GetRegularMonsterDamageMultiplierByScaling(float customZoneIndex = NaN)
@@ -487,7 +569,9 @@ public float GetRegularMonsterDamageMultiplierByScaling(float customZoneIndex = 
 
 **Returns:** `float`
 
-### `GetRegularMonsterHealthMultiplierByScaling(float)`
+:::
+
+::: details `GetRegularMonsterHealthMultiplierByScaling(float)`
 
 ```csharp
 public float GetRegularMonsterHealthMultiplierByScaling(float customZoneIndex = NaN)
@@ -500,7 +584,9 @@ public float GetRegularMonsterHealthMultiplierByScaling(float customZoneIndex = 
 
 **Returns:** `float`
 
-### `GetSkillUpgradeDreamDustCost(SkillTrigger)`
+:::
+
+::: details `GetSkillUpgradeDreamDustCost(SkillTrigger)`
 
 ```csharp
 public int GetSkillUpgradeDreamDustCost(SkillTrigger skill)
@@ -513,7 +599,9 @@ public int GetSkillUpgradeDreamDustCost(SkillTrigger skill)
 
 **Returns:** `int`
 
-### `GetSkillUpgradeDreamDustCost(int)`
+:::
+
+::: details `GetSkillUpgradeDreamDustCost(int)`
 
 ```csharp
 public int GetSkillUpgradeDreamDustCost(int level)
@@ -526,7 +614,9 @@ public int GetSkillUpgradeDreamDustCost(int level)
 
 **Returns:** `int`
 
-### `GetSpecialRewardAmount_DreamDust()`
+:::
+
+::: details `GetSpecialRewardAmount_DreamDust()`
 
 ```csharp
 public float GetSpecialRewardAmount_DreamDust()
@@ -534,7 +624,9 @@ public float GetSpecialRewardAmount_DreamDust()
 
 **Returns:** `float`
 
-### `GetSpecialRewardAmount_Gold()`
+:::
+
+::: details `GetSpecialRewardAmount_Gold()`
 
 ```csharp
 public float GetSpecialRewardAmount_Gold()
@@ -542,7 +634,9 @@ public float GetSpecialRewardAmount_Gold()
 
 **Returns:** `float`
 
-### `GetSpecialSkillChanceMultiplier()`
+:::
+
+::: details `GetSpecialSkillChanceMultiplier()`
 
 ```csharp
 public float GetSpecialSkillChanceMultiplier()
@@ -550,7 +644,9 @@ public float GetSpecialSkillChanceMultiplier()
 
 **Returns:** `float`
 
-### `GetStrongHealthScalingMultiplier_Imp(float)`
+:::
+
+::: details `GetStrongHealthScalingMultiplier_Imp(float)`
 
 ```csharp
 public static float GetStrongHealthScalingMultiplier_Imp(float zi)
@@ -563,7 +659,9 @@ public static float GetStrongHealthScalingMultiplier_Imp(float zi)
 
 **Returns:** `float`
 
-### `GetUniversalDamageScalingMultiplier_Imp(float)`
+:::
+
+::: details `GetUniversalDamageScalingMultiplier_Imp(float)`
 
 ```csharp
 public static float GetUniversalDamageScalingMultiplier_Imp(float zi)
@@ -576,7 +674,9 @@ public static float GetUniversalDamageScalingMultiplier_Imp(float zi)
 
 **Returns:** `float`
 
-### `GetWeakHealthScalingMultiplier_Imp(float)`
+:::
+
+::: details `GetWeakHealthScalingMultiplier_Imp(float)`
 
 ```csharp
 public static float GetWeakHealthScalingMultiplier_Imp(float zi)
@@ -589,7 +689,9 @@ public static float GetWeakHealthScalingMultiplier_Imp(float zi)
 
 **Returns:** `float`
 
-### `IsContinueSaveSupported()`
+:::
+
+::: details `IsContinueSaveSupported()`
 
 Is continue-saving a normal thing in this game manager? If not, no continue save will be made, and user will not be notified with any save-related things.Used to tell apart from normal game and special games like tutorial.
 
@@ -599,7 +701,9 @@ public virtual bool IsContinueSaveSupported()
 
 **Returns:** `bool`
 
-### `IsEligibleForMidRunSave()`
+:::
+
+::: details `IsEligibleForMidRunSave()`
 
 Can the game be saved mid-run right now? Usually save is made every travel, but after clearing the room, the game can be saved mid-run e.g. before exiting the game.
 
@@ -609,7 +713,9 @@ public bool IsEligibleForMidRunSave()
 
 **Returns:** `bool`
 
-### `IsLazyCallReady()`
+:::
+
+::: details `IsLazyCallReady()`
 
 ```csharp
 public virtual bool IsLazyCallReady()
@@ -617,13 +723,17 @@ public virtual bool IsLazyCallReady()
 
 **Returns:** `bool`
 
-### `LoadNextZone()`
+:::
+
+::: details `LoadNextZone()`
 
 ```csharp
 public virtual void LoadNextZone()
 ```
 
-### `LockMidRunSave()`
+:::
+
+::: details `LockMidRunSave()`
 
 Calling this will lock mid-run save.If a continue save hasn't been made for more than 20 seconds, a continue save will be immediately made.This call MUST BE ACCOMPANIED by the same number of UnlockMidRunSave() calls.
 
@@ -631,7 +741,9 @@ Calling this will lock mid-run save.If a continue save hasn't been made for more
 public void LockMidRunSave()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -642,31 +754,41 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `ResetGameplayExperienceSettings()`
+:::
+
+::: details `ResetGameplayExperienceSettings()`
 
 ```csharp
 public void ResetGameplayExperienceSettings()
 ```
 
-### `SaveContinueData(LoadNodeSettings)`
+:::
+
+::: details `SaveContinueData(LoadNodeSettings)`
 
 ```csharp
 public void SaveContinueData(LoadNodeSettings s)
@@ -677,13 +799,17 @@ public void SaveContinueData(LoadNodeSettings s)
 | :--- | :--- | :--- |
 | `s` | [`LoadNodeSettings`](/api/Global.LoadNodeSettings) |  |
 
-### `SaveContinueDataMidRun()`
+:::
+
+::: details `SaveContinueDataMidRun()`
 
 ```csharp
 public void SaveContinueDataMidRun()
 ```
 
-### `SetAmbientLevel(int)`
+:::
+
+::: details `SetAmbientLevel(int)`
 
 Level will be clamped accordingly to GSS.
 
@@ -696,13 +822,17 @@ public void SetAmbientLevel(int newLevel)
 | :--- | :--- | :--- |
 | `newLevel` | `int` |  |
 
-### `SetDisconnectedForEveryoneElse()`
+:::
+
+::: details `SetDisconnectedForEveryoneElse()`
 
 ```csharp
 public void SetDisconnectedForEveryoneElse()
 ```
 
-### `SetElapsedGameTime(float)`
+:::
+
+::: details `SetElapsedGameTime(float)`
 
 ```csharp
 public void SetElapsedGameTime(float newTime)
@@ -713,7 +843,9 @@ public void SetElapsedGameTime(float newTime)
 | :--- | :--- | :--- |
 | `newTime` | `float` |  |
 
-### `UnlockMidRunSave()`
+:::
+
+::: details `UnlockMidRunSave()`
 
 Calling this will unlock and allow mid-run saves.This call MUST BE DONE AFTER LockMidRunSave() calls.
 
@@ -721,13 +853,17 @@ Calling this will unlock and allow mid-run saves.This call MUST BE DONE AFTER Lo
 public void UnlockMidRunSave()
 ```
 
-### `UpdateSpawnedPopulation()`
+:::
+
+::: details `UpdateSpawnedPopulation()`
 
 ```csharp
 public void UpdateSpawnedPopulation()
 ```
 
-### `WrapUpAndShowResult(ResultType)`
+:::
+
+::: details `WrapUpAndShowResult(ResultType)`
 
 ```csharp
 public void WrapUpAndShowResult(DewGameResult.ResultType type)
@@ -737,3 +873,5 @@ public void WrapUpAndShowResult(DewGameResult.ResultType type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | [`DewGameResult.ResultType`](/api/Global.DewGameResult) |  |
+
+:::

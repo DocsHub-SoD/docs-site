@@ -9,7 +9,9 @@
 public struct FxMaterialProperty.PropertyEntry
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,3 +22,5 @@ public struct FxMaterialProperty.PropertyEntry
 | **`targetUi`** | `[LabelText("UI Graphic")] [HideIf("@target != null", true)] public Graphic targetUi` |  |
 | **`type`** | `public FxMaterialProperty.PropertyType type` |  |
 | **`valueCurve`** | `public AnimationCurve valueCurve` |  |
+
+:::

@@ -8,7 +8,9 @@
 public class PingUIInstance : MonoBehaviour
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,3 +22,5 @@ public class PingUIInstance : MonoBehaviour
 | **`scalePunch`** | `public Vector3 scalePunch` |  |
 | **`screenMargin`** | `public Vector2 screenMargin` |  |
 | **`useAlwaysOnTopUIParent`** | `public bool useAlwaysOnTopUIParent` |  |
+
+:::

@@ -8,28 +8,36 @@
 public class FxNetworkedEffect : NetworkBehaviour
 ```
 
-## Methods
+## Methods (4)
 
-### `Play()`
+::: details `Play()`
 
 ```csharp
 public void Play()
 ```
 
-### `PlayNetworked()`
+:::
+
+::: details `PlayNetworked()`
 
 ```csharp
 public void PlayNetworked()
 ```
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
 
-### `StopNetworked()`
+:::
+
+::: details `StopNetworked()`
 
 ```csharp
 public void StopNetworked()
 ```
+
+:::

@@ -8,7 +8,9 @@
 public struct FinalDamageData
 ```
 
-## Fields
+## Fields (10)
+
+::: details Click to expand Fields (10)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -23,15 +25,21 @@ public struct FinalDamageData
 | **`procCoefficient`** | `public float procCoefficient` |  |
 | **`type`** | `public DamageData.SourceType type` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`canMerge`** | `public bool canMerge { get; }` |  |
 
-## Methods
+:::
 
-### `HasAttr(DamageAttribute)`
+## Methods (1)
+
+::: details `HasAttr(DamageAttribute)`
 
 Does this damage has specific attribute?
 
@@ -45,3 +53,5 @@ public bool HasAttr(DamageAttribute attr)
 | `attr` | [`DamageAttribute`](/api/Global.DamageAttribute) |  |
 
 **Returns:** `bool`
+
+:::

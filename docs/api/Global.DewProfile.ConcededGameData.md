@@ -8,10 +8,14 @@
 public class DewProfile.ConcededGameData
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`heroType`** | `public string heroType` |  |
 | **`receivedTravelerMastery`** | `public long receivedTravelerMastery` |  |
 | **`result`** | `public DewGameResult result` |  |
+
+:::

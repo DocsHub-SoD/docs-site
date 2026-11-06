@@ -11,7 +11,9 @@
 public class View : MonoBehaviour
 ```
 
-## Fields
+## Fields (13)
+
+::: details Click to expand Fields (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -29,21 +31,29 @@ public class View : MonoBehaviour
 | **`showEffect`** | `public GameObject showEffect` |  |
 | **`showOn`** | `[ShowIf("@showBehavior == View.ShowBehavior.UseState", true)] public List<string> showOn` |  |
 
-## Properties
+:::
+
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isShowing`** | `public bool isShowing { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (10)
+
+::: details `Awake()`
 
 ```csharp
 protected virtual void Awake()
 ```
 
-### `Hide()`
+:::
+
+::: details `Hide()`
 
 Hide this view. ShowBehaviour must be set to Manually.
 
@@ -51,37 +61,49 @@ Hide this view. ShowBehaviour must be set to Manually.
 public void Hide()
 ```
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected virtual void OnDestroy()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected virtual void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected virtual void OnEnable()
 ```
 
-### `OnHide()`
+:::
+
+::: details `OnHide()`
 
 ```csharp
 protected virtual void OnHide()
 ```
 
-### `OnShow()`
+:::
+
+::: details `OnShow()`
 
 ```csharp
 protected virtual void OnShow()
 ```
 
-### `Show()`
+:::
+
+::: details `Show()`
 
 Show this view. ShowBehaviour must be set to Manually.
 
@@ -89,14 +111,20 @@ Show this view. ShowBehaviour must be set to Manually.
 public void Show()
 ```
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 protected virtual void Start()
 ```
 
-### `Update()`
+:::
+
+::: details `Update()`
 
 ```csharp
 protected virtual void Update()
 ```
+
+:::

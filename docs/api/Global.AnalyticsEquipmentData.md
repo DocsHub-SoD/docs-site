@@ -8,19 +8,25 @@
 public struct AnalyticsEquipmentData
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`gems`** | `public List<(GemLocation, string, int)> gems` |  |
 | **`skills`** | `public List<(HeroSkillLocation, string, int)> skills` |  |
 
-## Methods
+:::
 
-### `ToBase64()`
+## Methods (1)
+
+::: details `ToBase64()`
 
 ```csharp
 public string ToBase64()
 ```
 
 **Returns:** `string`
+
+:::

@@ -8,12 +8,14 @@
 public interface IBanRoomNodesNearbyMultiple
 ```
 
-## Methods
+## Methods (1)
 
-### `GetBanSpots()`
+::: details `GetBanSpots()`
 
 ```csharp
 Vector3[] GetBanSpots()
 ```
 
 **Returns:** `UnityEngine.Vector3[]`
+
+:::

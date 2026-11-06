@@ -9,7 +9,9 @@
 public class BossMonster : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,9 +19,11 @@ public class BossMonster : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutin
 | **`playBossKillFeedback`** | `public bool playBossKillFeedback` |  |
 | **`skipBossSoulFlow`** | `[NonSerialized] public bool skipBossSoulFlow` |  |
 
-## Methods
+:::
 
-### `GetUniqueReward()`
+## Methods (5)
+
+::: details `GetUniqueReward()`
 
 ```csharp
 public virtual Type GetUniqueReward()
@@ -27,7 +31,9 @@ public virtual Type GetUniqueReward()
 
 **Returns:** `System.Type`
 
-### `GetUniqueRewardChance()`
+:::
+
+::: details `GetUniqueRewardChance()`
 
 ```csharp
 public virtual float GetUniqueRewardChance()
@@ -35,13 +41,17 @@ public virtual float GetUniqueRewardChance()
 
 **Returns:** `float`
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDeath(EventInfoKill)`
+:::
+
+::: details `OnDeath(EventInfoKill)`
 
 ```csharp
 protected override void OnDeath(EventInfoKill info)
@@ -52,8 +62,12 @@ protected override void OnDeath(EventInfoKill info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
+
+:::

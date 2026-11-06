@@ -11,7 +11,9 @@
 public class EntityControl : EntityComponent, ILogicUpdate, ICleanup
 ```
 
-## Fields
+## Fields (22)
+
+::: details Click to expand Fields (22)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -38,7 +40,11 @@ public class EntityControl : EntityComponent, ILogicUpdate, ICleanup
 | **`SyncFixSnapshotLifetime`** | `public static float SyncFixSnapshotLifetime` |  |
 | **`SyncFixWarpDistance`** | `public static float SyncFixWarpDistance` |  |
 
-## Properties
+:::
+
+## Properties (25)
+
+::: details Click to expand Properties (25)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -68,9 +74,11 @@ public class EntityControl : EntityComponent, ILogicUpdate, ICleanup
 | **`queuedActions`** | `public IReadOnlyList<ActionBase> queuedActions { get; }` |  |
 | **`walkStrength`** | `public float walkStrength { get; }` | Can have values of range 0 ~ 1 depending on how fast it is walking. Available everywhere. |
 
-## Methods
+:::
 
-### `Attack(Entity, bool)`
+## Methods (53)
+
+::: details `Attack(Entity, bool)`
 
 ```csharp
 public void Attack(Entity target, bool doChase)
@@ -82,7 +90,9 @@ public void Attack(Entity target, bool doChase)
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `doChase` | `bool` |  |
 
-### `AttackMove(Vector3, bool)`
+:::
+
+::: details `AttackMove(Vector3, bool)`
 
 ```csharp
 public void AttackMove(Vector3 destination, bool useDistanceFromDestination = false)
@@ -94,19 +104,25 @@ public void AttackMove(Vector3 destination, bool useDistanceFromDestination = fa
 | `destination` | `UnityEngine.Vector3` |  |
 | `useDistanceFromDestination` | `bool` |  |
 
-### `CancelOngoingChannels()`
+:::
+
+::: details `CancelOngoingChannels()`
 
 ```csharp
 public void CancelOngoingChannels()
 ```
 
-### `CancelOngoingDisplacement()`
+:::
+
+::: details `CancelOngoingDisplacement()`
 
 ```csharp
 public void CancelOngoingDisplacement()
 ```
 
-### `Cast(AbilityTrigger, CastInfo, bool)`
+:::
+
+::: details `Cast(AbilityTrigger, CastInfo, bool)`
 
 ```csharp
 public void Cast(AbilityTrigger trigger, CastInfo info, bool allowMoveToCast = true)
@@ -119,7 +135,9 @@ public void Cast(AbilityTrigger trigger, CastInfo info, bool allowMoveToCast = t
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `allowMoveToCast` | `bool` |  |
 
-### `Cast(AbilityTrigger, Entity, bool)`
+:::
+
+::: details `Cast(AbilityTrigger, Entity, bool)`
 
 ```csharp
 public void Cast(AbilityTrigger trigger, Entity predictTarget, bool allowMoveToCast = true)
@@ -132,7 +150,9 @@ public void Cast(AbilityTrigger trigger, Entity predictTarget, bool allowMoveToC
 | `predictTarget` | [`Entity`](/api/Global.Entity) |  |
 | `allowMoveToCast` | `bool` |  |
 
-### `Cast(AbilityTrigger, int, CastInfo, bool, bool)`
+:::
+
+::: details `Cast(AbilityTrigger, int, CastInfo, bool, bool)`
 
 Provide -1 forconfigIndexto denote ANY config index.This will cause undefined behavior if cast method differs between configs!!
 
@@ -149,7 +169,9 @@ public void Cast(AbilityTrigger trigger, int configIndex, CastInfo info, bool al
 | `allowMoveToCast` | `bool` |  |
 | `skipRangeCheck` | `bool` |  |
 
-### `Cast(AbilityTrigger, int, Entity, bool)`
+:::
+
+::: details `Cast(AbilityTrigger, int, Entity, bool)`
 
 ```csharp
 public void Cast(AbilityTrigger trigger, int configIndex, Entity predictTarget, bool allowMoveToCast = true)
@@ -163,19 +185,25 @@ public void Cast(AbilityTrigger trigger, int configIndex, Entity predictTarget, 
 | `predictTarget` | [`Entity`](/api/Global.Entity) |  |
 | `allowMoveToCast` | `bool` |  |
 
-### `ClearActionQueue()`
+:::
+
+::: details `ClearActionQueue()`
 
 ```csharp
 public void ClearActionQueue()
 ```
 
-### `ClearMovement()`
+:::
+
+::: details `ClearMovement()`
 
 ```csharp
 public void ClearMovement()
 ```
 
-### `CmdAttack(Entity, bool)`
+:::
+
+::: details `CmdAttack(Entity, bool)`
 
 Provide null to clear attack target.
 
@@ -189,7 +217,9 @@ public void CmdAttack(Entity target, bool doChase)
 | `target` | [`Entity`](/api/Global.Entity) |  |
 | `doChase` | `bool` |  |
 
-### `CmdAttackMove(Vector3, bool)`
+:::
+
+::: details `CmdAttackMove(Vector3, bool)`
 
 ```csharp
 public void CmdAttackMove(Vector3 destination, bool useDistanceFromDestination)
@@ -201,13 +231,17 @@ public void CmdAttackMove(Vector3 destination, bool useDistanceFromDestination)
 | `destination` | `UnityEngine.Vector3` |  |
 | `useDistanceFromDestination` | `bool` |  |
 
-### `CmdCancelOngoingChannels()`
+:::
+
+::: details `CmdCancelOngoingChannels()`
 
 ```csharp
 public void CmdCancelOngoingChannels()
 ```
 
-### `CmdCast(AbilityTrigger, int, CastInfo, bool, bool)`
+:::
+
+::: details `CmdCast(AbilityTrigger, int, CastInfo, bool, bool)`
 
 ```csharp
 public void CmdCast(AbilityTrigger trigger, int configIndex, CastInfo info, bool allowMoveToCast, bool skipRangeCheck)
@@ -222,13 +256,17 @@ public void CmdCast(AbilityTrigger trigger, int configIndex, CastInfo info, bool
 | `allowMoveToCast` | `bool` |  |
 | `skipRangeCheck` | `bool` |  |
 
-### `CmdClearMovement()`
+:::
+
+::: details `CmdClearMovement()`
 
 ```csharp
 public void CmdClearMovement()
 ```
 
-### `CmdInteract(IInteractable, bool, bool)`
+:::
+
+::: details `CmdInteract(IInteractable, bool, bool)`
 
 ```csharp
 public void CmdInteract(IInteractable interactable, bool isAlt, bool isMouse)
@@ -241,7 +279,9 @@ public void CmdInteract(IInteractable interactable, bool isAlt, bool isMouse)
 | `isAlt` | `bool` |  |
 | `isMouse` | `bool` |  |
 
-### `CmdLookInDirection(Vector3)`
+:::
+
+::: details `CmdLookInDirection(Vector3)`
 
 ```csharp
 public void CmdLookInDirection(Vector3 dir)
@@ -252,7 +292,9 @@ public void CmdLookInDirection(Vector3 dir)
 | :--- | :--- | :--- |
 | `dir` | `UnityEngine.Vector3` |  |
 
-### `CmdMoveToDestination(Vector3, bool, float)`
+:::
+
+::: details `CmdMoveToDestination(Vector3, bool, float)`
 
 ```csharp
 public void CmdMoveToDestination(Vector3 destination, bool immediately, float speedMult = 1)
@@ -265,7 +307,9 @@ public void CmdMoveToDestination(Vector3 destination, bool immediately, float sp
 | `immediately` | `bool` |  |
 | `speedMult` | `float` |  |
 
-### `CmdMoveWithDirection(Vector3)`
+:::
+
+::: details `CmdMoveWithDirection(Vector3)`
 
 ```csharp
 public void CmdMoveWithDirection(Vector3 direction)
@@ -276,13 +320,17 @@ public void CmdMoveWithDirection(Vector3 direction)
 | :--- | :--- | :--- |
 | `direction` | `UnityEngine.Vector3` |  |
 
-### `CmdStop()`
+:::
+
+::: details `CmdStop()`
 
 ```csharp
 public void CmdStop()
 ```
 
-### `CreateTransformABTo01(Vector2, Vector2)`
+:::
+
+::: details `CreateTransformABTo01(Vector2, Vector2)`
 
 ```csharp
 public static Matrix4x4 CreateTransformABTo01(Vector2 a, Vector2 b)
@@ -296,7 +344,9 @@ public static Matrix4x4 CreateTransformABTo01(Vector2 a, Vector2 b)
 
 **Returns:** `UnityEngine.Matrix4x4`
 
-### `DecrementBlockCounters(BlockedAction, bool)`
+:::
+
+::: details `DecrementBlockCounters(BlockedAction, bool)`
 
 ```csharp
 public void DecrementBlockCounters(Channel.BlockedAction action, bool delayOneFrame = true)
@@ -308,7 +358,9 @@ public void DecrementBlockCounters(Channel.BlockedAction action, bool delayOneFr
 | `action` | [`Channel.BlockedAction`](/api/Global.Channel) |  |
 | `delayOneFrame` | `bool` |  |
 
-### `DisobeyBlock(BlockableAction)`
+:::
+
+::: details `DisobeyBlock(BlockableAction)`
 
 Disobey blocks for certain action, canceling related channels.
 
@@ -321,13 +373,17 @@ public void DisobeyBlock(EntityControl.BlockableAction action)
 | :--- | :--- | :--- |
 | `action` | [`EntityControl.BlockableAction`](/api/Global.EntityControl) |  |
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetPointOnBezierCurve(Vector2, Vector2, Vector2, Vector2, float)`
+:::
+
+::: details `GetPointOnBezierCurve(Vector2, Vector2, Vector2, Vector2, float)`
 
 ```csharp
 public static Vector2 GetPointOnBezierCurve(Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float t)
@@ -344,7 +400,9 @@ public static Vector2 GetPointOnBezierCurve(Vector2 p0, Vector2 p1, Vector2 p2, 
 
 **Returns:** `UnityEngine.Vector2`
 
-### `IncrementBlockCounters(BlockedAction)`
+:::
+
+::: details `IncrementBlockCounters(BlockedAction)`
 
 ```csharp
 public void IncrementBlockCounters(Channel.BlockedAction action)
@@ -355,7 +413,9 @@ public void IncrementBlockCounters(Channel.BlockedAction action)
 | :--- | :--- | :--- |
 | `action` | [`Channel.BlockedAction`](/api/Global.Channel) |  |
 
-### `Interact(IInteractable, bool, bool)`
+:::
+
+::: details `Interact(IInteractable, bool, bool)`
 
 ```csharp
 public void Interact(IInteractable interactable, bool isAlt, bool isMouse)
@@ -368,7 +428,9 @@ public void Interact(IInteractable interactable, bool isAlt, bool isMouse)
 | `isAlt` | `bool` |  |
 | `isMouse` | `bool` |  |
 
-### `IsActionBlocked(BlockableAction)`
+:::
+
+::: details `IsActionBlocked(BlockableAction)`
 
 Is the entity allowed to do a certain action? If not, the action will be postponed until the block is resolved.Available everywhere.
 
@@ -383,7 +445,9 @@ public EntityControl.BlockStatus IsActionBlocked(EntityControl.BlockableAction a
 
 **Returns:** `EntityControl.BlockStatus`
 
-### `LockGamepadRotation()`
+:::
+
+::: details `LockGamepadRotation()`
 
 Lock gamepad look rotation of this entity. You must call UnlockLookRotation afterwards.
 
@@ -391,7 +455,9 @@ Lock gamepad look rotation of this entity. You must call UnlockLookRotation afte
 public void LockGamepadRotation()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -402,7 +468,9 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MoveToDestination(Vector3, bool, float)`
+:::
+
+::: details `MoveToDestination(Vector3, bool, float)`
 
 ```csharp
 public void MoveToDestination(Vector3 destination, bool immediately, float speedMult = 1)
@@ -415,43 +483,57 @@ public void MoveToDestination(Vector3 destination, bool immediately, float speed
 | `immediately` | `bool` |  |
 | `speedMult` | `float` |  |
 
-### `OnCleanup()`
+:::
+
+::: details `OnCleanup()`
 
 ```csharp
 public void OnCleanup()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
 
-### `OnStop()`
+:::
+
+::: details `OnStop()`
 
 ```csharp
 public override void OnStop()
 ```
 
-### `OnStopServer()`
+:::
+
+::: details `OnStopServer()`
 
 ```csharp
 public override void OnStopServer()
 ```
 
-### `Rotate(float, bool, float)`
+:::
+
+::: details `Rotate(float, bool, float)`
 
 ```csharp
 public void Rotate(float angle, bool immediately, float overrideDuration = -1)
@@ -464,7 +546,9 @@ public void Rotate(float angle, bool immediately, float overrideDuration = -1)
 | `immediately` | `bool` |  |
 | `overrideDuration` | `float` |  |
 
-### `Rotate(Quaternion, bool, float)`
+:::
+
+::: details `Rotate(Quaternion, bool, float)`
 
 ```csharp
 public void Rotate(Quaternion rotation, bool immediately, float overrideDuration = -1)
@@ -477,7 +561,9 @@ public void Rotate(Quaternion rotation, bool immediately, float overrideDuration
 | `immediately` | `bool` |  |
 | `overrideDuration` | `float` |  |
 
-### `Rotate(Vector3, bool, float)`
+:::
+
+::: details `Rotate(Vector3, bool, float)`
 
 ```csharp
 public void Rotate(Vector3 forward, bool immediately, float overrideDuration = -1)
@@ -490,7 +576,9 @@ public void Rotate(Vector3 forward, bool immediately, float overrideDuration = -
 | `immediately` | `bool` |  |
 | `overrideDuration` | `float` |  |
 
-### `RotateTowards(Entity, bool, float)`
+:::
+
+::: details `RotateTowards(Entity, bool, float)`
 
 ```csharp
 public void RotateTowards(Entity ent, bool immediately, float overrideDuration = -1)
@@ -503,7 +591,9 @@ public void RotateTowards(Entity ent, bool immediately, float overrideDuration =
 | `immediately` | `bool` |  |
 | `overrideDuration` | `float` |  |
 
-### `RotateTowards(Vector3, bool, float)`
+:::
+
+::: details `RotateTowards(Vector3, bool, float)`
 
 ```csharp
 public void RotateTowards(Vector3 position, bool immediately, float overrideDuration = -1)
@@ -516,7 +606,9 @@ public void RotateTowards(Vector3 position, bool immediately, float overrideDura
 | `immediately` | `bool` |  |
 | `overrideDuration` | `float` |  |
 
-### `SetAgentDestination(Vector3, bool)`
+:::
+
+::: details `SetAgentDestination(Vector3, bool)`
 
 ```csharp
 public void SetAgentDestination(Vector3 destination, bool important)
@@ -528,7 +620,9 @@ public void SetAgentDestination(Vector3 destination, bool important)
 | `destination` | `UnityEngine.Vector3` |  |
 | `important` | `bool` |  |
 
-### `SetAgentPosition(Vector3)`
+:::
+
+::: details `SetAgentPosition(Vector3)`
 
 Can be called on local movement processor.
 
@@ -541,7 +635,9 @@ public void SetAgentPosition(Vector3 position)
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `StartChannel(Channel)`
+:::
+
+::: details `StartChannel(Channel)`
 
 ```csharp
 public Channel StartChannel(Channel channel)
@@ -554,7 +650,9 @@ public Channel StartChannel(Channel channel)
 
 **Returns:** `Channel`
 
-### `StartDaze(float)`
+:::
+
+::: details `StartDaze(float)`
 
 ```csharp
 public Channel StartDaze(float duration)
@@ -567,7 +665,9 @@ public Channel StartDaze(float duration)
 
 **Returns:** `Channel`
 
-### `StartDisplacement(Displacement)`
+:::
+
+::: details `StartDisplacement(Displacement)`
 
 ```csharp
 public void StartDisplacement(Displacement disp)
@@ -578,13 +678,17 @@ public void StartDisplacement(Displacement disp)
 | :--- | :--- | :--- |
 | `disp` | [`Displacement`](/api/Global.Displacement) |  |
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
 
-### `StopOverrideRotation()`
+:::
+
+::: details `StopOverrideRotation()`
 
 Unlock override rotation.
 
@@ -592,7 +696,9 @@ Unlock override rotation.
 public void StopOverrideRotation()
 ```
 
-### `Teleport(Vector3)`
+:::
+
+::: details `Teleport(Vector3)`
 
 Teleport this entity to the targeted position.You should only feed in a valid position by usingDew.GetValidAgentPosition()beforehand.
 
@@ -605,7 +711,9 @@ public void Teleport(Vector3 position)
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 
-### `TransformPoint(Vector2, Matrix4x4)`
+:::
+
+::: details `TransformPoint(Vector2, Matrix4x4)`
 
 ```csharp
 public static Vector2 TransformPoint(Vector2 point, Matrix4x4 transform)
@@ -619,7 +727,9 @@ public static Vector2 TransformPoint(Vector2 point, Matrix4x4 transform)
 
 **Returns:** `UnityEngine.Vector2`
 
-### `UnlockGamepadRotation()`
+:::
+
+::: details `UnlockGamepadRotation()`
 
 Unlock gamepad look rotation of this entity.
 
@@ -627,8 +737,12 @@ Unlock gamepad look rotation of this entity.
 public void UnlockGamepadRotation()
 ```
 
-### `UpdateLastMoveTime()`
+:::
+
+::: details `UpdateLastMoveTime()`
 
 ```csharp
 public void UpdateLastMoveTime()
 ```
+
+:::

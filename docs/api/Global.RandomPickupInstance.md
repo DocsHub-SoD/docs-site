@@ -9,8 +9,12 @@
 public class RandomPickupInstance : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`dropChance`** | `public float dropChance` |  |
+
+:::

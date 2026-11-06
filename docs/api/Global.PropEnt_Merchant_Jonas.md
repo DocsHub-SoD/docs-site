@@ -9,7 +9,9 @@
 public class PropEnt_Merchant_Jonas : PropEnt_Merchant_Base, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public class PropEnt_Merchant_Jonas : PropEnt_Merchant_Base, ILogicUpdate, IClea
 | **`skillQuantity`** | `public Vector2 skillQuantity` |  |
 | **`skillTypeCount`** | `public int skillTypeCount` |  |
 
-## Methods
+:::
 
-### `AIUpdate(ref EntityAIContext)`
+## Methods (5)
+
+::: details `AIUpdate(ref EntityAIContext)`
 
 ```csharp
 protected override void AIUpdate(ref EntityAIContext context)
@@ -31,19 +35,25 @@ protected override void AIUpdate(ref EntityAIContext context)
 | :--- | :--- | :--- |
 | `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
-### `OnCreate()`
+:::
+
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
 
-### `OnDestroyActor()`
+:::
+
+::: details `OnDestroyActor()`
 
 ```csharp
 protected override void OnDestroyActor()
 ```
 
-### `OnPopulateMerchandises(DewPlayer)`
+:::
+
+::: details `OnPopulateMerchandises(DewPlayer)`
 
 ```csharp
 protected override void OnPopulateMerchandises(DewPlayer player)
@@ -54,7 +64,9 @@ protected override void OnPopulateMerchandises(DewPlayer player)
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `OnRefresh(DewPlayer)`
+:::
+
+::: details `OnRefresh(DewPlayer)`
 
 ```csharp
 protected override void OnRefresh(DewPlayer player)
@@ -64,3 +76,5 @@ protected override void OnRefresh(DewPlayer player)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+
+:::

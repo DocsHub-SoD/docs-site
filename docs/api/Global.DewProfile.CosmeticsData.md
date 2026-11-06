@@ -8,7 +8,9 @@
 public class DewProfile.CosmeticsData
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public class DewProfile.CosmeticsData
 | **`isUnlocked`** | `public bool isUnlocked` |  |
 | **`ownershipKey`** | `public string ownershipKey` |  |
 | **`unlockDate`** | `public long unlockDate` |  |
+
+:::

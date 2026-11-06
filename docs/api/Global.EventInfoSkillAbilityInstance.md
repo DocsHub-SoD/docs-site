@@ -8,10 +8,14 @@
 public struct EventInfoSkillAbilityInstance
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`instance`** | `public AbilityInstance instance` |  |
 | **`skill`** | `public SkillTrigger skill` |  |
 | **`type`** | `public HeroSkillLocation type` |  |
+
+:::

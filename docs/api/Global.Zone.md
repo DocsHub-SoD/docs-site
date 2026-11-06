@@ -9,7 +9,9 @@
 public class Zone : MonoBehaviour
 ```
 
-## Fields
+## Fields (17)
+
+::: details Click to expand Fields (17)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -30,3 +32,5 @@ public class Zone : MonoBehaviour
 | **`startRooms`** | `[FoldoutGroup("Automatically Baked Data", 0)] public List<string> startRooms` |  |
 | **`useSpecialGeneration`** | `public bool useSpecialGeneration` |  |
 | **`zoneTier`** | `public int zoneTier` |  |
+
+:::

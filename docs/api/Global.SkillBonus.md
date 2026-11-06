@@ -9,13 +9,19 @@
 public class SkillBonus
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`ignoreReceiveCooldownReductionFlag`** | `public bool ignoreReceiveCooldownReductionFlag` |  |
 
-## Properties
+:::
+
+## Properties (4)
+
+::: details Click to expand Properties (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -24,9 +30,11 @@ public class SkillBonus
 | **`cooldownOffset`** | `public float cooldownOffset { get; set; }` |  |
 | **`parent`** | `public SkillTrigger parent { get; }` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (2)
+
+::: details `Clone()`
 
 ```csharp
 public SkillBonus Clone()
@@ -34,8 +42,12 @@ public SkillBonus Clone()
 
 **Returns:** `SkillBonus`
 
-### `Stop()`
+:::
+
+::: details `Stop()`
 
 ```csharp
 public void Stop()
 ```
+
+:::

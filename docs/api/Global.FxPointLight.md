@@ -10,7 +10,9 @@
 public class FxPointLight : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,15 +23,19 @@ public class FxPointLight : FxInterpolatedEffectBase, IEffectComponent, IEffectW
 | **`intensityMultiplier`** | `[ShowIf("animateIntensity", true)] public float intensityMultiplier` |  |
 | **`rangeMultiplier`** | `[ShowIf("animateRange", true)] public float rangeMultiplier` |  |
 
-## Methods
+:::
 
-### `OnInit()`
+## Methods (2)
+
+::: details `OnInit()`
 
 ```csharp
 protected override void OnInit()
 ```
 
-### `ValueSetter(float)`
+:::
+
+::: details `ValueSetter(float)`
 
 ```csharp
 protected override void ValueSetter(float value)
@@ -39,3 +45,5 @@ protected override void ValueSetter(float value)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
+
+:::

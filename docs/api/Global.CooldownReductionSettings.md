@@ -8,7 +8,9 @@
 public struct CooldownReductionSettings
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -16,3 +18,5 @@ public struct CooldownReductionSettings
 | **`ignoreCanReceiveCooldown`** | `public bool ignoreCanReceiveCooldown` |  |
 | **`isUnscaled`** | `public bool isUnscaled` |  |
 | **`minThreshold`** | `public float minThreshold` |  |
+
+:::

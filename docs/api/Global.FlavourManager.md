@@ -9,7 +9,9 @@
 public class FlavourManager : NetworkedManagerBase<FlavourManager>, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Fields
+## Fields (20)
+
+::: details Click to expand Fields (20)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -34,28 +36,38 @@ public class FlavourManager : NetworkedManagerBase<FlavourManager>, ILogicUpdate
 | **`shakeIntensity`** | `public AnimationCurve shakeIntensity` |  |
 | **`shakeInterval`** | `public float shakeInterval` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (4)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
+
+:::

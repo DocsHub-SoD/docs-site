@@ -8,15 +8,19 @@
 public class DewAudioSettings_Platform : IInitializableSettings
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`useAdvancedPrioritization`** | `public bool useAdvancedPrioritization` |  |
 
-## Methods
+:::
 
-### `Clone()`
+## Methods (2)
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -24,8 +28,12 @@ public object Clone()
 
 **Returns:** `object`
 
-### `Initialize()`
+:::
+
+::: details `Initialize()`
 
 ```csharp
 public void Initialize()
 ```
+
+:::

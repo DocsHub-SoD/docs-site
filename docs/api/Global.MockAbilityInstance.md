@@ -9,10 +9,12 @@
 public class MockAbilityInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Methods
+## Methods (1)
 
-### `OnCreate()`
+::: details `OnCreate()`
 
 ```csharp
 protected override void OnCreate()
 ```
+
+:::

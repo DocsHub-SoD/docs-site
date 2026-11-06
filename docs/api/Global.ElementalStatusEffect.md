@@ -9,22 +9,28 @@
 public class ElementalStatusEffect : StackedStatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IOtherPlayersTonedDownDisable
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`ampAmount`** | `[NonSerialized] public float ampAmount` |  |
 | **`stackScaledEmissions`** | `public ParticleSystem[] stackScaledEmissions` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (3)
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `OnStackChange(int, int)`
+:::
+
+::: details `OnStackChange(int, int)`
 
 ```csharp
 protected override void OnStackChange(int oldStack, int newStack)
@@ -36,8 +42,12 @@ protected override void OnStackChange(int oldStack, int newStack)
 | `oldStack` | `int` |  |
 | `newStack` | `int` |  |
 
-### `OnStartClient()`
+:::
+
+::: details `OnStartClient()`
 
 ```csharp
 public override void OnStartClient()
 ```
+
+:::

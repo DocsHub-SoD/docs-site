@@ -8,9 +8,13 @@
 public class RotateTransform : MonoBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`speed`** | `public Vector3 speed` |  |
 | **`useUnscaledTime`** | `public bool useUnscaledTime` |  |
+
+:::

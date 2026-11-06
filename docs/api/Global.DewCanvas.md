@@ -10,22 +10,28 @@
 public class DewCanvas : LogicBehaviour, ILogicUpdate, ISettingsChangedCallback
 ```
 
-## Methods
+## Methods (3)
 
-### `FrameUpdate()`
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `OnSettingsChanged()`
+:::
+
+::: details `OnSettingsChanged()`
 
 ```csharp
 public void OnSettingsChanged()
 ```
+
+:::

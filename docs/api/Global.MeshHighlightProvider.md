@@ -9,46 +9,62 @@
 public class MeshHighlightProvider : HighlightProvider, ILogicUpdate
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`meshHighlight`** | `public HighlightEffect meshHighlight { get; }` |  |
 
-## Methods
+:::
 
-### `Awake()`
+## Methods (6)
+
+::: details `Awake()`
 
 ```csharp
 protected virtual void Awake()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `OnClickTimeUpdated()`
+:::
+
+::: details `OnClickTimeUpdated()`
 
 ```csharp
 protected override void OnClickTimeUpdated()
 ```
 
-### `OnCursorStatusUpdated()`
+:::
+
+::: details `OnCursorStatusUpdated()`
 
 ```csharp
 protected override void OnCursorStatusUpdated()
 ```
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected void OnDestroy()
 ```
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 protected virtual void Start()
 ```
+
+:::

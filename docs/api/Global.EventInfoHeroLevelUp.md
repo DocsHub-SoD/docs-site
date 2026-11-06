@@ -8,9 +8,13 @@
 public struct EventInfoHeroLevelUp
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`newLevel`** | `public int newLevel` |  |
 | **`oldLevel`** | `public int oldLevel` |  |
+
+:::

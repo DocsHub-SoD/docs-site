@@ -8,9 +8,13 @@
 public struct EventInfoStartMove
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`destination`** | `public Vector3 destination` |  |
 | **`entity`** | `public Entity entity` |  |
+
+:::

@@ -8,7 +8,9 @@
 public class DewGameResult.PlayerData
 ```
 
-## Fields
+## Fields (35)
+
+::: details Click to expand Fields (35)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -48,9 +50,11 @@ public class DewGameResult.PlayerData
 | **`totalGoldIncome`** | `public int totalGoldIncome` |  |
 | **`totalStardustIncome`** | `public int totalStardustIncome` |  |
 
-## Methods
+:::
 
-### `TryGetGemData(GemLocation, out GemData)`
+## Methods (2)
+
+::: details `TryGetGemData(GemLocation, out GemData)`
 
 ```csharp
 public bool TryGetGemData(GemLocation location, out DewGameResult.GemData data)
@@ -64,7 +68,9 @@ public bool TryGetGemData(GemLocation location, out DewGameResult.GemData data)
 
 **Returns:** `bool`
 
-### `TryGetSkillData(HeroSkillLocation, out SkillData)`
+:::
+
+::: details `TryGetSkillData(HeroSkillLocation, out SkillData)`
 
 ```csharp
 public bool TryGetSkillData(HeroSkillLocation type, out DewGameResult.SkillData data)
@@ -77,3 +83,5 @@ public bool TryGetSkillData(HeroSkillLocation type, out DewGameResult.SkillData 
 | `data` | [`DewGameResult.SkillData`](/api/Global.DewGameResult) |  |
 
 **Returns:** `bool`
+
+:::

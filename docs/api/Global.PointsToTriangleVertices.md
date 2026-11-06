@@ -8,19 +8,25 @@
 public class PointsToTriangleVertices
 ```
 
-## Properties
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`Count`** | `public int Count { get; }` |  |
 | **`this[int]`** | `public Vector2 this[int index] { get; }` |  |
 
-## Methods
+:::
 
-### `GetEnumerator()`
+## Methods (1)
+
+::: details `GetEnumerator()`
 
 ```csharp
 public IEnumerator<Vector2> GetEnumerator()
 ```
 
 **Returns:** `System.Collections.Generic.IEnumerator<T><UnityEngine.Vector2>`
+
+:::

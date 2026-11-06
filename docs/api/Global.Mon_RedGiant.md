@@ -9,16 +9,20 @@
 public class Mon_RedGiant : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`deathEffects`** | `public GameObject deathEffects` |  |
 | **`dpsText`** | `public TextMeshPro dpsText` |  |
 
-## Methods
+:::
 
-### `ActiveLogicUpdate(float)`
+## Methods (4)
+
+::: details `ActiveLogicUpdate(float)`
 
 ```csharp
 protected override void ActiveLogicUpdate(float dt)
@@ -29,7 +33,9 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AIUpdate(ref EntityAIContext)`
+:::
+
+::: details `AIUpdate(ref EntityAIContext)`
 
 ```csharp
 protected override void AIUpdate(ref EntityAIContext context)
@@ -40,7 +46,9 @@ protected override void AIUpdate(ref EntityAIContext context)
 | :--- | :--- | :--- |
 | `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
-### `OnDeath(EventInfoKill)`
+:::
+
+::: details `OnDeath(EventInfoKill)`
 
 ```csharp
 protected override void OnDeath(EventInfoKill info)
@@ -51,8 +59,12 @@ protected override void OnDeath(EventInfoKill info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
-### `OnStartServer()`
+:::
+
+::: details `OnStartServer()`
 
 ```csharp
 public override void OnStartServer()
 ```
+
+:::

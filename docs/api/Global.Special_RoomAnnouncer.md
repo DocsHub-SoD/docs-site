@@ -9,7 +9,9 @@
 public class Special_RoomAnnouncer : SingletonBehaviour<Special_RoomAnnouncer>
 ```
 
-## Fields
+## Fields (8)
+
+::: details Click to expand Fields (8)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,3 +23,5 @@ public class Special_RoomAnnouncer : SingletonBehaviour<Special_RoomAnnouncer>
 | **`sprite`** | `[ShowIf("announceEvent", true)] public Sprite sprite` |  |
 | **`spriteScale`** | `[ShowIf("announceEvent", true)] public float spriteScale` |  |
 | **`zoneIndexOffset`** | `[ShowIf("@showZoneIndex && setRoomName", true)] public int zoneIndexOffset` |  |
+
+:::

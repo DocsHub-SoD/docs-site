@@ -8,7 +8,9 @@
 public class DewControlSettings_User : IValidatableSettings
 ```
 
-## Fields
+## Fields (84)
+
+::: details Click to expand Fields (84)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -97,9 +99,11 @@ public class DewControlSettings_User : IValidatableSettings
 | **`zoomIn`** | `public DewBinding zoomIn` |  |
 | **`zoomOut`** | `public DewBinding zoomOut` |  |
 
-## Methods
+:::
 
-### `ApplyPreset(PresetType)`
+## Methods (8)
+
+::: details `ApplyPreset(PresetType)`
 
 ```csharp
 public void ApplyPreset(DewControlSettings_User.PresetType type)
@@ -110,7 +114,9 @@ public void ApplyPreset(DewControlSettings_User.PresetType type)
 | :--- | :--- | :--- |
 | `type` | [`DewControlSettings_User.PresetType`](/api/Global.DewControlSettings_User) |  |
 
-### `Clone()`
+:::
+
+::: details `Clone()`
 
 ```csharp
 public object Clone()
@@ -118,7 +124,9 @@ public object Clone()
 
 **Returns:** `object`
 
-### `GetSettingsValue(string)`
+:::
+
+::: details `GetSettingsValue(string)`
 
 ```csharp
 public object GetSettingsValue(string key)
@@ -131,7 +139,9 @@ public object GetSettingsValue(string key)
 
 **Returns:** `object`
 
-### `GetSettingsValueText(string, out BindingType)`
+:::
+
+::: details `GetSettingsValueText(string, out BindingType)`
 
 ```csharp
 public string GetSettingsValueText(string keys, out BindingType type)
@@ -145,7 +155,9 @@ public string GetSettingsValueText(string keys, out BindingType type)
 
 **Returns:** `string`
 
-### `GetSettingsValueText(string)`
+:::
+
+::: details `GetSettingsValueText(string)`
 
 ```csharp
 public string GetSettingsValueText(string keys)
@@ -158,7 +170,9 @@ public string GetSettingsValueText(string keys)
 
 **Returns:** `string`
 
-### `GetSkillBinding(HeroSkillLocation)`
+:::
+
+::: details `GetSkillBinding(HeroSkillLocation)`
 
 ```csharp
 public DewBinding GetSkillBinding(HeroSkillLocation type)
@@ -171,7 +185,9 @@ public DewBinding GetSkillBinding(HeroSkillLocation type)
 
 **Returns:** `DewBinding`
 
-### `GetSkillEditBinding(HeroSkillLocation)`
+:::
+
+::: details `GetSkillEditBinding(HeroSkillLocation)`
 
 ```csharp
 public DewBinding GetSkillEditBinding(HeroSkillLocation type)
@@ -184,10 +200,14 @@ public DewBinding GetSkillEditBinding(HeroSkillLocation type)
 
 **Returns:** `DewBinding`
 
-### `Validate()`
+:::
+
+::: details `Validate()`
 
 This must be called at least once before using this control settings.
 
 ```csharp
 public void Validate()
 ```
+
+:::

@@ -10,7 +10,9 @@
 public class EntityTransformSync : DewNetworkBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,3 +20,5 @@ public class EntityTransformSync : DewNetworkBehaviour, ILogicUpdate
 | **`FixSmoothTime`** | `public static float FixSmoothTime` |  |
 | **`FixSnapshotLifetime`** | `public static float FixSnapshotLifetime` |  |
 | **`FixWarpDistance`** | `public static float FixWarpDistance` |  |
+
+:::

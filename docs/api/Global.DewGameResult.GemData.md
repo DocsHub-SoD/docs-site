@@ -8,7 +8,9 @@
 public struct DewGameResult.GemData
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public struct DewGameResult.GemData
 | **`netId`** | `public uint netId` |  |
 | **`quality`** | `public int quality` |  |
 
-## Methods
+:::
 
-### `CaptureTooltipFields(Gem)`
+## Methods (2)
+
+::: details `CaptureTooltipFields(Gem)`
 
 ```csharp
 public void CaptureTooltipFields(Gem gem)
@@ -31,10 +35,14 @@ public void CaptureTooltipFields(Gem gem)
 | :--- | :--- | :--- |
 | `gem` | [`Gem`](/api/Global.Gem) |  |
 
-### `GetGem()`
+:::
+
+::: details `GetGem()`
 
 ```csharp
 public Gem GetGem()
 ```
 
 **Returns:** `Gem`
+
+:::

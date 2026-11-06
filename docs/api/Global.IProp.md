@@ -8,7 +8,9 @@
 public interface IProp
 ```
 
-## Properties
+## Properties (5)
+
+::: details Click to expand Properties (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -17,3 +19,5 @@ public interface IProp
 | **`isRegularReward`** | `bool isRegularReward { get; }` |  |
 | **`isSingleton`** | `bool isSingleton { get; }` |  |
 | **`scaleSpawnRateWithPlayers`** | `bool scaleSpawnRateWithPlayers { get; }` |  |
+
+:::

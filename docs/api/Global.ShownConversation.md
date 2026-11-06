@@ -8,10 +8,14 @@
 public struct ShownConversation
 ```
 
-## Fields
+## Fields (3)
+
+::: details Click to expand Fields (3)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`choices`** | `public int[] choices` |  |
 | **`key`** | `public string key` |  |
 | **`lineIndex`** | `public int lineIndex` |  |
+
+:::

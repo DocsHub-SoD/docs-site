@@ -9,7 +9,9 @@
 public class ClientEventManager : NetworkedManagerBase<ClientEventManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (30)
+
+::: details Click to expand Fields (30)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -44,9 +46,11 @@ public class ClientEventManager : NetworkedManagerBase<ClientEventManager>, ILog
 | **`OnTakeManaHeal`** | `public SafeAction<EventInfoHeal> OnTakeManaHeal` |  |
 | **`OnTakeShield`** | `public SafeAction<EventInfoShield> OnTakeShield` |  |
 
-## Methods
+:::
 
-### `AddEvents(Actor)`
+## Methods (15)
+
+::: details `AddEvents(Actor)`
 
 ```csharp
 public virtual void AddEvents(Actor actor)
@@ -57,7 +61,9 @@ public virtual void AddEvents(Actor actor)
 | :--- | :--- | :--- |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
 
-### `InvokeOnApplyElemental(EventInfoApplyElemental)`
+:::
+
+::: details `InvokeOnApplyElemental(EventInfoApplyElemental)`
 
 ```csharp
 public void InvokeOnApplyElemental(EventInfoApplyElemental info)
@@ -68,7 +74,9 @@ public void InvokeOnApplyElemental(EventInfoApplyElemental info)
 | :--- | :--- | :--- |
 | `info` | [`EventInfoApplyElemental`](/api/Global.EventInfoApplyElemental) |  |
 
-### `InvokeOnCastComplete(EventInfoCast)`
+:::
+
+::: details `InvokeOnCastComplete(EventInfoCast)`
 
 ```csharp
 public void InvokeOnCastComplete(EventInfoCast eventInfo)
@@ -79,7 +87,9 @@ public void InvokeOnCastComplete(EventInfoCast eventInfo)
 | :--- | :--- | :--- |
 | `eventInfo` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
-### `InvokeOnChaosUsed(DewPlayer)`
+:::
+
+::: details `InvokeOnChaosUsed(DewPlayer)`
 
 ```csharp
 public void InvokeOnChaosUsed(DewPlayer p)
@@ -90,7 +100,9 @@ public void InvokeOnChaosUsed(DewPlayer p)
 | :--- | :--- | :--- |
 | `p` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
-### `InvokeOnDismantled(Hero, NetworkBehaviour)`
+:::
+
+::: details `InvokeOnDismantled(Hero, NetworkBehaviour)`
 
 ```csharp
 public void InvokeOnDismantled(Hero h, NetworkBehaviour nb)
@@ -102,7 +114,9 @@ public void InvokeOnDismantled(Hero h, NetworkBehaviour nb)
 | `h` | [`Hero`](/api/Global.Hero) |  |
 | `nb` | `Mirror.NetworkBehaviour` |  |
 
-### `InvokeOnGemMergeUpgraded(Hero, Gem)`
+:::
+
+::: details `InvokeOnGemMergeUpgraded(Hero, Gem)`
 
 ```csharp
 public void InvokeOnGemMergeUpgraded(Hero h, Gem g)
@@ -114,7 +128,9 @@ public void InvokeOnGemMergeUpgraded(Hero h, Gem g)
 | `h` | [`Hero`](/api/Global.Hero) |  |
 | `g` | [`Gem`](/api/Global.Gem) |  |
 
-### `InvokeOnIgnoreCC(Entity)`
+:::
+
+::: details `InvokeOnIgnoreCC(Entity)`
 
 ```csharp
 public void InvokeOnIgnoreCC(Entity ent)
@@ -125,7 +141,9 @@ public void InvokeOnIgnoreCC(Entity ent)
 | :--- | :--- | :--- |
 | `ent` | [`Entity`](/api/Global.Entity) |  |
 
-### `InvokeOnItemBought(Hero, NetworkBehaviour)`
+:::
+
+::: details `InvokeOnItemBought(Hero, NetworkBehaviour)`
 
 ```csharp
 public void InvokeOnItemBought(Hero h, NetworkBehaviour nb)
@@ -137,7 +155,9 @@ public void InvokeOnItemBought(Hero h, NetworkBehaviour nb)
 | `h` | [`Hero`](/api/Global.Hero) |  |
 | `nb` | `Mirror.NetworkBehaviour` |  |
 
-### `InvokeOnItemCleansed(Hero, NetworkBehaviour)`
+:::
+
+::: details `InvokeOnItemCleansed(Hero, NetworkBehaviour)`
 
 ```csharp
 public void InvokeOnItemCleansed(Hero h, NetworkBehaviour nb)
@@ -149,7 +169,9 @@ public void InvokeOnItemCleansed(Hero h, NetworkBehaviour nb)
 | `h` | [`Hero`](/api/Global.Hero) |  |
 | `nb` | `Mirror.NetworkBehaviour` |  |
 
-### `InvokeOnItemSold(Hero, NetworkBehaviour)`
+:::
+
+::: details `InvokeOnItemSold(Hero, NetworkBehaviour)`
 
 ```csharp
 public void InvokeOnItemSold(Hero h, NetworkBehaviour nb)
@@ -161,7 +183,9 @@ public void InvokeOnItemSold(Hero h, NetworkBehaviour nb)
 | `h` | [`Hero`](/api/Global.Hero) |  |
 | `nb` | `Mirror.NetworkBehaviour` |  |
 
-### `InvokeOnItemUpgraded(Hero, NetworkBehaviour)`
+:::
+
+::: details `InvokeOnItemUpgraded(Hero, NetworkBehaviour)`
 
 ```csharp
 public void InvokeOnItemUpgraded(Hero h, NetworkBehaviour nb)
@@ -173,7 +197,9 @@ public void InvokeOnItemUpgraded(Hero h, NetworkBehaviour nb)
 | `h` | [`Hero`](/api/Global.Hero) |  |
 | `nb` | `Mirror.NetworkBehaviour` |  |
 
-### `InvokeOnRefreshEntityHealthbar(Entity)`
+:::
+
+::: details `InvokeOnRefreshEntityHealthbar(Entity)`
 
 ```csharp
 public void InvokeOnRefreshEntityHealthbar(Entity e)
@@ -184,19 +210,25 @@ public void InvokeOnRefreshEntityHealthbar(Entity e)
 | :--- | :--- | :--- |
 | `e` | [`Entity`](/api/Global.Entity) |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected override void OnDestroy()
 ```
 
-### `OnStart()`
+:::
+
+::: details `OnStart()`
 
 ```csharp
 public override void OnStart()
 ```
 
-### `RemoveEvents(Actor)`
+:::
+
+::: details `RemoveEvents(Actor)`
 
 ```csharp
 public virtual void RemoveEvents(Actor actor)
@@ -206,3 +238,5 @@ public virtual void RemoveEvents(Actor actor)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `actor` | [`Actor`](/api/Global.Actor) |  |
+
+:::

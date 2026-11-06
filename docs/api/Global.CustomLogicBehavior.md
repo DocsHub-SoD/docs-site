@@ -9,7 +9,9 @@
 public class CustomLogicBehavior : LogicBehaviour, ILogicUpdate
 ```
 
-## Fields
+## Fields (6)
+
+::: details Click to expand Fields (6)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -20,15 +22,19 @@ public class CustomLogicBehavior : LogicBehaviour, ILogicUpdate
 | **`onLogicUpdate`** | `public Action onLogicUpdate` |  |
 | **`onStart`** | `public Action onStart` |  |
 
-## Methods
+:::
 
-### `FrameUpdate()`
+## Methods (6)
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -39,26 +45,36 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `OnDestroy()`
+:::
+
+::: details `OnDestroy()`
 
 ```csharp
 protected virtual void OnDestroy()
 ```
 
-### `OnDisable()`
+:::
+
+::: details `OnDisable()`
 
 ```csharp
 protected override void OnDisable()
 ```
 
-### `OnEnable()`
+:::
+
+::: details `OnEnable()`
 
 ```csharp
 protected override void OnEnable()
 ```
 
-### `Start()`
+:::
+
+::: details `Start()`
 
 ```csharp
 protected virtual void Start()
 ```
+
+:::

@@ -8,9 +8,9 @@
 public class PreloadInterface
 ```
 
-## Methods
+## Methods (5)
 
-### `AddAssetRef<T>(AssetRef<T>)`
+::: details `AddAssetRef&lt;T&gt;(AssetRef&lt;T&gt;)`
 
 ```csharp
 public void AddAssetRef<T>(AssetRef<T> assetRef) where T : Object
@@ -22,7 +22,9 @@ public void AddAssetRef<T>(AssetRef<T> assetRef) where T : Object
 | `assetRef` | `AssetRef<T>` |  |
 | `` | `T` |  |
 
-### `AddFromMonsterPool(MonsterPool)`
+:::
+
+::: details `AddFromMonsterPool(MonsterPool)`
 
 ```csharp
 public void AddFromMonsterPool(MonsterPool pool)
@@ -33,7 +35,9 @@ public void AddFromMonsterPool(MonsterPool pool)
 | :--- | :--- | :--- |
 | `pool` | [`MonsterPool`](/api/Global.MonsterPool) |  |
 
-### `AddGuid(string)`
+:::
+
+::: details `AddGuid(string)`
 
 ```csharp
 public void AddGuid(string guid)
@@ -44,7 +48,9 @@ public void AddGuid(string guid)
 | :--- | :--- | :--- |
 | `guid` | `string` |  |
 
-### `AddType(string, bool)`
+:::
+
+::: details `AddType(string, bool)`
 
 ```csharp
 public void AddType(string type, bool includeDependencies = true)
@@ -56,8 +62,12 @@ public void AddType(string type, bool includeDependencies = true)
 | `type` | `string` |  |
 | `includeDependencies` | `bool` |  |
 
-### `KeepEverything()`
+:::
+
+::: details `KeepEverything()`
 
 ```csharp
 public void KeepEverything()
 ```
+
+:::

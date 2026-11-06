@@ -8,7 +8,9 @@
 public class DewPhysics.EntitySweep
 ```
 
-## Fields
+## Fields (5)
+
+::: details Click to expand Fields (5)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,16 +20,22 @@ public class DewPhysics.EntitySweep
 | **`validator`** | `public AbilityTargetValidator validator` |  |
 | **`validatorSelf`** | `public Entity validatorSelf` |  |
 
-## Properties
+:::
+
+## Properties (2)
+
+::: details Click to expand Properties (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`current`** | `public IReadOnlyList<Entity> current { get; }` |  |
 | **`lastPosition`** | `public Vector3 lastPosition { get; }` |  |
 
-## Methods
+:::
 
-### `Next(Vector3)`
+## Methods (1)
+
+::: details `Next(Vector3)`
 
 ```csharp
 public IReadOnlyList<Entity> Next(Vector3 position)
@@ -39,3 +47,5 @@ public IReadOnlyList<Entity> Next(Vector3 position)
 | `position` | `UnityEngine.Vector3` |  |
 
 **Returns:** `System.Collections.Generic.IReadOnlyList<T><Entity>`
+
+:::

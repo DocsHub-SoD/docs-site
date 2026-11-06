@@ -9,9 +9,13 @@
 public class AttachToCamera : MonoBehaviour
 ```
 
-## Fields
+## Fields (2)
+
+::: details Click to expand Fields (2)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`preserveLocalPosition`** | `[ToggleLeft] public bool preserveLocalPosition` |  |
 | **`preserveLocalRotation`** | `[ToggleLeft] public bool preserveLocalRotation` |  |
+
+:::

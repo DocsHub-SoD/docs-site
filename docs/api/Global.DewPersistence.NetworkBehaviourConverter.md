@@ -8,15 +8,19 @@
 public class DewPersistence.NetworkBehaviourConverter : JsonConverter
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`prevNetIdMap`** | `public readonly Dictionary<uint, NetworkIdentity> prevNetIdMap` | Previous netId to current NetworkIdentity |
 
-## Methods
+:::
 
-### `CanConvert(Type)`
+## Methods (3)
+
+::: details `CanConvert(Type)`
 
 ```csharp
 public override bool CanConvert(Type objectType)
@@ -29,7 +33,9 @@ public override bool CanConvert(Type objectType)
 
 **Returns:** `bool`
 
-### `ReadJson(JsonReader, Type, object, JsonSerializer)`
+:::
+
+::: details `ReadJson(JsonReader, Type, object, JsonSerializer)`
 
 ```csharp
 public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
@@ -45,7 +51,9 @@ public override object ReadJson(JsonReader reader, Type objectType, object exist
 
 **Returns:** `object`
 
-### `WriteJson(JsonWriter, object, JsonSerializer)`
+:::
+
+::: details `WriteJson(JsonWriter, object, JsonSerializer)`
 
 ```csharp
 public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
@@ -57,3 +65,5 @@ public override void WriteJson(JsonWriter writer, object value, JsonSerializer s
 | `writer` | `Newtonsoft.Json.JsonWriter` |  |
 | `value` | `object` |  |
 | `serializer` | `Newtonsoft.Json.JsonSerializer` |  |
+
+:::

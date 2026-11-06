@@ -8,7 +8,9 @@
 public struct DewEffect.PlayAttachedEffectMessage
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public struct DewEffect.PlayAttachedEffectMessage
 | **`path`** | `public string path` |  |
 | **`position`** | `public Vector3 position` |  |
 | **`rotation`** | `public Quaternion rotation` |  |
+
+:::

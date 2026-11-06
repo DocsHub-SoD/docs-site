@@ -9,28 +9,38 @@
 public class DewAchievementItem : DewGameObserverWithProgress
 ```
 
-## Properties
+## Properties (1)
+
+::: details Click to expand Properties (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`grantedStardust`** | `public virtual int grantedStardust { get; }` |  |
 
-## Methods
+:::
 
-### `OnComplete()`
+## Methods (3)
+
+::: details `OnComplete()`
 
 ```csharp
 public override void OnComplete()
 ```
 
-### `OnStartLocalClient()`
+:::
+
+::: details `OnStartLocalClient()`
 
 ```csharp
 public override void OnStartLocalClient()
 ```
 
-### `OnStopLocalClient()`
+:::
+
+::: details `OnStopLocalClient()`
 
 ```csharp
 public override void OnStopLocalClient()
 ```
+
+:::

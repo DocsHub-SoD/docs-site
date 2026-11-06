@@ -8,8 +8,12 @@
 public class PlayLobby_RandomAppearance : MonoBehaviour
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`appearChance`** | `public float appearChance` |  |
+
+:::

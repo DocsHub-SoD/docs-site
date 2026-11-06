@@ -9,15 +9,19 @@
 public class Pickup_HealthOrb : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 ```
 
-## Fields
+## Fields (1)
+
+::: details Click to expand Fields (1)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`amount`** | `public float amount` |  |
 
-## Methods
+:::
 
-### `CanBeUsedBy(Hero)`
+## Methods (2)
+
+::: details `CanBeUsedBy(Hero)`
 
 ```csharp
 protected override bool CanBeUsedBy(Hero hero)
@@ -30,7 +34,9 @@ protected override bool CanBeUsedBy(Hero hero)
 
 **Returns:** `bool`
 
-### `OnPickup(Hero)`
+:::
+
+::: details `OnPickup(Hero)`
 
 ```csharp
 protected override void OnPickup(Hero hero)
@@ -40,3 +46,5 @@ protected override void OnPickup(Hero hero)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `hero` | [`Hero`](/api/Global.Hero) |  |
+
+:::

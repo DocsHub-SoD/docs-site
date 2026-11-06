@@ -10,7 +10,9 @@
 public class ControlManager : ManagerBase<ControlManager>, ILogicUpdate
 ```
 
-## Fields
+## Fields (76)
+
+::: details Click to expand Fields (76)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -91,7 +93,11 @@ public class ControlManager : ManagerBase<ControlManager>, ILogicUpdate
 | **`targetEnemyIndicatorUi`** | `public GameObject targetEnemyIndicatorUi` |  |
 | **`targetEnemyIndicatorWorld`** | `public GameObject targetEnemyIndicatorWorld` |  |
 
-## Properties
+:::
+
+## Properties (13)
+
+::: details Click to expand Properties (13)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -109,9 +115,11 @@ public class ControlManager : ManagerBase<ControlManager>, ILogicUpdate
 | **`shouldProcessCharacterInputAllowKnockedOut`** | `public bool shouldProcessCharacterInputAllowKnockedOut { get; }` |  |
 | **`targetEnemy`** | `public Entity targetEnemy { get; }` | Available when controlling with gamepad. |
 
-## Methods
+:::
 
-### `AreControlsInverted()`
+## Methods (40)
+
+::: details `AreControlsInverted()`
 
 ```csharp
 public static bool AreControlsInverted()
@@ -119,13 +127,17 @@ public static bool AreControlsInverted()
 
 **Returns:** `bool`
 
-### `Awake()`
+:::
+
+::: details `Awake()`
 
 ```csharp
 protected override void Awake()
 ```
 
-### `CastAbility(AbilityTrigger, CastInfo, bool)`
+:::
+
+::: details `CastAbility(AbilityTrigger, CastInfo, bool)`
 
 ```csharp
 public void CastAbility(AbilityTrigger trigger, CastInfo info, bool shouldMoveToCast)
@@ -138,7 +150,9 @@ public void CastAbility(AbilityTrigger trigger, CastInfo info, bool shouldMoveTo
 | `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `shouldMoveToCast` | `bool` |  |
 
-### `CastAbilityAtCursor(AbilityTrigger)`
+:::
+
+::: details `CastAbilityAtCursor(AbilityTrigger)`
 
 Returns whether the cast attempt was successful or not.
 
@@ -153,7 +167,9 @@ public bool CastAbilityAtCursor(AbilityTrigger trigger)
 
 **Returns:** `bool`
 
-### `CastAbilityAuto(AbilityTrigger)`
+:::
+
+::: details `CastAbilityAuto(AbilityTrigger)`
 
 ```csharp
 public bool CastAbilityAuto(AbilityTrigger trigger)
@@ -166,7 +182,9 @@ public bool CastAbilityAuto(AbilityTrigger trigger)
 
 **Returns:** `bool`
 
-### `CastAbilityGamepad(AbilityTrigger)`
+:::
+
+::: details `CastAbilityGamepad(AbilityTrigger)`
 
 ```csharp
 public bool CastAbilityGamepad(AbilityTrigger trigger)
@@ -179,7 +197,9 @@ public bool CastAbilityGamepad(AbilityTrigger trigger)
 
 **Returns:** `bool`
 
-### `CastAbilityInDirectionOfMovement(AbilityTrigger)`
+:::
+
+::: details `CastAbilityInDirectionOfMovement(AbilityTrigger)`
 
 ```csharp
 public bool CastAbilityInDirectionOfMovement(AbilityTrigger trigger)
@@ -192,7 +212,9 @@ public bool CastAbilityInDirectionOfMovement(AbilityTrigger trigger)
 
 **Returns:** `bool`
 
-### `CastAbilityWithAim(AbilityTrigger)`
+:::
+
+::: details `CastAbilityWithAim(AbilityTrigger)`
 
 ```csharp
 public bool CastAbilityWithAim(AbilityTrigger trigger)
@@ -205,25 +227,33 @@ public bool CastAbilityWithAim(AbilityTrigger trigger)
 
 **Returns:** `bool`
 
-### `DisableCharacterControls()`
+:::
+
+::: details `DisableCharacterControls()`
 
 ```csharp
 public void DisableCharacterControls()
 ```
 
-### `EnableCharacterControls()`
+:::
+
+::: details `EnableCharacterControls()`
 
 ```csharp
 public void EnableCharacterControls()
 ```
 
-### `FrameUpdate()`
+:::
+
+::: details `FrameUpdate()`
 
 ```csharp
 public override void FrameUpdate()
 ```
 
-### `GetAimAssistAttackTargetAngleGamepad()`
+:::
+
+::: details `GetAimAssistAttackTargetAngleGamepad()`
 
 ```csharp
 public static float GetAimAssistAttackTargetAngleGamepad()
@@ -231,7 +261,9 @@ public static float GetAimAssistAttackTargetAngleGamepad()
 
 **Returns:** `float`
 
-### `GetAimAssistAttackTargetRange()`
+:::
+
+::: details `GetAimAssistAttackTargetRange()`
 
 ```csharp
 public static float GetAimAssistAttackTargetRange()
@@ -239,7 +271,9 @@ public static float GetAimAssistAttackTargetRange()
 
 **Returns:** `float`
 
-### `GetAimAssistSphereCastRadius()`
+:::
+
+::: details `GetAimAssistSphereCastRadius()`
 
 ```csharp
 public static float GetAimAssistSphereCastRadius()
@@ -247,7 +281,9 @@ public static float GetAimAssistSphereCastRadius()
 
 **Returns:** `float`
 
-### `GetCastInfo(CastMethodData, AbilityTargetValidator, CastInfo)`
+:::
+
+::: details `GetCastInfo(CastMethodData, AbilityTargetValidator, CastInfo)`
 
 ```csharp
 public CastInfo GetCastInfo(CastMethodData method, AbilityTargetValidator targetValidator, CastInfo prev = default)
@@ -262,7 +298,9 @@ public CastInfo GetCastInfo(CastMethodData method, AbilityTargetValidator target
 
 **Returns:** `CastInfo`
 
-### `GetEntityFromScreenPoint(Vector2, Entity, IBinaryEntityValidator, float)`
+:::
+
+::: details `GetEntityFromScreenPoint(Vector2, Entity, IBinaryEntityValidator, float)`
 
 ```csharp
 public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Entity self, IBinaryEntityValidator validator, float sphereCastRadius = -1)
@@ -278,7 +316,9 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Entity self, 
 
 **Returns:** `Entity`
 
-### `GetEntityFromScreenPoint(Vector2, IEntityValidator, float)`
+:::
+
+::: details `GetEntityFromScreenPoint(Vector2, IEntityValidator, float)`
 
 ```csharp
 public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, IEntityValidator validator, float sphereCastRadius = -1)
@@ -293,7 +333,9 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, IEntityValida
 
 **Returns:** `Entity`
 
-### `GetEntityFromScreenPoint(Vector2, Func<Entity, bool>, float)`
+:::
+
+::: details `GetEntityFromScreenPoint(Vector2, Func&lt;Entity, bool&gt;, float)`
 
 ```csharp
 public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Func<Entity, bool> validator, float sphereCastRadius = -1)
@@ -308,7 +350,9 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Func<Entity, 
 
 **Returns:** `Entity`
 
-### `GetEntityFromScreenPoint(Vector2, float)`
+:::
+
+::: details `GetEntityFromScreenPoint(Vector2, float)`
 
 ```csharp
 public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, float sphereCastRadius = -1)
@@ -322,7 +366,9 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, float sphereC
 
 **Returns:** `Entity`
 
-### `GetEntityOnCursor(Entity, IBinaryEntityValidator, float)`
+:::
+
+::: details `GetEntityOnCursor(Entity, IBinaryEntityValidator, float)`
 
 ```csharp
 public static Entity GetEntityOnCursor(Entity self, IBinaryEntityValidator validator, float sphereCastRadius = -1)
@@ -337,7 +383,9 @@ public static Entity GetEntityOnCursor(Entity self, IBinaryEntityValidator valid
 
 **Returns:** `Entity`
 
-### `GetEntityOnCursor(IEntityValidator, float)`
+:::
+
+::: details `GetEntityOnCursor(IEntityValidator, float)`
 
 ```csharp
 public static Entity GetEntityOnCursor(IEntityValidator validator, float sphereCastRadius = -1)
@@ -351,7 +399,9 @@ public static Entity GetEntityOnCursor(IEntityValidator validator, float sphereC
 
 **Returns:** `Entity`
 
-### `GetEntityOnCursor(Func<Entity, bool>, float)`
+:::
+
+::: details `GetEntityOnCursor(Func&lt;Entity, bool&gt;, float)`
 
 ```csharp
 public static Entity GetEntityOnCursor(Func<Entity, bool> validator, float sphereCastRadius = -1)
@@ -365,7 +415,9 @@ public static Entity GetEntityOnCursor(Func<Entity, bool> validator, float spher
 
 **Returns:** `Entity`
 
-### `GetEntityOnCursor(float)`
+:::
+
+::: details `GetEntityOnCursor(float)`
 
 ```csharp
 public static Entity GetEntityOnCursor(float sphereCastRadius = -1)
@@ -378,7 +430,9 @@ public static Entity GetEntityOnCursor(float sphereCastRadius = -1)
 
 **Returns:** `Entity`
 
-### `GetFromScreenPoint<T>(Vector2, int, Func<T, bool>, float)`
+:::
+
+::: details `GetFromScreenPoint&lt;T&gt;(Vector2, int, Func&lt;T, bool&gt;, float)`
 
 ```csharp
 public static T GetFromScreenPoint<T>(Vector2 screenPoint, int layerMask, Func<T, bool> validator = null, float sphereCastRadius = -1)
@@ -395,7 +449,9 @@ public static T GetFromScreenPoint<T>(Vector2 screenPoint, int layerMask, Func<T
 
 **Returns:** `T`
 
-### `GetHighlightableFromScreenPoint(Vector2)`
+:::
+
+::: details `GetHighlightableFromScreenPoint(Vector2)`
 
 ```csharp
 public static HighlightProvider GetHighlightableFromScreenPoint(Vector2 screenPoint)
@@ -408,7 +464,9 @@ public static HighlightProvider GetHighlightableFromScreenPoint(Vector2 screenPo
 
 **Returns:** `HighlightProvider`
 
-### `GetHighlightableOnCursor()`
+:::
+
+::: details `GetHighlightableOnCursor()`
 
 ```csharp
 public static HighlightProvider GetHighlightableOnCursor()
@@ -416,7 +474,9 @@ public static HighlightProvider GetHighlightableOnCursor()
 
 **Returns:** `HighlightProvider`
 
-### `GetInteractableFromScreenPoint(Vector2, float)`
+:::
+
+::: details `GetInteractableFromScreenPoint(Vector2, float)`
 
 ```csharp
 public static IInteractable GetInteractableFromScreenPoint(Vector2 screenPoint, float sphereCastRadius = -1)
@@ -430,7 +490,9 @@ public static IInteractable GetInteractableFromScreenPoint(Vector2 screenPoint, 
 
 **Returns:** `IInteractable`
 
-### `GetInteractableOnCursor()`
+:::
+
+::: details `GetInteractableOnCursor()`
 
 ```csharp
 public static IInteractable GetInteractableOnCursor()
@@ -438,7 +500,9 @@ public static IInteractable GetInteractableOnCursor()
 
 **Returns:** `IInteractable`
 
-### `GetMousePositionWithInversionInMind()`
+:::
+
+::: details `GetMousePositionWithInversionInMind()`
 
 ```csharp
 public static Vector2 GetMousePositionWithInversionInMind()
@@ -446,7 +510,9 @@ public static Vector2 GetMousePositionWithInversionInMind()
 
 **Returns:** `UnityEngine.Vector2`
 
-### `GetSkillBinding(HeroSkillLocation)`
+:::
+
+::: details `GetSkillBinding(HeroSkillLocation)`
 
 ```csharp
 public DewBinding GetSkillBinding(HeroSkillLocation type)
@@ -459,7 +525,9 @@ public DewBinding GetSkillBinding(HeroSkillLocation type)
 
 **Returns:** `DewBinding`
 
-### `GetSkillInputTrigger(HeroSkillLocation)`
+:::
+
+::: details `GetSkillInputTrigger(HeroSkillLocation)`
 
 ```csharp
 public DewInputTrigger GetSkillInputTrigger(HeroSkillLocation type)
@@ -472,7 +540,9 @@ public DewInputTrigger GetSkillInputTrigger(HeroSkillLocation type)
 
 **Returns:** `DewInputTrigger`
 
-### `GetWorldPositionOnGroundFromScreenPoint(Vector2, bool)`
+:::
+
+::: details `GetWorldPositionOnGroundFromScreenPoint(Vector2, bool)`
 
 ```csharp
 public static Vector3 GetWorldPositionOnGroundFromScreenPoint(Vector2 screenPoint, bool forDirectionalAttacks)
@@ -486,7 +556,9 @@ public static Vector3 GetWorldPositionOnGroundFromScreenPoint(Vector2 screenPoin
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetWorldPositionOnGroundFromViewportPoint(Vector2, bool)`
+:::
+
+::: details `GetWorldPositionOnGroundFromViewportPoint(Vector2, bool)`
 
 ```csharp
 public static Vector3 GetWorldPositionOnGroundFromViewportPoint(Vector2 viewportPoint, bool forDirectionalAttacks)
@@ -500,7 +572,9 @@ public static Vector3 GetWorldPositionOnGroundFromViewportPoint(Vector2 viewport
 
 **Returns:** `UnityEngine.Vector3`
 
-### `GetWorldPositionOnGroundOnCursor(bool)`
+:::
+
+::: details `GetWorldPositionOnGroundOnCursor(bool)`
 
 ```csharp
 public static Vector3 GetWorldPositionOnGroundOnCursor(bool forDirectionalAttacks = false)
@@ -513,7 +587,9 @@ public static Vector3 GetWorldPositionOnGroundOnCursor(bool forDirectionalAttack
 
 **Returns:** `UnityEngine.Vector3`
 
-### `IsInputFieldFocused()`
+:::
+
+::: details `IsInputFieldFocused()`
 
 ```csharp
 public static bool IsInputFieldFocused()
@@ -521,7 +597,9 @@ public static bool IsInputFieldFocused()
 
 **Returns:** `bool`
 
-### `LogicUpdate(float)`
+:::
+
+::: details `LogicUpdate(float)`
 
 ```csharp
 public override void LogicUpdate(float dt)
@@ -532,13 +610,17 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `SendPingGamepad()`
+:::
+
+::: details `SendPingGamepad()`
 
 ```csharp
 public void SendPingGamepad()
 ```
 
-### `SetCastByKeyFlag(AbilityTrigger, bool, DewInputTrigger)`
+:::
+
+::: details `SetCastByKeyFlag(AbilityTrigger, bool, DewInputTrigger)`
 
 ```csharp
 public void SetCastByKeyFlag(AbilityTrigger trigger, bool value, DewInputTrigger it)
@@ -551,7 +633,9 @@ public void SetCastByKeyFlag(AbilityTrigger trigger, bool value, DewInputTrigger
 | `value` | `bool` |  |
 | `it` | [`DewInputTrigger`](/api/Global.DewInputTrigger) |  |
 
-### `ShouldCastInDirectionOfMovement(AbilityTrigger)`
+:::
+
+::: details `ShouldCastInDirectionOfMovement(AbilityTrigger)`
 
 ```csharp
 public bool ShouldCastInDirectionOfMovement(AbilityTrigger trigger)
@@ -564,10 +648,14 @@ public bool ShouldCastInDirectionOfMovement(AbilityTrigger trigger)
 
 **Returns:** `bool`
 
-### `ShouldProcessPingInput()`
+:::
+
+::: details `ShouldProcessPingInput()`
 
 ```csharp
 public bool ShouldProcessPingInput()
 ```
 
 **Returns:** `bool`
+
+:::

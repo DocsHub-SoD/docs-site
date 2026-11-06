@@ -8,7 +8,9 @@
 public static class DewElementals
 ```
 
-## Fields
+## Fields (7)
+
+::: details Click to expand Fields (7)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -19,3 +21,5 @@ public static class DewElementals
 | **`FireDamageInterval`** | `public const float FireDamageInterval = 0.25` |  |
 | **`FireDamageMultiplierPerStack`** | `public const float FireDamageMultiplierPerStack = 1.3` |  |
 | **`LightDamageAmpPerStack`** | `public const float LightDamageAmpPerStack = 0.05` |  |
+
+:::

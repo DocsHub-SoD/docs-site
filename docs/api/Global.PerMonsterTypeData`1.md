@@ -9,7 +9,9 @@
 public struct PerMonsterTypeData<T>
 ```
 
-## Fields
+## Fields (4)
+
+::: details Click to expand Fields (4)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -18,9 +20,11 @@ public struct PerMonsterTypeData<T>
 | **`miniBoss`** | `public T miniBoss` |  |
 | **`normal`** | `public T normal` |  |
 
-## Methods
+:::
 
-### `Get(MonsterType)`
+## Methods (2)
+
+::: details `Get(MonsterType)`
 
 ```csharp
 public T Get(Monster.MonsterType type)
@@ -33,7 +37,9 @@ public T Get(Monster.MonsterType type)
 
 **Returns:** `T`
 
-### `Set(MonsterType, T)`
+:::
+
+::: details `Set(MonsterType, T)`
 
 ```csharp
 public void Set(Monster.MonsterType type, T value)
@@ -44,3 +50,5 @@ public void Set(Monster.MonsterType type, T value)
 | :--- | :--- | :--- |
 | `type` | [`Monster.MonsterType`](/api/Global.Monster) |  |
 | `value` | `T` |  |
+
+:::

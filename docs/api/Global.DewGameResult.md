@@ -8,7 +8,9 @@
 public class DewGameResult
 ```
 
-## Fields
+## Fields (9)
+
+::: details Click to expand Fields (9)
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
@@ -21,3 +23,5 @@ public class DewGameResult
 | **`startTimestamp`** | `public long startTimestamp` |  |
 | **`visitedLocations`** | `public int visitedLocations` |  |
 | **`visitedWorlds`** | `public int visitedWorlds` |  |
+
+:::
