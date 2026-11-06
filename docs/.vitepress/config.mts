@@ -8,17 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Getting Started", link: "/getting-started" },
-      { text: "Graph View", link: "/graph" },
-      { text: "API Catalog", link: "/catalog" },
-      { text: "Enums (118)", link: "/enums" },
-      { text: "AI Workflows", link: "/ai-workflows" },
-      {
-        text: "v1.0 (Latest)",
-        items: [
-          { text: "v1.0 (Current)", link: "/" },
-          { text: "Version History", link: "/catalog" }
-        ]
-      }
+      { text: "Graph View", link: "/graph" }
     ],
     search: {
       provider: 'local'
@@ -68,8 +58,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/DocsHub-SoD' }
     ],
     footer: {
-      message: 'Maintained by the Shape of Dreams Modding Community',
-      copyright: 'Shape of Dreams API Documentation'
+      message: 'Independent community documentation project. Not affiliated with, endorsed, or sponsored by Lizard Smoothie or Shape of Dreams developers.',
+      copyright: 'Shape of Dreams is a trademark of Lizard Smoothie. All game assets, class names, and code references belong to their respective copyright holders.'
     }
   }
 })
