@@ -1,5 +1,6 @@
 # Class: ActionAttackMove
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [ActionBase](/api/Global.ActionBase)
@@ -26,7 +27,7 @@ public static Entity FindAttackMoveTarget(Entity ent, Vector3 sortPivot)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 | `sortPivot` | `UnityEngine.Vector3` |  |
 
 **Returns:** `Entity`

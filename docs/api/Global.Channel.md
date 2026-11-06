@@ -1,5 +1,6 @@
 # Class: Channel
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -16,7 +17,7 @@ public class Channel
 | **`isAttack`** | `public bool isAttack` | Only a single attack channel can exist in an entity. |
 | **`onCancel`** | `public Action onCancel` | Callback function to be called when this channel has been canceled.This can be because of either an invalidation flag from any of the validators, or cancelable block being canceled by an entity. |
 | **`onComplete`** | `public Action onComplete` | Callback function to be called when this channel has been successfully completed. |
-| **`onTick`** | `public Action&lt;float&gt; onTick` | Called every logic update tick while channel is alive. |
+| **`onTick`** | `public Action<float> onTick` | Called every logic update tick while channel is alive. |
 | **`uncancellableTime`** | `public float uncancellableTime` | If this channel is cancellable, it won't be cancellable during this period to prevent accidental cancel. |
 
 ## Properties
@@ -54,7 +55,7 @@ public Channel AddOnComplete(Action callback)
 
 **Returns:** `Channel`
 
-### `AddOnTick(Action&lt;float&gt;)`
+### `AddOnTick(Action<float>)`
 
 ```csharp
 public Channel AddOnTick(Action<float> callback)
@@ -63,7 +64,7 @@ public Channel AddOnTick(Action<float> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `System.Action&lt;T&gt;&lt;float&gt;` |  |
+| `callback` | `System.Action<T><float>` |  |
 
 **Returns:** `Channel`
 
@@ -78,8 +79,8 @@ public Channel AddValidation(IBinaryEntityValidator validator, Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `Channel`
 
@@ -94,7 +95,7 @@ public Channel AddValidation(IEntityValidator validator)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
 
 **Returns:** `Channel`
 
@@ -129,6 +130,6 @@ public Channel Dispatch(Entity e)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `e` | [Entity](/api/Global.Entity) |  |
+| `e` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `Channel`

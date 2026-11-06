@@ -1,5 +1,6 @@
 # Class: AudioManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [AudioManager](/api/Global.AudioManager)
@@ -12,8 +13,7 @@ public class AudioManager : ManagerBase<AudioManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`defaultCurve`** | `[Title("Volume Roll-offs", null, TitleAlignments.Left, true, true)]
-public AnimationCurve defaultCurve` |  |
+| **`defaultCurve`** | `[Title("Volume Roll-offs", null, TitleAlignments.Left, true, true)] public AnimationCurve defaultCurve` |  |
 | **`gameBoss`** | `public AudioMixerGroup gameBoss` |  |
 | **`gameEnvironment`** | `public AudioMixerGroup gameEnvironment` |  |
 | **`gameOtherPlayers`** | `public AudioMixerGroup gameOtherPlayers` |  |
@@ -57,7 +57,7 @@ public static bool NeedsSetupEverytime(AudioType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [AudioType](/api/Global.AudioType) |  |
+| `type` | [`AudioType`](/api/Global.AudioType) |  |
 
 **Returns:** `bool`
 
@@ -93,9 +93,9 @@ public void SetupAudioSource(AudioSource source, AudioType type, AudioSpaceType 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `source` | `UnityEngine.AudioSource` |  |
-| `type` | [AudioType](/api/Global.AudioType) |  |
-| `space` | [AudioSpaceType](/api/Global.AudioSpaceType) |  |
-| `rolloff` | [DewAudioRollOffType](/api/Global.DewAudioRollOffType) |  |
+| `type` | [`AudioType`](/api/Global.AudioType) |  |
+| `space` | [`AudioSpaceType`](/api/Global.AudioSpaceType) |  |
+| `rolloff` | [`DewAudioRollOffType`](/api/Global.DewAudioRollOffType) |  |
 | `forceCriticalPriority` | `bool` |  |
 
 ### `UpdateMixerAttenuations()`

@@ -1,5 +1,6 @@
 # Class: DewProfile
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,62 +12,62 @@ public class DewProfile
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`accessories`** | `public Dictionary&lt;string, DewProfile.CosmeticsData&gt; accessories` |  |
-| **`achievements`** | `public Dictionary&lt;string, DewProfile.AchievementData&gt; achievements` |  |
-| **`artifacts`** | `public Dictionary&lt;string, DewProfile.UnlockData&gt; artifacts` | Contains all artifacts in the game, including the ones that are excluded from the pool. |
+| **`accessories`** | `public Dictionary<string, DewProfile.CosmeticsData> accessories` |  |
+| **`achievements`** | `public Dictionary<string, DewProfile.AchievementData> achievements` |  |
+| **`artifacts`** | `public Dictionary<string, DewProfile.UnlockData> artifacts` | Contains all artifacts in the game, including the ones that are excluded from the pool. |
 | **`audio`** | `public DewAudioSettings_User audio` |  |
 | **`completedReveries`** | `public int completedReveries` |  |
 | **`controls`** | `public DewControlSettings_User controls` |  |
 | **`creationDate`** | `public long creationDate` |  |
 | **`CurrentSaveVersion`** | `public const int CurrentSaveVersion = 9` |  |
-| **`dejavuCostReductionPeriodTimestamp`** | `public Dictionary&lt;string, long&gt; dejavuCostReductionPeriodTimestamp` |  |
+| **`dejavuCostReductionPeriodTimestamp`** | `public Dictionary<string, long> dejavuCostReductionPeriodTimestamp` |  |
 | **`didMeetDreamTeller`** | `public bool didMeetDreamTeller` |  |
 | **`didPlayTutorial`** | `public bool didPlayTutorial` |  |
 | **`didReadConstellationNotice`** | `public bool didReadConstellationNotice` |  |
 | **`didReadLoopNotice`** | `public bool didReadLoopNotice` |  |
 | **`didReadPrivateDemoNotice`** | `public bool didReadPrivateDemoNotice` |  |
 | **`didRewardMastery`** | `public bool didRewardMastery` |  |
-| **`doneTutorials`** | `public List&lt;string&gt; doneTutorials` |  |
-| **`emotes`** | `public Dictionary&lt;string, DewProfile.CosmeticsData&gt; emotes` |  |
-| **`equippedEmotes`** | `public List&lt;string&gt; equippedEmotes` |  |
-| **`experienceFlags`** | `public List&lt;string&gt; experienceFlags` |  |
-| **`favoriteGameResults`** | `public List&lt;DewGameResult&gt; favoriteGameResults` |  |
+| **`doneTutorials`** | `public List<string> doneTutorials` |  |
+| **`emotes`** | `public Dictionary<string, DewProfile.CosmeticsData> emotes` |  |
+| **`equippedEmotes`** | `public List<string> equippedEmotes` |  |
+| **`experienceFlags`** | `public List<string> experienceFlags` |  |
+| **`favoriteGameResults`** | `public List<DewGameResult> favoriteGameResults` |  |
 | **`freeVersionPlayTimeMinutes`** | `public long freeVersionPlayTimeMinutes` |  |
 | **`gameplay`** | `public DewGameplaySettings_User gameplay` |  |
-| **`gems`** | `public Dictionary&lt;string, DewProfile.UnlockData&gt; gems` | Contains all gems in the game, including the ones that are excluded from the pool. |
+| **`gems`** | `public Dictionary<string, DewProfile.UnlockData> gems` | Contains all gems in the game, including the ones that are excluded from the pool. |
 | **`guid`** | `public string guid` | This will never change, unless this profile is from a different Steam account. |
-| **`heroEquippedAccs`** | `public Dictionary&lt;string, List&lt;string&gt;&gt; heroEquippedAccs` |  |
-| **`heroes`** | `public Dictionary&lt;string, DewProfile.UnlockData&gt; heroes` | Contains all heroes in the game. |
-| **`heroLoadouts`** | `public Dictionary&lt;string, List&lt;HeroLoadoutData&gt;&gt; heroLoadouts` |  |
-| **`heroSelectedSkins`** | `public Dictionary&lt;string, string&gt; heroSelectedSkins` |  |
-| **`heroUnlockedStarSlots`** | `public Dictionary&lt;string, DewProfile.HeroStarSlotUnlockData&gt; heroUnlockedStarSlots` |  |
+| **`heroEquippedAccs`** | `public Dictionary<string, List<string>> heroEquippedAccs` |  |
+| **`heroes`** | `public Dictionary<string, DewProfile.UnlockData> heroes` | Contains all heroes in the game. |
+| **`heroLoadouts`** | `public Dictionary<string, List<HeroLoadoutData>> heroLoadouts` |  |
+| **`heroSelectedSkins`** | `public Dictionary<string, string> heroSelectedSkins` |  |
+| **`heroUnlockedStarSlots`** | `public Dictionary<string, DewProfile.HeroStarSlotUnlockData> heroUnlockedStarSlots` |  |
 | **`language`** | `public string language` |  |
-| **`lastGameResults`** | `public List&lt;DewGameResult&gt; lastGameResults` |  |
-| **`lastReverieTypes`** | `public List&lt;string&gt; lastReverieTypes` |  |
+| **`lastGameResults`** | `public List<DewGameResult> lastGameResults` |  |
+| **`lastReverieTypes`** | `public List<string> lastReverieTypes` |  |
 | **`lastSteamId`** | `public string lastSteamId` |  |
 | **`lastUnrewardedGameResult`** | `public DewGameResult lastUnrewardedGameResult` |  |
 | **`lastUpsert`** | `public long lastUpsert` |  |
-| **`lucidDreams`** | `public Dictionary&lt;string, DewProfile.UnlockData&gt; lucidDreams` | Contains all lucid dreams in the game, including the ones that are excluded from the pool. |
+| **`lucidDreams`** | `public Dictionary<string, DewProfile.UnlockData> lucidDreams` | Contains all lucid dreams in the game, including the ones that are excluded from the pool. |
 | **`maxObliterationSlots`** | `public int maxObliterationSlots` |  |
 | **`name`** | `public string name` |  |
-| **`nametags`** | `public Dictionary&lt;string, DewProfile.CosmeticsData&gt; nametags` |  |
-| **`newStars`** | `public Dictionary&lt;string, DewProfile.StarData&gt; newStars` |  |
+| **`nametags`** | `public Dictionary<string, DewProfile.CosmeticsData> nametags` |  |
+| **`newStars`** | `public Dictionary<string, DewProfile.StarData> newStars` |  |
 | **`nextRerollReplenishTimestamp`** | `public long nextRerollReplenishTimestamp` |  |
-| **`preferredGameSettings`** | `public Dictionary&lt;string, PreferredGameSettings&gt; preferredGameSettings` |  |
+| **`preferredGameSettings`** | `public Dictionary<string, PreferredGameSettings> preferredGameSettings` |  |
 | **`preferredNametag`** | `public string preferredNametag` |  |
-| **`receivedLevelUpRewards`** | `public Dictionary&lt;string, int&gt; receivedLevelUpRewards` |  |
-| **`recentlyConcededGames`** | `public List&lt;DewProfile.ConcededGameData&gt; recentlyConcededGames` |  |
+| **`receivedLevelUpRewards`** | `public Dictionary<string, int> receivedLevelUpRewards` |  |
+| **`recentlyConcededGames`** | `public List<DewProfile.ConcededGameData> recentlyConcededGames` |  |
 | **`remainingRerolls`** | `public int remainingRerolls` |  |
-| **`reverieSlots`** | `public List&lt;DewProfile.DailyReverieData&gt; reverieSlots` |  |
+| **`reverieSlots`** | `public List<DewProfile.DailyReverieData> reverieSlots` |  |
 | **`saveVersion`** | `public int saveVersion` |  |
-| **`seenGuides`** | `public List&lt;string&gt; seenGuides` |  |
-| **`skills`** | `public Dictionary&lt;string, DewProfile.UnlockData&gt; skills` | Contains all skills in the game, including the ones that are character only or excluded from the pool. |
-| **`skins`** | `public Dictionary&lt;string, DewProfile.CosmeticsData&gt; skins` |  |
+| **`seenGuides`** | `public List<string> seenGuides` |  |
+| **`skills`** | `public Dictionary<string, DewProfile.UnlockData> skills` | Contains all skills in the game, including the ones that are character only or excluded from the pool. |
+| **`skins`** | `public Dictionary<string, DewProfile.CosmeticsData> skins` |  |
 | **`specialReverie`** | `public DewProfile.SpecialReverieData specialReverie` |  |
 | **`spentStardust`** | `public int spentStardust` |  |
 | **`stardust`** | `public int stardust` |  |
-| **`stardustPurchases`** | `public List&lt;DewProfile.PurchaseData&gt; stardustPurchases` |  |
-| **`stars`** | `public Dictionary&lt;string, DewProfile.StarData&gt; stars` | This is obsolete in non-demo builds. |
+| **`stardustPurchases`** | `public List<DewProfile.PurchaseData> stardustPurchases` |  |
+| **`stars`** | `public Dictionary<string, DewProfile.StarData> stars` | This is obsolete in non-demo builds. |
 | **`totalPlayTimeMinutes`** | `public long totalPlayTimeMinutes` |  |
 
 ## Methods
@@ -265,7 +266,7 @@ public void LockSkin(string ntName)
 | :--- | :--- | :--- |
 | `ntName` | `string` |  |
 
-### `RefundPurchase(Func&lt;PurchaseData, bool&gt;)`
+### `RefundPurchase(Func<PurchaseData, bool>)`
 
 ```csharp
 public int RefundPurchase(Func<DewProfile.PurchaseData, bool> condition)
@@ -274,7 +275,7 @@ public int RefundPurchase(Func<DewProfile.PurchaseData, bool> condition)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `condition` | [System.Func&lt;T, TResult&gt;&lt;DewProfile.PurchaseData,bool&gt;](/api/Global.DewProfile) |  |
+| `condition` | [`System.Func<T, TResult><DewProfile.PurchaseData,bool>`](/api/Global.DewProfile) |  |
 
 **Returns:** `int`
 

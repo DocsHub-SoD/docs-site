@@ -1,5 +1,6 @@
 # Class: DewBuildProfile
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,12 +14,9 @@ public class DewBuildProfile : ScriptableObject
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`bonusMemoryHaste`** | `public float bonusMemoryHaste` |  |
-| **`buildType`** | `[HideLabel]
-[EnumToggleButtons]
-public BuildType buildType` |  |
+| **`buildType`** | `[HideLabel] [EnumToggleButtons] public BuildType buildType` |  |
 | **`codenameSuffix`** | `public string codenameSuffix` |  |
-| **`content`** | `[Title("Game", null, TitleAlignments.Left, true, true)]
-public DewGameContentSettings content` |  |
+| **`content`** | `[Title("Game", null, TitleAlignments.Left, true, true)] public DewGameContentSettings content` |  |
 | **`CurrentBuildProfileAssetPath`** | `public static string CurrentBuildProfileAssetPath` |  |
 | **`customRewardFlow`** | `public RoomRewardFlowItemType[] customRewardFlow` |  |
 | **`customRewardFlowFirstTime`** | `public RoomRewardFlowItemType[] customRewardFlowFirstTime` |  |
@@ -32,16 +30,12 @@ public DewGameContentSettings content` |  |
 | **`killGoldMultiplier`** | `public float killGoldMultiplier` |  |
 | **`luckShrineInPoolChance`** | `public float luckShrineInPoolChance` |  |
 | **`luckShrineMinZoneIndex`** | `public int luckShrineMinZoneIndex` |  |
-| **`platform`** | `[HideLabel]
-[EnumToggleButtons]
-public PlatformType platform` |  |
-| **`savePrefix`** | `[Title("System", null, TitleAlignments.Left, true, true)]
-public string savePrefix` |  |
+| **`platform`** | `[HideLabel] [EnumToggleButtons] public PlatformType platform` |  |
+| **`savePrefix`** | `[Title("System", null, TitleAlignments.Left, true, true)] public string savePrefix` |  |
 | **`stardustGainMultiplier`** | `public float stardustGainMultiplier` |  |
 | **`startDreamDust`** | `public int startDreamDust` |  |
 | **`startGold`** | `public int startGold` |  |
-| **`useSteamLobbyAndRelay`** | `[ShowIf("@platform == PlatformType.STEAM", true)]
-public bool useSteamLobbyAndRelay` |  |
+| **`useSteamLobbyAndRelay`** | `[ShowIf("@platform == PlatformType.STEAM", true)] public bool useSteamLobbyAndRelay` |  |
 | **`worldNodeCountOffset`** | `public int worldNodeCountOffset` |  |
 
 ## Properties
@@ -95,7 +89,7 @@ public bool HasFeature(BuildFeatureTag tag)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `tag` | [BuildFeatureTag](/api/Global.BuildFeatureTag) |  |
+| `tag` | [`BuildFeatureTag`](/api/Global.BuildFeatureTag) |  |
 
 **Returns:** `bool`
 

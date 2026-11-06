@@ -1,5 +1,6 @@
 # Class: SkillVisualOverrideItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,14 +16,10 @@ public class SkillVisualOverrideItem
 | **`changeHue`** | `public bool changeHue` |  |
 | **`changeSaturation`** | `public bool changeSaturation` |  |
 | **`changeValue`** | `public bool changeValue` |  |
-| **`hue`** | `[Range(0, 360)]
-[ShowIf("changeHue", true)]
-public float hue` |  |
-| **`saturationMultiplier`** | `[ShowIf("changeSaturation", true)]
-public float saturationMultiplier` |  |
+| **`hue`** | `[Range(0, 360)] [ShowIf("changeHue", true)] public float hue` |  |
+| **`saturationMultiplier`** | `[ShowIf("changeSaturation", true)] public float saturationMultiplier` |  |
 | **`targets`** | `public string[] targets` |  |
-| **`valueMultiplier`** | `[ShowIf("changeValue", true)]
-public float valueMultiplier` |  |
+| **`valueMultiplier`** | `[ShowIf("changeValue", true)] public float valueMultiplier` |  |
 
 ## Methods
 

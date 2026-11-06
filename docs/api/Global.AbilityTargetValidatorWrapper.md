@@ -1,5 +1,6 @@
 # Class: AbilityTargetValidatorWrapper
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -24,6 +25,6 @@ public bool Evaluate(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`

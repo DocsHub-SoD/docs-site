@@ -1,5 +1,6 @@
 # Class: DewGameObserverWithProgress
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewPersistentGameObserver](/api/Global.DewPersistentGameObserver) → [DewAchievementItem](/api/Global.DewAchievementItem) → [DewReverieItem](/api/Global.DewReverieItem)
@@ -16,7 +17,7 @@ public class DewGameObserverWithProgress : DewPersistentGameObserver
 
 ## Methods
 
-### `AchCompleteWhen(Func&lt;bool&gt;, float)`
+### `AchCompleteWhen(Func<bool>, float)`
 
 ```csharp
 protected void AchCompleteWhen(Func<bool> condition, float checkInterval = 2)
@@ -25,7 +26,7 @@ protected void AchCompleteWhen(Func<bool> condition, float checkInterval = 2)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `condition` | `System.Func&lt;TResult&gt;&lt;bool&gt;` |  |
+| `condition` | `System.Func<TResult><bool>` |  |
 | `checkInterval` | `float` |  |
 
 ### `Complete()`

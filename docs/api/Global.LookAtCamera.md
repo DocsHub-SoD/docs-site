@@ -1,5 +1,6 @@
 # Class: LookAtCamera
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,5 +12,4 @@ public class LookAtCamera : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`useFacingInsteadOfBillboard`** | `[ToggleLeft]
-public bool useFacingInsteadOfBillboard` |  |
+| **`useFacingInsteadOfBillboard`** | `[ToggleLeft] public bool useFacingInsteadOfBillboard` |  |

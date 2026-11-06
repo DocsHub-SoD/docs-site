@@ -1,5 +1,6 @@
 # Class: EntityAI
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -31,8 +32,7 @@ public class EntityAI : EntityComponent, ILogicUpdate
 | **`PositionSampleCount`** | `public static int PositionSampleCount` |  |
 | **`PositionSampleInterval`** | `public static float PositionSampleInterval` |  |
 | **`PositionSampleLagBehindFrames`** | `public static int PositionSampleLagBehindFrames` |  |
-| **`predictionStrengthOverride`** | `[NonSerialized]
-public Func&lt;float&gt; predictionStrengthOverride` |  |
+| **`predictionStrengthOverride`** | `[NonSerialized] public Func<float> predictionStrengthOverride` |  |
 | **`RetargetingDistanceFuzziness`** | `public const float RetargetingDistanceFuzziness = 0.3` |  |
 | **`RetargetingMaxTime`** | `public const float RetargetingMaxTime = 4` |  |
 | **`RetargetingMinTime`** | `public const float RetargetingMinTime = 1` |  |
@@ -61,7 +61,7 @@ public void Aggro(Entity target, bool doPropagation = false)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `doPropagation` | `bool` |  |
 
 ### `CallAIUpdateImmediately()`
@@ -79,11 +79,11 @@ public bool Helper_CanBeCast(AbilityTrigger abil)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `abil` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `abil` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
-### `Helper_CanBeCast&lt;T&gt;()`
+### `Helper_CanBeCast<T>()`
 
 ```csharp
 public bool Helper_CanBeCast<T>() where T : AbilityTrigger
@@ -96,7 +96,7 @@ public bool Helper_CanBeCast<T>() where T : AbilityTrigger
 
 **Returns:** `bool`
 
-### `Helper_CastAbility&lt;T&gt;(CastInfo)`
+### `Helper_CastAbility<T>(CastInfo)`
 
 ```csharp
 public void Helper_CastAbility<T>(CastInfo info) where T : AbilityTrigger
@@ -105,7 +105,7 @@ public void Helper_CastAbility<T>(CastInfo info) where T : AbilityTrigger
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `` | `T` |  |
 
 ### `Helper_CastAbilityAuto(AbilityTrigger)`
@@ -119,11 +119,11 @@ public bool Helper_CastAbilityAuto(AbilityTrigger abil)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `abil` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `abil` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
-### `Helper_CastAbilityAuto&lt;T&gt;()`
+### `Helper_CastAbilityAuto<T>()`
 
 Casts this ability with automatically populated CastInfo.This will select a target and then use ability trigger's prediction data.
 
@@ -144,7 +144,7 @@ Chase targeted enemy. Note this will not interrupt ongoing chase if it's already
 public void Helper_ChaseTarget()
 ```
 
-### `Helper_GetAbility&lt;T&gt;()`
+### `Helper_GetAbility<T>()`
 
 Get ability of given type. Supports normal abilities and attack trigger.
 
@@ -168,11 +168,11 @@ public bool Helper_IsTargetInRange(AbilityTrigger abil)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `abil` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `abil` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
-### `Helper_IsTargetInRange&lt;T&gt;()`
+### `Helper_IsTargetInRange<T>()`
 
 ```csharp
 public bool Helper_IsTargetInRange<T>() where T : AbilityTrigger
@@ -202,12 +202,12 @@ public bool Helper_TryGetCastInfoAuto(AbilityTrigger abil, out CastInfo info)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `abil` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `abil` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `bool`
 
-### `Helper_TryGetCastInfoAuto&lt;T&gt;(out CastInfo)`
+### `Helper_TryGetCastInfoAuto<T>(out CastInfo)`
 
 ```csharp
 public bool Helper_TryGetCastInfoAuto<T>(out CastInfo info) where T : AbilityTrigger
@@ -216,7 +216,7 @@ public bool Helper_TryGetCastInfoAuto<T>(out CastInfo info) where T : AbilityTri
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `` | `T` |  |
 
 **Returns:** `bool`

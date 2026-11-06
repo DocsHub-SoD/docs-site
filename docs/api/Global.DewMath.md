@@ -1,5 +1,6 @@
 # Class: DewMath
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -62,6 +63,6 @@ public static int RandomRoundToInt(float value, DewRandom random = null)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `int`

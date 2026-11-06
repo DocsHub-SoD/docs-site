@@ -1,5 +1,6 @@
 # Class: BackHandler
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class BackHandler
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`func`** | `public Func&lt;bool&gt; func` |  |
+| **`func`** | `public Func<bool> func` |  |
 | **`owner`** | `public MonoBehaviour owner` |  |
 | **`priority`** | `public int priority` |  |
 

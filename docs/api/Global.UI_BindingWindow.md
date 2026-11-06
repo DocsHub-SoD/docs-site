@@ -1,5 +1,6 @@
 # Class: UI_BindingWindow
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** `SingletonBehaviour` → [UI_BindingWindow](/api/Global.UI_BindingWindow)
@@ -49,8 +50,8 @@ public void Show(DewBinding newBinding, BindingType allowedTypes, bool allowModi
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `newBinding` | [DewBinding](/api/Global.DewBinding) |  |
-| `allowedTypes` | [BindingType](/api/Global.BindingType) |  |
+| `newBinding` | [`DewBinding`](/api/Global.DewBinding) |  |
+| `allowedTypes` | [`BindingType`](/api/Global.BindingType) |  |
 | `allowModifiers` | `bool` |  |
 | `onFinish` | `System.Action` |  |
 | `onCancel` | `System.Action` |  |

@@ -1,5 +1,6 @@
 # Class: DewPersistence.GameData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,15 +12,15 @@ public class DewPersistence.GameData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`actors`** | `public List&lt;DewPersistence.GeneralData&gt; actors` |  |
+| **`actors`** | `public List<DewPersistence.GeneralData> actors` |  |
 | **`CurrentSaveVersion`** | `public const int CurrentSaveVersion = 1` |  |
 | **`isMultiplayer`** | `public bool isMultiplayer` |  |
 | **`loadNodeSettings`** | `public LoadNodeSettings loadNodeSettings` |  |
 | **`lobbyType`** | `public DewLobbyType lobbyType` |  |
-| **`managerPersistentData`** | `public Dictionary&lt;string, Dictionary&lt;string, string&gt;&gt; managerPersistentData` |  |
-| **`players`** | `public List&lt;DewPersistence.PlayerData&gt; players` |  |
+| **`managerPersistentData`** | `public Dictionary<string, Dictionary<string, string>> managerPersistentData` |  |
+| **`players`** | `public List<DewPersistence.PlayerData> players` |  |
 | **`saveVersion`** | `public int saveVersion` |  |
-| **`serverActorData`** | `public Dictionary&lt;string, string&gt; serverActorData` |  |
+| **`serverActorData`** | `public Dictionary<string, string> serverActorData` |  |
 | **`shouldShowVersionWarning`** | `public bool shouldShowVersionWarning` |  |
 
 ## Methods

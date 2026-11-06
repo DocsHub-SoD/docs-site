@@ -1,5 +1,6 @@
 # Class: StarEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [StatusEffect](/api/Global.StatusEffect)
@@ -13,17 +14,11 @@ public class StarEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRo
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`maxStarLevel`** | `[BoxGroup("Star Settings", true, false, 0)]
-public int maxStarLevel` |  |
-| **`price`** | `[BoxGroup("Star Settings", true, false, 0)]
-public int[] price` |  |
-| **`requiredLevel`** | `[BoxGroup("Star Settings", true, false, 0)]
-[LabelText("Req. Mastery Level")]
-public int requiredLevel` |  |
-| **`starIcon`** | `[BoxGroup("Star Settings", true, false, 0)]
-public Sprite starIcon` |  |
-| **`type`** | `[BoxGroup("Star Settings", true, false, 0)]
-public StarType type` |  |
+| **`maxStarLevel`** | `[BoxGroup("Star Settings", true, false, 0)] public int maxStarLevel` |  |
+| **`price`** | `[BoxGroup("Star Settings", true, false, 0)] public int[] price` |  |
+| **`requiredLevel`** | `[BoxGroup("Star Settings", true, false, 0)] [LabelText("Req. Mastery Level")] public int requiredLevel` |  |
+| **`starIcon`** | `[BoxGroup("Star Settings", true, false, 0)] public Sprite starIcon` |  |
+| **`type`** | `[BoxGroup("Star Settings", true, false, 0)] public StarType type` |  |
 
 ## Properties
 
@@ -36,12 +31,11 @@ public StarType type` |  |
 | **`skill`** | `public SkillTrigger skill { get; }` |  |
 | **`skills`** | `public SkillTrigger[] skills { get; }` | This never returns null. |
 | **`skillType`** | `public virtual Type skillType { get; }` |  |
-| **`strength`** | `[SaveVar(SaveVarFlags.Default)]
-public float strength { get; set; }` | Strength of this star effect. Usually 1.0f, but can be lower if non-flexible star is slotted in different category slot. |
+| **`strength`** | `[SaveVar(SaveVarFlags.Default)] public float strength { get; set; }` | Strength of this star effect. Usually 1.0f, but can be lower if non-flexible star is slotted in different category slot. |
 
 ## Methods
 
-### `DoSkill(Action&lt;SkillTrigger&gt;)`
+### `DoSkill(Action<SkillTrigger>)`
 
 Do custom action on all matching skill. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -52,11 +46,11 @@ public SafeAction DoSkill(Action<SkillTrigger> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | [System.Action&lt;T&gt;&lt;SkillTrigger&gt;](/api/Global.SkillTrigger) |  |
+| `callback` | [`System.Action<T><SkillTrigger>`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `SafeAction`
 
-### `DoSkill(Func&lt;SkillTrigger, Action&gt;)`
+### `DoSkill(Func<SkillTrigger, Action>)`
 
 Do custom action on all matching skill and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -67,7 +61,7 @@ public SafeAction DoSkill(Func<SkillTrigger, Action> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | [System.Func&lt;T, TResult&gt;&lt;SkillTrigger,System.Action&gt;](/api/Global.SkillTrigger) |  |
+| `callback` | [`System.Func<T, TResult><SkillTrigger,System.Action>`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `SafeAction`
 
@@ -82,7 +76,7 @@ public SafeAction DoSkillBonusAll(SkillBonus bonus)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `bonus` | [SkillBonus](/api/Global.SkillBonus) |  |
+| `bonus` | [`SkillBonus`](/api/Global.SkillBonus) |  |
 
 **Returns:** `SafeAction`
 
@@ -95,8 +89,8 @@ public bool IsIncompatibleWith(Hero h, HeroLoadoutData l)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `h` | [Hero](/api/Global.Hero) |  |
-| `l` | [HeroLoadoutData](/api/Global.HeroLoadoutData) |  |
+| `h` | [`Hero`](/api/Global.Hero) |  |
+| `l` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 
 **Returns:** `bool`
 
@@ -109,7 +103,7 @@ public bool IsSkillRelated(SkillTrigger s)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `s` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `bool`
 

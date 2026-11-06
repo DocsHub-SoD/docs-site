@@ -1,5 +1,6 @@
 # Class: Intro_RenderSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,8 +13,7 @@ public class Intro_RenderSettings : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ambientColor`** | `[ColorUsage(false, true)]
-public Color ambientColor` |  |
+| **`ambientColor`** | `[ColorUsage(false, true)] public Color ambientColor` |  |
 | **`fogColor`** | `public Color fogColor` |  |
 | **`fogEnd`** | `public float fogEnd` |  |
 | **`fogStart`** | `public float fogStart` |  |

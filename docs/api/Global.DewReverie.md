@@ -1,5 +1,6 @@
 # Class: DewReverie
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -43,9 +44,9 @@ public static UniTask<bool> ReceiveRewardOfReverie(DewProfile.ReverieDataBase da
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewProfile.ReverieDataBase](/api/Global.DewProfile) |  |
+| `data` | [`DewProfile.ReverieDataBase`](/api/Global.DewProfile) |  |
 
-**Returns:** `Cysharp.Threading.Tasks.UniTask&lt;T&gt;&lt;bool&gt;`
+**Returns:** `Cysharp.Threading.Tasks.UniTask<T><bool>`
 
 ### `SetDailyReverie(int, Type)`
 
@@ -59,7 +60,7 @@ public static void SetDailyReverie(int index, Type type)
 | `index` | `int` |  |
 | `type` | `System.Type` |  |
 
-### `SetDailyReverie&lt;T&gt;(int)`
+### `SetDailyReverie<T>(int)`
 
 ```csharp
 public static void SetDailyReverie<T>(int index)

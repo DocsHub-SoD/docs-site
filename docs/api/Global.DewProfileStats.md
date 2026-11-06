@@ -1,5 +1,6 @@
 # Class: DewProfileStats
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,13 +12,13 @@ public class DewProfileStats
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`gems`** | `public Dictionary&lt;string, DewProfileStats.ItemData&gt; gems` |  |
-| **`heroes`** | `public Dictionary&lt;string, DewProfileStats.HeroData&gt; heroes` |  |
-| **`monsters`** | `public Dictionary&lt;string, DewProfileStats.MonsterData&gt; monsters` |  |
-| **`recoveredLossPoints`** | `public List&lt;string&gt; recoveredLossPoints` |  |
-| **`skills`** | `public Dictionary&lt;string, DewProfileStats.ItemData&gt; skills` |  |
+| **`gems`** | `public Dictionary<string, DewProfileStats.ItemData> gems` |  |
+| **`heroes`** | `public Dictionary<string, DewProfileStats.HeroData> heroes` |  |
+| **`monsters`** | `public Dictionary<string, DewProfileStats.MonsterData> monsters` |  |
+| **`recoveredLossPoints`** | `public List<string> recoveredLossPoints` |  |
+| **`skills`** | `public Dictionary<string, DewProfileStats.ItemData> skills` |  |
 | **`total`** | `public DewProfileStats.HeroData total` |  |
-| **`zones`** | `public Dictionary&lt;string, DewProfileStats.ZoneData&gt; zones` |  |
+| **`zones`** | `public Dictionary<string, DewProfileStats.ZoneData> zones` |  |
 
 ## Methods
 
@@ -42,7 +43,7 @@ public void ApplyRecoveryDelta(DewProfileStats delta)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `delta` | [DewProfileStats](/api/Global.DewProfileStats) |  |
+| `delta` | [`DewProfileStats`](/api/Global.DewProfileStats) |  |
 
 ### `GetItemData(Type)`
 
@@ -66,8 +67,8 @@ public static DewProfileStats GetRecoveryDelta(DewProfileStats beforeLoss, DewPr
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `beforeLoss` | [DewProfileStats](/api/Global.DewProfileStats) |  |
-| `afterLoss` | [DewProfileStats](/api/Global.DewProfileStats) |  |
+| `beforeLoss` | [`DewProfileStats`](/api/Global.DewProfileStats) |  |
+| `afterLoss` | [`DewProfileStats`](/api/Global.DewProfileStats) |  |
 
 **Returns:** `DewProfileStats`
 
@@ -93,7 +94,7 @@ public bool TryGetItemData(Type type, out DewProfileStats.ItemData data)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `data` | [DewProfileStats.ItemData](/api/Global.DewProfileStats) |  |
+| `data` | [`DewProfileStats.ItemData`](/api/Global.DewProfileStats) |  |
 
 **Returns:** `bool`
 

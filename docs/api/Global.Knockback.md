@@ -1,5 +1,6 @@
 # Class: Knockback
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -28,7 +29,7 @@ public void ApplyWithDirection(Quaternion rot, Entity to)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `rot` | `UnityEngine.Quaternion` |  |
-| `to` | [Entity](/api/Global.Entity) |  |
+| `to` | [`Entity`](/api/Global.Entity) |  |
 
 ### `ApplyWithDirection(Vector3, Entity)`
 
@@ -40,7 +41,7 @@ public void ApplyWithDirection(Vector3 dir, Entity to)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `dir` | `UnityEngine.Vector3` |  |
-| `to` | [Entity](/api/Global.Entity) |  |
+| `to` | [`Entity`](/api/Global.Entity) |  |
 
 ### `ApplyWithOrigin(Vector3, Entity)`
 
@@ -52,4 +53,4 @@ public void ApplyWithOrigin(Vector3 origin, Entity to)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `origin` | `UnityEngine.Vector3` |  |
-| `to` | [Entity](/api/Global.Entity) |  |
+| `to` | [`Entity`](/api/Global.Entity) |  |

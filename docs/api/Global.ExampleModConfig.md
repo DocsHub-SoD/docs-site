@@ -1,5 +1,6 @@
 # Class: ExampleModConfig
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [ModConfig](/api/Global.ModConfig)
@@ -13,8 +14,7 @@ public class ExampleModConfig : ModConfig
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`byteTest`** | `public byte byteTest` |  |
-| **`customLabelTest`** | `[ModConfig.LabelText("CUSTOM LABEL WOOHOO!")]
-public bool customLabelTest` |  |
+| **`customLabelTest`** | `[ModConfig.LabelText("CUSTOM LABEL WOOHOO!")] public bool customLabelTest` |  |
 | **`enumTest`** | `public Quality4Levels enumTest` |  |
 | **`enumTest2`** | `public Quality4Levels enumTest2` |  |
 | **`floatTest`** | `public float floatTest` |  |

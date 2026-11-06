@@ -1,5 +1,6 @@
 # Class: DewInterestManagement
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -23,7 +24,7 @@ public override bool OnCheckObserver(NetworkIdentity identity, NetworkConnection
 
 **Returns:** `bool`
 
-### `OnRebuildObservers(NetworkIdentity, HashSet&lt;NetworkConnectionToClient&gt;)`
+### `OnRebuildObservers(NetworkIdentity, HashSet<NetworkConnectionToClient>)`
 
 ```csharp
 public override void OnRebuildObservers(NetworkIdentity identity, HashSet<NetworkConnectionToClient> newObservers)
@@ -33,7 +34,7 @@ public override void OnRebuildObservers(NetworkIdentity identity, HashSet<Networ
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `identity` | `Mirror.NetworkIdentity` |  |
-| `newObservers` | `System.Collections.Generic.HashSet&lt;T&gt;&lt;Mirror.NetworkConnectionToClient&gt;` |  |
+| `newObservers` | `System.Collections.Generic.HashSet<T><Mirror.NetworkConnectionToClient>` |  |
 
 ### `SetHostVisibility(NetworkIdentity, bool)`
 

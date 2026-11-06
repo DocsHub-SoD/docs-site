@@ -1,5 +1,6 @@
 # Class: Section_Monsters
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → [RoomSectionComponent](/api/Global.RoomSectionComponent)
@@ -12,23 +13,15 @@ public class Section_Monsters : RoomSectionComponent, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activateCondition`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)]
-public CombatAreaActivateCondition activateCondition` |  |
-| **`addedInitDelay`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)]
-public Vector2 addedInitDelay` |  |
+| **`activateCondition`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public CombatAreaActivateCondition activateCondition` |  |
+| **`addedInitDelay`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public Vector2 addedInitDelay` |  |
 | **`combatAreaSettings`** | `public SectionCombatAreaType combatAreaSettings` |  |
-| **`miniBossCount`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)]
-public int miniBossCount` |  |
-| **`onClearCombatArea`** | `[FoldoutGroup("Events", 0)]
-public UnityEvent onClearCombatArea` |  |
-| **`onStartCombatArea`** | `[FoldoutGroup("Events", 0)]
-public UnityEvent onStartCombatArea` |  |
-| **`ruleOverride`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)]
-public MonsterSpawnRule ruleOverride` |  |
-| **`spawnMiniBossInstead`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)]
-public bool spawnMiniBossInstead` |  |
-| **`spawnPosOverride`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)]
-public Transform spawnPosOverride` |  |
+| **`miniBossCount`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public int miniBossCount` |  |
+| **`onClearCombatArea`** | `[FoldoutGroup("Events", 0)] public UnityEvent onClearCombatArea` |  |
+| **`onStartCombatArea`** | `[FoldoutGroup("Events", 0)] public UnityEvent onStartCombatArea` |  |
+| **`ruleOverride`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public MonsterSpawnRule ruleOverride` |  |
+| **`spawnMiniBossInstead`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public bool spawnMiniBossInstead` |  |
+| **`spawnPosOverride`** | `[ShowIf("@combatAreaSettings != SectionCombatAreaType.No", true)] public Transform spawnPosOverride` |  |
 
 ## Properties
 
@@ -49,7 +42,7 @@ public Transform spawnPosOverride` |  |
 protected override void Awake()
 ```
 
-### `GetSpawnPositionInSection(Func&lt;Vector3, bool&gt;, DewRandom)`
+### `GetSpawnPositionInSection(Func<Vector3, bool>, DewRandom)`
 
 Evaluator will be provided raw position without NavMesh, ground or any checks.Position got passed by evaluator might not be returned as result of this function.
 
@@ -60,8 +53,8 @@ public Vector3 GetSpawnPositionInSection(Func<Vector3, bool> evaluator = null, D
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `evaluator` | `System.Func&lt;T, TResult&gt;&lt;UnityEngine.Vector3,bool&gt;` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `evaluator` | `System.Func<T, TResult><UnityEngine.Vector3,bool>` |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `UnityEngine.Vector3`
 
@@ -76,6 +69,6 @@ public Vector3 GetSpawnPositionInSection(float minDist, float maxDist, DewRandom
 | :--- | :--- | :--- |
 | `minDist` | `float` |  |
 | `maxDist` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `UnityEngine.Vector3`

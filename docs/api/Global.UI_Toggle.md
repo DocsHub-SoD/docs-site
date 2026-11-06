@@ -1,5 +1,6 @@
 # Class: UI_Toggle
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,7 +16,7 @@ public class UI_Toggle : MonoBehaviour
 | **`index`** | `public int index` |  |
 | **`offObject`** | `public GameObject offObject` |  |
 | **`onClick`** | `public UnityEvent onClick` |  |
-| **`onIsCheckedChanged`** | `public UnityEvent&lt;bool&gt; onIsCheckedChanged` |  |
+| **`onIsCheckedChanged`** | `public UnityEvent<bool> onIsCheckedChanged` |  |
 | **`onObject`** | `public GameObject onObject` |  |
 
 ## Properties

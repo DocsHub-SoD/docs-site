@@ -1,5 +1,6 @@
 # Class: UIManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [UIManager](/api/Global.UIManager) → [InGameUIManager](/api/Global.InGameUIManager) → [LobbyUIManager](/api/Global.LobbyUIManager)
@@ -12,13 +13,13 @@ public class UIManager : ManagerBase<UIManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onStateChanged`** | `public SafeAction&lt;string, string&gt; onStateChanged` |  |
+| **`onStateChanged`** | `public SafeAction<string, string> onStateChanged` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`availableStates`** | `public IReadOnlyCollection&lt;string&gt; availableStates { get; }` |  |
+| **`availableStates`** | `public IReadOnlyCollection<string> availableStates { get; }` |  |
 | **`state`** | `public string state { get; }` |  |
 
 ## Methods

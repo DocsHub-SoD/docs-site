@@ -1,5 +1,6 @@
 # Class: UI_CursorEvents
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,11 +12,11 @@ public class UI_CursorEvents : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onDrag`** | `public Action&lt;PointerEventData&gt; onDrag` |  |
-| **`onDrop`** | `public Action&lt;PointerEventData&gt; onDrop` |  |
-| **`onPointerClick`** | `public Action&lt;PointerEventData&gt; onPointerClick` |  |
-| **`onPointerDown`** | `public Action&lt;PointerEventData&gt; onPointerDown` |  |
-| **`onPointerEnter`** | `public Action&lt;PointerEventData&gt; onPointerEnter` |  |
-| **`onPointerExit`** | `public Action&lt;PointerEventData&gt; onPointerExit` |  |
-| **`onPointerMove`** | `public Action&lt;PointerEventData&gt; onPointerMove` |  |
-| **`onPointerUp`** | `public Action&lt;PointerEventData&gt; onPointerUp` |  |
+| **`onDrag`** | `public Action<PointerEventData> onDrag` |  |
+| **`onDrop`** | `public Action<PointerEventData> onDrop` |  |
+| **`onPointerClick`** | `public Action<PointerEventData> onPointerClick` |  |
+| **`onPointerDown`** | `public Action<PointerEventData> onPointerDown` |  |
+| **`onPointerEnter`** | `public Action<PointerEventData> onPointerEnter` |  |
+| **`onPointerExit`** | `public Action<PointerEventData> onPointerExit` |  |
+| **`onPointerMove`** | `public Action<PointerEventData> onPointerMove` |  |
+| **`onPointerUp`** | `public Action<PointerEventData> onPointerUp` |  |

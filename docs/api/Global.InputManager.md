@@ -1,5 +1,6 @@
 # Class: InputManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [InputManager](/api/Global.InputManager)
@@ -19,7 +20,7 @@ public void AddShakeInstance(ShakeInstance si)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `si` | [ShakeInstance](/api/Global.ShakeInstance) |  |
+| `si` | [`ShakeInstance`](/api/Global.ShakeInstance) |  |
 
 ### `FrameUpdate()`
 
@@ -44,7 +45,7 @@ public bool GetStickDirection(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 
@@ -57,7 +58,7 @@ public bool GetStickDirectionDown(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 
@@ -70,7 +71,7 @@ public bool GetStickDirectionUp(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 
@@ -83,7 +84,7 @@ public bool IsStickDirection(GamepadButtonEx g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 

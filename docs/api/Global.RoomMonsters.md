@@ -1,5 +1,6 @@
 # Class: RoomMonsters
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
@@ -15,30 +16,21 @@ public class RoomMonsters : RoomComponent, ILogicUpdate
 | :--- | :--- | :--- |
 | **`addedHunterChance`** | `public float addedHunterChance` |  |
 | **`addedMirageChance`** | `public float addedMirageChance` |  |
-| **`campDensity`** | `[InfoBox("@Mathf.RoundToInt(campDensity * GetComponent&lt;RoomMap&gt;().mapData.area) + \" Camps\"", InfoMessageType.Info, null)]
-[HideIf("disableEnvSpawn", true)]
-public float campDensity` |  |
-| **`campPopulation`** | `[HideIf("disableEnvSpawn", true)]
-public Vector2 campPopulation` |  |
+| **`campDensity`** | `[InfoBox("@Mathf.RoundToInt(campDensity * GetComponent<RoomMap>().mapData.area) + \" Camps\"", InfoMessageType.Info, null)] [HideIf("disableEnvSpawn", true)] public float campDensity` |  |
+| **`campPopulation`** | `[HideIf("disableEnvSpawn", true)] public Vector2 campPopulation` |  |
 | **`CampWanderRange`** | `public const float CampWanderRange = 6` |  |
-| **`clearRoomOnClearAllCombatAreas`** | `[ToggleLeft]
-public bool clearRoomOnClearAllCombatAreas` |  |
+| **`clearRoomOnClearAllCombatAreas`** | `[ToggleLeft] public bool clearRoomOnClearAllCombatAreas` |  |
 | **`CombatAreaScoreRandomness`** | `public const float CombatAreaScoreRandomness = 0.3` |  |
 | **`defaultRule`** | `public MonsterSpawnRule defaultRule` |  |
-| **`destroyedSceneIds`** | `[NonSerialized]
-[SaveVar(SaveVarFlags.Default)]
-public List&lt;ulong&gt; destroyedSceneIds` | Available on server. Ids of objects that were in the room but has been destroyed. |
-| **`disableEnvSpawn`** | `[Space(16)]
-public bool disableEnvSpawn` |  |
-| **`disableMiniBossRewards`** | `[NonSerialized]
-public bool disableMiniBossRewards` |  |
-| **`envSpawnPoolOverride`** | `[HideIf("disableEnvSpawn", true)]
-public MonsterPool envSpawnPoolOverride` |  |
+| **`destroyedSceneIds`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<ulong> destroyedSceneIds` | Available on server. Ids of objects that were in the room but has been destroyed. |
+| **`disableEnvSpawn`** | `[Space(16)] public bool disableEnvSpawn` |  |
+| **`disableMiniBossRewards`** | `[NonSerialized] public bool disableMiniBossRewards` |  |
+| **`envSpawnPoolOverride`** | `[HideIf("disableEnvSpawn", true)] public MonsterPool envSpawnPoolOverride` |  |
 | **`insertedCombatAreas`** | `public int insertedCombatAreas` |  |
 | **`maxPopulationMultiplier`** | `public float maxPopulationMultiplier` |  |
-| **`onAfterSpawn`** | `public SafeAction&lt;Entity&gt; onAfterSpawn` | Called on server. |
-| **`onBeforeSpawn`** | `public SafeAction&lt;Entity&gt; onBeforeSpawn` | Called on server. |
-| **`ongoingSpawns`** | `public Dictionary&lt;SpawnMonsterSettings, Coroutine&gt; ongoingSpawns` | Available on server. |
+| **`onAfterSpawn`** | `public SafeAction<Entity> onAfterSpawn` | Called on server. |
+| **`onBeforeSpawn`** | `public SafeAction<Entity> onBeforeSpawn` | Called on server. |
+| **`ongoingSpawns`** | `public Dictionary<SpawnMonsterSettings, Coroutine> ongoingSpawns` | Available on server. |
 | **`onWelcomingSpawnEnd`** | `public SafeAction onWelcomingSpawnEnd` |  |
 | **`onWelcomingSpawnStart`** | `public SafeAction onWelcomingSpawnStart` |  |
 | **`OverpopulationStallDelayMax`** | `public const float OverpopulationStallDelayMax = 1.5` |  |
@@ -108,7 +100,7 @@ public void OverrideMonsterType(Monster m)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [Monster](/api/Global.Monster) |  |
+| `m` | [`Monster`](/api/Global.Monster) |  |
 
 ### `RemoveAllCamps()`
 
@@ -127,9 +119,9 @@ public void SelectMiniBoss(out Entity entity, out MiniBossEffect effect, DewRand
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
-| `effect` | [MiniBossEffect](/api/Global.MiniBossEffect) |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
+| `effect` | [`MiniBossEffect`](/api/Global.MiniBossEffect) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 ### `SpawnMiniBoss(SpawnMonsterSettings, Entity, StatusEffect)`
 
@@ -140,9 +132,9 @@ public void SpawnMiniBoss(SpawnMonsterSettings settings, Entity ent = null, Stat
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) |  |
-| `ent` | [Entity](/api/Global.Entity) |  |
-| `se` | [StatusEffect](/api/Global.StatusEffect) |  |
+| `settings` | [`SpawnMonsterSettings`](/api/Global.SpawnMonsterSettings) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
+| `se` | [`StatusEffect`](/api/Global.StatusEffect) |  |
 
 ### `SpawnMonsters(SpawnMonsterSettings)`
 
@@ -153,7 +145,7 @@ public void SpawnMonsters(SpawnMonsterSettings settings)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) |  |
+| `settings` | [`SpawnMonsterSettings`](/api/Global.SpawnMonsterSettings) |  |
 
 ### `SpawnMonstersAsync(SpawnMonsterSettings)`
 
@@ -164,6 +156,6 @@ public UniTask SpawnMonstersAsync(SpawnMonsterSettings settings)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [SpawnMonsterSettings](/api/Global.SpawnMonsterSettings) |  |
+| `settings` | [`SpawnMonsterSettings`](/api/Global.SpawnMonsterSettings) |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`

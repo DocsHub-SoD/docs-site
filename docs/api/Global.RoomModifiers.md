@@ -1,5 +1,6 @@
 # Class: RoomModifiers
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
@@ -12,8 +13,7 @@ public class RoomModifiers : RoomComponent, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`modifierInstances`** | `[NonSerialized]
-public List&lt;RoomModifierBase&gt; modifierInstances` | Available on server. |
+| **`modifierInstances`** | `[NonSerialized] public List<RoomModifierBase> modifierInstances` | Available on server. |
 
 ## Methods
 

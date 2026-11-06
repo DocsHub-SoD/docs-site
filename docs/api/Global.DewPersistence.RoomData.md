@@ -1,5 +1,6 @@
 # Class: DewPersistence.RoomData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,6 +12,6 @@ public class DewPersistence.RoomData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`actors`** | `public List&lt;DewPersistence.RoomActorData&gt; actors` |  |
-| **`persistenceData`** | `public Dictionary&lt;string, string&gt; persistenceData` |  |
-| **`savedObjects`** | `public List&lt;DewPersistence.RoomSavedObjectData&gt; savedObjects` |  |
+| **`actors`** | `public List<DewPersistence.RoomActorData> actors` |  |
+| **`persistenceData`** | `public Dictionary<string, string> persistenceData` |  |
+| **`savedObjects`** | `public List<DewPersistence.RoomSavedObjectData> savedObjects` |  |

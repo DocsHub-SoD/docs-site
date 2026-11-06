@@ -1,5 +1,6 @@
 # Class: DewReverieItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewPersistentGameObserver](/api/Global.DewPersistentGameObserver) → [DewGameObserverWithProgress](/api/Global.DewGameObserverWithProgress) → [DewSpecialReverieItem](/api/Global.DewSpecialReverieItem)
@@ -67,4 +68,4 @@ public void SaveReverieStateToData(DewProfile.ReverieDataBase data)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewProfile.ReverieDataBase](/api/Global.DewProfile) |  |
+| `data` | [`DewProfile.ReverieDataBase`](/api/Global.DewProfile) |  |

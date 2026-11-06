@@ -1,5 +1,6 @@
 # Class: StatusEffect.DoAbilityItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,6 +12,6 @@ public class StatusEffect.DoAbilityItem
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`callback`** | `public Func&lt;AbilityTrigger, Action&gt; callback` |  |
-| **`condition`** | `public Func&lt;AbilityTrigger, bool&gt; condition` |  |
+| **`callback`** | `public Func<AbilityTrigger, Action> callback` |  |
+| **`condition`** | `public Func<AbilityTrigger, bool> condition` |  |
 | **`stopAction`** | `public SafeAction stopAction` |  |

@@ -1,5 +1,6 @@
 # Class: CastMethodDataSerialization
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -32,4 +33,4 @@ public static void WriteCastMethodData(this NetworkWriter writer, CastMethodData
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `writer` | `Mirror.NetworkWriter` |  |
-| `value` | [CastMethodData](/api/Global.CastMethodData) |  |
+| `value` | [`CastMethodData`](/api/Global.CastMethodData) |  |

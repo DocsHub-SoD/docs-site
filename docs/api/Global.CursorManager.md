@@ -1,5 +1,6 @@
 # Class: CursorManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [CursorManager](/api/Global.CursorManager)
@@ -12,8 +13,7 @@ public class CursorManager : ManagerBase<CursorManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`disableSoftwareCursor`** | `[NonSerialized]
-public bool disableSoftwareCursor` |  |
+| **`disableSoftwareCursor`** | `[NonSerialized] public bool disableSoftwareCursor` |  |
 | **`scaleMultiplier`** | `public float scaleMultiplier` |  |
 | **`textures`** | `public Texture2D[] textures` |  |
 

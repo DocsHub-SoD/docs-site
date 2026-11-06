@@ -1,5 +1,6 @@
 # Struct: ScalingValue
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -29,8 +30,7 @@ public struct ScalingValue
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`valueString`** | `[JsonProperty]
-public string valueString { get; set; }` |  |
+| **`valueString`** | `[JsonProperty] public string valueString { get; set; }` |  |
 
 ## Methods
 
@@ -102,7 +102,7 @@ public float GetValue(int level, Entity self)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `level` | `int` |  |
-| `self` | [Entity](/api/Global.Entity) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `float`
 
@@ -133,8 +133,8 @@ public static ScalingValue Lerp(ScalingValue a, ScalingValue b, float t)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `a` | [ScalingValue](/api/Global.ScalingValue) |  |
-| `b` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `a` | [`ScalingValue`](/api/Global.ScalingValue) |  |
+| `b` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `t` | `float` |  |
 
 **Returns:** `ScalingValue`

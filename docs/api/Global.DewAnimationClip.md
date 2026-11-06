@@ -1,5 +1,6 @@
 # Class: DewAnimationClip
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -17,10 +18,8 @@ public class DewAnimationClip : ScriptableObject, ILinkedByGuid
 | **`entries`** | `public DewAnimationEntry[] entries` |  |
 | **`hideWeaponOnHeroes`** | `public bool hideWeaponOnHeroes` |  |
 | **`onlyUpperBody`** | `public bool onlyUpperBody` |  |
-| **`overrideWalk`** | `[InfoBox("Override Walk cannot be Full if animating only upper body!", InfoMessageType.Error, null, VisibleIf = "@onlyUpperBody && overrideWalk == DewAnimationClip.OverrideWalkBehavior.Full")]
-public DewAnimationClip.OverrideWalkBehavior overrideWalk` |  |
-| **`overrideWalkNormalizedDuration`** | `[ShowIf("@overrideWalk != OverrideWalkBehavior.None", true)]
-public float overrideWalkNormalizedDuration` |  |
+| **`overrideWalk`** | `[InfoBox("Override Walk cannot be Full if animating only upper body!", InfoMessageType.Error, null, VisibleIf = "@onlyUpperBody && overrideWalk == DewAnimationClip.OverrideWalkBehavior.Full")] public DewAnimationClip.OverrideWalkBehavior overrideWalk` |  |
+| **`overrideWalkNormalizedDuration`** | `[ShowIf("@overrideWalk != OverrideWalkBehavior.None", true)] public float overrideWalkNormalizedDuration` |  |
 
 ## Properties
 

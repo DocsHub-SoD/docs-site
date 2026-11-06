@@ -1,5 +1,6 @@
 # Class: FlavourManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [FlavourManager](/api/Global.FlavourManager)
@@ -17,11 +18,9 @@ public class FlavourManager : NetworkedManagerBase<FlavourManager>, ILogicUpdate
 | **`deviateAngle`** | `public float deviateAngle` |  |
 | **`disableOnLesser`** | `public bool disableOnLesser` |  |
 | **`everyoneVicinityRadius`** | `public float everyoneVicinityRadius` | Everyone needs to be in this range to the monster for hit stop to occur. |
-| **`hitStopDealDamage`** | `[Title("Damage Hit Time Stop", null, TitleAlignments.Left, true, true)]
-public GameObject hitStopDealDamage` |  |
+| **`hitStopDealDamage`** | `[Title("Damage Hit Time Stop", null, TitleAlignments.Left, true, true)] public GameObject hitStopDealDamage` |  |
 | **`hitTimeStopCooldownTime`** | `public float hitTimeStopCooldownTime` |  |
-| **`ignoreAssists`** | `[Title("Kill Feedback", null, TitleAlignments.Left, true, true)]
-public bool ignoreAssists` |  |
+| **`ignoreAssists`** | `[Title("Kill Feedback", null, TitleAlignments.Left, true, true)] public bool ignoreAssists` |  |
 | **`killFeedback`** | `public GameObject killFeedback` |  |
 | **`killFeedbackBoss`** | `public GameObject killFeedbackBoss` |  |
 | **`killFeedbackLesser`** | `public GameObject killFeedbackLesser` |  |
@@ -30,8 +29,7 @@ public bool ignoreAssists` |  |
 | **`minDamageAmount`** | `public float minDamageAmount` |  |
 | **`onStunDurationMultiplier`** | `public float onStunDurationMultiplier` |  |
 | **`screenKillEffects`** | `public FxVolume[] screenKillEffects` |  |
-| **`shakeDamageRatioRange`** | `[Title("Damage Shake", null, TitleAlignments.Left, true, true)]
-public Vector2 shakeDamageRatioRange` |  |
+| **`shakeDamageRatioRange`** | `[Title("Damage Shake", null, TitleAlignments.Left, true, true)] public Vector2 shakeDamageRatioRange` |  |
 | **`shakeDuration`** | `public AnimationCurve shakeDuration` |  |
 | **`shakeIntensity`** | `public AnimationCurve shakeIntensity` |  |
 | **`shakeInterval`** | `public float shakeInterval` |  |

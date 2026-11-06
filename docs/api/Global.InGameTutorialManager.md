@@ -1,5 +1,6 @@
 # Class: InGameTutorialManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [InGameTutorialManager](/api/Global.InGameTutorialManager)
@@ -58,7 +59,7 @@ public Transform GetRefSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `UnityEngine.Transform`
 

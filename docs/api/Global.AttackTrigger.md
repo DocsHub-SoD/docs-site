@@ -1,5 +1,6 @@
 # Class: AttackTrigger
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityTrigger](/api/Global.AbilityTrigger)
@@ -32,7 +33,7 @@ public void CallAttackCompleteBeforePrepareRoutines(EventInfoCast cast)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `cast` | [EventInfoCast](/api/Global.EventInfoCast) |  |
+| `cast` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
 ### `CallAttackCompleteRoutines(AbilityInstance, int, CastInfo)`
 
@@ -43,9 +44,9 @@ public void CallAttackCompleteRoutines(AbilityInstance newInstance, int configIn
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `newInstance` | [AbilityInstance](/api/Global.AbilityInstance) |  |
+| `newInstance` | [`AbilityInstance`](/api/Global.AbilityInstance) |  |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `GetAnimationSpeed()`
 
@@ -94,7 +95,7 @@ protected override void OnCastCancelSetCooldownTime(int configIndex, CastInfo in
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastComplete(int, CastInfo)`
 
@@ -106,7 +107,7 @@ public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `AbilityInstance`
 
@@ -119,7 +120,7 @@ public override void OnCastCompleteBeforePrepare(EventInfoCast cast)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `cast` | [EventInfoCast](/api/Global.EventInfoCast) |  |
+| `cast` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
 ### `OnCastCompleteSetCharge(int, CastInfo)`
 
@@ -131,7 +132,7 @@ public override void OnCastCompleteSetCharge(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastCompleteSetCooldownTime(int, CastInfo)`
 
@@ -143,7 +144,7 @@ public override void OnCastCompleteSetCooldownTime(int configIndex, CastInfo inf
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastCompleteSetMinimumDelay(int, CastInfo)`
 
@@ -155,7 +156,7 @@ public override void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo inf
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastStart(int, CastInfo)`
 
@@ -167,7 +168,7 @@ public override void OnCastStart(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnRotateForward(int, CastInfo)`
 
@@ -179,7 +180,7 @@ protected override void OnRotateForward(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnStartChannel(int, CastInfo)`
 
@@ -191,7 +192,7 @@ protected override void OnStartChannel(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `ProcessRange(float)`
 

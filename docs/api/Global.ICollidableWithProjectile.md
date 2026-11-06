@@ -1,5 +1,6 @@
 # Interface: ICollidableWithProjectile
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -18,4 +19,4 @@ void OnProjectileCollision(CollidableHit hit)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hit` | [CollidableHit](/api/Global.CollidableHit) |  |
+| `hit` | [`CollidableHit`](/api/Global.CollidableHit) |  |

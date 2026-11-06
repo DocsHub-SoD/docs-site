@@ -1,5 +1,6 @@
 # Class: FxCastTelegraph
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
@@ -15,8 +16,7 @@ public class FxCastTelegraph : LogicBehaviour, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`adjustSimulationSpeed`** | `public bool adjustSimulationSpeed` |  |
-| **`offset`** | `[HideIf("@position == FxCastTelegraph.PositionType.None", true)]
-public FxCastTelegraph.OffsetType offset` |  |
+| **`offset`** | `[HideIf("@position == FxCastTelegraph.PositionType.None", true)] public FxCastTelegraph.OffsetType offset` |  |
 | **`position`** | `public FxCastTelegraph.PositionType position` |  |
 | **`rotation`** | `public FxCastTelegraph.RotationType rotation` |  |
 
@@ -44,6 +44,6 @@ public void Setup(CastMethodType method, CastInfo info, float duration)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `method` | [CastMethodType](/api/Global.CastMethodType) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `duration` | `float` |  |

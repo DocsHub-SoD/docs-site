@@ -1,5 +1,6 @@
 # Class: HeroConstellationSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,14 +14,6 @@ public class HeroConstellationSettings
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`angleOffset`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[SuffixLabel("deg", false)]
-public float angleOffset` |  |
-| **`defaultCount`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[SuffixLabel("/", false)]
-public int defaultCount` |  |
-| **`maxCount`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-public int maxCount` |  |
+| **`angleOffset`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [SuffixLabel("deg", false)] public float angleOffset` |  |
+| **`defaultCount`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [SuffixLabel("/", false)] public int defaultCount` |  |
+| **`maxCount`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public int maxCount` |  |

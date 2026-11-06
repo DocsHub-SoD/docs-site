@@ -1,5 +1,6 @@
 # Class: DewEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -97,7 +98,7 @@ public static void Play(GameObject effect, Entity attach, NetworkIdentity parent
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
 ### `Play(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)`
@@ -112,7 +113,7 @@ public static void Play(GameObject effect, Entity attach, Vector3 position, Quat
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
@@ -159,8 +160,8 @@ public static void PlayCastEffect(GameObject effect, CastInfo info, CastMethodTy
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `method` | [CastMethodType](/api/Global.CastMethodType) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
 | `duration` | `float` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
@@ -175,8 +176,8 @@ public static void PlayCastEffectNetworked(NetworkIdentity parent, GameObject ef
 | :--- | :--- | :--- |
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `method` | [CastMethodType](/api/Global.CastMethodType) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `method` | [`CastMethodType`](/api/Global.CastMethodType) |  |
 | `duration` | `float` |  |
 
 ### `PlayNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)`
@@ -190,7 +191,7 @@ public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Enti
 | :--- | :--- | :--- |
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
@@ -205,7 +206,7 @@ public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Enti
 | :--- | :--- | :--- |
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 ### `PlayNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)`
 
@@ -245,7 +246,7 @@ public static void PlayNew(GameObject effect, Entity attach, NetworkIdentity par
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
 
 ### `PlayNew(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)`
@@ -260,7 +261,7 @@ public static void PlayNew(GameObject effect, Entity attach, Vector3 position, Q
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 | `parent` | `Mirror.NetworkIdentity` |  |
@@ -306,7 +307,7 @@ public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, E
 | :--- | :--- | :--- |
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
@@ -321,7 +322,7 @@ public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, E
 | :--- | :--- | :--- |
 | `parent` | `Mirror.NetworkIdentity` |  |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 ### `PlayNewNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)`
 

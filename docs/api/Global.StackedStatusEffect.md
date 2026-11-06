@@ -1,5 +1,6 @@
 # Class: StackedStatusEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [StatusEffect](/api/Global.StatusEffect) → [ElementalStatusEffect](/api/Global.ElementalStatusEffect)
@@ -12,28 +13,13 @@ public abstract class StackedStatusEffect : StatusEffect, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`autoDecay`** | `[BoxGroup("Stack Settings", true, false, 0)]
-[ToggleGroup("Stack Settings/autoDecay", "Auto Decay")]
-public bool autoDecay` |  |
-| **`decayAllAtOnce`** | `[BoxGroup("Stack Settings", true, false, 0)]
-[ToggleGroup("Stack Settings/autoDecay", "Auto Decay")]
-[ToggleLeft]
-public bool decayAllAtOnce` |  |
-| **`decayCount`** | `[BoxGroup("Stack Settings", true, false, 0)]
-[HideIf("decayAllAtOnce", true)]
-[ToggleGroup("Stack Settings/autoDecay", "Auto Decay")]
-public int decayCount` |  |
-| **`decayTime`** | `[BoxGroup("Stack Settings", true, false, 0)]
-[ToggleGroup("Stack Settings/autoDecay", "Auto Decay")]
-public float decayTime` |  |
-| **`killOnZeroStack`** | `[BoxGroup("Stack Settings", true, false, 0)]
-public bool killOnZeroStack` |  |
-| **`maxStack`** | `[BoxGroup("Stack Settings", true, false, 0)]
-public int maxStack` |  |
-| **`resetTimerOnStackChange`** | `[BoxGroup("Stack Settings", true, false, 0)]
-[ToggleGroup("Stack Settings/autoDecay", "Auto Decay")]
-[ToggleLeft]
-public bool resetTimerOnStackChange` |  |
+| **`autoDecay`** | `[BoxGroup("Stack Settings", true, false, 0)] [ToggleGroup("Stack Settings/autoDecay", "Auto Decay")] public bool autoDecay` |  |
+| **`decayAllAtOnce`** | `[BoxGroup("Stack Settings", true, false, 0)] [ToggleGroup("Stack Settings/autoDecay", "Auto Decay")] [ToggleLeft] public bool decayAllAtOnce` |  |
+| **`decayCount`** | `[BoxGroup("Stack Settings", true, false, 0)] [HideIf("decayAllAtOnce", true)] [ToggleGroup("Stack Settings/autoDecay", "Auto Decay")] public int decayCount` |  |
+| **`decayTime`** | `[BoxGroup("Stack Settings", true, false, 0)] [ToggleGroup("Stack Settings/autoDecay", "Auto Decay")] public float decayTime` |  |
+| **`killOnZeroStack`** | `[BoxGroup("Stack Settings", true, false, 0)] public bool killOnZeroStack` |  |
+| **`maxStack`** | `[BoxGroup("Stack Settings", true, false, 0)] public int maxStack` |  |
+| **`resetTimerOnStackChange`** | `[BoxGroup("Stack Settings", true, false, 0)] [ToggleGroup("Stack Settings/autoDecay", "Auto Decay")] [ToggleLeft] public bool resetTimerOnStackChange` |  |
 
 ## Properties
 

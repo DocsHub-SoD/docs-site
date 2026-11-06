@@ -1,5 +1,6 @@
 # Class: HeroSkill
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent) → [HeroComponent](/api/Global.HeroComponent)
@@ -12,32 +13,30 @@ public class HeroSkill : HeroComponent, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ClientHeroEvent_OnGemDrop`** | `public SafeAction&lt;Gem&gt; ClientHeroEvent_OnGemDrop` |  |
-| **`ClientHeroEvent_OnGemEquip`** | `public SafeAction&lt;Gem&gt; ClientHeroEvent_OnGemEquip` |  |
-| **`ClientHeroEvent_OnGemPickup`** | `public SafeAction&lt;Gem&gt; ClientHeroEvent_OnGemPickup` |  |
-| **`ClientHeroEvent_OnGemQualityChanged`** | `public SafeAction&lt;Gem, int, int&gt; ClientHeroEvent_OnGemQualityChanged` |  |
-| **`ClientHeroEvent_OnGemSwap`** | `public SafeAction&lt;GemLocation, GemLocation&gt; ClientHeroEvent_OnGemSwap` |  |
-| **`ClientHeroEvent_OnGemUnequip`** | `public SafeAction&lt;Gem&gt; ClientHeroEvent_OnGemUnequip` |  |
-| **`ClientHeroEvent_OnSkillDrop`** | `public SafeAction&lt;SkillTrigger&gt; ClientHeroEvent_OnSkillDrop` |  |
-| **`ClientHeroEvent_OnSkillEquip`** | `public SafeAction&lt;SkillTrigger&gt; ClientHeroEvent_OnSkillEquip` |  |
-| **`ClientHeroEvent_OnSkillLevelChanged`** | `public SafeAction&lt;SkillTrigger, int, int&gt; ClientHeroEvent_OnSkillLevelChanged` |  |
-| **`ClientHeroEvent_OnSkillPickup`** | `public SafeAction&lt;SkillTrigger&gt; ClientHeroEvent_OnSkillPickup` |  |
-| **`ClientHeroEvent_OnSkillSwap`** | `public SafeAction&lt;HeroSkillLocation, HeroSkillLocation&gt; ClientHeroEvent_OnSkillSwap` |  |
-| **`ClientHeroEvent_OnSkillUnequip`** | `public SafeAction&lt;SkillTrigger&gt; ClientHeroEvent_OnSkillUnequip` |  |
-| **`loadoutMovement`** | `public AssetRef&lt;SkillTrigger&gt;[] loadoutMovement` |  |
-| **`loadoutQ`** | `public AssetRef&lt;SkillTrigger&gt;[] loadoutQ` |  |
-| **`loadoutR`** | `public AssetRef&lt;SkillTrigger&gt;[] loadoutR` |  |
-| **`loadoutTrait`** | `public AssetRef&lt;SkillTrigger&gt;[] loadoutTrait` |  |
-| **`starNormalizedStrength`** | `[NonSerialized]
-[SaveVar(SaveVarFlags.Default)]
-public float starNormalizedStrength` |  |
+| **`ClientHeroEvent_OnGemDrop`** | `public SafeAction<Gem> ClientHeroEvent_OnGemDrop` |  |
+| **`ClientHeroEvent_OnGemEquip`** | `public SafeAction<Gem> ClientHeroEvent_OnGemEquip` |  |
+| **`ClientHeroEvent_OnGemPickup`** | `public SafeAction<Gem> ClientHeroEvent_OnGemPickup` |  |
+| **`ClientHeroEvent_OnGemQualityChanged`** | `public SafeAction<Gem, int, int> ClientHeroEvent_OnGemQualityChanged` |  |
+| **`ClientHeroEvent_OnGemSwap`** | `public SafeAction<GemLocation, GemLocation> ClientHeroEvent_OnGemSwap` |  |
+| **`ClientHeroEvent_OnGemUnequip`** | `public SafeAction<Gem> ClientHeroEvent_OnGemUnequip` |  |
+| **`ClientHeroEvent_OnSkillDrop`** | `public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillDrop` |  |
+| **`ClientHeroEvent_OnSkillEquip`** | `public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillEquip` |  |
+| **`ClientHeroEvent_OnSkillLevelChanged`** | `public SafeAction<SkillTrigger, int, int> ClientHeroEvent_OnSkillLevelChanged` |  |
+| **`ClientHeroEvent_OnSkillPickup`** | `public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillPickup` |  |
+| **`ClientHeroEvent_OnSkillSwap`** | `public SafeAction<HeroSkillLocation, HeroSkillLocation> ClientHeroEvent_OnSkillSwap` |  |
+| **`ClientHeroEvent_OnSkillUnequip`** | `public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillUnequip` |  |
+| **`loadoutMovement`** | `public AssetRef<SkillTrigger>[] loadoutMovement` |  |
+| **`loadoutQ`** | `public AssetRef<SkillTrigger>[] loadoutQ` |  |
+| **`loadoutR`** | `public AssetRef<SkillTrigger>[] loadoutR` |  |
+| **`loadoutTrait`** | `public AssetRef<SkillTrigger>[] loadoutTrait` |  |
+| **`starNormalizedStrength`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public float starNormalizedStrength` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`E`** | `public SkillTrigger E { get; set; }` |  |
-| **`gems`** | `public IReadOnlyDictionary&lt;GemLocation, Gem&gt; gems { get; }` |  |
+| **`gems`** | `public IReadOnlyDictionary<GemLocation, Gem> gems { get; }` |  |
 | **`holdingObject`** | `public IItem holdingObject { get; }` |  |
 | **`Identity`** | `public SkillTrigger Identity { get; set; }` |  |
 | **`maxGemCountE`** | `public int maxGemCountE { get; set; }` |  |
@@ -68,7 +67,7 @@ public bool CanReplaceSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `bool`
 
@@ -81,8 +80,8 @@ public void CmdEquipGem(GemLocation loc, Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `CmdEquipSkill(HeroSkillLocation, SkillTrigger)`
 
@@ -93,8 +92,8 @@ public void CmdEquipSkill(HeroSkillLocation type, SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 ### `CmdMoveGem(Gem, Vector3)`
 
@@ -105,7 +104,7 @@ public void CmdMoveGem(Gem gem, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 ### `CmdMoveSkill(SkillTrigger, Vector3)`
@@ -117,7 +116,7 @@ public void CmdMoveSkill(SkillTrigger skill, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 ### `CmdStopHoldInHand()`
@@ -135,8 +134,8 @@ public void CmdSwapSlotGem(GemLocation a, GemLocation b)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `a` | [GemLocation](/api/Global.GemLocation) |  |
-| `b` | [GemLocation](/api/Global.GemLocation) |  |
+| `a` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `b` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 ### `CmdSwapSlotSkill(HeroSkillLocation, HeroSkillLocation)`
 
@@ -147,8 +146,8 @@ public void CmdSwapSlotSkill(HeroSkillLocation a, HeroSkillLocation b)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `a` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `b` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `a` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `b` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 ### `CmdUnequipGem(GemLocation, Vector3)`
 
@@ -159,7 +158,7 @@ public void CmdUnequipGem(GemLocation loc, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 ### `CmdUnequipSkill(HeroSkillLocation, Vector3)`
@@ -171,7 +170,7 @@ public void CmdUnequipSkill(HeroSkillLocation type, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 ### `EquipGem(GemLocation, Gem)`
@@ -183,8 +182,8 @@ public void EquipGem(GemLocation loc, Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `EquipSkill(HeroSkillLocation, SkillTrigger, bool)`
 
@@ -195,8 +194,8 @@ public void EquipSkill(HeroSkillLocation type, SkillTrigger skill, bool ignoreCa
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `ignoreCanReplace` | `bool` |  |
 
 ### `GetCurrentGemCount(HeroSkillLocation)`
@@ -208,7 +207,7 @@ public int GetCurrentGemCount(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `int`
 
@@ -221,7 +220,7 @@ public int GetEmptyGemSlot(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `int`
 
@@ -234,7 +233,7 @@ public Gem GetFirstGem(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `Gem`
 
@@ -247,7 +246,7 @@ public Gem GetGem(GemLocation loc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 **Returns:** `Gem`
 
@@ -260,9 +259,9 @@ public IEnumerable<Gem> GetGemsInSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;Gem&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><Gem>`
 
 ### `GetGemsPairInSkill(HeroSkillLocation)`
 
@@ -273,9 +272,9 @@ public IEnumerable<KeyValuePair<GemLocation, Gem>> GetGemsPairInSkill(HeroSkillL
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&lt;GemLocation,Gem&gt;&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.KeyValuePair<TKey, TValue><GemLocation,Gem>>`
 
 ### `GetLoadoutSkills(HeroSkillLocation)`
 
@@ -286,7 +285,7 @@ public SkillTrigger[] GetLoadoutSkills(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `SkillTrigger[]`
 
@@ -299,7 +298,7 @@ public int GetMaxGemCount(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `int`
 
@@ -312,7 +311,7 @@ public SkillTrigger GetSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `SkillTrigger`
 
@@ -338,7 +337,7 @@ public void HoldInHand(IItem holdable)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `holdable` | [IItem](/api/Global.IItem) |  |
+| `holdable` | [`IItem`](/api/Global.IItem) |  |
 
 ### `MergeGem(Gem, Gem)`
 
@@ -349,8 +348,8 @@ public void MergeGem(Gem victim, Gem receivingGem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Gem](/api/Global.Gem) |  |
-| `receivingGem` | [Gem](/api/Global.Gem) |  |
+| `victim` | [`Gem`](/api/Global.Gem) |  |
+| `receivingGem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `OnLateStartServer()`
 
@@ -373,7 +372,7 @@ public void SetMaxGemCount(HeroSkillLocation type, int count)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `count` | `int` |  |
 
 ### `StopHoldInHand()`
@@ -392,8 +391,8 @@ public bool TryGetEquippedGemOfSameType(Type type, out GemLocation loc, out Gem 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `bool`
 
@@ -406,8 +405,8 @@ public bool TryGetGem(GemLocation loc, out Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `bool`
 
@@ -420,8 +419,8 @@ public bool TryGetGemLocation(Gem gem, out GemLocation location)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
-| `location` | [GemLocation](/api/Global.GemLocation) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
+| `location` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 **Returns:** `bool`
 
@@ -434,8 +433,8 @@ public bool TryGetSkill(HeroSkillLocation type, out SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `bool`
 
@@ -448,8 +447,8 @@ public bool TryGetSkillLocation(SkillTrigger skill, out HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `bool`
 
@@ -462,7 +461,7 @@ public Gem UnequipGem(GemLocation loc, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 **Returns:** `Gem`
@@ -476,7 +475,7 @@ public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `ignoreCanReplace` | `bool` |  |
 

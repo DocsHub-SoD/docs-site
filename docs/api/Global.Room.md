@@ -1,5 +1,6 @@
 # Class: Room
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `SingletonDewNetworkBehaviour` → [Room](/api/Global.Room)
@@ -20,22 +21,19 @@ public class Room : SingletonDewNetworkBehaviour<Room>, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`availableCameraAngles`** | `public float[] availableCameraAngles` |  |
-| **`ClientEvent_OnFootstep`** | `public SafeAction&lt;Entity&gt; ClientEvent_OnFootstep` | Called everywhere everytime a footstep is done on an entity. |
+| **`ClientEvent_OnFootstep`** | `public SafeAction<Entity> ClientEvent_OnFootstep` | Called everywhere everytime a footstep is done on an entity. |
 | **`ClientEvent_OnPrepareAsNonHostileRoom`** | `public SafeAction ClientEvent_OnPrepareAsNonHostileRoom` |  |
 | **`ClientEvent_OnRoomClear`** | `public SafeAction ClientEvent_OnRoomClear` |  |
 | **`ClientEvent_OnRoomStart`** | `public SafeAction ClientEvent_OnRoomStart` |  |
-| **`ClientEvent_WaypointLocked`** | `public SafeAction&lt;Room_Waypoint&gt; ClientEvent_WaypointLocked` |  |
-| **`ClientEvent_WaypointUnlocked`** | `public SafeAction&lt;Room_Waypoint&gt; ClientEvent_WaypointUnlocked` |  |
+| **`ClientEvent_WaypointLocked`** | `public SafeAction<Room_Waypoint> ClientEvent_WaypointLocked` |  |
+| **`ClientEvent_WaypointUnlocked`** | `public SafeAction<Room_Waypoint> ClientEvent_WaypointUnlocked` |  |
 | **`defaultSurface`** | `public DewSurfaceData defaultSurface` |  |
-| **`metadata`** | `[ReadOnly]
-public DewRoomMetadata metadata` |  |
+| **`metadata`** | `[ReadOnly] public DewRoomMetadata metadata` |  |
 | **`music`** | `public DewMusicItem music` |  |
 | **`onRemoveObstacles`** | `public SafeAction onRemoveObstacles` | This is called on server when this room needs to clear any progression obstacles.e.g. Barriers, Locked Shrines of Despair |
-| **`onRoomClear`** | `[FoldoutGroup("Events", 0)]
-public UnityEvent onRoomClear` | Called on server when all combat sections are cleared / a hero steps on clear condition section. |
-| **`openRoomExitOnClear`** | `[ToggleLeft]
-public bool openRoomExitOnClear` |  |
-| **`playerPathablePoints`** | `public readonly List&lt;Vector3&gt; playerPathablePoints` | Available everywhere. |
+| **`onRoomClear`** | `[FoldoutGroup("Events", 0)] public UnityEvent onRoomClear` | Called on server when all combat sections are cleared / a hero steps on clear condition section. |
+| **`openRoomExitOnClear`** | `[ToggleLeft] public bool openRoomExitOnClear` |  |
+| **`playerPathablePoints`** | `public readonly List<Vector3> playerPathablePoints` | Available everywhere. |
 
 ## Properties
 
@@ -55,8 +53,8 @@ public bool openRoomExitOnClear` |  |
 | **`props`** | `public RoomProps props { get; }` |  |
 | **`rewards`** | `public RoomRewards rewards { get; }` |  |
 | **`rifts`** | `public RoomRifts rifts { get; }` |  |
-| **`sections`** | `public IList&lt;RoomSection&gt; sections { get; }` |  |
-| **`unlockedWaypoints`** | `public IReadOnlyList&lt;Room_Waypoint&gt; unlockedWaypoints { get; }` |  |
+| **`sections`** | `public IList<RoomSection> sections { get; }` |  |
+| **`unlockedWaypoints`** | `public IReadOnlyList<Room_Waypoint> unlockedWaypoints { get; }` |  |
 
 ## Methods
 
@@ -69,7 +67,7 @@ public void AddUnlockedWaypoint(Room_Waypoint waypoint)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `waypoint` | [Room_Waypoint](/api/Global.Room_Waypoint) |  |
+| `waypoint` | [`Room_Waypoint`](/api/Global.Room_Waypoint) |  |
 
 ### `Awake()`
 
@@ -207,7 +205,7 @@ public void RemoveUnlockedWaypoint(Room_Waypoint waypoint)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `waypoint` | [Room_Waypoint](/api/Global.Room_Waypoint) |  |
+| `waypoint` | [`Room_Waypoint`](/api/Global.Room_Waypoint) |  |
 
 ### `SetCameraAngleIndex_Local(int)`
 

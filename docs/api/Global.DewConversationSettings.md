@@ -1,5 +1,6 @@
 # Class: DewConversationSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,15 +12,13 @@ public class DewConversationSettings
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`callFunctions`** | `[NonSerialized]
-public Dictionary&lt;string, Action&gt; callFunctions` | This is not synced to clients. |
-| **`onStop`** | `[NonSerialized]
-public Action onStop` | This is not synced to clients. |
+| **`callFunctions`** | `[NonSerialized] public Dictionary<string, Action> callFunctions` | This is not synced to clients. |
+| **`onStop`** | `[NonSerialized] public Action onStop` | This is not synced to clients. |
 | **`player`** | `public DewPlayer player` |  |
 | **`rotateTowardsCenter`** | `public bool rotateTowardsCenter` |  |
 | **`speakers`** | `public Entity[] speakers` |  |
 | **`startConversationKey`** | `public string startConversationKey` |  |
-| **`variables`** | `public Dictionary&lt;string, string&gt; variables` |  |
+| **`variables`** | `public Dictionary<string, string> variables` |  |
 | **`visibility`** | `public ConversationVisibility visibility` |  |
 
 ## Properties

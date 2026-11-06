@@ -1,5 +1,6 @@
 # Class: FxAttachToEntity
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
@@ -18,9 +19,7 @@ public class FxAttachToEntity : LogicBehaviour, ILogicUpdate, IAttachableToEntit
 | **`position`** | `public FxAttachToEntity.PositionType position` |  |
 | **`rotation`** | `public FxAttachToEntity.RotationType rotation` |  |
 | **`scale`** | `public FxAttachToEntity.ScaleType scale` |  |
-| **`useFlatRotation`** | `[ToggleLeft]
-[HideIf("@rotation == RotationType.DoNothing", true)]
-public bool useFlatRotation` |  |
+| **`useFlatRotation`** | `[ToggleLeft] [HideIf("@rotation == RotationType.DoNothing", true)] public bool useFlatRotation` |  |
 
 ## Properties
 
@@ -45,7 +44,7 @@ public void OnAttachToEntity(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `OnDisable()`
 

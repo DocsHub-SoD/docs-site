@@ -1,5 +1,6 @@
 # Class: DashAttackInstance
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [DamageInstance](/api/Global.DamageInstance)
@@ -12,11 +13,8 @@ public class DashAttackInstance : DamageInstance, ILogicUpdate, ICleanup, ICusto
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`damageGracePeriod`** | `[Title("Dash Attack Instance", null, TitleAlignments.Left, true, true)]
-public float damageGracePeriod` |  |
-| **`dash`** | `[InlineProperty]
-[HideLabel]
-public Dash dash` |  |
+| **`damageGracePeriod`** | `[Title("Dash Attack Instance", null, TitleAlignments.Left, true, true)] public float damageGracePeriod` |  |
+| **`dash`** | `[InlineProperty] [HideLabel] public Dash dash` |  |
 | **`isDirectionMode`** | `public bool isDirectionMode` |  |
 
 ## Methods
@@ -47,8 +45,8 @@ protected override void OnBeforeDispatchDamage(ref DamageData dmg, Entity target
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dmg` | [DamageData](/api/Global.DamageData) |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `dmg` | [`DamageData`](/api/Global.DamageData) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `OnCreate()`
 
@@ -65,4 +63,4 @@ protected virtual void OnSetupDash(DispByDestination disp)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `disp` | [DispByDestination](/api/Global.DispByDestination) |  |
+| `disp` | [`DispByDestination`](/api/Global.DispByDestination) |  |

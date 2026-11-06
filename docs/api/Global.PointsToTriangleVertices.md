@@ -1,5 +1,6 @@
 # Class: PointsToTriangleVertices
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -22,4 +23,4 @@ public class PointsToTriangleVertices
 public IEnumerator<Vector2> GetEnumerator()
 ```
 
-**Returns:** `System.Collections.Generic.IEnumerator&lt;T&gt;&lt;UnityEngine.Vector2&gt;`
+**Returns:** `System.Collections.Generic.IEnumerator<T><UnityEngine.Vector2>`

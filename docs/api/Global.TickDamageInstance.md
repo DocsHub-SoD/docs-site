@@ -1,5 +1,6 @@
 # Class: TickDamageInstance
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [DamageInstance](/api/Global.DamageInstance)
@@ -12,10 +13,8 @@ public class TickDamageInstance : DamageInstance, ILogicUpdate, ICleanup, ICusto
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`delay`** | `[Title("Tick Damage Instance", null, TitleAlignments.Left, true, true)]
-public float delay` |  |
-| **`fxLoop`** | `[LabelText("Fx Loop (After Delay)")]
-public GameObject fxLoop` |  |
+| **`delay`** | `[Title("Tick Damage Instance", null, TitleAlignments.Left, true, true)] public float delay` |  |
+| **`fxLoop`** | `[LabelText("Fx Loop (After Delay)")] public GameObject fxLoop` |  |
 | **`fxPerTick`** | `public GameObject fxPerTick` |  |
 | **`fxTelegraph`** | `public GameObject fxTelegraph` |  |
 | **`tickInterval`** | `public float tickInterval` |  |
@@ -25,8 +24,7 @@ public GameObject fxLoop` |  |
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`duration`** | `[ShowInInspector]
-public float duration { get; }` |  |
+| **`duration`** | `[ShowInInspector] public float duration { get; }` |  |
 
 ## Methods
 

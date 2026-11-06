@@ -1,5 +1,6 @@
 # Class: EditSkillManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [EditSkillManager](/api/Global.EditSkillManager)
@@ -13,29 +14,22 @@ public class EditSkillManager : ManagerBase<EditSkillManager>, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`backButtonPriority`** | `public int backButtonPriority` |  |
-| **`canRepeatConfirmHold`** | `[NonSerialized]
-public bool canRepeatConfirmHold` |  |
+| **`canRepeatConfirmHold`** | `[NonSerialized] public bool canRepeatConfirmHold` |  |
 | **`confirmHoldAudio`** | `public DewAudioSource confirmHoldAudio` |  |
-| **`confirmHoldGem`** | `[NonSerialized]
-public GemLocation confirmHoldGem` |  |
-| **`confirmHoldNormalizedAmount`** | `[NonSerialized]
-public float confirmHoldNormalizedAmount` |  |
-| **`confirmHoldSkill`** | `[NonSerialized]
-public HeroSkillLocation confirmHoldSkill` |  |
-| **`didClickWhileConfirmHolding`** | `[NonSerialized]
-public bool didClickWhileConfirmHolding` |  |
+| **`confirmHoldGem`** | `[NonSerialized] public GemLocation confirmHoldGem` |  |
+| **`confirmHoldNormalizedAmount`** | `[NonSerialized] public float confirmHoldNormalizedAmount` |  |
+| **`confirmHoldSkill`** | `[NonSerialized] public HeroSkillLocation confirmHoldSkill` |  |
+| **`didClickWhileConfirmHolding`** | `[NonSerialized] public bool didClickWhileConfirmHolding` |  |
 | **`dropToGroundBlocker`** | `public RectTransform dropToGroundBlocker` |  |
-| **`isConfirmHoldingGem`** | `[NonSerialized]
-public bool isConfirmHoldingGem` |  |
-| **`isConfirmHoldingSkill`** | `[NonSerialized]
-public bool isConfirmHoldingSkill` |  |
-| **`onDraggingObjectChanged`** | `public Action&lt;Object&gt; onDraggingObjectChanged` |  |
-| **`OnGemSlotClientState`** | `public Action&lt;GemLocation, Gem&gt; OnGemSlotClientState` |  |
-| **`OnGemVisibleClientState`** | `public Action&lt;Gem, bool&gt; OnGemVisibleClientState` |  |
-| **`onModeChanged`** | `public Action&lt;EditSkillManager.ModeType&gt; onModeChanged` |  |
+| **`isConfirmHoldingGem`** | `[NonSerialized] public bool isConfirmHoldingGem` |  |
+| **`isConfirmHoldingSkill`** | `[NonSerialized] public bool isConfirmHoldingSkill` |  |
+| **`onDraggingObjectChanged`** | `public Action<Object> onDraggingObjectChanged` |  |
+| **`OnGemSlotClientState`** | `public Action<GemLocation, Gem> OnGemSlotClientState` |  |
+| **`OnGemVisibleClientState`** | `public Action<Gem, bool> OnGemVisibleClientState` |  |
+| **`onModeChanged`** | `public Action<EditSkillManager.ModeType> onModeChanged` |  |
 | **`onSelectedSlotChanged`** | `public Action onSelectedSlotChanged` |  |
-| **`OnSkillSlotClientState`** | `public Action&lt;HeroSkillLocation, SkillTrigger&gt; OnSkillSlotClientState` |  |
-| **`OnSkillVisibleClientState`** | `public Action&lt;SkillTrigger, bool&gt; OnSkillVisibleClientState` |  |
+| **`OnSkillSlotClientState`** | `public Action<HeroSkillLocation, SkillTrigger> OnSkillSlotClientState` |  |
+| **`OnSkillVisibleClientState`** | `public Action<SkillTrigger, bool> OnSkillVisibleClientState` |  |
 | **`skillButtons`** | `public GameObject skillButtons` |  |
 
 ## Properties
@@ -80,7 +74,7 @@ public void DoClickOnGemSlot(GemLocation location)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `location` | [GemLocation](/api/Global.GemLocation) |  |
+| `location` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 ### `DoClickOnSkillButton(HeroSkillLocation)`
 
@@ -91,7 +85,7 @@ public void DoClickOnSkillButton(HeroSkillLocation skillType)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillType` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `skillType` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 ### `DoConfirm()`
 
@@ -165,7 +159,7 @@ public bool IsSlotHighlighted(GemLocation gemLoc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gemLoc` | [GemLocation](/api/Global.GemLocation) |  |
+| `gemLoc` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 **Returns:** `bool`
 
@@ -178,7 +172,7 @@ public bool IsSlotHighlighted(HeroSkillLocation skillLoc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillLoc` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `skillLoc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `bool`
 
@@ -191,7 +185,7 @@ public bool IsSlotSelectable(GemLocation gemLoc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gemLoc` | [GemLocation](/api/Global.GemLocation) |  |
+| `gemLoc` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 **Returns:** `bool`
 
@@ -204,7 +198,7 @@ public bool IsSlotSelectable(HeroSkillLocation skillLoc)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillLoc` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `skillLoc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `bool`
 
@@ -248,7 +242,7 @@ public void SetClientState_MergeGemVictim(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `SetClientState_SetGemSlot(GemLocation, Gem)`
 
@@ -259,8 +253,8 @@ public void SetClientState_SetGemSlot(GemLocation loc, Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `SetClientState_SetSkillSlot(HeroSkillLocation, SkillTrigger)`
 
@@ -271,8 +265,8 @@ public void SetClientState_SetSkillSlot(HeroSkillLocation type, SkillTrigger ski
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 ### `ShouldUseHoldToConfirm(GemLocation)`
 
@@ -283,7 +277,7 @@ public bool ShouldUseHoldToConfirm(GemLocation gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [GemLocation](/api/Global.GemLocation) |  |
+| `gem` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 **Returns:** `bool`
 
@@ -296,7 +290,7 @@ public bool ShouldUseHoldToConfirm(HeroSkillLocation skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `bool`
 
@@ -309,7 +303,7 @@ public void StartConfirmHold(GemLocation gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [GemLocation](/api/Global.GemLocation) |  |
+| `gem` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 ### `StartConfirmHold(HeroSkillLocation)`
 
@@ -320,7 +314,7 @@ public void StartConfirmHold(HeroSkillLocation skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `skill` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 ### `StartDrag(Object)`
 
@@ -342,7 +336,7 @@ public void StartEditSkillShrine(EditSkillShrine provider)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `provider` | [EditSkillShrine](/api/Global.EditSkillShrine) |  |
+| `provider` | [`EditSkillShrine`](/api/Global.EditSkillShrine) |  |
 
 ### `StartEquipGem(Gem)`
 
@@ -353,7 +347,7 @@ public void StartEquipGem(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `StartEquipSkill(SkillTrigger)`
 
@@ -364,7 +358,7 @@ public void StartEquipSkill(SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 ### `StartRegularEdit(bool)`
 
@@ -386,7 +380,7 @@ public void StartSell(PropEnt_Merchant_Base merchant)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `merchant` | [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) |  |
+| `merchant` | [`PropEnt_Merchant_Base`](/api/Global.PropEnt_Merchant_Base) |  |
 
 ### `StopConfirmHold(bool)`
 

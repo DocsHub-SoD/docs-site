@@ -1,5 +1,6 @@
 # Struct: Formula
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,11 +14,7 @@ public struct Formula
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`formula`** | `[HideLabel]
-[SuffixLabel("f(x)", true)]
-[ValidateInput("IsValid", "Expression Error", InfoMessageType.Error)]
-[FormerlySerializedAs("forumla")]
-public string formula` |  |
+| **`formula`** | `[HideLabel] [SuffixLabel("f(x)", true)] [ValidateInput("IsValid", "Expression Error", InfoMessageType.Error)] [FormerlySerializedAs("forumla")] public string formula` |  |
 
 ## Methods
 

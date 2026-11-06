@@ -1,5 +1,6 @@
 # Class: RoomRewards
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
@@ -15,12 +16,9 @@ public class RoomRewards : RoomComponent, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`disableRewards`** | `public bool disableRewards` |  |
-| **`gemBonusQuality`** | `[NonSerialized]
-public int gemBonusQuality` | Available on server. |
-| **`giveHighRarityReward`** | `[NonSerialized]
-public bool giveHighRarityReward` | Available on server. |
-| **`skillBonusLevel`** | `[NonSerialized]
-public int skillBonusLevel` | Available on server. |
+| **`gemBonusQuality`** | `[NonSerialized] public int gemBonusQuality` | Available on server. |
+| **`giveHighRarityReward`** | `[NonSerialized] public bool giveHighRarityReward` | Available on server. |
+| **`skillBonusLevel`** | `[NonSerialized] public int skillBonusLevel` | Available on server. |
 
 ## Properties
 

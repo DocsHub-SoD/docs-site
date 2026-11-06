@@ -1,5 +1,6 @@
 # Class: BasicEffectWithStrength
 
+- **Category:** <span class="cat-dot" style="--cat-color: #a855f7" data-cat="Buffs & Statuses"></span> Buffs & Statuses
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [BasicEffect](/api/Global.BasicEffect) → [ArmorBoostEffect](/api/Global.ArmorBoostEffect) → [ArmorReductionEffect](/api/Global.ArmorReductionEffect) → [CrippleEffect](/api/Global.CrippleEffect) → [FakeMaxHealthEffect](/api/Global.FakeMaxHealthEffect) → [HasteEffect](/api/Global.HasteEffect) → [SlowEffect](/api/Global.SlowEffect) → [SpeedEffect](/api/Global.SpeedEffect)

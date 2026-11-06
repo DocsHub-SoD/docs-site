@@ -1,5 +1,6 @@
 # Class: EntitySound
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -88,5 +89,5 @@ public void Say(DewAudioClip clip, bool interruptPrevious)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `clip` | [DewAudioClip](/api/Global.DewAudioClip) |  |
+| `clip` | [`DewAudioClip`](/api/Global.DewAudioClip) |  |
 | `interruptPrevious` | `bool` |  |

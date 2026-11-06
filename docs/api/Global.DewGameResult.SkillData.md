@@ -1,5 +1,6 @@
 # Struct: DewGameResult.SkillData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public struct DewGameResult.SkillData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`capturedTooltipFields`** | `public Dictionary&lt;string, string&gt; capturedTooltipFields` |  |
+| **`capturedTooltipFields`** | `public Dictionary<string, string> capturedTooltipFields` |  |
 | **`cooldownTime`** | `public float cooldownTime` |  |
 | **`level`** | `public int level` |  |
 | **`loc`** | `public HeroSkillLocation loc` |  |
@@ -31,7 +32,7 @@ public void CaptureTooltipFields(SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 ### `GetSkillTrigger()`
 

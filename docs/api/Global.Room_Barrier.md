@@ -1,5 +1,6 @@
 # Class: Room_Barrier
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour)
@@ -15,8 +16,7 @@ public class Room_Barrier : DewNetworkBehaviour, ILogicUpdate
 | **`canPassThroughOneWay`** | `public bool canPassThroughOneWay` |  |
 | **`closedEffect`** | `public GameObject closedEffect` |  |
 | **`openEffect`** | `public GameObject openEffect` |  |
-| **`passThroughCollider`** | `[ShowIf("canPassThroughOneWay", true)]
-public DewCollider passThroughCollider` |  |
+| **`passThroughCollider`** | `[ShowIf("canPassThroughOneWay", true)] public DewCollider passThroughCollider` |  |
 
 ## Properties
 

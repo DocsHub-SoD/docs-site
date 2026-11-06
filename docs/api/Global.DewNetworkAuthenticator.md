@@ -1,5 +1,6 @@
 # Class: DewNetworkAuthenticator
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -19,7 +20,7 @@ public void OnAuthRequestMessage(NetworkConnectionToClient conn, DewAuthRequestM
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `conn` | `Mirror.NetworkConnectionToClient` |  |
-| `msg` | [DewAuthRequestMessage](/api/Global.DewAuthRequestMessage) |  |
+| `msg` | [`DewAuthRequestMessage`](/api/Global.DewAuthRequestMessage) |  |
 
 ### `OnAuthResponseMessage(DewAuthResponseMessage)`
 
@@ -30,7 +31,7 @@ public void OnAuthResponseMessage(DewAuthResponseMessage msg)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `msg` | [DewAuthResponseMessage](/api/Global.DewAuthResponseMessage) |  |
+| `msg` | [`DewAuthResponseMessage`](/api/Global.DewAuthResponseMessage) |  |
 
 ### `OnClientAuthenticate()`
 

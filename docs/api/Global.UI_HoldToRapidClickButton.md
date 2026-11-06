@@ -1,5 +1,6 @@
 # Class: UI_HoldToRapidClickButton
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,8 +12,7 @@ public class UI_HoldToRapidClickButton : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onClick`** | `[InfoBox("Subscribe to this instead of Button's to prevent double clicks.", InfoMessageType.Info, null)]
-public UnityEvent onClick` |  |
+| **`onClick`** | `[InfoBox("Subscribe to this instead of Button's to prevent double clicks.", InfoMessageType.Info, null)] public UnityEvent onClick` |  |
 
 ## Methods
 

@@ -1,5 +1,6 @@
 # Class: ComponentCache&lt;TKey, TValue&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,7 +16,7 @@ public class ComponentCache<TKey, TValue> where TKey : Object where TValue : cla
 public void Clear()
 ```
 
-### `GetOrAdd(TKey, Func&lt;TValue&gt;)`
+### `GetOrAdd(TKey, Func<TValue>)`
 
 ```csharp
 public TValue GetOrAdd(TKey key, Func<TValue> valueFactory)
@@ -25,6 +26,6 @@ public TValue GetOrAdd(TKey key, Func<TValue> valueFactory)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `key` | `TKey` |  |
-| `valueFactory` | `System.Func&lt;TResult&gt;&lt;TValue&gt;` |  |
+| `valueFactory` | `System.Func<TResult><TValue>` |  |
 
 **Returns:** `TValue`

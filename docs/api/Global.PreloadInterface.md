@@ -1,5 +1,6 @@
 # Class: PreloadInterface
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -9,7 +10,7 @@ public class PreloadInterface
 
 ## Methods
 
-### `AddAssetRef&lt;T&gt;(AssetRef&lt;T&gt;)`
+### `AddAssetRef<T>(AssetRef<T>)`
 
 ```csharp
 public void AddAssetRef<T>(AssetRef<T> assetRef) where T : Object
@@ -18,7 +19,7 @@ public void AddAssetRef<T>(AssetRef<T> assetRef) where T : Object
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `assetRef` | `AssetRef&lt;T&gt;` |  |
+| `assetRef` | `AssetRef<T>` |  |
 | `` | `T` |  |
 
 ### `AddFromMonsterPool(MonsterPool)`
@@ -30,7 +31,7 @@ public void AddFromMonsterPool(MonsterPool pool)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `pool` | [MonsterPool](/api/Global.MonsterPool) |  |
+| `pool` | [`MonsterPool`](/api/Global.MonsterPool) |  |
 
 ### `AddGuid(string)`
 

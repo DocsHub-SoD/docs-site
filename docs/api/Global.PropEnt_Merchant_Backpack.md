@@ -1,5 +1,6 @@
 # Class: PropEnt_Merchant_Backpack
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [PropEntity](/api/Global.PropEntity)
@@ -27,4 +28,4 @@ protected override void OnDeath(EventInfoKill info)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [EventInfoKill](/api/Global.EventInfoKill) |  |
+| `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |

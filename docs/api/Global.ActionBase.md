@@ -1,5 +1,6 @@
 # Class: ActionBase
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [ActionAttackMove](/api/Global.ActionAttackMove) → [ActionCast](/api/Global.ActionCast) → [ActionInteract](/api/Global.ActionInteract)

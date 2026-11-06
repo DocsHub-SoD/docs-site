@@ -1,5 +1,6 @@
 # Class: Rift_RoomExit
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Rift](/api/Global.Rift) → [Rift_MockExit](/api/Global.Rift_MockExit)
@@ -38,7 +39,7 @@ public Vector3[] GetBanSpots()
 
 **Returns:** `UnityEngine.Vector3[]`
 
-### `GetSidetrackPortalPositions(List&lt;(Vector3, Quaternion)&gt;)`
+### `GetSidetrackPortalPositions(List<(Vector3, Quaternion)>)`
 
 ```csharp
 public void GetSidetrackPortalPositions(List<(Vector3, Quaternion)> list)
@@ -47,7 +48,7 @@ public void GetSidetrackPortalPositions(List<(Vector3, Quaternion)> list)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.Collections.Generic.List&lt;T&gt;&lt;(UnityEngine.Vector3,UnityEngine.Quaternion)&gt;` |  |
+| `list` | `System.Collections.Generic.List<T><(UnityEngine.Vector3,UnityEngine.Quaternion)>` |  |
 
 ### `OnCreate()`
 
@@ -64,7 +65,7 @@ protected override bool OnInteractRift(Hero hero)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hero` | [Hero](/api/Global.Hero) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |
 
 **Returns:** `bool`
 

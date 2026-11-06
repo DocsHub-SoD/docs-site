@@ -1,5 +1,6 @@
 # Class: EntityAnimation
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -14,8 +15,7 @@ public class EntityAnimation : EntityComponent, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`abilityAnimStatus`** | `public EntityAnimation.AbilityAnimationStatus abilityAnimStatus` |  |
-| **`animator`** | `[NonSerialized]
-public Animator animator` |  |
+| **`animator`** | `[NonSerialized] public Animator animator` |  |
 
 ## Properties
 
@@ -51,7 +51,7 @@ public void PlayAbilityAnimation(DewAnimationClip clip, float speed, float clipS
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `clip` | [DewAnimationClip](/api/Global.DewAnimationClip) |  |
+| `clip` | [`DewAnimationClip`](/api/Global.DewAnimationClip) |  |
 | `speed` | `float` |  |
 | `clipSelectValue` | `float` |  |
 
@@ -64,7 +64,7 @@ public void PlayAbilityAnimation(DewAnimationClip clip, float speed = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `clip` | [DewAnimationClip](/api/Global.DewAnimationClip) |  |
+| `clip` | [`DewAnimationClip`](/api/Global.DewAnimationClip) |  |
 | `speed` | `float` |  |
 
 ### `PlayStaggerAnimation()`
@@ -82,7 +82,7 @@ public void ReplaceAnimation(EntityAnimation.ReplaceableAnimationType type, Anim
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [EntityAnimation.ReplaceableAnimationType](/api/Global.EntityAnimation) |  |
+| `type` | [`EntityAnimation.ReplaceableAnimationType`](/api/Global.EntityAnimation) |  |
 | `clip` | `UnityEngine.AnimationClip` |  |
 
 ### `ReplaceAnimationLocal(ReplaceableAnimationType, AnimationClipWithSpeed)`
@@ -94,8 +94,8 @@ public void ReplaceAnimationLocal(EntityAnimation.ReplaceableAnimationType type,
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [EntityAnimation.ReplaceableAnimationType](/api/Global.EntityAnimation) |  |
-| `newData` | [AnimationClipWithSpeed](/api/Global.AnimationClipWithSpeed) |  |
+| `type` | [`EntityAnimation.ReplaceableAnimationType`](/api/Global.EntityAnimation) |  |
+| `newData` | [`AnimationClipWithSpeed`](/api/Global.AnimationClipWithSpeed) |  |
 
 ### `ReplaceAnimationLocal(ReplaceableAnimationType, AnimationClip)`
 
@@ -106,7 +106,7 @@ public void ReplaceAnimationLocal(EntityAnimation.ReplaceableAnimationType type,
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [EntityAnimation.ReplaceableAnimationType](/api/Global.EntityAnimation) |  |
+| `type` | [`EntityAnimation.ReplaceableAnimationType`](/api/Global.EntityAnimation) |  |
 | `newClip` | `UnityEngine.AnimationClip` |  |
 
 ### `SetupModel()`
@@ -132,4 +132,4 @@ public void StopAbilityAnimation(DewAnimationClip clip)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `clip` | [DewAnimationClip](/api/Global.DewAnimationClip) |  |
+| `clip` | [`DewAnimationClip`](/api/Global.DewAnimationClip) |  |

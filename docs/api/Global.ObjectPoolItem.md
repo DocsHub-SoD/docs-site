@@ -1,5 +1,6 @@
 # Class: ObjectPoolItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,7 +13,7 @@ public class ObjectPoolItem
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`activeInstances`** | `public int activeInstances` |  |
-| **`inactiveInstances`** | `public List&lt;GameObject&gt; inactiveInstances` |  |
+| **`inactiveInstances`** | `public List<GameObject> inactiveInstances` |  |
 | **`lastDestroyUnscaledTime`** | `public float lastDestroyUnscaledTime` |  |
 | **`lastInstantiateUnscaledTime`** | `public float lastInstantiateUnscaledTime` |  |
 | **`lastReuseUnscaledTime`** | `public float lastReuseUnscaledTime` |  |

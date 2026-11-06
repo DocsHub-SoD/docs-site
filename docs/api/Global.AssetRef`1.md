@@ -1,5 +1,6 @@
 # Struct: AssetRef&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -22,10 +23,8 @@ public struct AssetRef<T> where T : Object
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`asset`** | `[JsonIgnore]
-public T asset { get; set; }` |  |
-| **`lightAsset`** | `[JsonIgnore]
-public T lightAsset { get; }` |  |
+| **`asset`** | `[JsonIgnore] public T asset { get; set; }` |  |
+| **`lightAsset`** | `[JsonIgnore] public T lightAsset { get; }` |  |
 
 ## Methods
 
@@ -35,7 +34,7 @@ public T lightAsset { get; }` |  |
 public void ClearCache()
 ```
 
-### `Equals(AssetRef&lt;T&gt;)`
+### `Equals(AssetRef<T>)`
 
 ```csharp
 public bool Equals(AssetRef<T> other)
@@ -44,7 +43,7 @@ public bool Equals(AssetRef<T> other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | `AssetRef&lt;T&gt;` |  |
+| `other` | `AssetRef<T>` |  |
 
 **Returns:** `bool`
 

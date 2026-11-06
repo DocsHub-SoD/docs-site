@@ -1,5 +1,6 @@
 # Class: DewBuildProfileGroup
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,8 +13,7 @@ public class DewBuildProfileGroup : ScriptableObject
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`profiles`** | `[InfoBox("Place profiles with same content settings next to each other to build faster.", InfoMessageType.Info, null)]
-public List&lt;DewBuildProfile&gt; profiles` |  |
+| **`profiles`** | `[InfoBox("Place profiles with same content settings next to each other to build faster.", InfoMessageType.Info, null)] public List<DewBuildProfile> profiles` |  |
 
 ## Methods
 

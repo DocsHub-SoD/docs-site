@@ -1,5 +1,6 @@
 # Class: EditSkillShrine
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Shrine](/api/Global.Shrine)
@@ -12,24 +13,14 @@ public abstract class EditSkillShrine : Shrine, ILogicUpdate, ICleanup, ICustomD
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`canRepeatConfirmHold`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)]
-[ToggleLeft]
-public bool canRepeatConfirmHold` |  |
-| **`canTargetGem`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)]
-[ToggleLeft]
-public bool canTargetGem` |  |
-| **`canTargetSkill`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)]
-[ToggleLeft]
-public bool canTargetSkill` |  |
-| **`fxEnterEditMode`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)]
-public GameObject fxEnterEditMode` |  |
-| **`fxEnterEditModeLocal`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)]
-public GameObject fxEnterEditModeLocal` |  |
+| **`canRepeatConfirmHold`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] [ToggleLeft] public bool canRepeatConfirmHold` |  |
+| **`canTargetGem`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] [ToggleLeft] public bool canTargetGem` |  |
+| **`canTargetSkill`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] [ToggleLeft] public bool canTargetSkill` |  |
+| **`fxEnterEditMode`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] public GameObject fxEnterEditMode` |  |
+| **`fxEnterEditModeLocal`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] public GameObject fxEnterEditModeLocal` |  |
 | **`GenericGemIndicatorColor`** | `public static readonly Color GenericGemIndicatorColor` |  |
 | **`GenericSkillIndicatorColor`** | `public static readonly Color GenericSkillIndicatorColor` |  |
-| **`shouldExitEditModeAfterAction`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)]
-[ToggleLeft]
-public bool shouldExitEditModeAfterAction` |  |
+| **`shouldExitEditModeAfterAction`** | `[BoxGroup("EditSkillShrine Settings", true, false, 0)] [ToggleLeft] public bool shouldExitEditModeAfterAction` |  |
 
 ## Methods
 
@@ -42,8 +33,8 @@ public void CmdActivateEditSkillAction(HeroSkillLocation? skillLoc, GemLocation?
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillLoc` | [HeroSkillLocation?](/api/Global.HeroSkillLocation) |  |
-| `gemLoc` | [GemLocation?](/api/Global.GemLocation) |  |
+| `skillLoc` | [`HeroSkillLocation?`](/api/Global.HeroSkillLocation) |  |
+| `gemLoc` | [`GemLocation?`](/api/Global.GemLocation) |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
 ### `EnterEditSkill(DewPlayer, string)`
@@ -57,7 +48,7 @@ public void EnterEditSkill(DewPlayer player, string customData = null)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `customData` | `string` |  |
 
 ### `EnterEditSkill(Entity, string)`
@@ -71,7 +62,7 @@ public void EnterEditSkill(Entity entity, string customData = null)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `customData` | `string` |  |
 
 ### `GetCost(Entity)`
@@ -83,7 +74,7 @@ public override Cost? GetCost(Entity activator)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `activator` | [Entity](/api/Global.Entity) |  |
+| `activator` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `Cost?`
 
@@ -98,7 +89,7 @@ public string GetCustomData(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `string`
 
@@ -143,9 +134,9 @@ public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, GemLocation l
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `target` | [Gem](/api/Global.Gem) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `target` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `EditSkillTargetInfo`
 
@@ -160,9 +151,9 @@ public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, HeroSkillLoca
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `loc` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `target` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `loc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `target` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `EditSkillTargetInfo`
 
@@ -175,7 +166,7 @@ public virtual EditSkillTargetType GetTargetTypes(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `EditSkillTargetType`
 
@@ -190,9 +181,9 @@ protected virtual bool OnActivateEditSkill(DewPlayer player, GemLocation loc, Ge
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `loc` | [GemLocation](/api/Global.GemLocation) |  |
-| `target` | [Gem](/api/Global.Gem) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `loc` | [`GemLocation`](/api/Global.GemLocation) |  |
+| `target` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `bool`
 
@@ -207,9 +198,9 @@ protected virtual bool OnActivateEditSkill(DewPlayer player, HeroSkillLocation l
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `loc` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
-| `target` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `loc` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
+| `target` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `bool`
 
@@ -222,7 +213,7 @@ protected override bool OnUse(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 

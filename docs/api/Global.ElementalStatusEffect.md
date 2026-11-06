@@ -1,5 +1,6 @@
 # Class: ElementalStatusEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [StatusEffect](/api/Global.StatusEffect) → [StackedStatusEffect](/api/Global.StackedStatusEffect)
@@ -12,8 +13,7 @@ public class ElementalStatusEffect : StackedStatusEffect, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ampAmount`** | `[NonSerialized]
-public float ampAmount` |  |
+| **`ampAmount`** | `[NonSerialized] public float ampAmount` |  |
 | **`stackScaledEmissions`** | `public ParticleSystem[] stackScaledEmissions` |  |
 
 ## Methods

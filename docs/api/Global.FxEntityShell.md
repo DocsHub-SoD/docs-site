@@ -1,5 +1,6 @@
 # Class: FxEntityShell
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase)
@@ -12,8 +13,7 @@ public class FxEntityShell : FxInterpolatedEffectBase, IEffectComponent, IEffect
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`color`** | `[ColorUsage(false, true)]
-public Color color` |  |
+| **`color`** | `[ColorUsage(false, true)] public Color color` |  |
 
 ## Methods
 
@@ -26,7 +26,7 @@ public void OnAttachToEntity(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `ValueSetter(float)`
 

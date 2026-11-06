@@ -1,5 +1,6 @@
 # Class: DewProfile.HeroStarSlotUnlockData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,10 +12,10 @@ public class DewProfile.HeroStarSlotUnlockData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`addedDestruction`** | `public List&lt;int&gt; addedDestruction` |  |
-| **`addedFlexible`** | `public List&lt;int&gt; addedFlexible` |  |
-| **`addedImagination`** | `public List&lt;int&gt; addedImagination` |  |
-| **`addedLife`** | `public List&lt;int&gt; addedLife` |  |
+| **`addedDestruction`** | `public List<int> addedDestruction` |  |
+| **`addedFlexible`** | `public List<int> addedFlexible` |  |
+| **`addedImagination`** | `public List<int> addedImagination` |  |
+| **`addedLife`** | `public List<int> addedLife` |  |
 
 ## Methods
 
@@ -27,11 +28,11 @@ public List<int> Get(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [StarType](/api/Global.StarType) |  |
+| `type` | [`StarType`](/api/Global.StarType) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;int&gt;`
+**Returns:** `System.Collections.Generic.List<T><int>`
 
-### `Set(StarType, List&lt;int&gt;)`
+### `Set(StarType, List<int>)`
 
 ```csharp
 public void Set(StarType type, List<int> list)
@@ -40,5 +41,5 @@ public void Set(StarType type, List<int> list)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [StarType](/api/Global.StarType) |  |
-| `list` | `System.Collections.Generic.List&lt;T&gt;&lt;int&gt;` |  |
+| `type` | [`StarType`](/api/Global.StarType) |  |
+| `list` | `System.Collections.Generic.List<T><int>` |  |

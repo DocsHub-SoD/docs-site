@@ -1,5 +1,6 @@
 # Class: ZoneManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [ZoneManager](/api/Global.ZoneManager)
@@ -12,54 +13,37 @@ public class ZoneManager : NetworkedManagerBase<ZoneManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`bannedRoomModifiersForCurrentLoop`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;string&gt; bannedRoomModifiersForCurrentLoop` |  |
-| **`bannedSidetracksForCurrentLoop`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;string&gt; bannedSidetracksForCurrentLoop` |  |
+| **`bannedRoomModifiersForCurrentLoop`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> bannedRoomModifiersForCurrentLoop` |  |
+| **`bannedSidetracksForCurrentLoop`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> bannedSidetracksForCurrentLoop` |  |
 | **`ClientEvent_OnClearedCombatRoomsChanged`** | `public SafeAction ClientEvent_OnClearedCombatRoomsChanged` |  |
 | **`ClientEvent_OnCurrentHuntLevelChanged`** | `public SafeAction ClientEvent_OnCurrentHuntLevelChanged` |  |
 | **`ClientEvent_OnCurrentRoomIndexChanged`** | `public SafeAction ClientEvent_OnCurrentRoomIndexChanged` |  |
-| **`ClientEvent_OnIsInTransitionChanged`** | `public SafeAction&lt;bool&gt; ClientEvent_OnIsInTransitionChanged` | Called everywhere when room transition status has changed. |
+| **`ClientEvent_OnIsInTransitionChanged`** | `public SafeAction<bool> ClientEvent_OnIsInTransitionChanged` | Called everywhere when room transition status has changed. |
 | **`ClientEvent_OnLoopStarted`** | `public SafeAction ClientEvent_OnLoopStarted` | Called everywhere when first zone starts or a new loop has started. |
 | **`ClientEvent_OnNodesChanged`** | `public SafeAction ClientEvent_OnNodesChanged` | Called once per frame when nodes data changes in any way. Available everywhere. |
-| **`ClientEvent_OnRoomLoaded`** | `public SafeAction&lt;EventInfoLoadRoom&gt; ClientEvent_OnRoomLoaded` | Called everywhere when a new room is loaded. |
-| **`ClientEvent_OnRoomLoadStarted`** | `public SafeAction&lt;EventInfoLoadRoom&gt; ClientEvent_OnRoomLoadStarted` | Called everywhere when the game has started loading a room and the screen has gone dark. |
-| **`ClientEvent_OnVoteCanceled`** | `public SafeAction&lt;DewPlayer&gt; ClientEvent_OnVoteCanceled` |  |
+| **`ClientEvent_OnRoomLoaded`** | `public SafeAction<EventInfoLoadRoom> ClientEvent_OnRoomLoaded` | Called everywhere when a new room is loaded. |
+| **`ClientEvent_OnRoomLoadStarted`** | `public SafeAction<EventInfoLoadRoom> ClientEvent_OnRoomLoadStarted` | Called everywhere when the game has started loading a room and the screen has gone dark. |
+| **`ClientEvent_OnVoteCanceled`** | `public SafeAction<DewPlayer> ClientEvent_OnVoteCanceled` |  |
 | **`ClientEvent_OnVoteCompleted`** | `public SafeAction ClientEvent_OnVoteCompleted` |  |
-| **`ClientEvent_OnVoteStarted`** | `public SafeAction&lt;DewPlayer&gt; ClientEvent_OnVoteStarted` |  |
-| **`ClientEvent_OnZoneLoaded`** | `public SafeAction&lt;EventInfoLoadZone&gt; ClientEvent_OnZoneLoaded` | Called everywhere when a new zone is loaded. |
-| **`ClientEvent_OnZoneLoadStarted`** | `public SafeAction&lt;EventInfoLoadZone&gt; ClientEvent_OnZoneLoadStarted` | Called everywhere when the game has started loading a new zone and the screen has gone dark. |
-| **`didLocallyShowHunterWarning`** | `[NonSerialized]
-public bool didLocallyShowHunterWarning` |  |
-| **`forceVoteForDebug`** | `[NonSerialized]
-public bool? forceVoteForDebug` |  |
-| **`hunterSpreadMultiplier`** | `[NonSerialized]
-public float hunterSpreadMultiplier` |  |
+| **`ClientEvent_OnVoteStarted`** | `public SafeAction<DewPlayer> ClientEvent_OnVoteStarted` |  |
+| **`ClientEvent_OnZoneLoaded`** | `public SafeAction<EventInfoLoadZone> ClientEvent_OnZoneLoaded` | Called everywhere when a new zone is loaded. |
+| **`ClientEvent_OnZoneLoadStarted`** | `public SafeAction<EventInfoLoadZone> ClientEvent_OnZoneLoadStarted` | Called everywhere when the game has started loading a new zone and the screen has gone dark. |
+| **`didLocallyShowHunterWarning`** | `[NonSerialized] public bool didLocallyShowHunterWarning` |  |
+| **`forceVoteForDebug`** | `[NonSerialized] public bool? forceVoteForDebug` |  |
+| **`hunterSpreadMultiplier`** | `[NonSerialized] public float hunterSpreadMultiplier` |  |
 | **`HunterStartSkippedTurns`** | `public static int HunterStartSkippedTurns` |  |
-| **`hunterStatuses`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;HunterStatus&gt; hunterStatuses` |  |
-| **`modifierServerData`** | `[SaveVar(SaveVarFlags.Default)]
-public Dictionary&lt;int, ModifierServerData&gt; modifierServerData` |  |
-| **`nextZoneOverride`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public AssetRef&lt;Zone&gt; nextZoneOverride` | Available on server.Set this, and the next zone load will be overwritten to this one, and nextZoneOverride will be cleared.Instead of appending a zone, this overwrites the zone to be loaded, so a zone still gets removed from the pool, and the tier goes up if necessary. |
-| **`nodeDistanceMatrix`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;int&gt; nodeDistanceMatrix` |  |
+| **`hunterStatuses`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<HunterStatus> hunterStatuses` |  |
+| **`modifierServerData`** | `[SaveVar(SaveVarFlags.Default)] public Dictionary<int, ModifierServerData> modifierServerData` |  |
+| **`nextZoneOverride`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public AssetRef<Zone> nextZoneOverride` | Available on server.Set this, and the next zone load will be overwritten to this one, and nextZoneOverride will be cleared.Instead of appending a zone, this overwrites the zone to be loaded, so a zone still gets removed from the pool, and the tier goes up if necessary. |
+| **`nodeDistanceMatrix`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<int> nodeDistanceMatrix` |  |
 | **`NodePlacementTries`** | `public static int NodePlacementTries` |  |
-| **`nodes`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;WorldNodeData&gt; nodes` |  |
+| **`nodes`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<WorldNodeData> nodes` |  |
 | **`onWorldGenerated`** | `public SafeAction onWorldGenerated` | Called on server when the world is generated by GenerateWorld functions. Not called when loading from save. |
-| **`remainingZonesOfCurrentTier`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;AssetRef&lt;Zone&gt;&gt; remainingZonesOfCurrentTier` | Available on server. |
+| **`remainingZonesOfCurrentTier`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<AssetRef<Zone>> remainingZonesOfCurrentTier` | Available on server. |
 | **`ScoreFuzziness`** | `public static float ScoreFuzziness` |  |
 | **`ScorePerIsolatedImportantNode`** | `public static float ScorePerIsolatedImportantNode` |  |
 | **`ScorePerIsolatedNode`** | `public static float ScorePerIsolatedNode` |  |
-| **`visitedNodesSaveData`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;DewPersistence.RoomData&gt; visitedNodesSaveData` | Available on server. |
+| **`visitedNodesSaveData`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<DewPersistence.RoomData> visitedNodesSaveData` | Available on server. |
 | **`voteType`** | `public VoteType voteType` |  |
 | **`WorldGenerationIterations`** | `public static int WorldGenerationIterations` |  |
 | **`WorldHeight`** | `public static float WorldHeight` |  |
@@ -69,31 +53,20 @@ public List&lt;DewPersistence.RoomData&gt; visitedNodesSaveData` | Available on 
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`clearedCombatRooms`** | `[SaveVar(SaveVarFlags.Default)]
-public int clearedCombatRooms { get; set; }` | Number of rooms cleared that are not shops nor special rooms. |
-| **`currentHuntLevel`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentHuntLevel { get; set; }` |  |
+| **`clearedCombatRooms`** | `[SaveVar(SaveVarFlags.Default)] public int clearedCombatRooms { get; set; }` | Number of rooms cleared that are not shops nor special rooms. |
+| **`currentHuntLevel`** | `[SaveVar(SaveVarFlags.Default)] public int currentHuntLevel { get; set; }` |  |
 | **`currentNode`** | `public WorldNodeData currentNode { get; set; }` |  |
 | **`currentNodeHunterStatus`** | `public HunterStatus currentNodeHunterStatus { get; }` |  |
-| **`currentNodeIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentNodeIndex { get; set; }` |  |
+| **`currentNodeIndex`** | `[SaveVar(SaveVarFlags.Default)] public int currentNodeIndex { get; set; }` |  |
 | **`currentRoom`** | `public Room currentRoom { get; set; }` |  |
-| **`currentRoomIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentRoomIndex { get; set; }` | Index of current room in current game session. |
-| **`currentTier`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentTier { get; set; }` |  |
-| **`currentTurnIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentTurnIndex { get; }` | Available on server. |
-| **`currentZone`** | `[SaveVar(SaveVarFlags.Default)]
-public Zone currentZone { get; set; }` |  |
-| **`currentZoneClearedNodes`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentZoneClearedNodes { get; set; }` | Number of cleared nodes in current zone.Starts at 0 on a new zone, and goes up whenever players move away from a previously unvisited node. |
-| **`currentZoneIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentZoneIndex { get; set; }` | Index of current zone in current game session. |
-| **`hunterSkippedTurns`** | `[SaveVar(SaveVarFlags.Default)]
-public int hunterSkippedTurns { get; set; }` |  |
-| **`hunterStartNodeIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int hunterStartNodeIndex { get; set; }` |  |
+| **`currentRoomIndex`** | `[SaveVar(SaveVarFlags.Default)] public int currentRoomIndex { get; set; }` | Index of current room in current game session. |
+| **`currentTier`** | `[SaveVar(SaveVarFlags.Default)] public int currentTier { get; set; }` |  |
+| **`currentTurnIndex`** | `[SaveVar(SaveVarFlags.Default)] public int currentTurnIndex { get; }` | Available on server. |
+| **`currentZone`** | `[SaveVar(SaveVarFlags.Default)] public Zone currentZone { get; set; }` |  |
+| **`currentZoneClearedNodes`** | `[SaveVar(SaveVarFlags.Default)] public int currentZoneClearedNodes { get; set; }` | Number of cleared nodes in current zone.Starts at 0 on a new zone, and goes up whenever players move away from a previously unvisited node. |
+| **`currentZoneIndex`** | `[SaveVar(SaveVarFlags.Default)] public int currentZoneIndex { get; set; }` | Index of current zone in current game session. |
+| **`hunterSkippedTurns`** | `[SaveVar(SaveVarFlags.Default)] public int hunterSkippedTurns { get; set; }` |  |
+| **`hunterStartNodeIndex`** | `[SaveVar(SaveVarFlags.Default)] public int hunterStartNodeIndex { get; set; }` |  |
 | **`isCurrentNodeHunted`** | `public bool isCurrentNodeHunted { get; }` |  |
 | **`isHuntAdvanceDisabled`** | `public bool isHuntAdvanceDisabled { get; set; }` |  |
 | **`isInAnyTransition`** | `public bool isInAnyTransition { get; }` |  |
@@ -102,17 +75,15 @@ public int hunterStartNodeIndex { get; set; }` |  |
 | **`isSidetracking`** | `public bool isSidetracking { get; }` | Available everywhere. |
 | **`isVoting`** | `public bool isVoting { get; }` |  |
 | **`lastLoadNodeSettings`** | `public LoadNodeSettings lastLoadNodeSettings { get; }` | Available on server. Immediately set upon calling ZoneManager.LoadNode(). |
-| **`loopIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int loopIndex { get; set; }` |  |
-| **`sidetrackReturnNodeIndex`** | `[SaveVar(SaveVarFlags.Default)]
-public int sidetrackReturnNodeIndex { get; set; }` | Node to return to after side tracking. Set to -1 if not sidetracking. Available everywhere. |
+| **`loopIndex`** | `[SaveVar(SaveVarFlags.Default)] public int loopIndex { get; set; }` |  |
+| **`sidetrackReturnNodeIndex`** | `[SaveVar(SaveVarFlags.Default)] public int sidetrackReturnNodeIndex { get; set; }` | Node to return to after side tracking. Set to -1 if not sidetracking. Available everywhere. |
 | **`voteData`** | `public int voteData { get; }` |  |
 | **`voteRemainingSeconds`** | `public int voteRemainingSeconds { get; }` |  |
 | **`worldSeed`** | `public uint worldSeed { get; set; }` |  |
 
 ## Methods
 
-### `AddModifier(int, ModifierData, Action&lt;RoomModifierBase&gt;)`
+### `AddModifier(int, ModifierData, Action<RoomModifierBase>)`
 
 Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.
 
@@ -124,12 +95,12 @@ public int AddModifier(int nodeIndex, ModifierData mod, Action<RoomModifierBase>
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `nodeIndex` | `int` |  |
-| `mod` | [ModifierData](/api/Global.ModifierData) |  |
-| `beforePrepare` | [System.Action&lt;T&gt;&lt;RoomModifierBase&gt;](/api/Global.RoomModifierBase) |  |
+| `mod` | [`ModifierData`](/api/Global.ModifierData) |  |
+| `beforePrepare` | [`System.Action<T><RoomModifierBase>`](/api/Global.RoomModifierBase) |  |
 
 **Returns:** `int`
 
-### `AddModifier&lt;T&gt;(int, Action&lt;T&gt;)`
+### `AddModifier<T>(int, Action<T>)`
 
 Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.
 
@@ -141,12 +112,12 @@ public int AddModifier<T>(int nodeIndex, Action<T> beforePrepare = null) where T
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `nodeIndex` | `int` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `int`
 
-### `AddModifier&lt;T&gt;(int, string, Action&lt;T&gt;)`
+### `AddModifier<T>(int, string, Action<T>)`
 
 Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.
 
@@ -159,7 +130,7 @@ public int AddModifier<T>(int nodeIndex, string clientData, Action<T> beforePrep
 | :--- | :--- | :--- |
 | `nodeIndex` | `int` |  |
 | `clientData` | `string` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `int`
@@ -175,7 +146,7 @@ public void AddSidetrackNode(string roomName)
 | :--- | :--- | :--- |
 | `roomName` | `string` |  |
 
-### `AddTravelToNodeInterrupt(Func&lt;EventInfoTravelToNodeInterrupt, bool&gt;)`
+### `AddTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool>)`
 
 Add travel-to-node interruptor.Return true to interrupt travel for something cinematic and cool.Note this cannot interrupt sidetracks, zone travels or fake travels.
 
@@ -186,7 +157,7 @@ public void AddTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool> 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Func&lt;T, TResult&gt;&lt;EventInfoTravelToNodeInterrupt,bool&gt;](/api/Global.EventInfoTravelToNodeInterrupt) |  |
+| `func` | [`System.Func<T, TResult><EventInfoTravelToNodeInterrupt,bool>`](/api/Global.EventInfoTravelToNodeInterrupt) |  |
 
 ### `AdvanceHunterTurn(bool)`
 
@@ -288,7 +259,7 @@ public string GetCannotTravelReasonByDroppedGem(Gem g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [Gem](/api/Global.Gem) |  |
+| `g` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `string`
 
@@ -301,7 +272,7 @@ public string GetCannotTravelReasonByDroppedSkill(SkillTrigger st)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `st` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `st` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `string`
 
@@ -372,7 +343,7 @@ public bool IsNodeConnected(int a, int b)
 public List<RoomModifierBase> LoadModifierLightPrefabsOfCurrentZone()
 ```
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;RoomModifierBase&gt;`
+**Returns:** `System.Collections.Generic.List<T><RoomModifierBase>`
 
 ### `LoadNextZoneByContentSettings()`
 
@@ -389,7 +360,7 @@ public void LoadNode(LoadNodeSettings s)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [LoadNodeSettings](/api/Global.LoadNodeSettings) |  |
+| `s` | [`LoadNodeSettings`](/api/Global.LoadNodeSettings) |  |
 
 ### `LoadSidetrackRoom(string)`
 
@@ -431,7 +402,7 @@ public void RemoveModifier(int modifierId)
 | :--- | :--- | :--- |
 | `modifierId` | `int` |  |
 
-### `RemoveModifier&lt;T&gt;(int)`
+### `RemoveModifier<T>(int)`
 
 ```csharp
 public bool RemoveModifier<T>(int nodeIndex)
@@ -445,7 +416,7 @@ public bool RemoveModifier<T>(int nodeIndex)
 
 **Returns:** `bool`
 
-### `RemoveTravelToNodeInterrupt(Func&lt;EventInfoTravelToNodeInterrupt, bool&gt;)`
+### `RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool>)`
 
 ```csharp
 public void RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool> func)
@@ -454,7 +425,7 @@ public void RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, boo
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Func&lt;T, TResult&gt;&lt;EventInfoTravelToNodeInterrupt,bool&gt;](/api/Global.EventInfoTravelToNodeInterrupt) |  |
+| `func` | [`System.Func<T, TResult><EventInfoTravelToNodeInterrupt,bool>`](/api/Global.EventInfoTravelToNodeInterrupt) |  |
 
 ### `ReturnFromSidetracking()`
 
@@ -471,7 +442,7 @@ public void RevealNodesAndAnnounce(DewPlayer revealer, int nodeCount)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `revealer` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `revealer` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `nodeCount` | `int` |  |
 
 ### `RevealWorld(bool)`
@@ -549,7 +520,7 @@ public void StartVoteNextNode(DewPlayer player, int nextNodeIndex)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `nextNodeIndex` | `int` |  |
 
 ### `StartVoteNextZone(DewPlayer)`
@@ -561,7 +532,7 @@ public void StartVoteNextZone(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `StartVoteSidetrack(DewPlayer, Rift_Sidetrack)`
 
@@ -572,8 +543,8 @@ public void StartVoteSidetrack(DewPlayer player, Rift_Sidetrack rift)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `rift` | [Rift_Sidetrack](/api/Global.Rift_Sidetrack) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `rift` | [`Rift_Sidetrack`](/api/Global.Rift_Sidetrack) |  |
 
 ### `SyncNodeChanges(int)`
 
@@ -611,7 +582,7 @@ public void TravelToZone(Zone prefab, bool noAdvance = false)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `prefab` | [Zone](/api/Global.Zone) |  |
+| `prefab` | [`Zone`](/api/Global.Zone) |  |
 | `noAdvance` | `bool` |  |
 
 ### `TravelWithValidationAndConfirmation(Action, bool)`
@@ -639,7 +610,7 @@ public bool TryGetNodeIndexForNextGoal(GetNodeIndexSettings s, out int nodeIndex
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [GetNodeIndexSettings](/api/Global.GetNodeIndexSettings) |  |
+| `s` | [`GetNodeIndexSettings`](/api/Global.GetNodeIndexSettings) |  |
 | `nodeIndex` | `int` |  |
 
 **Returns:** `bool`

@@ -1,5 +1,6 @@
 # Class: AttackProjectile
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [Projectile](/api/Global.Projectile) → [StandardProjectile](/api/Global.StandardProjectile)
@@ -13,8 +14,7 @@ public class AttackProjectile : StandardProjectile, ILogicUpdate, ICleanup, ICus
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`isCrit`** | `public bool isCrit` |  |
-| **`isMain`** | `[NonSerialized]
-public bool isMain` |  |
+| **`isMain`** | `[NonSerialized] public bool isMain` |  |
 | **`strength`** | `public float strength` |  |
 
 ## Methods
@@ -34,7 +34,7 @@ protected override void OnEntity(Projectile.EntityHit hit)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hit` | [Projectile.EntityHit](/api/Global.Projectile) |  |
+| `hit` | [`Projectile.EntityHit`](/api/Global.Projectile) |  |
 
 ### `OnPrepare()`
 

@@ -1,5 +1,6 @@
 # Class: RoomRifts
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
@@ -12,7 +13,7 @@ public class RoomRifts : RoomComponent, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`openedSidetrackRifts`** | `public List&lt;string&gt; openedSidetrackRifts` |  |
+| **`openedSidetrackRifts`** | `public List<string> openedSidetrackRifts` |  |
 
 ## Methods
 
@@ -27,7 +28,7 @@ public void CreateSidetrackRift(Rift_Sidetrack prefab)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `prefab` | [Rift_Sidetrack](/api/Global.Rift_Sidetrack) |  |
+| `prefab` | [`Rift_Sidetrack`](/api/Global.Rift_Sidetrack) |  |
 
 ### `OnRoomStartServer()`
 

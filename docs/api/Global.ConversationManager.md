@@ -1,5 +1,6 @@
 # Class: ConversationManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [ConversationManager](/api/Global.ConversationManager)
@@ -12,11 +13,11 @@ public class ConversationManager : NetworkedManagerBase<ConversationManager>, IL
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ClientEvent_OnConversationLineRequestedCompletion`** | `public SafeAction&lt;uint&gt; ClientEvent_OnConversationLineRequestedCompletion` |  |
-| **`ClientEvent_OnConversationShowLineAndRequestUserInput`** | `public SafeAction&lt;uint, ShownConversation&gt; ClientEvent_OnConversationShowLineAndRequestUserInput` |  |
-| **`ClientEvent_OnStartConversation`** | `public SafeAction&lt;uint&gt; ClientEvent_OnStartConversation` |  |
-| **`ClientEvent_OnStopConversation`** | `public SafeAction&lt;uint&gt; ClientEvent_OnStopConversation` |  |
-| **`convSettings`** | `public readonly Dictionary&lt;uint, DewConversationSettings&gt; convSettings` | Currently ongoing conversations. Available everywhere. |
+| **`ClientEvent_OnConversationLineRequestedCompletion`** | `public SafeAction<uint> ClientEvent_OnConversationLineRequestedCompletion` |  |
+| **`ClientEvent_OnConversationShowLineAndRequestUserInput`** | `public SafeAction<uint, ShownConversation> ClientEvent_OnConversationShowLineAndRequestUserInput` |  |
+| **`ClientEvent_OnStartConversation`** | `public SafeAction<uint> ClientEvent_OnStartConversation` |  |
+| **`ClientEvent_OnStopConversation`** | `public SafeAction<uint> ClientEvent_OnStopConversation` |  |
+| **`convSettings`** | `public readonly Dictionary<uint, DewConversationSettings> convSettings` | Currently ongoing conversations. Available everywhere. |
 
 ## Properties
 
@@ -75,7 +76,7 @@ public uint StartConversation(DewConversationSettings s)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [DewConversationSettings](/api/Global.DewConversationSettings) |  |
+| `s` | [`DewConversationSettings`](/api/Global.DewConversationSettings) |  |
 
 **Returns:** `uint`
 
@@ -90,7 +91,7 @@ public IEnumerator StartConversationRoutine(DewConversationSettings s)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [DewConversationSettings](/api/Global.DewConversationSettings) |  |
+| `s` | [`DewConversationSettings`](/api/Global.DewConversationSettings) |  |
 
 **Returns:** `System.Collections.IEnumerator`
 

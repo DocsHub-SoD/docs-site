@@ -1,5 +1,6 @@
 # Class: NetworkedManagerBase&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [ActorManager](/api/Global.ActorManager) → [ChatManager](/api/Global.ChatManager) → [ClientEventManager](/api/Global.ClientEventManager) → [ConsoleManager](/api/Global.ConsoleManager) → [ConversationManager](/api/Global.ConversationManager) → [FlavourManager](/api/Global.FlavourManager) → [GameManager](/api/Global.GameManager) → [GameResultManager](/api/Global.GameResultManager) → [GameSettingsManager](/api/Global.GameSettingsManager) → [LootManager](/api/Global.LootManager) → [PickupManager](/api/Global.PickupManager) → [PingManager](/api/Global.PingManager) → [QuestManager](/api/Global.QuestManager) → [TimescaleManager](/api/Global.TimescaleManager) → [ZoneManager](/api/Global.ZoneManager)

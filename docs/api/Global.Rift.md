@@ -1,5 +1,6 @@
 # Class: Rift
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Rift_RoomExit](/api/Global.Rift_RoomExit) → [Rift_Sidetrack](/api/Global.Rift_Sidetrack)
@@ -32,10 +33,8 @@ public class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInter
 | **`instance`** | `public static Rift instance { get; }` |  |
 | **`interactPivot`** | `public Transform interactPivot { get; }` |  |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
-| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)]
-public bool isLocked { get; set; }` |  |
-| **`isOpen`** | `[SaveVar(SaveVarFlags.Default)]
-public bool isOpen { get; set; }` |  |
+| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
+| **`isOpen`** | `[SaveVar(SaveVarFlags.Default)] public bool isOpen { get; set; }` |  |
 
 ## Methods
 
@@ -54,7 +53,7 @@ public virtual bool CanInteract(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -88,7 +87,7 @@ protected virtual bool OnInteractRift(Hero hero)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hero` | [Hero](/api/Global.Hero) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |
 
 **Returns:** `bool`
 

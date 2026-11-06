@@ -1,5 +1,6 @@
 # Class: CustomAIBehaviors
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -20,7 +21,7 @@ public void Add(CustomAIUpdate onUpdate, int priority = 0)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onUpdate` | [CustomAIUpdate](/api/Global.CustomAIUpdate) |  |
+| `onUpdate` | [`CustomAIUpdate`](/api/Global.CustomAIUpdate) |  |
 | `priority` | `int` |  |
 
 ### `Remove(CustomAIUpdate)`
@@ -32,4 +33,4 @@ public void Remove(CustomAIUpdate onUpdate)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onUpdate` | [CustomAIUpdate](/api/Global.CustomAIUpdate) |  |
+| `onUpdate` | [`CustomAIUpdate`](/api/Global.CustomAIUpdate) |  |

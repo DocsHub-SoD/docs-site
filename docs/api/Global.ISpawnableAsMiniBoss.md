@@ -1,5 +1,6 @@
 # Interface: ISpawnableAsMiniBoss
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -18,7 +19,7 @@ public static void GiveGenericMiniBossBonus(Entity entity, float postDelayMultip
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `postDelayMultiplier` | `float` |  |
 
 ### `OnBeforeSpawnAsMiniBoss()`

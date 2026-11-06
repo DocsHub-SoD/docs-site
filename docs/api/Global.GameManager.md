@@ -1,5 +1,6 @@
 # Class: GameManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [GameManager](/api/Global.GameManager) → [DevGameManager](/api/Global.DevGameManager) → [PlayGameManager](/api/Global.PlayGameManager)
@@ -12,33 +13,25 @@ public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ClientEvent_OnAmbientLevelChanged`** | `public SafeAction&lt;int, int&gt; ClientEvent_OnAmbientLevelChanged` | Called everywhere when ambient level changes |
-| **`ClientEvent_OnDifficultyChanged`** | `public SafeAction&lt;DewDifficultySettings, DewDifficultySettings&gt; ClientEvent_OnDifficultyChanged` | Called everywhere when threat level changes |
+| **`ClientEvent_OnAmbientLevelChanged`** | `public SafeAction<int, int> ClientEvent_OnAmbientLevelChanged` | Called everywhere when ambient level changes |
+| **`ClientEvent_OnDifficultyChanged`** | `public SafeAction<DewDifficultySettings, DewDifficultySettings> ClientEvent_OnDifficultyChanged` | Called everywhere when threat level changes |
 | **`ClientEvent_OnGameConcluded`** | `public SafeAction ClientEvent_OnGameConcluded` | Called everywhere when game is concluded |
 | **`disableStuckCheck`** | `public bool disableStuckCheck` |  |
-| **`gainedExpMultiplier`** | `[NonSerialized]
-public float gainedExpMultiplier` |  |
+| **`gainedExpMultiplier`** | `[NonSerialized] public float gainedExpMultiplier` |  |
 | **`ges`** | `public DewGameplayExperienceSettings ges` |  |
-| **`gesTemplate`** | `[FormerlySerializedAs("gss")]
-public DewGameplayExperienceSettings gesTemplate` |  |
-| **`goldCostMultiplier`** | `[NonSerialized]
-public float goldCostMultiplier` |  |
-| **`goldIncomeMultiplier`** | `[NonSerialized]
-public float goldIncomeMultiplier` |  |
-| **`playerRejoinData`** | `[SaveVar(SaveVarFlags.Default)]
-public Dictionary&lt;string, DewPersistence.PlayerData&gt; playerRejoinData` |  |
-| **`predictionStrengthOverride`** | `public Func&lt;float&gt; predictionStrengthOverride` |  |
+| **`gesTemplate`** | `[FormerlySerializedAs("gss")] public DewGameplayExperienceSettings gesTemplate` |  |
+| **`goldCostMultiplier`** | `[NonSerialized] public float goldCostMultiplier` |  |
+| **`goldIncomeMultiplier`** | `[NonSerialized] public float goldIncomeMultiplier` |  |
+| **`playerRejoinData`** | `[SaveVar(SaveVarFlags.Default)] public Dictionary<string, DewPersistence.PlayerData> playerRejoinData` |  |
+| **`predictionStrengthOverride`** | `public Func<float> predictionStrengthOverride` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ambientLevel`** | `[SaveVar(SaveVarFlags.Default)]
-public int ambientLevel { get; set; }` |  |
-| **`difficulty`** | `[SaveVar(SaveVarFlags.Default)]
-public DewDifficultySettings difficulty { get; set; }` |  |
-| **`elapsedGameTime`** | `[SaveVar(SaveVarFlags.Default)]
-public float elapsedGameTime { get; set; }` | Elapsed game time in seconds. |
+| **`ambientLevel`** | `[SaveVar(SaveVarFlags.Default)] public int ambientLevel { get; set; }` |  |
+| **`difficulty`** | `[SaveVar(SaveVarFlags.Default)] public DewDifficultySettings difficulty { get; set; }` |  |
+| **`elapsedGameTime`** | `[SaveVar(SaveVarFlags.Default)] public float elapsedGameTime { get; set; }` | Elapsed game time in seconds. |
 | **`isGameConcluded`** | `public bool isGameConcluded { get; }` |  |
 | **`isGameOverEnabled`** | `public bool isGameOverEnabled { get; set; }` |  |
 | **`isGameTimePaused`** | `public bool isGameTimePaused { get; }` |  |
@@ -48,8 +41,7 @@ public float elapsedGameTime { get; set; }` | Elapsed game time in seconds. |
 | **`isSpawnOverPopulation`** | `public bool isSpawnOverPopulation { get; }` |  |
 | **`maxAndSpawnedPopulationMultiplier`** | `public float maxAndSpawnedPopulationMultiplier { get; set; }` |  |
 | **`maxSpawnedPopulation`** | `public float maxSpawnedPopulation { get; }` |  |
-| **`runId`** | `[SaveVar(SaveVarFlags.Default)]
-public string runId { get; set; }` | Globally unique identifier of this run. This is consistent across all clients. |
+| **`runId`** | `[SaveVar(SaveVarFlags.Default)] public string runId { get; set; }` | Globally unique identifier of this run. This is consistent across all clients. |
 | **`spawnedPopulation`** | `public float spawnedPopulation { get; }` | Total population excluding env spawns. =&gt; Spawns from combat areas. |
 
 ## Methods
@@ -88,7 +80,7 @@ public void CollectPlayerRejoinData(DewPlayer p)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `p` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `p` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `ConcludePureWhiteDream()`
 
@@ -192,7 +184,7 @@ public int GetAdjustedMonsterWaves(int original, DewRandom random = null)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `original` | `int` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `int`
 
@@ -247,7 +239,7 @@ public int GetCleanseGoldCost(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `int`
 
@@ -260,7 +252,7 @@ public int GetCleanseGoldCost(SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `int`
 
@@ -273,8 +265,8 @@ public int GetCleanseReturnedDreamDust(DewPlayer player, Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `int`
 
@@ -287,8 +279,8 @@ public int GetCleanseReturnedDreamDust(DewPlayer player, SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `int`
 
@@ -317,7 +309,7 @@ public float GetExpDropFromEntity(Entity ent)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `float`
 
@@ -330,7 +322,7 @@ public float GetGainedSkillHastePerSkillLevel(SkillTrigger skillTrigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skillTrigger` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skillTrigger` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `float`
 
@@ -351,7 +343,7 @@ public int GetGemUpgradeDreamDustCost(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `int`
 
@@ -377,7 +369,7 @@ public int GetKillGoldAmount(Entity ent)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `int`
 
@@ -387,7 +379,7 @@ public int GetKillGoldAmount(Entity ent)
 public virtual IList<string> GetLucidDreams()
 ```
 
-**Returns:** `System.Collections.Generic.IList&lt;T&gt;&lt;string&gt;`
+**Returns:** `System.Collections.Generic.IList<T><string>`
 
 ### `GetMiniBossMonsterDamageMultiplierByScaling(float)`
 
@@ -424,7 +416,7 @@ public float GetMonsterBonusHealthPercentageByMultiplayer(Monster m)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [Monster](/api/Global.Monster) |  |
+| `m` | [`Monster`](/api/Global.Monster) |  |
 
 **Returns:** `float`
 
@@ -437,7 +429,7 @@ public float GetMonsterBonusPowerPercentage(Monster m)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [Monster](/api/Global.Monster) |  |
+| `m` | [`Monster`](/api/Global.Monster) |  |
 
 **Returns:** `float`
 
@@ -517,7 +509,7 @@ public int GetSkillUpgradeDreamDustCost(SkillTrigger skill)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 
 **Returns:** `int`
 
@@ -683,7 +675,7 @@ public void SaveContinueData(LoadNodeSettings s)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [LoadNodeSettings](/api/Global.LoadNodeSettings) |  |
+| `s` | [`LoadNodeSettings`](/api/Global.LoadNodeSettings) |  |
 
 ### `SaveContinueDataMidRun()`
 
@@ -744,4 +736,4 @@ public void WrapUpAndShowResult(DewGameResult.ResultType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [DewGameResult.ResultType](/api/Global.DewGameResult) |  |
+| `type` | [`DewGameResult.ResultType`](/api/Global.DewGameResult) |  |

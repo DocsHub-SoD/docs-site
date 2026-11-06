@@ -1,5 +1,6 @@
 # Class: ReactionChainComparer
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -18,8 +19,8 @@ public bool Equals(ReactionChain x, ReactionChain y)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `x` | [ReactionChain](/api/Global.ReactionChain) |  |
-| `y` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `x` | [`ReactionChain`](/api/Global.ReactionChain) |  |
+| `y` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 **Returns:** `bool`
 
@@ -32,6 +33,6 @@ public int GetHashCode(ReactionChain obj)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `obj` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `obj` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 **Returns:** `int`

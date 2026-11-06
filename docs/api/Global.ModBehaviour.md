@@ -1,5 +1,6 @@
 # Class: ModBehaviour
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,8 +12,7 @@ public class ModBehaviour : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`instance`** | `[NonSerialized]
-public LoadedModInstance instance` |  |
+| **`instance`** | `[NonSerialized] public LoadedModInstance instance` |  |
 
 ## Properties
 
@@ -24,7 +24,7 @@ public LoadedModInstance instance` |  |
 
 ## Methods
 
-### `CallOnManager&lt;T&gt;(Action, Action)`
+### `CallOnManager<T>(Action, Action)`
 
 ```csharp
 public void CallOnManager<T>(Action onEnable, Action onDisable = null) where T : ManagerBase<T>
@@ -37,7 +37,7 @@ public void CallOnManager<T>(Action onEnable, Action onDisable = null) where T :
 | `onDisable` | `System.Action` |  |
 | `` | `T` |  |
 
-### `CallOnNetworkedManager&lt;T&gt;(Action, Action)`
+### `CallOnNetworkedManager<T>(Action, Action)`
 
 ```csharp
 public void CallOnNetworkedManager<T>(Action onStartClient, Action onStopClient = null) where T : NetworkedManagerBase<T>
@@ -184,6 +184,6 @@ protected static bool TryGetConsoleSelectedEntity(out Entity ent)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`

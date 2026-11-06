@@ -1,5 +1,6 @@
 # Class: CameraManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [CameraManager](/api/Global.CameraManager)
@@ -13,8 +14,7 @@ public class CameraManager : ManagerBase<CameraManager>, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`bigDamageAlpha`** | `public float bigDamageAlpha` |  |
-| **`bigDamageShake`** | `[Title("Damage", null, TitleAlignments.Left, true, true)]
-public GameObject bigDamageShake` |  |
+| **`bigDamageShake`** | `[Title("Damage", null, TitleAlignments.Left, true, true)] public GameObject bigDamageShake` |  |
 | **`bigDamageThreshold`** | `public float bigDamageThreshold` |  |
 | **`closeZoomBody`** | `public Vector3 closeZoomBody` |  |
 | **`cutsceneBottomLetterBox`** | `public RectTransform cutsceneBottomLetterBox` |  |
@@ -25,25 +25,20 @@ public GameObject bigDamageShake` |  |
 | **`damageOverlay`** | `public CanvasGroup damageOverlay` |  |
 | **`damageOverlayDecaySpeed`** | `public float damageOverlayDecaySpeed` |  |
 | **`defaultZoomLevel`** | `public int defaultZoomLevel` |  |
-| **`disableSeeThrough`** | `[NonSerialized]
-public bool disableSeeThrough` |  |
-| **`entityCamAngleRotation`** | `[NonSerialized]
-public Quaternion entityCamAngleRotation` | Flat Y-Axis rotation of current camera rotation. |
+| **`disableSeeThrough`** | `[NonSerialized] public bool disableSeeThrough` |  |
+| **`entityCamAngleRotation`** | `[NonSerialized] public Quaternion entityCamAngleRotation` | Flat Y-Axis rotation of current camera rotation. |
 | **`fadeOutVolume`** | `public Volume fadeOutVolume` |  |
-| **`farZoomBody`** | `[Title("Zoom", null, TitleAlignments.Left, true, true)]
-public Vector3 farZoomBody` |  |
-| **`followSmoothTime`** | `[Title("General", null, TitleAlignments.Left, true, true)]
-public float followSmoothTime` |  |
+| **`farZoomBody`** | `[Title("Zoom", null, TitleAlignments.Left, true, true)] public Vector3 farZoomBody` |  |
+| **`followSmoothTime`** | `[Title("General", null, TitleAlignments.Left, true, true)] public float followSmoothTime` |  |
 | **`genericFadeTime`** | `public float genericFadeTime` |  |
 | **`maxAlpha`** | `public float maxAlpha` |  |
 | **`maxAlphaHealthThreshold`** | `public float maxAlphaHealthThreshold` |  |
 | **`midZoombody`** | `public Vector3 midZoombody` |  |
 | **`minAlphaHealthThreshold`** | `public float minAlphaHealthThreshold` |  |
 | **`nextSpectateTargetTime`** | `public float nextSpectateTargetTime` |  |
-| **`occlusionTestRadius`** | `[Title("Extra", null, TitleAlignments.Left, true, true)]
-public float occlusionTestRadius` |  |
-| **`onFocusedEntityChanged`** | `public Action&lt;Entity, Entity&gt; onFocusedEntityChanged` |  |
-| **`onIsSpectatingChanged`** | `public Action&lt;bool&gt; onIsSpectatingChanged` |  |
+| **`occlusionTestRadius`** | `[Title("Extra", null, TitleAlignments.Left, true, true)] public float occlusionTestRadius` |  |
+| **`onFocusedEntityChanged`** | `public Action<Entity, Entity> onFocusedEntityChanged` |  |
+| **`onIsSpectatingChanged`** | `public Action<bool> onIsSpectatingChanged` |  |
 | **`selectedEntityCamera`** | `public CinemachineVirtualCamera selectedEntityCamera` |  |
 | **`smallDamageAlpha`** | `public float smallDamageAlpha` |  |
 | **`smallDamageShake`** | `public GameObject smallDamageShake` |  |
@@ -171,7 +166,7 @@ public void SetFocusedEntity(Entity newValue)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `newValue` | [Entity](/api/Global.Entity) |  |
+| `newValue` | [`Entity`](/api/Global.Entity) |  |
 
 ### `SetZoomLevel(int)`
 

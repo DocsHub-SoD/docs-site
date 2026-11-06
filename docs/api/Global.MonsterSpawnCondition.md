@@ -1,5 +1,6 @@
 # Class: MonsterSpawnCondition
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,14 +13,9 @@ public class MonsterSpawnCondition
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`conditionValueMax`** | `[LabelText("Max")]
-[HorizontalGroup("C", 0, 0, 0, 0)]
-public float conditionValueMax` |  |
-| **`conditionValueMin`** | `[LabelText("Min")]
-[HorizontalGroup("C", 0, 0, 0, 0)]
-public float conditionValueMin` |  |
-| **`type`** | `[HideLabel]
-public MonsterSpawnConditionType type` |  |
+| **`conditionValueMax`** | `[LabelText("Max")] [HorizontalGroup("C", 0, 0, 0, 0)] public float conditionValueMax` |  |
+| **`conditionValueMin`** | `[LabelText("Min")] [HorizontalGroup("C", 0, 0, 0, 0)] public float conditionValueMin` |  |
+| **`type`** | `[HideLabel] public MonsterSpawnConditionType type` |  |
 
 ## Properties
 

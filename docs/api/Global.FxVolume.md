@@ -1,5 +1,6 @@
 # Class: FxVolume
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase)
@@ -13,11 +14,9 @@ public class FxVolume : FxInterpolatedEffectBase, IEffectComponent, IEffectWithS
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`otherPlayersMultiplier`** | `[ShowIf("useCustomOtherPlayersMultiplier", true)]
-public float otherPlayersMultiplier` |  |
+| **`otherPlayersMultiplier`** | `[ShowIf("useCustomOtherPlayersMultiplier", true)] public float otherPlayersMultiplier` |  |
 | **`targetStrength`** | `public float targetStrength` |  |
-| **`useCustomOtherPlayersMultiplier`** | `[ToggleLeft]
-public bool useCustomOtherPlayersMultiplier` |  |
+| **`useCustomOtherPlayersMultiplier`** | `[ToggleLeft] public bool useCustomOtherPlayersMultiplier` |  |
 
 ## Methods
 
@@ -42,7 +41,7 @@ public void SetOwnerContext(EffectOwnerContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [EffectOwnerContext](/api/Global.EffectOwnerContext) |  |
+| `context` | [`EffectOwnerContext`](/api/Global.EffectOwnerContext) |  |
 
 ### `Start()`
 

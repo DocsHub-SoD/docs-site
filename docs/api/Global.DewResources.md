@@ -1,5 +1,6 @@
 # Class: DewResources
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -23,12 +24,12 @@ public static class DewResources
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`database`** | `public static DewResourceDatabase database { get; }` |  |
-| **`loadedGuids`** | `public static IReadOnlyCollection&lt;string&gt; loadedGuids { get; }` |  |
+| **`loadedGuids`** | `public static IReadOnlyCollection<string> loadedGuids { get; }` |  |
 | **`transparentMat`** | `public static Material transparentMat { get; }` |  |
 
 ## Methods
 
-### `AddPreloadRule(MonoBehaviour, Action&lt;PreloadInterface&gt;)`
+### `AddPreloadRule(MonoBehaviour, Action<PreloadInterface>)`
 
 ```csharp
 public static void AddPreloadRule(MonoBehaviour owner, Action<PreloadInterface> onPreload)
@@ -38,7 +39,7 @@ public static void AddPreloadRule(MonoBehaviour owner, Action<PreloadInterface> 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `owner` | `UnityEngine.MonoBehaviour` |  |
-| `onPreload` | [System.Action&lt;T&gt;&lt;PreloadInterface&gt;](/api/Global.PreloadInterface) |  |
+| `onPreload` | [`System.Action<T><PreloadInterface>`](/api/Global.PreloadInterface) |  |
 
 ### `ClearAllVariants(bool)`
 
@@ -67,7 +68,7 @@ public static int ClearVariantsOfAsset(string guid, VariantDef? target, bool rep
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `guid` | `string` |  |
-| `target` | [VariantDef?](/api/Global.VariantDef) |  |
+| `target` | [`VariantDef?`](/api/Global.VariantDef) |  |
 | `repairReferences` | `bool` |  |
 
 **Returns:** `int`
@@ -81,7 +82,7 @@ public static int ClearVariantsOfVarDef(VariantDef target, bool repairReferences
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [VariantDef](/api/Global.VariantDef) |  |
+| `target` | [`VariantDef`](/api/Global.VariantDef) |  |
 | `repairReferences` | `bool` |  |
 
 **Returns:** `int`
@@ -100,7 +101,7 @@ public static Object Convert(Object obj, Type type)
 
 **Returns:** `UnityEngine.Object`
 
-### `Convert&lt;T&gt;(Object)`
+### `Convert<T>(Object)`
 
 ```csharp
 public static T Convert<T>(Object obj) where T : Object
@@ -124,11 +125,11 @@ public static IEnumerable<Object> FindAllByNameSubstring(string substring, Resou
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;UnityEngine.Object&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><UnityEngine.Object>`
 
-### `FindAllByNameSubstring&lt;TFilter&gt;(string, ResourceLoadSettings)`
+### `FindAllByNameSubstring<TFilter>(string, ResourceLoadSettings)`
 
 ```csharp
 public static IEnumerable<TFilter> FindAllByNameSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object
@@ -138,10 +139,10 @@ public static IEnumerable<TFilter> FindAllByNameSubstring<TFilter>(string substr
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `TFilter` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;TFilter&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><TFilter>`
 
 ### `FindAllByType(Type, ResourceLoadSettings)`
 
@@ -153,11 +154,11 @@ public static IEnumerable<Object> FindAllByType(Type type, ResourceLoadSettings 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;UnityEngine.Object&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><UnityEngine.Object>`
 
-### `FindAllByType&lt;T&gt;(ResourceLoadSettings)`
+### `FindAllByType<T>(ResourceLoadSettings)`
 
 ```csharp
 public static IEnumerable<T> FindAllByType<T>(ResourceLoadSettings settings = default) where T : Object
@@ -166,10 +167,10 @@ public static IEnumerable<T> FindAllByType<T>(ResourceLoadSettings settings = de
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `T` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;T&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T>`
 
 ### `FindAllByTypeSubstring(string, ResourceLoadSettings)`
 
@@ -181,11 +182,11 @@ public static IEnumerable<Object> FindAllByTypeSubstring(string substring, Resou
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;UnityEngine.Object&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><UnityEngine.Object>`
 
-### `FindAllByTypeSubstring&lt;TFilter&gt;(string, ResourceLoadSettings)`
+### `FindAllByTypeSubstring<TFilter>(string, ResourceLoadSettings)`
 
 ```csharp
 public static IEnumerable<TFilter> FindAllByTypeSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object
@@ -195,10 +196,10 @@ public static IEnumerable<TFilter> FindAllByTypeSubstring<TFilter>(string substr
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `TFilter` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;TFilter&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><TFilter>`
 
 ### `FindOneByIdSubstring(string, ResourceLoadSettings)`
 
@@ -210,11 +211,11 @@ public static Object FindOneByIdSubstring(string substring, ResourceLoadSettings
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
-### `FindOneByIdSubstring&lt;TFilter&gt;(string, ResourceLoadSettings)`
+### `FindOneByIdSubstring<TFilter>(string, ResourceLoadSettings)`
 
 ```csharp
 public static TFilter FindOneByIdSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object
@@ -224,7 +225,7 @@ public static TFilter FindOneByIdSubstring<TFilter>(string substring, ResourceLo
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `TFilter` |  |
 
 **Returns:** `TFilter`
@@ -239,11 +240,11 @@ public static Object FindOneByTypeSubstring(string substring, ResourceLoadSettin
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
-### `FindOneByTypeSubstring&lt;TFilter&gt;(string, ResourceLoadSettings)`
+### `FindOneByTypeSubstring<TFilter>(string, ResourceLoadSettings)`
 
 ```csharp
 public static TFilter FindOneByTypeSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object
@@ -253,7 +254,7 @@ public static TFilter FindOneByTypeSubstring<TFilter>(string substring, Resource
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `substring` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `TFilter` |  |
 
 **Returns:** `TFilter`
@@ -271,7 +272,7 @@ public static string FindRoomNameBySubstring(string name)
 
 **Returns:** `string`
 
-### `GetAllDependencies(out ListReturnHandle&lt;string&gt;, string)`
+### `GetAllDependencies(out ListReturnHandle<string>, string)`
 
 ```csharp
 public static List<string> GetAllDependencies(out ListReturnHandle<string> handle, string objName)
@@ -280,10 +281,10 @@ public static List<string> GetAllDependencies(out ListReturnHandle<string> handl
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;string&gt;` |  |
+| `handle` | `ListReturnHandle<string>` |  |
 | `objName` | `string` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;string&gt;`
+**Returns:** `System.Collections.Generic.List<T><string>`
 
 ### `GetByGuid(string, ResourceLoadSettings)`
 
@@ -295,11 +296,11 @@ public static Object GetByGuid(string guid, ResourceLoadSettings settings = defa
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `guid` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
-### `GetByGuid&lt;T&gt;(string, ResourceLoadSettings)`
+### `GetByGuid<T>(string, ResourceLoadSettings)`
 
 ```csharp
 public static T GetByGuid<T>(string guid, ResourceLoadSettings settings = default) where T : Object
@@ -309,12 +310,12 @@ public static T GetByGuid<T>(string guid, ResourceLoadSettings settings = defaul
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `guid` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `GetByLinkTypeAndId&lt;T&gt;(ResourceLinkBy, string)`
+### `GetByLinkTypeAndId<T>(ResourceLinkBy, string)`
 
 ```csharp
 public static T GetByLinkTypeAndId<T>(ResourceLinkBy type, string id) where T : Object
@@ -323,7 +324,7 @@ public static T GetByLinkTypeAndId<T>(ResourceLinkBy type, string id) where T : 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [ResourceLinkBy](/api/Global.ResourceLinkBy) |  |
+| `type` | [`ResourceLinkBy`](/api/Global.ResourceLinkBy) |  |
 | `id` | `string` |  |
 | `` | `T` |  |
 
@@ -339,11 +340,11 @@ public static Object GetByName(string name, ResourceLoadSettings settings = defa
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
-### `GetByName&lt;T&gt;(string, ResourceLoadSettings)`
+### `GetByName<T>(string, ResourceLoadSettings)`
 
 ```csharp
 public static T GetByName<T>(string name, ResourceLoadSettings settings = default) where T : Object
@@ -353,7 +354,7 @@ public static T GetByName<T>(string name, ResourceLoadSettings settings = defaul
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -368,11 +369,11 @@ public static Object GetByShortTypeName(string name, ResourceLoadSettings settin
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
-### `GetByShortTypeName&lt;T&gt;(string, ResourceLoadSettings)`
+### `GetByShortTypeName<T>(string, ResourceLoadSettings)`
 
 ```csharp
 public static T GetByShortTypeName<T>(string name, ResourceLoadSettings settings = default) where T : Object
@@ -382,7 +383,7 @@ public static T GetByShortTypeName<T>(string name, ResourceLoadSettings settings
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -397,11 +398,11 @@ public static Object GetByType(Type type, ResourceLoadSettings settings = defaul
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
-### `GetByType&lt;T&gt;(ResourceLoadSettings)`
+### `GetByType<T>(ResourceLoadSettings)`
 
 ```csharp
 public static T GetByType<T>(ResourceLoadSettings settings = default) where T : Object
@@ -410,12 +411,12 @@ public static T GetByType<T>(ResourceLoadSettings settings = default) where T : 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `GetByType&lt;T&gt;(Type, ResourceLoadSettings)`
+### `GetByType<T>(Type, ResourceLoadSettings)`
 
 ```csharp
 public static T GetByType<T>(Type type, ResourceLoadSettings settings = default) where T : Object
@@ -425,7 +426,7 @@ public static T GetByType<T>(Type type, ResourceLoadSettings settings = default)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -479,7 +480,7 @@ public static GameObject GetNetworkedPrefab(uint id, ResourceLoadSettings settin
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `uint` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.GameObject`
 
@@ -500,7 +501,7 @@ public static ResourceLoadSettings GetSuggestedResourceLoadSettings(Actor parent
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `parentActor` | [Actor](/api/Global.Actor) |  |
+| `parentActor` | [`Actor`](/api/Global.Actor) |  |
 | `childType` | `System.Type` |  |
 
 **Returns:** `ResourceLoadSettings`
@@ -514,7 +515,7 @@ public static VariantDef GetSuggestedVarDef(Actor parentActor, Type childType)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `parentActor` | [Actor](/api/Global.Actor) |  |
+| `parentActor` | [`Actor`](/api/Global.Actor) |  |
 | `childType` | `System.Type` |  |
 
 **Returns:** `VariantDef`
@@ -542,7 +543,7 @@ public static Object Load(string guid, ResourceLoadSettings settings = default)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `guid` | `string` |  |
-| `settings` | [ResourceLoadSettings](/api/Global.ResourceLoadSettings) |  |
+| `settings` | [`ResourceLoadSettings`](/api/Global.ResourceLoadSettings) |  |
 
 **Returns:** `UnityEngine.Object`
 
@@ -567,7 +568,7 @@ public static void RegisterVariantProcessor(int id, ResourceVariantProcessor pro
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `int` |  |
-| `processor` | [ResourceVariantProcessor](/api/Global.ResourceVariantProcessor) |  |
+| `processor` | [`ResourceVariantProcessor`](/api/Global.ResourceVariantProcessor) |  |
 
 ### `RepairMissingReferences_Prepare()`
 
@@ -596,7 +597,7 @@ public static bool TryConvert(Object obj, Type type, out Object result)
 
 **Returns:** `bool`
 
-### `TryConvert&lt;T&gt;(Object, out T)`
+### `TryConvert<T>(Object, out T)`
 
 ```csharp
 public static bool TryConvert<T>(Object obj, out T result) where T : Object

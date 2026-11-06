@@ -1,5 +1,6 @@
 # Class: LobbyServiceSteam
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LobbyServiceProvider](/api/Global.LobbyServiceProvider)
@@ -13,7 +14,7 @@ public class LobbyServiceSteam : LobbyServiceProvider
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`disableVersionCheck`** | `public bool disableVersionCheck` |  |
-| **`lobbyMembers`** | `public List&lt;CSteamID&gt; lobbyMembers` |  |
+| **`lobbyMembers`** | `public List<CSteamID> lobbyMembers` |  |
 
 ## Properties
 
@@ -45,7 +46,7 @@ public override string GetGameServerAddress()
 
 **Returns:** `string`
 
-### `GetLobbies(Action&lt;LobbySearchResult&gt;, object)`
+### `GetLobbies(Action<LobbySearchResult>, object)`
 
 ```csharp
 public override UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object continuationToken = null)
@@ -54,7 +55,7 @@ public override UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object c
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onUpdated` | [System.Action&lt;T&gt;&lt;LobbySearchResult&gt;](/api/Global.LobbySearchResult) |  |
+| `onUpdated` | [`System.Action<T><LobbySearchResult>`](/api/Global.LobbySearchResult) |  |
 | `continuationToken` | `object` |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`

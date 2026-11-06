@@ -1,5 +1,6 @@
 # Struct: WorldNodeData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,7 +13,7 @@ public struct WorldNodeData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`modifiers`** | `public List&lt;ModifierData&gt; modifiers` |  |
+| **`modifiers`** | `public List<ModifierData> modifiers` |  |
 | **`position`** | `public Vector2 position` |  |
 | **`room`** | `public string room` |  |
 | **`roomOverride`** | `public string roomOverride` |  |
@@ -36,7 +37,7 @@ public int FindModifierIndex(string modName)
 
 **Returns:** `int`
 
-### `FindModifierIndex&lt;T&gt;()`
+### `FindModifierIndex<T>()`
 
 ```csharp
 public int FindModifierIndex<T>() where T : RoomModifierBase
@@ -83,7 +84,7 @@ public bool HasModifier(string modName)
 
 **Returns:** `bool`
 
-### `HasModifier&lt;T&gt;()`
+### `HasModifier<T>()`
 
 ```csharp
 public bool HasModifier<T>() where T : RoomModifierBase

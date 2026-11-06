@@ -1,5 +1,6 @@
 # Class: DewSteam
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public static class DewSteam
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onGameOverlayShownChanged`** | `public static SafeAction&lt;bool&gt; onGameOverlayShownChanged` |  |
+| **`onGameOverlayShownChanged`** | `public static SafeAction<bool> onGameOverlayShownChanged` |  |
 
 ## Properties
 
@@ -34,9 +35,9 @@ public static UniTask<SteamTicketForWebApi> GetTicketForWebApi(string pchIdentit
 | :--- | :--- | :--- |
 | `pchIdentity` | `string` |  |
 
-**Returns:** `Cysharp.Threading.Tasks.UniTask&lt;T&gt;&lt;SteamTicketForWebApi&gt;`
+**Returns:** `Cysharp.Threading.Tasks.UniTask<T><SteamTicketForWebApi>`
 
-### `TryStartGamepadInput(string, string, bool, bool, int, Action&lt;string&gt;, Action)`
+### `TryStartGamepadInput(string, string, bool, bool, int, Action<string>, Action)`
 
 If Steam gamepad input is not available, this returns false and no callbacks are called.
 
@@ -52,7 +53,7 @@ public static bool TryStartGamepadInput(string previousText, string placeholderT
 | `isMultiline` | `bool` |  |
 | `isPassword` | `bool` |  |
 | `maxCharacters` | `int` |  |
-| `onConfirm` | `System.Action&lt;T&gt;&lt;string&gt;` |  |
+| `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |
 
 **Returns:** `bool`

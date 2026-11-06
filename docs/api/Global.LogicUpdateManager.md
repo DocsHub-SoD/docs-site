@@ -1,5 +1,6 @@
 # Class: LogicUpdateManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [LogicUpdateManager](/api/Global.LogicUpdateManager)
@@ -39,7 +40,7 @@ public static void Register(ILogicUpdate lobj)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `lobj` | [ILogicUpdate](/api/Global.ILogicUpdate) |  |
+| `lobj` | [`ILogicUpdate`](/api/Global.ILogicUpdate) |  |
 
 ### `Unregister(ILogicUpdate)`
 
@@ -50,4 +51,4 @@ public static void Unregister(ILogicUpdate lobj)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `lobj` | [ILogicUpdate](/api/Global.ILogicUpdate) |  |
+| `lobj` | [`ILogicUpdate`](/api/Global.ILogicUpdate) |  |

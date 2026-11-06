@@ -1,5 +1,6 @@
 # Struct: SyncedNetworkBehaviour
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -25,7 +26,7 @@ public bool Equals(SyncedNetworkBehaviour other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [SyncedNetworkBehaviour](/api/Global.SyncedNetworkBehaviour) |  |
+| `other` | [`SyncedNetworkBehaviour`](/api/Global.SyncedNetworkBehaviour) |  |
 
 **Returns:** `bool`
 

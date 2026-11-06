@@ -1,5 +1,6 @@
 # Class: StatusEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [CurseStatusEffect](/api/Global.CurseStatusEffect) → [MiniBossEffect](/api/Global.MiniBossEffect) → [MirageSkinEffect](/api/Global.MirageSkinEffect) → [PersistentStatBonusEffect](/api/Global.PersistentStatBonusEffect) → [StackedStatusEffect](/api/Global.StackedStatusEffect) → [StarEffect](/api/Global.StarEffect)
@@ -12,59 +13,32 @@ public abstract class StatusEffect : AbilityInstance, ILogicUpdate, ICleanup, IC
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`addedMaterials`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-public Material[] addedMaterials` |  |
-| **`bottomColor`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ShowIf("_showIcon", true)]
-public Color bottomColor` |  |
-| **`endEffectVictim`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[LabelText("End Effect")]
-public GameObject endEffectVictim` |  |
+| **`addedMaterials`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] public Material[] addedMaterials` |  |
+| **`bottomColor`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ShowIf("_showIcon", true)] public Color bottomColor` |  |
+| **`endEffectVictim`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [LabelText("End Effect")] public GameObject endEffectVictim` |  |
 | **`HarmfulEffects`** | `public const BasicEffectMask HarmfulEffects = Slow \| Cripple \| Root \| Silence \| Stun \| Blind \| ArmorReduction \| HealReduction` |  |
-| **`hideOnWorldHealthBar`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ShowIf("_showIcon", true)]
-[ToggleLeft]
-public bool hideOnWorldHealthBar` |  |
-| **`icon`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ShowIf("_showIcon", true)]
-public Sprite icon` |  |
-| **`iconOrder`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ShowIf("_showIcon", true)]
-public int iconOrder` |  |
-| **`isBeneficialBuff`** | `[FormerlySerializedAs("isBeneficial")]
-[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ToggleLeft]
-public bool isBeneficialBuff` |  |
-| **`isCleansable`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ToggleLeft]
-public bool isCleansable` |  |
-| **`isKilledByCrowdControlImmunity`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ToggleLeft]
-public bool isKilledByCrowdControlImmunity` |  |
-| **`scaleDurationByTenacity`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ToggleLeft]
-public bool scaleDurationByTenacity` |  |
-| **`startEffectVictim`** | `[Title("Effects On Victim", null, TitleAlignments.Left, true, true)]
-[BoxGroup("StatusEffect Settings", true, false, 0)]
-[LabelText("Start Effect")]
-public GameObject startEffectVictim` |  |
-| **`topColor`** | `[BoxGroup("StatusEffect Settings", true, false, 0)]
-[ShowIf("_showIcon", true)]
-public Color topColor` |  |
+| **`hideOnWorldHealthBar`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ShowIf("_showIcon", true)] [ToggleLeft] public bool hideOnWorldHealthBar` |  |
+| **`icon`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ShowIf("_showIcon", true)] public Sprite icon` |  |
+| **`iconOrder`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ShowIf("_showIcon", true)] public int iconOrder` |  |
+| **`isBeneficialBuff`** | `[FormerlySerializedAs("isBeneficial")] [BoxGroup("StatusEffect Settings", true, false, 0)] [ToggleLeft] public bool isBeneficialBuff` |  |
+| **`isCleansable`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ToggleLeft] public bool isCleansable` |  |
+| **`isKilledByCrowdControlImmunity`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ToggleLeft] public bool isKilledByCrowdControlImmunity` |  |
+| **`scaleDurationByTenacity`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ToggleLeft] public bool scaleDurationByTenacity` |  |
+| **`startEffectVictim`** | `[Title("Effects On Victim", null, TitleAlignments.Left, true, true)] [BoxGroup("StatusEffect Settings", true, false, 0)] [LabelText("Start Effect")] public GameObject startEffectVictim` |  |
+| **`topColor`** | `[BoxGroup("StatusEffect Settings", true, false, 0)] [ShowIf("_showIcon", true)] public Color topColor` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`basicEffects`** | `public IReadOnlyList&lt;BasicEffect&gt; basicEffects { get; }` | List of BasicEffects this status effect is applying to the victim entity. Only available on server. |
+| **`basicEffects`** | `public IReadOnlyList<BasicEffect> basicEffects { get; }` | List of BasicEffects this status effect is applying to the victim entity. Only available on server. |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 | **`maxDuration`** | `public float? maxDuration { get; }` |  |
 | **`normalizedDuration`** | `public float? normalizedDuration { get; }` | Normalized remaining duration. Starts on 1.0f and ends on 0.0f. |
 | **`numberDisplay`** | `public int? numberDisplay { get; set; }` |  |
 | **`remainingDuration`** | `public float? remainingDuration { get; }` |  |
 | **`showIcon`** | `public bool showIcon { get; set; }` |  |
-| **`victim`** | `[SaveVar(SaveVarFlags.Default)]
-public Entity victim { get; }` |  |
+| **`victim`** | `[SaveVar(SaveVarFlags.Default)] public Entity victim { get; }` |  |
 
 ## Methods
 
@@ -79,7 +53,7 @@ protected override void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `DoAbility(Func&lt;AbilityTrigger, bool&gt;, Func&lt;AbilityTrigger, Action&gt;)`
+### `DoAbility(Func<AbilityTrigger, bool>, Func<AbilityTrigger, Action>)`
 
 Do custom action on all matching ability and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -90,8 +64,8 @@ public SafeAction DoAbility(Func<AbilityTrigger, bool> condition, Func<AbilityTr
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `condition` | [System.Func&lt;T, TResult&gt;&lt;AbilityTrigger,bool&gt;](/api/Global.AbilityTrigger) |  |
-| `callback` | [System.Func&lt;T, TResult&gt;&lt;AbilityTrigger,System.Action&gt;](/api/Global.AbilityTrigger) |  |
+| `condition` | [`System.Func<T, TResult><AbilityTrigger,bool>`](/api/Global.AbilityTrigger) |  |
+| `callback` | [`System.Func<T, TResult><AbilityTrigger,System.Action>`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `SafeAction`
 
@@ -140,7 +114,7 @@ public AttackCriticalEffect DoAttackCritical(Action onUse)
 
 **Returns:** `AttackCriticalEffect`
 
-### `DoAttackEmpower(Action&lt;EventInfoAttackEffect, int&gt;, int, Action)`
+### `DoAttackEmpower(Action<EventInfoAttackEffect, int>, int, Action)`
 
 Note this will lock the status effect until basic attack instance is destroyed.
 
@@ -151,7 +125,7 @@ public AttackEmpowerEffect DoAttackEmpower(Action<EventInfoAttackEffect, int> on
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onAttackEffect` | [System.Action&lt;T1, T2&gt;&lt;EventInfoAttackEffect,int&gt;](/api/Global.EventInfoAttackEffect) |  |
+| `onAttackEffect` | [`System.Action<T1, T2><EventInfoAttackEffect,int>`](/api/Global.EventInfoAttackEffect) |  |
 | `maxTriggerCount` | `int` |  |
 | `onDepleted` | `System.Action` |  |
 
@@ -168,12 +142,12 @@ public AttackOverrideEffect DoAttackOverride(AbilityTrigger trigger, Action onUs
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `onUse` | `System.Action` |  |
 
 **Returns:** `AttackOverrideEffect`
 
-### `DoAttackOverride&lt;T&gt;(Action)`
+### `DoAttackOverride<T>(Action)`
 
 AttackOverride replaces the entity's attack AbilityTrigger with something else.This version creates a new ability trigger of the given type and automatically disposes after use.
 
@@ -198,7 +172,7 @@ public void DoBasicEffect(BasicEffect eff)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `eff` | [BasicEffect](/api/Global.BasicEffect) |  |
+| `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 
 ### `DoBlind()`
 
@@ -225,7 +199,7 @@ public CrippleEffect DoCripple(float strength)
 
 **Returns:** `CrippleEffect`
 
-### `DoDeathInterrupt(Action&lt;EventInfoKill&gt;, int)`
+### `DoDeathInterrupt(Action<EventInfoKill>, int)`
 
 Death Interrupt fires before entity's imminent death.DeathInterrupts with lower priority will be fired/checked earlier.Healing entity by any amount in an interrupt will prevent entity's death.If an interrupt prevents the death, other interrupts will not be fired.Note that interrupts can be ignored byEntity.KillNoInterrupt()
 
@@ -236,7 +210,7 @@ public DeathInterruptEffect DoDeathInterrupt(Action<EventInfoKill> onInterrupt, 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onInterrupt` | [System.Action&lt;T&gt;&lt;EventInfoKill&gt;](/api/Global.EventInfoKill) |  |
+| `onInterrupt` | [`System.Action<T><EventInfoKill>`](/api/Global.EventInfoKill) |  |
 | `priority` | `int` |  |
 
 **Returns:** `DeathInterruptEffect`
@@ -281,7 +255,7 @@ public InvisibleEffect DoInvisible()
 
 **Returns:** `InvisibleEffect`
 
-### `DoInvulnerable(Action&lt;EventInfoDamageNegatedByImmunity&gt;)`
+### `DoInvulnerable(Action<EventInfoDamageNegatedByImmunity>)`
 
 Invulnerable makes the entity immune to damage and crowd controls.
 
@@ -292,11 +266,11 @@ public InvulnerableEffect DoInvulnerable(Action<EventInfoDamageNegatedByImmunity
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onDamageNegated` | [System.Action&lt;T&gt;&lt;EventInfoDamageNegatedByImmunity&gt;](/api/Global.EventInfoDamageNegatedByImmunity) |  |
+| `onDamageNegated` | [`System.Action<T><EventInfoDamageNegatedByImmunity>`](/api/Global.EventInfoDamageNegatedByImmunity) |  |
 
 **Returns:** `InvulnerableEffect`
 
-### `DoProtected(Action&lt;EventInfoDamageNegatedByImmunity&gt;)`
+### `DoProtected(Action<EventInfoDamageNegatedByImmunity>)`
 
 Protected makes the entity immune to damage.
 
@@ -307,7 +281,7 @@ public ProtectedEffect DoProtected(Action<EventInfoDamageNegatedByImmunity> onDa
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onDamageNegated` | [System.Action&lt;T&gt;&lt;EventInfoDamageNegatedByImmunity&gt;](/api/Global.EventInfoDamageNegatedByImmunity) |  |
+| `onDamageNegated` | [`System.Action<T><EventInfoDamageNegatedByImmunity>`](/api/Global.EventInfoDamageNegatedByImmunity) |  |
 
 **Returns:** `ProtectedEffect`
 
@@ -321,7 +295,7 @@ public RootEffect DoRoot()
 
 **Returns:** `RootEffect`
 
-### `DoShield(float, Action&lt;EventInfoDamageNegatedByShield&gt;)`
+### `DoShield(float, Action<EventInfoDamageNegatedByShield>)`
 
 ```csharp
 public ShieldEffect DoShield(float amount, Action<EventInfoDamageNegatedByShield> onDamageNegated = null)
@@ -331,7 +305,7 @@ public ShieldEffect DoShield(float amount, Action<EventInfoDamageNegatedByShield
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
-| `onDamageNegated` | [System.Action&lt;T&gt;&lt;EventInfoDamageNegatedByShield&gt;](/api/Global.EventInfoDamageNegatedByShield) |  |
+| `onDamageNegated` | [`System.Action<T><EventInfoDamageNegatedByShield>`](/api/Global.EventInfoDamageNegatedByShield) |  |
 
 **Returns:** `ShieldEffect`
 
@@ -345,7 +319,7 @@ public SilenceEffect DoSilence()
 
 **Returns:** `SilenceEffect`
 
-### `DoSkill&lt;T&gt;(Action&lt;T&gt;)`
+### `DoSkill<T>(Action<T>)`
 
 Do custom action on all matching skill. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -356,12 +330,12 @@ public SafeAction DoSkill<T>(Action<T> callback) where T : SkillTrigger
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `callback` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `SafeAction`
 
-### `DoSkill&lt;T&gt;(Func&lt;T, Action&gt;)`
+### `DoSkill<T>(Func<T, Action>)`
 
 Do custom action on all matching skill and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.
 
@@ -372,7 +346,7 @@ public SafeAction DoSkill<T>(Func<T, Action> callback) where T : SkillTrigger
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `System.Func&lt;T, TResult&gt;&lt;T,System.Action&gt;` |  |
+| `callback` | `System.Func<T, TResult><T,System.Action>` |  |
 | `` | `T` |  |
 
 **Returns:** `SafeAction`
@@ -428,7 +402,7 @@ public StatBonus DoStatBonus(StatBonus bonus)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `bonus` | [StatBonus](/api/Global.StatBonus) |  |
+| `bonus` | [`StatBonus`](/api/Global.StatBonus) |  |
 
 **Returns:** `StatBonus`
 
@@ -587,7 +561,7 @@ protected void StopBasicEffect(BasicEffect eff)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `eff` | [BasicEffect](/api/Global.BasicEffect) |  |
+| `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 
 ### `StopTimer()`
 

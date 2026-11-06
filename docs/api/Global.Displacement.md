@@ -1,5 +1,6 @@
 # Class: Displacement
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DispByDestination](/api/Global.DispByDestination) → [DispByTarget](/api/Global.DispByTarget)

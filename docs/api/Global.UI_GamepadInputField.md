@@ -1,5 +1,6 @@
 # Class: UI_GamepadInputField
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [UI_GamepadFocusable](/api/Global.UI_GamepadFocusable)
@@ -35,7 +36,7 @@ public void OnPointerClick(PointerEventData eventData)
 | :--- | :--- | :--- |
 | `eventData` | `UnityEngine.EventSystems.PointerEventData` |  |
 
-### `StartInput(Action&lt;string&gt;, Action)`
+### `StartInput(Action<string>, Action)`
 
 ```csharp
 public void StartInput(Action<string> onConfirm = null, Action onCancel = null)
@@ -44,5 +45,5 @@ public void StartInput(Action<string> onConfirm = null, Action onCancel = null)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onConfirm` | `System.Action&lt;T&gt;&lt;string&gt;` |  |
+| `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |

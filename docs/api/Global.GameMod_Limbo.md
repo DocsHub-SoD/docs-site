@@ -1,5 +1,6 @@
 # Class: GameMod_Limbo
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [GameEffect](/api/Global.GameEffect) → [GameModifierBase](/api/Global.GameModifierBase)
@@ -25,9 +26,7 @@ public class GameMod_Limbo : GameModifierBase, ILogicUpdate, ICleanup, ICustomDe
 | **`d4MirageSkinChance`** | `public float d4MirageSkinChance` |  |
 | **`d5BossAtkSpd`** | `public float d5BossAtkSpd` |  |
 | **`d5BossMovSpd`** | `public float d5BossMovSpd` |  |
-| **`depth`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public int depth` |  |
+| **`depth`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public int depth` |  |
 
 ## Methods
 
@@ -112,7 +111,7 @@ public static int Lobby_GetDepth(LobbyInstance lobby)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `lobby` | [LobbyInstance](/api/Global.LobbyInstance) |  |
+| `lobby` | [`LobbyInstance`](/api/Global.LobbyInstance) |  |
 
 **Returns:** `int`
 

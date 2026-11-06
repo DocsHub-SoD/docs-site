@@ -1,5 +1,6 @@
 # Class: DewPersistence.GeneralData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewPersistence.GemData](/api/Global.DewPersistence.GemData) → [DewPersistence.RoomActorData](/api/Global.DewPersistence.RoomActorData) → [DewPersistence.SkillData](/api/Global.DewPersistence.SkillData) → [DewPersistence.StatusEffectData](/api/Global.DewPersistence.StatusEffectData)
@@ -12,7 +13,7 @@ public class DewPersistence.GeneralData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`persistenceData`** | `public Dictionary&lt;string, string&gt; persistenceData` |  |
+| **`persistenceData`** | `public Dictionary<string, string> persistenceData` |  |
 | **`prevNetId`** | `public uint prevNetId` |  |
 | **`resId`** | `public string resId` |  |
 | **`resType`** | `public ResourceLinkBy resType` |  |
@@ -30,11 +31,11 @@ public virtual DewPersistence.GeneralData Capture(Actor target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Actor](/api/Global.Actor) |  |
+| `target` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `DewPersistence.GeneralData`
 
-### `GetPrefab&lt;T&gt;()`
+### `GetPrefab<T>()`
 
 ```csharp
 public virtual T GetPrefab<T>() where T : Object

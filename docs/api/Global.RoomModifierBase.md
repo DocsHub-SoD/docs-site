@@ -1,5 +1,6 @@
 # Class: RoomModifierBase
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [SpecialEntityRoomModifier](/api/Global.SpecialEntityRoomModifier)
@@ -12,71 +13,36 @@ public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRou
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`allowedZones`** | `[ShowIf("@chance &gt; 0.000001f", true)]
-[InfoBox("All zones will be allowed to have this modifier", InfoMessageType.Info, "@allowedZones == null \|\| allowedZones.Length == 0")]
-[InfoBox("@GetZoneValidationMessage(allowedZones)", InfoMessageType.Error, "@GetZoneValidationMessage(allowedZones) != null")]
-public string[] allowedZones` |  |
-| **`chance`** | `[LabelText("@spawnType.ToString()")]
-public float chance` |  |
-| **`difficultyScaling`** | `[ShowIf("@chance &gt; 0.000001f", true)]
-public ScaleWithDifficultyMode difficultyScaling` |  |
-| **`disableOtherEnvParticles`** | `[ToggleLeft]
-public bool disableOtherEnvParticles` |  |
-| **`disallowOtherModifiers`** | `[ShowIf("@chance &gt; 0.000001f", true)]
-[ToggleLeft]
-public bool disallowOtherModifiers` |  |
-| **`enableInnerDecorations`** | `[Title("Decorations", null, TitleAlignments.Left, true, true)]
-[ToggleLeft]
-public bool enableInnerDecorations` |  |
-| **`enableOuterDecorations`** | `[ToggleLeft]
-public bool enableOuterDecorations` |  |
+| **`allowedZones`** | `[ShowIf("@chance > 0.000001f", true)] [InfoBox("All zones will be allowed to have this modifier", InfoMessageType.Info, "@allowedZones == null \|\| allowedZones.Length == 0")] [InfoBox("@GetZoneValidationMessage(allowedZones)", InfoMessageType.Error, "@GetZoneValidationMessage(allowedZones) != null")] public string[] allowedZones` |  |
+| **`chance`** | `[LabelText("@spawnType.ToString()")] public float chance` |  |
+| **`difficultyScaling`** | `[ShowIf("@chance > 0.000001f", true)] public ScaleWithDifficultyMode difficultyScaling` |  |
+| **`disableOtherEnvParticles`** | `[ToggleLeft] public bool disableOtherEnvParticles` |  |
+| **`disallowOtherModifiers`** | `[ShowIf("@chance > 0.000001f", true)] [ToggleLeft] public bool disallowOtherModifiers` |  |
+| **`enableInnerDecorations`** | `[Title("Decorations", null, TitleAlignments.Left, true, true)] [ToggleLeft] public bool enableInnerDecorations` |  |
+| **`enableOuterDecorations`** | `[ToggleLeft] public bool enableOuterDecorations` |  |
 | **`excludeFromPool`** | `public bool excludeFromPool` |  |
-| **`fxLoop`** | `[Title("Effects", null, TitleAlignments.Left, true, true)]
-public GameObject fxLoop` |  |
-| **`hiddenOnVisitedNode`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)]
-public bool hiddenOnVisitedNode` |  |
-| **`innerDecorations`** | `[BoxGroup("Inner Decorations", true, false, 0)]
-[InlineProperty]
-[HideLabel]
-[ShowIf("enableInnerDecorations", true)]
-public DecorationSettings innerDecorations` |  |
-| **`isMain`** | `[Title("General", null, TitleAlignments.Left, true, true)]
-[FormerlySerializedAs("showOnTopRight")]
-public bool isMain` | Main modifiers will print notification when user enters the node.A node can only have a single main modifier. |
-| **`mainColor`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)]
-public Color mainColor` |  |
-| **`mapSprite`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)]
-public Sprite mapSprite` |  |
-| **`mapSpriteScale`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)]
-public float mapSpriteScale` |  |
-| **`modifiesRewards`** | `[ShowIf("@chance &gt; 0.000001f", true)]
-[ToggleLeft]
-public bool modifiesRewards` |  |
-| **`outerDecorations`** | `[BoxGroup("Outer Decorations", true, false, 0)]
-[InlineProperty]
-[HideLabel]
-[ShowIf("enableOuterDecorations", true)]
-public DecorationSettings outerDecorations` |  |
-| **`removeModifierWhenOverrideOverwritten`** | `[ToggleLeft]
-[ShowIf("@!string.IsNullOrEmpty(roomOverride)", true)]
-public bool removeModifierWhenOverrideOverwritten` |  |
+| **`fxLoop`** | `[Title("Effects", null, TitleAlignments.Left, true, true)] public GameObject fxLoop` |  |
+| **`hiddenOnVisitedNode`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public bool hiddenOnVisitedNode` |  |
+| **`innerDecorations`** | `[BoxGroup("Inner Decorations", true, false, 0)] [InlineProperty] [HideLabel] [ShowIf("enableInnerDecorations", true)] public DecorationSettings innerDecorations` |  |
+| **`isMain`** | `[Title("General", null, TitleAlignments.Left, true, true)] [FormerlySerializedAs("showOnTopRight")] public bool isMain` | Main modifiers will print notification when user enters the node.A node can only have a single main modifier. |
+| **`mainColor`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public Color mainColor` |  |
+| **`mapSprite`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public Sprite mapSprite` |  |
+| **`mapSpriteScale`** | `[ShowIf("@isMain \|\| visibilityOnWorld != NodeModifierVisibility.Hidden", true)] public float mapSpriteScale` |  |
+| **`modifiesRewards`** | `[ShowIf("@chance > 0.000001f", true)] [ToggleLeft] public bool modifiesRewards` |  |
+| **`outerDecorations`** | `[BoxGroup("Outer Decorations", true, false, 0)] [InlineProperty] [HideLabel] [ShowIf("enableOuterDecorations", true)] public DecorationSettings outerDecorations` |  |
+| **`removeModifierWhenOverrideOverwritten`** | `[ToggleLeft] [ShowIf("@!string.IsNullOrEmpty(roomOverride)", true)] public bool removeModifierWhenOverrideOverwritten` |  |
 | **`roomOverride`** | `public string roomOverride` |  |
-| **`spawnedDecorations`** | `public readonly List&lt;GameObject&gt; spawnedDecorations` |  |
-| **`spawnOncePerLoop`** | `[ShowIf("@chance &gt; 0.000001f", true)]
-[ToggleLeft]
-public bool spawnOncePerLoop` |  |
-| **`spawnType`** | `[Title("Natural Spawn Settings", null, TitleAlignments.Left, true, true)]
-public ModifierSpawnType spawnType` |  |
+| **`spawnedDecorations`** | `public readonly List<GameObject> spawnedDecorations` |  |
+| **`spawnOncePerLoop`** | `[ShowIf("@chance > 0.000001f", true)] [ToggleLeft] public bool spawnOncePerLoop` |  |
+| **`spawnType`** | `[Title("Natural Spawn Settings", null, TitleAlignments.Left, true, true)] public ModifierSpawnType spawnType` |  |
 | **`visibilityOnWorld`** | `public NodeModifierVisibility visibilityOnWorld` |  |
-| **`zoneIndexRange`** | `[ShowIf("@chance &gt; 0.000001f", true)]
-public Vector2Int zoneIndexRange` |  |
+| **`zoneIndexRange`** | `[ShowIf("@chance > 0.000001f", true)] public Vector2Int zoneIndexRange` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`id`** | `[SaveVar(SaveVarFlags.Default)]
-public int id { get; }` | Modifier id of this modifier instance. |
+| **`id`** | `[SaveVar(SaveVarFlags.Default)] public int id { get; }` | Modifier id of this modifier instance. |
 | **`isDestroyedOnRoomChange`** | `public override bool isDestroyedOnRoomChange { get; }` |  |
 | **`modData`** | `public ModifierData modData { get; }` |  |
 
@@ -115,7 +81,7 @@ public virtual bool IsAvailableInGame()
 
 **Returns:** `bool`
 
-### `ModifyEntities(Action&lt;Entity&gt;, Action&lt;Entity&gt;)`
+### `ModifyEntities(Action<Entity>, Action<Entity>)`
 
 Modify all entities.onStart is called on all existing entities and entities spawned in the future.onStop is called on all existing entities when modifier stops.
 
@@ -126,8 +92,8 @@ public void ModifyEntities(Action<Entity> onStart, Action<Entity> onStop)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onStart` | [System.Action&lt;T&gt;&lt;Entity&gt;](/api/Global.Entity) |  |
-| `onStop` | [System.Action&lt;T&gt;&lt;Entity&gt;](/api/Global.Entity) |  |
+| `onStart` | [`System.Action<T><Entity>`](/api/Global.Entity) |  |
+| `onStop` | [`System.Action<T><Entity>`](/api/Global.Entity) |  |
 
 ### `OnCreate()`
 
@@ -147,7 +113,7 @@ protected override void OnDestroyActor()
 public override void OnStart()
 ```
 
-### `PlaceDecorations(DecorationSettings, IReadOnlyList&lt;(int, int)&gt;)`
+### `PlaceDecorations(DecorationSettings, IReadOnlyList<(int, int)>)`
 
 ```csharp
 public static List<GameObject> PlaceDecorations(DecorationSettings s, IReadOnlyList<(int, int)> indices)
@@ -156,12 +122,12 @@ public static List<GameObject> PlaceDecorations(DecorationSettings s, IReadOnlyL
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [DecorationSettings](/api/Global.DecorationSettings) |  |
-| `indices` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;(int,int)&gt;` |  |
+| `s` | [`DecorationSettings`](/api/Global.DecorationSettings) |  |
+| `indices` | `System.Collections.Generic.IReadOnlyList<T><(int,int)>` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;UnityEngine.GameObject&gt;`
+**Returns:** `System.Collections.Generic.List<T><UnityEngine.GameObject>`
 
-### `PlaceShrine&lt;T&gt;(PlaceShrineSettings)`
+### `PlaceShrine<T>(PlaceShrineSettings)`
 
 Places a shrine on random position.This function properly handles revisits.Warning: does not support multiple shrines of same type
 
@@ -172,7 +138,7 @@ public void PlaceShrine<T>(PlaceShrineSettings settings) where T : Shrine
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [PlaceShrineSettings](/api/Global.PlaceShrineSettings) |  |
+| `settings` | [`PlaceShrineSettings`](/api/Global.PlaceShrineSettings) |  |
 | `` | `T` |  |
 
 ### `RemoveModifier()`

@@ -1,5 +1,6 @@
 # Interface: IItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -30,6 +31,6 @@ bool IsLockedFor(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `bool`

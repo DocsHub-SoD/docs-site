@@ -1,5 +1,6 @@
 # Class: Accessory
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,20 +14,12 @@ public class Accessory : MonoBehaviour
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`category`** | `public string category` |  |
-| **`customOffsets`** | `public List&lt;Accessory.AttachOffset&gt; customOffsets` |  |
+| **`customOffsets`** | `public List<Accessory.AttachOffset> customOffsets` |  |
 | **`generatedFromServer`** | `public bool generatedFromServer` |  |
-| **`previewCustomCenter`** | `[LabelText("Custom Center")]
-public Transform previewCustomCenter` |  |
-| **`previewImage`** | `[Space(30)]
-[PreviewField(60)]
-[LabelText("Thumbnail")]
-public Sprite previewImage` |  |
-| **`previewOffset`** | `[LabelText("Normalized Offset")]
-[ReadOnly]
-public Vector2 previewOffset` |  |
-| **`previewPadding`** | `[Range(-0.25, 0.25)]
-[LabelText("Padding")]
-public float previewPadding` |  |
+| **`previewCustomCenter`** | `[LabelText("Custom Center")] public Transform previewCustomCenter` |  |
+| **`previewImage`** | `[Space(30)] [PreviewField(60)] [LabelText("Thumbnail")] public Sprite previewImage` |  |
+| **`previewOffset`** | `[LabelText("Normalized Offset")] [ReadOnly] public Vector2 previewOffset` |  |
+| **`previewPadding`** | `[Range(-0.25, 0.25)] [LabelText("Padding")] public float previewPadding` |  |
 | **`type`** | `public AccType type` |  |
 
 ## Methods

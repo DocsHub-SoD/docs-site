@@ -1,5 +1,6 @@
 # Class: DewNetworkStartSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class DewNetworkStartSettings
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`addedGameMods`** | `public List&lt;string&gt; addedGameMods` |  |
+| **`addedGameMods`** | `public List<string> addedGameMods` |  |
 | **`address`** | `public string address` |  |
 | **`continueData`** | `public DewPersistence.GameData continueData` |  |
 | **`customGameSettingsSaveKey`** | `public string customGameSettingsSaveKey` |  |

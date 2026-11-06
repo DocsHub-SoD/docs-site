@@ -1,5 +1,6 @@
 # Class: PropEnt_Merchant_Base
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [PropEntity](/api/Global.PropEntity) → [PropEnt_Merchant_Jonas](/api/Global.PropEnt_Merchant_Jonas) → [PropEnt_Merchant_Smoothie](/api/Global.PropEnt_Merchant_Smoothie)
@@ -20,9 +21,8 @@ public abstract class PropEnt_Merchant_Base : PropEntity, ILogicUpdate, ICleanup
 | **`fxPurchaseTreasure`** | `public GameObject fxPurchaseTreasure` |  |
 | **`fxSell`** | `public GameObject fxSell` |  |
 | **`isSellEnabled`** | `public bool isSellEnabled` |  |
-| **`merchandises`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncDictionary&lt;string, MerchandiseData[]&gt; merchandises` |  |
-| **`onMerchandisePopulated`** | `public SafeAction&lt;DewPlayer&gt; onMerchandisePopulated` | Called on server after merchandise has been populated for certain player. |
+| **`merchandises`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, MerchandiseData[]> merchandises` |  |
+| **`onMerchandisePopulated`** | `public SafeAction<DewPlayer> onMerchandisePopulated` | Called on server after merchandise has been populated for certain player. |
 | **`props`** | `public GameObject[] props` |  |
 
 ## Properties
@@ -61,7 +61,7 @@ public virtual bool CanInteract(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -76,7 +76,7 @@ public virtual bool CanRefresh(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `bool`
 
@@ -126,7 +126,7 @@ public virtual Cost GetRefreshCost(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `Cost`
 
@@ -151,7 +151,7 @@ public virtual void OnInteract(Entity entity, bool alt)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
 ### `OnPopulateMerchandises(DewPlayer)`
@@ -163,7 +163,7 @@ protected abstract void OnPopulateMerchandises(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `OnRefresh(DewPlayer)`
 
@@ -174,7 +174,7 @@ protected virtual void OnRefresh(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `OnSell(DewPlayer, NetworkBehaviour)`
 
@@ -185,7 +185,7 @@ protected void OnSell(DewPlayer activator, NetworkBehaviour target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `activator` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `activator` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `target` | `Mirror.NetworkBehaviour` |  |
 
 ### `PopulatePlayerMerchandises(DewPlayer)`
@@ -197,7 +197,7 @@ public void PopulatePlayerMerchandises(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `SpawnMerchandise(MerchandiseData, DewPlayer, Cost)`
 
@@ -208,6 +208,6 @@ protected void SpawnMerchandise(MerchandiseData data, DewPlayer player, Cost fin
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [MerchandiseData](/api/Global.MerchandiseData) |  |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `finalPrice` | [Cost](/api/Global.Cost) |  |
+| `data` | [`MerchandiseData`](/api/Global.MerchandiseData) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `finalPrice` | [`Cost`](/api/Global.Cost) |  |

@@ -1,5 +1,6 @@
 # Class: PreferredGameSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,17 +14,17 @@ public class PreferredGameSettings
 | :--- | :--- | :--- |
 | **`allowDejavu`** | `public bool allowDejavu` |  |
 | **`allowMidJoins`** | `public AllowMidJoinType allowMidJoins` |  |
-| **`bannedGameItems`** | `public List&lt;string&gt; bannedGameItems` |  |
-| **`customData`** | `public Dictionary&lt;string, string&gt; customData` |  |
+| **`bannedGameItems`** | `public List<string> bannedGameItems` |  |
+| **`customData`** | `public Dictionary<string, string> customData` |  |
 | **`dejavuItem`** | `public string dejavuItem` |  |
 | **`difficulty`** | `public string difficulty` |  |
 | **`enableVotes`** | `public bool enableVotes` |  |
 | **`hero`** | `public string hero` |  |
-| **`heroSelectedLoadoutIndex`** | `public Dictionary&lt;string, int&gt; heroSelectedLoadoutIndex` |  |
+| **`heroSelectedLoadoutIndex`** | `public Dictionary<string, int> heroSelectedLoadoutIndex` |  |
 | **`lobbyDescription`** | `public string lobbyDescription` |  |
 | **`lobbyName`** | `public string lobbyName` |  |
-| **`lucidDreams`** | `public List&lt;string&gt; lucidDreams` |  |
-| **`tags`** | `public List&lt;string&gt; tags` |  |
+| **`lucidDreams`** | `public List<string> lucidDreams` |  |
+| **`tags`** | `public List<string> tags` |  |
 
 ## Methods
 

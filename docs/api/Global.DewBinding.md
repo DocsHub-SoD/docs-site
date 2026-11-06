@@ -1,5 +1,6 @@
 # Class: DewBinding
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,17 +16,13 @@ public class DewBinding
 | **`canAssignGamepad`** | `public bool canAssignGamepad` |  |
 | **`canAssignKeyboard`** | `public bool canAssignKeyboard` |  |
 | **`canAssignMouse`** | `public bool canAssignMouse` |  |
-| **`gamepad`** | `[Obsolete]
-public GamepadButtonEx? gamepad` |  |
-| **`gamepadBinds`** | `public List&lt;GamepadButtonEx&gt; gamepadBinds` |  |
-| **`keyboard`** | `[Obsolete]
-public Key keyboard` |  |
-| **`keyModifiers`** | `[Obsolete]
-public List&lt;Key&gt; keyModifiers` |  |
+| **`gamepad`** | `[Obsolete] public GamepadButtonEx? gamepad` |  |
+| **`gamepadBinds`** | `public List<GamepadButtonEx> gamepadBinds` |  |
+| **`keyboard`** | `[Obsolete] public Key keyboard` |  |
+| **`keyModifiers`** | `[Obsolete] public List<Key> keyModifiers` |  |
 | **`MockBinding`** | `public static readonly DewBinding MockBinding` |  |
-| **`mouse`** | `[Obsolete]
-public MouseButton mouse` |  |
-| **`pcBinds`** | `public List&lt;PCBind&gt; pcBinds` |  |
+| **`mouse`** | `[Obsolete] public MouseButton mouse` |  |
+| **`pcBinds`** | `public List<PCBind> pcBinds` |  |
 
 ## Methods
 
@@ -46,7 +43,7 @@ public DewBinding CloneWith(GamepadButtonEx added)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `added` | [GamepadButtonEx](/api/Global.GamepadButtonEx) |  |
+| `added` | [`GamepadButtonEx`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `DewBinding`
 
@@ -59,7 +56,7 @@ public DewBinding CloneWith(MouseButton added)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `added` | [MouseButton](/api/Global.MouseButton) |  |
+| `added` | [`MouseButton`](/api/Global.MouseButton) |  |
 
 **Returns:** `DewBinding`
 

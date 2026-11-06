@@ -1,5 +1,6 @@
 # Class: DewMod
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,12 +12,12 @@ public static class DewMod
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`allJsonOverrideItemsLocal`** | `public static List&lt;JsonOverrideItem&gt; allJsonOverrideItemsLocal` | All JSON override items from local mods. |
-| **`allMods`** | `public static List&lt;ModItem&gt; allMods` | All mods that are either subscribed by the user or in mods directory. Contains both enabled and disabled mods. |
-| **`currentJsonOverrideProcessorsFromServer`** | `public static Dictionary&lt;string, SafeAction&lt;GameObject&gt;&gt; currentJsonOverrideProcessorsFromServer` | GUID to processor map of current JSON overrides, received from the server. |
-| **`currentJsonOverrideProcessorsLocal`** | `public static Dictionary&lt;string, SafeAction&lt;GameObject&gt;&gt; currentJsonOverrideProcessorsLocal` | GUID to processor map of current JSON overrides, from this machine. This will not be applied when playing co-op as a client. |
-| **`jsonOverrideTargets`** | `public static Dictionary&lt;string, Dictionary&lt;string, string&gt;&gt; jsonOverrideTargets` | Original values of JSON override targets. This acts as a whitelist for overrides. |
-| **`loadedInstances`** | `public static List&lt;LoadedModInstance&gt; loadedInstances` | Currently alive mod instances. |
+| **`allJsonOverrideItemsLocal`** | `public static List<JsonOverrideItem> allJsonOverrideItemsLocal` | All JSON override items from local mods. |
+| **`allMods`** | `public static List<ModItem> allMods` | All mods that are either subscribed by the user or in mods directory. Contains both enabled and disabled mods. |
+| **`currentJsonOverrideProcessorsFromServer`** | `public static Dictionary<string, SafeAction<GameObject>> currentJsonOverrideProcessorsFromServer` | GUID to processor map of current JSON overrides, received from the server. |
+| **`currentJsonOverrideProcessorsLocal`** | `public static Dictionary<string, SafeAction<GameObject>> currentJsonOverrideProcessorsLocal` | GUID to processor map of current JSON overrides, from this machine. This will not be applied when playing co-op as a client. |
+| **`jsonOverrideTargets`** | `public static Dictionary<string, Dictionary<string, string>> jsonOverrideTargets` | Original values of JSON override targets. This acts as a whitelist for overrides. |
+| **`loadedInstances`** | `public static List<LoadedModInstance> loadedInstances` | Currently alive mod instances. |
 | **`onModLoadEnded`** | `public static SafeAction onModLoadEnded` |  |
 | **`onModLoadStarted`** | `public static SafeAction onModLoadStarted` |  |
 
@@ -53,7 +54,7 @@ public static void BuildJsonOverrideOriginalsFull()
 public static UniTask<CreateItemResult_t> CreateItem()
 ```
 
-**Returns:** `Cysharp.Threading.Tasks.UniTask&lt;T&gt;&lt;CreateItemResult_t&gt;`
+**Returns:** `Cysharp.Threading.Tasks.UniTask<T><CreateItemResult_t>`
 
 ### `DeleteItem(PublishedFileId_t)`
 
@@ -66,7 +67,7 @@ public static UniTask<DeleteItemResult_t> DeleteItem(PublishedFileId_t id)
 | :--- | :--- | :--- |
 | `id` | `Steamworks.PublishedFileId_t` |  |
 
-**Returns:** `Cysharp.Threading.Tasks.UniTask&lt;T&gt;&lt;DeleteItemResult_t&gt;`
+**Returns:** `Cysharp.Threading.Tasks.UniTask<T><DeleteItemResult_t>`
 
 ### `DisableAutoReload()`
 
@@ -92,9 +93,9 @@ public static void EndRegisterJsonOverride()
 public static List<string> GetAllLocalModDirectories()
 ```
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;string&gt;`
+**Returns:** `System.Collections.Generic.List<T><string>`
 
-### `GetSortedModsList(List&lt;ModItem&gt;)`
+### `GetSortedModsList(List<ModItem>)`
 
 ```csharp
 public static List<ModItem> GetSortedModsList(List<ModItem> list)
@@ -103,9 +104,9 @@ public static List<ModItem> GetSortedModsList(List<ModItem> list)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | [System.Collections.Generic.List&lt;T&gt;&lt;ModItem&gt;](/api/Global.ModItem) |  |
+| `list` | [`System.Collections.Generic.List<T><ModItem>`](/api/Global.ModItem) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;ModItem&gt;`
+**Returns:** `System.Collections.Generic.List<T><ModItem>`
 
 ### `Load(string)`
 
@@ -127,7 +128,7 @@ public static void OpenConfigWindow(LoadedModInstance mod)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `mod` | [LoadedModInstance](/api/Global.LoadedModInstance) |  |
+| `mod` | [`LoadedModInstance`](/api/Global.LoadedModInstance) |  |
 
 ### `Refresh()`
 
@@ -144,7 +145,7 @@ public static void RegisterJsonOverride(JsonOverrideItem item, bool isFromServer
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `item` | [JsonOverrideItem](/api/Global.JsonOverrideItem) |  |
+| `item` | [`JsonOverrideItem`](/api/Global.JsonOverrideItem) |  |
 | `isFromServer` | `bool` |  |
 
 ### `RegisterJsonOverride(string)`
@@ -198,6 +199,6 @@ public static UniTask<SubmitItemUpdateResult_t> UpdateItem(PublishedFileId_t id,
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `Steamworks.PublishedFileId_t` |  |
-| `item` | [ModItem](/api/Global.ModItem) |  |
+| `item` | [`ModItem`](/api/Global.ModItem) |  |
 
-**Returns:** `Cysharp.Threading.Tasks.UniTask&lt;T&gt;&lt;SubmitItemUpdateResult_t&gt;`
+**Returns:** `Cysharp.Threading.Tasks.UniTask<T><SubmitItemUpdateResult_t>`

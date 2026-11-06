@@ -1,5 +1,6 @@
 # Class: PlayLobbyManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [PlayLobbyManager](/api/Global.PlayLobbyManager)
@@ -27,7 +28,7 @@ public class PlayLobbyManager : ManagerBase<PlayLobbyManager>, ILogicUpdate
 
 ## Methods
 
-### `AddStartGameCondition(Func&lt;string&gt;)`
+### `AddStartGameCondition(Func<string>)`
 
 Given function must return a reason for start button unavailability. Return null for approval.
 
@@ -38,7 +39,7 @@ public void AddStartGameCondition(Func<string> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | `System.Func&lt;TResult&gt;&lt;string&gt;` |  |
+| `func` | `System.Func<TResult><string>` |  |
 
 ### `CheckStartGameCondition(out string, bool)`
 
@@ -77,7 +78,7 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `RemoveStartGameCondition(Func&lt;string&gt;)`
+### `RemoveStartGameCondition(Func<string>)`
 
 ```csharp
 public void RemoveStartGameCondition(Func<string> func)
@@ -86,7 +87,7 @@ public void RemoveStartGameCondition(Func<string> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | `System.Func&lt;TResult&gt;&lt;string&gt;` |  |
+| `func` | `System.Func<TResult><string>` |  |
 
 ### `SetReady(bool)`
 

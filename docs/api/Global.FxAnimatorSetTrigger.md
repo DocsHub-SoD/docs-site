@@ -1,5 +1,6 @@
 # Class: FxAnimatorSetTrigger
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -32,7 +33,7 @@ public void OnAttachToEntity(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `Play()`
 

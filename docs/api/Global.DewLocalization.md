@@ -1,5 +1,6 @@
 # Class: DewLocalization
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -16,7 +17,7 @@ public static class DewLocalization
 
 ## Methods
 
-### `CaptureDescriptionExpressions(IReadOnlyList&lt;LocaleNode&gt;, Dictionary&lt;string, string&gt;, DescriptionSettings)`
+### `CaptureDescriptionExpressions(IReadOnlyList<LocaleNode>, Dictionary<string, string>, DescriptionSettings)`
 
 ```csharp
 public static void CaptureDescriptionExpressions(IReadOnlyList<LocaleNode> nodes, Dictionary<string, string> data, DewLocalization.DescriptionSettings settings)
@@ -25,11 +26,11 @@ public static void CaptureDescriptionExpressions(IReadOnlyList<LocaleNode> nodes
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `nodes` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;LocaleNode&gt;` |  |
-| `data` | `System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
-| `settings` | [DewLocalization.DescriptionSettings](/api/Global.DewLocalization) |  |
+| `nodes` | `System.Collections.Generic.IReadOnlyList<T><LocaleNode>` |  |
+| `data` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
+| `settings` | [`DewLocalization.DescriptionSettings`](/api/Global.DewLocalization) |  |
 
-### `ConvertDescriptionNodesToText(IReadOnlyList&lt;LocaleNode&gt;, DescriptionSettings)`
+### `ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode>, DescriptionSettings)`
 
 ```csharp
 public static string ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode> nodes, DewLocalization.DescriptionSettings settings)
@@ -38,8 +39,8 @@ public static string ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode> nod
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `nodes` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;LocaleNode&gt;` |  |
-| `settings` | [DewLocalization.DescriptionSettings](/api/Global.DewLocalization) |  |
+| `nodes` | `System.Collections.Generic.IReadOnlyList<T><LocaleNode>` |  |
+| `settings` | [`DewLocalization.DescriptionSettings`](/api/Global.DewLocalization) |  |
 
 **Returns:** `string`
 
@@ -53,7 +54,7 @@ public static string EvaluateAndRenderExpression(ExpressionData exp, DewLocaliza
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `exp` | `DewInternal.ExpressionData` |  |
-| `settings` | [DewLocalization.DescriptionSettings](/api/Global.DewLocalization) |  |
+| `settings` | [`DewLocalization.DescriptionSettings`](/api/Global.DewLocalization) |  |
 | `shouldShowDetail` | `bool` |  |
 
 **Returns:** `string`
@@ -173,7 +174,7 @@ public static List<LocaleNode> GetCurseDescription(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
 ### `GetCurseKey(string)`
 
@@ -212,7 +213,7 @@ public static List<LocaleNode> GetCurseShortDescription(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
 ### `GetFormat(string, string)`
 
@@ -239,7 +240,7 @@ public static IReadOnlyList<LocaleNode> GetGemDescription(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-**Returns:** `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.IReadOnlyList<T><LocaleNode>`
 
 ### `GetGemDescriptionKey(Gem)`
 
@@ -250,7 +251,7 @@ public static string GetGemDescriptionKey(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `string`
 
@@ -302,7 +303,7 @@ public static string GetGemName(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `string`
 
@@ -328,7 +329,7 @@ public static string GetGemNameKey(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 **Returns:** `string`
 
@@ -378,7 +379,7 @@ public static List<LocaleNode> GetSkillDescription(string key, int configIndex)
 | `key` | `string` |  |
 | `configIndex` | `int` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
 ### `GetSkillDescriptionKey(SkillTrigger, int)`
 
@@ -389,7 +390,7 @@ public static string GetSkillDescriptionKey(SkillTrigger skill, int configIndex)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `configIndex` | `int` |  |
 
 **Returns:** `string`
@@ -482,7 +483,7 @@ public static string GetSkillName(SkillTrigger skill, int configIndex)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `configIndex` | `int` |  |
 
 **Returns:** `string`
@@ -510,7 +511,7 @@ public static string GetSkillNameKey(SkillTrigger skill, int configIndex)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `configIndex` | `int` |  |
 
 **Returns:** `string`
@@ -540,7 +541,7 @@ public static List<LocaleNode> GetStarDescription(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
 ### `GetStarDescription(Type)`
 
@@ -553,7 +554,7 @@ public static List<LocaleNode> GetStarDescription(Type type)
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.List<T><LocaleNode>`
 
 ### `GetStarLore(string)`
 
@@ -605,7 +606,7 @@ public static IReadOnlyList<LocaleNode> GetTreasureDescription(string key)
 | :--- | :--- | :--- |
 | `key` | `string` |  |
 
-**Returns:** `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;LocaleNode&gt;`
+**Returns:** `System.Collections.Generic.IReadOnlyList<T><LocaleNode>`
 
 ### `GetTreasureKey(string)`
 

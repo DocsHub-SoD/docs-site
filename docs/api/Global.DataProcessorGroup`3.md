@@ -1,5 +1,6 @@
 # Class: DataProcessorGroup&lt;TData, TFrom, TTo&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,7 +16,7 @@ public class DataProcessorGroup<TData, TFrom, TTo> where TData : struct
 
 ## Methods
 
-### `Add(DataProcessor&lt;TData, TFrom, TTo&gt;, int)`
+### `Add(DataProcessor<TData, TFrom, TTo>, int)`
 
 Processors with lower priority value will be executed first.
 
@@ -26,7 +27,7 @@ public void Add(DataProcessor<TData, TFrom, TTo> processor, int priority = 0)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `processor` | `DataProcessor&lt;TData, TFrom, TTo&gt;` |  |
+| `processor` | `DataProcessor<TData, TFrom, TTo>` |  |
 | `priority` | `int` |  |
 
 ### `Clear()`
@@ -48,7 +49,7 @@ public void Process(ref TData data, TFrom from, TTo to)
 | `from` | `TFrom` |  |
 | `to` | `TTo` |  |
 
-### `Remove(DataProcessor&lt;TData, TFrom, TTo&gt;)`
+### `Remove(DataProcessor<TData, TFrom, TTo>)`
 
 ```csharp
 public void Remove(DataProcessor<TData, TFrom, TTo> processor)
@@ -57,4 +58,4 @@ public void Remove(DataProcessor<TData, TFrom, TTo> processor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `processor` | `DataProcessor&lt;TData, TFrom, TTo&gt;` |  |
+| `processor` | `DataProcessor<TData, TFrom, TTo>` |  |

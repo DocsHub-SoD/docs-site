@@ -1,5 +1,6 @@
 # Class: GameMod_MirageSkin
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [GameEffect](/api/Global.GameEffect) → [GameModifierBase](/api/Global.GameModifierBase)
@@ -13,9 +14,7 @@ public class GameMod_MirageSkin : GameModifierBase, ILogicUpdate, ICleanup, ICus
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`baseChancesByPlayerCount`** | `public GameMod_MirageSkin.MirageSkinChancePerPlayer[] baseChancesByPlayerCount` |  |
-| **`currentZonePool`** | `[NonSerialized]
-[SaveVar(SaveVarFlags.Default)]
-public List&lt;AssetRef&lt;MirageSkinEffect&gt;&gt; currentZonePool` |  |
+| **`currentZonePool`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public List<AssetRef<MirageSkinEffect>> currentZonePool` |  |
 | **`softInstance`** | `public static GameMod_MirageSkin softInstance` |  |
 
 ## Properties

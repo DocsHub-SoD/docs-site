@@ -1,5 +1,6 @@
 # Struct: StarScalingValue
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,61 +15,21 @@ public struct StarScalingValue
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`clampMax`** | `[ShowIf("@isClamped", true)]
-[HideLabel]
-[HorizontalGroup("C", 0, 0, 0, 0)]
-public float clampMax` |  |
-| **`clampMin`** | `[ShowIf("@isClamped", true)]
-[HideLabel]
-[SuffixLabel("-", false)]
-[HorizontalGroup("C", 0, 0, 0, 0)]
-public float clampMin` |  |
-| **`isClamped`** | `[ToggleLeft]
-[HorizontalGroup("C", 0, 0, 0, 0)]
-[LabelText("Clamp")]
-public bool isClamped` |  |
-| **`isInteger`** | `[ToggleLeft]
-[HorizontalGroup("B", 40, 0, 0, 0)]
-[LabelText("Int")]
-public bool isInteger` |  |
-| **`isParentStarEffect`** | `[HideInInspector]
-public bool isParentStarEffect` |  |
-| **`levels`** | `[HideInInspector]
-public int levels` |  |
-| **`strengthScaling`** | `[HideLabel]
-[HorizontalGroup("B", 0, 0, 0, 0)]
-public StarScalingValue.StrengthScalingType strengthScaling` |  |
-| **`v0`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-public float v0` |  |
-| **`v1`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 2", true)]
-public float v1` |  |
-| **`v2`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 3", true)]
-public float v2` |  |
-| **`v3`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 4", true)]
-public float v3` |  |
-| **`v4`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 5", true)]
-public float v4` |  |
-| **`v5`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 6", true)]
-public float v5` |  |
-| **`v6`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 7", true)]
-public float v6` |  |
-| **`v7`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[ShowIf("@!isParentStarEffect \|\| levels &gt;= 8", true)]
-public float v7` |  |
+| **`clampMax`** | `[ShowIf("@isClamped", true)] [HideLabel] [HorizontalGroup("C", 0, 0, 0, 0)] public float clampMax` |  |
+| **`clampMin`** | `[ShowIf("@isClamped", true)] [HideLabel] [SuffixLabel("-", false)] [HorizontalGroup("C", 0, 0, 0, 0)] public float clampMin` |  |
+| **`isClamped`** | `[ToggleLeft] [HorizontalGroup("C", 0, 0, 0, 0)] [LabelText("Clamp")] public bool isClamped` |  |
+| **`isInteger`** | `[ToggleLeft] [HorizontalGroup("B", 40, 0, 0, 0)] [LabelText("Int")] public bool isInteger` |  |
+| **`isParentStarEffect`** | `[HideInInspector] public bool isParentStarEffect` |  |
+| **`levels`** | `[HideInInspector] public int levels` |  |
+| **`strengthScaling`** | `[HideLabel] [HorizontalGroup("B", 0, 0, 0, 0)] public StarScalingValue.StrengthScalingType strengthScaling` |  |
+| **`v0`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public float v0` |  |
+| **`v1`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 2", true)] public float v1` |  |
+| **`v2`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 3", true)] public float v2` |  |
+| **`v3`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 4", true)] public float v3` |  |
+| **`v4`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 5", true)] public float v4` |  |
+| **`v5`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 6", true)] public float v5` |  |
+| **`v6`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 7", true)] public float v6` |  |
+| **`v7`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [ShowIf("@!isParentStarEffect \|\| levels >= 8", true)] public float v7` |  |
 
 ## Methods
 

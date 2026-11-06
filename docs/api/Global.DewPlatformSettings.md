@@ -1,5 +1,6 @@
 # Class: DewPlatformSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class DewPlatformSettings : IInitializableSettings
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activeMods`** | `public List&lt;string&gt; activeMods` |  |
+| **`activeMods`** | `public List<string> activeMods` |  |
 | **`audio`** | `public DewAudioSettings_Platform audio` |  |
 | **`controls`** | `public DewControlSettings_Platform controls` |  |
 | **`CurrentSaveVersion`** | `public const int CurrentSaveVersion = 1` |  |

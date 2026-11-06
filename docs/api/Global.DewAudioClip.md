@@ -1,5 +1,6 @@
 # Class: DewAudioClip
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,12 +16,9 @@ public class DewAudioClip : ScriptableObject, ILinkedByGuid
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`clips`** | `public AudioClip[] clips` |  |
-| **`maxPitch`** | `[ShowIf("randomizePitch", true)]
-public float maxPitch` |  |
-| **`minPitch`** | `[ShowIf("randomizePitch", true)]
-public float minPitch` |  |
-| **`pitch`** | `[ShowIf("@!randomizePitch", true)]
-public float pitch` |  |
+| **`maxPitch`** | `[ShowIf("randomizePitch", true)] public float maxPitch` |  |
+| **`minPitch`** | `[ShowIf("randomizePitch", true)] public float minPitch` |  |
+| **`pitch`** | `[ShowIf("@!randomizePitch", true)] public float pitch` |  |
 | **`randomizePitch`** | `public bool randomizePitch` |  |
 | **`timeOffset`** | `public float timeOffset` |  |
 | **`volume`** | `public float volume` |  |

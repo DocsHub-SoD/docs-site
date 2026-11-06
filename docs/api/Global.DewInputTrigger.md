@@ -1,5 +1,6 @@
 # Class: DewInputTrigger
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,11 +12,11 @@ public class DewInputTrigger
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`binding`** | `public Func&lt;DewBinding&gt; binding` |  |
+| **`binding`** | `public Func<DewBinding> binding` |  |
 | **`canConsume`** | `public bool canConsume` |  |
 | **`checkGameAreaForMouse`** | `public bool checkGameAreaForMouse` |  |
 | **`ignoreConsumeCheck`** | `public bool ignoreConsumeCheck` |  |
-| **`isValidCheck`** | `public Func&lt;bool&gt; isValidCheck` |  |
+| **`isValidCheck`** | `public Func<bool> isValidCheck` |  |
 | **`MockTrigger`** | `public static DewInputTrigger MockTrigger` |  |
 | **`owner`** | `public Object owner` |  |
 | **`priority`** | `public int priority` | Lower will be checked first. |

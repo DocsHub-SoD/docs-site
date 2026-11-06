@@ -1,5 +1,6 @@
 # Struct: GetFocusTargetSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,8 +14,8 @@ public struct GetFocusTargetSettings
 | :--- | :--- | :--- |
 | **`angleLimit`** | `public Vector2 angleLimit` |  |
 | **`cacheData`** | `public GetFocusTargetCacheData cacheData` |  |
-| **`condition`** | `public Func&lt;IGamepadFocusable, bool&gt; condition` | When condition is not null, focusable groups will be ignored. |
-| **`customScoreFunc`** | `public Func&lt;IGamepadFocusable, float&gt; customScoreFunc` |  |
+| **`condition`** | `public Func<IGamepadFocusable, bool> condition` | When condition is not null, focusable groups will be ignored. |
+| **`customScoreFunc`** | `public Func<IGamepadFocusable, float> customScoreFunc` |  |
 | **`direction`** | `public Vector3 direction` |  |
 | **`normalizedDistLimit`** | `public Vector2 normalizedDistLimit` |  |
 | **`normalizedPerpendicularDistLimit`** | `public Vector2 normalizedPerpendicularDistLimit` |  |

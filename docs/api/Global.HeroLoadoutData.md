@@ -1,5 +1,6 @@
 # Class: HeroLoadoutData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,10 +12,10 @@ public class HeroLoadoutData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`cDestruction`** | `public List&lt;LoadoutStarItem&gt; cDestruction` |  |
-| **`cFlexible`** | `public List&lt;LoadoutStarItem&gt; cFlexible` |  |
-| **`cImagination`** | `public List&lt;LoadoutStarItem&gt; cImagination` |  |
-| **`cLife`** | `public List&lt;LoadoutStarItem&gt; cLife` |  |
+| **`cDestruction`** | `public List<LoadoutStarItem> cDestruction` |  |
+| **`cFlexible`** | `public List<LoadoutStarItem> cFlexible` |  |
+| **`cImagination`** | `public List<LoadoutStarItem> cImagination` |  |
+| **`cLife`** | `public List<LoadoutStarItem> cLife` |  |
 | **`HeroLoadoutCount`** | `public const int HeroLoadoutCount = 5` |  |
 | **`skillMovement`** | `public int skillMovement` |  |
 | **`skillQ`** | `public int skillQ` |  |
@@ -45,7 +46,7 @@ public int GetSkill(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `int`
 
@@ -58,9 +59,9 @@ public List<LoadoutStarItem> GetStarList(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [StarType](/api/Global.StarType) |  |
+| `type` | [`StarType`](/api/Global.StarType) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;LoadoutStarItem&gt;`
+**Returns:** `System.Collections.Generic.List<T><LoadoutStarItem>`
 
 ### `IsValidFor(string)`
 
@@ -90,7 +91,7 @@ public void SetSkill(HeroSkillLocation type, int value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 | `value` | `int` |  |
 
 ### `Validate_Imp(string, bool, bool, HeroStarSlotUnlockData)`
@@ -107,6 +108,6 @@ public bool Validate_Imp(string heroType, bool isRepair, bool checkStarLevels, D
 | `heroType` | `string` |  |
 | `isRepair` | `bool` |  |
 | `checkStarLevels` | `bool` |  |
-| `unlockedSlots` | [DewProfile.HeroStarSlotUnlockData](/api/Global.DewProfile) |  |
+| `unlockedSlots` | [`DewProfile.HeroStarSlotUnlockData`](/api/Global.DewProfile) |  |
 
 **Returns:** `bool`

@@ -1,5 +1,6 @@
 # Class: DewGameResult
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,7 +15,7 @@ public class DewGameResult
 | **`difficulty`** | `public string difficulty` |  |
 | **`elapsedGameTimeSeconds`** | `public int elapsedGameTimeSeconds` |  |
 | **`limboDepth`** | `public int limboDepth` |  |
-| **`players`** | `public List&lt;DewGameResult.PlayerData&gt; players` |  |
+| **`players`** | `public List<DewGameResult.PlayerData> players` |  |
 | **`result`** | `public DewGameResult.ResultType result` |  |
 | **`runId`** | `public string runId` |  |
 | **`startTimestamp`** | `public long startTimestamp` |  |

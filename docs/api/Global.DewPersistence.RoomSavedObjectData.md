@@ -1,5 +1,6 @@
 # Class: DewPersistence.RoomSavedObjectData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,7 +13,7 @@ public class DewPersistence.RoomSavedObjectData
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`guid`** | `public string guid` |  |
-| **`persistenceData`** | `public Dictionary&lt;string, string&gt; persistenceData` |  |
+| **`persistenceData`** | `public Dictionary<string, string> persistenceData` |  |
 | **`scenePath`** | `public string scenePath` |  |
 
 ## Methods
@@ -28,6 +29,6 @@ public DewPersistence.RoomSavedObjectData Capture(RoomSavedObject target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [RoomSavedObject](/api/Global.RoomSavedObject) |  |
+| `target` | [`RoomSavedObject`](/api/Global.RoomSavedObject) |  |
 
 **Returns:** `DewPersistence.RoomSavedObjectData`

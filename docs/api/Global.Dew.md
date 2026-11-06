@@ -1,5 +1,6 @@
 # Class: Dew
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -23,7 +24,7 @@ public static class Dew
 | **`FlexibleColor`** | `public static readonly Color FlexibleColor` |  |
 | **`GoldColor`** | `public static readonly Color GoldColor` |  |
 | **`HealthColor`** | `public static readonly Color HealthColor` |  |
-| **`HeroOrder`** | `public static readonly List&lt;string&gt; HeroOrder` |  |
+| **`HeroOrder`** | `public static readonly List<string> HeroOrder` |  |
 | **`IdentityColor`** | `public static readonly Color IdentityColor` |  |
 | **`IdentityColorHex`** | `public static readonly string IdentityColorHex` |  |
 | **`ImaginationColor`** | `public static readonly Color ImaginationColor` |  |
@@ -42,26 +43,26 @@ public static class Dew
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`achievementsByName`** | `public static IReadOnlyDictionary&lt;string, Type&gt; achievementsByName { get; }` |  |
-| **`allAchievements`** | `public static IReadOnlyList&lt;Type&gt; allAchievements { get; }` |  |
-| **`allArtifacts`** | `public static IReadOnlyList&lt;Type&gt; allArtifacts { get; }` |  |
-| **`allGameModifiers`** | `public static IReadOnlyList&lt;Type&gt; allGameModifiers { get; }` |  |
-| **`allGems`** | `public static IReadOnlyList&lt;Type&gt; allGems { get; }` |  |
-| **`allHeroes`** | `public static IReadOnlyList&lt;Type&gt; allHeroes { get; }` |  |
-| **`allHeroSkills`** | `public static IReadOnlyList&lt;Type&gt; allHeroSkills { get; }` |  |
-| **`allLucidDreams`** | `public static IReadOnlyList&lt;Type&gt; allLucidDreams { get; }` |  |
-| **`allMonsters`** | `public static IReadOnlyList&lt;Type&gt; allMonsters { get; }` |  |
-| **`allOldStars`** | `public static IReadOnlyList&lt;DewStarItemOld&gt; allOldStars { get; }` |  |
-| **`allReveries`** | `public static IReadOnlyList&lt;DewReverieItem&gt; allReveries { get; }` |  |
-| **`allRoomModifiers`** | `public static IReadOnlyList&lt;Type&gt; allRoomModifiers { get; }` |  |
-| **`allSkills`** | `public static IReadOnlyList&lt;Type&gt; allSkills { get; }` |  |
-| **`allStarTypes`** | `public static IReadOnlyList&lt;Type&gt; allStarTypes { get; }` |  |
-| **`allTutorialItems`** | `public static IReadOnlyList&lt;Type&gt; allTutorialItems { get; }` |  |
+| **`achievementsByName`** | `public static IReadOnlyDictionary<string, Type> achievementsByName { get; }` |  |
+| **`allAchievements`** | `public static IReadOnlyList<Type> allAchievements { get; }` |  |
+| **`allArtifacts`** | `public static IReadOnlyList<Type> allArtifacts { get; }` |  |
+| **`allGameModifiers`** | `public static IReadOnlyList<Type> allGameModifiers { get; }` |  |
+| **`allGems`** | `public static IReadOnlyList<Type> allGems { get; }` |  |
+| **`allHeroes`** | `public static IReadOnlyList<Type> allHeroes { get; }` |  |
+| **`allHeroSkills`** | `public static IReadOnlyList<Type> allHeroSkills { get; }` |  |
+| **`allLucidDreams`** | `public static IReadOnlyList<Type> allLucidDreams { get; }` |  |
+| **`allMonsters`** | `public static IReadOnlyList<Type> allMonsters { get; }` |  |
+| **`allOldStars`** | `public static IReadOnlyList<DewStarItemOld> allOldStars { get; }` |  |
+| **`allReveries`** | `public static IReadOnlyList<DewReverieItem> allReveries { get; }` |  |
+| **`allRoomModifiers`** | `public static IReadOnlyList<Type> allRoomModifiers { get; }` |  |
+| **`allSkills`** | `public static IReadOnlyList<Type> allSkills { get; }` |  |
+| **`allStarTypes`** | `public static IReadOnlyList<Type> allStarTypes { get; }` |  |
+| **`allTutorialItems`** | `public static IReadOnlyList<Type> allTutorialItems { get; }` |  |
 | **`gameCanvas`** | `public static Canvas gameCanvas { get; }` |  |
-| **`heroTypeOfOldStar`** | `public static IReadOnlyDictionary&lt;DewStarItemOld, Type&gt; heroTypeOfOldStar { get; }` | Contains all stars. Non-hero stars will have value of null. |
+| **`heroTypeOfOldStar`** | `public static IReadOnlyDictionary<DewStarItemOld, Type> heroTypeOfOldStar { get; }` | Contains all stars. Non-hero stars will have value of null. |
 | **`mainCamera`** | `public static Camera mainCamera { get; }` |  |
-| **`resourceLinkTypes`** | `public static IReadOnlyList&lt;(Type, DewResourceLinkAttribute)&gt; resourceLinkTypes { get; }` |  |
-| **`reveriesByName`** | `public static IReadOnlyDictionary&lt;string, DewReverieItem&gt; reveriesByName { get; }` |  |
+| **`resourceLinkTypes`** | `public static IReadOnlyList<(Type, DewResourceLinkAttribute)> resourceLinkTypes { get; }` |  |
+| **`reveriesByName`** | `public static IReadOnlyDictionary<string, DewReverieItem> reveriesByName { get; }` |  |
 
 ## Methods
 
@@ -79,7 +80,7 @@ public static void CallDelayed(Action func, int frameCount = 1)
 | `func` | `System.Action` |  |
 | `frameCount` | `int` |  |
 
-### `CallOnReady(MonoBehaviour, Func&lt;bool&gt;, Action)`
+### `CallOnReady(MonoBehaviour, Func<bool>, Action)`
 
 ```csharp
 public static void CallOnReady(MonoBehaviour caller, Func<bool> condition, Action func)
@@ -89,7 +90,7 @@ public static void CallOnReady(MonoBehaviour caller, Func<bool> condition, Actio
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `caller` | `UnityEngine.MonoBehaviour` |  |
-| `condition` | `System.Func&lt;TResult&gt;&lt;bool&gt;` |  |
+| `condition` | `System.Func<TResult><bool>` |  |
 | `func` | `System.Action` |  |
 
 ### `ClearTypeReferences()`
@@ -98,7 +99,7 @@ public static void CallOnReady(MonoBehaviour caller, Func<bool> condition, Actio
 public static void ClearTypeReferences()
 ```
 
-### `ContainsData(IDictionary&lt;string, string&gt;, string, string, string)`
+### `ContainsData(IDictionary<string, string>, string, string, string)`
 
 ```csharp
 public static bool ContainsData(this IDictionary<string, string> dict, string key0, string key1, string key2)
@@ -107,14 +108,14 @@ public static bool ContainsData(this IDictionary<string, string> dict, string ke
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `key2` | `string` |  |
 
 **Returns:** `bool`
 
-### `ContainsData(IDictionary&lt;string, string&gt;, string, string)`
+### `ContainsData(IDictionary<string, string>, string, string)`
 
 ```csharp
 public static bool ContainsData(this IDictionary<string, string> dict, string key0, string key1)
@@ -123,13 +124,13 @@ public static bool ContainsData(this IDictionary<string, string> dict, string ke
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 
 **Returns:** `bool`
 
-### `ContainsData(IDictionary&lt;string, string&gt;, string)`
+### `ContainsData(IDictionary<string, string>, string)`
 
 ```csharp
 public static bool ContainsData(this IDictionary<string, string> dict, string key0)
@@ -138,7 +139,7 @@ public static bool ContainsData(this IDictionary<string, string> dict, string ke
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 
 **Returns:** `bool`
@@ -156,7 +157,7 @@ public static string ConvertToStringInvariantCulture(object value)
 
 **Returns:** `string`
 
-### `CreateAbilityInstance&lt;T&gt;(T, Vector3, Quaternion?, Actor, CastInfo, Action&lt;T&gt;)`
+### `CreateAbilityInstance<T>(T, Vector3, Quaternion?, Actor, CastInfo, Action<T>)`
 
 ```csharp
 public static T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -168,14 +169,14 @@ public static T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion?
 | `prefab` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateAbilityInstance&lt;T&gt;(Vector3, Quaternion?, Actor, CastInfo, Action&lt;T&gt;)`
+### `CreateAbilityInstance<T>(Vector3, Quaternion?, Actor, CastInfo, Action<T>)`
 
 ```csharp
 public static T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -186,14 +187,14 @@ public static T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation,
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateAbilityTrigger&lt;T&gt;(T, Action&lt;T&gt;)`
+### `CreateAbilityTrigger<T>(T, Action<T>)`
 
 ```csharp
 public static T CreateAbilityTrigger<T>(T trigger, Action<T> beforePrepare = null) where T : AbilityTrigger
@@ -203,12 +204,12 @@ public static T CreateAbilityTrigger<T>(T trigger, Action<T> beforePrepare = nul
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `trigger` | `T` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateAbilityTrigger&lt;T&gt;(Action&lt;T&gt;)`
+### `CreateAbilityTrigger<T>(Action<T>)`
 
 ```csharp
 public static T CreateAbilityTrigger<T>(Action<T> beforeSpawn = null) where T : AbilityTrigger
@@ -217,12 +218,12 @@ public static T CreateAbilityTrigger<T>(Action<T> beforeSpawn = null) where T : 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateActor&lt;T&gt;()`
+### `CreateActor<T>()`
 
 ```csharp
 public static T CreateActor<T>() where T : Actor
@@ -235,7 +236,7 @@ public static T CreateActor<T>() where T : Actor
 
 **Returns:** `T`
 
-### `CreateActor&lt;T&gt;(T, Vector3, Quaternion?, Actor, Action&lt;T&gt;)`
+### `CreateActor<T>(T, Vector3, Quaternion?, Actor, Action<T>)`
 
 ```csharp
 public static T CreateActor<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent = null, Action<T> beforePrepare = null) where T : Actor
@@ -247,13 +248,13 @@ public static T CreateActor<T>(T prefab, Vector3 position, Quaternion? rotation,
 | `prefab` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateActor&lt;T&gt;(Action&lt;T&gt;)`
+### `CreateActor<T>(Action<T>)`
 
 ```csharp
 public static T CreateActor<T>(Action<T> beforePrepare = null) where T : Actor
@@ -262,12 +263,12 @@ public static T CreateActor<T>(Action<T> beforePrepare = null) where T : Actor
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateActor&lt;T&gt;(Vector3, Quaternion?, Actor, Action&lt;T&gt;)`
+### `CreateActor<T>(Vector3, Quaternion?, Actor, Action<T>)`
 
 ```csharp
 public static T CreateActor<T>(Vector3 position, Quaternion? rotation, Actor parent = null, Action<T> beforePrepare = null) where T : Actor
@@ -278,13 +279,13 @@ public static T CreateActor<T>(Vector3 position, Quaternion? rotation, Actor par
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateGem&lt;T&gt;(T, Vector3, int, DewPlayer, Action&lt;T&gt;)`
+### `CreateGem<T>(T, Vector3, int, DewPlayer, Action<T>)`
 
 ```csharp
 public static T CreateGem<T>(T gem, Vector3 position, int quality, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : Gem
@@ -296,13 +297,13 @@ public static T CreateGem<T>(T gem, Vector3 position, int quality, DewPlayer tem
 | `gem` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `quality` | `int` |  |
-| `tempOwner` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `tempOwner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateGem&lt;T&gt;(Vector3, int, DewPlayer, Action&lt;T&gt;)`
+### `CreateGem<T>(Vector3, int, DewPlayer, Action<T>)`
 
 ```csharp
 public static T CreateGem<T>(Vector3 position, int quality, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : Gem
@@ -313,13 +314,13 @@ public static T CreateGem<T>(Vector3 position, int quality, DewPlayer tempOwner 
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `quality` | `int` |  |
-| `tempOwner` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `tempOwner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateSkillTrigger&lt;T&gt;(T, Vector3, int, DewPlayer, Action&lt;T&gt;)`
+### `CreateSkillTrigger<T>(T, Vector3, int, DewPlayer, Action<T>)`
 
 ```csharp
 public static T CreateSkillTrigger<T>(T trigger, Vector3 position, int level, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : SkillTrigger
@@ -331,13 +332,13 @@ public static T CreateSkillTrigger<T>(T trigger, Vector3 position, int level, De
 | `trigger` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `level` | `int` |  |
-| `tempOwner` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `tempOwner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateSkillTrigger&lt;T&gt;(Vector3, int, DewPlayer, Action&lt;T&gt;)`
+### `CreateSkillTrigger<T>(Vector3, int, DewPlayer, Action<T>)`
 
 ```csharp
 public static T CreateSkillTrigger<T>(Vector3 position, int level, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : SkillTrigger
@@ -348,13 +349,13 @@ public static T CreateSkillTrigger<T>(Vector3 position, int level, DewPlayer tem
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `level` | `int` |  |
-| `tempOwner` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `tempOwner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateStatusEffect&lt;T&gt;(T, Entity, Actor, CastInfo, Action&lt;T&gt;)`
+### `CreateStatusEffect<T>(T, Entity, Actor, CastInfo, Action<T>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -366,15 +367,15 @@ public static T CreateStatusEffect<T>(T prefab, Entity victim, Actor parent, Cas
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `prefab` | `T` |  |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateStatusEffect&lt;T&gt;(Entity, Actor, CastInfo, Action&lt;T&gt;)`
+### `CreateStatusEffect<T>(Entity, Actor, CastInfo, Action<T>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -385,10 +386,10 @@ public static T CreateStatusEffect<T>(Entity victim, Actor parent, CastInfo info
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -456,7 +457,7 @@ public static void FilterNonOkayValues(ref Vector3 v, Vector3 fallback = default
 | `v` | `UnityEngine.Vector3` |  |
 | `fallback` | `UnityEngine.Vector3` |  |
 
-### `FindActorOfType&lt;T&gt;()`
+### `FindActorOfType<T>()`
 
 ```csharp
 public static T FindActorOfType<T>() where T : Actor
@@ -469,7 +470,7 @@ public static T FindActorOfType<T>() where T : Actor
 
 **Returns:** `T`
 
-### `FindAllActorsOfType&lt;T&gt;(out ListReturnHandle&lt;T&gt;)`
+### `FindAllActorsOfType<T>(out ListReturnHandle<T>)`
 
 ```csharp
 public static List<T> FindAllActorsOfType<T>(out ListReturnHandle<T> handle) where T : Actor
@@ -478,12 +479,12 @@ public static List<T> FindAllActorsOfType<T>(out ListReturnHandle<T> handle) whe
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;T&gt;` |  |
+| `handle` | `ListReturnHandle<T>` |  |
 | `` | `T` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;T&gt;`
+**Returns:** `System.Collections.Generic.List<T>`
 
-### `FindInterfaceOfType&lt;T&gt;(bool)`
+### `FindInterfaceOfType<T>(bool)`
 
 ```csharp
 public static T FindInterfaceOfType<T>(bool includeInactive) where T : class
@@ -497,7 +498,7 @@ public static T FindInterfaceOfType<T>(bool includeInactive) where T : class
 
 **Returns:** `T`
 
-### `FindInterfacesOfType&lt;T&gt;(bool)`
+### `FindInterfacesOfType<T>(bool)`
 
 ```csharp
 public static T[] FindInterfacesOfType<T>(bool includeInactive) where T : class
@@ -613,7 +614,7 @@ public static Color GetCurrencyColor(CurrencyType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [CurrencyType](/api/Global.CurrencyType) |  |
+| `type` | [`CurrencyType`](/api/Global.CurrencyType) |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -626,7 +627,7 @@ public static string GetCurrencyColorHex(CurrencyType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [CurrencyType](/api/Global.CurrencyType) |  |
+| `type` | [`CurrencyType`](/api/Global.CurrencyType) |  |
 
 **Returns:** `string`
 
@@ -640,7 +641,7 @@ public static string GetCurrentMultiplayerCompatibilityVersion()
 
 **Returns:** `string`
 
-### `GetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string)`
+### `GetData<T>(IDictionary<string, string>, string, string, string)`
 
 ```csharp
 public static T GetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2)
@@ -649,7 +650,7 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0, s
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `key2` | `string` |  |
@@ -657,7 +658,7 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0, s
 
 **Returns:** `T`
 
-### `GetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string)`
+### `GetData<T>(IDictionary<string, string>, string, string)`
 
 ```csharp
 public static T GetData<T>(this IDictionary<string, string> dict, string key0, string key1)
@@ -666,14 +667,14 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0, s
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `GetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string)`
+### `GetData<T>(IDictionary<string, string>, string)`
 
 ```csharp
 public static T GetData<T>(this IDictionary<string, string> dict, string key0)
@@ -682,7 +683,7 @@ public static T GetData<T>(this IDictionary<string, string> dict, string key0)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `` | `T` |  |
 
@@ -730,7 +731,7 @@ public static string GetDataKey(string key0)
 
 **Returns:** `string`
 
-### `GetDataOrDefault&lt;T&gt;(IDictionary&lt;string, string&gt;, string, T)`
+### `GetDataOrDefault<T>(IDictionary<string, string>, string, T)`
 
 ```csharp
 public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, T defaultValue = default)
@@ -739,14 +740,14 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `defaultValue` | `T` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `GetDataOrDefault&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, T)`
+### `GetDataOrDefault<T>(IDictionary<string, string>, string, string, T)`
 
 ```csharp
 public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, string key1, T defaultValue = default)
@@ -755,7 +756,7 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `defaultValue` | `T` |  |
@@ -763,7 +764,7 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 
 **Returns:** `T`
 
-### `GetDataOrDefault&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string, T)`
+### `GetDataOrDefault<T>(IDictionary<string, string>, string, string, string, T)`
 
 ```csharp
 public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, T defaultValue = default)
@@ -772,7 +773,7 @@ public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, strin
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `key2` | `string` |  |
@@ -982,7 +983,7 @@ public static Color GetRarityColor(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity](/api/Global.Rarity) |  |
+| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -995,7 +996,7 @@ public static Color GetRarityColor(SkinRarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [SkinRarity](/api/Global.SkinRarity) |  |
+| `rarity` | [`SkinRarity`](/api/Global.SkinRarity) |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -1010,7 +1011,7 @@ public static string GetRarityColorHex(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity](/api/Global.Rarity) |  |
+| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 
 **Returns:** `string`
 
@@ -1023,7 +1024,7 @@ public static string GetRarityColorHex(SkinRarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [SkinRarity](/api/Global.SkinRarity) |  |
+| `rarity` | [`SkinRarity`](/api/Global.SkinRarity) |  |
 
 **Returns:** `string`
 
@@ -1140,7 +1141,7 @@ public static Color GetStarCategoryColor(StarType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [StarType](/api/Global.StarType) |  |
+| `type` | [`StarType`](/api/Global.StarType) |  |
 
 **Returns:** `UnityEngine.Color`
 
@@ -1170,7 +1171,7 @@ public static Type GetTypeFromShortName(string typeName)
 
 **Returns:** `System.Type`
 
-### `GetUIComponentBelowCursor&lt;T&gt;(bool)`
+### `GetUIComponentBelowCursor<T>(bool)`
 
 ```csharp
 public static T GetUIComponentBelowCursor<T>(bool includeParent = true) where T : Component
@@ -1195,7 +1196,7 @@ public static List<Type> GetUnlockedTargetsOfAchievement(Type achievementType)
 | :--- | :--- | :--- |
 | `achievementType` | `System.Type` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;System.Type&gt;`
+**Returns:** `System.Collections.Generic.List<T><System.Type>`
 
 ### `GetValidAgentDestination_Closest(Vector3, Vector3)`
 
@@ -1243,7 +1244,7 @@ public static Vector3 GetValidAgentPosition(Vector3 pos, float threshold = 10)
 
 **Returns:** `UnityEngine.Vector3`
 
-### `Helper_GetInstanceOfActor&lt;T&gt;(ref T)`
+### `Helper_GetInstanceOfActor<T>(ref T)`
 
 This is a helper function for instance / softInstance management of actors.
 
@@ -1266,7 +1267,7 @@ public static T Helper_GetInstanceOfActor<T>(ref T softInstance) where T : Actor
 public static void InitAllTypeReferences()
 ```
 
-### `InstantiateActor_Imp&lt;T&gt;(T, Vector3, Quaternion?, Actor)`
+### `InstantiateActor_Imp<T>(T, Vector3, Quaternion?, Actor)`
 
 ```csharp
 public static T InstantiateActor_Imp<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent) where T : Actor
@@ -1278,12 +1279,12 @@ public static T InstantiateActor_Imp<T>(T prefab, Vector3 position, Quaternion? 
 | `prefab` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn&lt;T&gt;(T, Action&lt;T&gt;)`
+### `InstantiateAndSpawn<T>(T, Action<T>)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(T prefab, Action<T> beforeSpawn = null) where T : Component
@@ -1293,12 +1294,12 @@ public static T InstantiateAndSpawn<T>(T prefab, Action<T> beforeSpawn = null) w
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `prefab` | `T` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn&lt;T&gt;(T, Vector3, Quaternion?, Action&lt;T&gt;)`
+### `InstantiateAndSpawn<T>(T, Vector3, Quaternion?, Action<T>)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(T prefab, Vector3 position, Quaternion? rotation, Action<T> beforeSpawn = null) where T : Component
@@ -1310,12 +1311,12 @@ public static T InstantiateAndSpawn<T>(T prefab, Vector3 position, Quaternion? r
 | `prefab` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn&lt;T&gt;(Action&lt;T&gt;)`
+### `InstantiateAndSpawn<T>(Action<T>)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(Action<T> beforeSpawn = null) where T : Component
@@ -1324,12 +1325,12 @@ public static T InstantiateAndSpawn<T>(Action<T> beforeSpawn = null) where T : C
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `InstantiateAndSpawn&lt;T&gt;(Vector3, Quaternion?, Action&lt;T&gt;)`
+### `InstantiateAndSpawn<T>(Vector3, Quaternion?, Action<T>)`
 
 ```csharp
 public static T InstantiateAndSpawn<T>(Vector3 position, Quaternion? rotation, Action<T> beforeSpawn = null) where T : Component
@@ -1340,7 +1341,7 @@ public static T InstantiateAndSpawn<T>(Vector3 position, Quaternion? rotation, A
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -1552,7 +1553,7 @@ public static bool IsMeleeHero(Hero.HeroClassType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [Hero.HeroClassType](/api/Global.Hero) |  |
+| `type` | [`Hero.HeroClassType`](/api/Global.Hero) |  |
 
 **Returns:** `bool`
 
@@ -1614,7 +1615,7 @@ public static bool IsOkay(Displacement d)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `d` | [Displacement](/api/Global.Displacement) |  |
+| `d` | [`Displacement`](/api/Global.Displacement) |  |
 
 **Returns:** `bool`
 
@@ -1702,7 +1703,7 @@ public static bool IsRangedHero(Hero.HeroClassType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [Hero.HeroClassType](/api/Global.Hero) |  |
+| `type` | [`Hero.HeroClassType`](/api/Global.Hero) |  |
 
 **Returns:** `bool`
 
@@ -1810,9 +1811,9 @@ public static void OpenURL(string url, OpenURLSettings settings = null)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `url` | `string` |  |
-| `settings` | [OpenURLSettings](/api/Global.OpenURLSettings) |  |
+| `settings` | [`OpenURLSettings`](/api/Global.OpenURLSettings) |  |
 
-### `PrepareAndSpawnActor_Imp&lt;T&gt;(T, Action&lt;T&gt;)`
+### `PrepareAndSpawnActor_Imp<T>(T, Action<T>)`
 
 ```csharp
 public static T PrepareAndSpawnActor_Imp<T>(T newActor, Action<T> beforePrepare) where T : Actor
@@ -1822,12 +1823,12 @@ public static T PrepareAndSpawnActor_Imp<T>(T newActor, Action<T> beforePrepare)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `newActor` | `T` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `PrepareAndSpawnHero_Imp&lt;T&gt;(T, DewPlayer, int, HeroLoadoutData, string, Action&lt;T&gt;)`
+### `PrepareAndSpawnHero_Imp<T>(T, DewPlayer, int, HeroLoadoutData, string, Action<T>)`
 
 ```csharp
 public static T PrepareAndSpawnHero_Imp<T>(T newEntity, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforePrepare) where T : Hero
@@ -1837,16 +1838,16 @@ public static T PrepareAndSpawnHero_Imp<T>(T newEntity, DewPlayer owner, int lev
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `newEntity` | `T` |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `loadout` | [HeroLoadoutData](/api/Global.HeroLoadoutData) |  |
+| `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `skin` | `string` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `PrepareAndSpawnStatusEffect_Imp&lt;T&gt;(T, Entity, Actor, CastInfo, Action&lt;T&gt;)`
+### `PrepareAndSpawnStatusEffect_Imp<T>(T, Entity, Actor, CastInfo, Action<T>)`
 
 ```csharp
 public static T PrepareAndSpawnStatusEffect_Imp<T>(T newSe, Entity victim, Actor parent, CastInfo info, Action<T> beforePrepare) where T : StatusEffect
@@ -1856,10 +1857,10 @@ public static T PrepareAndSpawnStatusEffect_Imp<T>(T newSe, Entity victim, Actor
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `newSe` | `T` |  |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -1875,7 +1876,7 @@ public static void QuitApplication(bool dontSave = false)
 | :--- | :--- | :--- |
 | `dontSave` | `bool` |  |
 
-### `RaycastAllUIElementsBelowCursor(out ListReturnHandle&lt;RaycastResult&gt;)`
+### `RaycastAllUIElementsBelowCursor(out ListReturnHandle<RaycastResult>)`
 
 ```csharp
 public static List<RaycastResult> RaycastAllUIElementsBelowCursor(out ListReturnHandle<RaycastResult> handle)
@@ -1884,11 +1885,11 @@ public static List<RaycastResult> RaycastAllUIElementsBelowCursor(out ListReturn
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;RaycastResult&gt;` |  |
+| `handle` | `ListReturnHandle<RaycastResult>` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;RaycastResult&gt;`
+**Returns:** `System.Collections.Generic.List<T><RaycastResult>`
 
-### `RaycastAllUIElementsBelowCursor(List&lt;RaycastResult&gt;)`
+### `RaycastAllUIElementsBelowCursor(List<RaycastResult>)`
 
 ```csharp
 public static void RaycastAllUIElementsBelowCursor(List<RaycastResult> results)
@@ -1897,9 +1898,9 @@ public static void RaycastAllUIElementsBelowCursor(List<RaycastResult> results)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `results` | `System.Collections.Generic.List&lt;T&gt;&lt;RaycastResult&gt;` |  |
+| `results` | `System.Collections.Generic.List<T><RaycastResult>` |  |
 
-### `RaycastAllUIElementsBelowScreenPoint(Vector2, out ListReturnHandle&lt;RaycastResult&gt;)`
+### `RaycastAllUIElementsBelowScreenPoint(Vector2, out ListReturnHandle<RaycastResult>)`
 
 ```csharp
 public static List<RaycastResult> RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, out ListReturnHandle<RaycastResult> handle)
@@ -1909,11 +1910,11 @@ public static List<RaycastResult> RaycastAllUIElementsBelowScreenPoint(Vector2 s
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `screenPoint` | `UnityEngine.Vector2` |  |
-| `handle` | `ListReturnHandle&lt;RaycastResult&gt;` |  |
+| `handle` | `ListReturnHandle<RaycastResult>` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;RaycastResult&gt;`
+**Returns:** `System.Collections.Generic.List<T><RaycastResult>`
 
-### `RaycastAllUIElementsBelowScreenPoint(Vector2, List&lt;RaycastResult&gt;)`
+### `RaycastAllUIElementsBelowScreenPoint(Vector2, List<RaycastResult>)`
 
 ```csharp
 public static void RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, List<RaycastResult> results)
@@ -1923,7 +1924,7 @@ public static void RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, Lis
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `screenPoint` | `UnityEngine.Vector2` |  |
-| `results` | `System.Collections.Generic.List&lt;T&gt;&lt;RaycastResult&gt;` |  |
+| `results` | `System.Collections.Generic.List<T><RaycastResult>` |  |
 
 ### `RefreshRenderer()`
 
@@ -1931,7 +1932,7 @@ public static void RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, Lis
 public static void RefreshRenderer()
 ```
 
-### `RemoveData(IDictionary&lt;string, string&gt;, string, string, string)`
+### `RemoveData(IDictionary<string, string>, string, string, string)`
 
 ```csharp
 public static bool RemoveData(this IDictionary<string, string> dict, string key0, string key1, string key2)
@@ -1940,14 +1941,14 @@ public static bool RemoveData(this IDictionary<string, string> dict, string key0
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `key2` | `string` |  |
 
 **Returns:** `bool`
 
-### `RemoveData(IDictionary&lt;string, string&gt;, string, string)`
+### `RemoveData(IDictionary<string, string>, string, string)`
 
 ```csharp
 public static bool RemoveData(this IDictionary<string, string> dict, string key0, string key1)
@@ -1956,13 +1957,13 @@ public static bool RemoveData(this IDictionary<string, string> dict, string key0
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 
 **Returns:** `bool`
 
-### `RemoveData(IDictionary&lt;string, string&gt;, string)`
+### `RemoveData(IDictionary<string, string>, string)`
 
 ```csharp
 public static bool RemoveData(this IDictionary<string, string> dict, string key0)
@@ -1971,7 +1972,7 @@ public static bool RemoveData(this IDictionary<string, string> dict, string key0
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 
 **Returns:** `bool`
@@ -1987,7 +1988,7 @@ public static void ResolveLocalizedFormatArgs(string[] localizedFormatArgs)
 | :--- | :--- | :--- |
 | `localizedFormatArgs` | `string[]` |  |
 
-### `SelectBestIndexWithScore&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
+### `SelectBestIndexWithScore<T>(IList<T>, Func<T, int, float>, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -1998,15 +1999,15 @@ public static int SelectBestIndexWithScore<T>(IList<T> list, Func<T, int, float>
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.Collections.Generic.IList&lt;T&gt;&lt;T&gt;` |  |
-| `scoreFunc` | `System.Func&lt;T1, T2, TResult&gt;&lt;T,int,float&gt;` |  |
+| `list` | `System.Collections.Generic.IList<T>` |  |
+| `scoreFunc` | `System.Func<T1, T2, TResult><T,int,float>` |  |
 | `fuzziness` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 | `` | `T` |  |
 
 **Returns:** `int`
 
-### `SelectBestIndexWithScore&lt;T&gt;(ReadOnlySpan&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
+### `SelectBestIndexWithScore<T>(ReadOnlySpan<T>, Func<T, int, float>, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2017,15 +2018,15 @@ public static int SelectBestIndexWithScore<T>(ReadOnlySpan<T> list, Func<T, int,
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.ReadOnlySpan&lt;T&gt;&lt;T&gt;` |  |
-| `scoreFunc` | `System.Func&lt;T1, T2, TResult&gt;&lt;T,int,float&gt;` |  |
+| `list` | `System.ReadOnlySpan<T>` |  |
+| `scoreFunc` | `System.Func<T1, T2, TResult><T,int,float>` |  |
 | `fuzziness` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 | `` | `T` |  |
 
 **Returns:** `int`
 
-### `SelectBestWithScore&lt;T&gt;(HashSet&lt;T&gt;, Func&lt;T, float&gt;, float, DewRandom)`
+### `SelectBestWithScore<T>(HashSet<T>, Func<T, float>, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2036,15 +2037,15 @@ public static T SelectBestWithScore<T>(HashSet<T> list, Func<T, float> scoreFunc
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.Collections.Generic.HashSet&lt;T&gt;&lt;T&gt;` |  |
-| `scoreFunc` | `System.Func&lt;T, TResult&gt;&lt;T,float&gt;` |  |
+| `list` | `System.Collections.Generic.HashSet<T>` |  |
+| `scoreFunc` | `System.Func<T, TResult><T,float>` |  |
 | `fuzziness` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SelectBestWithScore&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
+### `SelectBestWithScore<T>(IList<T>, Func<T, int, float>, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2055,15 +2056,15 @@ public static T SelectBestWithScore<T>(IList<T> list, Func<T, int, float> scoreF
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.Collections.Generic.IList&lt;T&gt;&lt;T&gt;` |  |
-| `scoreFunc` | `System.Func&lt;T1, T2, TResult&gt;&lt;T,int,float&gt;` |  |
+| `list` | `System.Collections.Generic.IList<T>` |  |
+| `scoreFunc` | `System.Func<T1, T2, TResult><T,int,float>` |  |
 | `fuzziness` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SelectBestWithScore&lt;T&gt;(ReadOnlySpan&lt;T&gt;, Func&lt;T, int, float&gt;, float, DewRandom)`
+### `SelectBestWithScore<T>(ReadOnlySpan<T>, Func<T, int, float>, float, DewRandom)`
 
 Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)
 
@@ -2074,10 +2075,10 @@ public static T SelectBestWithScore<T>(ReadOnlySpan<T> list, Func<T, int, float>
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.ReadOnlySpan&lt;T&gt;&lt;T&gt;` |  |
-| `scoreFunc` | `System.Func&lt;T1, T2, TResult&gt;&lt;T,int,float&gt;` |  |
+| `list` | `System.ReadOnlySpan<T>` |  |
+| `scoreFunc` | `System.Func<T1, T2, TResult><T,int,float>` |  |
 | `fuzziness` | `float` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -2108,7 +2109,7 @@ public static int SelectRandomWeightedIndexInParams(params float[] weights)
 
 **Returns:** `int`
 
-### `SelectRandomWeightedInList&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, float&gt;, DewRandom)`
+### `SelectRandomWeightedInList<T>(IList<T>, Func<T, float>, DewRandom)`
 
 ```csharp
 public static T SelectRandomWeightedInList<T>(IList<T> list, Func<T, float> weightGetter, DewRandom random = null)
@@ -2117,14 +2118,14 @@ public static T SelectRandomWeightedInList<T>(IList<T> list, Func<T, float> weig
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.Collections.Generic.IList&lt;T&gt;&lt;T&gt;` |  |
-| `weightGetter` | `System.Func&lt;T, TResult&gt;&lt;T,float&gt;` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `list` | `System.Collections.Generic.IList<T>` |  |
+| `weightGetter` | `System.Func<T, TResult><T,float>` |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SelectRandomWeightedInList&lt;T&gt;(ReadOnlySpan&lt;T&gt;, Func&lt;T, float&gt;)`
+### `SelectRandomWeightedInList<T>(ReadOnlySpan<T>, Func<T, float>)`
 
 ```csharp
 public static T SelectRandomWeightedInList<T>(ReadOnlySpan<T> list, Func<T, float> weightGetter)
@@ -2133,13 +2134,13 @@ public static T SelectRandomWeightedInList<T>(ReadOnlySpan<T> list, Func<T, floa
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.ReadOnlySpan&lt;T&gt;&lt;T&gt;` |  |
-| `weightGetter` | `System.Func&lt;T, TResult&gt;&lt;T,float&gt;` |  |
+| `list` | `System.ReadOnlySpan<T>` |  |
+| `weightGetter` | `System.Func<T, TResult><T,float>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SelectRandomWeightedInParams&lt;T&gt;(params (float, T)[])`
+### `SelectRandomWeightedInParams<T>(params (float, T)[])`
 
 ```csharp
 public static T SelectRandomWeightedInParams<T>(params (float, T)[] elements)
@@ -2153,7 +2154,7 @@ public static T SelectRandomWeightedInParams<T>(params (float, T)[] elements)
 
 **Returns:** `T`
 
-### `SelectRandomWeightedInReadOnlyList&lt;T&gt;(IReadOnlyList&lt;T&gt;, Func&lt;T, float&gt;)`
+### `SelectRandomWeightedInReadOnlyList<T>(IReadOnlyList<T>, Func<T, float>)`
 
 Without the postfix, you won't be able to feed in Lists because of ambiguity.
 
@@ -2164,13 +2165,13 @@ public static T SelectRandomWeightedInReadOnlyList<T>(IReadOnlyList<T> list, Fun
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `list` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;T&gt;` |  |
-| `weightGetter` | `System.Func&lt;T, TResult&gt;&lt;T,float&gt;` |  |
+| `list` | `System.Collections.Generic.IReadOnlyList<T>` |  |
+| `weightGetter` | `System.Func<T, TResult><T,float>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, T)`
+### `SetData<T>(IDictionary<string, string>, string, T)`
 
 ```csharp
 public static void SetData<T>(this IDictionary<string, string> dict, string key0, T value)
@@ -2179,12 +2180,12 @@ public static void SetData<T>(this IDictionary<string, string> dict, string key0
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `value` | `T` |  |
 | `` | `T` |  |
 
-### `SetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, T)`
+### `SetData<T>(IDictionary<string, string>, string, string, T)`
 
 ```csharp
 public static void SetData<T>(this IDictionary<string, string> dict, string key0, string key1, T value)
@@ -2193,13 +2194,13 @@ public static void SetData<T>(this IDictionary<string, string> dict, string key0
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `value` | `T` |  |
 | `` | `T` |  |
 
-### `SetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string, T)`
+### `SetData<T>(IDictionary<string, string>, string, string, string, T)`
 
 ```csharp
 public static void SetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, T value)
@@ -2208,7 +2209,7 @@ public static void SetData<T>(this IDictionary<string, string> dict, string key0
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `key2` | `string` |  |
@@ -2237,7 +2238,7 @@ public static void ShowJsonWithEditor(string json)
 | :--- | :--- | :--- |
 | `json` | `string` |  |
 
-### `SpawnEntity&lt;T&gt;(T, Vector3, Quaternion?, Actor, DewPlayer, int, Action&lt;T&gt;)`
+### `SpawnEntity<T>(T, Vector3, Quaternion?, Actor, DewPlayer, int, Action<T>)`
 
 ```csharp
 public static T SpawnEntity<T>(T entity, Vector3 position, Quaternion? rotation, Actor parent, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -2249,15 +2250,15 @@ public static T SpawnEntity<T>(T entity, Vector3 position, Quaternion? rotation,
 | `entity` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SpawnEntity&lt;T&gt;(Vector3, Quaternion?, Actor, DewPlayer, int, Action&lt;T&gt;)`
+### `SpawnEntity<T>(Vector3, Quaternion?, Actor, DewPlayer, int, Action<T>)`
 
 ```csharp
 public static T SpawnEntity<T>(Vector3 position, Quaternion? rotation, Actor parent, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -2268,15 +2269,15 @@ public static T SpawnEntity<T>(Vector3 position, Quaternion? rotation, Actor par
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `parent` | [Actor](/api/Global.Actor) |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `parent` | [`Actor`](/api/Global.Actor) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SpawnHero&lt;T&gt;(T, Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action&lt;T&gt;)`
+### `SpawnHero<T>(T, Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action<T>)`
 
 ```csharp
 public static T SpawnHero<T>(T hero, Vector3 position, Quaternion? rotation, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforeSpawn = null) where T : Hero
@@ -2288,16 +2289,16 @@ public static T SpawnHero<T>(T hero, Vector3 position, Quaternion? rotation, Dew
 | `hero` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `loadout` | [HeroLoadoutData](/api/Global.HeroLoadoutData) |  |
+| `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `skin` | `string` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SpawnHero&lt;T&gt;(Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action&lt;T&gt;)`
+### `SpawnHero<T>(Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action<T>)`
 
 ```csharp
 public static T SpawnHero<T>(Vector3 position, Quaternion? rotation, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforeSpawn = null) where T : Hero
@@ -2308,16 +2309,16 @@ public static T SpawnHero<T>(Vector3 position, Quaternion? rotation, DewPlayer o
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `loadout` | [HeroLoadoutData](/api/Global.HeroLoadoutData) |  |
+| `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `skin` | `string` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `TryGetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, out T)`
+### `TryGetData<T>(IDictionary<string, string>, string, out T)`
 
 ```csharp
 public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, out T value)
@@ -2326,14 +2327,14 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `value` | `T` |  |
 | `` | `T` |  |
 
 **Returns:** `bool`
 
-### `TryGetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, out T)`
+### `TryGetData<T>(IDictionary<string, string>, string, string, out T)`
 
 ```csharp
 public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, string key1, out T value)
@@ -2342,7 +2343,7 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `value` | `T` |  |
@@ -2350,7 +2351,7 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 
 **Returns:** `bool`
 
-### `TryGetData&lt;T&gt;(IDictionary&lt;string, string&gt;, string, string, string, out T)`
+### `TryGetData<T>(IDictionary<string, string>, string, string, string, out T)`
 
 ```csharp
 public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, out T value)
@@ -2359,7 +2360,7 @@ public static bool TryGetData<T>(this IDictionary<string, string> dict, string k
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `dict` | `System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `dict` | `System.Collections.Generic.IDictionary<TKey, TValue><string,string>` |  |
 | `key0` | `string` |  |
 | `key1` | `string` |  |
 | `key2` | `string` |  |
@@ -2392,7 +2393,7 @@ public static IEnumerator WaitForAggroedEnemiesRoutine()
 
 **Returns:** `System.Collections.IEnumerator`
 
-### `WaitForClientsReadyRoutine(List&lt;DewPlayer&gt;)`
+### `WaitForClientsReadyRoutine(List<DewPlayer>)`
 
 Wait until all connections are ready.
 
@@ -2403,6 +2404,6 @@ public static IEnumerator WaitForClientsReadyRoutine(List<DewPlayer> players = n
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `players` | [System.Collections.Generic.List&lt;T&gt;&lt;DewPlayer&gt;](/api/Global.DewPlayer) |  |
+| `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 
 **Returns:** `System.Collections.IEnumerator`

@@ -1,5 +1,6 @@
 # Class: DewGameplayExperienceSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,100 +13,62 @@ public class DewGameplayExperienceSettings : SerializedScriptableObject
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`bossBonusHealthPercentagePerPlayer`** | `[LabelText("Boss Bonus Health % Per Extra Player")]
-public float bossBonusHealthPercentagePerPlayer` |  |
-| **`bossBonusPowerPercentagePerPlayer`** | `[LabelText("Boss Bonus Power % Per Extra Player")]
-public float bossBonusPowerPercentagePerPlayer` |  |
-| **`bossRewardsDreamDustMax`** | `[LabelText("Dream Dust Max")]
-public Formula bossRewardsDreamDustMax` |  |
-| **`bossRewardsDreamDustMin`** | `[LabelText("Dream Dust Min")]
-public Formula bossRewardsDreamDustMin` |  |
-| **`bossRewardsGoldMax`** | `[LabelText("Gold Max")]
-public Formula bossRewardsGoldMax` |  |
-| **`bossRewardsGoldMin`** | `[Header("Boss Rewards by Zone Index")]
-[LabelText("Gold Min")]
-public Formula bossRewardsGoldMin` |  |
-| **`combatRewardFantasyChance`** | `[LabelText("Fantasy")]
-public Formula combatRewardFantasyChance` |  |
-| **`combatRewardMemoryChance`** | `[Header("Combat Reward Chances By Zone Index")]
-[LabelText("Memory")]
-public Formula combatRewardMemoryChance` |  |
-| **`cooldownFloorRatioByAbilityHaste`** | `[Header("Cooldown Reductions")]
-public float cooldownFloorRatioByAbilityHaste` |  |
+| **`bossBonusHealthPercentagePerPlayer`** | `[LabelText("Boss Bonus Health % Per Extra Player")] public float bossBonusHealthPercentagePerPlayer` |  |
+| **`bossBonusPowerPercentagePerPlayer`** | `[LabelText("Boss Bonus Power % Per Extra Player")] public float bossBonusPowerPercentagePerPlayer` |  |
+| **`bossRewardsDreamDustMax`** | `[LabelText("Dream Dust Max")] public Formula bossRewardsDreamDustMax` |  |
+| **`bossRewardsDreamDustMin`** | `[LabelText("Dream Dust Min")] public Formula bossRewardsDreamDustMin` |  |
+| **`bossRewardsGoldMax`** | `[LabelText("Gold Max")] public Formula bossRewardsGoldMax` |  |
+| **`bossRewardsGoldMin`** | `[Header("Boss Rewards by Zone Index")] [LabelText("Gold Min")] public Formula bossRewardsGoldMin` |  |
+| **`combatRewardFantasyChance`** | `[LabelText("Fantasy")] public Formula combatRewardFantasyChance` |  |
+| **`combatRewardMemoryChance`** | `[Header("Combat Reward Chances By Zone Index")] [LabelText("Memory")] public Formula combatRewardMemoryChance` |  |
+| **`cooldownFloorRatioByAbilityHaste`** | `[Header("Cooldown Reductions")] public float cooldownFloorRatioByAbilityHaste` |  |
 | **`cooldownFloorRatioBySkillUpgrade`** | `public float cooldownFloorRatioBySkillUpgrade` |  |
 | **`droppedExpMultiplierPerPlayer`** | `public float droppedExpMultiplierPerPlayer` |  |
 | **`expDropDeviation`** | `public float expDropDeviation` |  |
 | **`expGlobalMultiplier`** | `public float expGlobalMultiplier` |  |
-| **`expMultiplier`** | `public PerMonsterTypeData&lt;float&gt; expMultiplier` |  |
+| **`expMultiplier`** | `public PerMonsterTypeData<float> expMultiplier` |  |
 | **`gainedSkillHastePerSkillLevel`** | `public float gainedSkillHastePerSkillLevel` |  |
 | **`gemAddedQualityOnUpgrade`** | `public int gemAddedQualityOnUpgrade` |  |
-| **`gemCleanseCostByQuality`** | `[Header("Cleanses")]
-public Formula gemCleanseCostByQuality` |  |
+| **`gemCleanseCostByQuality`** | `[Header("Cleanses")] public Formula gemCleanseCostByQuality` |  |
 | **`gemCleanseMinQuality`** | `public int gemCleanseMinQuality` |  |
-| **`gemDismantleDreamDustByQuality`** | `[Header("Dismantle, Upgrades")]
-public Formula gemDismantleDreamDustByQuality` |  |
-| **`gemDismantleDreamDustMultiplier`** | `public PerRarityData&lt;float&gt; gemDismantleDreamDustMultiplier` |  |
+| **`gemDismantleDreamDustByQuality`** | `[Header("Dismantle, Upgrades")] public Formula gemDismantleDreamDustByQuality` |  |
+| **`gemDismantleDreamDustMultiplier`** | `public PerRarityData<float> gemDismantleDreamDustMultiplier` |  |
 | **`gemUpgradeDreamDustByQuality`** | `public Formula gemUpgradeDreamDustByQuality` |  |
-| **`gemValue`** | `public PerRarityData&lt;int&gt; gemValue` |  |
+| **`gemValue`** | `public PerRarityData<int> gemValue` |  |
 | **`generalServiceGoldPriceMultiplier`** | `public float generalServiceGoldPriceMultiplier` |  |
 | **`generalServiceGoldPriceMultiplierByZoneIndex`** | `public Formula generalServiceGoldPriceMultiplierByZoneIndex` |  |
-| **`globalGoldEconomyMultiplierByZoneIndex`** | `[Header("Gold")]
-public Formula globalGoldEconomyMultiplierByZoneIndex` |  |
-| **`killGold`** | `public PerMonsterTypeData&lt;float&gt; killGold` |  |
+| **`globalGoldEconomyMultiplierByZoneIndex`** | `[Header("Gold")] public Formula globalGoldEconomyMultiplierByZoneIndex` |  |
+| **`killGold`** | `public PerMonsterTypeData<float> killGold` |  |
 | **`killGoldDeviation`** | `public float killGoldDeviation` |  |
 | **`killGoldMultiplierByZoneIndex`** | `public Formula killGoldMultiplierByZoneIndex` |  |
-| **`maxGlobalPopulation`** | `[Header("Max Population (Spawned)")]
-[LabelText("Max Spawned Population")]
-public float maxGlobalPopulation` |  |
-| **`maxGlobalPopulationMultiplierByAmbientLevel`** | `[LabelText("Multiplier By Ambient Level")]
-public Formula maxGlobalPopulationMultiplierByAmbientLevel` |  |
-| **`maxGlobalPopulationMultiplierPerPlayer`** | `[LabelText("Multiplier Per Extra Player")]
-public float maxGlobalPopulationMultiplierPerPlayer` |  |
-| **`maxHeroLevel`** | `[Header("Experience")]
-public int maxHeroLevel` |  |
-| **`maxSectionPopulation`** | `[Header("Max Population (Section)")]
-[LabelText("Max Population")]
-public float maxSectionPopulation` |  |
-| **`maxSectionPopulationMultiplierByAmbientLevel`** | `[LabelText("Multiplier By Ambient Level")]
-public Formula maxSectionPopulationMultiplierByAmbientLevel` |  |
-| **`maxSectionPopulationMultiplierPerPlayerInSection`** | `[LabelText("Multiplier Per Extra Player In Section")]
-public float maxSectionPopulationMultiplierPerPlayerInSection` |  |
-| **`miniBossBonusHealthPercentagePerPlayer`** | `[LabelText("MiniBoss Bonus Health % Per Extra Player")]
-public float miniBossBonusHealthPercentagePerPlayer` |  |
-| **`miniBossBonusPowerPercentagePerPlayer`** | `[LabelText("MiniBoss Bonus Power % Per Extra Player")]
-public float miniBossBonusPowerPercentagePerPlayer` |  |
-| **`miniBossSpawnChanceByNonMiniBossCombatNodesVisited`** | `[Header("Monsters")]
-public Formula miniBossSpawnChanceByNonMiniBossCombatNodesVisited` |  |
-| **`monsterBonusHealthPercentagePerPlayer`** | `[LabelText("Bonus Health % Per Extra Player")]
-public float monsterBonusHealthPercentagePerPlayer` |  |
-| **`monsterBonusPowerPercentagePerPlayer`** | `[LabelText("Bonus Power % Per Extra Player")]
-public float monsterBonusPowerPercentagePerPlayer` |  |
-| **`monsterSpawnPopulationMultiplierByTurnIndex`** | `[LabelText("Total Spawned Pop Multiplier By Turn Index")]
-public Formula monsterSpawnPopulationMultiplierByTurnIndex` |  |
-| **`monsterSpawnPopulationMultiplierPerPlayer`** | `[LabelText("Total Spawned Pop Multiplier Per Extra Player")]
-public float monsterSpawnPopulationMultiplierPerPlayer` |  |
-| **`monsterWavesMultiplierPerPlayer`** | `[LabelText("Waves Multiplier Per Extra Player")]
-public float monsterWavesMultiplierPerPlayer` |  |
-| **`regenOrbDropChanceOnLowHealth`** | `public PerMonsterTypeData&lt;float&gt; regenOrbDropChanceOnLowHealth` |  |
-| **`regenOrbDropChanceOnMaxHealth`** | `[Header("Regen Orb")]
-public PerMonsterTypeData&lt;float&gt; regenOrbDropChanceOnMaxHealth` |  |
+| **`maxGlobalPopulation`** | `[Header("Max Population (Spawned)")] [LabelText("Max Spawned Population")] public float maxGlobalPopulation` |  |
+| **`maxGlobalPopulationMultiplierByAmbientLevel`** | `[LabelText("Multiplier By Ambient Level")] public Formula maxGlobalPopulationMultiplierByAmbientLevel` |  |
+| **`maxGlobalPopulationMultiplierPerPlayer`** | `[LabelText("Multiplier Per Extra Player")] public float maxGlobalPopulationMultiplierPerPlayer` |  |
+| **`maxHeroLevel`** | `[Header("Experience")] public int maxHeroLevel` |  |
+| **`maxSectionPopulation`** | `[Header("Max Population (Section)")] [LabelText("Max Population")] public float maxSectionPopulation` |  |
+| **`maxSectionPopulationMultiplierByAmbientLevel`** | `[LabelText("Multiplier By Ambient Level")] public Formula maxSectionPopulationMultiplierByAmbientLevel` |  |
+| **`maxSectionPopulationMultiplierPerPlayerInSection`** | `[LabelText("Multiplier Per Extra Player In Section")] public float maxSectionPopulationMultiplierPerPlayerInSection` |  |
+| **`miniBossBonusHealthPercentagePerPlayer`** | `[LabelText("MiniBoss Bonus Health % Per Extra Player")] public float miniBossBonusHealthPercentagePerPlayer` |  |
+| **`miniBossBonusPowerPercentagePerPlayer`** | `[LabelText("MiniBoss Bonus Power % Per Extra Player")] public float miniBossBonusPowerPercentagePerPlayer` |  |
+| **`miniBossSpawnChanceByNonMiniBossCombatNodesVisited`** | `[Header("Monsters")] public Formula miniBossSpawnChanceByNonMiniBossCombatNodesVisited` |  |
+| **`monsterBonusHealthPercentagePerPlayer`** | `[LabelText("Bonus Health % Per Extra Player")] public float monsterBonusHealthPercentagePerPlayer` |  |
+| **`monsterBonusPowerPercentagePerPlayer`** | `[LabelText("Bonus Power % Per Extra Player")] public float monsterBonusPowerPercentagePerPlayer` |  |
+| **`monsterSpawnPopulationMultiplierByTurnIndex`** | `[LabelText("Total Spawned Pop Multiplier By Turn Index")] public Formula monsterSpawnPopulationMultiplierByTurnIndex` |  |
+| **`monsterSpawnPopulationMultiplierPerPlayer`** | `[LabelText("Total Spawned Pop Multiplier Per Extra Player")] public float monsterSpawnPopulationMultiplierPerPlayer` |  |
+| **`monsterWavesMultiplierPerPlayer`** | `[LabelText("Waves Multiplier Per Extra Player")] public float monsterWavesMultiplierPerPlayer` |  |
+| **`regenOrbDropChanceOnLowHealth`** | `public PerMonsterTypeData<float> regenOrbDropChanceOnLowHealth` |  |
+| **`regenOrbDropChanceOnMaxHealth`** | `[Header("Regen Orb")] public PerMonsterTypeData<float> regenOrbDropChanceOnMaxHealth` |  |
 | **`sellValueMultiplier`** | `public float sellValueMultiplier` |  |
 | **`skillCleanseCostByLevel`** | `public Formula skillCleanseCostByLevel` |  |
 | **`skillCleanseMinLevel`** | `public int skillCleanseMinLevel` |  |
 | **`skillDismantleDreamDustByLevel`** | `public Formula skillDismantleDreamDustByLevel` |  |
-| **`skillDismantleDreamDustMultiplier`** | `public PerRarityData&lt;float&gt; skillDismantleDreamDustMultiplier` |  |
+| **`skillDismantleDreamDustMultiplier`** | `public PerRarityData<float> skillDismantleDreamDustMultiplier` |  |
 | **`skillUpgradeDreamDustByLevel`** | `public Formula skillUpgradeDreamDustByLevel` |  |
-| **`skillValue`** | `public PerRarityData&lt;int&gt; skillValue` |  |
-| **`stardustBossSoulAmount`** | `[LabelText("Boss Soul Amount")]
-public Vector2Int stardustBossSoulAmount` |  |
-| **`stardustDeathDropAmount`** | `[LabelText("Death Drop Amount Range")]
-public Vector2Int stardustDeathDropAmount` |  |
-| **`stardustDeathDropChance`** | `[Header("Stardust")]
-[LabelText("Death Drop Chance")]
-public PerMonsterTypeData&lt;float&gt; stardustDeathDropChance` |  |
-| **`valueGlobalMultiplier`** | `[Header("Buy, Sell")]
-public float valueGlobalMultiplier` |  |
+| **`skillValue`** | `public PerRarityData<int> skillValue` |  |
+| **`stardustBossSoulAmount`** | `[LabelText("Boss Soul Amount")] public Vector2Int stardustBossSoulAmount` |  |
+| **`stardustDeathDropAmount`** | `[LabelText("Death Drop Amount Range")] public Vector2Int stardustDeathDropAmount` |  |
+| **`stardustDeathDropChance`** | `[Header("Stardust")] [LabelText("Death Drop Chance")] public PerMonsterTypeData<float> stardustDeathDropChance` |  |
+| **`valueGlobalMultiplier`** | `[Header("Buy, Sell")] public float valueGlobalMultiplier` |  |
 | **`valueMultiplierPerGemQuality`** | `public float valueMultiplierPerGemQuality` |  |
 | **`valueMultiplierPerSkillLevel`** | `public float valueMultiplierPerSkillLevel` |  |
-| **`welcomingSpawnPopMultiplierByArea`** | `[Header("Hunters")]
-public AnimationCurve welcomingSpawnPopMultiplierByArea` |  |
+| **`welcomingSpawnPopMultiplierByArea`** | `[Header("Hunters")] public AnimationCurve welcomingSpawnPopMultiplierByArea` |  |

@@ -1,5 +1,6 @@
 # Class: ShieldEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [BasicEffect](/api/Global.BasicEffect)
@@ -12,8 +13,8 @@ public class ShieldEffect : BasicEffect
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onAmountModified`** | `public Action&lt;float, float&gt; onAmountModified` | Called when the amount of this shield is modified by any means. In code, by damage, etc. |
-| **`onDamageNegated`** | `public SafeAction&lt;EventInfoDamageNegatedByShield&gt; onDamageNegated` | Called when this shield negates a damage. Partially or completely. |
+| **`onAmountModified`** | `public Action<float, float> onAmountModified` | Called when the amount of this shield is modified by any means. In code, by damage, etc. |
+| **`onDamageNegated`** | `public SafeAction<EventInfoDamageNegatedByShield> onDamageNegated` | Called when this shield negates a damage. Partially or completely. |
 
 ## Properties
 

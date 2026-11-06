@@ -1,5 +1,6 @@
 # Struct: DewGameResult.GemData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public struct DewGameResult.GemData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`capturedTooltipFields`** | `public Dictionary&lt;string, string&gt; capturedTooltipFields` |  |
+| **`capturedTooltipFields`** | `public Dictionary<string, string> capturedTooltipFields` |  |
 | **`location`** | `public GemLocation location` |  |
 | **`name`** | `public string name` |  |
 | **`netId`** | `public uint netId` |  |
@@ -28,7 +29,7 @@ public void CaptureTooltipFields(Gem gem)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 
 ### `GetGem()`
 

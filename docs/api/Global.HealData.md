@@ -1,5 +1,6 @@
 # Struct: HealData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -91,8 +92,8 @@ public void Dispatch(Entity victim, ReactionChain chain = default)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 ### `IsAmountModifiedBy(Actor)`
 
@@ -103,7 +104,7 @@ public bool IsAmountModifiedBy(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `bool`
 
@@ -129,7 +130,7 @@ public HealData SetActor(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `HealData`
 
@@ -142,7 +143,7 @@ public HealData SetAmountModifiedBy(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `HealData`
 
@@ -170,7 +171,7 @@ public HealData SetAmountOrigin(FinalDamageData damage)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `damage` | [FinalDamageData](/api/Global.FinalDamageData) |  |
+| `damage` | [`FinalDamageData`](/api/Global.FinalDamageData) |  |
 
 **Returns:** `HealData`
 
@@ -185,7 +186,7 @@ public HealData SetAmountOrigin(FinalHealData heal)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `heal` | [FinalHealData](/api/Global.FinalHealData) |  |
+| `heal` | [`FinalHealData`](/api/Global.FinalHealData) |  |
 
 **Returns:** `HealData`
 

@@ -1,5 +1,6 @@
 # Class: PropEnt_Merchant_Smoothie
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [PropEntity](/api/Global.PropEntity) → [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base)
@@ -38,7 +39,7 @@ public override void OnInteract(Entity entity, bool alt)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
 ### `OnPopulateMerchandises(DewPlayer)`
@@ -50,7 +51,7 @@ protected override void OnPopulateMerchandises(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `OnRefresh(DewPlayer)`
 
@@ -61,4 +62,4 @@ protected override void OnRefresh(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |

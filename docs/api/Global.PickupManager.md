@@ -1,5 +1,6 @@
 # Class: PickupManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [PickupManager](/api/Global.PickupManager)
@@ -38,7 +39,7 @@ public void DropDreamDust(bool isGivenByOtherPlayer, int amount, Vector3 positio
 | `isGivenByOtherPlayer` | `bool` |  |
 | `amount` | `int` |  |
 | `position` | `UnityEngine.Vector3` |  |
-| `target` | [Hero](/api/Global.Hero) |  |
+| `target` | [`Hero`](/api/Global.Hero) |  |
 
 ### `DropExp(int, Vector3)`
 
@@ -65,7 +66,7 @@ public void DropGold(bool isKillGold, bool isGivenByOtherPlayer, int amount, Vec
 | `isGivenByOtherPlayer` | `bool` |  |
 | `amount` | `int` |  |
 | `position` | `UnityEngine.Vector3` |  |
-| `target` | [Hero](/api/Global.Hero) |  |
+| `target` | [`Hero`](/api/Global.Hero) |  |
 
 ### `DropStarDust(int, Vector3)`
 

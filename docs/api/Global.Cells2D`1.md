@@ -1,5 +1,6 @@
 # Class: Cells2D&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -23,7 +24,7 @@ public class Cells2D<T>
 
 ## Methods
 
-### `FloodFill((int, int), Func&lt;(int, int), bool&gt;)`
+### `FloodFill((int, int), Func<(int, int), bool>)`
 
 ```csharp
 public void FloodFill((int, int) start, Func<(int, int), bool> func)
@@ -33,7 +34,7 @@ public void FloodFill((int, int) start, Func<(int, int), bool> func)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `start` | `(int,int)` |  |
-| `func` | `System.Func&lt;T, TResult&gt;&lt;(int,int),bool&gt;` |  |
+| `func` | `System.Func<T, TResult><(int,int),bool>` |  |
 
 ### `Get((int, int))`
 
@@ -75,7 +76,7 @@ public Cells2D<T> GetCropped(int startX, int endX, int startY, int endY)
 | `startY` | `int` |  |
 | `endY` | `int` |  |
 
-**Returns:** `Cells2D&lt;T&gt;`
+**Returns:** `Cells2D<T>`
 
 ### `GetNormalizedPos(Vector2)`
 

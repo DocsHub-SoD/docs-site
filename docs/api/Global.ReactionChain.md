@@ -1,5 +1,6 @@
 # Struct: ReactionChain
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -20,7 +21,7 @@ public bool DidReact(Actor actor, bool checkOnlyType = false)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 | `checkOnlyType` | `bool` |  |
 
 **Returns:** `bool`
@@ -34,7 +35,7 @@ public bool Equals(ReactionChain other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `other` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 **Returns:** `bool`
 
@@ -70,6 +71,6 @@ public ReactionChain New(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `ReactionChain`

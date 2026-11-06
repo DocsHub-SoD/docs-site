@@ -1,5 +1,6 @@
 # Class: RoomComponent
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomMap](/api/Global.RoomMap) → [RoomModifiers](/api/Global.RoomModifiers) → [RoomMonsters](/api/Global.RoomMonsters) → [RoomProps](/api/Global.RoomProps) → [RoomRewards](/api/Global.RoomRewards) → [RoomRifts](/api/Global.RoomRifts)

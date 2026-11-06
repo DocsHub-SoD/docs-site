@@ -1,5 +1,6 @@
 # Class: DewInput
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,9 +12,9 @@ public static class DewInput
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ModifierKeys`** | `public static readonly List&lt;Key&gt; ModifierKeys` |  |
-| **`NameToMouseButton`** | `public static readonly IReadOnlyDictionary&lt;string, MouseButton&gt; NameToMouseButton` |  |
-| **`onCurrentModeChanged`** | `public static SafeAction&lt;InputMode, InputMode&gt; onCurrentModeChanged` |  |
+| **`ModifierKeys`** | `public static readonly List<Key> ModifierKeys` |  |
+| **`NameToMouseButton`** | `public static readonly IReadOnlyDictionary<string, MouseButton> NameToMouseButton` |  |
+| **`onCurrentModeChanged`** | `public static SafeAction<InputMode, InputMode> onCurrentModeChanged` |  |
 
 ## Properties
 
@@ -33,7 +34,7 @@ public static bool GetButton(DewBinding b, bool checkGameAreaForMouse)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
 | `checkGameAreaForMouse` | `bool` |  |
 
 **Returns:** `bool`
@@ -47,7 +48,7 @@ public static bool GetButton(MouseButton m, bool checkGameArea)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [MouseButton](/api/Global.MouseButton) |  |
+| `m` | [`MouseButton`](/api/Global.MouseButton) |  |
 | `checkGameArea` | `bool` |  |
 
 **Returns:** `bool`
@@ -61,7 +62,7 @@ public static bool GetButton(GamepadButtonEx? g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx?](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx?`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 
@@ -87,7 +88,7 @@ public static bool GetButtonDown(DewBinding b, bool checkGameAreaForMouse)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
 | `checkGameAreaForMouse` | `bool` |  |
 
 **Returns:** `bool`
@@ -101,7 +102,7 @@ public static bool GetButtonDown(MouseButton m, bool checkGameArea)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [MouseButton](/api/Global.MouseButton) |  |
+| `m` | [`MouseButton`](/api/Global.MouseButton) |  |
 | `checkGameArea` | `bool` |  |
 
 **Returns:** `bool`
@@ -115,7 +116,7 @@ public static bool GetButtonDown(GamepadButtonEx? g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx?](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx?`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 
@@ -165,7 +166,7 @@ public static bool GetButtonUp(DewBinding b, bool checkGameAreaForMouse)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
 | `checkGameAreaForMouse` | `bool` |  |
 
 **Returns:** `bool`
@@ -179,7 +180,7 @@ public static bool GetButtonUp(MouseButton m, bool checkGameArea)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [MouseButton](/api/Global.MouseButton) |  |
+| `m` | [`MouseButton`](/api/Global.MouseButton) |  |
 | `checkGameArea` | `bool` |  |
 
 **Returns:** `bool`
@@ -193,7 +194,7 @@ public static bool GetButtonUp(GamepadButtonEx? g)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `g` | [GamepadButtonEx?](/api/Global.GamepadButtonEx) |  |
+| `g` | [`GamepadButtonEx?`](/api/Global.GamepadButtonEx) |  |
 
 **Returns:** `bool`
 
@@ -229,8 +230,8 @@ public static string GetReadableTextForCurrentMode(DewBinding b, out BindingType
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
-| `type` | [BindingType](/api/Global.BindingType) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
+| `type` | [`BindingType`](/api/Global.BindingType) |  |
 
 **Returns:** `string`
 
@@ -243,7 +244,7 @@ public static string GetReadableTextForCurrentMode(DewBinding b)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
 
 **Returns:** `string`
 
@@ -256,8 +257,8 @@ public static string GetReadableTextOfGamepad(DewBinding b, out BindingType type
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
-| `type` | [BindingType](/api/Global.BindingType) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
+| `type` | [`BindingType`](/api/Global.BindingType) |  |
 
 **Returns:** `string`
 
@@ -270,7 +271,7 @@ public static string GetReadableTextOfGamepad(DewBinding b)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
 
 **Returns:** `string`
 
@@ -283,8 +284,8 @@ public static string GetReadableTextOfPC(DewBinding b, out BindingType type, int
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
-| `type` | [BindingType](/api/Global.BindingType) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
+| `type` | [`BindingType`](/api/Global.BindingType) |  |
 | `i` | `int` |  |
 
 **Returns:** `string`
@@ -298,7 +299,7 @@ public static string GetReadableTextOfPC(DewBinding b, int i = 0)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `b` | [DewBinding](/api/Global.DewBinding) |  |
+| `b` | [`DewBinding`](/api/Global.DewBinding) |  |
 | `i` | `int` |  |
 
 **Returns:** `string`
@@ -322,11 +323,11 @@ public static bool IsGameRelatedMouseInputValid(MouseButton button)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `button` | [MouseButton](/api/Global.MouseButton) |  |
+| `button` | [`MouseButton`](/api/Global.MouseButton) |  |
 
 **Returns:** `bool`
 
-### `ListenAnyButtonRaw(Object, Func&lt;InputControl, bool&gt;)`
+### `ListenAnyButtonRaw(Object, Func<InputControl, bool>)`
 
 Return true in callback to stop listening.
 
@@ -338,7 +339,7 @@ public static void ListenAnyButtonRaw(Object caller, Func<InputControl, bool> ca
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `caller` | `UnityEngine.Object` |  |
-| `callback` | `System.Func&lt;T, TResult&gt;&lt;InputControl,bool&gt;` |  |
+| `callback` | `System.Func<T, TResult><InputControl,bool>` |  |
 
 ### `SetInputMode(InputMode)`
 
@@ -349,7 +350,7 @@ public static void SetInputMode(InputMode mode)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `mode` | [InputMode](/api/Global.InputMode) |  |
+| `mode` | [`InputMode`](/api/Global.InputMode) |  |
 
 ### `StopListenAnyButton()`
 

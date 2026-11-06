@@ -1,5 +1,6 @@
 # Class: DewControlSettings_User
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -107,7 +108,7 @@ public void ApplyPreset(DewControlSettings_User.PresetType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [DewControlSettings_User.PresetType](/api/Global.DewControlSettings_User) |  |
+| `type` | [`DewControlSettings_User.PresetType`](/api/Global.DewControlSettings_User) |  |
 
 ### `Clone()`
 
@@ -140,7 +141,7 @@ public string GetSettingsValueText(string keys, out BindingType type)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `keys` | `string` |  |
-| `type` | [BindingType](/api/Global.BindingType) |  |
+| `type` | [`BindingType`](/api/Global.BindingType) |  |
 
 **Returns:** `string`
 
@@ -166,7 +167,7 @@ public DewBinding GetSkillBinding(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `DewBinding`
 
@@ -179,7 +180,7 @@ public DewBinding GetSkillEditBinding(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `DewBinding`
 

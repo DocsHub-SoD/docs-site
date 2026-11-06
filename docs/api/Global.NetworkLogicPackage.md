@@ -1,5 +1,6 @@
 # Class: NetworkLogicPackage
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [NetworkLogicPackage](/api/Global.NetworkLogicPackage)
@@ -12,7 +13,7 @@ public class NetworkLogicPackage : ManagerBase<NetworkLogicPackage>, ILogicUpdat
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`networkIdentities`** | `public List&lt;NetworkIdentity&gt; networkIdentities` |  |
+| **`networkIdentities`** | `public List<NetworkIdentity> networkIdentities` |  |
 
 ## Methods
 

@@ -1,5 +1,6 @@
 # Class: Summon
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity)
@@ -12,10 +13,8 @@ public class Summon : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`armor`** | `[BoxGroup("Summon Settings", true, false, 0)]
-public ScalingValue armor` |  |
-| **`maxDuration`** | `[BoxGroup("Summon Settings", true, false, 0)]
-public float maxDuration` |  |
+| **`armor`** | `[BoxGroup("Summon Settings", true, false, 0)] public ScalingValue armor` |  |
+| **`maxDuration`** | `[BoxGroup("Summon Settings", true, false, 0)] public float maxDuration` |  |
 | **`tvDefaultAllExceptSelf`** | `protected AbilityTargetValidatorWrapper tvDefaultAllExceptSelf` |  |
 | **`tvDefaultHarmfulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets` |  |
 | **`tvDefaultUsefulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets` |  |
@@ -67,7 +66,7 @@ protected override void AIUpdate(ref EntityAIContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [EntityAIContext](/api/Global.EntityAIContext) |  |
+| `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
 ### `CanAggroTo(Entity)`
 
@@ -78,7 +77,7 @@ public override bool CanAggroTo(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -91,8 +90,8 @@ public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, f
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [DamageData.SourceType](/api/Global.DamageData) |  |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `type` | [`DamageData.SourceType`](/api/Global.DamageData) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -106,7 +105,7 @@ public DamageData Damage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -120,7 +119,7 @@ public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -142,7 +141,7 @@ public float GetValue(ScalingValue val)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `val` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `val` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 
 **Returns:** `float`
 
@@ -155,7 +154,7 @@ public HealData Heal(ScalingValue amount)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `amount` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `amount` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 
 **Returns:** `HealData`
 
@@ -168,7 +167,7 @@ public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -208,7 +207,7 @@ public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -222,7 +221,7 @@ public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -236,7 +235,7 @@ public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -262,7 +261,7 @@ public void SummonCommand_AttackTarget(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `SummonCommand_MoveToDestination(Vector3)`
 

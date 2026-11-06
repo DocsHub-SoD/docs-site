@@ -1,5 +1,6 @@
 # Class: EntityStatus
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -13,23 +14,16 @@ public class EntityStatus : EntityComponent, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`baseStats`** | `[BoxGroup("Stat Settings", true, false, 0)]
-public BaseStats baseStats` |  |
-| **`bonusStats`** | `[BoxGroup("Stat Settings", true, false, 0)]
-[NonSerialized]
-[ShowInInspector]
-[ReadOnly]
-[HideIn(PrefabKind.PrefabInstance\|PrefabKind.PrefabAsset)]
-public BonusStats bonusStats` |  |
+| **`baseStats`** | `[BoxGroup("Stat Settings", true, false, 0)] public BaseStats baseStats` |  |
+| **`bonusStats`** | `[BoxGroup("Stat Settings", true, false, 0)] [NonSerialized] [ShowInInspector] [ReadOnly] [HideIn(PrefabKind.PrefabInstance\|PrefabKind.PrefabAsset)] public BonusStats bonusStats` |  |
 | **`ClientEvent_OnOnFinalStatsUpdated`** | `public SafeAction ClientEvent_OnOnFinalStatsUpdated` |  |
 | **`finalStats`** | `public FinalStats finalStats` | Base stats + scaling stats + bonus stats + basic effect stats |
-| **`finalStatsProcessors`** | `public DataProcessorGroup&lt;FinalStats&gt; finalStatsProcessors` |  |
+| **`finalStatsProcessors`** | `public DataProcessorGroup<FinalStats> finalStatsProcessors` |  |
 | **`manaTypeKey`** | `public string manaTypeKey` |  |
 | **`MaximumArmorValue`** | `public const float MaximumArmorValue = 100000` |  |
 | **`MinimumArmorValue`** | `public const float MinimumArmorValue = -300` |  |
-| **`scalingStats`** | `[BoxGroup("Stat Settings", true, false, 0)]
-public BonusStats scalingStats` |  |
-| **`statusEffects`** | `public readonly List&lt;StatusEffect&gt; statusEffects` | List of status effects this entity has. |
+| **`scalingStats`** | `[BoxGroup("Stat Settings", true, false, 0)] public BonusStats scalingStats` |  |
+| **`statusEffects`** | `public readonly List<StatusEffect> statusEffects` | List of status effects this entity has. |
 
 ## Properties
 
@@ -44,10 +38,8 @@ public BonusStats scalingStats` |  |
 | **`coldEffectAmp`** | `public float coldEffectAmp { get; }` |  |
 | **`critAmp`** | `public float critAmp { get; }` |  |
 | **`critChance`** | `public float critChance { get; }` |  |
-| **`currentHealth`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]
-public float currentHealth { get; }` |  |
-| **`currentMana`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]
-public float currentMana { get; }` |  |
+| **`currentHealth`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)] public float currentHealth { get; }` |  |
+| **`currentMana`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)] public float currentMana { get; }` |  |
 | **`currentShield`** | `public float currentShield { get; }` |  |
 | **`darkEffectAmp`** | `public float darkEffectAmp { get; }` |  |
 | **`darkStack`** | `public int darkStack { get; }` |  |
@@ -82,8 +74,7 @@ public float currentMana { get; }` |  |
 | **`isHealthHidden`** | `public bool isHealthHidden { get; }` |  |
 | **`isInConversation`** | `public bool isInConversation { get; }` |  |
 | **`isSectionTriggeringDisabled`** | `public CounterBool isSectionTriggeringDisabled { get; }` |  |
-| **`level`** | `[SaveVar(SaveVarFlags.Default)]
-public int level { get; set; }` |  |
+| **`level`** | `[SaveVar(SaveVarFlags.Default)] public int level { get; set; }` |  |
 | **`lightEffectAmp`** | `public float lightEffectAmp { get; }` |  |
 | **`lightStack`** | `public int lightStack { get; }` |  |
 | **`manaRegen`** | `public float manaRegen { get; }` |  |
@@ -118,7 +109,7 @@ public StatBonus AddStatBonus(StatBonus bonus)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `bonus` | [StatBonus](/api/Global.StatBonus) |  |
+| `bonus` | [`StatBonus`](/api/Global.StatBonus) |  |
 
 **Returns:** `StatBonus`
 
@@ -153,7 +144,7 @@ This entity will trigger section colliders. Note this has to be done AFTER calli
 public void EnableSectionTriggering()
 ```
 
-### `FindStatusEffect(Type, Func&lt;StatusEffect, bool&gt;)`
+### `FindStatusEffect(Type, Func<StatusEffect, bool>)`
 
 Find a status effect of given type with predicate.
 
@@ -165,11 +156,11 @@ public StatusEffect FindStatusEffect(Type type, Func<StatusEffect, bool> predica
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `predicate` | [System.Func&lt;T, TResult&gt;&lt;StatusEffect,bool&gt;](/api/Global.StatusEffect) |  |
+| `predicate` | [`System.Func<T, TResult><StatusEffect,bool>`](/api/Global.StatusEffect) |  |
 
 **Returns:** `StatusEffect`
 
-### `FindStatusEffect&lt;T&gt;(Func&lt;T, bool&gt;)`
+### `FindStatusEffect<T>(Func<T, bool>)`
 
 Find a status effect of given type with predicate.
 
@@ -180,7 +171,7 @@ public T FindStatusEffect<T>(Func<T, bool> predicate) where T : StatusEffect
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `predicate` | `System.Func&lt;T, TResult&gt;&lt;T,bool&gt;` |  |
+| `predicate` | `System.Func<T, TResult><T,bool>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -226,7 +217,7 @@ public float GetElementalAmp(ElementalType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [ElementalType](/api/Global.ElementalType) |  |
+| `type` | [`ElementalType`](/api/Global.ElementalType) |  |
 
 **Returns:** `float`
 
@@ -239,7 +230,7 @@ public int GetElementalStack(ElementalType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [ElementalType](/api/Global.ElementalType) |  |
+| `type` | [`ElementalType`](/api/Global.ElementalType) |  |
 
 **Returns:** `int`
 
@@ -258,7 +249,7 @@ public StatusEffect GetStatusEffect(Type type)
 
 **Returns:** `StatusEffect`
 
-### `GetStatusEffect&lt;T&gt;()`
+### `GetStatusEffect<T>()`
 
 Get a status effect of given type.
 
@@ -286,9 +277,9 @@ public IEnumerable<StatusEffect> GetStatusEffects(Type type)
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;StatusEffect&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><StatusEffect>`
 
-### `GetStatusEffects&lt;T&gt;()`
+### `GetStatusEffects<T>()`
 
 Enumerate all status effects of given type.
 
@@ -301,7 +292,7 @@ public IEnumerable<T> GetStatusEffects<T>() where T : StatusEffect
 | :--- | :--- | :--- |
 | `` | `T` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;T&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T>`
 
 ### `HasElemental(ElementalType)`
 
@@ -312,7 +303,7 @@ public bool HasElemental(ElementalType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [ElementalType](/api/Global.ElementalType) |  |
+| `type` | [`ElementalType`](/api/Global.ElementalType) |  |
 
 **Returns:** `bool`
 
@@ -331,7 +322,7 @@ public bool HasStatusEffect(Type statusEffectType)
 
 **Returns:** `bool`
 
-### `HasStatusEffect&lt;T&gt;()`
+### `HasStatusEffect<T>()`
 
 Does this entity has a status effect of a certain type?
 
@@ -374,7 +365,7 @@ public void RemoveStatBonus(StatBonus bonus)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `bonus` | [StatBonus](/api/Global.StatBonus) |  |
+| `bonus` | [`StatBonus`](/api/Global.StatBonus) |  |
 
 ### `SetHealth(float)`
 
@@ -416,11 +407,11 @@ public bool TryGetStatusEffect(Type type, out StatusEffect effect)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `effect` | [StatusEffect](/api/Global.StatusEffect) |  |
+| `effect` | [`StatusEffect`](/api/Global.StatusEffect) |  |
 
 **Returns:** `bool`
 
-### `TryGetStatusEffect&lt;T&gt;(out T)`
+### `TryGetStatusEffect<T>(out T)`
 
 Try to get an existing status effect instance on this entity.
 

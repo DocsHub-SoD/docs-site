@@ -1,5 +1,6 @@
 # Struct: GetFocusTargetCacheData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,5 +12,5 @@ public struct GetFocusTargetCacheData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`candidateFocusables`** | `public readonly List&lt;(IGamepadFocusable, Rect)&gt; candidateFocusables { get; }` |  |
-| **`candidateGroups`** | `public readonly List&lt;(UI_GamepadFocusableGroup, Rect)&gt; candidateGroups { get; }` |  |
+| **`candidateFocusables`** | `public readonly List<(IGamepadFocusable, Rect)> candidateFocusables { get; }` |  |
+| **`candidateGroups`** | `public readonly List<(UI_GamepadFocusableGroup, Rect)> candidateGroups { get; }` |  |

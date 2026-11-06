@@ -1,5 +1,6 @@
 # Class: MonsterPool
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,8 +13,7 @@ public class MonsterPool : ScriptableObject
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`entries`** | `[ListDrawerSettings(Expanded = true)]
-public List&lt;MonsterPool.SpawnRuleEntry&gt; entries` |  |
+| **`entries`** | `[ListDrawerSettings(Expanded = true)] public List<MonsterPool.SpawnRuleEntry> entries` |  |
 | **`scrambleOrder`** | `public bool scrambleOrder` |  |
 
 ## Methods
@@ -26,7 +26,7 @@ Get only the entries included in the build.
 public List<MonsterPool.SpawnRuleEntry> GetFilteredEntries()
 ```
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;MonsterPool.SpawnRuleEntry&gt;`
+**Returns:** `System.Collections.Generic.List<T><MonsterPool.SpawnRuleEntry>`
 
 ### `GetMonsters(int, DewRandom)`
 
@@ -38,6 +38,6 @@ public IEnumerator<Monster> GetMonsters(int sectionIndex, DewRandom random = nul
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `sectionIndex` | `int` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
-**Returns:** `System.Collections.Generic.IEnumerator&lt;T&gt;&lt;Monster&gt;`
+**Returns:** `System.Collections.Generic.IEnumerator<T><Monster>`

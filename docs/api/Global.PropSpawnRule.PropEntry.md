@@ -1,5 +1,6 @@
 # Class: PropSpawnRule.PropEntry
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,5 +15,5 @@ public class PropSpawnRule.PropEntry
 | :--- | :--- | :--- |
 | **`chance`** | `public float chance` |  |
 | **`count`** | `public Vector2Int count` |  |
-| **`prop`** | `public AssetRef&lt;GameObject&gt; prop` |  |
+| **`prop`** | `public AssetRef<GameObject> prop` |  |
 | **`roomIndexRange`** | `public Vector2Int roomIndexRange` |  |

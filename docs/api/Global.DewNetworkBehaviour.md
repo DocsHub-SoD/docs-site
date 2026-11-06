@@ -1,8 +1,9 @@
 # Class: DewNetworkBehaviour
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
-- **Inheritance / Derived:** [Actor](/api/Global.Actor) → [DewAllHeroesPresentZone](/api/Global.DewAllHeroesPresentZone) → [DewCutsceneDirector](/api/Global.DewCutsceneDirector) → [DewPlayer](/api/Global.DewPlayer) → [EntityComponent](/api/Global.EntityComponent) → [EntityTransformSync](/api/Global.EntityTransformSync) → [GenericTransformSync](/api/Global.GenericTransformSync) → `NetworkedManagerBase&lt;T&gt;` → [Room_Barrier](/api/Global.Room_Barrier) → [Room_Shortcut](/api/Global.Room_Shortcut) → [Room_Trap_ActivatorBase](/api/Global.Room_Trap_ActivatorBase) → [Room_Waypoint](/api/Global.Room_Waypoint) → [RoomComponent](/api/Global.RoomComponent) → `SingletonDewNetworkBehaviour&lt;T&gt;`
+- **Inheritance / Derived:** [Actor](/api/Global.Actor) → [DewAllHeroesPresentZone](/api/Global.DewAllHeroesPresentZone) → [DewCutsceneDirector](/api/Global.DewCutsceneDirector) → [DewPlayer](/api/Global.DewPlayer) → [EntityComponent](/api/Global.EntityComponent) → [EntityTransformSync](/api/Global.EntityTransformSync) → [GenericTransformSync](/api/Global.GenericTransformSync) → `NetworkedManagerBase<T>` → [Room_Barrier](/api/Global.Room_Barrier) → [Room_Shortcut](/api/Global.Room_Shortcut) → [Room_Trap_ActivatorBase](/api/Global.Room_Trap_ActivatorBase) → [Room_Waypoint](/api/Global.Room_Waypoint) → [RoomComponent](/api/Global.RoomComponent) → `SingletonDewNetworkBehaviour<T>`
 
 ```csharp
 public class DewNetworkBehaviour : NetworkBehaviour, ILogicUpdate
@@ -62,7 +63,7 @@ public void FxPlay(GameObject effect, Entity attach, Vector3 position, Quaternio
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
@@ -78,7 +79,7 @@ public void FxPlay(GameObject effect, Entity attach)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 
 ### `FxPlay(GameObject, Vector3, Quaternion?)`
 
@@ -120,7 +121,7 @@ public void FxPlayNetworked(GameObject effect, Entity entity, Vector3 position, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
@@ -136,7 +137,7 @@ public void FxPlayNetworked(GameObject effect, Entity entity)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 ### `FxPlayNetworked(GameObject, Vector3, Quaternion?)`
 
@@ -178,7 +179,7 @@ public void FxPlayNew(GameObject effect, Entity attach, Vector3 position, Quater
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
@@ -194,7 +195,7 @@ public void FxPlayNew(GameObject effect, Entity attach)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `attach` | [Entity](/api/Global.Entity) |  |
+| `attach` | [`Entity`](/api/Global.Entity) |  |
 
 ### `FxPlayNew(GameObject, Vector3, Quaternion?)`
 
@@ -236,7 +237,7 @@ public void FxPlayNewNetworked(GameObject effect, Entity entity, Vector3 positio
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
 
@@ -252,7 +253,7 @@ public void FxPlayNewNetworked(GameObject effect, Entity entity)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 ### `FxPlayNewNetworked(GameObject, Vector3, Quaternion?)`
 
@@ -308,7 +309,7 @@ public void FxStopNetworked(GameObject effect)
 | :--- | :--- | :--- |
 | `effect` | `UnityEngine.GameObject` |  |
 
-### `GetComponent&lt;T&gt;(out T)`
+### `GetComponent<T>(out T)`
 
 ```csharp
 protected void GetComponent<T>(out T comp)

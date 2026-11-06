@@ -1,5 +1,6 @@
 # Class: SpawnMonsterSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,9 +12,9 @@ public class SpawnMonsterSettings
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`afterSpawn`** | `public Action&lt;Entity&gt; afterSpawn` |  |
-| **`beforeSpawn`** | `public Action&lt;Entity&gt; beforeSpawn` |  |
-| **`earlyFinishCondition`** | `public Func&lt;bool&gt; earlyFinishCondition` | This condition is checked before every spawn.When this evaluates to true, the spawn will be finished early. |
+| **`afterSpawn`** | `public Action<Entity> afterSpawn` |  |
+| **`beforeSpawn`** | `public Action<Entity> beforeSpawn` |  |
+| **`earlyFinishCondition`** | `public Func<bool> earlyFinishCondition` | This condition is checked before every spawn.When this evaluates to true, the spawn will be finished early. |
 | **`hero`** | `public Hero hero` |  |
 | **`ignoreCoopPopMultiplier`** | `public bool ignoreCoopPopMultiplier` |  |
 | **`ignoreTurnPopMultiplier`** | `public bool ignoreTurnPopMultiplier` |  |
@@ -25,8 +26,8 @@ public class SpawnMonsterSettings
 | **`rule`** | `public MonsterSpawnRule rule` |  |
 | **`section`** | `public RoomSection section` |  |
 | **`spawnPopulationMultiplier`** | `public float spawnPopulationMultiplier` |  |
-| **`spawnPosGetter`** | `public Func&lt;Vector3&gt; spawnPosGetter` |  |
-| **`spawnRotGetter`** | `public Func&lt;Quaternion&gt; spawnRotGetter` |  |
+| **`spawnPosGetter`** | `public Func<Vector3> spawnPosGetter` |  |
+| **`spawnRotGetter`** | `public Func<Quaternion> spawnRotGetter` |  |
 
 ## Methods
 

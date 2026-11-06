@@ -1,5 +1,6 @@
 # Class: NetworkedOnScreenTimerHandle
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,5 +14,4 @@ public class NetworkedOnScreenTimerHandle
 | :--- | :--- | :--- |
 | **`localeKey`** | `public string localeKey` |  |
 | **`skillKey`** | `public string skillKey` |  |
-| **`valueGetter`** | `[NonSerialized]
-public Func&lt;float&gt; valueGetter` |  |
+| **`valueGetter`** | `[NonSerialized] public Func<float> valueGetter` |  |

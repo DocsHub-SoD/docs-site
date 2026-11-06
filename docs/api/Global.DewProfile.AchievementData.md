@@ -1,5 +1,6 @@
 # Class: DewProfile.AchievementData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -16,4 +17,4 @@ public class DewProfile.AchievementData
 | **`isCompleted`** | `public bool isCompleted` |  |
 | **`isNew`** | `public bool isNew` |  |
 | **`maxProgress`** | `public int maxProgress` |  |
-| **`persistentVariables`** | `public Dictionary&lt;string, string&gt; persistentVariables` |  |
+| **`persistentVariables`** | `public Dictionary<string, string> persistentVariables` |  |

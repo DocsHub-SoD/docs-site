@@ -1,5 +1,6 @@
 # Struct: PerRarityData&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -31,7 +32,7 @@ public T Get(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity](/api/Global.Rarity) |  |
+| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 
 **Returns:** `T`
 
@@ -44,5 +45,5 @@ public void Set(Rarity rarity, T value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity](/api/Global.Rarity) |  |
+| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 | `value` | `T` |  |

@@ -1,5 +1,6 @@
 # Class: PlayGameManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [GameManager](/api/Global.GameManager) → [GameManager](/api/Global.GameManager)
@@ -26,7 +27,7 @@ public void DoDejavuSpawn(DewPlayer h)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `h` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `h` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `GetDifficulty()`
 
@@ -62,7 +63,7 @@ public override void OnLateStartServer()
 public override void OnStartClient()
 ```
 
-### `SpawnHero(DewPlayer, Hero, HeroLoadoutData, string, List&lt;string&gt;)`
+### `SpawnHero(DewPlayer, Hero, HeroLoadoutData, string, List<string>)`
 
 ```csharp
 public void SpawnHero(DewPlayer player, Hero hero, HeroLoadoutData loadout, string skin, List<string> accs)
@@ -71,8 +72,8 @@ public void SpawnHero(DewPlayer player, Hero hero, HeroLoadoutData loadout, stri
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `hero` | [Hero](/api/Global.Hero) |  |
-| `loadout` | [HeroLoadoutData](/api/Global.HeroLoadoutData) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |
+| `loadout` | [`HeroLoadoutData`](/api/Global.HeroLoadoutData) |  |
 | `skin` | `string` |  |
-| `accs` | `System.Collections.Generic.List&lt;T&gt;&lt;string&gt;` |  |
+| `accs` | `System.Collections.Generic.List<T><string>` |  |

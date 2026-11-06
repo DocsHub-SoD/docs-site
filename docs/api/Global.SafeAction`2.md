@@ -1,5 +1,6 @@
 # Class: SafeAction&lt;T1, T2&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -9,7 +10,7 @@ public class SafeAction<T1, T2>
 
 ## Methods
 
-### `Add(Action&lt;T1, T2&gt;)`
+### `Add(Action<T1, T2>)`
 
 ```csharp
 public SafeAction<T1, T2> Add(Action<T1, T2> handler)
@@ -18,11 +19,11 @@ public SafeAction<T1, T2> Add(Action<T1, T2> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T1, T2&gt;&lt;T1, T2&gt;` |  |
+| `handler` | `System.Action<T1, T2>` |  |
 
-**Returns:** `SafeAction&lt;T1, T2&gt;`
+**Returns:** `SafeAction<T1, T2>`
 
-### `Contains(Action&lt;T1, T2&gt;)`
+### `Contains(Action<T1, T2>)`
 
 ```csharp
 public bool Contains(Action<T1, T2> handler)
@@ -31,7 +32,7 @@ public bool Contains(Action<T1, T2> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T1, T2&gt;&lt;T1, T2&gt;` |  |
+| `handler` | `System.Action<T1, T2>` |  |
 
 **Returns:** `bool`
 
@@ -47,7 +48,7 @@ public void Invoke(T1 a, T2 b)
 | `a` | `T1` |  |
 | `b` | `T2` |  |
 
-### `Remove(Action&lt;T1, T2&gt;)`
+### `Remove(Action<T1, T2>)`
 
 ```csharp
 public SafeAction<T1, T2> Remove(Action<T1, T2> handler)
@@ -56,6 +57,6 @@ public SafeAction<T1, T2> Remove(Action<T1, T2> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T1, T2&gt;&lt;T1, T2&gt;` |  |
+| `handler` | `System.Action<T1, T2>` |  |
 
-**Returns:** `SafeAction&lt;T1, T2&gt;`
+**Returns:** `SafeAction<T1, T2>`

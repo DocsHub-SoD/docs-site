@@ -1,5 +1,6 @@
 # Struct: AnimationClipWithSpeed
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,10 +14,6 @@ public struct AnimationClipWithSpeed
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`clip`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-public AnimationClip clip` |  |
+| **`clip`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public AnimationClip clip` |  |
 | **`Default`** | `public static AnimationClipWithSpeed Default` |  |
-| **`speed`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-public float speed` |  |
+| **`speed`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] public float speed` |  |

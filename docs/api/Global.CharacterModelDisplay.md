@@ -1,5 +1,6 @@
 # Class: CharacterModelDisplay
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
@@ -12,7 +13,7 @@ public class CharacterModelDisplay : LogicBehaviour, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`accessories`** | `public List&lt;string&gt; accessories` |  |
+| **`accessories`** | `public List<string> accessories` |  |
 | **`appearDissolveAnimateTime`** | `public float appearDissolveAnimateTime` |  |
 | **`fxCharacterChangeEffect`** | `public GameObject fxCharacterChangeEffect` |  |
 | **`isFocused`** | `public bool isFocused` |  |

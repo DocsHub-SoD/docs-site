@@ -1,5 +1,6 @@
 # Class: JsonOverrideItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,5 +12,5 @@ public class JsonOverrideItem
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`overrides`** | `public Dictionary&lt;string, string&gt; overrides` |  |
+| **`overrides`** | `public Dictionary<string, string> overrides` |  |
 | **`target`** | `public string target` |  |

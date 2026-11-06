@@ -1,5 +1,6 @@
 # Class: FeedbackManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [FeedbackManager](/api/Global.FeedbackManager)
@@ -12,8 +13,7 @@ public class FeedbackManager : ManagerBase<FeedbackManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`dealDmg`** | `[Title("Damage Feedbacks", null, TitleAlignments.Left, true, true)]
-public FeedbackManager.EffectPool dealDmg` |  |
+| **`dealDmg`** | `[Title("Damage Feedbacks", null, TitleAlignments.Left, true, true)] public FeedbackManager.EffectPool dealDmg` |  |
 | **`dealDmgCrit`** | `public FeedbackManager.EffectPool dealDmgCrit` |  |
 | **`dealDmgDot`** | `public FeedbackManager.EffectPool dealDmgDot` |  |
 | **`dealDmgDotCrit`** | `public FeedbackManager.EffectPool dealDmgDotCrit` |  |

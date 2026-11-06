@@ -1,5 +1,6 @@
 # Struct: BonusStats
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -17,8 +18,7 @@ public struct BonusStats
 | **`abilityPowerFlat`** | `public float abilityPowerFlat` |  |
 | **`abilityPowerPercentage`** | `public float abilityPowerPercentage` |  |
 | **`armorFlat`** | `public float armorFlat` |  |
-| **`armorPercentage`** | `[FormerlySerializedAs("armorPercetnage")]
-public float armorPercentage` |  |
+| **`armorPercentage`** | `[FormerlySerializedAs("armorPercetnage")] public float armorPercentage` |  |
 | **`attackDamageFlat`** | `public float attackDamageFlat` |  |
 | **`attackDamagePercentage`** | `public float attackDamagePercentage` |  |
 | **`attackRangeFlat`** | `public float attackRangeFlat` |  |
@@ -57,7 +57,7 @@ public bool Equals(BonusStats other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [BonusStats](/api/Global.BonusStats) |  |
+| `other` | [`BonusStats`](/api/Global.BonusStats) |  |
 
 **Returns:** `bool`
 

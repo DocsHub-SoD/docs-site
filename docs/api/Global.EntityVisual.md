@@ -1,5 +1,6 @@
 # Class: EntityVisual
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -15,62 +16,37 @@ public class EntityVisual : EntityComponent, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`accessoryInstances`** | `[NonSerialized]
-public List&lt;Accessory&gt; accessoryInstances` |  |
-| **`ClientEvent_OnGroundMarkerHiddenChanged`** | `public SafeAction&lt;bool&gt; ClientEvent_OnGroundMarkerHiddenChanged` |  |
+| **`accessoryInstances`** | `[NonSerialized] public List<Accessory> accessoryInstances` |  |
+| **`ClientEvent_OnGroundMarkerHiddenChanged`** | `public SafeAction<bool> ClientEvent_OnGroundMarkerHiddenChanged` |  |
 | **`ClientEvent_OnModelLoaded`** | `public SafeAction ClientEvent_OnModelLoaded` |  |
-| **`ClientEvent_OnRendererEnabledChanged`** | `public SafeAction&lt;bool&gt; ClientEvent_OnRendererEnabledChanged` |  |
+| **`ClientEvent_OnRendererEnabledChanged`** | `public SafeAction<bool> ClientEvent_OnRendererEnabledChanged` |  |
 | **`ClientEvent_OnSpawnComplete`** | `public SafeAction ClientEvent_OnSpawnComplete` | Called when the entity finishes spawning or spawning is skipped. |
 | **`dazeAfterSpawnDuration`** | `public float dazeAfterSpawnDuration` |  |
-| **`delayLoopEffectTilSpawned`** | `[LabelText("Delay Loop Effect Until Spawned")]
-[FormerlySerializedAs("delayStartEffectTilSpawned")]
-[ToggleLeft]
-public bool delayLoopEffectTilSpawned` |  |
-| **`delaySpawnEffectOnGroundTilSpawned`** | `[LabelText("Delay Until Spawned")]
-[ShowIf("@spawnEffectOnGround != null", true)]
-public bool delaySpawnEffectOnGroundTilSpawned` |  |
-| **`delaySpawnEffectUntilSpawned`** | `[LabelText("Delay Until Spawned")]
-[ShowIf("@spawnEffect != null", true)]
-public bool delaySpawnEffectUntilSpawned` |  |
-| **`disableModelTransformUpdate`** | `[NonSerialized]
-public bool disableModelTransformUpdate` |  |
+| **`delayLoopEffectTilSpawned`** | `[LabelText("Delay Loop Effect Until Spawned")] [FormerlySerializedAs("delayStartEffectTilSpawned")] [ToggleLeft] public bool delayLoopEffectTilSpawned` |  |
+| **`delaySpawnEffectOnGroundTilSpawned`** | `[LabelText("Delay Until Spawned")] [ShowIf("@spawnEffectOnGround != null", true)] public bool delaySpawnEffectOnGroundTilSpawned` |  |
+| **`delaySpawnEffectUntilSpawned`** | `[LabelText("Delay Until Spawned")] [ShowIf("@spawnEffect != null", true)] public bool delaySpawnEffectUntilSpawned` |  |
+| **`disableModelTransformUpdate`** | `[NonSerialized] public bool disableModelTransformUpdate` |  |
 | **`doPositionOffset`** | `public bool doPositionOffset` |  |
 | **`doScaling`** | `public bool doScaling` |  |
-| **`invisibleByDefault`** | `[NonSerialized]
-public bool invisibleByDefault` | Set this true on before spawn to make entities invisible by default, appearing after EnableRenderers is called. |
+| **`invisibleByDefault`** | `[NonSerialized] public bool invisibleByDefault` | Set this true on before spawn to make entities invisible by default, appearing after EnableRenderers is called. |
 | **`invulnerableWhileSpawning`** | `public bool invulnerableWhileSpawning` |  |
-| **`mirageSkinObjects`** | `public Dictionary&lt;string, List&lt;GameObject&gt;&gt; mirageSkinObjects` |  |
-| **`model`** | `[NonSerialized]
-public EntityModel model` |  |
-| **`modelTransform`** | `[NonSerialized]
-public Transform modelTransform` |  |
-| **`renderers`** | `[NonSerialized]
-public List&lt;Renderer&gt; renderers` |  |
-| **`skipSpawning`** | `[NonSerialized]
-public bool skipSpawning` | Set this true on before spawn to make entities pop in instead of play its spawning effects, voices and animations. |
-| **`solidRenderers`** | `[NonSerialized]
-public List&lt;Renderer&gt; solidRenderers` |  |
+| **`mirageSkinObjects`** | `public Dictionary<string, List<GameObject>> mirageSkinObjects` |  |
+| **`model`** | `[NonSerialized] public EntityModel model` |  |
+| **`modelTransform`** | `[NonSerialized] public Transform modelTransform` |  |
+| **`renderers`** | `[NonSerialized] public List<Renderer> renderers` |  |
+| **`skipSpawning`** | `[NonSerialized] public bool skipSpawning` | Set this true on before spawn to make entities pop in instead of play its spawning effects, voices and animations. |
+| **`solidRenderers`** | `[NonSerialized] public List<Renderer> solidRenderers` |  |
 | **`spawnAnim`** | `public DewAnimationClip spawnAnim` |  |
-| **`spawnDuration`** | `[Title("Spawn", null, TitleAlignments.Left, true, true)]
-public float spawnDuration` |  |
-| **`spawnEffect`** | `[Title("Effects", null, TitleAlignments.Left, true, true)]
-public GameObject spawnEffect` |  |
+| **`spawnDuration`** | `[Title("Spawn", null, TitleAlignments.Left, true, true)] public float spawnDuration` |  |
+| **`spawnEffect`** | `[Title("Effects", null, TitleAlignments.Left, true, true)] public GameObject spawnEffect` |  |
 | **`spawnEffectOnGround`** | `public GameObject spawnEffectOnGround` |  |
-| **`spawnXOffset`** | `[ShowIf("doPositionOffset", true)]
-public AnimationCurve spawnXOffset` |  |
-| **`spawnXScale`** | `[ShowIf("doScaling", true)]
-[LabelText("@useSeparateAxis ? \"Spawn X Scale\" : \"Spawn Scale\"")]
-public AnimationCurve spawnXScale` |  |
-| **`spawnYOffset`** | `[ShowIf("doPositionOffset", true)]
-public AnimationCurve spawnYOffset` |  |
-| **`spawnYScale`** | `[ShowIf("@doScaling && useSeparateAxis", true)]
-public AnimationCurve spawnYScale` |  |
-| **`spawnZOffset`** | `[ShowIf("doPositionOffset", true)]
-public AnimationCurve spawnZOffset` |  |
-| **`spawnZScale`** | `[ShowIf("@doScaling && useSeparateAxis", true)]
-public AnimationCurve spawnZScale` |  |
-| **`useSeparateAxis`** | `[ShowIf("doScaling", true)]
-public bool useSeparateAxis` |  |
+| **`spawnXOffset`** | `[ShowIf("doPositionOffset", true)] public AnimationCurve spawnXOffset` |  |
+| **`spawnXScale`** | `[ShowIf("doScaling", true)] [LabelText("@useSeparateAxis ? \"Spawn X Scale\" : \"Spawn Scale\"")] public AnimationCurve spawnXScale` |  |
+| **`spawnYOffset`** | `[ShowIf("doPositionOffset", true)] public AnimationCurve spawnYOffset` |  |
+| **`spawnYScale`** | `[ShowIf("@doScaling && useSeparateAxis", true)] public AnimationCurve spawnYScale` |  |
+| **`spawnZOffset`** | `[ShowIf("doPositionOffset", true)] public AnimationCurve spawnZOffset` |  |
+| **`spawnZScale`** | `[ShowIf("@doScaling && useSeparateAxis", true)] public AnimationCurve spawnZScale` |  |
+| **`useSeparateAxis`** | `[ShowIf("doScaling", true)] public bool useSeparateAxis` |  |
 
 ## Properties
 
@@ -88,7 +64,7 @@ public bool useSeparateAxis` |  |
 | **`isGroundMarkerHidden`** | `public bool isGroundMarkerHidden { get; }` |  |
 | **`isRendererOff`** | `public bool isRendererOff { get; }` |  |
 | **`isSpawning`** | `public bool isSpawning { get; }` |  |
-| **`materials`** | `public IReadOnlyList&lt;Material&gt; materials { get; }` | List of this entity's materials. (Instantiated) |
+| **`materials`** | `public IReadOnlyList<Material> materials { get; }` | List of this entity's materials. (Instantiated) |
 
 ## Methods
 
@@ -328,7 +304,7 @@ public void KnockUp(KnockUpStrength strength, bool isFriendly)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `strength` | [KnockUpStrength](/api/Global.KnockUpStrength) |  |
+| `strength` | [`KnockUpStrength`](/api/Global.KnockUpStrength) |  |
 | `isFriendly` | `bool` |  |
 
 ### `KnockUp(float, bool)`
@@ -368,7 +344,7 @@ public void LoadModelLocal(EntityModel m)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `m` | [EntityModel](/api/Global.EntityModel) |  |
+| `m` | [`EntityModel`](/api/Global.EntityModel) |  |
 
 ### `LogicUpdate(float)`
 

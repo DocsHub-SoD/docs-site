@@ -1,5 +1,6 @@
 # Class: EnvParticle
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,4 +12,4 @@ public class EnvParticle : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`instances`** | `public static List&lt;EnvParticle&gt; instances` |  |
+| **`instances`** | `public static List<EnvParticle> instances` |  |

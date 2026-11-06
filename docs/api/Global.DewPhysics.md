@@ -1,5 +1,6 @@
 # Class: DewPhysics
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -9,7 +10,7 @@ public static class DewPhysics
 
 ## Methods
 
-### `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, CollisionCheckSettings)`
+### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, CollisionCheckSettings settings = default)
@@ -18,14 +19,14 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `center` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
+### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)
@@ -34,16 +35,16 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `center` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
-| `self` | [Entity](/api/Global.Entity) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, IEntityValidator, CollisionCheckSettings)`
+### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, IEntityValidator, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, IEntityValidator validator, CollisionCheckSettings settings = default)
@@ -52,15 +53,15 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `center` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `OverlapCircleAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Func&lt;Entity, bool&gt;, CollisionCheckSettings)`
+### `OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, Func<Entity, bool>, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, Func<Entity, bool> validator, CollisionCheckSettings settings = default)
@@ -69,15 +70,15 @@ public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity>
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `center` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
-| `validator` | [System.Func&lt;T, TResult&gt;&lt;Entity,bool&gt;](/api/Global.Entity) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `validator` | [`System.Func<T, TResult><Entity,bool>`](/api/Global.Entity) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, CollisionCheckSettings)`
+### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, CollisionCheckSettings settings = default)
@@ -86,16 +87,16 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `origin` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
 | `direction` | `UnityEngine.Vector3` |  |
 | `maxDistance` | `float` |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
+### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)
@@ -104,18 +105,18 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `origin` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
 | `direction` | `UnityEngine.Vector3` |  |
 | `maxDistance` | `float` |  |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
-| `self` | [Entity](/api/Global.Entity) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, IEntityValidator, CollisionCheckSettings)`
+### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, IEntityValidator, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, IEntityValidator validator, CollisionCheckSettings settings = default)
@@ -124,17 +125,17 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `origin` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
 | `direction` | `UnityEngine.Vector3` |  |
 | `maxDistance` | `float` |  |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `SphereCastAllEntities(out ListReturnHandle&lt;Entity&gt;, Vector3, float, Vector3, float, Func&lt;Entity, bool&gt;, CollisionCheckSettings)`
+### `SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, Func<Entity, bool>, CollisionCheckSettings)`
 
 ```csharp
 public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, Func<Entity, bool> validator, CollisionCheckSettings settings = default)
@@ -143,15 +144,15 @@ public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> ha
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
 | `origin` | `UnityEngine.Vector3` |  |
 | `radius` | `float` |  |
 | `direction` | `UnityEngine.Vector3` |  |
 | `maxDistance` | `float` |  |
-| `validator` | [System.Func&lt;T, TResult&gt;&lt;Entity,bool&gt;](/api/Global.Entity) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `validator` | [`System.Func<T, TResult><Entity,bool>`](/api/Global.Entity) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
 ### `TryGetCollidableWithProjectile(Collider2D, out ICollidableWithProjectile)`
 
@@ -163,7 +164,7 @@ public static bool TryGetCollidableWithProjectile(Collider2D collider, out IColl
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `collider` | `UnityEngine.Collider2D` |  |
-| `collidable` | [ICollidableWithProjectile](/api/Global.ICollidableWithProjectile) |  |
+| `collidable` | [`ICollidableWithProjectile`](/api/Global.ICollidableWithProjectile) |  |
 
 **Returns:** `bool`
 
@@ -177,7 +178,7 @@ public static bool TryGetEntity(Collider2D collider, out Entity entity)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `collider` | `UnityEngine.Collider2D` |  |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -191,7 +192,7 @@ public static bool TryGetInteractable(Collider2D collider, out IInteractable int
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `collider` | `UnityEngine.Collider2D` |  |
-| `interactable` | [IInteractable](/api/Global.IInteractable) |  |
+| `interactable` | [`IInteractable`](/api/Global.IInteractable) |  |
 
 **Returns:** `bool`
 
@@ -205,6 +206,6 @@ public static bool TryGetProxy(Collider2D collider, out ProxyCollider proxy)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `collider` | `UnityEngine.Collider2D` |  |
-| `proxy` | [ProxyCollider](/api/Global.ProxyCollider) |  |
+| `proxy` | [`ProxyCollider`](/api/Global.ProxyCollider) |  |
 
 **Returns:** `bool`

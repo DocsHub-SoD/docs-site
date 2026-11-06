@@ -1,5 +1,6 @@
 # Class: CurseStatusEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [StatusEffect](/api/Global.StatusEffect)
@@ -13,32 +14,22 @@ public class CurseStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDe
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`availableStrengths`** | `[BoxGroup("Curse Settings", true, false, 0)]
-public HatredStrengthType availableStrengths` |  |
-| **`chanceWeight`** | `[BoxGroup("Curse Settings", true, false, 0)]
-public float chanceWeight` |  |
+| **`availableStrengths`** | `[BoxGroup("Curse Settings", true, false, 0)] public HatredStrengthType availableStrengths` |  |
+| **`chanceWeight`** | `[BoxGroup("Curse Settings", true, false, 0)] public float chanceWeight` |  |
 | **`CurseEvent_OnProgressChanged`** | `public Action CurseEvent_OnProgressChanged` | Called on server. |
-| **`dontRemoveOnKnockOut`** | `[NonSerialized]
-[SaveVar(SaveVarFlags.Default)]
-public bool dontRemoveOnKnockOut` |  |
-| **`quest`** | `[NonSerialized]
-[SaveVar(SaveVarFlags.Default)]
-public Quest_KillToLiftCurse quest` |  |
+| **`dontRemoveOnKnockOut`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public bool dontRemoveOnKnockOut` |  |
+| **`quest`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public Quest_KillToLiftCurse quest` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`currentProgress`** | `[SaveVar(SaveVarFlags.Default)]
-public int currentProgress { get; set; }` |  |
-| **`currentStrength`** | `[SaveVar(SaveVarFlags.Default)]
-public HatredStrengthType currentStrength { get; set; }` |  |
+| **`currentProgress`** | `[SaveVar(SaveVarFlags.Default)] public int currentProgress { get; set; }` |  |
+| **`currentStrength`** | `[SaveVar(SaveVarFlags.Default)] public HatredStrengthType currentStrength { get; set; }` |  |
 | **`disableEndNotification`** | `public bool disableEndNotification { get; set; }` |  |
 | **`disableStartNotification`** | `public bool disableStartNotification { get; set; }` |  |
-| **`progressType`** | `[SaveVar(SaveVarFlags.Default)]
-public QuestProgressType progressType { get; set; }` |  |
-| **`requiredAmount`** | `[SaveVar(SaveVarFlags.Default)]
-public int requiredAmount { get; set; }` |  |
+| **`progressType`** | `[SaveVar(SaveVarFlags.Default)] public QuestProgressType progressType { get; set; }` |  |
+| **`requiredAmount`** | `[SaveVar(SaveVarFlags.Default)] public int requiredAmount { get; set; }` |  |
 
 ## Methods
 
@@ -50,7 +41,7 @@ public string GetName()
 
 **Returns:** `string`
 
-### `GetValue&lt;T&gt;(T[])`
+### `GetValue<T>(T[])`
 
 ```csharp
 public T GetValue<T>(T[] arr)
@@ -75,7 +66,7 @@ public virtual bool IsViable(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 

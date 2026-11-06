@@ -1,5 +1,6 @@
 # Class: UI_BindItem
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
@@ -17,7 +18,7 @@ public class UI_BindItem : LogicBehaviour, ILogicUpdate, ILangaugeChangedCallbac
 | **`hoverObject`** | `public GameObject hoverObject` |  |
 | **`keyDisplayText`** | `public TextMeshProUGUI keyDisplayText` |  |
 | **`notHoverObject`** | `public GameObject notHoverObject` |  |
-| **`onValueChanged`** | `public Action&lt;DewBinding&gt; onValueChanged` |  |
+| **`onValueChanged`** | `public Action<DewBinding> onValueChanged` |  |
 
 ## Properties
 
@@ -70,4 +71,4 @@ public void UpdateValueDontNotify(DewBinding newReference)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `newReference` | [DewBinding](/api/Global.DewBinding) |  |
+| `newReference` | [`DewBinding`](/api/Global.DewBinding) |  |

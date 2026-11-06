@@ -1,5 +1,6 @@
 # Class: LootManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [LootManager](/api/Global.LootManager)
@@ -12,36 +13,22 @@ public class LootManager : NetworkedManagerBase<LootManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`gemQualityMaxByZoneIndex`** | `public PerRarityData&lt;Formula&gt; gemQualityMaxByZoneIndex` |  |
-| **`gemQualityMinByZoneIndex`** | `public PerRarityData&lt;Formula&gt; gemQualityMinByZoneIndex` |  |
+| **`gemQualityMaxByZoneIndex`** | `public PerRarityData<Formula> gemQualityMaxByZoneIndex` |  |
+| **`gemQualityMinByZoneIndex`** | `public PerRarityData<Formula> gemQualityMinByZoneIndex` |  |
 | **`gemQualityRandomCurve`** | `public AnimationCurve gemQualityRandomCurve` |  |
-| **`gemRarityChance`** | `[Title("Gem", null, TitleAlignments.Left, true, true)]
-public PerRarityData&lt;float&gt; gemRarityChance` |  |
-| **`gemRarityChanceHigh`** | `public PerRarityData&lt;float&gt; gemRarityChanceHigh` |  |
-| **`poolGems`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;string&gt; poolGems` | Available on server. |
-| **`poolGemsByRarity`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public Dictionary&lt;Rarity, List&lt;string&gt;&gt; poolGemsByRarity` | Available on server. |
-| **`poolGemsByTag`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public Dictionary&lt;DescriptionTags, List&lt;string&gt;&gt; poolGemsByTag` | Available on server. |
-| **`poolSkills`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;string&gt; poolSkills` | Available on server. |
-| **`poolSkillsByRarity`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public Dictionary&lt;Rarity, List&lt;string&gt;&gt; poolSkillsByRarity` | Available on server. |
-| **`poolSkillsByTag`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public Dictionary&lt;DescriptionTags, List&lt;string&gt;&gt; poolSkillsByTag` | Available on server. |
-| **`skillLevelMaxByZoneIndex`** | `public PerRarityData&lt;Formula&gt; skillLevelMaxByZoneIndex` |  |
-| **`skillLevelMinByZoneIndex`** | `public PerRarityData&lt;Formula&gt; skillLevelMinByZoneIndex` |  |
+| **`gemRarityChance`** | `[Title("Gem", null, TitleAlignments.Left, true, true)] public PerRarityData<float> gemRarityChance` |  |
+| **`gemRarityChanceHigh`** | `public PerRarityData<float> gemRarityChanceHigh` |  |
+| **`poolGems`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> poolGems` | Available on server. |
+| **`poolGemsByRarity`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<Rarity, List<string>> poolGemsByRarity` | Available on server. |
+| **`poolGemsByTag`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<DescriptionTags, List<string>> poolGemsByTag` | Available on server. |
+| **`poolSkills`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> poolSkills` | Available on server. |
+| **`poolSkillsByRarity`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<Rarity, List<string>> poolSkillsByRarity` | Available on server. |
+| **`poolSkillsByTag`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public Dictionary<DescriptionTags, List<string>> poolSkillsByTag` | Available on server. |
+| **`skillLevelMaxByZoneIndex`** | `public PerRarityData<Formula> skillLevelMaxByZoneIndex` |  |
+| **`skillLevelMinByZoneIndex`** | `public PerRarityData<Formula> skillLevelMinByZoneIndex` |  |
 | **`skillLevelRandomCurve`** | `public AnimationCurve skillLevelRandomCurve` |  |
-| **`skillRarityChance`** | `[Title("Skill", null, TitleAlignments.Left, true, true)]
-public PerRarityData&lt;float&gt; skillRarityChance` |  |
-| **`skillRarityChanceHigh`** | `public PerRarityData&lt;float&gt; skillRarityChanceHigh` |  |
+| **`skillRarityChance`** | `[Title("Skill", null, TitleAlignments.Left, true, true)] public PerRarityData<float> skillRarityChance` |  |
+| **`skillRarityChanceHigh`** | `public PerRarityData<float> skillRarityChanceHigh` |  |
 
 ## Methods
 
@@ -60,8 +47,8 @@ public void SelectGemAndQuality(Rarity? rarity, out Gem gem, out int quality)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity?](/api/Global.Rarity) |  |
-| `gem` | [Gem](/api/Global.Gem) |  |
+| `rarity` | [`Rarity?`](/api/Global.Rarity) |  |
+| `gem` | [`Gem`](/api/Global.Gem) |  |
 | `quality` | `int` |  |
 
 ### `SelectGemQuality(Rarity)`
@@ -73,7 +60,7 @@ public int SelectGemQuality(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity](/api/Global.Rarity) |  |
+| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 
 **Returns:** `int`
 
@@ -90,7 +77,7 @@ public Rarity SelectGemRarity(bool isHigh = false)
 
 **Returns:** `Rarity`
 
-### `SelectRarity(PerRarityData&lt;float&gt;)`
+### `SelectRarity(PerRarityData<float>)`
 
 ```csharp
 public static Rarity SelectRarity(PerRarityData<float> chances)
@@ -99,7 +86,7 @@ public static Rarity SelectRarity(PerRarityData<float> chances)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `chances` | `PerRarityData&lt;float&gt;` |  |
+| `chances` | `PerRarityData<float>` |  |
 
 **Returns:** `Rarity`
 
@@ -112,8 +99,8 @@ public void SelectSkillAndLevel(Rarity? rarity, out SkillTrigger skill, out int 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity?](/api/Global.Rarity) |  |
-| `skill` | [SkillTrigger](/api/Global.SkillTrigger) |  |
+| `rarity` | [`Rarity?`](/api/Global.Rarity) |  |
+| `skill` | [`SkillTrigger`](/api/Global.SkillTrigger) |  |
 | `level` | `int` |  |
 
 ### `SelectSkillLevel(Rarity)`
@@ -125,7 +112,7 @@ public int SelectSkillLevel(Rarity rarity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rarity` | [Rarity](/api/Global.Rarity) |  |
+| `rarity` | [`Rarity`](/api/Global.Rarity) |  |
 
 **Returns:** `int`
 

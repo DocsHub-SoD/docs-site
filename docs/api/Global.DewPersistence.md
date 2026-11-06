@@ -1,5 +1,6 @@
 # Class: DewPersistence
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -18,7 +19,7 @@ public static void ApplyAchievementData(DewPersistence.AchievementsData data)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewPersistence.AchievementsData](/api/Global.DewPersistence) |  |
+| `data` | [`DewPersistence.AchievementsData`](/api/Global.DewPersistence) |  |
 
 ### `ApplyGameData(GameData, Action, JsonSerializerSettings)`
 
@@ -29,11 +30,11 @@ public static void ApplyGameData(DewPersistence.GameData data, Action onFinish =
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewPersistence.GameData](/api/Global.DewPersistence) |  |
+| `data` | [`DewPersistence.GameData`](/api/Global.DewPersistence) |  |
 | `onFinish` | `System.Action` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
-### `ApplyPlayerData(DewPlayer, PlayerData, List&lt;(uint, Action)&gt;, JsonSerializerSettings)`
+### `ApplyPlayerData(DewPlayer, PlayerData, List<(uint, Action)>, JsonSerializerSettings)`
 
 ```csharp
 public static void ApplyPlayerData(DewPlayer player, DewPersistence.PlayerData data, List<(uint, Action)> batchActions = null, JsonSerializerSettings settings = null)
@@ -42,9 +43,9 @@ public static void ApplyPlayerData(DewPlayer player, DewPersistence.PlayerData d
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
-| `data` | [DewPersistence.PlayerData](/api/Global.DewPersistence) |  |
-| `batchActions` | `System.Collections.Generic.List&lt;T&gt;&lt;(uint,System.Action)&gt;` |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
+| `data` | [`DewPersistence.PlayerData`](/api/Global.DewPersistence) |  |
+| `batchActions` | `System.Collections.Generic.List<T><(uint,System.Action)>` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
 ### `ApplyRoomDataAfterSpawnObjects(RoomData, JsonSerializerSettings)`
@@ -56,7 +57,7 @@ public static void ApplyRoomDataAfterSpawnObjects(DewPersistence.RoomData data, 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewPersistence.RoomData](/api/Global.DewPersistence) |  |
+| `data` | [`DewPersistence.RoomData`](/api/Global.DewPersistence) |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
 ### `ApplyRoomDataBeforeSpawnObjects(RoomData, JsonSerializerSettings)`
@@ -68,10 +69,10 @@ public static void ApplyRoomDataBeforeSpawnObjects(DewPersistence.RoomData data,
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewPersistence.RoomData](/api/Global.DewPersistence) |  |
+| `data` | [`DewPersistence.RoomData`](/api/Global.DewPersistence) |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 
-### `CreateActor&lt;T&gt;(GeneralData, List&lt;(uint, Action)&gt;, JsonSerializerSettings)`
+### `CreateActor<T>(GeneralData, List<(uint, Action)>, JsonSerializerSettings)`
 
 ```csharp
 public static T CreateActor<T>(DewPersistence.GeneralData data, List<(uint, Action)> batchActions = null, JsonSerializerSettings settings = null) where T : Actor
@@ -80,14 +81,14 @@ public static T CreateActor<T>(DewPersistence.GeneralData data, List<(uint, Acti
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DewPersistence.GeneralData](/api/Global.DewPersistence) |  |
-| `batchActions` | `System.Collections.Generic.List&lt;T&gt;&lt;(uint,System.Action)&gt;` |  |
+| `data` | [`DewPersistence.GeneralData`](/api/Global.DewPersistence) |  |
+| `batchActions` | `System.Collections.Generic.List<T><(uint,System.Action)>` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `DeserializeOnGameObject(GameObject, Dictionary&lt;string, string&gt;, JsonSerializerSettings, SaveVarFlags, SaveVarFlags)`
+### `DeserializeOnGameObject(GameObject, Dictionary<string, string>, JsonSerializerSettings, SaveVarFlags, SaveVarFlags)`
 
 ```csharp
 public static void DeserializeOnGameObject(GameObject gobj, Dictionary<string, string> data, JsonSerializerSettings settings, SaveVarFlags required = SaveVarFlags.Default, SaveVarFlags excluded = SaveVarFlags.Default)
@@ -97,10 +98,10 @@ public static void DeserializeOnGameObject(GameObject gobj, Dictionary<string, s
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `gobj` | `UnityEngine.GameObject` |  |
-| `data` | `System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `data` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
 | `settings` | `Newtonsoft.Json.JsonSerializerSettings` |  |
-| `required` | [SaveVarFlags](/api/Global.SaveVarFlags) |  |
-| `excluded` | [SaveVarFlags](/api/Global.SaveVarFlags) |  |
+| `required` | [`SaveVarFlags`](/api/Global.SaveVarFlags) |  |
+| `excluded` | [`SaveVarFlags`](/api/Global.SaveVarFlags) |  |
 
 ### `FromJson(string, Type, JsonSerializerSettings)`
 
@@ -117,7 +118,7 @@ public static object FromJson(string json, Type type, JsonSerializerSettings set
 
 **Returns:** `object`
 
-### `FromJson&lt;T&gt;(string, JsonSerializerSettings)`
+### `FromJson<T>(string, JsonSerializerSettings)`
 
 ```csharp
 public static T FromJson<T>(string json, JsonSerializerSettings settings = null)
@@ -157,7 +158,7 @@ public static DewPersistence.GameData SerializeGameData(LoadNodeSettings setting
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [LoadNodeSettings](/api/Global.LoadNodeSettings) |  |
+| `settings` | [`LoadNodeSettings`](/api/Global.LoadNodeSettings) |  |
 
 **Returns:** `DewPersistence.GameData`
 
@@ -172,7 +173,7 @@ public static Dictionary<string, string> SerializeGameObject(GameObject gobj)
 | :--- | :--- | :--- |
 | `gobj` | `UnityEngine.GameObject` |  |
 
-**Returns:** `System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;&lt;string,string&gt;`
+**Returns:** `System.Collections.Generic.Dictionary<TKey, TValue><string,string>`
 
 ### `SerializePlayerData(DewPlayer)`
 
@@ -183,7 +184,7 @@ public static DewPersistence.PlayerData SerializePlayerData(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `DewPersistence.PlayerData`
 

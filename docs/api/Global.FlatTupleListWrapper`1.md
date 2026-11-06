@@ -1,5 +1,6 @@
 # Class: FlatTupleListWrapper&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class FlatTupleListWrapper<T>
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`list`** | `public IList&lt;T&gt; list` |  |
+| **`list`** | `public IList<T> list` |  |
 
 ## Properties
 
@@ -28,4 +29,4 @@ public class FlatTupleListWrapper<T>
 public IEnumerator<(T, T)> GetEnumerator()
 ```
 
-**Returns:** `System.Collections.Generic.IEnumerator&lt;T&gt;&lt;(T, T)&gt;`
+**Returns:** `System.Collections.Generic.IEnumerator<T><(T, T)>`

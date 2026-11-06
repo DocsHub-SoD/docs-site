@@ -1,5 +1,6 @@
 # Class: DewCollider
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,25 +12,16 @@ public class DewCollider : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`invokeEventsOnClients`** | `[ShowIf("receiveEntityCallbacks", true)]
-public bool invokeEventsOnClients` |  |
-| **`maxDecimals`** | `[ShowIf("@shape == DewCollider.ColliderShape.Polygon", true)]
-public int maxDecimals` |  |
-| **`offset`** | `[ShowIf("@shape == DewCollider.ColliderShape.Box \|\| shape == DewCollider.ColliderShape.Circle", true)]
-public Vector2 offset` |  |
-| **`onEntityEnter`** | `[ShowIf("receiveEntityCallbacks", true)]
-public UnityEvent&lt;Entity&gt; onEntityEnter` |  |
-| **`onEntityExit`** | `[ShowIf("receiveEntityCallbacks", true)]
-public UnityEvent&lt;Entity&gt; onEntityExit` |  |
-| **`points`** | `[ShowIf("@shape == DewCollider.ColliderShape.Polygon", true)]
-public Vector2[] points` |  |
-| **`radius`** | `[ShowIf("@shape == DewCollider.ColliderShape.Circle", true)]
-public float radius` |  |
+| **`invokeEventsOnClients`** | `[ShowIf("receiveEntityCallbacks", true)] public bool invokeEventsOnClients` |  |
+| **`maxDecimals`** | `[ShowIf("@shape == DewCollider.ColliderShape.Polygon", true)] public int maxDecimals` |  |
+| **`offset`** | `[ShowIf("@shape == DewCollider.ColliderShape.Box \|\| shape == DewCollider.ColliderShape.Circle", true)] public Vector2 offset` |  |
+| **`onEntityEnter`** | `[ShowIf("receiveEntityCallbacks", true)] public UnityEvent<Entity> onEntityEnter` |  |
+| **`onEntityExit`** | `[ShowIf("receiveEntityCallbacks", true)] public UnityEvent<Entity> onEntityExit` |  |
+| **`points`** | `[ShowIf("@shape == DewCollider.ColliderShape.Polygon", true)] public Vector2[] points` |  |
+| **`radius`** | `[ShowIf("@shape == DewCollider.ColliderShape.Circle", true)] public float radius` |  |
 | **`receiveEntityCallbacks`** | `public bool receiveEntityCallbacks` |  |
-| **`shape`** | `[EnumToggleButtons]
-public DewCollider.ColliderShape shape` |  |
-| **`size`** | `[ShowIf("@shape == DewCollider.ColliderShape.Box", true)]
-public Vector2 size` |  |
+| **`shape`** | `[EnumToggleButtons] public DewCollider.ColliderShape shape` |  |
+| **`size`** | `[ShowIf("@shape == DewCollider.ColliderShape.Box", true)] public Vector2 size` |  |
 
 ## Methods
 
@@ -114,7 +106,7 @@ public void GeneratePolygonPoints_Donut(float innerRadius, float outerRadius, in
 | `outerRadius` | `float` |  |
 | `accuracy` | `int` |  |
 
-### `GetEntities(out ListReturnHandle&lt;Entity&gt;, CollisionCheckSettings)`
+### `GetEntities(out ListReturnHandle<Entity>, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, CollisionCheckSettings settings = default)
@@ -123,12 +115,12 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, CollisionCh
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `GetEntities(out ListReturnHandle&lt;Entity&gt;, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
+### `GetEntities(out ListReturnHandle<Entity>, IBinaryEntityValidator, Entity, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)
@@ -137,14 +129,14 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IBinaryEnti
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
-| `self` | [Entity](/api/Global.Entity) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `GetEntities(out ListReturnHandle&lt;Entity&gt;, IEntityValidator, CollisionCheckSettings)`
+### `GetEntities(out ListReturnHandle<Entity>, IEntityValidator, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IEntityValidator validator, CollisionCheckSettings settings = default)
@@ -153,13 +145,13 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IEntityVali
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
-### `GetEntities(out ListReturnHandle&lt;Entity&gt;, Func&lt;Entity, bool&gt;, CollisionCheckSettings)`
+### `GetEntities(out ListReturnHandle<Entity>, Func<Entity, bool>, CollisionCheckSettings)`
 
 ```csharp
 public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, Func<Entity, bool> validator, CollisionCheckSettings settings = default)
@@ -168,11 +160,11 @@ public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, Func<Entity
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;Entity&gt;` |  |
-| `validator` | [System.Func&lt;T, TResult&gt;&lt;Entity,bool&gt;](/api/Global.Entity) |  |
-| `settings` | [CollisionCheckSettings](/api/Global.CollisionCheckSettings) |  |
+| `handle` | `ListReturnHandle<Entity>` |  |
+| `validator` | [`System.Func<T, TResult><Entity,bool>`](/api/Global.Entity) |  |
+| `settings` | [`CollisionCheckSettings`](/api/Global.CollisionCheckSettings) |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.List<T><Entity>`
 
 ### `OverlapPoint(Vector2)`
 
@@ -197,11 +189,11 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IBinary
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `iterations` | `int` |  |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
-| `self` | [Entity](/api/Global.Entity) |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
 | `includeUncollidable` | `bool` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
 ### `SweepEntitiesFromOrigin(int, IEntityValidator, bool)`
 
@@ -213,10 +205,10 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IEntity
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `iterations` | `int` |  |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
 | `includeUncollidable` | `bool` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
 ### `SweepEntitiesFromOrigin(int, bool)`
 
@@ -230,9 +222,9 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, bool in
 | `iterations` | `int` |  |
 | `includeUncollidable` | `bool` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
-### `SweepEntitiesFromOrigin(int, Func&lt;Entity, bool&gt;, bool)`
+### `SweepEntitiesFromOrigin(int, Func<Entity, bool>, bool)`
 
 ```csharp
 public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, Func<Entity, bool> validator, bool includeUncollidable = false)
@@ -242,10 +234,10 @@ public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, Func<En
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `iterations` | `int` |  |
-| `validator` | [System.Func&lt;T, TResult&gt;&lt;Entity,bool&gt;](/api/Global.Entity) |  |
+| `validator` | [`System.Func<T, TResult><Entity,bool>`](/api/Global.Entity) |  |
 | `includeUncollidable` | `bool` |  |
 
-**Returns:** `System.Collections.Generic.IEnumerable&lt;T&gt;&lt;System.Collections.Generic.List&lt;T&gt;&lt;Entity&gt;&gt;`
+**Returns:** `System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>`
 
 ### `UpdateProxyCollider()`
 

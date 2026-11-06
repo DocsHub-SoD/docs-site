@@ -1,5 +1,6 @@
 # Class: UI_EmoteWheel
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** `SingletonBehaviour` → [UI_EmoteWheel](/api/Global.UI_EmoteWheel)

@@ -1,5 +1,6 @@
 # Class: ArcTelegraphController
 
+- **Category:** <span class="cat-dot" style="--cat-color: #a855f7" data-cat="Buffs & Statuses"></span> Buffs & Statuses
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,16 +14,12 @@ public class ArcTelegraphController : MonoBehaviour, IEffectComponent, IEffectWi
 | :--- | :--- | :--- |
 | **`arcAngle`** | `public float arcAngle` |  |
 | **`duration`** | `public float duration` |  |
-| **`fillArea`** | `[FoldoutGroup("References", false, 0)]
-public MeshRenderer fillArea` |  |
-| **`fillBorder`** | `[FoldoutGroup("References", false, 0)]
-public MeshRenderer fillBorder` |  |
+| **`fillArea`** | `[FoldoutGroup("References", false, 0)] public MeshRenderer fillArea` |  |
+| **`fillBorder`** | `[FoldoutGroup("References", false, 0)] public MeshRenderer fillBorder` |  |
 | **`innerRadius`** | `public float innerRadius` |  |
-| **`maxBorder`** | `[FoldoutGroup("References", false, 0)]
-public MeshRenderer maxBorder` |  |
+| **`maxBorder`** | `[FoldoutGroup("References", false, 0)] public MeshRenderer maxBorder` |  |
 | **`outerRadius`** | `public float outerRadius` |  |
-| **`whiteBorder`** | `[FoldoutGroup("References", false, 0)]
-public MeshRenderer whiteBorder` |  |
+| **`whiteBorder`** | `[FoldoutGroup("References", false, 0)] public MeshRenderer whiteBorder` |  |
 
 ## Properties
 

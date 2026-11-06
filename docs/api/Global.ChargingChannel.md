@@ -1,5 +1,6 @@
 # Class: ChargingChannel
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -40,12 +41,12 @@ public ChargingChannel Dispatch(Entity entity, AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `ChargingChannel`
 
-### `OnCancel(Action&lt;ChargingChannel&gt;)`
+### `OnCancel(Action<ChargingChannel>)`
 
 ```csharp
 public ChargingChannel OnCancel(Action<ChargingChannel> callback)
@@ -54,11 +55,11 @@ public ChargingChannel OnCancel(Action<ChargingChannel> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | [System.Action&lt;T&gt;&lt;ChargingChannel&gt;](/api/Global.ChargingChannel) |  |
+| `callback` | [`System.Action<T><ChargingChannel>`](/api/Global.ChargingChannel) |  |
 
 **Returns:** `ChargingChannel`
 
-### `OnCast(Action&lt;ChargingChannel&gt;)`
+### `OnCast(Action<ChargingChannel>)`
 
 ```csharp
 public ChargingChannel OnCast(Action<ChargingChannel> callback)
@@ -67,11 +68,11 @@ public ChargingChannel OnCast(Action<ChargingChannel> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | [System.Action&lt;T&gt;&lt;ChargingChannel&gt;](/api/Global.ChargingChannel) |  |
+| `callback` | [`System.Action<T><ChargingChannel>`](/api/Global.ChargingChannel) |  |
 
 **Returns:** `ChargingChannel`
 
-### `OnChargeFull(Action&lt;ChargingChannel&gt;)`
+### `OnChargeFull(Action<ChargingChannel>)`
 
 ```csharp
 public ChargingChannel OnChargeFull(Action<ChargingChannel> callback)
@@ -80,11 +81,11 @@ public ChargingChannel OnChargeFull(Action<ChargingChannel> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | [System.Action&lt;T&gt;&lt;ChargingChannel&gt;](/api/Global.ChargingChannel) |  |
+| `callback` | [`System.Action<T><ChargingChannel>`](/api/Global.ChargingChannel) |  |
 
 **Returns:** `ChargingChannel`
 
-### `OnComplete(Action&lt;ChargingChannel&gt;)`
+### `OnComplete(Action<ChargingChannel>)`
 
 ```csharp
 public ChargingChannel OnComplete(Action<ChargingChannel> callback)
@@ -93,7 +94,7 @@ public ChargingChannel OnComplete(Action<ChargingChannel> callback)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | [System.Action&lt;T&gt;&lt;ChargingChannel&gt;](/api/Global.ChargingChannel) |  |
+| `callback` | [`System.Action<T><ChargingChannel>`](/api/Global.ChargingChannel) |  |
 
 **Returns:** `ChargingChannel`
 
@@ -106,7 +107,7 @@ public ChargingChannel SetInitialInfo(CastInfo info)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `ChargingChannel`
 

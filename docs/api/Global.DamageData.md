@@ -1,5 +1,6 @@
 # Struct: DamageData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -143,8 +144,8 @@ public void Dispatch(Entity victim, ReactionChain chain = default)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 ### `DoAttackEffect(AttackEffectType, float)`
 
@@ -155,7 +156,7 @@ public DamageData DoAttackEffect(AttackEffectType type, float strength = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [AttackEffectType](/api/Global.AttackEffectType) |  |
+| `type` | [`AttackEffectType`](/api/Global.AttackEffectType) |  |
 | `strength` | `float` |  |
 
 **Returns:** `DamageData`
@@ -171,7 +172,7 @@ public bool HasAttr(DamageAttribute attr)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `attr` | [DamageAttribute](/api/Global.DamageAttribute) |  |
+| `attr` | [`DamageAttribute`](/api/Global.DamageAttribute) |  |
 
 **Returns:** `bool`
 
@@ -184,7 +185,7 @@ public bool IsAmountModifiedBy(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `bool`
 
@@ -210,7 +211,7 @@ public DamageData SetActor(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `DamageData`
 
@@ -223,7 +224,7 @@ public DamageData SetAmountModifiedBy(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `DamageData`
 
@@ -251,7 +252,7 @@ public DamageData SetAmountOrigin(FinalDamageData damage)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `damage` | [FinalDamageData](/api/Global.FinalDamageData) |  |
+| `damage` | [`FinalDamageData`](/api/Global.FinalDamageData) |  |
 
 **Returns:** `DamageData`
 
@@ -266,7 +267,7 @@ public DamageData SetAmountOrigin(FinalHealData heal)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `heal` | [FinalHealData](/api/Global.FinalHealData) |  |
+| `heal` | [`FinalHealData`](/api/Global.FinalHealData) |  |
 
 **Returns:** `DamageData`
 
@@ -281,7 +282,7 @@ public DamageData SetAttr(DamageAttribute attr)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `attr` | [DamageAttribute](/api/Global.DamageAttribute) |  |
+| `attr` | [`DamageAttribute`](/api/Global.DamageAttribute) |  |
 
 **Returns:** `DamageData`
 
@@ -320,7 +321,7 @@ public DamageData SetElemental(ElementalType? type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [ElementalType?](/api/Global.ElementalType) |  |
+| `type` | [`ElementalType?`](/api/Global.ElementalType) |  |
 
 **Returns:** `DamageData`
 
@@ -361,7 +362,7 @@ public DamageData SetSourceType(DamageData.SourceType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [DamageData.SourceType](/api/Global.DamageData) |  |
+| `type` | [`DamageData.SourceType`](/api/Global.DamageData) |  |
 
 **Returns:** `DamageData`
 

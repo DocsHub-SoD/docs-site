@@ -1,5 +1,6 @@
 # Class: NextGoalSettings
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -18,8 +19,6 @@ public class NextGoalSettings
 | **`localizedDescriptionKey`** | `public string localizedDescriptionKey` |  |
 | **`localizedTitleKey`** | `public string localizedTitleKey` |  |
 | **`nodeIndexSettings`** | `public GetNodeIndexSettings nodeIndexSettings` |  |
-| **`onFail`** | `[NonSerialized]
-public Action&lt;FailReason&gt; onFail` | Called when players fails to reach the goal node. This can be due to skipping the goal node and moving to the next world, the applied modifier being removed by hunters, room override being overriden by other quest, etc. |
-| **`onReachDestination`** | `[NonSerialized]
-public Action onReachDestination` | Called when players reach the goal node. |
+| **`onFail`** | `[NonSerialized] public Action<FailReason> onFail` | Called when players fails to reach the goal node. This can be due to skipping the goal node and moving to the next world, the applied modifier being removed by hunters, room override being overriden by other quest, etc. |
+| **`onReachDestination`** | `[NonSerialized] public Action onReachDestination` | Called when players reach the goal node. |
 | **`roomOverride`** | `public string roomOverride` |  |

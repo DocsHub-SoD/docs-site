@@ -1,5 +1,6 @@
 # Class: EntityCallbackTrigger
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,5 +12,5 @@ public class EntityCallbackTrigger : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onEntityEnter`** | `public Action&lt;Entity&gt; onEntityEnter` |  |
-| **`onEntityExit`** | `public Action&lt;Entity&gt; onEntityExit` |  |
+| **`onEntityEnter`** | `public Action<Entity> onEntityEnter` |  |
+| **`onEntityExit`** | `public Action<Entity> onEntityExit` |  |

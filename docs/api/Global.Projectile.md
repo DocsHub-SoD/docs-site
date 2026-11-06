@@ -1,5 +1,6 @@
 # Class: Projectile
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [StandardProjectile](/api/Global.StandardProjectile)
@@ -13,73 +14,28 @@ public abstract class Projectile : AbilityInstance, ILogicUpdate, ICleanup, ICus
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`_estimatedVelocity`** | `protected Vector3 _estimatedVelocity` |  |
-| **`canCollideMidFlight`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[LabelText("Can Collide With Entity Mid-Flight")]
-[ToggleLeft]
-public bool canCollideMidFlight` |  |
-| **`collisionRadius`** | `[Title("Collisions", null, TitleAlignments.Left, true, true)]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public float collisionRadius` |  |
-| **`collisionTargets`** | `[ShowIf("canCollideMidFlight", true)]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public AbilityTargetValidator collisionTargets` |  |
-| **`customEndHeight`** | `[ShowIf("@mode != Projectile.ProjectileMode.Target && !endsWithSameHeight", true)]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public float customEndHeight` |  |
-| **`destroyOnComplete`** | `[FormerlySerializedAs("killOnComplete")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public bool destroyOnComplete` |  |
-| **`dissipateOnTerrain`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[ToggleLeft]
-public bool dissipateOnTerrain` |  |
-| **`effectOnComplete`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[LabelText("Complete")]
-public GameObject effectOnComplete` |  |
-| **`effectOnDissipate`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[LabelText("Dissipate")]
-public GameObject effectOnDissipate` |  |
-| **`effectOnEntity`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[LabelText("Entity")]
-public GameObject effectOnEntity` |  |
-| **`effectOnFly`** | `[Title("Effects", null, TitleAlignments.Left, true, true)]
-[BoxGroup("Projectile Settings", true, false, 0)]
-[LabelText("Fly")]
-public GameObject effectOnFly` |  |
-| **`endDistance`** | `[ShowIf("@mode == Projectile.ProjectileMode.Direction", true)]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public float endDistance` |  |
-| **`endsWithSameHeight`** | `[ShowIf("@mode != Projectile.ProjectileMode.Target", true)]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public bool endsWithSameHeight` |  |
-| **`horizontalOffsetOverTrajectory`** | `[LabelText("Horizontal Offset")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public AnimationCurve horizontalOffsetOverTrajectory` |  |
-| **`killOnDissipate`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-public bool killOnDissipate` |  |
-| **`mode`** | `[Title("Flight", null, TitleAlignments.Left, true, true)]
-[EnumToggleButtons]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public Projectile.ProjectileMode mode` |  |
-| **`onEntity`** | `public SafeAction&lt;Projectile.EntityHit&gt; onEntity` |  |
-| **`rotationType`** | `[LabelText("Rotation")]
-[EnumToggleButtons]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public Projectile.RotationType rotationType` |  |
-| **`scaleHorizontalOffsetOnLength`** | `[LabelText("Scale On Trajectory Length")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public bool scaleHorizontalOffsetOnLength` |  |
-| **`scaleVerticalOffsetOnLength`** | `[LabelText("Scale On Trajectory Length")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public bool scaleVerticalOffsetOnLength` |  |
-| **`start`** | `[EnumToggleButtons]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public Projectile.StartPositionType start` |  |
-| **`startInFrontDistance`** | `[LabelText("Front Distance")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public float startInFrontDistance` |  |
-| **`verticalOffsetOverTrajectory`** | `[LabelText("Vertical Offset")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public AnimationCurve verticalOffsetOverTrajectory` |  |
+| **`canCollideMidFlight`** | `[BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Can Collide With Entity Mid-Flight")] [ToggleLeft] public bool canCollideMidFlight` |  |
+| **`collisionRadius`** | `[Title("Collisions", null, TitleAlignments.Left, true, true)] [BoxGroup("Projectile Settings", true, false, 0)] public float collisionRadius` |  |
+| **`collisionTargets`** | `[ShowIf("canCollideMidFlight", true)] [BoxGroup("Projectile Settings", true, false, 0)] public AbilityTargetValidator collisionTargets` |  |
+| **`customEndHeight`** | `[ShowIf("@mode != Projectile.ProjectileMode.Target && !endsWithSameHeight", true)] [BoxGroup("Projectile Settings", true, false, 0)] public float customEndHeight` |  |
+| **`destroyOnComplete`** | `[FormerlySerializedAs("killOnComplete")] [BoxGroup("Projectile Settings", true, false, 0)] public bool destroyOnComplete` |  |
+| **`dissipateOnTerrain`** | `[BoxGroup("Projectile Settings", true, false, 0)] [ToggleLeft] public bool dissipateOnTerrain` |  |
+| **`effectOnComplete`** | `[BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Complete")] public GameObject effectOnComplete` |  |
+| **`effectOnDissipate`** | `[BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Dissipate")] public GameObject effectOnDissipate` |  |
+| **`effectOnEntity`** | `[BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Entity")] public GameObject effectOnEntity` |  |
+| **`effectOnFly`** | `[Title("Effects", null, TitleAlignments.Left, true, true)] [BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Fly")] public GameObject effectOnFly` |  |
+| **`endDistance`** | `[ShowIf("@mode == Projectile.ProjectileMode.Direction", true)] [BoxGroup("Projectile Settings", true, false, 0)] public float endDistance` |  |
+| **`endsWithSameHeight`** | `[ShowIf("@mode != Projectile.ProjectileMode.Target", true)] [BoxGroup("Projectile Settings", true, false, 0)] public bool endsWithSameHeight` |  |
+| **`horizontalOffsetOverTrajectory`** | `[LabelText("Horizontal Offset")] [BoxGroup("Projectile Settings", true, false, 0)] public AnimationCurve horizontalOffsetOverTrajectory` |  |
+| **`killOnDissipate`** | `[BoxGroup("Projectile Settings", true, false, 0)] public bool killOnDissipate` |  |
+| **`mode`** | `[Title("Flight", null, TitleAlignments.Left, true, true)] [EnumToggleButtons] [BoxGroup("Projectile Settings", true, false, 0)] public Projectile.ProjectileMode mode` |  |
+| **`onEntity`** | `public SafeAction<Projectile.EntityHit> onEntity` |  |
+| **`rotationType`** | `[LabelText("Rotation")] [EnumToggleButtons] [BoxGroup("Projectile Settings", true, false, 0)] public Projectile.RotationType rotationType` |  |
+| **`scaleHorizontalOffsetOnLength`** | `[LabelText("Scale On Trajectory Length")] [BoxGroup("Projectile Settings", true, false, 0)] public bool scaleHorizontalOffsetOnLength` |  |
+| **`scaleVerticalOffsetOnLength`** | `[LabelText("Scale On Trajectory Length")] [BoxGroup("Projectile Settings", true, false, 0)] public bool scaleVerticalOffsetOnLength` |  |
+| **`start`** | `[EnumToggleButtons] [BoxGroup("Projectile Settings", true, false, 0)] public Projectile.StartPositionType start` |  |
+| **`startInFrontDistance`** | `[LabelText("Front Distance")] [BoxGroup("Projectile Settings", true, false, 0)] public float startInFrontDistance` |  |
+| **`verticalOffsetOverTrajectory`** | `[LabelText("Vertical Offset")] [BoxGroup("Projectile Settings", true, false, 0)] public AnimationCurve verticalOffsetOverTrajectory` |  |
 
 ## Properties
 
@@ -103,7 +59,7 @@ public void AddEffect(Projectile.AddEffectTarget target, GameObject eff)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Projectile.AddEffectTarget](/api/Global.Projectile) |  |
+| `target` | [`Projectile.AddEffectTarget`](/api/Global.Projectile) |  |
 | `eff` | `UnityEngine.GameObject` |  |
 
 ### `CalculateOffsetOverTrajectoryInWorldSpace(float, Quaternion)`
@@ -206,7 +162,7 @@ protected virtual void OnEntity(Projectile.EntityHit hit)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hit` | [Projectile.EntityHit](/api/Global.Projectile) |  |
+| `hit` | [`Projectile.EntityHit`](/api/Global.Projectile) |  |
 
 ### `OnPrepare()`
 

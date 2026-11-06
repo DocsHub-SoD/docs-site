@@ -1,5 +1,6 @@
 # Struct: VariantDef
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -68,7 +69,7 @@ public bool Equals(VariantDef other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [VariantDef](/api/Global.VariantDef) |  |
+| `other` | [`VariantDef`](/api/Global.VariantDef) |  |
 
 **Returns:** `bool`
 

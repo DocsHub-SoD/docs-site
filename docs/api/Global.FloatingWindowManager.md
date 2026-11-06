@@ -1,5 +1,6 @@
 # Class: FloatingWindowManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [FloatingWindowManager](/api/Global.FloatingWindowManager)
@@ -14,7 +15,7 @@ public class FloatingWindowManager : ManagerBase<FloatingWindowManager>, ILogicU
 | :--- | :--- | :--- |
 | **`backButtonPriority`** | `public int backButtonPriority` |  |
 | **`maxDistance`** | `public float maxDistance` |  |
-| **`onTargetChanged`** | `public Action&lt;MonoBehaviour&gt; onTargetChanged` |  |
+| **`onTargetChanged`** | `public Action<MonoBehaviour> onTargetChanged` |  |
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # Class: SafeAction&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,7 +16,7 @@ public class SafeAction<T>
 
 ## Methods
 
-### `Add(Action&lt;T&gt;)`
+### `Add(Action<T>)`
 
 ```csharp
 public SafeAction<T> Add(Action<T> handler)
@@ -24,11 +25,11 @@ public SafeAction<T> Add(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 
-**Returns:** `SafeAction&lt;T&gt;`
+**Returns:** `SafeAction<T>`
 
-### `Contains(Action&lt;T&gt;)`
+### `Contains(Action<T>)`
 
 ```csharp
 public bool Contains(Action<T> handler)
@@ -37,7 +38,7 @@ public bool Contains(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 
 **Returns:** `bool`
 
@@ -52,7 +53,7 @@ public void Invoke(T arg)
 | :--- | :--- | :--- |
 | `arg` | `T` |  |
 
-### `Remove(Action&lt;T&gt;)`
+### `Remove(Action<T>)`
 
 ```csharp
 public SafeAction<T> Remove(Action<T> handler)
@@ -61,6 +62,6 @@ public SafeAction<T> Remove(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 
-**Returns:** `SafeAction&lt;T&gt;`
+**Returns:** `SafeAction<T>`

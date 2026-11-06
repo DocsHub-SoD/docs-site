@@ -1,5 +1,6 @@
 # Class: StandardProjectile
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [Projectile](/api/Global.Projectile) → [AttackProjectile](/api/Global.AttackProjectile)
@@ -12,26 +13,13 @@ public abstract class StandardProjectile : Projectile, ILogicUpdate, ICleanup, I
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`_acceleration`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-public float _acceleration` |  |
-| **`_initialSpeed`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-public float _initialSpeed` |  |
-| **`_targetSpeed`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-public float _targetSpeed` |  |
-| **`enableRandomCurve`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[Title("Random Curve", null, TitleAlignments.Left, true, true)]
-public bool enableRandomCurve` |  |
-| **`ensurePositiveY`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[ShowIf("enableRandomCurve", true)]
-public bool ensurePositiveY` |  |
-| **`randomCurveMagnitude`** | `[BoxGroup("Projectile Settings", true, false, 0)]
-[LabelText("Random Magnitude")]
-[ShowIf("enableRandomCurve", true)]
-public float randomCurveMagnitude` |  |
-| **`use3DVelocity`** | `[Title("Standard Projectile", null, TitleAlignments.Left, true, true)]
-[LabelText("Use 3D Velocity")]
-[BoxGroup("Projectile Settings", true, false, 0)]
-public bool use3DVelocity` |  |
+| **`_acceleration`** | `[BoxGroup("Projectile Settings", true, false, 0)] public float _acceleration` |  |
+| **`_initialSpeed`** | `[BoxGroup("Projectile Settings", true, false, 0)] public float _initialSpeed` |  |
+| **`_targetSpeed`** | `[BoxGroup("Projectile Settings", true, false, 0)] public float _targetSpeed` |  |
+| **`enableRandomCurve`** | `[BoxGroup("Projectile Settings", true, false, 0)] [Title("Random Curve", null, TitleAlignments.Left, true, true)] public bool enableRandomCurve` |  |
+| **`ensurePositiveY`** | `[BoxGroup("Projectile Settings", true, false, 0)] [ShowIf("enableRandomCurve", true)] public bool ensurePositiveY` |  |
+| **`randomCurveMagnitude`** | `[BoxGroup("Projectile Settings", true, false, 0)] [LabelText("Random Magnitude")] [ShowIf("enableRandomCurve", true)] public float randomCurveMagnitude` |  |
+| **`use3DVelocity`** | `[Title("Standard Projectile", null, TitleAlignments.Left, true, true)] [LabelText("Use 3D Velocity")] [BoxGroup("Projectile Settings", true, false, 0)] public bool use3DVelocity` |  |
 
 ## Properties
 

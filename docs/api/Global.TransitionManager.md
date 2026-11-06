@@ -1,5 +1,6 @@
 # Class: TransitionManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [TransitionManager](/api/Global.TransitionManager)
@@ -28,8 +29,7 @@ public class TransitionManager : ManagerBase<TransitionManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`state`** | `[ShowInInspector]
-public TransitionManager.StateType state { get; }` |  |
+| **`state`** | `[ShowInInspector] public TransitionManager.StateType state { get; }` |  |
 
 ## Methods
 
@@ -106,7 +106,7 @@ public void PlayGame(DewNetworkStartSettings settings)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [DewNetworkStartSettings](/api/Global.DewNetworkStartSettings) |  |
+| `settings` | [`DewNetworkStartSettings`](/api/Global.DewNetworkStartSettings) |  |
 
 ### `SetBusy(bool)`
 
@@ -128,7 +128,7 @@ public void UpdateLoadingStatus(LoadingStatus status)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `status` | [LoadingStatus](/api/Global.LoadingStatus) |  |
+| `status` | [`LoadingStatus`](/api/Global.LoadingStatus) |  |
 
 ### `UpdateLoadingStatus(string)`
 

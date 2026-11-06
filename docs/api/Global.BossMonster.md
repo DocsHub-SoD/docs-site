@@ -1,5 +1,6 @@
 # Class: BossMonster
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [Monster](/api/Global.Monster)
@@ -14,8 +15,7 @@ public class BossMonster : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutin
 | :--- | :--- | :--- |
 | **`isHiddenBoss`** | `public bool isHiddenBoss` |  |
 | **`playBossKillFeedback`** | `public bool playBossKillFeedback` |  |
-| **`skipBossSoulFlow`** | `[NonSerialized]
-public bool skipBossSoulFlow` |  |
+| **`skipBossSoulFlow`** | `[NonSerialized] public bool skipBossSoulFlow` |  |
 
 ## Methods
 
@@ -50,7 +50,7 @@ protected override void OnDeath(EventInfoKill info)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [EventInfoKill](/api/Global.EventInfoKill) |  |
+| `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
 ### `OnDestroyActor()`
 

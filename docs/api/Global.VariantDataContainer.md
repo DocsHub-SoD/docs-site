@@ -1,5 +1,6 @@
 # Class: VariantDataContainer
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -9,7 +10,7 @@ public class VariantDataContainer
 
 ## Methods
 
-### `Get&lt;T&gt;()`
+### `Get<T>()`
 
 ```csharp
 public T Get<T>()
@@ -22,7 +23,7 @@ public T Get<T>()
 
 **Returns:** `T`
 
-### `Has&lt;T&gt;()`
+### `Has<T>()`
 
 ```csharp
 public bool Has<T>()
@@ -35,7 +36,7 @@ public bool Has<T>()
 
 **Returns:** `bool`
 
-### `Set&lt;T&gt;(T)`
+### `Set<T>(T)`
 
 ```csharp
 public void Set<T>(T data)
@@ -47,7 +48,7 @@ public void Set<T>(T data)
 | `data` | `T` |  |
 | `` | `T` |  |
 
-### `TryGet&lt;T&gt;(out T)`
+### `TryGet<T>(out T)`
 
 ```csharp
 public bool TryGet<T>(out T data)

@@ -1,5 +1,6 @@
 # Class: ConsoleManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [ConsoleManager](/api/Global.ConsoleManager)
@@ -12,9 +13,8 @@ public class ConsoleManager : NetworkedManagerBase<ConsoleManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activeCommandBinds`** | `[NonSerialized]
-public List&lt;ConsoleBindItem&gt; activeCommandBinds` |  |
-| **`ClientEvent_OnCheatEnabledChanged`** | `public SafeAction&lt;bool&gt; ClientEvent_OnCheatEnabledChanged` |  |
+| **`activeCommandBinds`** | `[NonSerialized] public List<ConsoleBindItem> activeCommandBinds` |  |
+| **`ClientEvent_OnCheatEnabledChanged`** | `public SafeAction<bool> ClientEvent_OnCheatEnabledChanged` |  |
 | **`executionContext`** | `public ConsoleManager.ExecutionContext executionContext` |  |
 | **`glDrawMaterial`** | `public Material glDrawMaterial` |  |
 | **`localSelectedEntity`** | `public Entity localSelectedEntity` |  |
@@ -49,7 +49,7 @@ public void ExecuteAutoExec(ConsoleManager.AutoExecKey key)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `key` | [ConsoleManager.AutoExecKey](/api/Global.ConsoleManager) |  |
+| `key` | [`ConsoleManager.AutoExecKey`](/api/Global.ConsoleManager) |  |
 
 ### `ExecuteServerCommand(char[], Entity, Vector3, NetworkConnectionToClient)`
 
@@ -61,7 +61,7 @@ public void ExecuteServerCommand(char[] charCommand, Entity selected, Vector3 cu
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `charCommand` | `char[]` |  |
-| `selected` | [Entity](/api/Global.Entity) |  |
+| `selected` | [`Entity`](/api/Global.Entity) |  |
 | `cursorWorldPos` | `UnityEngine.Vector3` |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 

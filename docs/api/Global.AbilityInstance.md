@@ -1,5 +1,6 @@
 # Class: AbilityInstance
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [DamageInstance](/api/Global.DamageInstance) → [MeleeAttackInstance](/api/Global.MeleeAttackInstance) → [MockAbilityInstance](/api/Global.MockAbilityInstance) → [PickupInstance](/api/Global.PickupInstance) → [Projectile](/api/Global.Projectile) → [PunishmentInstance](/api/Global.PunishmentInstance) → [StatusEffect](/api/Global.StatusEffect)
@@ -13,22 +14,14 @@ public abstract class AbilityInstance : Actor, ILogicUpdate, ICleanup, ICustomDe
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`budgetCost`** | `[BoxGroup("Ability Instance Settings", true, false, 0)]
-public int budgetCost` |  |
-| **`chain`** | `[NonSerialized]
-public ReactionChain chain` | If this instance is part of reaction, you can provide ReactionChain in this variable. Available only on server. |
+| **`budgetCost`** | `[BoxGroup("Ability Instance Settings", true, false, 0)] public int budgetCost` |  |
+| **`chain`** | `[NonSerialized] public ReactionChain chain` | If this instance is part of reaction, you can provide ReactionChain in this variable. Available only on server. |
 | **`currentCostSum`** | `public static int currentCostSum` |  |
-| **`currentCostSumPerPlayer`** | `public static Dictionary&lt;DewPlayer, int&gt; currentCostSumPerPlayer` |  |
-| **`endEffect`** | `[BoxGroup("Ability Instance Settings", true, false, 0)]
-[LabelText("End Effect (Attached To Caster)")]
-public GameObject endEffect` |  |
+| **`currentCostSumPerPlayer`** | `public static Dictionary<DewPlayer, int> currentCostSumPerPlayer` |  |
+| **`endEffect`** | `[BoxGroup("Ability Instance Settings", true, false, 0)] [LabelText("End Effect (Attached To Caster)")] public GameObject endEffect` |  |
 | **`maxBudget`** | `public static int maxBudget` |  |
-| **`startEffect`** | `[BoxGroup("Ability Instance Settings", true, false, 0)]
-[LabelText("Loop Effect (Attached To Caster)")]
-public GameObject startEffect` |  |
-| **`startEffectNoStop`** | `[BoxGroup("Ability Instance Settings", true, false, 0)]
-[LabelText("Start Effect (Attached To Caster)")]
-public GameObject startEffectNoStop` |  |
+| **`startEffect`** | `[BoxGroup("Ability Instance Settings", true, false, 0)] [LabelText("Loop Effect (Attached To Caster)")] public GameObject startEffect` |  |
+| **`startEffectNoStop`** | `[BoxGroup("Ability Instance Settings", true, false, 0)] [LabelText("Start Effect (Attached To Caster)")] public GameObject startEffectNoStop` |  |
 | **`tvDefaultAllExceptSelf`** | `protected AbilityTargetValidatorWrapper tvDefaultAllExceptSelf` |  |
 | **`tvDefaultHarmfulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets` |  |
 | **`tvDefaultUsefulEffectTargets`** | `protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets` |  |
@@ -42,10 +35,8 @@ public GameObject startEffectNoStop` |  |
 | **`effectiveLevel`** | `public int effectiveLevel { get; }` |  |
 | **`gem`** | `public Gem gem { get; set; }` | If this instance is from a gem, you can access the gem from here. |
 | **`hasOngoingSequences`** | `public bool hasOngoingSequences { get; }` |  |
-| **`info`** | `[SaveVar(SaveVarFlags.Default)]
-public CastInfo info { get; set; }` |  |
-| **`skillLevel`** | `[SaveVar(SaveVarFlags.Default)]
-public int skillLevel { get; set; }` | Level of its origin skill trigger at the time this instance was cast. Defaults to -1 or that of parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.You can override level by setting this field when the instance is preparing. |
+| **`info`** | `[SaveVar(SaveVarFlags.Default)] public CastInfo info { get; set; }` |  |
+| **`skillLevel`** | `[SaveVar(SaveVarFlags.Default)] public int skillLevel { get; set; }` | Level of its origin skill trigger at the time this instance was cast. Defaults to -1 or that of parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.You can override level by setting this field when the instance is preparing. |
 | **`statEntity`** | `public Entity statEntity { get; }` |  |
 
 ## Methods
@@ -79,13 +70,13 @@ public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, f
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [DamageData.SourceType](/api/Global.DamageData) |  |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `type` | [`DamageData.SourceType`](/api/Global.DamageData) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
 
-### `CreateStatusEffect&lt;T&gt;(T, Entity, Action&lt;T&gt;)`
+### `CreateStatusEffect<T>(T, Entity, Action<T>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -97,13 +88,13 @@ public T CreateStatusEffect<T>(T prefab, Entity victim, Action<T> beforePrepare 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `prefab` | `T` |  |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateStatusEffect&lt;T&gt;(Entity, Action&lt;T&gt;)`
+### `CreateStatusEffect<T>(Entity, Action<T>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -114,8 +105,8 @@ public T CreateStatusEffect<T>(Entity victim, Action<T> beforePrepare = null) wh
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -129,7 +120,7 @@ public DamageData Damage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -143,12 +134,12 @@ public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
 
-### `DestroyOnCondition(Func&lt;bool&gt;)`
+### `DestroyOnCondition(Func<bool>)`
 
 Kill this instance when condition is met.
 
@@ -159,7 +150,7 @@ public AbilityInstance.WatchedCondition DestroyOnCondition(Func<bool> condition)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `condition` | `System.Func&lt;TResult&gt;&lt;bool&gt;` |  |
+| `condition` | `System.Func<TResult><bool>` |  |
 
 **Returns:** `AbilityInstance.WatchedCondition`
 
@@ -174,7 +165,7 @@ public void DestroyOnDeath(Entity entity, bool includeKnockOuts = false)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `includeKnockOuts` | `bool` |  |
 
 ### `DestroyOnDestroy(Actor)`
@@ -188,7 +179,7 @@ public void DestroyOnDestroy(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `GetActorReadableName()`
 
@@ -207,7 +198,7 @@ public float GetValue(ScalingValue val)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `val` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `val` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 
 **Returns:** `float`
 
@@ -220,11 +211,11 @@ public float GetValue(StarScalingValue value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [StarScalingValue](/api/Global.StarScalingValue) |  |
+| `value` | [`StarScalingValue`](/api/Global.StarScalingValue) |  |
 
 **Returns:** `float`
 
-### `GetValue&lt;T&gt;(T[])`
+### `GetValue<T>(T[])`
 
 ```csharp
 public T GetValue<T>(T[] val)
@@ -247,7 +238,7 @@ public int GetValueInt(StarScalingValue value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [StarScalingValue](/api/Global.StarScalingValue) |  |
+| `value` | [`StarScalingValue`](/api/Global.StarScalingValue) |  |
 
 **Returns:** `int`
 
@@ -260,7 +251,7 @@ public HealData Heal(ScalingValue amount)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `amount` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `amount` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 
 **Returns:** `HealData`
 
@@ -284,7 +275,7 @@ public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -334,7 +325,7 @@ public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -348,7 +339,7 @@ public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -362,7 +353,7 @@ public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `value` | [ScalingValue](/api/Global.ScalingValue) |  |
+| `value` | [`ScalingValue`](/api/Global.ScalingValue) |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
@@ -382,7 +373,7 @@ public void StartChargingChannel(ChargingChannel channel)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `channel` | [ChargingChannel](/api/Global.ChargingChannel) |  |
+| `channel` | [`ChargingChannel`](/api/Global.ChargingChannel) |  |
 
 ### `StartSequence(IEnumerator)`
 

@@ -1,5 +1,6 @@
 # Interface: IGamepadNavigationHint
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -20,7 +21,7 @@ bool TryGetDown(out IGamepadFocusable next)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `next` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 
@@ -35,7 +36,7 @@ bool TryGetLeft(out IGamepadFocusable next)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `next` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 
@@ -50,7 +51,7 @@ bool TryGetRight(out IGamepadFocusable next)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `next` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 
@@ -65,6 +66,6 @@ bool TryGetUp(out IGamepadFocusable next)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `next` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`

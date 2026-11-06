@@ -1,5 +1,6 @@
 # Class: InGameUIManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [UIManager](/api/Global.UIManager) → [UIManager](/api/Global.UIManager)
@@ -18,14 +19,12 @@ public class InGameUIManager : UIManager, ILogicUpdate
 | **`cmsgStartPivot`** | `public Transform cmsgStartPivot` |  |
 | **`currentMockExit`** | `public Rift_MockExit currentMockExit` |  |
 | **`disableOnEndingObjects`** | `public GameObject[] disableOnEndingObjects` |  |
-| **`fullWorldMapNodeItems`** | `[NonSerialized]
-public List&lt;RectTransform&gt; fullWorldMapNodeItems` |  |
-| **`miniWorldMapNodeItems`** | `[NonSerialized]
-public List&lt;RectTransform&gt; miniWorldMapNodeItems` |  |
-| **`onHasWorldNodePingChanged`** | `public Action&lt;bool&gt; onHasWorldNodePingChanged` |  |
-| **`onScoreboardDisplayedChanged`** | `public Action&lt;bool&gt; onScoreboardDisplayedChanged` |  |
-| **`onShowWorldMessage`** | `public Action&lt;WorldMessageSetting&gt; onShowWorldMessage` |  |
-| **`onWorldDisplayedChanged`** | `public Action&lt;WorldDisplayStatus&gt; onWorldDisplayedChanged` |  |
+| **`fullWorldMapNodeItems`** | `[NonSerialized] public List<RectTransform> fullWorldMapNodeItems` |  |
+| **`miniWorldMapNodeItems`** | `[NonSerialized] public List<RectTransform> miniWorldMapNodeItems` |  |
+| **`onHasWorldNodePingChanged`** | `public Action<bool> onHasWorldNodePingChanged` |  |
+| **`onScoreboardDisplayedChanged`** | `public Action<bool> onScoreboardDisplayedChanged` |  |
+| **`onShowWorldMessage`** | `public Action<WorldMessageSetting> onShowWorldMessage` |  |
+| **`onWorldDisplayedChanged`** | `public Action<WorldDisplayStatus> onWorldDisplayedChanged` |  |
 | **`whiteFadeCg`** | `public CanvasGroup whiteFadeCg` |  |
 
 ## Properties
@@ -147,7 +146,7 @@ public void ShowCenterMessage(CenterMessageType type, string key, object[] forma
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [CenterMessageType](/api/Global.CenterMessageType) |  |
+| `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
 | `key` | `string` |  |
 | `formatArgs` | `object[]` |  |
 
@@ -160,7 +159,7 @@ public void ShowCenterMessageRaw(CenterMessageType type, string raw)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [CenterMessageType](/api/Global.CenterMessageType) |  |
+| `type` | [`CenterMessageType`](/api/Global.CenterMessageType) |  |
 | `raw` | `string` |  |
 
 ### `ShowWorldPopMessage(WorldMessageSetting)`
@@ -172,7 +171,7 @@ public void ShowWorldPopMessage(WorldMessageSetting message)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `message` | [WorldMessageSetting](/api/Global.WorldMessageSetting) |  |
+| `message` | [`WorldMessageSetting`](/api/Global.WorldMessageSetting) |  |
 
 ### `ValidateInGameActionMessage(bool)`
 

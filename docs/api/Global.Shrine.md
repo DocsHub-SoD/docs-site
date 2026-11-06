@@ -1,5 +1,6 @@
 # Class: Shrine
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [ChoiceShrine](/api/Global.ChoiceShrine) → [EditSkillShrine](/api/Global.EditSkillShrine)
@@ -12,40 +13,22 @@ public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRout
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`availableEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject availableEffect` |  |
-| **`baseGoldCost`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public int baseGoldCost` |  |
-| **`ClientEvent_OnSuccessfulUse`** | `public SafeAction&lt;Entity&gt; ClientEvent_OnSuccessfulUse` | Called everywhere after an entity uses this shrine successfully. |
-| **`interactableDelay`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public float interactableDelay` |  |
-| **`lockedEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject lockedEffect` |  |
-| **`mapVisibility`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public MapItemVisibility mapVisibility` |  |
-| **`maxTotalUseCount`** | `[SaveVar(SaveVarFlags.Default)]
-[FormerlySerializedAs("maxUseCount")]
-[BoxGroup("Shrine Settings", true, false, 0)]
-public int maxTotalUseCount` |  |
-| **`maxUseCountPerPlayer`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public int maxUseCountPerPlayer` |  |
-| **`model`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject model` |  |
-| **`unavailableByDefault`** | `[ToggleLeft]
-[BoxGroup("Shrine Settings", true, false, 0)]
-public bool unavailableByDefault` |  |
-| **`unavailableEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject unavailableEffect` |  |
-| **`unlockEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject unlockEffect` |  |
-| **`useCooldown`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public float useCooldown` |  |
-| **`useEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject useEffect` |  |
-| **`useEffectLocal`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject useEffectLocal` |  |
-| **`useLockedEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)]
-public GameObject useLockedEffect` |  |
+| **`availableEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject availableEffect` |  |
+| **`baseGoldCost`** | `[BoxGroup("Shrine Settings", true, false, 0)] public int baseGoldCost` |  |
+| **`ClientEvent_OnSuccessfulUse`** | `public SafeAction<Entity> ClientEvent_OnSuccessfulUse` | Called everywhere after an entity uses this shrine successfully. |
+| **`interactableDelay`** | `[BoxGroup("Shrine Settings", true, false, 0)] public float interactableDelay` |  |
+| **`lockedEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject lockedEffect` |  |
+| **`mapVisibility`** | `[BoxGroup("Shrine Settings", true, false, 0)] public MapItemVisibility mapVisibility` |  |
+| **`maxTotalUseCount`** | `[SaveVar(SaveVarFlags.Default)] [FormerlySerializedAs("maxUseCount")] [BoxGroup("Shrine Settings", true, false, 0)] public int maxTotalUseCount` |  |
+| **`maxUseCountPerPlayer`** | `[BoxGroup("Shrine Settings", true, false, 0)] public int maxUseCountPerPlayer` |  |
+| **`model`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject model` |  |
+| **`unavailableByDefault`** | `[ToggleLeft] [BoxGroup("Shrine Settings", true, false, 0)] public bool unavailableByDefault` |  |
+| **`unavailableEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject unavailableEffect` |  |
+| **`unlockEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject unlockEffect` |  |
+| **`useCooldown`** | `[BoxGroup("Shrine Settings", true, false, 0)] public float useCooldown` |  |
+| **`useEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject useEffect` |  |
+| **`useEffectLocal`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject useEffectLocal` |  |
+| **`useLockedEffect`** | `[BoxGroup("Shrine Settings", true, false, 0)] public GameObject useLockedEffect` |  |
 
 ## Properties
 
@@ -54,15 +37,12 @@ public GameObject useLockedEffect` |  |
 | **`canInteractWithMouse`** | `public virtual bool canInteractWithMouse { get; }` |  |
 | **`focusDistance`** | `public float focusDistance { get; }` |  |
 | **`interactPivot`** | `public virtual Transform interactPivot { get; }` |  |
-| **`isAvailable`** | `[SaveVar(SaveVarFlags.Default)]
-public bool isAvailable { get; set; }` |  |
-| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)]
-public bool isLocked { get; set; }` |  |
+| **`isAvailable`** | `[SaveVar(SaveVarFlags.Default)] public bool isAvailable { get; set; }` |  |
+| **`isLocked`** | `[SaveVar(SaveVarFlags.Default)] public bool isLocked { get; set; }` |  |
 | **`isOnCooldown`** | `public bool isOnCooldown { get; }` |  |
 | **`isRegularReward`** | `public virtual bool isRegularReward { get; }` |  |
 | **`scaleSpawnRateWithPlayers`** | `public bool scaleSpawnRateWithPlayers { get; }` |  |
-| **`totalUseCount`** | `[SaveVar(SaveVarFlags.Default)]
-public int totalUseCount { get; set; }` |  |
+| **`totalUseCount`** | `[SaveVar(SaveVarFlags.Default)] public int totalUseCount { get; set; }` |  |
 
 ## Methods
 
@@ -77,7 +57,7 @@ public AffordType CanAfford(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `AffordType`
 
@@ -90,7 +70,7 @@ public virtual bool CanInteract(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -105,7 +85,7 @@ public void DoPostUseRoutines(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 ### `GetClosestPointOnShrine(Vector3)`
 
@@ -131,7 +111,7 @@ public virtual Cost? GetCost(Entity activator)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `activator` | [Entity](/api/Global.Entity) |  |
+| `activator` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `Cost?`
 
@@ -157,7 +137,7 @@ public int GetUseCountByPlayer(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `int`
 
@@ -200,7 +180,7 @@ public virtual void OnInteract(Entity entity, bool alt)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |
 
 ### `OnUse(Entity)`
@@ -214,7 +194,7 @@ protected abstract bool OnUse(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 

@@ -1,5 +1,6 @@
 # Class: FxGibs
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [FxInterpolatedEffectBase](/api/Global.FxInterpolatedEffectBase)
@@ -13,8 +14,7 @@ public class FxGibs : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpe
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`angularSpeed`** | `public float angularSpeed` |  |
-| **`info`** | `[HideInInspector]
-public GibInfo? info` |  |
+| **`info`** | `[HideInInspector] public GibInfo? info` |  |
 | **`maxImpulse`** | `public float maxImpulse` |  |
 | **`minImpulse`** | `public float minImpulse` |  |
 | **`randomImpulse`** | `public float randomImpulse` |  |

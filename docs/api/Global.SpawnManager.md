@@ -1,5 +1,6 @@
 # Class: SpawnManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [SpawnManager](/api/Global.SpawnManager)
@@ -12,12 +13,10 @@ public class SpawnManager : ManagerBase<SpawnManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activeInstanceToPool`** | `public Dictionary&lt;GameObject, ObjectPoolItem&gt; activeInstanceToPool` |  |
-| **`pool`** | `public Dictionary&lt;GameObject, ObjectPoolItem&gt; pool` |  |
-| **`showPoolInfo`** | `[NonSerialized]
-public bool showPoolInfo` |  |
-| **`usePooling`** | `[NonSerialized]
-public bool usePooling` |  |
+| **`activeInstanceToPool`** | `public Dictionary<GameObject, ObjectPoolItem> activeInstanceToPool` |  |
+| **`pool`** | `public Dictionary<GameObject, ObjectPoolItem> pool` |  |
+| **`showPoolInfo`** | `[NonSerialized] public bool showPoolInfo` |  |
+| **`usePooling`** | `[NonSerialized] public bool usePooling` |  |
 
 ## Methods
 
@@ -27,7 +26,7 @@ public bool usePooling` |  |
 protected override void Awake()
 ```
 
-### `Create&lt;T&gt;(T, Vector3, Quaternion, Transform)`
+### `Create<T>(T, Vector3, Quaternion, Transform)`
 
 ```csharp
 public static T Create<T>(T prefab, Vector3 position, Quaternion rotation, Transform parent) where T : Object
@@ -44,7 +43,7 @@ public static T Create<T>(T prefab, Vector3 position, Quaternion rotation, Trans
 
 **Returns:** `T`
 
-### `Create&lt;T&gt;(T, Vector3, Quaternion)`
+### `Create<T>(T, Vector3, Quaternion)`
 
 ```csharp
 public static T Create<T>(T prefab, Vector3 position, Quaternion rotation) where T : Object

@@ -1,5 +1,6 @@
 # Class: LastGamePlayReward
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,9 +13,9 @@ public class LastGamePlayReward
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`completedLimboDepth`** | `public int completedLimboDepth` |  |
-| **`discoveredGems`** | `public List&lt;Type&gt; discoveredGems` |  |
-| **`discoveredSkills`** | `public List&lt;Type&gt; discoveredSkills` |  |
+| **`discoveredGems`** | `public List<Type> discoveredGems` |  |
+| **`discoveredSkills`** | `public List<Type> discoveredSkills` |  |
 | **`heroMasteryPoints`** | `public long heroMasteryPoints` |  |
 | **`heroType`** | `public string heroType` |  |
-| **`unlockedAchievements`** | `public List&lt;Type&gt; unlockedAchievements` |  |
-| **`unlockedArtifacts`** | `public List&lt;string&gt; unlockedArtifacts` |  |
+| **`unlockedAchievements`** | `public List<Type> unlockedAchievements` |  |
+| **`unlockedArtifacts`** | `public List<string> unlockedArtifacts` |  |

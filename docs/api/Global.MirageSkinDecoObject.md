@@ -1,5 +1,6 @@
 # Class: MirageSkinDecoObject
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,4 +12,4 @@ public class MirageSkinDecoObject : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`targetEffect`** | `public AssetRef&lt;MirageSkinEffect&gt; targetEffect` |  |
+| **`targetEffect`** | `public AssetRef<MirageSkinEffect> targetEffect` |  |

@@ -1,5 +1,6 @@
 # Class: RoomMap
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
@@ -13,8 +14,7 @@ public class RoomMap : RoomComponent, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`density`** | `public float density` |  |
-| **`mapData`** | `[HideInInspector]
-public MapData mapData` |  |
+| **`mapData`** | `[HideInInspector] public MapData mapData` |  |
 | **`mapTexture`** | `public Texture2D mapTexture` |  |
 
 ## Properties

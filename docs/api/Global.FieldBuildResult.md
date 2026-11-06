@@ -1,5 +1,6 @@
 # Class: FieldBuildResult
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class FieldBuildResult
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`getValue`** | `public Func&lt;object&gt; getValue` |  |
-| **`onChanged`** | `public SafeAction&lt;object&gt; onChanged` | Notification sent from created field widgets when a change is done on UI-side. |
+| **`getValue`** | `public Func<object> getValue` |  |
+| **`onChanged`** | `public SafeAction<object> onChanged` | Notification sent from created field widgets when a change is done on UI-side. |
 | **`root`** | `public GameObject root` |  |
-| **`setValue`** | `public Action&lt;object&gt; setValue` |  |
+| **`setValue`** | `public Action<object> setValue` |  |

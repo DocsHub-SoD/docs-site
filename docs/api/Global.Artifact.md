@@ -1,5 +1,6 @@
 # Class: Artifact
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor)
@@ -14,8 +15,7 @@ public class Artifact : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, II
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`icon`** | `public Sprite icon` |  |
-| **`mainColor`** | `[ColorUsage(false)]
-public Color mainColor` |  |
+| **`mainColor`** | `[ColorUsage(false)] public Color mainColor` |  |
 | **`touchSound`** | `public DewAudioClip touchSound` |  |
 
 ## Properties
@@ -45,7 +45,7 @@ public bool CanInteract(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -70,5 +70,5 @@ public void OnInteract(Entity entity, bool alt)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `alt` | `bool` |  |

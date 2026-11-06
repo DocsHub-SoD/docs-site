@@ -1,5 +1,6 @@
 # Class: BoxTelegraphController
 
+- **Category:** <span class="cat-dot" style="--cat-color: #a855f7" data-cat="Buffs & Statuses"></span> Buffs & Statuses
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,23 +13,15 @@ public class BoxTelegraphController : MonoBehaviour, IEffectComponent, IEffectWi
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`animateX`** | `public BoxTelegraphAnimType animateX` |  |
-| **`animateXEase`** | `[HideLabel]
-[ShowIf("@animateX != BoxTelegraphAnimType.None", true)]
-public DewEase animateXEase` |  |
+| **`animateXEase`** | `[HideLabel] [ShowIf("@animateX != BoxTelegraphAnimType.None", true)] public DewEase animateXEase` |  |
 | **`animateY`** | `public BoxTelegraphAnimType animateY` |  |
-| **`animateYEase`** | `[HideLabel]
-[ShowIf("@animateY != BoxTelegraphAnimType.None", true)]
-public DewEase animateYEase` |  |
+| **`animateYEase`** | `[HideLabel] [ShowIf("@animateY != BoxTelegraphAnimType.None", true)] public DewEase animateYEase` |  |
 | **`duration`** | `public float duration` |  |
 | **`height`** | `public float height` |  |
-| **`inners`** | `[FoldoutGroup("References", 0)]
-public SpriteRenderer[] inners` |  |
-| **`outers`** | `[FoldoutGroup("References", 0)]
-public SpriteRenderer[] outers` |  |
-| **`reds`** | `[FoldoutGroup("References", 0)]
-public SpriteRenderer[] reds` |  |
-| **`whites`** | `[FoldoutGroup("References", 0)]
-public SpriteRenderer[] whites` |  |
+| **`inners`** | `[FoldoutGroup("References", 0)] public SpriteRenderer[] inners` |  |
+| **`outers`** | `[FoldoutGroup("References", 0)] public SpriteRenderer[] outers` |  |
+| **`reds`** | `[FoldoutGroup("References", 0)] public SpriteRenderer[] reds` |  |
+| **`whites`** | `[FoldoutGroup("References", 0)] public SpriteRenderer[] whites` |  |
 | **`width`** | `public float width` |  |
 
 ## Properties

@@ -1,5 +1,6 @@
 # Class: GameSettingsManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [GameSettingsManager](/api/Global.GameSettingsManager)
@@ -12,52 +13,36 @@ public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, IL
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activeLucidDreams`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;string&gt; activeLucidDreams` |  |
-| **`addedGameMods`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;string&gt; addedGameMods` | This should not be changed after starting the server. |
-| **`availableLucidDreams`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;string&gt; availableLucidDreams` |  |
-| **`bannedGameItems`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;string&gt; bannedGameItems` |  |
+| **`activeLucidDreams`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> activeLucidDreams` |  |
+| **`addedGameMods`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> addedGameMods` | This should not be changed after starting the server. |
+| **`availableLucidDreams`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> availableLucidDreams` |  |
+| **`bannedGameItems`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> bannedGameItems` |  |
 | **`ClientEvent_OnActiveLucidDreamsChanged`** | `public SafeAction ClientEvent_OnActiveLucidDreamsChanged` |  |
 | **`ClientEvent_OnAvailableLucidDreamsChanged`** | `public SafeAction ClientEvent_OnAvailableLucidDreamsChanged` |  |
 | **`ClientEvent_OnBannedItemsChanged`** | `public SafeAction ClientEvent_OnBannedItemsChanged` |  |
-| **`ClientEvent_OnCustomDataChanged`** | `public SafeAction&lt;string&gt; ClientEvent_OnCustomDataChanged` |  |
-| **`ClientEvent_OnDifficultyChanged`** | `public SafeAction&lt;string, string&gt; ClientEvent_OnDifficultyChanged` |  |
+| **`ClientEvent_OnCustomDataChanged`** | `public SafeAction<string> ClientEvent_OnCustomDataChanged` |  |
+| **`ClientEvent_OnDifficultyChanged`** | `public SafeAction<string, string> ClientEvent_OnDifficultyChanged` |  |
 | **`ClientEvent_OnLobbyTagsChanged`** | `public SafeAction ClientEvent_OnLobbyTagsChanged` |  |
 | **`ClientEvent_OnStateChanged`** | `public SafeAction ClientEvent_OnStateChanged` |  |
 | **`ClientEvent_OnUnlockedGameItemsChanged`** | `public SafeAction ClientEvent_OnUnlockedGameItemsChanged` |  |
-| **`customData`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncDictionary&lt;string, string&gt; customData` |  |
-| **`lobbyTags`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;string&gt; lobbyTags` |  |
+| **`customData`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, string> customData` |  |
+| **`lobbyTags`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> lobbyTags` |  |
 | **`localPlayerDejavuCost`** | `public int localPlayerDejavuCost` |  |
-| **`unlockedGameItems`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncList&lt;string&gt; unlockedGameItems` |  |
+| **`unlockedGameItems`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncList<string> unlockedGameItems` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`allowDejavu`** | `[SaveVar(SaveVarFlags.Default)]
-public bool allowDejavu { get; set; }` |  |
-| **`allowMidJoins`** | `[SaveVar(SaveVarFlags.Default)]
-public AllowMidJoinType allowMidJoins { get; set; }` |  |
-| **`difficulty`** | `[SaveVar(SaveVarFlags.Default)]
-public string difficulty { get; set; }` |  |
-| **`enableVotes`** | `[SaveVar(SaveVarFlags.Default)]
-public bool enableVotes { get; set; }` |  |
-| **`gameSettingsSaveKey`** | `[SaveVar(SaveVarFlags.Default)]
-public string gameSettingsSaveKey { get; set; }` |  |
-| **`lobbyDescription`** | `[SaveVar(SaveVarFlags.Default)]
-public string lobbyDescription { get; set; }` |  |
-| **`lobbyName`** | `[SaveVar(SaveVarFlags.Default)]
-public string lobbyName { get; set; }` |  |
-| **`maxPlayers`** | `[SaveVar(SaveVarFlags.Default)]
-public int maxPlayers { get; set; }` |  |
-| **`midJoinBanType`** | `[SaveVar(SaveVarFlags.Default)]
-public MidJoinBanType midJoinBanType { get; set; }` | This is irreversible by design. |
+| **`allowDejavu`** | `[SaveVar(SaveVarFlags.Default)] public bool allowDejavu { get; set; }` |  |
+| **`allowMidJoins`** | `[SaveVar(SaveVarFlags.Default)] public AllowMidJoinType allowMidJoins { get; set; }` |  |
+| **`difficulty`** | `[SaveVar(SaveVarFlags.Default)] public string difficulty { get; set; }` |  |
+| **`enableVotes`** | `[SaveVar(SaveVarFlags.Default)] public bool enableVotes { get; set; }` |  |
+| **`gameSettingsSaveKey`** | `[SaveVar(SaveVarFlags.Default)] public string gameSettingsSaveKey { get; set; }` |  |
+| **`lobbyDescription`** | `[SaveVar(SaveVarFlags.Default)] public string lobbyDescription { get; set; }` |  |
+| **`lobbyName`** | `[SaveVar(SaveVarFlags.Default)] public string lobbyName { get; set; }` |  |
+| **`maxPlayers`** | `[SaveVar(SaveVarFlags.Default)] public int maxPlayers { get; set; }` |  |
+| **`midJoinBanType`** | `[SaveVar(SaveVarFlags.Default)] public MidJoinBanType midJoinBanType { get; set; }` | This is irreversible by design. |
 | **`midJoinWaitType`** | `public MidJoinWaitType midJoinWaitType { get; set; }` | This should be set and unset accordingly mid-run. |
 | **`state`** | `public GameState state { get; set; }` |  |
 

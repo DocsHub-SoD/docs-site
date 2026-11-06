@@ -1,5 +1,6 @@
 # Class: UI_GamepadTextInput
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** `SingletonBehaviour` → [UI_GamepadTextInput](/api/Global.UI_GamepadTextInput)
@@ -12,8 +13,7 @@ public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`azertyLayout`** | `[Multiline]
-public string azertyLayout` |  |
+| **`azertyLayout`** | `[Multiline] public string azertyLayout` |  |
 | **`azertyShiftAlpha`** | `public string azertyShiftAlpha` |  |
 | **`backspacePrefab`** | `public UI_GamepadTextInput_Key backspacePrefab` |  |
 | **`cancelButton`** | `public Button cancelButton` |  |
@@ -22,8 +22,7 @@ public string azertyLayout` |  |
 | **`inputField`** | `public TMP_InputField inputField` |  |
 | **`leftShiftPrefab`** | `public UI_GamepadTextInput_Key leftShiftPrefab` |  |
 | **`onIsShiftPressedChanged`** | `public Action onIsShiftPressedChanged` |  |
-| **`qwertyLayout`** | `[Multiline]
-public string qwertyLayout` |  |
+| **`qwertyLayout`** | `[Multiline] public string qwertyLayout` |  |
 | **`qwertyShiftAlpha`** | `public string qwertyShiftAlpha` |  |
 | **`regularKeyPrefab`** | `public UI_GamepadTextInput_Key regularKeyPrefab` |  |
 | **`rightShiftPrefab`** | `public UI_GamepadTextInput_Key rightShiftPrefab` |  |
@@ -108,7 +107,7 @@ public void SetShift(bool value)
 | :--- | :--- | :--- |
 | `value` | `bool` |  |
 
-### `StartInput(string, string, bool, bool, int, Action&lt;string&gt;, Action)`
+### `StartInput(string, string, bool, bool, int, Action<string>, Action)`
 
 ```csharp
 public void StartInput(string previousText, string placeholderText, bool isMultiline, bool isPassword, int maxCharacters, Action<string> onConfirm, Action onCancel)
@@ -122,10 +121,10 @@ public void StartInput(string previousText, string placeholderText, bool isMulti
 | `isMultiline` | `bool` |  |
 | `isPassword` | `bool` |  |
 | `maxCharacters` | `int` |  |
-| `onConfirm` | `System.Action&lt;T&gt;&lt;string&gt;` |  |
+| `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |
 
-### `StartInput(TMP_InputField, Action&lt;string&gt;, Action)`
+### `StartInput(TMP_InputField, Action<string>, Action)`
 
 ```csharp
 public void StartInput(TMP_InputField target, Action<string> onConfirm = null, Action onCancel = null)
@@ -135,7 +134,7 @@ public void StartInput(TMP_InputField target, Action<string> onConfirm = null, A
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `target` | `TMPro.TMP_InputField` |  |
-| `onConfirm` | `System.Action&lt;T&gt;&lt;string&gt;` |  |
+| `onConfirm` | `System.Action<T><string>` |  |
 | `onCancel` | `System.Action` |  |
 
 ### `ToggleShift()`

@@ -1,5 +1,6 @@
 # Class: Entity
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Hero](/api/Global.Hero) → [MockEntity](/api/Global.MockEntity) → [Monster](/api/Global.Monster) → [PropEntity](/api/Global.PropEntity) → [Summon](/api/Global.Summon)
@@ -20,30 +21,30 @@ public class Entity : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ClientEntityEvent_OnIsSleepingChanged`** | `public SafeAction&lt;bool&gt; ClientEntityEvent_OnIsSleepingChanged` |  |
-| **`ClientEntityEvent_OnStatusEffectAdded`** | `public SafeAction&lt;EventInfoStatusEffect&gt; ClientEntityEvent_OnStatusEffectAdded` |  |
-| **`ClientEntityEvent_OnStatusEffectRemoved`** | `public SafeAction&lt;EventInfoStatusEffect&gt; ClientEntityEvent_OnStatusEffectRemoved` |  |
-| **`EntityEvent_OnAttackDodged`** | `public SafeAction&lt;EventInfoAttackMissed&gt; EntityEvent_OnAttackDodged` |  |
-| **`EntityEvent_OnAttackEffectTriggered`** | `public SafeAction&lt;EventInfoAttackEffect&gt; EntityEvent_OnAttackEffectTriggered` |  |
-| **`EntityEvent_OnAttackFired`** | `public SafeAction&lt;EventInfoAttackFired&gt; EntityEvent_OnAttackFired` |  |
-| **`EntityEvent_OnAttackFiredBeforePrepare`** | `public SafeAction&lt;EventInfoAttackFired&gt; EntityEvent_OnAttackFiredBeforePrepare` |  |
-| **`EntityEvent_OnAttackHit`** | `public SafeAction&lt;EventInfoAttackHit&gt; EntityEvent_OnAttackHit` |  |
-| **`EntityEvent_OnAttackMissed`** | `public SafeAction&lt;EventInfoAttackMissed&gt; EntityEvent_OnAttackMissed` |  |
-| **`EntityEvent_OnAttackTaken`** | `public SafeAction&lt;EventInfoAttackHit&gt; EntityEvent_OnAttackTaken` |  |
-| **`EntityEvent_OnCastComplete`** | `public SafeAction&lt;EventInfoCast&gt; EntityEvent_OnCastComplete` |  |
-| **`EntityEvent_OnCastCompleteBeforePrepare`** | `public SafeAction&lt;EventInfoCast&gt; EntityEvent_OnCastCompleteBeforePrepare` |  |
-| **`EntityEvent_OnDamageNegatedByImmunity`** | `public SafeAction&lt;EventInfoDamageNegatedByImmunity&gt; EntityEvent_OnDamageNegatedByImmunity` |  |
-| **`EntityEvent_OnDamageNegatedByShield`** | `public SafeAction&lt;EventInfoDamageNegatedByShield&gt; EntityEvent_OnDamageNegatedByShield` |  |
-| **`EntityEvent_OnDeath`** | `public SafeAction&lt;EventInfoKill&gt; EntityEvent_OnDeath` |  |
-| **`EntityEvent_OnGetManaSpent`** | `public SafeAction&lt;EventInfoSpentMana&gt; EntityEvent_OnGetManaSpent` |  |
-| **`EntityEvent_OnTakeDamage`** | `public SafeAction&lt;EventInfoDamage&gt; EntityEvent_OnTakeDamage` |  |
-| **`EntityEvent_OnTakeHeal`** | `public SafeAction&lt;EventInfoHeal&gt; EntityEvent_OnTakeHeal` |  |
-| **`EntityEvent_OnTakeManaHeal`** | `public SafeAction&lt;EventInfoHeal&gt; EntityEvent_OnTakeManaHeal` |  |
-| **`EntityEvent_OnTakeShield`** | `public SafeAction&lt;EventInfoShield&gt; EntityEvent_OnTakeShield` |  |
-| **`takenDamageProcessor`** | `public DataProcessorGroup&lt;DamageData, Actor, Entity&gt; takenDamageProcessor` | Processor for all received damages (Except pure damage). This is only valid on server. |
-| **`takenHealProcessor`** | `public DataProcessorGroup&lt;HealData, Actor, Entity&gt; takenHealProcessor` | Processor for received heals. This is only valid on server. |
-| **`takenManaHealProcessor`** | `public DataProcessorGroup&lt;HealData, Actor, Entity&gt; takenManaHealProcessor` | Processor for received mana heals. This is only valid on server. |
-| **`takenShieldProcessor`** | `public DataProcessorGroup&lt;HealData, Actor, Entity&gt; takenShieldProcessor` | Processor for received shields. This is only valid on server. |
+| **`ClientEntityEvent_OnIsSleepingChanged`** | `public SafeAction<bool> ClientEntityEvent_OnIsSleepingChanged` |  |
+| **`ClientEntityEvent_OnStatusEffectAdded`** | `public SafeAction<EventInfoStatusEffect> ClientEntityEvent_OnStatusEffectAdded` |  |
+| **`ClientEntityEvent_OnStatusEffectRemoved`** | `public SafeAction<EventInfoStatusEffect> ClientEntityEvent_OnStatusEffectRemoved` |  |
+| **`EntityEvent_OnAttackDodged`** | `public SafeAction<EventInfoAttackMissed> EntityEvent_OnAttackDodged` |  |
+| **`EntityEvent_OnAttackEffectTriggered`** | `public SafeAction<EventInfoAttackEffect> EntityEvent_OnAttackEffectTriggered` |  |
+| **`EntityEvent_OnAttackFired`** | `public SafeAction<EventInfoAttackFired> EntityEvent_OnAttackFired` |  |
+| **`EntityEvent_OnAttackFiredBeforePrepare`** | `public SafeAction<EventInfoAttackFired> EntityEvent_OnAttackFiredBeforePrepare` |  |
+| **`EntityEvent_OnAttackHit`** | `public SafeAction<EventInfoAttackHit> EntityEvent_OnAttackHit` |  |
+| **`EntityEvent_OnAttackMissed`** | `public SafeAction<EventInfoAttackMissed> EntityEvent_OnAttackMissed` |  |
+| **`EntityEvent_OnAttackTaken`** | `public SafeAction<EventInfoAttackHit> EntityEvent_OnAttackTaken` |  |
+| **`EntityEvent_OnCastComplete`** | `public SafeAction<EventInfoCast> EntityEvent_OnCastComplete` |  |
+| **`EntityEvent_OnCastCompleteBeforePrepare`** | `public SafeAction<EventInfoCast> EntityEvent_OnCastCompleteBeforePrepare` |  |
+| **`EntityEvent_OnDamageNegatedByImmunity`** | `public SafeAction<EventInfoDamageNegatedByImmunity> EntityEvent_OnDamageNegatedByImmunity` |  |
+| **`EntityEvent_OnDamageNegatedByShield`** | `public SafeAction<EventInfoDamageNegatedByShield> EntityEvent_OnDamageNegatedByShield` |  |
+| **`EntityEvent_OnDeath`** | `public SafeAction<EventInfoKill> EntityEvent_OnDeath` |  |
+| **`EntityEvent_OnGetManaSpent`** | `public SafeAction<EventInfoSpentMana> EntityEvent_OnGetManaSpent` |  |
+| **`EntityEvent_OnTakeDamage`** | `public SafeAction<EventInfoDamage> EntityEvent_OnTakeDamage` |  |
+| **`EntityEvent_OnTakeHeal`** | `public SafeAction<EventInfoHeal> EntityEvent_OnTakeHeal` |  |
+| **`EntityEvent_OnTakeManaHeal`** | `public SafeAction<EventInfoHeal> EntityEvent_OnTakeManaHeal` |  |
+| **`EntityEvent_OnTakeShield`** | `public SafeAction<EventInfoShield> EntityEvent_OnTakeShield` |  |
+| **`takenDamageProcessor`** | `public DataProcessorGroup<DamageData, Actor, Entity> takenDamageProcessor` | Processor for all received damages (Except pure damage). This is only valid on server. |
+| **`takenHealProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> takenHealProcessor` | Processor for received heals. This is only valid on server. |
+| **`takenManaHealProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> takenManaHealProcessor` | Processor for received mana heals. This is only valid on server. |
+| **`takenShieldProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> takenShieldProcessor` | Processor for received shields. This is only valid on server. |
 
 ## Properties
 
@@ -66,8 +67,7 @@ public class Entity : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 | **`maxMana`** | `public float maxMana { get; }` |  |
 | **`normalizedHealth`** | `public float normalizedHealth { get; }` |  |
 | **`normalizedMana`** | `public float normalizedMana { get; }` |  |
-| **`owner`** | `[SaveVar(SaveVarFlags.Default)]
-public DewPlayer owner { get; set; }` |  |
+| **`owner`** | `[SaveVar(SaveVarFlags.Default)] public DewPlayer owner { get; set; }` |  |
 | **`section`** | `public RoomSection section { get; }` | Section that this entity resides in. Available on server.Can be null. |
 | **`Sound`** | `public EntitySound Sound { get; }` |  |
 | **`Status`** | `public EntityStatus Status { get; }` |  |
@@ -97,7 +97,7 @@ protected virtual void AIUpdate(ref EntityAIContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [EntityAIContext](/api/Global.EntityAIContext) |  |
+| `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
 ### `Awake()`
 
@@ -114,7 +114,7 @@ public virtual bool CanAggroTo(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -127,7 +127,7 @@ public bool CheckEnemyOrNeutral(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -156,7 +156,7 @@ public EntityRelation GetRelation(Entity other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [Entity](/api/Global.Entity) |  |
+| `other` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `EntityRelation`
 
@@ -177,7 +177,7 @@ public TeamRelation GetTeamRelation(DewPlayer other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `other` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `TeamRelation`
 
@@ -214,7 +214,7 @@ protected virtual void OnDeath(EventInfoKill info)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [EventInfoKill](/api/Global.EventInfoKill) |  |
+| `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
 ### `OnDestroyActor()`
 
@@ -263,8 +263,8 @@ public void ProcessReceivedDamage(ref DamageData data, Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [DamageData](/api/Global.DamageData) |  |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `data` | [`DamageData`](/api/Global.DamageData) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `ProcessReceivedHeal(ref HealData, Actor)`
 
@@ -277,8 +277,8 @@ public void ProcessReceivedHeal(ref HealData data, Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [HealData](/api/Global.HealData) |  |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `data` | [`HealData`](/api/Global.HealData) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `ProcessReceivedManaHeal(ref HealData, Actor)`
 
@@ -291,8 +291,8 @@ public void ProcessReceivedManaHeal(ref HealData data, Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [HealData](/api/Global.HealData) |  |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `data` | [`HealData`](/api/Global.HealData) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `ProcessReceivedShield(ref HealData, Actor)`
 
@@ -303,8 +303,8 @@ public void ProcessReceivedShield(ref HealData data, Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [HealData](/api/Global.HealData) |  |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `data` | [`HealData`](/api/Global.HealData) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `ShouldBeSavedWithRoom()`
 

@@ -1,5 +1,6 @@
 # Class: EntityAbility
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -13,17 +14,17 @@ public class EntityAbility : EntityComponent, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`abilityPreset`** | `public AssetRef&lt;AbilityTrigger&gt;[] abilityPreset` |  |
+| **`abilityPreset`** | `public AssetRef<AbilityTrigger>[] abilityPreset` |  |
 | **`AttackAbilityIndex`** | `public const int AttackAbilityIndex = 63` |  |
-| **`attackAbilityPreset`** | `public AssetRef&lt;AttackTrigger&gt; attackAbilityPreset` |  |
-| **`ClientEvent_OnAbilityAdded`** | `public SafeAction&lt;int, AbilityTrigger&gt; ClientEvent_OnAbilityAdded` |  |
-| **`ClientEvent_OnAbilityRemoved`** | `public SafeAction&lt;int, AbilityTrigger&gt; ClientEvent_OnAbilityRemoved` |  |
+| **`attackAbilityPreset`** | `public AssetRef<AttackTrigger> attackAbilityPreset` |  |
+| **`ClientEvent_OnAbilityAdded`** | `public SafeAction<int, AbilityTrigger> ClientEvent_OnAbilityAdded` |  |
+| **`ClientEvent_OnAbilityRemoved`** | `public SafeAction<int, AbilityTrigger> ClientEvent_OnAbilityRemoved` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`abilities`** | `public IReadOnlyDictionary&lt;int, AbilityTrigger&gt; abilities { get; }` |  |
+| **`abilities`** | `public IReadOnlyDictionary<int, AbilityTrigger> abilities { get; }` |  |
 | **`attackAbility`** | `public AbilityTrigger attackAbility { get; }` |  |
 | **`originalAttackAbility`** | `public AttackTrigger originalAttackAbility { get; }` |  |
 | **`overridenAttackAbility`** | `public AbilityTrigger overridenAttackAbility { get; }` |  |
@@ -41,9 +42,9 @@ public void AddAbility(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
-### `AddAbility&lt;T&gt;()`
+### `AddAbility<T>()`
 
 Add an ability to this entity. It will be equipped on empty index between 0 and 127.
 
@@ -64,7 +65,7 @@ public T AddAbility<T>() where T : AbilityTrigger
 protected override void Awake()
 ```
 
-### `GetAbility&lt;T&gt;()`
+### `GetAbility<T>()`
 
 Get this entity's first ability of the given type. Can be null.
 
@@ -191,7 +192,7 @@ public void SetAbility(int index, AbilityTrigger trigger)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `index` | `int` |  |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 ### `SetAttackAbility(AttackTrigger)`
 
@@ -204,7 +205,7 @@ public void SetAttackAbility(AttackTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AttackTrigger](/api/Global.AttackTrigger) |  |
+| `trigger` | [`AttackTrigger`](/api/Global.AttackTrigger) |  |
 
 ### `ShouldShowAbilityLockIcon(int)`
 
@@ -219,7 +220,7 @@ public bool ShouldShowAbilityLockIcon(int index)
 
 **Returns:** `bool`
 
-### `TryGetAbility&lt;T&gt;(out T)`
+### `TryGetAbility<T>(out T)`
 
 ```csharp
 public bool TryGetAbility<T>(out T trigger) where T : AbilityTrigger

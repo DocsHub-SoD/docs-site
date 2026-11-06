@@ -1,5 +1,6 @@
 # Class: DewGUI
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public static class DewGUI
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`fieldBuilders`** | `public static List&lt;(DewGUI.FieldBuilderCondition, DewGUI.FieldBuilder)&gt; fieldBuilders` |  |
+| **`fieldBuilders`** | `public static List<(DewGUI.FieldBuilderCondition, DewGUI.FieldBuilder)> fieldBuilders` |  |
 | **`SupportedBasicTypes`** | `public static readonly Type[] SupportedBasicTypes` |  |
 
 ## Properties
@@ -134,10 +135,10 @@ public static void CreateWidgetsForObject(Type type, object state, Transform par
 | `type` | `System.Type` |  |
 | `state` | `object` |  |
 | `parent` | `UnityEngine.Transform` |  |
-| `onChanged` | [SafeAction](/api/Global.SafeAction) |  |
-| `requestUpdate` | [SafeAction](/api/Global.SafeAction) |  |
+| `onChanged` | [`SafeAction`](/api/Global.SafeAction) |  |
+| `requestUpdate` | [`SafeAction`](/api/Global.SafeAction) |  |
 
-### `GenericInputFieldBuilder&lt;T&gt;(Transform, TryParseFunc&lt;T&gt;, CharacterValidation, out TMP_InputField)`
+### `GenericInputFieldBuilder<T>(Transform, TryParseFunc<T>, CharacterValidation, out TMP_InputField)`
 
 ```csharp
 public static FieldBuildResult GenericInputFieldBuilder<T>(Transform parent, DewGUI.TryParseFunc<T> tryParse, TMP_InputField.CharacterValidation validation, out TMP_InputField inputField)
@@ -147,7 +148,7 @@ public static FieldBuildResult GenericInputFieldBuilder<T>(Transform parent, Dew
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `parent` | `UnityEngine.Transform` |  |
-| `tryParse` | [DewGUI.TryParseFunc&lt;T&gt;](/api/Global.DewGUI) |  |
+| `tryParse` | [`DewGUI.TryParseFunc<T>`](/api/Global.DewGUI) |  |
 | `validation` | `TMPro.TMP_InputField.TMPro.TMP_InputField.CharacterValidation` |  |
 | `inputField` | `TMPro.TMP_InputField` |  |
 | `` | `T` |  |
@@ -182,7 +183,7 @@ public static GameObject SetExpandHeight(this GameObject c, float value)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetExpandHeight&lt;T&gt;(T, bool)`
+### `SetExpandHeight<T>(T, bool)`
 
 ```csharp
 public static T SetExpandHeight<T>(this T c, bool expand) where T : Component
@@ -197,7 +198,7 @@ public static T SetExpandHeight<T>(this T c, bool expand) where T : Component
 
 **Returns:** `T`
 
-### `SetExpandHeight&lt;T&gt;(T, float)`
+### `SetExpandHeight<T>(T, float)`
 
 ```csharp
 public static T SetExpandHeight<T>(this T c, float value) where T : Component
@@ -240,7 +241,7 @@ public static GameObject SetExpandWidth(this GameObject c, float value)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetExpandWidth&lt;T&gt;(T, bool)`
+### `SetExpandWidth<T>(T, bool)`
 
 ```csharp
 public static T SetExpandWidth<T>(this T c, bool expand) where T : Component
@@ -255,7 +256,7 @@ public static T SetExpandWidth<T>(this T c, bool expand) where T : Component
 
 **Returns:** `T`
 
-### `SetExpandWidth&lt;T&gt;(T, float)`
+### `SetExpandWidth<T>(T, float)`
 
 ```csharp
 public static T SetExpandWidth<T>(this T c, float value) where T : Component
@@ -284,7 +285,7 @@ public static GameObject SetHeight(this GameObject c, float height)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetHeight&lt;T&gt;(T, float)`
+### `SetHeight<T>(T, float)`
 
 ```csharp
 public static T SetHeight<T>(this T c, float height) where T : Component
@@ -313,7 +314,7 @@ public static GameObject SetText(this GameObject c, string text)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetText&lt;T&gt;(T, string)`
+### `SetText<T>(T, string)`
 
 ```csharp
 public static T SetText<T>(this T c, string text) where T : Component
@@ -342,7 +343,7 @@ public static GameObject SetTextLocalized(this GameObject c, string key)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetTextLocalized&lt;T&gt;(T, string)`
+### `SetTextLocalized<T>(T, string)`
 
 ```csharp
 public static T SetTextLocalized<T>(this T c, string key) where T : Component
@@ -371,7 +372,7 @@ public static GameObject SetWidth(this GameObject c, float width)
 
 **Returns:** `UnityEngine.GameObject`
 
-### `SetWidth&lt;T&gt;(T, float)`
+### `SetWidth<T>(T, float)`
 
 ```csharp
 public static T SetWidth<T>(this T c, float width) where T : Component

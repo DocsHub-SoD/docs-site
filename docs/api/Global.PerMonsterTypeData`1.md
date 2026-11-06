@@ -1,5 +1,6 @@
 # Struct: PerMonsterTypeData&lt;T&gt;
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -28,7 +29,7 @@ public T Get(Monster.MonsterType type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [Monster.MonsterType](/api/Global.Monster) |  |
+| `type` | [`Monster.MonsterType`](/api/Global.Monster) |  |
 
 **Returns:** `T`
 
@@ -41,5 +42,5 @@ public void Set(Monster.MonsterType type, T value)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [Monster.MonsterType](/api/Global.Monster) |  |
+| `type` | [`Monster.MonsterType`](/api/Global.Monster) |  |
 | `value` | `T` |  |

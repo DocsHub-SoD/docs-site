@@ -1,5 +1,6 @@
 # Class: DewPersistentGameObserver
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewGameObserverWithProgress](/api/Global.DewGameObserverWithProgress)
@@ -12,7 +13,7 @@ public class DewPersistentGameObserver
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`_coroutines`** | `protected List&lt;Coroutine&gt; _coroutines` |  |
+| **`_coroutines`** | `protected List<Coroutine> _coroutines` |  |
 
 ## Properties
 
@@ -22,7 +23,7 @@ public class DewPersistentGameObserver
 
 ## Methods
 
-### `AchOnDealDamage(Action&lt;EventInfoDamage&gt;)`
+### `AchOnDealDamage(Action<EventInfoDamage>)`
 
 ```csharp
 protected void AchOnDealDamage(Action<EventInfoDamage> func)
@@ -31,9 +32,9 @@ protected void AchOnDealDamage(Action<EventInfoDamage> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Action&lt;T&gt;&lt;EventInfoDamage&gt;](/api/Global.EventInfoDamage) |  |
+| `func` | [`System.Action<T><EventInfoDamage>`](/api/Global.EventInfoDamage) |  |
 
-### `AchOnDoHeal(Action&lt;EventInfoHeal&gt;)`
+### `AchOnDoHeal(Action<EventInfoHeal>)`
 
 ```csharp
 protected void AchOnDoHeal(Action<EventInfoHeal> func)
@@ -42,9 +43,9 @@ protected void AchOnDoHeal(Action<EventInfoHeal> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Action&lt;T&gt;&lt;EventInfoHeal&gt;](/api/Global.EventInfoHeal) |  |
+| `func` | [`System.Action<T><EventInfoHeal>`](/api/Global.EventInfoHeal) |  |
 
-### `AchOnGameConcluded(Action&lt;DewGameResult&gt;)`
+### `AchOnGameConcluded(Action<DewGameResult>)`
 
 ```csharp
 protected void AchOnGameConcluded(Action<DewGameResult> func)
@@ -53,9 +54,9 @@ protected void AchOnGameConcluded(Action<DewGameResult> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Action&lt;T&gt;&lt;DewGameResult&gt;](/api/Global.DewGameResult) |  |
+| `func` | [`System.Action<T><DewGameResult>`](/api/Global.DewGameResult) |  |
 
-### `AchOnKillLastHit(Action&lt;EventInfoKill&gt;)`
+### `AchOnKillLastHit(Action<EventInfoKill>)`
 
 ```csharp
 protected void AchOnKillLastHit(Action<EventInfoKill> func)
@@ -64,9 +65,9 @@ protected void AchOnKillLastHit(Action<EventInfoKill> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Action&lt;T&gt;&lt;EventInfoKill&gt;](/api/Global.EventInfoKill) |  |
+| `func` | [`System.Action<T><EventInfoKill>`](/api/Global.EventInfoKill) |  |
 
-### `AchOnKillOrAssist(Action&lt;EventInfoKill&gt;)`
+### `AchOnKillOrAssist(Action<EventInfoKill>)`
 
 ```csharp
 protected void AchOnKillOrAssist(Action<EventInfoKill> func)
@@ -75,9 +76,9 @@ protected void AchOnKillOrAssist(Action<EventInfoKill> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Action&lt;T&gt;&lt;EventInfoKill&gt;](/api/Global.EventInfoKill) |  |
+| `func` | [`System.Action<T><EventInfoKill>`](/api/Global.EventInfoKill) |  |
 
-### `AchOnTakeDamage(Action&lt;EventInfoDamage&gt;)`
+### `AchOnTakeDamage(Action<EventInfoDamage>)`
 
 ```csharp
 protected void AchOnTakeDamage(Action<EventInfoDamage> func)
@@ -86,7 +87,7 @@ protected void AchOnTakeDamage(Action<EventInfoDamage> func)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `func` | [System.Action&lt;T&gt;&lt;EventInfoDamage&gt;](/api/Global.EventInfoDamage) |  |
+| `func` | [`System.Action<T><EventInfoDamage>`](/api/Global.EventInfoDamage) |  |
 
 ### `AchSetInterval(Action, float)`
 
@@ -128,9 +129,9 @@ public void FeedGameResult(DewGameResult obj)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `obj` | [DewGameResult](/api/Global.DewGameResult) |  |
+| `obj` | [`DewGameResult`](/api/Global.DewGameResult) |  |
 
-### `LoadState(Dictionary&lt;string, string&gt;)`
+### `LoadState(Dictionary<string, string>)`
 
 Load all persistent variables from the provided dictionary.
 
@@ -141,7 +142,7 @@ public void LoadState(Dictionary<string, string> storage)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `storage` | `System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `storage` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |
 
 ### `OnStartLocalClient()`
 
@@ -157,7 +158,7 @@ Helper trackers are unregistered automatically, you only have to unregister cust
 public virtual void OnStopLocalClient()
 ```
 
-### `SaveState(Dictionary&lt;string, string&gt;)`
+### `SaveState(Dictionary<string, string>)`
 
 Save all persistent variables to the provided dictionary.
 
@@ -168,4 +169,4 @@ public void SaveState(Dictionary<string, string> storage)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `storage` | `System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;&lt;string,string&gt;` |  |
+| `storage` | `System.Collections.Generic.Dictionary<TKey, TValue><string,string>` |  |

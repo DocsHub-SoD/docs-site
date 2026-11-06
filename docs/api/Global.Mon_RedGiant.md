@@ -1,5 +1,6 @@
 # Class: Mon_RedGiant
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [Monster](/api/Global.Monster)
@@ -37,7 +38,7 @@ protected override void AIUpdate(ref EntityAIContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [EntityAIContext](/api/Global.EntityAIContext) |  |
+| `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
 ### `OnDeath(EventInfoKill)`
 
@@ -48,7 +49,7 @@ protected override void OnDeath(EventInfoKill info)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `info` | [EventInfoKill](/api/Global.EventInfoKill) |  |
+| `info` | [`EventInfoKill`](/api/Global.EventInfoKill) |  |
 
 ### `OnStartServer()`
 

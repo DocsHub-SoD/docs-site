@@ -1,5 +1,6 @@
 # Class: AbilityTargetValidator
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -13,9 +14,7 @@ public class AbilityTargetValidator : IBinaryEntityValidator
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`targets`** | `[HideLabel]
-[EnumToggleButtons]
-public EntityRelation targets` |  |
+| **`targets`** | `[HideLabel] [EnumToggleButtons] public EntityRelation targets` |  |
 
 ## Methods
 
@@ -28,7 +27,7 @@ public bool Evaluate(Entity self, Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `self` | [Entity](/api/Global.Entity) |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`

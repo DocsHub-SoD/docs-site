@@ -1,5 +1,6 @@
 # Class: FxRandomTransform
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,12 +12,9 @@ public class FxRandomTransform : MonoBehaviour, IEffectComponent
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`localPositions`** | `[ShowIf("randomizePosition", true)]
-public Vector3[] localPositions` |  |
-| **`localRotations`** | `[ShowIf("randomizeRotation", true)]
-public Vector3[] localRotations` |  |
-| **`localScales`** | `[ShowIf("randomizeScale", true)]
-public Vector3[] localScales` |  |
+| **`localPositions`** | `[ShowIf("randomizePosition", true)] public Vector3[] localPositions` |  |
+| **`localRotations`** | `[ShowIf("randomizeRotation", true)] public Vector3[] localRotations` |  |
+| **`localScales`** | `[ShowIf("randomizeScale", true)] public Vector3[] localScales` |  |
 | **`randomizePosition`** | `public bool randomizePosition` |  |
 | **`randomizeRotation`** | `public bool randomizeRotation` |  |
 | **`randomizeScale`** | `public bool randomizeScale` |  |

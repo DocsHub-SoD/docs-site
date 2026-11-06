@@ -1,5 +1,6 @@
 # Class: DewQuest
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [GameEffect](/api/Global.GameEffect)
@@ -14,8 +15,7 @@ public abstract class DewQuest : GameEffect, ILogicUpdate, ICleanup, ICustomDest
 | :--- | :--- | :--- |
 | **`ClientQuestEvent_OnQuestUpdated`** | `public SafeAction ClientQuestEvent_OnQuestUpdated` |  |
 | **`DefaultStep`** | `public const string DefaultStep = "Default"` |  |
-| **`type`** | `[BoxGroup("Quest Settings", true, false, 0)]
-public QuestType type` |  |
+| **`type`** | `[BoxGroup("Quest Settings", true, false, 0)] public QuestType type` |  |
 
 ## Properties
 
@@ -28,8 +28,7 @@ public QuestType type` |  |
 | **`questShortDescriptionRaw`** | `public string questShortDescriptionRaw { get; set; }` |  |
 | **`questTitleRaw`** | `public string questTitleRaw { get; set; }` |  |
 | **`state`** | `public QuestState state { get; set; }` |  |
-| **`step`** | `[SaveVar(SaveVarFlags.ApplyAfterCreation)]
-public string step { get; set; }` |  |
+| **`step`** | `[SaveVar(SaveVarFlags.ApplyAfterCreation)] public string step { get; set; }` |  |
 
 ## Methods
 
@@ -42,7 +41,7 @@ public void AddStepGoal_ReachNode(NextGoalSettings settings)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [NextGoalSettings](/api/Global.NextGoalSettings) |  |
+| `settings` | [`NextGoalSettings`](/api/Global.NextGoalSettings) |  |
 
 ### `CompleteQuest()`
 
@@ -70,7 +69,7 @@ public void FailQuest(FailReason reason)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `reason` | [FailReason](/api/Global.FailReason) |  |
+| `reason` | [`FailReason`](/api/Global.FailReason) |  |
 
 ### `GetInitialStep()`
 

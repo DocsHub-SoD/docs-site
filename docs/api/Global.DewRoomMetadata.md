@@ -1,5 +1,6 @@
 # Class: DewRoomMetadata
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,7 +13,7 @@ public class DewRoomMetadata : ScriptableObject
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`area`** | `public float area` |  |
-| **`customPropRules`** | `public List&lt;PropSpawnRule&gt; customPropRules` |  |
-| **`customRules`** | `public List&lt;MonsterSpawnRule&gt; customRules` |  |
+| **`customPropRules`** | `public List<PropSpawnRule> customPropRules` |  |
+| **`customRules`** | `public List<MonsterSpawnRule> customRules` |  |
 | **`hasSectionWithNoNodes`** | `public bool hasSectionWithNoNodes` |  |
-| **`sceneActors`** | `public List&lt;string&gt; sceneActors` |  |
+| **`sceneActors`** | `public List<string> sceneActors` |  |

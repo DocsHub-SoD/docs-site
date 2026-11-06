@@ -1,5 +1,6 @@
 # Class: ArtifactWorldModel
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -30,4 +31,4 @@ public void Setup(Artifact a)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `a` | [Artifact](/api/Global.Artifact) |  |
+| `a` | [`Artifact`](/api/Global.Artifact) |  |

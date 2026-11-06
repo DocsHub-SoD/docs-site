@@ -1,5 +1,6 @@
 # Class: Dash
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -22,7 +23,7 @@ public class Dash
 
 ## Methods
 
-### `ApplyByDestination(Entity, Vector3, Action&lt;DispByDestination&gt;)`
+### `ApplyByDestination(Entity, Vector3, Action<DispByDestination>)`
 
 ```csharp
 public void ApplyByDestination(Entity ent, Vector3 dest, Action<DispByDestination> beforeApply = null)
@@ -31,11 +32,11 @@ public void ApplyByDestination(Entity ent, Vector3 dest, Action<DispByDestinatio
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 | `dest` | `UnityEngine.Vector3` |  |
-| `beforeApply` | [System.Action&lt;T&gt;&lt;DispByDestination&gt;](/api/Global.DispByDestination) |  |
+| `beforeApply` | [`System.Action<T><DispByDestination>`](/api/Global.DispByDestination) |  |
 
-### `ApplyByDirection(Entity, Vector3, Action&lt;DispByDestination&gt;)`
+### `ApplyByDirection(Entity, Vector3, Action<DispByDestination>)`
 
 ```csharp
 public void ApplyByDirection(Entity ent, Vector3 dir, Action<DispByDestination> beforeApply = null)
@@ -44,6 +45,6 @@ public void ApplyByDirection(Entity ent, Vector3 dir, Action<DispByDestination> 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 | `dir` | `UnityEngine.Vector3` |  |
-| `beforeApply` | [System.Action&lt;T&gt;&lt;DispByDestination&gt;](/api/Global.DispByDestination) |  |
+| `beforeApply` | [`System.Action<T><DispByDestination>`](/api/Global.DispByDestination) |  |

@@ -1,5 +1,6 @@
 # Class: Nametag
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,18 +15,12 @@ public class Nametag : MonoBehaviour
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`category`** | `public string category` |  |
-| **`condition`** | `[HideIf("generatedFromServer", true)]
-public CosmeticPurchasePrerequisite condition` |  |
-| **`conditionType`** | `[ShowIf("@condition == CosmeticPurchasePrerequisite.NightmareKillCount \|\| condition == CosmeticPurchasePrerequisite.ReachZone", true)]
-[LabelText("Type")]
-public string conditionType` |  |
-| **`conditionValue`** | `[ShowIf("@condition == CosmeticPurchasePrerequisite.NightmareKillCount \|\| condition == CosmeticPurchasePrerequisite.ReachZone \|\| condition == CosmeticPurchasePrerequisite.NightmarePureWhiteDream \|\| condition == CosmeticPurchasePrerequisite.LimboMaxDepth", true)]
-[LabelText("Required Amount")]
-public int conditionValue` |  |
+| **`condition`** | `[HideIf("generatedFromServer", true)] public CosmeticPurchasePrerequisite condition` |  |
+| **`conditionType`** | `[ShowIf("@condition == CosmeticPurchasePrerequisite.NightmareKillCount \|\| condition == CosmeticPurchasePrerequisite.ReachZone", true)] [LabelText("Type")] public string conditionType` |  |
+| **`conditionValue`** | `[ShowIf("@condition == CosmeticPurchasePrerequisite.NightmareKillCount \|\| condition == CosmeticPurchasePrerequisite.ReachZone \|\| condition == CosmeticPurchasePrerequisite.NightmarePureWhiteDream \|\| condition == CosmeticPurchasePrerequisite.LimboMaxDepth", true)] [LabelText("Required Amount")] public int conditionValue` |  |
 | **`customOrder`** | `public float customOrder` |  |
 | **`generatedFromServer`** | `public bool generatedFromServer` |  |
-| **`iconNormalizedOffsetY`** | `[Space(20)]
-public float iconNormalizedOffsetY` |  |
+| **`iconNormalizedOffsetY`** | `[Space(20)] public float iconNormalizedOffsetY` |  |
 | **`iconWidthOffset`** | `public float iconWidthOffset` |  |
 | **`nametagHorizontalMargin`** | `public Vector2 nametagHorizontalMargin` |  |
 | **`price`** | `public int price` |  |

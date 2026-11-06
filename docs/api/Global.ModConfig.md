@@ -1,5 +1,6 @@
 # Class: ModConfig
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [ExampleModConfig](/api/Global.ExampleModConfig)
@@ -20,8 +21,8 @@ public virtual void BuildWidgets(Transform parent, out SafeAction onChanged, out
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `parent` | `UnityEngine.Transform` |  |
-| `onChanged` | [SafeAction](/api/Global.SafeAction) |  |
-| `requestUpdate` | [SafeAction](/api/Global.SafeAction) |  |
+| `onChanged` | [`SafeAction`](/api/Global.SafeAction) |  |
+| `requestUpdate` | [`SafeAction`](/api/Global.SafeAction) |  |
 
 ### `Clone()`
 
@@ -40,4 +41,4 @@ public virtual void CopyTo(ModConfig other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [ModConfig](/api/Global.ModConfig) |  |
+| `other` | [`ModConfig`](/api/Global.ModConfig) |  |

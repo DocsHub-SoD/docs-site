@@ -1,5 +1,6 @@
 # Class: UI_GamepadFocusable
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [UI_GamepadInputField](/api/Global.UI_GamepadInputField) → [UI_GamepadTextInput_Key](/api/Global.UI_GamepadTextInput_Key)

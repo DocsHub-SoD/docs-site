@@ -1,5 +1,6 @@
 # Class: PropSpawnRule
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,5 +13,4 @@ public class PropSpawnRule : ScriptableObject
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`entries`** | `[ListDrawerSettings(Expanded = true)]
-public List&lt;PropSpawnRule.PropEntry&gt; entries` |  |
+| **`entries`** | `[ListDrawerSettings(Expanded = true)] public List<PropSpawnRule.PropEntry> entries` |  |

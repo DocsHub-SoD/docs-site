@@ -1,5 +1,6 @@
 # Class: LobbyManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [LobbyManager](/api/Global.LobbyManager)
@@ -48,4 +49,4 @@ public void SwitchService(LobbyServiceProvider newProvider)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `newProvider` | [LobbyServiceProvider](/api/Global.LobbyServiceProvider) |  |
+| `newProvider` | [`LobbyServiceProvider`](/api/Global.LobbyServiceProvider) |  |

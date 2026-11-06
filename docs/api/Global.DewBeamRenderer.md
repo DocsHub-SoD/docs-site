@@ -1,5 +1,6 @@
 # Class: DewBeamRenderer
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour)
@@ -14,8 +15,7 @@ public class DewBeamRenderer : LogicBehaviour, ILogicUpdate
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`acrossEffect`** | `public GameObject acrossEffect` |  |
-| **`acrossEffectInterval`** | `[ShowIf("@acrossEffect != null", true)]
-public float acrossEffectInterval` |  |
+| **`acrossEffectInterval`** | `[ShowIf("@acrossEffect != null", true)] public float acrossEffectInterval` |  |
 | **`endEffect`** | `public GameObject endEffect` |  |
 | **`lineRenderer`** | `public LineRenderer lineRenderer` |  |
 | **`startEffect`** | `public GameObject startEffect` |  |

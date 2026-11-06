@@ -1,5 +1,6 @@
 # Class: AbilityTrigger
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AttackTrigger](/api/Global.AttackTrigger) → [SkillTrigger](/api/Global.SkillTrigger)
@@ -13,27 +14,20 @@ public class AbilityTrigger : Actor, ILogicUpdate, ICleanup, ICustomDestroyRouti
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ClientEvent_OnOwnerChanged`** | `public SafeAction&lt;Entity, Entity&gt; ClientEvent_OnOwnerChanged` |  |
-| **`ClientTriggerEvent_OnCooldownReduced`** | `public SafeAction&lt;int, float&gt; ClientTriggerEvent_OnCooldownReduced` | configIndex, reductionAmount. Note the amount is non-discarded variant. e.g. Applying 100 seconds cooldown reduction to a 3 seconds skill will still report 100 seconds reduction. |
-| **`ClientTriggerEvent_OnCooldownReducedByRatio`** | `public SafeAction&lt;int, float&gt; ClientTriggerEvent_OnCooldownReducedByRatio` |  |
+| **`ClientEvent_OnOwnerChanged`** | `public SafeAction<Entity, Entity> ClientEvent_OnOwnerChanged` |  |
+| **`ClientTriggerEvent_OnCooldownReduced`** | `public SafeAction<int, float> ClientTriggerEvent_OnCooldownReduced` | configIndex, reductionAmount. Note the amount is non-discarded variant. e.g. Applying 100 seconds cooldown reduction to a 3 seconds skill will still report 100 seconds reduction. |
+| **`ClientTriggerEvent_OnCooldownReducedByRatio`** | `public SafeAction<int, float> ClientTriggerEvent_OnCooldownReducedByRatio` |  |
 | **`ClientTriggerEvent_OnCurrentConfigCharged`** | `public SafeAction ClientTriggerEvent_OnCurrentConfigCharged` |  |
 | **`ClientTriggerEvent_OnCurrentConfigCooldownReduced`** | `public SafeAction ClientTriggerEvent_OnCurrentConfigCooldownReduced` |  |
-| **`configs`** | `[ListDrawerSettings(Expanded = true)]
-public TriggerConfig[] configs` |  |
-| **`currentCharges`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]
-[NonSerialized]
-public int[] currentCharges` |  |
-| **`currentMinimumDelays`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]
-[NonSerialized]
-public float[] currentMinimumDelays` |  |
-| **`currentUnscaledCooldownTimes`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]
-[NonSerialized]
-public float[] currentUnscaledCooldownTimes` |  |
-| **`takenCooldownReductionByRatioProcessor`** | `public DataProcessorGroup&lt;CooldownReductionByRatioSettings, Actor, AbilityTrigger&gt; takenCooldownReductionByRatioProcessor` |  |
-| **`takenCooldownReductionProcessor`** | `public DataProcessorGroup&lt;CooldownReductionSettings, Actor, AbilityTrigger&gt; takenCooldownReductionProcessor` |  |
-| **`TriggerEvent_OnCastComplete`** | `public Action&lt;EventInfoCast&gt; TriggerEvent_OnCastComplete` |  |
-| **`TriggerEvent_OnCastCompleteBeforePrepare`** | `public Action&lt;EventInfoCast&gt; TriggerEvent_OnCastCompleteBeforePrepare` |  |
-| **`TriggerEvent_OnCastStart`** | `public Action&lt;EventInfoCast&gt; TriggerEvent_OnCastStart` |  |
+| **`configs`** | `[ListDrawerSettings(Expanded = true)] public TriggerConfig[] configs` |  |
+| **`currentCharges`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)] [NonSerialized] public int[] currentCharges` |  |
+| **`currentMinimumDelays`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)] [NonSerialized] public float[] currentMinimumDelays` |  |
+| **`currentUnscaledCooldownTimes`** | `[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)] [NonSerialized] public float[] currentUnscaledCooldownTimes` |  |
+| **`takenCooldownReductionByRatioProcessor`** | `public DataProcessorGroup<CooldownReductionByRatioSettings, Actor, AbilityTrigger> takenCooldownReductionByRatioProcessor` |  |
+| **`takenCooldownReductionProcessor`** | `public DataProcessorGroup<CooldownReductionSettings, Actor, AbilityTrigger> takenCooldownReductionProcessor` |  |
+| **`TriggerEvent_OnCastComplete`** | `public Action<EventInfoCast> TriggerEvent_OnCastComplete` |  |
+| **`TriggerEvent_OnCastCompleteBeforePrepare`** | `public Action<EventInfoCast> TriggerEvent_OnCastCompleteBeforePrepare` |  |
+| **`TriggerEvent_OnCastStart`** | `public Action<EventInfoCast> TriggerEvent_OnCastStart` |  |
 
 ## Properties
 
@@ -83,7 +77,7 @@ public virtual bool CanBeReserved()
 
 **Returns:** `bool`
 
-### `ChangeConfigTimed(int, float, Action&lt;EventInfoAbilityInstance&gt;, Action, bool)`
+### `ChangeConfigTimed(int, float, Action<EventInfoAbilityInstance>, Action, bool)`
 
 ```csharp
 public AbilityTrigger.ChangedConfigHandle ChangeConfigTimed(int index, float duration, Action<EventInfoAbilityInstance> onUse = null, Action onExpire = null, bool setFillAmount = true)
@@ -94,13 +88,13 @@ public AbilityTrigger.ChangedConfigHandle ChangeConfigTimed(int index, float dur
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 | `duration` | `float` |  |
-| `onUse` | [System.Action&lt;T&gt;&lt;EventInfoAbilityInstance&gt;](/api/Global.EventInfoAbilityInstance) |  |
+| `onUse` | [`System.Action<T><EventInfoAbilityInstance>`](/api/Global.EventInfoAbilityInstance) |  |
 | `onExpire` | `System.Action` |  |
 | `setFillAmount` | `bool` |  |
 
 **Returns:** `AbilityTrigger.ChangedConfigHandle`
 
-### `ChangeConfigTimedOnce(int, float, Action&lt;EventInfoAbilityInstance&gt;, Action, bool)`
+### `ChangeConfigTimedOnce(int, float, Action<EventInfoAbilityInstance>, Action, bool)`
 
 ```csharp
 public AbilityTrigger.ChangedConfigHandle ChangeConfigTimedOnce(int index, float duration, Action<EventInfoAbilityInstance> onUse = null, Action onExpire = null, bool setFillAmount = true)
@@ -111,7 +105,7 @@ public AbilityTrigger.ChangedConfigHandle ChangeConfigTimedOnce(int index, float
 | :--- | :--- | :--- |
 | `index` | `int` |  |
 | `duration` | `float` |  |
-| `onUse` | [System.Action&lt;T&gt;&lt;EventInfoAbilityInstance&gt;](/api/Global.EventInfoAbilityInstance) |  |
+| `onUse` | [`System.Action<T><EventInfoAbilityInstance>`](/api/Global.EventInfoAbilityInstance) |  |
 | `onExpire` | `System.Action` |  |
 | `setFillAmount` | `bool` |  |
 
@@ -142,7 +136,7 @@ public CastInfo GetCastInfoToTarget(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `CastInfo`
 
@@ -203,7 +197,7 @@ protected virtual Vector3 GetInstanceSpawnPosition(int configIndex, CastInfo inf
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `UnityEngine.Vector3`
 
@@ -217,7 +211,7 @@ protected virtual Quaternion? GetInstanceSpawnRotation(int configIndex, CastInfo
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `UnityEngine.Quaternion?`
 
@@ -252,7 +246,7 @@ public CastInfo GetPredictedCastInfoToTarget(Entity target, float strength)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `strength` | `float` |  |
 
 **Returns:** `CastInfo`
@@ -266,7 +260,7 @@ public CastInfo GetPredictedCastInfoToTarget(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `CastInfo`
 
@@ -292,7 +286,7 @@ public bool IsTargetInRange(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -330,7 +324,7 @@ protected virtual void OnCastCancel(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastCancelSetCooldownTime(int, CastInfo)`
 
@@ -342,7 +336,7 @@ protected virtual void OnCastCancelSetCooldownTime(int configIndex, CastInfo inf
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastComplete(int, CastInfo)`
 
@@ -356,7 +350,7 @@ public virtual AbilityInstance OnCastComplete(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `AbilityInstance`
 
@@ -369,7 +363,7 @@ public virtual void OnCastCompleteBeforePrepare(EventInfoCast cast)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `cast` | [EventInfoCast](/api/Global.EventInfoCast) |  |
+| `cast` | [`EventInfoCast`](/api/Global.EventInfoCast) |  |
 
 ### `OnCastCompleteSetCharge(int, CastInfo)`
 
@@ -381,7 +375,7 @@ public virtual void OnCastCompleteSetCharge(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastCompleteSetCooldownTime(int, CastInfo)`
 
@@ -393,7 +387,7 @@ public virtual void OnCastCompleteSetCooldownTime(int configIndex, CastInfo info
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastCompleteSetMinimumDelay(int, CastInfo)`
 
@@ -405,7 +399,7 @@ public virtual void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo info
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastCompleteSpendMana(int, CastInfo)`
 
@@ -417,7 +411,7 @@ public virtual void OnCastCompleteSpendMana(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnCastStart(int, CastInfo)`
 
@@ -431,7 +425,7 @@ public virtual void OnCastStart(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnConfigChanged(int, int)`
 
@@ -476,7 +470,7 @@ protected virtual void OnEquip(Entity newOwner)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `newOwner` | [Entity](/api/Global.Entity) |  |
+| `newOwner` | [`Entity`](/api/Global.Entity) |  |
 
 ### `OnRotateForward(int, CastInfo)`
 
@@ -488,7 +482,7 @@ protected virtual void OnRotateForward(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnSerialize(NetworkWriter, bool)`
 
@@ -512,7 +506,7 @@ protected virtual void OnStartChannel(int configIndex, CastInfo info)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 ### `OnStartServer()`
 
@@ -537,7 +531,7 @@ protected virtual void OnUnequip(Entity formerOwner)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `formerOwner` | [Entity](/api/Global.Entity) |  |
+| `formerOwner` | [`Entity`](/api/Global.Entity) |  |
 
 ### `PredictAngle_Simple(float, Entity, Vector3, float)`
 
@@ -549,7 +543,7 @@ public static float PredictAngle_Simple(float strength, Entity target, Vector3 s
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `strength` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `startPos` | `UnityEngine.Vector3` |  |
 | `delay` | `float` |  |
 
@@ -565,7 +559,7 @@ public static float PredictAngle_SpeedAcceleration(float strength, Entity target
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `strength` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `startPos` | `UnityEngine.Vector3` |  |
 | `delay` | `float` |  |
 | `frontDistance` | `float` |  |
@@ -585,7 +579,7 @@ public static Vector3 PredictPoint_Simple(float strength, Entity target, float d
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `strength` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `delay` | `float` |  |
 
 **Returns:** `UnityEngine.Vector3`
@@ -600,7 +594,7 @@ public static Vector3 PredictPoint_SpeedAcceleration(float strength, Entity targ
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `strength` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `startPos` | `UnityEngine.Vector3` |  |
 | `delay` | `float` |  |
 | `frontDistance` | `float` |  |
@@ -620,7 +614,7 @@ public static Vector3 PredictPointClamped_Simple(float strength, Entity target, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `strength` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `startPos` | `UnityEngine.Vector3` |  |
 | `range` | `float` |  |
 | `delay` | `float` |  |
@@ -637,7 +631,7 @@ public static Vector3 PredictPointClamped_SpeedAcceleration(float strength, Enti
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `strength` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `startPos` | `UnityEngine.Vector3` |  |
 | `range` | `float` |  |
 | `delay` | `float` |  |
@@ -657,7 +651,7 @@ public static float PredictTime_SpeedAcceleration(Entity target, Vector3 startPo
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `startPos` | `UnityEngine.Vector3` |  |
 | `delay` | `float` |  |
 | `frontDistance` | `float` |  |
@@ -689,8 +683,8 @@ public void ProcessReceivedCooldownReduction(ref CooldownReductionSettings data,
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [CooldownReductionSettings](/api/Global.CooldownReductionSettings) |  |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `data` | [`CooldownReductionSettings`](/api/Global.CooldownReductionSettings) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatioSettings, Actor)`
 
@@ -701,8 +695,8 @@ public void ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatio
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [CooldownReductionByRatioSettings](/api/Global.CooldownReductionByRatioSettings) |  |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `data` | [`CooldownReductionByRatioSettings`](/api/Global.CooldownReductionByRatioSettings) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 ### `SetCharge(int, int)`
 

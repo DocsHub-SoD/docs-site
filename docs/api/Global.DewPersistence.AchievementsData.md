@@ -1,5 +1,6 @@
 # Class: DewPersistence.AchievementsData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,5 +12,5 @@ public class DewPersistence.AchievementsData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`persistenceData`** | `public Dictionary&lt;string, string&gt; persistenceData` |  |
+| **`persistenceData`** | `public Dictionary<string, string> persistenceData` |  |
 | **`runId`** | `public string runId` |  |

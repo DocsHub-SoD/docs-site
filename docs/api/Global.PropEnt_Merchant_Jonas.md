@@ -1,5 +1,6 @@
 # Class: PropEnt_Merchant_Jonas
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [PropEntity](/api/Global.PropEntity) → [PropEnt_Merchant_Base](/api/Global.PropEnt_Merchant_Base) → [PropEnt_Merchant_Unmanned](/api/Global.PropEnt_Merchant_Unmanned)
@@ -28,7 +29,7 @@ protected override void AIUpdate(ref EntityAIContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [EntityAIContext](/api/Global.EntityAIContext) |  |
+| `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
 ### `OnCreate()`
 
@@ -51,7 +52,7 @@ protected override void OnPopulateMerchandises(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `OnRefresh(DewPlayer)`
 
@@ -62,4 +63,4 @@ protected override void OnRefresh(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |

@@ -1,5 +1,6 @@
 # Class: FxInterpolatedEffectBase
 
+- **Category:** <span class="cat-dot" style="--cat-color: #a855f7" data-cat="Buffs & Statuses"></span> Buffs & Statuses
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [FxEntityColor](/api/Global.FxEntityColor) → [FxEntityShake](/api/Global.FxEntityShake) → [FxEntityShell](/api/Global.FxEntityShell) → [FxEntityTransform](/api/Global.FxEntityTransform) → [FxGameObject](/api/Global.FxGameObject) → [FxGibs](/api/Global.FxGibs) → [FxMaterialProperty](/api/Global.FxMaterialProperty) → [FxMeshTrail](/api/Global.FxMeshTrail) → [FxPointLight](/api/Global.FxPointLight) → [FxVolume](/api/Global.FxVolume)
@@ -12,17 +13,11 @@ public abstract class FxInterpolatedEffectBase : MonoBehaviour, IEffectComponent
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`decayTime`** | `[BoxGroup("Interpolated Effect", true, false, 0)]
-public float decayTime` |  |
-| **`delay`** | `[BoxGroup("Interpolated Effect", true, false, 0)]
-public float delay` |  |
-| **`isLoop`** | `[BoxGroup("Interpolated Effect", true, false, 0)]
-public bool isLoop` |  |
-| **`startTime`** | `[BoxGroup("Interpolated Effect", true, false, 0)]
-public float startTime` |  |
-| **`sustainTime`** | `[ShowIf("@!isLoop", true)]
-[BoxGroup("Interpolated Effect", true, false, 0)]
-public float sustainTime` |  |
+| **`decayTime`** | `[BoxGroup("Interpolated Effect", true, false, 0)] public float decayTime` |  |
+| **`delay`** | `[BoxGroup("Interpolated Effect", true, false, 0)] public float delay` |  |
+| **`isLoop`** | `[BoxGroup("Interpolated Effect", true, false, 0)] public bool isLoop` |  |
+| **`startTime`** | `[BoxGroup("Interpolated Effect", true, false, 0)] public float startTime` |  |
+| **`sustainTime`** | `[ShowIf("@!isLoop", true)] [BoxGroup("Interpolated Effect", true, false, 0)] public float sustainTime` |  |
 
 ## Properties
 

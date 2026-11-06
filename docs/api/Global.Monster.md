@@ -1,5 +1,6 @@
 # Class: Monster
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Entity](/api/Global.Entity) → [BossMonster](/api/Global.BossMonster) → [Mon_DreamTeller](/api/Global.Mon_DreamTeller) → [Mon_RedGiant](/api/Global.Mon_RedGiant) → [Mon_RedMan](/api/Global.Mon_RedMan)
@@ -12,21 +13,16 @@ public class Monster : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`chasePredictiveness`** | `[BoxGroup("Monster Settings", true, false, 0)]
-public float chasePredictiveness` |  |
-| **`chaseRandomness`** | `[BoxGroup("Monster Settings", true, false, 0)]
-public float chaseRandomness` |  |
-| **`disableLoot`** | `[NonSerialized]
-public bool disableLoot` |  |
-| **`type`** | `[BoxGroup("Monster Settings", true, false, 0)]
-public Monster.MonsterType type` |  |
+| **`chasePredictiveness`** | `[BoxGroup("Monster Settings", true, false, 0)] public float chasePredictiveness` |  |
+| **`chaseRandomness`** | `[BoxGroup("Monster Settings", true, false, 0)] public float chaseRandomness` |  |
+| **`disableLoot`** | `[NonSerialized] public bool disableLoot` |  |
+| **`type`** | `[BoxGroup("Monster Settings", true, false, 0)] public Monster.MonsterType type` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`campPosition`** | `[SaveVar(SaveVarFlags.Default)]
-public Vector3? campPosition { get; }` | Available on server. |
+| **`campPosition`** | `[SaveVar(SaveVarFlags.Default)] public Vector3? campPosition { get; }` | Available on server. |
 | **`defaultOwner`** | `protected override DewPlayer defaultOwner { get; }` |  |
 | **`isHunter`** | `public bool isHunter { get; set; }` |  |
 | **`populationCost`** | `public float populationCost { get; set; }` |  |
@@ -44,7 +40,7 @@ protected override void AIUpdate(ref EntityAIContext context)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `context` | [EntityAIContext](/api/Global.EntityAIContext) |  |
+| `context` | [`EntityAIContext`](/api/Global.EntityAIContext) |  |
 
 ### `GetStaggerSettings()`
 

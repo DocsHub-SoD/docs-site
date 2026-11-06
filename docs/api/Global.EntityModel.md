@@ -1,5 +1,6 @@
 # Class: EntityModel
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,43 +12,29 @@ public class EntityModel : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`bodyRenderers`** | `[Title("General", null, TitleAlignments.Left, true, true)]
-public Renderer[] bodyRenderers` |  |
-| **`customMappings`** | `[Title("Custom Mappings", null, TitleAlignments.Left, true, true)]
-public List&lt;EntityModelCustomMapping&gt; customMappings` |  |
+| **`bodyRenderers`** | `[Title("General", null, TitleAlignments.Left, true, true)] public Renderer[] bodyRenderers` |  |
+| **`customMappings`** | `[Title("Custom Mappings", null, TitleAlignments.Left, true, true)] public List<EntityModelCustomMapping> customMappings` |  |
 | **`death`** | `public AnimationClipWithSpeed death` |  |
 | **`deathBehavior`** | `public EntityVisual.EntityDeathBehavior deathBehavior` |  |
-| **`dissolveDelay`** | `[ShowIf("@deathBehavior == EntityVisual.EntityDeathBehavior.Dissolve", true)]
-public float dissolveDelay` |  |
-| **`dissolveDuration`** | `[ShowIf("@deathBehavior == EntityVisual.EntityDeathBehavior.Dissolve", true)]
-public float dissolveDuration` |  |
+| **`dissolveDelay`** | `[ShowIf("@deathBehavior == EntityVisual.EntityDeathBehavior.Dissolve", true)] public float dissolveDelay` |  |
+| **`dissolveDuration`** | `[ShowIf("@deathBehavior == EntityVisual.EntityDeathBehavior.Dissolve", true)] public float dissolveDuration` |  |
 | **`fxDeath`** | `public GameObject fxDeath` |  |
-| **`fxLoop`** | `[Title("Effects", null, TitleAlignments.Left, true, true)]
-public GameObject fxLoop` |  |
+| **`fxLoop`** | `[Title("Effects", null, TitleAlignments.Left, true, true)] public GameObject fxLoop` |  |
 | **`fxTakeDamage`** | `public GameObject fxTakeDamage` |  |
 | **`hasGoldDissolve`** | `public bool hasGoldDissolve` |  |
 | **`healthBarPosition`** | `public Transform healthBarPosition` |  |
 | **`holsteredWeapon`** | `public Transform holsteredWeapon` |  |
-| **`idle`** | `[Title("Animations", null, TitleAlignments.Left, true, true)]
-public AnimationClipWithSpeed idle` |  |
-| **`lobby`** | `[Title("Hero", null, TitleAlignments.Left, true, true)]
-public AnimationClipWithSpeed lobby` |  |
+| **`idle`** | `[Title("Animations", null, TitleAlignments.Left, true, true)] public AnimationClipWithSpeed idle` |  |
+| **`lobby`** | `[Title("Hero", null, TitleAlignments.Left, true, true)] public AnimationClipWithSpeed lobby` |  |
 | **`locomotion`** | `public EntityAnimation.LocomotionType locomotion` |  |
-| **`runBackwardClip`** | `[ShowIf("support4Directions", true)]
-public AnimationClip runBackwardClip` |  |
-| **`runBackwardLeftClip`** | `[ShowIf("support8Directions", true)]
-public AnimationClip runBackwardLeftClip` |  |
-| **`runBackwardRightClip`** | `[ShowIf("support8Directions", true)]
-public AnimationClip runBackwardRightClip` |  |
+| **`runBackwardClip`** | `[ShowIf("support4Directions", true)] public AnimationClip runBackwardClip` |  |
+| **`runBackwardLeftClip`** | `[ShowIf("support8Directions", true)] public AnimationClip runBackwardLeftClip` |  |
+| **`runBackwardRightClip`** | `[ShowIf("support8Directions", true)] public AnimationClip runBackwardRightClip` |  |
 | **`runForwardClip`** | `public AnimationClip runForwardClip` |  |
-| **`runForwardLeftClip`** | `[ShowIf("support8Directions", true)]
-public AnimationClip runForwardLeftClip` |  |
-| **`runForwardRightClip`** | `[ShowIf("support8Directions", true)]
-public AnimationClip runForwardRightClip` |  |
-| **`runLeftClip`** | `[ShowIf("support4Directions", true)]
-public AnimationClip runLeftClip` |  |
-| **`runRightClip`** | `[ShowIf("support4Directions", true)]
-public AnimationClip runRightClip` |  |
+| **`runForwardLeftClip`** | `[ShowIf("support8Directions", true)] public AnimationClip runForwardLeftClip` |  |
+| **`runForwardRightClip`** | `[ShowIf("support8Directions", true)] public AnimationClip runForwardRightClip` |  |
+| **`runLeftClip`** | `[ShowIf("support4Directions", true)] public AnimationClip runLeftClip` |  |
+| **`runRightClip`** | `[ShowIf("support4Directions", true)] public AnimationClip runRightClip` |  |
 | **`stagger`** | `public AnimationClipWithSpeed stagger` |  |
 | **`walkAnimationSpeed`** | `public float walkAnimationSpeed` |  |
 | **`weapon`** | `public Transform weapon` |  |
@@ -75,7 +62,7 @@ public bool ContainsCustomMappingKey(string key)
 
 **Returns:** `bool`
 
-### `GetCustomMapping&lt;T&gt;(string)`
+### `GetCustomMapping<T>(string)`
 
 ```csharp
 public T GetCustomMapping<T>(string key) where T : class
@@ -89,7 +76,7 @@ public T GetCustomMapping<T>(string key) where T : class
 
 **Returns:** `T`
 
-### `GetCustomMappingArray&lt;T&gt;(string)`
+### `GetCustomMappingArray<T>(string)`
 
 ```csharp
 public T[] GetCustomMappingArray<T>(string key) where T : class
@@ -103,7 +90,7 @@ public T[] GetCustomMappingArray<T>(string key) where T : class
 
 **Returns:** `T[]`
 
-### `TryGetCustomMapping&lt;T&gt;(string, out T)`
+### `TryGetCustomMapping<T>(string, out T)`
 
 ```csharp
 public bool TryGetCustomMapping<T>(string key, out T target) where T : class

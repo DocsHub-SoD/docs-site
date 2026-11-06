@@ -1,5 +1,6 @@
 # Class: QuestManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [QuestManager](/api/Global.QuestManager)
@@ -12,27 +13,21 @@ public class QuestManager : NetworkedManagerBase<QuestManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activeQuests`** | `[NonSerialized]
-public List&lt;DewQuest&gt; activeQuests` |  |
-| **`ClientEvent_OnArtifactAppraised`** | `public SafeAction&lt;string, bool&gt; ClientEvent_OnArtifactAppraised` | Called everywhere when an artifact is appraised.Second boolean parameter denotes whether the artifact is new and now unlocked. |
-| **`ClientEvent_OnArtifactPickedUp`** | `public SafeAction&lt;string, DewPlayer, Vector3&gt; ClientEvent_OnArtifactPickedUp` | Called everywhere when an artifact is picked up. Parameters denote: artifact type, player, artifact world position |
-| **`ClientEvent_OnArtifactRemoved`** | `public SafeAction&lt;string&gt; ClientEvent_OnArtifactRemoved` |  |
-| **`ClientEvent_OnQuestAdded`** | `public SafeAction&lt;DewQuest&gt; ClientEvent_OnQuestAdded` |  |
-| **`ClientEvent_OnQuestRemoved`** | `public SafeAction&lt;DewQuest&gt; ClientEvent_OnQuestRemoved` |  |
-| **`didCollectArtifactThisLoop`** | `[NonSerialized]
-[SaveVar(SaveVarFlags.Default)]
-public bool didCollectArtifactThisLoop` | Available on server. |
-| **`undiscoveredArtifacts`** | `[SaveVar(SaveVarFlags.Default)]
-[NonSerialized]
-public List&lt;string&gt; undiscoveredArtifacts` | Available on server. List of artifacts that are not discovered by any clients. |
+| **`activeQuests`** | `[NonSerialized] public List<DewQuest> activeQuests` |  |
+| **`ClientEvent_OnArtifactAppraised`** | `public SafeAction<string, bool> ClientEvent_OnArtifactAppraised` | Called everywhere when an artifact is appraised.Second boolean parameter denotes whether the artifact is new and now unlocked. |
+| **`ClientEvent_OnArtifactPickedUp`** | `public SafeAction<string, DewPlayer, Vector3> ClientEvent_OnArtifactPickedUp` | Called everywhere when an artifact is picked up. Parameters denote: artifact type, player, artifact world position |
+| **`ClientEvent_OnArtifactRemoved`** | `public SafeAction<string> ClientEvent_OnArtifactRemoved` |  |
+| **`ClientEvent_OnQuestAdded`** | `public SafeAction<DewQuest> ClientEvent_OnQuestAdded` |  |
+| **`ClientEvent_OnQuestRemoved`** | `public SafeAction<DewQuest> ClientEvent_OnQuestRemoved` |  |
+| **`didCollectArtifactThisLoop`** | `[NonSerialized] [SaveVar(SaveVarFlags.Default)] public bool didCollectArtifactThisLoop` | Available on server. |
+| **`undiscoveredArtifacts`** | `[SaveVar(SaveVarFlags.Default)] [NonSerialized] public List<string> undiscoveredArtifacts` | Available on server. List of artifacts that are not discovered by any clients. |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`artifactPool`** | `public Type[] artifactPool { get; }` |  |
-| **`currentArtifact`** | `[SaveVar(SaveVarFlags.Default)]
-public string currentArtifact { get; }` |  |
+| **`currentArtifact`** | `[SaveVar(SaveVarFlags.Default)] public string currentArtifact { get; }` |  |
 
 ## Methods
 
@@ -62,7 +57,7 @@ public bool HasQuest(Type type)
 
 **Returns:** `bool`
 
-### `HasQuest&lt;T&gt;()`
+### `HasQuest<T>()`
 
 ```csharp
 public bool HasQuest<T>() where T : DewQuest
@@ -97,7 +92,7 @@ public void PickUpArtifact(string artifactName, DewPlayer player, Vector3 worldP
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `artifactName` | `string` |  |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `worldPos` | `UnityEngine.Vector3` |  |
 
 ### `RemoveArtifact()`
@@ -106,7 +101,7 @@ public void PickUpArtifact(string artifactName, DewPlayer player, Vector3 worldP
 public void RemoveArtifact()
 ```
 
-### `StartQuest&lt;T&gt;(T, Action&lt;T&gt;)`
+### `StartQuest<T>(T, Action<T>)`
 
 ```csharp
 public T StartQuest<T>(T prefab, Action<T> beforePrepare = null) where T : DewQuest
@@ -116,12 +111,12 @@ public T StartQuest<T>(T prefab, Action<T> beforePrepare = null) where T : DewQu
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `prefab` | `T` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `StartQuest&lt;T&gt;(Action&lt;T&gt;)`
+### `StartQuest<T>(Action<T>)`
 
 ```csharp
 public T StartQuest<T>(Action<T> beforePrepare = null) where T : DewQuest
@@ -130,7 +125,7 @@ public T StartQuest<T>(Action<T> beforePrepare = null) where T : DewQuest
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -145,11 +140,11 @@ public bool TryGetQuest(Type type, out DewQuest quest)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `quest` | [DewQuest](/api/Global.DewQuest) |  |
+| `quest` | [`DewQuest`](/api/Global.DewQuest) |  |
 
 **Returns:** `bool`
 
-### `TryGetQuest&lt;T&gt;(out T)`
+### `TryGetQuest<T>(out T)`
 
 ```csharp
 public bool TryGetQuest<T>(out T quest) where T : DewQuest

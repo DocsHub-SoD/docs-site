@@ -1,5 +1,6 @@
 # Class: DewPhysics.EntitySweep
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -21,7 +22,7 @@ public class DewPhysics.EntitySweep
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`current`** | `public IReadOnlyList&lt;Entity&gt; current { get; }` |  |
+| **`current`** | `public IReadOnlyList<Entity> current { get; }` |  |
 | **`lastPosition`** | `public Vector3 lastPosition { get; }` |  |
 
 ## Methods
@@ -37,4 +38,4 @@ public IReadOnlyList<Entity> Next(Vector3 position)
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 
-**Returns:** `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;Entity&gt;`
+**Returns:** `System.Collections.Generic.IReadOnlyList<T><Entity>`

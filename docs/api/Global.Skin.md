@@ -1,5 +1,6 @@
 # Class: Skin
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,13 +15,9 @@ public class Skin : MonoBehaviour
 | :--- | :--- | :--- |
 | **`category`** | `public string category` |  |
 | **`generatedFromServer`** | `public bool generatedFromServer` |  |
-| **`previewFovOffset`** | `[LabelText("Field Of View Offset")]
-public float previewFovOffset` |  |
-| **`previewImage`** | `[Title("Preview", null, TitleAlignments.Left, true, true)]
-[PreviewField(60)]
-public Sprite previewImage` |  |
-| **`previewRotationOffset`** | `[LabelText("Rotation Offset")]
-public Vector3 previewRotationOffset` |  |
+| **`previewFovOffset`** | `[LabelText("Field Of View Offset")] public float previewFovOffset` |  |
+| **`previewImage`** | `[Title("Preview", null, TitleAlignments.Left, true, true)] [PreviewField(60)] public Sprite previewImage` |  |
+| **`previewRotationOffset`** | `[LabelText("Rotation Offset")] public Vector3 previewRotationOffset` |  |
 | **`rarity`** | `public SkinRarity rarity` |  |
 | **`requiredLevel`** | `public int requiredLevel` |  |
 | **`skillVisuals`** | `public SkillVisualOverrideItem[] skillVisuals` |  |

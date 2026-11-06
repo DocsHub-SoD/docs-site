@@ -1,5 +1,6 @@
 # Class: DewSave
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -40,7 +41,7 @@ public static void AddMissingServerGeneratedItemsToProfile(DewProfile p)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `p` | [DewProfile](/api/Global.DewProfile) |  |
+| `p` | [`DewProfile`](/api/Global.DewProfile) |  |
 
 ### `AddServerGeneratedItem(DecryptedItemData)`
 
@@ -85,8 +86,8 @@ public static void ConsumeGameResult(DewGameResult result, ref LastGamePlayRewar
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `result` | [DewGameResult](/api/Global.DewGameResult) |  |
-| `rewardSummary` | [LastGamePlayReward](/api/Global.LastGamePlayReward) |  |
+| `result` | [`DewGameResult`](/api/Global.DewGameResult) |  |
+| `rewardSummary` | [`LastGamePlayReward`](/api/Global.LastGamePlayReward) |  |
 
 ### `ConvertProfile(string)`
 
@@ -167,7 +168,7 @@ public static bool Exists(string path)
 public static List<DewProfileItem> GetNormalProfiles()
 ```
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;DewProfileItem&gt;`
+**Returns:** `System.Collections.Generic.List<T><DewProfileItem>`
 
 ### `GetPlatformSettingsFileName()`
 
@@ -196,7 +197,7 @@ public static string GetProfileMainFileName(string guid)
 public static List<DewProfileItem> GetProfiles()
 ```
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;DewProfileItem&gt;`
+**Returns:** `System.Collections.Generic.List<T><DewProfileItem>`
 
 ### `LoadPlatformSettings()`
 
@@ -304,7 +305,7 @@ public static void SetShadowQuality(QualityOff4Levels q)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `q` | [QualityOff4Levels](/api/Global.QualityOff4Levels) |  |
+| `q` | [`QualityOff4Levels`](/api/Global.QualityOff4Levels) |  |
 
 ### `ShowSaveLoadErrorAndExit()`
 

@@ -1,5 +1,6 @@
 # Class: EasingFunction
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -918,7 +919,7 @@ public static float Get(this DewEase ease, float x)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ease` | [DewEase](/api/Global.DewEase) |  |
+| `ease` | [`DewEase`](/api/Global.DewEase) |  |
 | `x` | `float` |  |
 
 **Returns:** `float`
@@ -932,7 +933,7 @@ public static float GetDelta(this DewEase ease, float x)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ease` | [DewEase](/api/Global.DewEase) |  |
+| `ease` | [`DewEase`](/api/Global.DewEase) |  |
 | `x` | `float` |  |
 
 **Returns:** `float`
@@ -949,7 +950,7 @@ public static EaseFunction GetEasingFunction(DewEase easingFunction)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `easingFunction` | [DewEase](/api/Global.DewEase) | The enum associated with the easing function. |
+| `easingFunction` | [`DewEase`](/api/Global.DewEase) | The enum associated with the easing function. |
 
 **Returns:** `EaseFunction: The easing function`
 
@@ -965,7 +966,7 @@ public static EaseFunction GetEasingFunctionDerivative(DewEase easingFunction)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `easingFunction` | [DewEase](/api/Global.DewEase) |  |
+| `easingFunction` | [`DewEase`](/api/Global.DewEase) |  |
 
 **Returns:** `EaseFunction: The derivative function`
 

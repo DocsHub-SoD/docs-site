@@ -1,5 +1,6 @@
 # Struct: SampleCastInfoContext
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,12 +13,9 @@ public struct SampleCastInfoContext
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`angleSpeedLimit`** | `public float angleSpeedLimit` |  |
-| **`cancelCallback`** | `[NonSerialized]
-public Action cancelCallback` |  |
-| **`castCallback`** | `[NonSerialized]
-public Action&lt;CastInfo&gt; castCallback` |  |
-| **`castKey`** | `[NonSerialized]
-public DewInputTrigger castKey` |  |
+| **`cancelCallback`** | `[NonSerialized] public Action cancelCallback` |  |
+| **`castCallback`** | `[NonSerialized] public Action<CastInfo> castCallback` |  |
+| **`castKey`** | `[NonSerialized] public DewInputTrigger castKey` |  |
 | **`castMethod`** | `public CastMethodData castMethod` |  |
 | **`castOnButton`** | `public SampleCastInfoContext.CastOnButtonType castOnButton` |  |
 | **`currentInfo`** | `public CastInfo currentInfo` |  |
@@ -25,5 +23,4 @@ public DewInputTrigger castKey` |  |
 | **`showCastIndicator`** | `public bool showCastIndicator` |  |
 | **`targetValidator`** | `public AbilityTargetValidator targetValidator` |  |
 | **`trigger`** | `public AbilityTrigger trigger` |  |
-| **`updateCallback`** | `[NonSerialized]
-public Action&lt;CastInfo&gt; updateCallback` |  |
+| **`updateCallback`** | `[NonSerialized] public Action<CastInfo> updateCallback` |  |

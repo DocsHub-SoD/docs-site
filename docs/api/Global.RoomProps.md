@@ -1,5 +1,6 @@
 # Class: RoomProps
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [RoomComponent](/api/Global.RoomComponent)
@@ -36,6 +37,6 @@ public bool TryGetGoodNodePosition(out Vector3 position, DewRandom random = null
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `bool`

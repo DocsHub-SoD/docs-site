@@ -1,5 +1,6 @@
 # Class: View
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,25 +15,19 @@ public class View : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`blockRaycastWhenShown`** | `[ToggleLeft]
-public bool blockRaycastWhenShown` |  |
-| **`disableGameObjectWhenHidden`** | `[ToggleLeft]
-public bool disableGameObjectWhenHidden` |  |
-| **`disablesInGamePlayingInput`** | `[ToggleLeft]
-public bool disablesInGamePlayingInput` |  |
+| **`blockRaycastWhenShown`** | `[ToggleLeft] public bool blockRaycastWhenShown` |  |
+| **`disableGameObjectWhenHidden`** | `[ToggleLeft] public bool disableGameObjectWhenHidden` |  |
+| **`disablesInGamePlayingInput`** | `[ToggleLeft] public bool disablesInGamePlayingInput` |  |
 | **`fadeTime`** | `public float fadeTime` |  |
 | **`hideEffect`** | `public GameObject hideEffect` |  |
-| **`ignoreOn`** | `[ShowIf("@showBehavior == View.ShowBehavior.UseState", true)]
-public List&lt;string&gt; ignoreOn` |  |
-| **`instances`** | `public static List&lt;View&gt; instances` |  |
-| **`interactableWhenShown`** | `[ToggleLeft]
-public bool interactableWhenShown` |  |
+| **`ignoreOn`** | `[ShowIf("@showBehavior == View.ShowBehavior.UseState", true)] public List<string> ignoreOn` |  |
+| **`instances`** | `public static List<View> instances` |  |
+| **`interactableWhenShown`** | `[ToggleLeft] public bool interactableWhenShown` |  |
 | **`onHide`** | `public UnityEvent onHide` |  |
 | **`onShow`** | `public UnityEvent onShow` |  |
 | **`showBehavior`** | `public View.ShowBehavior showBehavior` |  |
 | **`showEffect`** | `public GameObject showEffect` |  |
-| **`showOn`** | `[ShowIf("@showBehavior == View.ShowBehavior.UseState", true)]
-public List&lt;string&gt; showOn` |  |
+| **`showOn`** | `[ShowIf("@showBehavior == View.ShowBehavior.UseState", true)] public List<string> showOn` |  |
 
 ## Properties
 

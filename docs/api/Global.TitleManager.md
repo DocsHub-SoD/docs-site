@@ -1,5 +1,6 @@
 # Class: TitleManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [TitleManager](/api/Global.TitleManager)
@@ -12,8 +13,7 @@ public class TitleManager : ManagerBase<TitleManager>, ILogicUpdate, ISettingsCh
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`didConvertSave`** | `[NonSerialized]
-public bool didConvertSave` |  |
+| **`didConvertSave`** | `[NonSerialized] public bool didConvertSave` |  |
 | **`didNotPlayTutorialObject`** | `public GameObject didNotPlayTutorialObject` |  |
 | **`didPlayTutorialObject`** | `public GameObject didPlayTutorialObject` |  |
 | **`langSelectionView`** | `public View langSelectionView` |  |

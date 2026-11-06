@@ -1,5 +1,6 @@
 # Class: AttachToFace
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,7 +13,7 @@ public class AttachToFace : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`globalCache`** | `public static Dictionary&lt;Renderer, AttachToFace.CacheItem&gt; globalCache` |  |
+| **`globalCache`** | `public static Dictionary<Renderer, AttachToFace.CacheItem> globalCache` |  |
 | **`lastSetupPosition`** | `public Vector3 lastSetupPosition` |  |
 | **`lastSetupRotation`** | `public Quaternion lastSetupRotation` |  |
 | **`relPosition`** | `public Vector3 relPosition` |  |

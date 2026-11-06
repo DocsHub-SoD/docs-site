@@ -1,5 +1,6 @@
 # Class: PingManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [PingManager](/api/Global.PingManager)
@@ -30,7 +31,7 @@ public void BroadcastPing(PingManager.Ping ping)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ping` | [PingManager.Ping](/api/Global.PingManager) |  |
+| `ping` | [`PingManager.Ping`](/api/Global.PingManager) |  |
 
 ### `CmdSendPing(Ping, NetworkConnectionToClient)`
 
@@ -41,7 +42,7 @@ public void CmdSendPing(PingManager.Ping ping, NetworkConnectionToClient sender 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ping` | [PingManager.Ping](/api/Global.PingManager) |  |
+| `ping` | [`PingManager.Ping`](/api/Global.PingManager) |  |
 | `sender` | `Mirror.NetworkConnectionToClient` |  |
 
 ### `GetPingUIValue(string, string)`

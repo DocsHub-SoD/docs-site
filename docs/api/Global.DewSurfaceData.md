@@ -1,5 +1,6 @@
 # Class: DewSurfaceData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,14 +13,11 @@ public class DewSurfaceData : MonoBehaviour
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
 | **`banDecorations`** | `public bool banDecorations` |  |
-| **`excludeLesserMonster`** | `[ShowIf("fxPeriodicEffect", true)]
-public bool excludeLesserMonster` |  |
+| **`excludeLesserMonster`** | `[ShowIf("fxPeriodicEffect", true)] public bool excludeLesserMonster` |  |
 | **`fxHeroFootstep`** | `public GameObject fxHeroFootstep` |  |
 | **`fxPeriodicEffect`** | `public GameObject fxPeriodicEffect` |  |
-| **`onlyWhenWalking`** | `[ShowIf("fxPeriodicEffect", true)]
-public bool onlyWhenWalking` |  |
-| **`periodicEffectInterval`** | `[ShowIf("fxPeriodicEffect", true)]
-public Vector2 periodicEffectInterval` |  |
+| **`onlyWhenWalking`** | `[ShowIf("fxPeriodicEffect", true)] public bool onlyWhenWalking` |  |
+| **`periodicEffectInterval`** | `[ShowIf("fxPeriodicEffect", true)] public Vector2 periodicEffectInterval` |  |
 
 ## Properties
 

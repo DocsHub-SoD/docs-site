@@ -1,5 +1,6 @@
 # Struct: Cost
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -29,7 +30,7 @@ public AffordType CanAfford(DewPlayer player, int playerStardust = -1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `playerStardust` | `int` |  |
 
 **Returns:** `AffordType`
@@ -43,7 +44,7 @@ public AffordType CanAfford(Entity entity, int playerStardust = -1)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `playerStardust` | `int` |  |
 
 **Returns:** `AffordType`
@@ -70,7 +71,7 @@ public bool Equals(Cost other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [Cost](/api/Global.Cost) |  |
+| `other` | [`Cost`](/api/Global.Cost) |  |
 
 **Returns:** `bool`
 

@@ -1,5 +1,6 @@
 # Class: WorldMessageSetting
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,5 +16,4 @@ public class WorldMessageSetting
 | **`popOffset`** | `public Vector2? popOffset` |  |
 | **`rawText`** | `public string rawText` |  |
 | **`worldPos`** | `public Vector3 worldPos` |  |
-| **`worldPosGetter`** | `[NonSerialized]
-public Func&lt;Vector3&gt; worldPosGetter` |  |
+| **`worldPosGetter`** | `[NonSerialized] public Func<Vector3> worldPosGetter` |  |

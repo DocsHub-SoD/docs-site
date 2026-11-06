@@ -1,5 +1,6 @@
 # Struct: SyncableAssetRef
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -22,10 +23,8 @@ public struct SyncableAssetRef
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`asset`** | `[JsonIgnore]
-public Object asset { get; set; }` |  |
-| **`lightAsset`** | `[JsonIgnore]
-public Object lightAsset { get; }` |  |
+| **`asset`** | `[JsonIgnore] public Object asset { get; set; }` |  |
+| **`lightAsset`** | `[JsonIgnore] public Object lightAsset { get; }` |  |
 
 ## Methods
 
@@ -44,7 +43,7 @@ public bool Equals(SyncableAssetRef other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [SyncableAssetRef](/api/Global.SyncableAssetRef) |  |
+| `other` | [`SyncableAssetRef`](/api/Global.SyncableAssetRef) |  |
 
 **Returns:** `bool`
 

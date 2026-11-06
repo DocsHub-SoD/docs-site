@@ -1,5 +1,6 @@
 # Class: Pickup_HealthOrb
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [PickupInstance](/api/Global.PickupInstance)
@@ -25,7 +26,7 @@ protected override bool CanBeUsedBy(Hero hero)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hero` | [Hero](/api/Global.Hero) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |
 
 **Returns:** `bool`
 
@@ -38,4 +39,4 @@ protected override void OnPickup(Hero hero)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hero` | [Hero](/api/Global.Hero) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |

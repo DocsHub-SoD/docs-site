@@ -1,5 +1,6 @@
 # Class: Treasure
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor)
@@ -13,17 +14,11 @@ public abstract class Treasure : Actor, ILogicUpdate, ICleanup, ICustomDestroyRo
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`basePrice`** | `[BoxGroup("Treasure Settings", true, false, 0)]
-public int basePrice` |  |
-| **`chanceWeight`** | `[HideIf("@excludeFromPool", true)]
-[BoxGroup("Treasure Settings", true, false, 0)]
-public float chanceWeight` |  |
-| **`excludeFromPool`** | `[BoxGroup("Treasure Settings", true, false, 0)]
-public bool excludeFromPool` |  |
-| **`icon`** | `[BoxGroup("Treasure Settings", true, false, 0)]
-public Sprite icon` |  |
-| **`maxUse`** | `[BoxGroup("Treasure Settings", true, false, 0)]
-public int maxUse` |  |
+| **`basePrice`** | `[BoxGroup("Treasure Settings", true, false, 0)] public int basePrice` |  |
+| **`chanceWeight`** | `[HideIf("@excludeFromPool", true)] [BoxGroup("Treasure Settings", true, false, 0)] public float chanceWeight` |  |
+| **`excludeFromPool`** | `[BoxGroup("Treasure Settings", true, false, 0)] public bool excludeFromPool` |  |
+| **`icon`** | `[BoxGroup("Treasure Settings", true, false, 0)] public Sprite icon` |  |
+| **`maxUse`** | `[BoxGroup("Treasure Settings", true, false, 0)] public int maxUse` |  |
 
 ## Properties
 
@@ -72,7 +67,7 @@ public virtual void OnAddMerchandise(out Cost mercPrice, out string customData)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `mercPrice` | [Cost](/api/Global.Cost) |  |
+| `mercPrice` | [`Cost`](/api/Global.Cost) |  |
 | `customData` | `string` |  |
 
 ### `ShouldBeIncludedInPool()`

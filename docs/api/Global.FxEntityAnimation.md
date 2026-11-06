@@ -1,5 +1,6 @@
 # Class: FxEntityAnimation
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -14,8 +15,7 @@ public class FxEntityAnimation : MonoBehaviour, IEffectComponent, IAttachableToE
 | **`animClip`** | `public DewAnimationClip animClip` |  |
 | **`delay`** | `public float delay` |  |
 | **`speed`** | `public float speed` |  |
-| **`stopAnimationWhenStopped`** | `[ToggleLeft]
-public bool stopAnimationWhenStopped` |  |
+| **`stopAnimationWhenStopped`** | `[ToggleLeft] public bool stopAnimationWhenStopped` |  |
 
 ## Properties
 
@@ -34,7 +34,7 @@ public void OnAttachToEntity(Entity target)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `Play()`
 

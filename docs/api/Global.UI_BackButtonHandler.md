@@ -1,5 +1,6 @@
 # Class: UI_BackButtonHandler
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,8 +12,7 @@ public class UI_BackButtonHandler : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`activateOnRightClickAnywhere`** | `[ToggleLeft]
-public bool activateOnRightClickAnywhere` |  |
+| **`activateOnRightClickAnywhere`** | `[ToggleLeft] public bool activateOnRightClickAnywhere` |  |
 | **`checkUIOcclusion`** | `public bool checkUIOcclusion` |  |
 | **`consume`** | `public bool consume` |  |
 | **`onHandle`** | `public UnityEvent onHandle` |  |

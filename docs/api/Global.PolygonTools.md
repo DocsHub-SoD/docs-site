@@ -1,5 +1,6 @@
 # Class: PolygonTools
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -15,7 +16,7 @@ public static class PolygonTools
 
 ## Methods
 
-### `GetArea(IReadOnlyList&lt;Vector2&gt;)`
+### `GetArea(IReadOnlyList<Vector2>)`
 
 ```csharp
 public static float GetArea(IReadOnlyList<Vector2> vertices)
@@ -24,7 +25,7 @@ public static float GetArea(IReadOnlyList<Vector2> vertices)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `vertices` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;UnityEngine.Vector2&gt;` |  |
+| `vertices` | `System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>` |  |
 
 **Returns:** `float`
 
@@ -38,11 +39,11 @@ public static Vector2 GetRandomPositionInTriangle(Vector2[] triVerts, DewRandom 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `triVerts` | `UnityEngine.Vector2[]` |  |
-| `random` | [DewRandom](/api/Global.DewRandom) |  |
+| `random` | [`DewRandom`](/api/Global.DewRandom) |  |
 
 **Returns:** `UnityEngine.Vector2`
 
-### `GetVerticesArray(IReadOnlyList&lt;Vector2&gt;, ref Vector2[])`
+### `GetVerticesArray(IReadOnlyList<Vector2>, ref Vector2[])`
 
 ```csharp
 public static void GetVerticesArray(IReadOnlyList<Vector2> points, ref Vector2[] verts)
@@ -51,10 +52,10 @@ public static void GetVerticesArray(IReadOnlyList<Vector2> points, ref Vector2[]
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `points` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;UnityEngine.Vector2&gt;` |  |
+| `points` | `System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>` |  |
 | `verts` | `UnityEngine.Vector2[]` |  |
 
-### `PickRandomTriangleWeightedByArea(IReadOnlyList&lt;Vector2&gt;, ref Vector2[])`
+### `PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2>, ref Vector2[])`
 
 ```csharp
 public static int PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2> vertices, ref Vector2[] triVerts)
@@ -63,7 +64,7 @@ public static int PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2> vertic
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `vertices` | `System.Collections.Generic.IReadOnlyList&lt;T&gt;&lt;UnityEngine.Vector2&gt;` |  |
+| `vertices` | `System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>` |  |
 | `triVerts` | `UnityEngine.Vector2[]` |  |
 
 **Returns:** `int`

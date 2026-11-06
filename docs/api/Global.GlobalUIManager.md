@@ -1,5 +1,6 @@
 # Class: GlobalUIManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [GlobalUIManager](/api/Global.GlobalUIManager)
@@ -12,8 +13,7 @@ public class GlobalUIManager : ManagerBase<GlobalUIManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`currentMenuView`** | `[NonSerialized]
-public IMenuView currentMenuView` |  |
+| **`currentMenuView`** | `[NonSerialized] public IMenuView currentMenuView` |  |
 | **`devFloatingTextParent`** | `public RectTransform devFloatingTextParent` |  |
 | **`devFloatingTextPrefab`** | `public TextMeshProUGUI devFloatingTextPrefab` |  |
 | **`focusDisplayAnimationTarget`** | `public Transform focusDisplayAnimationTarget` |  |
@@ -28,9 +28,8 @@ public IMenuView currentMenuView` |  |
 | **`fxHighlightHide`** | `public GameObject fxHighlightHide` |  |
 | **`fxHighlightShow`** | `public GameObject fxHighlightShow` |  |
 | **`fxTick`** | `public GameObject fxTick` |  |
-| **`isBackDisabled`** | `[NonSerialized]
-public bool isBackDisabled` |  |
-| **`onFocusedChanged`** | `public Action&lt;IGamepadFocusable, IGamepadFocusable&gt; onFocusedChanged` |  |
+| **`isBackDisabled`** | `[NonSerialized] public bool isBackDisabled` |  |
+| **`onFocusedChanged`** | `public Action<IGamepadFocusable, IGamepadFocusable> onFocusedChanged` |  |
 | **`tooltipBoxCanvasGroup`** | `public CanvasGroup tooltipBoxCanvasGroup` |  |
 | **`tooltipBoxTransform`** | `public RectTransform tooltipBoxTransform` |  |
 | **`tutHighlightBackdropBottom`** | `public RectTransform tutHighlightBackdropBottom` |  |
@@ -53,7 +52,7 @@ public bool isBackDisabled` |  |
 
 ## Methods
 
-### `AddBackHandler(MonoBehaviour, int, Func&lt;bool&gt;)`
+### `AddBackHandler(MonoBehaviour, int, Func<bool>)`
 
 Add handler for back buttons.Handler must return boolean value as indication of whether the back button event is consumed or not.Callback with highest priority will fire first when back button is pressed.If priority is the same, last added item will be fired first.If owner is destroyed, back handler will automatically be unregistered.
 
@@ -66,7 +65,7 @@ public BackHandler AddBackHandler(MonoBehaviour owner, int priority, Func<bool> 
 | :--- | :--- | :--- |
 | `owner` | `UnityEngine.MonoBehaviour` |  |
 | `priority` | `int` |  |
-| `callback` | `System.Func&lt;TResult&gt;&lt;bool&gt;` |  |
+| `callback` | `System.Func<TResult><bool>` |  |
 
 **Returns:** `BackHandler`
 
@@ -79,7 +78,7 @@ public void AddGamepadFocusable(IGamepadFocusable focusable)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `focusable` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `focusable` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 ### `ClickHighlightForTutorial()`
 
@@ -99,7 +98,7 @@ public void EnforceFontFallbackOrder()
 public override void FrameUpdate()
 ```
 
-### `GetFocusedComponent&lt;T&gt;()`
+### `GetFocusedComponent<T>()`
 
 ```csharp
 public T GetFocusedComponent<T>() where T : Component
@@ -112,7 +111,7 @@ public T GetFocusedComponent<T>() where T : Component
 
 **Returns:** `T`
 
-### `GetIntersectingRects(List&lt;Rect&gt;, Vector2, Vector2, float, float)`
+### `GetIntersectingRects(List<Rect>, Vector2, Vector2, float, float)`
 
 ```csharp
 public static List<GlobalUIManager.RectResult> GetIntersectingRects(List<Rect> rects, Vector2 origin, Vector2 direction, float angle, float radius)
@@ -121,13 +120,13 @@ public static List<GlobalUIManager.RectResult> GetIntersectingRects(List<Rect> r
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `rects` | `System.Collections.Generic.List&lt;T&gt;&lt;UnityEngine.Rect&gt;` |  |
+| `rects` | `System.Collections.Generic.List<T><UnityEngine.Rect>` |  |
 | `origin` | `UnityEngine.Vector2` |  |
 | `direction` | `UnityEngine.Vector2` |  |
 | `angle` | `float` |  |
 | `radius` | `float` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;GlobalUIManager.RectResult&gt;`
+**Returns:** `System.Collections.Generic.List<T><GlobalUIManager.RectResult>`
 
 ### `GoBack()`
 
@@ -176,7 +175,7 @@ public override void LogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `MoveFocus(Vector3, float, float, float, Func&lt;IGamepadFocusable, bool&gt;, Func&lt;IGamepadFocusable, float&gt;)`
+### `MoveFocus(Vector3, float, float, float, Func<IGamepadFocusable, bool>, Func<IGamepadFocusable, float>)`
 
 ```csharp
 public bool MoveFocus(Vector3 direction, float angleLimit, float normalizedPerpendicularDistLimit, float normalizedDistLimit, Func<IGamepadFocusable, bool> condition = null, Func<IGamepadFocusable, float> customScoreFunc = null)
@@ -189,12 +188,12 @@ public bool MoveFocus(Vector3 direction, float angleLimit, float normalizedPerpe
 | `angleLimit` | `float` |  |
 | `normalizedPerpendicularDistLimit` | `float` |  |
 | `normalizedDistLimit` | `float` |  |
-| `condition` | [System.Func&lt;T, TResult&gt;&lt;IGamepadFocusable,bool&gt;](/api/Global.IGamepadFocusable) |  |
-| `customScoreFunc` | [System.Func&lt;T, TResult&gt;&lt;IGamepadFocusable,float&gt;](/api/Global.IGamepadFocusable) |  |
+| `condition` | [`System.Func<T, TResult><IGamepadFocusable,bool>`](/api/Global.IGamepadFocusable) |  |
+| `customScoreFunc` | [`System.Func<T, TResult><IGamepadFocusable,float>`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 
-### `MoveFocus(Vector3, Vector2, Vector2, Vector2, Func&lt;IGamepadFocusable, bool&gt;, Func&lt;IGamepadFocusable, float&gt;)`
+### `MoveFocus(Vector3, Vector2, Vector2, Vector2, Func<IGamepadFocusable, bool>, Func<IGamepadFocusable, float>)`
 
 ```csharp
 public bool MoveFocus(Vector3 direction, Vector2 angleLimit, Vector2 normalizedPerpendicularDistLimit, Vector2 normalizedDistLimit, Func<IGamepadFocusable, bool> condition = null, Func<IGamepadFocusable, float> customScoreFunc = null)
@@ -207,8 +206,8 @@ public bool MoveFocus(Vector3 direction, Vector2 angleLimit, Vector2 normalizedP
 | `angleLimit` | `UnityEngine.Vector2` |  |
 | `normalizedPerpendicularDistLimit` | `UnityEngine.Vector2` |  |
 | `normalizedDistLimit` | `UnityEngine.Vector2` |  |
-| `condition` | [System.Func&lt;T, TResult&gt;&lt;IGamepadFocusable,bool&gt;](/api/Global.IGamepadFocusable) |  |
-| `customScoreFunc` | [System.Func&lt;T, TResult&gt;&lt;IGamepadFocusable,float&gt;](/api/Global.IGamepadFocusable) |  |
+| `condition` | [`System.Func<T, TResult><IGamepadFocusable,bool>`](/api/Global.IGamepadFocusable) |  |
+| `customScoreFunc` | [`System.Func<T, TResult><IGamepadFocusable,float>`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 
@@ -236,7 +235,7 @@ public void PopulateCacheData(ref GetFocusTargetSettings settings, out Action ha
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `settings` | [GetFocusTargetSettings](/api/Global.GetFocusTargetSettings) |  |
+| `settings` | [`GetFocusTargetSettings`](/api/Global.GetFocusTargetSettings) |  |
 | `handle` | `System.Action` |  |
 
 ### `RemoveBackHandler(BackHandler)`
@@ -250,7 +249,7 @@ public void RemoveBackHandler(BackHandler handle)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | [BackHandler](/api/Global.BackHandler) |  |
+| `handle` | [`BackHandler`](/api/Global.BackHandler) |  |
 
 ### `RemoveGamepadFocusable(IGamepadFocusable)`
 
@@ -261,7 +260,7 @@ public void RemoveGamepadFocusable(IGamepadFocusable focusable)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `focusable` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `focusable` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 ### `SetFocus(IGamepadFocusable)`
 
@@ -272,7 +271,7 @@ public void SetFocus(IGamepadFocusable focusable)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `focusable` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `focusable` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 ### `SetFocusOnComponent(Component)`
 
@@ -330,12 +329,12 @@ public bool TryGetFocusTarget(GetFocusTargetSettings s, out IGamepadFocusable ne
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `s` | [GetFocusTargetSettings](/api/Global.GetFocusTargetSettings) |  |
-| `next` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `s` | [`GetFocusTargetSettings`](/api/Global.GetFocusTargetSettings) |  |
+| `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 
-### `TryGetFocusTargetGeneric(Vector3, Func&lt;IGamepadFocusable, bool&gt;, out IGamepadFocusable)`
+### `TryGetFocusTargetGeneric(Vector3, Func<IGamepadFocusable, bool>, out IGamepadFocusable)`
 
 ```csharp
 public bool TryGetFocusTargetGeneric(Vector3 direction, Func<IGamepadFocusable, bool> condition, out IGamepadFocusable next)
@@ -345,8 +344,8 @@ public bool TryGetFocusTargetGeneric(Vector3 direction, Func<IGamepadFocusable, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `direction` | `UnityEngine.Vector3` |  |
-| `condition` | [System.Func&lt;T, TResult&gt;&lt;IGamepadFocusable,bool&gt;](/api/Global.IGamepadFocusable) |  |
-| `next` | [IGamepadFocusable](/api/Global.IGamepadFocusable) |  |
+| `condition` | [`System.Func<T, TResult><IGamepadFocusable,bool>`](/api/Global.IGamepadFocusable) |  |
+| `next` | [`IGamepadFocusable`](/api/Global.IGamepadFocusable) |  |
 
 **Returns:** `bool`
 

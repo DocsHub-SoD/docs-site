@@ -1,5 +1,6 @@
 # Class: ProtectedEffect
 
+- **Category:** <span class="cat-dot" style="--cat-color: #a855f7" data-cat="Buffs & Statuses"></span> Buffs & Statuses
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [BasicEffect](/api/Global.BasicEffect)
@@ -12,7 +13,7 @@ public class ProtectedEffect : BasicEffect
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onDamageNegated`** | `public Action&lt;EventInfoDamageNegatedByImmunity&gt; onDamageNegated` | If multiple effect is protecting this entity, only the last basic effect's callback will be called prioritizing InvulnerableEffect. |
+| **`onDamageNegated`** | `public Action<EventInfoDamageNegatedByImmunity> onDamageNegated` | If multiple effect is protecting this entity, only the last basic effect's callback will be called prioritizing InvulnerableEffect. |
 
 ## Properties
 

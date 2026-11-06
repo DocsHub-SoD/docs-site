@@ -1,5 +1,6 @@
 # Class: TriggerChannelData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,13 +13,8 @@ public class TriggerChannelData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`blockedActions`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[HideLabel]
-[DisableIf("@duration &lt;= 0f")]
-public Channel.BlockedAction blockedActions` |  |
-| **`duration`** | `[HorizontalGroup("A", 0, 0, 0, 0)]
-[LabelText("Channel Duration")]
-public float duration` |  |
+| **`blockedActions`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [HideLabel] [DisableIf("@duration <= 0f")] public Channel.BlockedAction blockedActions` |  |
+| **`duration`** | `[HorizontalGroup("A", 0, 0, 0, 0)] [LabelText("Channel Duration")] public float duration` |  |
 
 ## Methods
 
@@ -35,9 +31,9 @@ public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidato
 | :--- | :--- | :--- |
 | `onComplete` | `System.Action` |  |
 | `onCancel` | `System.Action` |  |
-| `selfValidator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
-| `target` | [Entity](/api/Global.Entity) |  |
-| `targetValidator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
+| `selfValidator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
+| `targetValidator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
 
 **Returns:** `Channel`
 
@@ -54,6 +50,6 @@ public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidato
 | :--- | :--- | :--- |
 | `onComplete` | `System.Action` |  |
 | `onCancel` | `System.Action` |  |
-| `selfValidator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
+| `selfValidator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
 
 **Returns:** `Channel`

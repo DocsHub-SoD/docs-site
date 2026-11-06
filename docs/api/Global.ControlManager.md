@@ -1,5 +1,6 @@
 # Class: ControlManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [ControlManager](/api/Global.ControlManager)
@@ -16,24 +17,16 @@ public class ControlManager : ManagerBase<ControlManager>, ILogicUpdate
 | **`aimPointUi`** | `public GameObject aimPointUi` |  |
 | **`attackMarker`** | `public CommandMarker attackMarker` |  |
 | **`DirectionalControlStandStillActionGracePeriod`** | `public const float DirectionalControlStandStillActionGracePeriod = 0.3` |  |
-| **`dismantleConstraint`** | `[NonSerialized]
-public Func&lt;Object, bool&gt; dismantleConstraint` |  |
-| **`dropConstraint`** | `[NonSerialized]
-public Func&lt;Object, bool&gt; dropConstraint` |  |
-| **`gemLocationConstraint`** | `[NonSerialized]
-public HeroSkillLocation? gemLocationConstraint` |  |
+| **`dismantleConstraint`** | `[NonSerialized] public Func<Object, bool> dismantleConstraint` |  |
+| **`dropConstraint`** | `[NonSerialized] public Func<Object, bool> dropConstraint` |  |
+| **`gemLocationConstraint`** | `[NonSerialized] public HeroSkillLocation? gemLocationConstraint` |  |
 | **`HeroSkillTypes`** | `public static readonly HeroSkillLocation[] HeroSkillTypes` |  |
 | **`interactMarker`** | `public CommandMarker interactMarker` |  |
-| **`isDismantleDisabled`** | `[NonSerialized]
-public bool isDismantleDisabled` |  |
-| **`isDodgeDisabled`** | `[NonSerialized]
-public bool isDodgeDisabled` |  |
-| **`isEditSkillDisabled`** | `[NonSerialized]
-public bool isEditSkillDisabled` |  |
-| **`isMainSkillDisabled`** | `[NonSerialized]
-public bool isMainSkillDisabled` |  |
-| **`isWorldMapDisabled`** | `[NonSerialized]
-public bool isWorldMapDisabled` |  |
+| **`isDismantleDisabled`** | `[NonSerialized] public bool isDismantleDisabled` |  |
+| **`isDodgeDisabled`** | `[NonSerialized] public bool isDodgeDisabled` |  |
+| **`isEditSkillDisabled`** | `[NonSerialized] public bool isEditSkillDisabled` |  |
+| **`isMainSkillDisabled`** | `[NonSerialized] public bool isMainSkillDisabled` |  |
+| **`isWorldMapDisabled`** | `[NonSerialized] public bool isWorldMapDisabled` |  |
 | **`it_attackInPlace`** | `public DewInputTrigger it_attackInPlace` |  |
 | **`it_attackMoveImmediately`** | `public DewInputTrigger it_attackMoveImmediately` |  |
 | **`it_attackMoveNormal`** | `public DewInputTrigger it_attackMoveNormal` |  |
@@ -91,9 +84,9 @@ public bool isWorldMapDisabled` |  |
 | **`moveMarker`** | `public CommandMarker moveMarker` |  |
 | **`noTargetIndicator`** | `public GameObject noTargetIndicator` |  |
 | **`noTargetIndicatorParent`** | `public Transform noTargetIndicatorParent` |  |
-| **`onCastFailed`** | `public Action&lt;AbilityTrigger&gt; onCastFailed` |  |
-| **`onFocusedInteractableChanged`** | `public Action&lt;IInteractable&gt; onFocusedInteractableChanged` |  |
-| **`onSelectedEntityChanged`** | `public Action&lt;Entity, Entity&gt; onSelectedEntityChanged` |  |
+| **`onCastFailed`** | `public Action<AbilityTrigger> onCastFailed` |  |
+| **`onFocusedInteractableChanged`** | `public Action<IInteractable> onFocusedInteractableChanged` |  |
+| **`onSelectedEntityChanged`** | `public Action<Entity, Entity> onSelectedEntityChanged` |  |
 | **`state`** | `public ControlManager.ControlState state` |  |
 | **`targetEnemyIndicatorUi`** | `public GameObject targetEnemyIndicatorUi` |  |
 | **`targetEnemyIndicatorWorld`** | `public GameObject targetEnemyIndicatorWorld` |  |
@@ -141,8 +134,8 @@ public void CastAbility(AbilityTrigger trigger, CastInfo info, bool shouldMoveTo
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `shouldMoveToCast` | `bool` |  |
 
 ### `CastAbilityAtCursor(AbilityTrigger)`
@@ -156,7 +149,7 @@ public bool CastAbilityAtCursor(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
@@ -169,7 +162,7 @@ public bool CastAbilityAuto(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
@@ -182,7 +175,7 @@ public bool CastAbilityGamepad(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
@@ -195,7 +188,7 @@ public bool CastAbilityInDirectionOfMovement(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
@@ -208,7 +201,7 @@ public bool CastAbilityWithAim(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 
@@ -263,9 +256,9 @@ public CastInfo GetCastInfo(CastMethodData method, AbilityTargetValidator target
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `method` | [CastMethodData](/api/Global.CastMethodData) |  |
-| `targetValidator` | [AbilityTargetValidator](/api/Global.AbilityTargetValidator) |  |
-| `prev` | [CastInfo](/api/Global.CastInfo) |  |
+| `method` | [`CastMethodData`](/api/Global.CastMethodData) |  |
+| `targetValidator` | [`AbilityTargetValidator`](/api/Global.AbilityTargetValidator) |  |
+| `prev` | [`CastInfo`](/api/Global.CastInfo) |  |
 
 **Returns:** `CastInfo`
 
@@ -279,8 +272,8 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Entity self, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `screenPoint` | `UnityEngine.Vector2` |  |
-| `self` | [Entity](/api/Global.Entity) |  |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
 | `sphereCastRadius` | `float` |  |
 
 **Returns:** `Entity`
@@ -295,12 +288,12 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, IEntityValida
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `screenPoint` | `UnityEngine.Vector2` |  |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
 | `sphereCastRadius` | `float` |  |
 
 **Returns:** `Entity`
 
-### `GetEntityFromScreenPoint(Vector2, Func&lt;Entity, bool&gt;, float)`
+### `GetEntityFromScreenPoint(Vector2, Func<Entity, bool>, float)`
 
 ```csharp
 public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Func<Entity, bool> validator, float sphereCastRadius = -1)
@@ -310,7 +303,7 @@ public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Func<Entity, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `screenPoint` | `UnityEngine.Vector2` |  |
-| `validator` | [System.Func&lt;T, TResult&gt;&lt;Entity,bool&gt;](/api/Global.Entity) |  |
+| `validator` | [`System.Func<T, TResult><Entity,bool>`](/api/Global.Entity) |  |
 | `sphereCastRadius` | `float` |  |
 
 **Returns:** `Entity`
@@ -338,8 +331,8 @@ public static Entity GetEntityOnCursor(Entity self, IBinaryEntityValidator valid
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `self` | [Entity](/api/Global.Entity) |  |
-| `validator` | [IBinaryEntityValidator](/api/Global.IBinaryEntityValidator) |  |
+| `self` | [`Entity`](/api/Global.Entity) |  |
+| `validator` | [`IBinaryEntityValidator`](/api/Global.IBinaryEntityValidator) |  |
 | `sphereCastRadius` | `float` |  |
 
 **Returns:** `Entity`
@@ -353,12 +346,12 @@ public static Entity GetEntityOnCursor(IEntityValidator validator, float sphereC
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `validator` | [IEntityValidator](/api/Global.IEntityValidator) |  |
+| `validator` | [`IEntityValidator`](/api/Global.IEntityValidator) |  |
 | `sphereCastRadius` | `float` |  |
 
 **Returns:** `Entity`
 
-### `GetEntityOnCursor(Func&lt;Entity, bool&gt;, float)`
+### `GetEntityOnCursor(Func<Entity, bool>, float)`
 
 ```csharp
 public static Entity GetEntityOnCursor(Func<Entity, bool> validator, float sphereCastRadius = -1)
@@ -367,7 +360,7 @@ public static Entity GetEntityOnCursor(Func<Entity, bool> validator, float spher
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `validator` | [System.Func&lt;T, TResult&gt;&lt;Entity,bool&gt;](/api/Global.Entity) |  |
+| `validator` | [`System.Func<T, TResult><Entity,bool>`](/api/Global.Entity) |  |
 | `sphereCastRadius` | `float` |  |
 
 **Returns:** `Entity`
@@ -385,7 +378,7 @@ public static Entity GetEntityOnCursor(float sphereCastRadius = -1)
 
 **Returns:** `Entity`
 
-### `GetFromScreenPoint&lt;T&gt;(Vector2, int, Func&lt;T, bool&gt;, float)`
+### `GetFromScreenPoint<T>(Vector2, int, Func<T, bool>, float)`
 
 ```csharp
 public static T GetFromScreenPoint<T>(Vector2 screenPoint, int layerMask, Func<T, bool> validator = null, float sphereCastRadius = -1)
@@ -396,7 +389,7 @@ public static T GetFromScreenPoint<T>(Vector2 screenPoint, int layerMask, Func<T
 | :--- | :--- | :--- |
 | `screenPoint` | `UnityEngine.Vector2` |  |
 | `layerMask` | `int` |  |
-| `validator` | `System.Func&lt;T, TResult&gt;&lt;T,bool&gt;` |  |
+| `validator` | `System.Func<T, TResult><T,bool>` |  |
 | `sphereCastRadius` | `float` |  |
 | `` | `T` |  |
 
@@ -462,7 +455,7 @@ public DewBinding GetSkillBinding(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `DewBinding`
 
@@ -475,7 +468,7 @@ public DewInputTrigger GetSkillInputTrigger(HeroSkillLocation type)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [HeroSkillLocation](/api/Global.HeroSkillLocation) |  |
+| `type` | [`HeroSkillLocation`](/api/Global.HeroSkillLocation) |  |
 
 **Returns:** `DewInputTrigger`
 
@@ -554,9 +547,9 @@ public void SetCastByKeyFlag(AbilityTrigger trigger, bool value, DewInputTrigger
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `value` | `bool` |  |
-| `it` | [DewInputTrigger](/api/Global.DewInputTrigger) |  |
+| `it` | [`DewInputTrigger`](/api/Global.DewInputTrigger) |  |
 
 ### `ShouldCastInDirectionOfMovement(AbilityTrigger)`
 
@@ -567,7 +560,7 @@ public bool ShouldCastInDirectionOfMovement(AbilityTrigger trigger)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 
 **Returns:** `bool`
 

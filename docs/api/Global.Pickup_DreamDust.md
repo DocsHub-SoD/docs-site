@@ -1,5 +1,6 @@
 # Class: Pickup_DreamDust
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [AbilityInstance](/api/Global.AbilityInstance) → [PickupInstance](/api/Global.PickupInstance)
@@ -12,13 +13,10 @@ public class Pickup_DreamDust : PickupInstance, ILogicUpdate, ICleanup, ICustomD
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`amount`** | `[NonSerialized]
-public int amount` |  |
-| **`isGivenByOtherPlayer`** | `[NonSerialized]
-public bool isGivenByOtherPlayer` |  |
-| **`onGiveDreamDust`** | `public SafeAction&lt;DewPlayer, int&gt; onGiveDreamDust` | Called on server. |
-| **`target`** | `[NonSerialized]
-public Hero target` |  |
+| **`amount`** | `[NonSerialized] public int amount` |  |
+| **`isGivenByOtherPlayer`** | `[NonSerialized] public bool isGivenByOtherPlayer` |  |
+| **`onGiveDreamDust`** | `public SafeAction<DewPlayer, int> onGiveDreamDust` | Called on server. |
+| **`target`** | `[NonSerialized] public Hero target` |  |
 
 ## Properties
 
@@ -37,7 +35,7 @@ protected override bool CanBeUsedBy(Hero hero)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hero` | [Hero](/api/Global.Hero) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |
 
 **Returns:** `bool`
 
@@ -62,4 +60,4 @@ protected override void OnPickup(Hero hero)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `hero` | [Hero](/api/Global.Hero) |  |
+| `hero` | [`Hero`](/api/Global.Hero) |  |

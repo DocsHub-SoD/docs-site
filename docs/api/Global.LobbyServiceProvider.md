@@ -1,5 +1,6 @@
 # Class: LobbyServiceProvider
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LobbyServiceSteam](/api/Global.LobbyServiceSteam)
@@ -44,7 +45,7 @@ public abstract string GetGameServerAddress()
 
 **Returns:** `string`
 
-### `GetLobbies(Action&lt;LobbySearchResult&gt;, object)`
+### `GetLobbies(Action<LobbySearchResult>, object)`
 
 Get list of lobbies we can join.
 
@@ -55,7 +56,7 @@ public abstract UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object c
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `onUpdated` | [System.Action&lt;T&gt;&lt;LobbySearchResult&gt;](/api/Global.LobbySearchResult) |  |
+| `onUpdated` | [`System.Action<T><LobbySearchResult>`](/api/Global.LobbySearchResult) |  |
 | `continuationToken` | `object` |  |
 
 **Returns:** `Cysharp.Threading.Tasks.UniTask`

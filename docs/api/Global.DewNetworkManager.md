@@ -1,5 +1,6 @@
 # Class: DewNetworkManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,9 +12,9 @@ public class DewNetworkManager : NetworkManager
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ClientEvent_OnDewNetworkBehaviourStart`** | `public SafeAction&lt;DewNetworkBehaviour&gt; ClientEvent_OnDewNetworkBehaviourStart` |  |
-| **`ClientEvent_OnDewNetworkBehaviourStop`** | `public SafeAction&lt;DewNetworkBehaviour&gt; ClientEvent_OnDewNetworkBehaviourStop` |  |
-| **`ClientEvent_OnLoadingStatusChanged`** | `public SafeAction&lt;bool&gt; ClientEvent_OnLoadingStatusChanged` |  |
+| **`ClientEvent_OnDewNetworkBehaviourStart`** | `public SafeAction<DewNetworkBehaviour> ClientEvent_OnDewNetworkBehaviourStart` |  |
+| **`ClientEvent_OnDewNetworkBehaviourStop`** | `public SafeAction<DewNetworkBehaviour> ClientEvent_OnDewNetworkBehaviourStop` |  |
+| **`ClientEvent_OnLoadingStatusChanged`** | `public SafeAction<bool> ClientEvent_OnLoadingStatusChanged` |  |
 | **`ClientEvent_OnSessionEnd`** | `public SafeAction ClientEvent_OnSessionEnd` | Called when current session is terminated, regardless of cause. (Kick, concluded game, restart, etc.) |
 | **`startSettings`** | `public static DewNetworkStartSettings startSettings` |  |
 
@@ -44,7 +45,7 @@ End this session. When called on server this ends everyone's game completely. Wh
 public void EndSession()
 ```
 
-### `LoadSceneAsync(string, List&lt;DewPlayer&gt;, Action)`
+### `LoadSceneAsync(string, List<DewPlayer>, Action)`
 
 ```csharp
 public IEnumerator LoadSceneAsync(string sceneName, List<DewPlayer> players = null, Action onBeforeSpawnObjects = null)
@@ -54,7 +55,7 @@ public IEnumerator LoadSceneAsync(string sceneName, List<DewPlayer> players = nu
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `sceneName` | `string` |  |
-| `players` | [System.Collections.Generic.List&lt;T&gt;&lt;DewPlayer&gt;](/api/Global.DewPlayer) |  |
+| `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 | `onBeforeSpawnObjects` | `System.Action` |  |
 
 **Returns:** `System.Collections.IEnumerator`
@@ -130,7 +131,7 @@ Restart this session. This can only be called on server.All players in the sessi
 public void RestartSession()
 ```
 
-### `SetLoadingStatus(bool, List&lt;DewPlayer&gt;)`
+### `SetLoadingStatus(bool, List<DewPlayer>)`
 
 ```csharp
 public void SetLoadingStatus(bool isLoading, List<DewPlayer> players = null)
@@ -140,9 +141,9 @@ public void SetLoadingStatus(bool isLoading, List<DewPlayer> players = null)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `isLoading` | `bool` |  |
-| `players` | [System.Collections.Generic.List&lt;T&gt;&lt;DewPlayer&gt;](/api/Global.DewPlayer) |  |
+| `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 
-### `SetWhiteLoadingStatus(bool, List&lt;DewPlayer&gt;)`
+### `SetWhiteLoadingStatus(bool, List<DewPlayer>)`
 
 ```csharp
 public void SetWhiteLoadingStatus(bool isLoading, List<DewPlayer> players = null)
@@ -152,7 +153,7 @@ public void SetWhiteLoadingStatus(bool isLoading, List<DewPlayer> players = null
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `isLoading` | `bool` |  |
-| `players` | [System.Collections.Generic.List&lt;T&gt;&lt;DewPlayer&gt;](/api/Global.DewPlayer) |  |
+| `players` | [`System.Collections.Generic.List<T><DewPlayer>`](/api/Global.DewPlayer) |  |
 
 ### `SpawnPlayerObject(NetworkConnectionToClient)`
 

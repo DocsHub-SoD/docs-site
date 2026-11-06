@@ -1,5 +1,6 @@
 # Class: MessageManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [LogicBehaviour](/api/Global.LogicBehaviour) → `ManagerBase` → [MessageManager](/api/Global.MessageManager)
@@ -12,7 +13,7 @@ public class MessageManager : ManagerBase<MessageManager>, ILogicUpdate
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`buttons`** | `public List&lt;GameObject&gt; buttons` |  |
+| **`buttons`** | `public List<GameObject> buttons` |  |
 | **`canvasGroup`** | `public CanvasGroup canvasGroup` |  |
 | **`contentText`** | `public TextMeshProUGUI contentText` |  |
 
@@ -33,7 +34,7 @@ public void CloseMessage(DewMessageSettings.ButtonType button)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `button` | [DewMessageSettings.ButtonType](/api/Global.DewMessageSettings) |  |
+| `button` | [`DewMessageSettings.ButtonType`](/api/Global.DewMessageSettings) |  |
 
 ### `CloseMessageCancel()`
 
@@ -85,7 +86,7 @@ public void ShowMessage(DewMessageSettings msg)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `msg` | [DewMessageSettings](/api/Global.DewMessageSettings) |  |
+| `msg` | [`DewMessageSettings`](/api/Global.DewMessageSettings) |  |
 
 ### `ShowMessageLocalized(string)`
 

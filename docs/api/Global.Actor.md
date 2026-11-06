@@ -1,5 +1,6 @@
 # Class: Actor
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [AbilityInstance](/api/Global.AbilityInstance) → [AbilityTrigger](/api/Global.AbilityTrigger) → [Artifact](/api/Global.Artifact) → [Entity](/api/Global.Entity) → [GameEffect](/api/Global.GameEffect) → [Gem](/api/Global.Gem) → [Rift](/api/Global.Rift) → [Room_Trap_Toggleable](/api/Global.Room_Trap_Toggleable) → [RoomModifierBase](/api/Global.RoomModifierBase) → [ServerActor](/api/Global.ServerActor) → [Shrine](/api/Global.Shrine) → [Treasure](/api/Global.Treasure)
@@ -14,42 +15,40 @@ public class Actor : DewNetworkBehaviour, ILogicUpdate, ICleanup, ICustomDestroy
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ActorEvent_OnAbilityInstanceBeforePrepare`** | `public SafeAction&lt;EventInfoAbilityInstance&gt; ActorEvent_OnAbilityInstanceBeforePrepare` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnAbilityInstanceCreated`** | `public SafeAction&lt;EventInfoAbilityInstance&gt; ActorEvent_OnAbilityInstanceCreated` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnApplyElemental`** | `public SafeAction&lt;EventInfoApplyElemental&gt; ActorEvent_OnApplyElemental` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnAttackEffectTriggered`** | `public SafeAction&lt;EventInfoAttackEffect&gt; ActorEvent_OnAttackEffectTriggered` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnAttackHit`** | `public SafeAction&lt;EventInfoAttackHit&gt; ActorEvent_OnAttackHit` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnDealDamage`** | `public SafeAction&lt;EventInfoDamage&gt; ActorEvent_OnDealDamage` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnDoHeal`** | `public SafeAction&lt;EventInfoHeal&gt; ActorEvent_OnDoHeal` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnDoManaHeal`** | `public SafeAction&lt;EventInfoHeal&gt; ActorEvent_OnDoManaHeal` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnGiveShield`** | `public SafeAction&lt;EventInfoShield&gt; ActorEvent_OnGiveShield` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnKill`** | `public SafeAction&lt;EventInfoKill&gt; ActorEvent_OnKill` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnSpawnSummon`** | `public SafeAction&lt;EventInfoSummon&gt; ActorEvent_OnSpawnSummon` | Note that ActorEvents can also be from its descendants. |
-| **`ActorEvent_OnSpendMana`** | `public SafeAction&lt;EventInfoSpentMana&gt; ActorEvent_OnSpendMana` | Note that ActorEvents can also be from its descendants. |
-| **`children`** | `public readonly List&lt;Actor&gt; children` | Alive, non-destroyed children actors. |
-| **`childrenInNetwork`** | `public readonly List&lt;Actor&gt; childrenInNetwork` | Children that are alive, or not yet despawned from the network. |
-| **`ClientActorEvent_OnCreate`** | `public SafeAction&lt;Actor&gt; ClientActorEvent_OnCreate` | Called everywhere when an actor is created including child actors. |
-| **`ClientActorEvent_OnDestroyed`** | `public SafeAction&lt;Actor&gt; ClientActorEvent_OnDestroyed` | Called everywhere when this actor is destroyed. |
-| **`ClientEvent_OnPersistentSyncedDataChanged`** | `public SafeAction&lt;string&gt; ClientEvent_OnPersistentSyncedDataChanged` |  |
-| **`dealtCooldownReductionByRatioProcessor`** | `public DataProcessorGroup&lt;CooldownReductionByRatioSettings, Actor, AbilityTrigger&gt; dealtCooldownReductionByRatioProcessor` | Processor for dealt cooldown reductions by ratio. This is only valid on server.All cooldown reductions done by this actor will be processed by this and every ancestor's preprocessors. |
-| **`dealtCooldownReductionProcessor`** | `public DataProcessorGroup&lt;CooldownReductionSettings, Actor, AbilityTrigger&gt; dealtCooldownReductionProcessor` | Processor for dealt cooldown reductions of fixed amount. This is only valid on server.All cooldown reductions done by this actor will be processed by this and every ancestor's preprocessors. |
-| **`dealtDamageProcessor`** | `public DataProcessorGroup&lt;DamageData, Actor, Entity&gt; dealtDamageProcessor` | Processor for all dealt damages (Except pure damage). This is only valid on server.All damages from this actor will be processed by this and every ancestors' preprocessors. |
-| **`dealtHealProcessor`** | `public DataProcessorGroup&lt;HealData, Actor, Entity&gt; dealtHealProcessor` | Processor for dealt heals. This is only valid on server.All heals from this actor will be processed by this and every ancestors' preprocessors. |
-| **`dealtManaHealProcessor`** | `public DataProcessorGroup&lt;HealData, Actor, Entity&gt; dealtManaHealProcessor` | Processor for dealt mana heals. This is only valid on server.All mana heals from this actor will be processed by this and every ancestors' preprocessors. |
-| **`dealtShieldProcessor`** | `public DataProcessorGroup&lt;HealData, Actor, Entity&gt; dealtShieldProcessor` | Processor for received shields. This is only valid on server. |
+| **`ActorEvent_OnAbilityInstanceBeforePrepare`** | `public SafeAction<EventInfoAbilityInstance> ActorEvent_OnAbilityInstanceBeforePrepare` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnAbilityInstanceCreated`** | `public SafeAction<EventInfoAbilityInstance> ActorEvent_OnAbilityInstanceCreated` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnApplyElemental`** | `public SafeAction<EventInfoApplyElemental> ActorEvent_OnApplyElemental` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnAttackEffectTriggered`** | `public SafeAction<EventInfoAttackEffect> ActorEvent_OnAttackEffectTriggered` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnAttackHit`** | `public SafeAction<EventInfoAttackHit> ActorEvent_OnAttackHit` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnDealDamage`** | `public SafeAction<EventInfoDamage> ActorEvent_OnDealDamage` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnDoHeal`** | `public SafeAction<EventInfoHeal> ActorEvent_OnDoHeal` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnDoManaHeal`** | `public SafeAction<EventInfoHeal> ActorEvent_OnDoManaHeal` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnGiveShield`** | `public SafeAction<EventInfoShield> ActorEvent_OnGiveShield` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnKill`** | `public SafeAction<EventInfoKill> ActorEvent_OnKill` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnSpawnSummon`** | `public SafeAction<EventInfoSummon> ActorEvent_OnSpawnSummon` | Note that ActorEvents can also be from its descendants. |
+| **`ActorEvent_OnSpendMana`** | `public SafeAction<EventInfoSpentMana> ActorEvent_OnSpendMana` | Note that ActorEvents can also be from its descendants. |
+| **`children`** | `public readonly List<Actor> children` | Alive, non-destroyed children actors. |
+| **`childrenInNetwork`** | `public readonly List<Actor> childrenInNetwork` | Children that are alive, or not yet despawned from the network. |
+| **`ClientActorEvent_OnCreate`** | `public SafeAction<Actor> ClientActorEvent_OnCreate` | Called everywhere when an actor is created including child actors. |
+| **`ClientActorEvent_OnDestroyed`** | `public SafeAction<Actor> ClientActorEvent_OnDestroyed` | Called everywhere when this actor is destroyed. |
+| **`ClientEvent_OnPersistentSyncedDataChanged`** | `public SafeAction<string> ClientEvent_OnPersistentSyncedDataChanged` |  |
+| **`dealtCooldownReductionByRatioProcessor`** | `public DataProcessorGroup<CooldownReductionByRatioSettings, Actor, AbilityTrigger> dealtCooldownReductionByRatioProcessor` | Processor for dealt cooldown reductions by ratio. This is only valid on server.All cooldown reductions done by this actor will be processed by this and every ancestor's preprocessors. |
+| **`dealtCooldownReductionProcessor`** | `public DataProcessorGroup<CooldownReductionSettings, Actor, AbilityTrigger> dealtCooldownReductionProcessor` | Processor for dealt cooldown reductions of fixed amount. This is only valid on server.All cooldown reductions done by this actor will be processed by this and every ancestor's preprocessors. |
+| **`dealtDamageProcessor`** | `public DataProcessorGroup<DamageData, Actor, Entity> dealtDamageProcessor` | Processor for all dealt damages (Except pure damage). This is only valid on server.All damages from this actor will be processed by this and every ancestors' preprocessors. |
+| **`dealtHealProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> dealtHealProcessor` | Processor for dealt heals. This is only valid on server.All heals from this actor will be processed by this and every ancestors' preprocessors. |
+| **`dealtManaHealProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> dealtManaHealProcessor` | Processor for dealt mana heals. This is only valid on server.All mana heals from this actor will be processed by this and every ancestors' preprocessors. |
+| **`dealtShieldProcessor`** | `public DataProcessorGroup<HealData, Actor, Entity> dealtShieldProcessor` | Processor for received shields. This is only valid on server. |
 | **`KilledByUnstoppableEffects`** | `public static Type[] KilledByUnstoppableEffects` |  |
-| **`persistentData`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly Dictionary&lt;string, string&gt; persistentData` | Available on server. Generic persistent data storage that will be saved and loaded with this actor. |
-| **`persistentSyncedData`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncDictionary&lt;string, string&gt; persistentSyncedData` | Available everywhere, and can only be set on server. Generic persistent synced data storage that will be saved and loaded with this actor, and be synced across the network.Use this to store states in the network context. (think: synced variables) |
+| **`persistentData`** | `[SaveVar(SaveVarFlags.Default)] public readonly Dictionary<string, string> persistentData` | Available on server. Generic persistent data storage that will be saved and loaded with this actor. |
+| **`persistentSyncedData`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, string> persistentSyncedData` | Available everywhere, and can only be set on server. Generic persistent synced data storage that will be saved and loaded with this actor, and be synced across the network.Use this to store states in the network context. (think: synced variables) |
 | **`ScaleDurationByTenacityEffects`** | `public static Type[] ScaleDurationByTenacityEffects` |  |
-| **`spawnedChildVarDefProcessor`** | `public DataProcessorGroup&lt;VariantDef, Actor, Type&gt; spawnedChildVarDefProcessor` |  |
+| **`spawnedChildVarDefProcessor`** | `public DataProcessorGroup<VariantDef, Actor, Type> spawnedChildVarDefProcessor` |  |
 
 ## Properties
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`ancestors`** | `public IEnumerable&lt;Actor&gt; ancestors { get; }` | Enumerable ancestors of this actor. Ordering is the same as the actor tree order, first element being the direct parent. |
+| **`ancestors`** | `public IEnumerable<Actor> ancestors { get; }` | Enumerable ancestors of this actor. Ordering is the same as the actor tree order, first element being the direct parent. |
 | **`chainTempName`** | `public ReactionChain chainTempName { get; }` | Reaction chain of this actor. Available only on server. |
 | **`creationTime`** | `public float creationTime { get; }` | Time of this actor's creation byTime.time. |
 | **`firstEntity`** | `public Entity firstEntity { get; }` | The first entity in this actor's ancestor tree.This property can be used to e.g. find the caster of an ability instance. |
@@ -62,10 +61,8 @@ public readonly SyncDictionary&lt;string, string&gt; persistentSyncedData` | Ava
 | **`parentActor`** | `public Actor parentActor { get; set; }` |  |
 | **`parentActorNetId`** | `public uint parentActorNetId { get; }` |  |
 | **`persistentNetId`** | `public uint persistentNetId { get; }` | Mirror setsnetIdto 0 on despawn. This property will tell you its former netId even after being despawned. |
-| **`position`** | `[SaveVar(SaveVarFlags.Default)]
-public Vector3 position { get; set; }` | Position of this actor. Same astransform.position. |
-| **`rotation`** | `[SaveVar(SaveVarFlags.Default)]
-public Quaternion rotation { get; set; }` | Rotation of this actor. Same astransform.rotation. |
+| **`position`** | `[SaveVar(SaveVarFlags.Default)] public Vector3 position { get; set; }` | Position of this actor. Same astransform.position. |
+| **`rotation`** | `[SaveVar(SaveVarFlags.Default)] public Quaternion rotation { get; set; }` | Rotation of this actor. Same astransform.rotation. |
 
 ## Methods
 
@@ -90,7 +87,7 @@ protected virtual void ActiveLogicUpdate(float dt)
 | :--- | :--- | :--- |
 | `dt` | `float` |  |
 
-### `AddData&lt;T&gt;(T)`
+### `AddData<T>(T)`
 
 ```csharp
 public void AddData<T>(T data)
@@ -113,8 +110,8 @@ public void ApplyCooldownReduction(AbilityTrigger trigger, CooldownReductionSett
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
-| `settings` | [CooldownReductionSettings](/api/Global.CooldownReductionSettings) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
+| `settings` | [`CooldownReductionSettings`](/api/Global.CooldownReductionSettings) |  |
 
 ### `ApplyCooldownReduction(AbilityTrigger, float, bool, bool)`
 
@@ -127,7 +124,7 @@ public void ApplyCooldownReduction(AbilityTrigger trigger, float amount, bool sc
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `amount` | `float` |  |
 | `scaled` | `bool` |  |
 | `ignoreCanReceiveCooldown` | `bool` |  |
@@ -143,8 +140,8 @@ public void ApplyCooldownReductionByRatio(AbilityTrigger trigger, CooldownReduct
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
-| `settings` | [CooldownReductionByRatioSettings](/api/Global.CooldownReductionByRatioSettings) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
+| `settings` | [`CooldownReductionByRatioSettings`](/api/Global.CooldownReductionByRatioSettings) |  |
 
 ### `ApplyCooldownReductionByRatio(AbilityTrigger, float, bool)`
 
@@ -157,7 +154,7 @@ public void ApplyCooldownReductionByRatio(AbilityTrigger trigger, float ratio, b
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `ratio` | `float` |  |
 | `ignoreCanReceiveCooldown` | `bool` |  |
 
@@ -170,8 +167,8 @@ public ElementalStatusEffect ApplyElemental(ElementalType type, Entity to, int a
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [ElementalType](/api/Global.ElementalType) |  |
-| `to` | [Entity](/api/Global.Entity) |  |
+| `type` | [`ElementalType`](/api/Global.ElementalType) |  |
+| `to` | [`Entity`](/api/Global.Entity) |  |
 | `appliedStacks` | `int` |  |
 
 **Returns:** `ElementalStatusEffect`
@@ -190,7 +187,7 @@ Clear flag that excludes this actor from room save.Note this won't make non-savi
 public void ClearExcludeFromRoomSave()
 ```
 
-### `CreateAbilityInstance(Type, Vector3, Quaternion?, CastInfo, Action&lt;AbilityInstance&gt;)`
+### `CreateAbilityInstance(Type, Vector3, Quaternion?, CastInfo, Action<AbilityInstance>)`
 
 ```csharp
 public AbilityInstance CreateAbilityInstance(Type type, Vector3 position, Quaternion? rotation, CastInfo info, Action<AbilityInstance> beforePrepare = null)
@@ -202,12 +199,12 @@ public AbilityInstance CreateAbilityInstance(Type type, Vector3 position, Quater
 | `type` | `System.Type` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | [System.Action&lt;T&gt;&lt;AbilityInstance&gt;](/api/Global.AbilityInstance) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | [`System.Action<T><AbilityInstance>`](/api/Global.AbilityInstance) |  |
 
 **Returns:** `AbilityInstance`
 
-### `CreateAbilityInstance&lt;T&gt;(T, Vector3, Quaternion?, CastInfo, Action&lt;T&gt;)`
+### `CreateAbilityInstance<T>(T, Vector3, Quaternion?, CastInfo, Action<T>)`
 
 ```csharp
 public T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -219,13 +216,13 @@ public T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotati
 | `prefab` | `T` |  |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateAbilityInstance&lt;T&gt;(Vector3, Quaternion?, CastInfo, Action&lt;T&gt;)`
+### `CreateAbilityInstance<T>(Vector3, Quaternion?, CastInfo, Action<T>)`
 
 ```csharp
 public T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance
@@ -236,13 +233,13 @@ public T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, CastIn
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateActor&lt;T&gt;(T, Vector3, Quaternion?, Action&lt;T&gt;)`
+### `CreateActor<T>(T, Vector3, Quaternion?, Action<T>)`
 
 ```csharp
 public T CreateActor<T>(T prefab, Vector3 pos, Quaternion? rot, Action<T> beforePrepare = null) where T : Actor
@@ -254,12 +251,12 @@ public T CreateActor<T>(T prefab, Vector3 pos, Quaternion? rot, Action<T> before
 | `prefab` | `T` |  |
 | `pos` | `UnityEngine.Vector3` |  |
 | `rot` | `UnityEngine.Quaternion?` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateActor&lt;T&gt;(Vector3, Quaternion?, Action&lt;T&gt;)`
+### `CreateActor<T>(Vector3, Quaternion?, Action<T>)`
 
 ```csharp
 public T CreateActor<T>(Vector3 pos, Quaternion? rot, Action<T> beforePrepare = null) where T : Actor
@@ -270,7 +267,7 @@ public T CreateActor<T>(Vector3 pos, Quaternion? rot, Action<T> beforePrepare = 
 | :--- | :--- | :--- |
 | `pos` | `UnityEngine.Vector3` |  |
 | `rot` | `UnityEngine.Quaternion?` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -286,11 +283,11 @@ public Se_GenericEffectContainer CreateBasicEffect(Entity victim, BasicEffect ef
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `eff` | [BasicEffect](/api/Global.BasicEffect) |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `eff` | [`BasicEffect`](/api/Global.BasicEffect) |  |
 | `duration` | `float` |  |
 | `id` | `string` |  |
-| `onDuplicate` | [DuplicateEffectBehavior](/api/Global.DuplicateEffectBehavior) |  |
+| `onDuplicate` | [`DuplicateEffectBehavior`](/api/Global.DuplicateEffectBehavior) |  |
 
 **Returns:** `Se_GenericEffectContainer`
 
@@ -303,13 +300,13 @@ public DamageData CreateDamage(DamageData.SourceType type, float amount, float p
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `type` | [DamageData.SourceType](/api/Global.DamageData) |  |
+| `type` | [`DamageData.SourceType`](/api/Global.DamageData) |  |
 | `amount` | `float` |  |
 | `procCoefficient` | `float` |  |
 
 **Returns:** `DamageData`
 
-### `CreateStatusEffect(Type, Entity, CastInfo, Action&lt;StatusEffect&gt;)`
+### `CreateStatusEffect(Type, Entity, CastInfo, Action<StatusEffect>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -321,13 +318,13 @@ public StatusEffect CreateStatusEffect(Type type, Entity victim, CastInfo info, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `System.Type` |  |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | [System.Action&lt;T&gt;&lt;StatusEffect&gt;](/api/Global.StatusEffect) |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | [`System.Action<T><StatusEffect>`](/api/Global.StatusEffect) |  |
 
 **Returns:** `StatusEffect`
 
-### `CreateStatusEffect&lt;T&gt;(T, Entity, CastInfo, Action&lt;T&gt;)`
+### `CreateStatusEffect<T>(T, Entity, CastInfo, Action<T>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -339,14 +336,14 @@ public T CreateStatusEffect<T>(T prefab, Entity victim, CastInfo info, Action<T>
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `prefab` | `T` |  |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `CreateStatusEffect&lt;T&gt;(Entity, CastInfo, Action&lt;T&gt;)`
+### `CreateStatusEffect<T>(Entity, CastInfo, Action<T>)`
 
 Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.
 
@@ -357,9 +354,9 @@ public T CreateStatusEffect<T>(Entity victim, CastInfo info, Action<T> beforePre
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -382,7 +379,7 @@ public void CustomRpc_ClearClientMessageHandlers()
 public void CustomRpc_ClearServerMessageHandlers()
 ```
 
-### `CustomRpc_RegisterClientMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
+### `CustomRpc_RegisterClientMessageHandler<T>(Action<T>)`
 
 Register a client RPC handler. (server to clients) Registering multiple handlers for same type will result in all handlers passed being called.
 
@@ -393,10 +390,10 @@ public void CustomRpc_RegisterClientMessageHandler<T>(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `CustomRpc_RegisterServerMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
+### `CustomRpc_RegisterServerMessageHandler<T>(Action<T>)`
 
 Register a server RPC handler. (client to server) Registering multiple handlers for same type will result in all handlers passed being called.
 
@@ -407,10 +404,10 @@ public void CustomRpc_RegisterServerMessageHandler<T>(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `CustomRpc_RegisterServerMessageHandler&lt;T&gt;(string, Action&lt;T, DewPlayer&gt;)`
+### `CustomRpc_RegisterServerMessageHandler<T>(string, Action<T, DewPlayer>)`
 
 Register a server RPC handler. (client to server) Registering multiple handlers for same type will result in all handlers passed being called.This variant allows you to receive the caller client as a parameter.
 
@@ -422,10 +419,10 @@ public void CustomRpc_RegisterServerMessageHandler<T>(string type, Action<T, Dew
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `type` | `string` |  |
-| `handler` | [System.Action&lt;T1, T2&gt;&lt;T,DewPlayer&gt;](/api/Global.DewPlayer) |  |
+| `handler` | [`System.Action<T1, T2><T,DewPlayer>`](/api/Global.DewPlayer) |  |
 | `` | `T` |  |
 
-### `CustomRpc_SendMessageToAllClients&lt;T&gt;(T)`
+### `CustomRpc_SendMessageToAllClients<T>(T)`
 
 Make a remote procedure call: Server =&gt; All Clients
 
@@ -439,7 +436,7 @@ public void CustomRpc_SendMessageToAllClients<T>(T msg)
 | `msg` | `T` |  |
 | `` | `T` |  |
 
-### `CustomRpc_SendMessageToClient&lt;T&gt;(DewPlayer, T)`
+### `CustomRpc_SendMessageToClient<T>(DewPlayer, T)`
 
 Make a remote procedure call: Server =&gt; Specific Client
 
@@ -450,11 +447,11 @@ public void CustomRpc_SendMessageToClient<T>(DewPlayer target, T msg)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `target` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `msg` | `T` |  |
 | `` | `T` |  |
 
-### `CustomRpc_SendMessageToServer&lt;T&gt;(T)`
+### `CustomRpc_SendMessageToServer<T>(T)`
 
 Make a remote procedure call: Client =&gt; ServerHosts can also make use of this RPC.
 
@@ -468,7 +465,7 @@ public void CustomRpc_SendMessageToServer<T>(T msg)
 | `msg` | `T` |  |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterClientMessageHandler&lt;T&gt;()`
+### `CustomRpc_UnregisterClientMessageHandler<T>()`
 
 ```csharp
 public void CustomRpc_UnregisterClientMessageHandler<T>()
@@ -479,7 +476,7 @@ public void CustomRpc_UnregisterClientMessageHandler<T>()
 | :--- | :--- | :--- |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterClientMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
+### `CustomRpc_UnregisterClientMessageHandler<T>(Action<T>)`
 
 ```csharp
 public void CustomRpc_UnregisterClientMessageHandler<T>(Action<T> handler)
@@ -488,10 +485,10 @@ public void CustomRpc_UnregisterClientMessageHandler<T>(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterServerMessageHandler&lt;T&gt;()`
+### `CustomRpc_UnregisterServerMessageHandler<T>()`
 
 ```csharp
 public void CustomRpc_UnregisterServerMessageHandler<T>()
@@ -502,7 +499,7 @@ public void CustomRpc_UnregisterServerMessageHandler<T>()
 | :--- | :--- | :--- |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterServerMessageHandler&lt;T&gt;(Action&lt;T, DewPlayer&gt;)`
+### `CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer>)`
 
 ```csharp
 public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer> handler)
@@ -511,10 +508,10 @@ public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer> han
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | [System.Action&lt;T1, T2&gt;&lt;T,DewPlayer&gt;](/api/Global.DewPlayer) |  |
+| `handler` | [`System.Action<T1, T2><T,DewPlayer>`](/api/Global.DewPlayer) |  |
 | `` | `T` |  |
 
-### `CustomRpc_UnregisterServerMessageHandler&lt;T&gt;(Action&lt;T&gt;)`
+### `CustomRpc_UnregisterServerMessageHandler<T>(Action<T>)`
 
 ```csharp
 public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T> handler)
@@ -523,7 +520,7 @@ public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T> handler)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handler` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `handler` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 ### `DealDamage(DamageData, Entity, ReactionChain)`
@@ -537,9 +534,9 @@ public void DealDamage(DamageData damage, Entity target, ReactionChain chain = d
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `damage` | [DamageData](/api/Global.DamageData) |  |
-| `target` | [Entity](/api/Global.Entity) |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `damage` | [`DamageData`](/api/Global.DamageData) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 ### `DefaultDamage(float, float)`
 
@@ -580,7 +577,7 @@ public void DoBasicAttackHit(Entity target, bool isCriticalHit, bool isMain, flo
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `isCriticalHit` | `bool` |  |
 | `isMain` | `bool` |  |
 | `damage` | `float` |  |
@@ -597,9 +594,9 @@ public void DoHeal(HealData heal, Entity target, ReactionChain chain = default)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `heal` | [HealData](/api/Global.HealData) |  |
-| `target` | [Entity](/api/Global.Entity) |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `heal` | [`HealData`](/api/Global.HealData) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 ### `DoManaHeal(HealData, Entity, ReactionChain)`
 
@@ -612,9 +609,9 @@ public void DoManaHeal(HealData heal, Entity target, ReactionChain chain = defau
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `heal` | [HealData](/api/Global.HealData) |  |
-| `target` | [Entity](/api/Global.Entity) |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `heal` | [`HealData`](/api/Global.HealData) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 ### `ExcludeFromRoomSave()`
 
@@ -624,7 +621,7 @@ Mark this actor as excluded from room save.
 public void ExcludeFromRoomSave()
 ```
 
-### `FindData&lt;T&gt;(Predicate&lt;T&gt;)`
+### `FindData<T>(Predicate<T>)`
 
 ```csharp
 public T FindData<T>(Predicate<T> predicate)
@@ -633,12 +630,12 @@ public T FindData<T>(Predicate<T> predicate)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `predicate` | `System.Predicate&lt;T&gt;&lt;T&gt;` |  |
+| `predicate` | `System.Predicate<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `FindFirstAncestorOfType&lt;T&gt;()`
+### `FindFirstAncestorOfType<T>()`
 
 Find first actor that matches the given type in this actor's ancestor tree.
 
@@ -653,7 +650,7 @@ public T FindFirstAncestorOfType<T>() where T : Actor
 
 **Returns:** `T`
 
-### `FindFirstOfType&lt;T&gt;()`
+### `FindFirstOfType<T>()`
 
 Find first actor that matches the given type in this actor's ancestor tree including itself.
 
@@ -682,7 +679,7 @@ public virtual string GetActorReadableName()
 
 **Returns:** `string`
 
-### `GetData&lt;T&gt;()`
+### `GetData<T>()`
 
 ```csharp
 public T GetData<T>()
@@ -722,15 +719,15 @@ public Se_GenericShield_OneShot GiveShield(Entity victim, float amount, float du
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `victim` | [Entity](/api/Global.Entity) |  |
+| `victim` | [`Entity`](/api/Global.Entity) |  |
 | `amount` | `float` |  |
 | `duration` | `float` |  |
 | `isDecay` | `bool` |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
 **Returns:** `Se_GenericShield_OneShot`
 
-### `HasData&lt;T&gt;()`
+### `HasData<T>()`
 
 ```csharp
 public bool HasData<T>()
@@ -765,7 +762,7 @@ public void HideOnScreenTimerLocally(OnScreenTimerHandle handle)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | [OnScreenTimerHandle](/api/Global.OnScreenTimerHandle) |  |
+| `handle` | [`OnScreenTimerHandle`](/api/Global.OnScreenTimerHandle) |  |
 
 ### `IsDescendantOf(Actor)`
 
@@ -778,11 +775,11 @@ public bool IsDescendantOf(Actor actor)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `actor` | [Actor](/api/Global.Actor) |  |
+| `actor` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `bool`
 
-### `IsDescendantOf&lt;T&gt;()`
+### `IsDescendantOf<T>()`
 
 Is this actor a descendant of the given actor?Is the given actor this actor's ancestor (parent/grand-parent/grand-grand-parent...)?
 
@@ -938,7 +935,7 @@ public float ProcessShieldAmount(float amount, Entity target)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `float`
 
@@ -951,7 +948,7 @@ public void ProcessSpawnedChildVarDefProcessor(ref VariantDef data, Type childTy
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `data` | [VariantDef](/api/Global.VariantDef) |  |
+| `data` | [`VariantDef`](/api/Global.VariantDef) |  |
 | `childType` | `System.Type` |  |
 
 ### `PureDamage(float, float)`
@@ -980,7 +977,7 @@ public void RefundMana(float amount, Entity target)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `RemoveData(object)`
 
@@ -995,7 +992,7 @@ public bool RemoveData(object obj)
 
 **Returns:** `bool`
 
-### `RemoveData&lt;T&gt;()`
+### `RemoveData<T>()`
 
 ```csharp
 public bool RemoveData<T>()
@@ -1017,7 +1014,7 @@ public void ResetCooldown(AbilityTrigger trigger, bool ignoreCanReceiveCooldown 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `ignoreCanReceiveCooldown` | `bool` |  |
 
 ### `ShouldBeSavedWithRoom()`
@@ -1041,11 +1038,11 @@ public OnScreenTimerHandle ShowOnScreenTimerLocally(OnScreenTimerHandle handle)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | [OnScreenTimerHandle](/api/Global.OnScreenTimerHandle) |  |
+| `handle` | [`OnScreenTimerHandle`](/api/Global.OnScreenTimerHandle) |  |
 
 **Returns:** `OnScreenTimerHandle`
 
-### `SpawnEntity&lt;T&gt;(T, Vector3, Quaternion?, DewPlayer, int, Action&lt;T&gt;)`
+### `SpawnEntity<T>(T, Vector3, Quaternion?, DewPlayer, int, Action<T>)`
 
 ```csharp
 public T SpawnEntity<T>(T entity, Vector3 pos, Quaternion? rot, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -1057,14 +1054,14 @@ public T SpawnEntity<T>(T entity, Vector3 pos, Quaternion? rot, DewPlayer owner,
 | `entity` | `T` |  |
 | `pos` | `UnityEngine.Vector3` |  |
 | `rot` | `UnityEngine.Quaternion?` |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SpawnEntity&lt;T&gt;(Vector3, Quaternion?, DewPlayer, int, Action&lt;T&gt;)`
+### `SpawnEntity<T>(Vector3, Quaternion?, DewPlayer, int, Action<T>)`
 
 ```csharp
 public T SpawnEntity<T>(Vector3 pos, Quaternion? rot, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity
@@ -1075,14 +1072,14 @@ public T SpawnEntity<T>(Vector3 pos, Quaternion? rot, DewPlayer owner, int level
 | :--- | :--- | :--- |
 | `pos` | `UnityEngine.Vector3` |  |
 | `rot` | `UnityEngine.Quaternion?` |  |
-| `owner` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `owner` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `level` | `int` |  |
-| `beforeSpawn` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforeSpawn` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
 
-### `SpawnSummon&lt;T&gt;(Vector3, Quaternion?, Action&lt;T&gt;)`
+### `SpawnSummon<T>(Vector3, Quaternion?, Action<T>)`
 
 ```csharp
 public T SpawnSummon<T>(Vector3 position, Quaternion? rotation, Action<T> beforePrepare = null) where T : Summon
@@ -1093,7 +1090,7 @@ public T SpawnSummon<T>(Vector3 position, Quaternion? rotation, Action<T> before
 | :--- | :--- | :--- |
 | `position` | `UnityEngine.Vector3` |  |
 | `rotation` | `UnityEngine.Quaternion?` |  |
-| `beforePrepare` | `System.Action&lt;T&gt;&lt;T&gt;` |  |
+| `beforePrepare` | `System.Action<T>` |  |
 | `` | `T` |  |
 
 **Returns:** `T`
@@ -1110,7 +1107,7 @@ public void SpendMana(float amount, Entity target)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `amount` | `float` |  |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 
 ### `Teleport(Entity, Vector3)`
 
@@ -1123,7 +1120,7 @@ public void Teleport(Entity entity, Vector3 position)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 | `position` | `UnityEngine.Vector3` |  |
 
 ### `ToString()`
@@ -1134,7 +1131,7 @@ public override string ToString()
 
 **Returns:** `string`
 
-### `TrackKills(float, Action&lt;EventInfoKill&gt;)`
+### `TrackKills(float, Action<EventInfoKill>)`
 
 Report any kills with contribution of this actor's damage with given grace period.You must Stop() the tracker to properly dispose it.
 
@@ -1146,7 +1143,7 @@ public KillTracker TrackKills(float gracePeriod, Action<EventInfoKill> callback)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `gracePeriod` | `float` |  |
-| `callback` | [System.Action&lt;T&gt;&lt;EventInfoKill&gt;](/api/Global.EventInfoKill) |  |
+| `callback` | [`System.Action<T><EventInfoKill>`](/api/Global.EventInfoKill) |  |
 
 **Returns:** `KillTracker`
 
@@ -1159,12 +1156,12 @@ public void TriggerAttackEffects(Entity target, float strength, AttackEffectType
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `strength` | `float` |  |
-| `type` | [AttackEffectType](/api/Global.AttackEffectType) |  |
-| `chain` | [ReactionChain](/api/Global.ReactionChain) |  |
+| `type` | [`AttackEffectType`](/api/Global.AttackEffectType) |  |
+| `chain` | [`ReactionChain`](/api/Global.ReactionChain) |  |
 
-### `TryFindData&lt;T&gt;(Predicate&lt;T&gt;, out T)`
+### `TryFindData<T>(Predicate<T>, out T)`
 
 ```csharp
 public bool TryFindData<T>(Predicate<T> predicate, out T result)
@@ -1173,13 +1170,13 @@ public bool TryFindData<T>(Predicate<T> predicate, out T result)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `predicate` | `System.Predicate&lt;T&gt;&lt;T&gt;` |  |
+| `predicate` | `System.Predicate<T>` |  |
 | `result` | `T` |  |
 | `` | `T` |  |
 
 **Returns:** `bool`
 
-### `TryGetData&lt;T&gt;(out T)`
+### `TryGetData<T>(out T)`
 
 ```csharp
 public bool TryGetData<T>(out T data)

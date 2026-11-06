@@ -1,5 +1,6 @@
 # Class: ChoiceShrine
 
+- **Category:** <span class="cat-dot" style="--cat-color: #22c55e" data-cat="Actors & Entities"></span> Actors & Entities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [Actor](/api/Global.Actor) → [Shrine](/api/Global.Shrine)
@@ -12,11 +13,10 @@ public abstract class ChoiceShrine : Shrine, ILogicUpdate, ICleanup, ICustomDest
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`choices`** | `[SaveVar(SaveVarFlags.Default)]
-public readonly SyncDictionary&lt;string, ChoiceShrineItem[]&gt; choices` |  |
+| **`choices`** | `[SaveVar(SaveVarFlags.Default)] public readonly SyncDictionary<string, ChoiceShrineItem[]> choices` |  |
 | **`ClientEvent_OnChoicesUpdated`** | `public SafeAction ClientEvent_OnChoicesUpdated` |  |
 | **`itemCount`** | `public int itemCount` |  |
-| **`onItemsPopulated`** | `public SafeAction&lt;DewPlayer&gt; onItemsPopulated` | Called on server. |
+| **`onItemsPopulated`** | `public SafeAction<DewPlayer> onItemsPopulated` | Called on server. |
 
 ## Methods
 
@@ -59,7 +59,7 @@ protected abstract void OnPopulateChoices(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `OnUse(Entity)`
 
@@ -70,7 +70,7 @@ protected override bool OnUse(Entity entity)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `entity` | [Entity](/api/Global.Entity) |  |
+| `entity` | [`Entity`](/api/Global.Entity) |  |
 
 **Returns:** `bool`
 
@@ -83,4 +83,4 @@ public void PopulatePlayerChoices(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |

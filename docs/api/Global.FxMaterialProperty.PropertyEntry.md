@@ -1,5 +1,6 @@
 # Struct: FxMaterialProperty.PropertyEntry
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,18 +13,10 @@ public struct FxMaterialProperty.PropertyEntry
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`endColor`** | `[ColorUsage(true, true)]
-[ShowIf("@type == FxMaterialProperty.PropertyType.Color", true)]
-public Color endColor` |  |
+| **`endColor`** | `[ColorUsage(true, true)] [ShowIf("@type == FxMaterialProperty.PropertyType.Color", true)] public Color endColor` |  |
 | **`property`** | `public string property` |  |
-| **`startColor`** | `[ColorUsage(true, true)]
-[ShowIf("@type == FxMaterialProperty.PropertyType.Color", true)]
-public Color startColor` |  |
-| **`target`** | `[LabelText("Renderer")]
-[HideIf("@targetUi != null", true)]
-public Renderer target` |  |
-| **`targetUi`** | `[LabelText("UI Graphic")]
-[HideIf("@target != null", true)]
-public Graphic targetUi` |  |
+| **`startColor`** | `[ColorUsage(true, true)] [ShowIf("@type == FxMaterialProperty.PropertyType.Color", true)] public Color startColor` |  |
+| **`target`** | `[LabelText("Renderer")] [HideIf("@targetUi != null", true)] public Renderer target` |  |
+| **`targetUi`** | `[LabelText("UI Graphic")] [HideIf("@target != null", true)] public Graphic targetUi` |  |
 | **`type`** | `public FxMaterialProperty.PropertyType type` |  |
 | **`valueCurve`** | `public AnimationCurve valueCurve` |  |

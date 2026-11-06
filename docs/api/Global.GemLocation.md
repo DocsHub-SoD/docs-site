@@ -1,5 +1,6 @@
 # Struct: GemLocation
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -25,7 +26,7 @@ public bool Equals(GemLocation other)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `other` | [GemLocation](/api/Global.GemLocation) |  |
+| `other` | [`GemLocation`](/api/Global.GemLocation) |  |
 
 **Returns:** `bool`
 

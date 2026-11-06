@@ -1,5 +1,6 @@
 # Class: UI_Dropdown
 
+- **Category:** <span class="cat-dot" style="--cat-color: #eab308" data-cat="Items & Economy"></span> Items & Economy
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class UI_Dropdown : MonoBehaviour
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`onValueChanged`** | `public SafeAction&lt;object&gt; onValueChanged` |  |
+| **`onValueChanged`** | `public SafeAction<object> onValueChanged` |  |
 
 ## Properties
 

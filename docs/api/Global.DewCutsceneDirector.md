@@ -1,5 +1,6 @@
 # Class: DewCutsceneDirector
 
+- **Category:** <span class="cat-dot" style="--cat-color: #3b82f6" data-cat="Managers & Systems"></span> Managers & Systems
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour)
@@ -23,8 +24,7 @@ public class DewCutsceneDirector : DewNetworkBehaviour, ILogicUpdate
 | **`onFinish`** | `public Action onFinish` |  |
 | **`onFinishAfterFadeIn`** | `public Action onFinishAfterFadeIn` | Called everywhere when this cutscene stops playing. |
 | **`onPlay`** | `public Action onPlay` |  |
-| **`reenableAiDelay`** | `[ShowIf("disableAi", true)]
-public float reenableAiDelay` |  |
+| **`reenableAiDelay`** | `[ShowIf("disableAi", true)] public float reenableAiDelay` |  |
 | **`stopAllPlayers`** | `public bool stopAllPlayers` |  |
 
 ## Properties

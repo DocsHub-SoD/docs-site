@@ -1,5 +1,6 @@
 # Class: EntityControl
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → [EntityComponent](/api/Global.EntityComponent)
@@ -14,21 +15,19 @@ public class EntityControl : EntityComponent, ILogicUpdate, ICleanup
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`attackTarget`** | `[NonSerialized]
-public Entity attackTarget` | Available on server. |
+| **`attackTarget`** | `[NonSerialized] public Entity attackTarget` | Available on server. |
 | **`baseAgentSpeed`** | `public float baseAgentSpeed` |  |
-| **`ClientEvent_OnDisplacementCanceled`** | `public SafeAction&lt;Displacement&gt; ClientEvent_OnDisplacementCanceled` |  |
-| **`ClientEvent_OnDisplacementFinished`** | `public SafeAction&lt;Displacement&gt; ClientEvent_OnDisplacementFinished` |  |
-| **`ClientEvent_OnDisplacementStarted`** | `public SafeAction&lt;Displacement&gt; ClientEvent_OnDisplacementStarted` |  |
-| **`ClientEvent_OnInnerRadiusChanged`** | `public SafeAction&lt;float, float&gt; ClientEvent_OnInnerRadiusChanged` |  |
-| **`ClientEvent_OnOuterRadiusChanged`** | `public SafeAction&lt;float, float&gt; ClientEvent_OnOuterRadiusChanged` |  |
-| **`ClientEvent_OnTeleport`** | `public SafeAction&lt;Vector3, Vector3&gt; ClientEvent_OnTeleport` |  |
+| **`ClientEvent_OnDisplacementCanceled`** | `public SafeAction<Displacement> ClientEvent_OnDisplacementCanceled` |  |
+| **`ClientEvent_OnDisplacementFinished`** | `public SafeAction<Displacement> ClientEvent_OnDisplacementFinished` |  |
+| **`ClientEvent_OnDisplacementStarted`** | `public SafeAction<Displacement> ClientEvent_OnDisplacementStarted` |  |
+| **`ClientEvent_OnInnerRadiusChanged`** | `public SafeAction<float, float> ClientEvent_OnInnerRadiusChanged` |  |
+| **`ClientEvent_OnOuterRadiusChanged`** | `public SafeAction<float, float> ClientEvent_OnOuterRadiusChanged` |  |
+| **`ClientEvent_OnTeleport`** | `public SafeAction<Vector3, Vector3> ClientEvent_OnTeleport` |  |
 | **`CommandStallTimeout`** | `public const float CommandStallTimeout = 0.15` |  |
-| **`lastMoveTime`** | `[NonSerialized]
-public float lastMoveTime` | Available on server. |
+| **`lastMoveTime`** | `[NonSerialized] public float lastMoveTime` | Available on server. |
 | **`normalizedAcceleration`** | `public float normalizedAcceleration` |  |
 | **`obstacleAvoidance`** | `public bool obstacleAvoidance` |  |
-| **`ongoingChannels`** | `public List&lt;Channel&gt; ongoingChannels` | List of ongoingChannels on this entity.Only valid on server. |
+| **`ongoingChannels`** | `public List<Channel> ongoingChannels` | List of ongoingChannels on this entity.Only valid on server. |
 | **`QueuedActionExpireTime`** | `public const float QueuedActionExpireTime = 0.2` |  |
 | **`rotateSpeed`** | `public float rotateSpeed` |  |
 | **`rotationSmoothTime`** | `public float rotationSmoothTime` |  |
@@ -66,7 +65,7 @@ public float lastMoveTime` | Available on server. |
 | **`outerRadius`** | `public float outerRadius { get; set; }` |  |
 | **`overridenDesiredAngle`** | `public float? overridenDesiredAngle { get; }` |  |
 | **`proxyCollider`** | `public ProxyCollider proxyCollider { get; }` |  |
-| **`queuedActions`** | `public IReadOnlyList&lt;ActionBase&gt; queuedActions { get; }` |  |
+| **`queuedActions`** | `public IReadOnlyList<ActionBase> queuedActions { get; }` |  |
 | **`walkStrength`** | `public float walkStrength { get; }` | Can have values of range 0 ~ 1 depending on how fast it is walking. Available everywhere. |
 
 ## Methods
@@ -80,7 +79,7 @@ public void Attack(Entity target, bool doChase)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `doChase` | `bool` |  |
 
 ### `AttackMove(Vector3, bool)`
@@ -116,8 +115,8 @@ public void Cast(AbilityTrigger trigger, CastInfo info, bool allowMoveToCast = t
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `allowMoveToCast` | `bool` |  |
 
 ### `Cast(AbilityTrigger, Entity, bool)`
@@ -129,8 +128,8 @@ public void Cast(AbilityTrigger trigger, Entity predictTarget, bool allowMoveToC
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
-| `predictTarget` | [Entity](/api/Global.Entity) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
+| `predictTarget` | [`Entity`](/api/Global.Entity) |  |
 | `allowMoveToCast` | `bool` |  |
 
 ### `Cast(AbilityTrigger, int, CastInfo, bool, bool)`
@@ -144,9 +143,9 @@ public void Cast(AbilityTrigger trigger, int configIndex, CastInfo info, bool al
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `allowMoveToCast` | `bool` |  |
 | `skipRangeCheck` | `bool` |  |
 
@@ -159,9 +158,9 @@ public void Cast(AbilityTrigger trigger, int configIndex, Entity predictTarget, 
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `configIndex` | `int` |  |
-| `predictTarget` | [Entity](/api/Global.Entity) |  |
+| `predictTarget` | [`Entity`](/api/Global.Entity) |  |
 | `allowMoveToCast` | `bool` |  |
 
 ### `ClearActionQueue()`
@@ -187,7 +186,7 @@ public void CmdAttack(Entity target, bool doChase)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `target` | [Entity](/api/Global.Entity) |  |
+| `target` | [`Entity`](/api/Global.Entity) |  |
 | `doChase` | `bool` |  |
 
 ### `CmdAttackMove(Vector3, bool)`
@@ -217,9 +216,9 @@ public void CmdCast(AbilityTrigger trigger, int configIndex, CastInfo info, bool
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `trigger` | [AbilityTrigger](/api/Global.AbilityTrigger) |  |
+| `trigger` | [`AbilityTrigger`](/api/Global.AbilityTrigger) |  |
 | `configIndex` | `int` |  |
-| `info` | [CastInfo](/api/Global.CastInfo) |  |
+| `info` | [`CastInfo`](/api/Global.CastInfo) |  |
 | `allowMoveToCast` | `bool` |  |
 | `skipRangeCheck` | `bool` |  |
 
@@ -238,7 +237,7 @@ public void CmdInteract(IInteractable interactable, bool isAlt, bool isMouse)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `interactable` | [IInteractable](/api/Global.IInteractable) |  |
+| `interactable` | [`IInteractable`](/api/Global.IInteractable) |  |
 | `isAlt` | `bool` |  |
 | `isMouse` | `bool` |  |
 
@@ -306,7 +305,7 @@ public void DecrementBlockCounters(Channel.BlockedAction action, bool delayOneFr
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `action` | [Channel.BlockedAction](/api/Global.Channel) |  |
+| `action` | [`Channel.BlockedAction`](/api/Global.Channel) |  |
 | `delayOneFrame` | `bool` |  |
 
 ### `DisobeyBlock(BlockableAction)`
@@ -320,7 +319,7 @@ public void DisobeyBlock(EntityControl.BlockableAction action)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `action` | [EntityControl.BlockableAction](/api/Global.EntityControl) |  |
+| `action` | [`EntityControl.BlockableAction`](/api/Global.EntityControl) |  |
 
 ### `FrameUpdate()`
 
@@ -354,7 +353,7 @@ public void IncrementBlockCounters(Channel.BlockedAction action)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `action` | [Channel.BlockedAction](/api/Global.Channel) |  |
+| `action` | [`Channel.BlockedAction`](/api/Global.Channel) |  |
 
 ### `Interact(IInteractable, bool, bool)`
 
@@ -365,7 +364,7 @@ public void Interact(IInteractable interactable, bool isAlt, bool isMouse)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `interactable` | [IInteractable](/api/Global.IInteractable) |  |
+| `interactable` | [`IInteractable`](/api/Global.IInteractable) |  |
 | `isAlt` | `bool` |  |
 | `isMouse` | `bool` |  |
 
@@ -380,7 +379,7 @@ public EntityControl.BlockStatus IsActionBlocked(EntityControl.BlockableAction a
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `action` | [EntityControl.BlockableAction](/api/Global.EntityControl) |  |
+| `action` | [`EntityControl.BlockableAction`](/api/Global.EntityControl) |  |
 
 **Returns:** `EntityControl.BlockStatus`
 
@@ -500,7 +499,7 @@ public void RotateTowards(Entity ent, bool immediately, float overrideDuration =
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `ent` | [Entity](/api/Global.Entity) |  |
+| `ent` | [`Entity`](/api/Global.Entity) |  |
 | `immediately` | `bool` |  |
 | `overrideDuration` | `float` |  |
 
@@ -551,7 +550,7 @@ public Channel StartChannel(Channel channel)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `channel` | [Channel](/api/Global.Channel) |  |
+| `channel` | [`Channel`](/api/Global.Channel) |  |
 
 **Returns:** `Channel`
 
@@ -577,7 +576,7 @@ public void StartDisplacement(Displacement disp)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `disp` | [Displacement](/api/Global.Displacement) |  |
+| `disp` | [`Displacement`](/api/Global.Displacement) |  |
 
 ### `Stop()`
 

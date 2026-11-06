@@ -1,5 +1,6 @@
 # Class: ChargingChannelData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,21 +13,16 @@ public class ChargingChannelData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`angleSpeedLimit`** | `[ShowIf("@castMethod.type == CastMethodType.Cone \|\| castMethod.type == CastMethodType.Arrow", true)]
-public float angleSpeedLimit` |  |
-| **`canCancel`** | `[ToggleLeft]
-public bool canCancel` |  |
+| **`angleSpeedLimit`** | `[ShowIf("@castMethod.type == CastMethodType.Cone \|\| castMethod.type == CastMethodType.Arrow", true)] public float angleSpeedLimit` |  |
+| **`canCancel`** | `[ToggleLeft] public bool canCancel` |  |
 | **`cancelAnim`** | `public DewAnimationClip cancelAnim` |  |
 | **`cancelEffect`** | `public GameObject cancelEffect` |  |
-| **`canMove`** | `[ToggleLeft]
-public bool canMove` |  |
+| **`canMove`** | `[ToggleLeft] public bool canMove` |  |
 | **`castAnim`** | `public DewAnimationClip castAnim` |  |
 | **`castDazeDuration`** | `public float castDazeDuration` |  |
 | **`castEffect`** | `public GameObject castEffect` |  |
-| **`castMethod`** | `[HideLabel]
-public CastMethodData castMethod` |  |
-| **`castOnButtonRelease`** | `[ToggleLeft]
-public bool castOnButtonRelease` |  |
+| **`castMethod`** | `[HideLabel] public CastMethodData castMethod` |  |
+| **`castOnButtonRelease`** | `[ToggleLeft] public bool castOnButtonRelease` |  |
 | **`chargeAnim`** | `public DewAnimationClip chargeAnim` |  |
 | **`chargeEffect`** | `public GameObject chargeEffect` |  |
 | **`chargeFullAnim`** | `public DewAnimationClip chargeFullAnim` |  |
@@ -36,27 +32,17 @@ public bool castOnButtonRelease` |  |
 | **`completeDazeDuration`** | `public float completeDazeDuration` |  |
 | **`completeDuration`** | `public float completeDuration` |  |
 | **`completeEffect`** | `public GameObject completeEffect` |  |
-| **`completeWhenCast`** | `[ToggleLeft]
-public bool completeWhenCast` |  |
+| **`completeWhenCast`** | `[ToggleLeft] public bool completeWhenCast` |  |
 | **`rotateForwardOverrideRoationTime`** | `public float rotateForwardOverrideRoationTime` |  |
-| **`rotateForwardWhenCast`** | `[ToggleLeft]
-public bool rotateForwardWhenCast` |  |
-| **`rotateForwardWhenCharging`** | `[ToggleLeft]
-public bool rotateForwardWhenCharging` |  |
-| **`rotateForwardWhenComplete`** | `[ToggleLeft]
-public bool rotateForwardWhenComplete` |  |
-| **`selfSlowAmount`** | `[ShowIf("canMove", true)]
-public float selfSlowAmount` |  |
-| **`selfValidator`** | `[HideLabel]
-public AbilitySelfValidator selfValidator` |  |
-| **`setFillAmount`** | `[ToggleLeft]
-public bool setFillAmount` |  |
-| **`showCastIndicator`** | `[ToggleLeft]
-public bool showCastIndicator` |  |
-| **`showOnScreenTimer`** | `[ToggleLeft]
-public bool showOnScreenTimer` |  |
-| **`targetValidator`** | `[HideLabel]
-public AbilityTargetValidator targetValidator` |  |
+| **`rotateForwardWhenCast`** | `[ToggleLeft] public bool rotateForwardWhenCast` |  |
+| **`rotateForwardWhenCharging`** | `[ToggleLeft] public bool rotateForwardWhenCharging` |  |
+| **`rotateForwardWhenComplete`** | `[ToggleLeft] public bool rotateForwardWhenComplete` |  |
+| **`selfSlowAmount`** | `[ShowIf("canMove", true)] public float selfSlowAmount` |  |
+| **`selfValidator`** | `[HideLabel] public AbilitySelfValidator selfValidator` |  |
+| **`setFillAmount`** | `[ToggleLeft] public bool setFillAmount` |  |
+| **`showCastIndicator`** | `[ToggleLeft] public bool showCastIndicator` |  |
+| **`showOnScreenTimer`** | `[ToggleLeft] public bool showOnScreenTimer` |  |
+| **`targetValidator`** | `[HideLabel] public AbilityTargetValidator targetValidator` |  |
 
 ## Methods
 
@@ -71,6 +57,6 @@ public ChargingChannel Get(Actor effectParent)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `effectParent` | [Actor](/api/Global.Actor) |  |
+| `effectParent` | [`Actor`](/api/Global.Actor) |  |
 
 **Returns:** `ChargingChannel`

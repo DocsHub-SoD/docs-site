@@ -1,5 +1,6 @@
 # Struct: AnalyticsEquipmentData
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ec4899" data-cat="User Interface"></span> User Interface
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,8 +12,8 @@ public struct AnalyticsEquipmentData
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`gems`** | `public List&lt;(GemLocation, string, int)&gt; gems` |  |
-| **`skills`** | `public List&lt;(HeroSkillLocation, string, int)&gt; skills` |  |
+| **`gems`** | `public List<(GemLocation, string, int)> gems` |  |
+| **`skills`** | `public List<(HeroSkillLocation, string, int)> skills` |  |
 
 ## Methods
 

@@ -1,5 +1,6 @@
 # Class: DewAdvText
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -18,7 +19,7 @@ public static string Adv_ChatContent(DewPlayer player, string content)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 | `content` | `string` |  |
 
 **Returns:** `string`
@@ -32,7 +33,7 @@ public static string Adv_ColoredDescribedPlayerName(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `string`
 
@@ -45,7 +46,7 @@ public static string Adv_Cost(Cost cost)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `cost` | [Cost](/api/Global.Cost) |  |
+| `cost` | [`Cost`](/api/Global.Cost) |  |
 
 **Returns:** `string`
 
@@ -58,7 +59,7 @@ public static string Adv_DescribedPlayerName(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `string`
 

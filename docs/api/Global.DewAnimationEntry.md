@@ -1,5 +1,6 @@
 # Class: DewAnimationEntry
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -12,13 +13,10 @@ public class DewAnimationEntry
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`duration`** | `[MinValue(1.401298464324817E-45)]
-public float duration` |  |
+| **`duration`** | `[MinValue(1.401298464324817E-45)] public float duration` |  |
 | **`rawClip`** | `public AnimationClip rawClip` |  |
-| **`timeCurve`** | `[LabelText("Ease")]
-public DewEase timeCurve` |  |
-| **`trimRange`** | `[MinMaxSlider(0, "_rawClipLength", false)]
-public Vector2 trimRange` |  |
+| **`timeCurve`** | `[LabelText("Ease")] public DewEase timeCurve` |  |
+| **`trimRange`** | `[MinMaxSlider(0, "_rawClipLength", false)] public Vector2 trimRange` |  |
 
 ## Methods
 

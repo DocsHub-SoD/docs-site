@@ -1,5 +1,6 @@
 # Class: DewProfileContinue
 
+- **Category:** <span class="cat-dot" style="--cat-color: #64748b" data-cat="Misc & Utility"></span> Misc & Utility
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class DewProfileContinue
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`achContinueData`** | `public List&lt;DewPersistence.AchievementsData&gt; achContinueData` |  |
+| **`achContinueData`** | `public List<DewPersistence.AchievementsData> achContinueData` |  |
 | **`continueData`** | `public string continueData` |  |
 
 ## Methods

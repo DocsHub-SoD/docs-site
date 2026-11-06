@@ -1,5 +1,6 @@
 # Class: DewPool
 
+- **Category:** <span class="cat-dot" style="--cat-color: #f97316" data-cat="Data & Core Math"></span> Data & Core Math
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public static class DewPool
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`_clearAction`** | `public static Dictionary&lt;Type, Action&lt;object&gt;&gt; _clearAction` |  |
+| **`_clearAction`** | `public static Dictionary<Type, Action<object>> _clearAction` |  |
 
 ## Methods
 
@@ -26,7 +27,7 @@ public static void ClearEventsAndProcessors(Component obj)
 | :--- | :--- | :--- |
 | `obj` | `UnityEngine.Component` |  |
 
-### `GetArray&lt;T&gt;(out ArrayReturnHandle&lt;T&gt;, int)`
+### `GetArray<T>(out ArrayReturnHandle<T>, int)`
 
 ```csharp
 public static T[] GetArray<T>(out ArrayReturnHandle<T> handle, int minSize = 128)
@@ -35,13 +36,13 @@ public static T[] GetArray<T>(out ArrayReturnHandle<T> handle, int minSize = 128
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ArrayReturnHandle&lt;T&gt;` |  |
+| `handle` | `ArrayReturnHandle<T>` |  |
 | `minSize` | `int` |  |
 | `` | `T` |  |
 
 **Returns:** `T[]`
 
-### `GetDictionary&lt;TKey, TValue&gt;(out DictionaryReturnHandle&lt;TKey, TValue&gt;)`
+### `GetDictionary<TKey, TValue>(out DictionaryReturnHandle<TKey, TValue>)`
 
 Get an empty dictionary of TKey, TValue.You do not need to clear the dictionary before returning.
 
@@ -52,13 +53,13 @@ public static Dictionary<TKey, TValue> GetDictionary<TKey, TValue>(out Dictionar
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `DictionaryReturnHandle&lt;TKey, TValue&gt;` |  |
+| `handle` | `DictionaryReturnHandle<TKey, TValue>` |  |
 | `` | `TKey` |  |
 | `` | `TValue` |  |
 
-**Returns:** `System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;&lt;TKey, TValue&gt;`
+**Returns:** `System.Collections.Generic.Dictionary<TKey, TValue>`
 
-### `GetList&lt;T&gt;(out ListReturnHandle&lt;T&gt;)`
+### `GetList<T>(out ListReturnHandle<T>)`
 
 Get an empty list of T.You do not need to clear the list before returning.
 
@@ -69,7 +70,7 @@ public static List<T> GetList<T>(out ListReturnHandle<T> handle)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `handle` | `ListReturnHandle&lt;T&gt;` |  |
+| `handle` | `ListReturnHandle<T>` |  |
 | `` | `T` |  |
 
-**Returns:** `System.Collections.Generic.List&lt;T&gt;&lt;T&gt;`
+**Returns:** `System.Collections.Generic.List<T>`

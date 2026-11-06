@@ -1,5 +1,6 @@
 # Class: ChatManager
 
+- **Category:** <span class="cat-dot" style="--cat-color: #ef4444" data-cat="Combat & Abilities"></span> Combat & Abilities
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 - **Inheritance / Derived:** [DewNetworkBehaviour](/api/Global.DewNetworkBehaviour) → `NetworkedManagerBase` → [ChatManager](/api/Global.ChatManager)
@@ -17,8 +18,8 @@ public class ChatManager : NetworkedManagerBase<ChatManager>, ILogicUpdate
 | **`ChatMessage_RateLimitCount`** | `public const int ChatMessage_RateLimitCount = 8` |  |
 | **`ChatMessage_RateLimitLockTime`** | `public const float ChatMessage_RateLimitLockTime = 8` |  |
 | **`ChatMessage_RateLimitTimeframe`** | `public const float ChatMessage_RateLimitTimeframe = 12` |  |
-| **`ClientEvent_OnEmoteReceived`** | `public SafeAction&lt;DewPlayer, string&gt; ClientEvent_OnEmoteReceived` |  |
-| **`ClientEvent_OnMessageReceived`** | `public SafeAction&lt;ChatManager.Message&gt; ClientEvent_OnMessageReceived` |  |
+| **`ClientEvent_OnEmoteReceived`** | `public SafeAction<DewPlayer, string> ClientEvent_OnEmoteReceived` |  |
+| **`ClientEvent_OnMessageReceived`** | `public SafeAction<ChatManager.Message> ClientEvent_OnMessageReceived` |  |
 | **`Emote_CooldownTime`** | `public const float Emote_CooldownTime = 1.4` |  |
 
 ## Methods
@@ -43,7 +44,7 @@ public void BroadcastMessage(ChatManager.Message message)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `message` | [ChatManager.Message](/api/Global.ChatManager) |  |
+| `message` | [`ChatManager.Message`](/api/Global.ChatManager) |  |
 
 ### `CmdSendAchievementMessage(string, NetworkConnectionToClient)`
 
@@ -102,7 +103,7 @@ public static string GetColoredDescribedPlayerName(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `string`
 
@@ -143,7 +144,7 @@ public static string GetDescribedPlayerName(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `string`
 
@@ -170,7 +171,7 @@ public static string GetPlayerColorHex(DewPlayer player = null)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `string`
 
@@ -213,7 +214,7 @@ public bool IsPlayerMuted(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 **Returns:** `bool`
 
@@ -263,7 +264,7 @@ public void MutePlayer(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `OnStartServer()`
 
@@ -281,7 +282,7 @@ public void RpcShowEmote(string emoteName, DewPlayer sender)
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `emoteName` | `string` |  |
-| `sender` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `sender` | [`DewPlayer`](/api/Global.DewPlayer) |  |
 
 ### `SendChatLockedNotice(NetworkConnectionToClient)`
 
@@ -304,7 +305,7 @@ public void SendChatMessage(NetworkConnection target, ChatManager.Message messag
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `target` | `Mirror.NetworkConnection` |  |
-| `message` | [ChatManager.Message](/api/Global.ChatManager) |  |
+| `message` | [`ChatManager.Message`](/api/Global.ChatManager) |  |
 
 ### `ShowMessageLocally(Message)`
 
@@ -315,7 +316,7 @@ public void ShowMessageLocally(ChatManager.Message message)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `message` | [ChatManager.Message](/api/Global.ChatManager) |  |
+| `message` | [`ChatManager.Message`](/api/Global.ChatManager) |  |
 
 ### `UnmutePlayer(DewPlayer)`
 
@@ -326,4 +327,4 @@ public void UnmutePlayer(DewPlayer player)
 **Parameters:**
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `player` | [DewPlayer](/api/Global.DewPlayer) |  |
+| `player` | [`DewPlayer`](/api/Global.DewPlayer) |  |

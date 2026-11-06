@@ -1,5 +1,6 @@
 # Class: DewPersistence.NetworkBehaviourConverter
 
+- **Category:** <span class="cat-dot" style="--cat-color: #06b6d4" data-cat="Networking"></span> Networking
 - **Namespace:** `Global`
 - **Assembly:** `Dew.Core.dll`
 
@@ -11,7 +12,7 @@ public class DewPersistence.NetworkBehaviourConverter : JsonConverter
 
 | Name | Declaration | Description |
 | :--- | :--- | :--- |
-| **`prevNetIdMap`** | `public readonly Dictionary&lt;uint, NetworkIdentity&gt; prevNetIdMap` | Previous netId to current NetworkIdentity |
+| **`prevNetIdMap`** | `public readonly Dictionary<uint, NetworkIdentity> prevNetIdMap` | Previous netId to current NetworkIdentity |
 
 ## Methods
 
